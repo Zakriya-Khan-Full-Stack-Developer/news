@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { normalizeGender } from '../lib/data/name-utils.js';
+import { isRenderableSlug } from '../lib/data/names-data.js';
 
 // Tradition accent styling. Uses the design-system tokens so the card colours
 // stay in sync with the rest of the site and remain AA-contrast in both themes.
@@ -42,11 +43,28 @@ export default function NameCard({ item, showReligion = false, headingTag = 'h3'
   };
   const Heading = headingTag;
 
+  // FIX — only link to a URL that actually exists. NameChip and RankedNameList
+  // already follow this rule ("a name we have no verified profile for is still
+  // shown, but it never becomes a link to a page that does not exist"); NameCard
+  // was the one component that linked unconditionally. Because the detail route
+  // sets `dynamicParams = false`, every card pointing at a non-prerendered slug
+  // was a hard 404 — 352 of them from the Italian set alone, published from the
+  // homepage, the letter hubs, the tradition hubs, /names, /origins/italian,
+  // /categories/italian and /trending-names.
+  const linkable = isRenderableSlug(religion, item.slug);
+  const Wrapper = linkable ? Link : 'div';
+  const wrapperProps = linkable
+    ? { href: `/names/${religion}/${item.slug}`, prefetch: false }
+    : {};
+
   return (
-    <Link
-      href={`/names/${religion}/${item.slug}`}
-      prefetch={false}
-      className="card group relative flex flex-col overflow-hidden p-5 hover:-translate-y-1 hover:border-nv-accent/40 hover:shadow-card-hover"
+    <Wrapper
+      {...wrapperProps}
+      className={
+        linkable
+          ? 'card group relative flex flex-col overflow-hidden p-5 hover:-translate-y-1 hover:border-nv-accent/40 hover:shadow-card-hover'
+          : 'card relative flex flex-col overflow-hidden p-5 border-dashed'
+      }
     >
       <span className={`absolute left-0 top-0 h-1 w-full ${style.bar} opacity-0 transition-opacity duration-300 group-hover:opacity-100`} />
 
@@ -81,10 +99,16 @@ export default function NameCard({ item, showReligion = false, headingTag = 'h3'
             &#9733; {luckyNumber}
           </span>
         )}
-        <span className="ml-auto text-xs font-semibold text-nv-accent opacity-0 transition-opacity group-hover:opacity-100">
-          &rarr;
-        </span>
+        {linkable ? (
+          <span className="ml-auto text-xs font-semibold text-nv-accent opacity-0 transition-opacity group-hover:opacity-100">
+            &rarr;
+          </span>
+        ) : (
+          <span className="ml-auto text-[10px] uppercase tracking-wide text-nv-text-muted">
+            soon
+          </span>
+        )}
       </div>
-    </Link>
+    </Wrapper>
   );
 }

@@ -20,7 +20,14 @@ export function generateStaticParams() {
     const available = lettersFor(religion, manifest);
     for (const letter of ALL_LETTERS) {
       if (available.has(letter)) {
-        params.push({ religion, letter: letter === '#' ? '%23' : letter });
+        // FIX — do NOT pre-encode the '#' as '%23' here. Next.js percent-encodes
+        // the param value itself when it writes the prerendered path, so
+        // passing the string '%23' produced encodeURIComponent('%23') === '%2523'
+        // and the file landed on disk as `/names/christian/letter/%2523.html`.
+        // Every link — and the sitemap — points at `/names/christian/letter/%23`,
+        // so that one URL was a guaranteed 404 sitting inside the sitemap.
+        // Pass the raw letter and let the framework do the encoding once.
+        params.push({ religion, letter });
       }
     }
   }

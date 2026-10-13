@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getManifest } from '../../lib/data/names-data.js';
+import { getManifest, isRenderableSlug } from '../../lib/data/names-data.js';
 import { religionLabel } from '../../lib/data/name-utils.js';
 import NameCard from '../../components/NameCard.jsx';
 import AdSlot from '../../components/AdSlot.jsx';
@@ -18,7 +18,12 @@ export default function TrendingNamesPage() {
   const all = [];
   for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {
     for (const item of manifest[rel] || []) {
-      if (item.slug && item.name) all.push({ ...item, religion: rel });
+      // FIX — only surface names whose page exists. "Trending" previously ranked
+      // by popularity_score alone, so an Italian stub with a high score took the
+      // top slot and linked to a 404.
+      if (item.slug && item.name && isRenderableSlug(rel, item.slug)) {
+        all.push({ ...item, religion: rel });
+      }
     }
   }
   all.sort((a, b) => (b.popularity_score || 0) - (a.popularity_score || 0));
@@ -28,6 +33,7 @@ export default function TrendingNamesPage() {
     ['islamic', 'christian', 'hindu', 'italian'].map((rel) => [
       rel,
       (manifest[rel] || [])
+        .filter((i) => i.slug && isRenderableSlug(rel, i.slug))
         .slice()
         .sort((a, b) => (b.popularity_score || 0) - (a.popularity_score || 0))
         .slice(0, 6),

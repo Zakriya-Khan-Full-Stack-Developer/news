@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://nameverse.site/sitemap-index.xml

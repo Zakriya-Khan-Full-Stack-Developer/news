@@ -12,6 +12,10 @@ export function generateStaticParams() {
 
   for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {
     const count = (manifest[rel] || []).filter((i) => i.indexable).length;
+    // FIX — skip traditions with nothing to publish. Emitting `italian.xml` for
+    // a set with zero indexable records produced a child sitemap that 404s,
+    // while the sitemap index still advertised it.
+    if (count === 0) continue;
     const chunks = Math.ceil(count / chunkSize) || 1;
     if (chunks === 1) {
       ids.push(rel);
@@ -48,7 +52,11 @@ export async function GET(request, { params }) {
     urls.push(`${siteUrl}/about`);
     urls.push(`${siteUrl}/contact`);
     urls.push(`${siteUrl}/trending-names`);
-    urls.push(`${siteUrl}/unique-names`);
+    // FIX — was `/unique-names`, which next.config.js permanently redirects
+    // (308) to /unique-baby-names. A URL that redirects has no place in a
+    // sitemap: GSC flags it as "Sitemap contains URLs which redirect", and the
+    // crawler has to spend a second fetch to find the real destination.
+    urls.push(`${siteUrl}/unique-baby-names`);
     urls.push(`${siteUrl}/popularity`);
     urls.push(`${siteUrl}/name-meanings`);
     urls.push(`${siteUrl}/names-by-meaning`);
@@ -148,13 +156,20 @@ export async function GET(request, { params }) {
     return new Response('Sitemap not found', { status: 404 });
   }
 
+  // FIX — no <lastmod>. Every URL previously carried `new Date().toISOString()`,
+  // so all ~12,500 URLs claimed to be modified at the exact same second on
+  // every deploy, regardless of whether the underlying record changed. That is
+  // the canonical example of a lastmod Google learns to ignore, and it gave the
+  // crawler no way to prioritise: with everything "new" on every deploy,
+  // nothing is. On a domain that is new and therefore crawl-budget-limited,
+  // that alone can stall indexing for months. lastmod is optional in the
+  // Sitemaps Protocol; when it cannot be guaranteed accurate it must be omitted.
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls
   .map(
     (url) => `  <url>
     <loc>${escapeXml(url)}</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
   </url>`
   )
   .join('\n')}

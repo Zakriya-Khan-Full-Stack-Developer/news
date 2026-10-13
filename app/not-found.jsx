@@ -81,7 +81,7 @@ export default function NotFound() {
             <Link href="/trending-names" className="btn-ghost">
               Trending Names
             </Link>
-            <Link href="/unique-names" className="btn-ghost">
+            <Link href="/unique-baby-names" className="btn-ghost">
               Unique Names
             </Link>
             <Link href="/popularity" className="btn-ghost">

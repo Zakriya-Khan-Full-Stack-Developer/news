@@ -87,7 +87,7 @@ const intentChips = [
   { label: 'Names meaning light', href: '/search?q=light' },
   { label: 'Names meaning love', href: '/search?q=love' },
   { label: 'Names meaning strength', href: '/search?q=strength' },
-  { label: 'Unique names', href: '/unique-names' },
+  { label: 'Unique names', href: '/unique-baby-names' },
   { label: 'Trending 2026', href: '/trending-names' },
   { label: 'Biblical names', href: '/categories/biblical' },
 ];
