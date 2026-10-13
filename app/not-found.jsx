@@ -1,4 +1,14 @@
 import Link from 'next/link';
+import { getManifest } from '../lib/data/names-data.js';
+
+// FIX — these counts were hardcoded in the era when the manifest advertised
+// 42,310 names. The dataset is now 13,801 records, so the 404 page was telling
+// users and crawlers that ~28,500 names exist which do not. During a migration
+// that matters a great deal: thousands of removed URLs now resolve to this
+// page, so it is the single most-crawled page on the site, and it was
+// over-claiming the site's size on every hit. Read the real numbers from the
+// manifest so they can never drift again.
+const TRADITIONS = ['islamic', 'christian', 'hindu', 'italian'];
 
 export const metadata = {
   title: 'Page Not Found',
@@ -10,6 +20,13 @@ export const metadata = {
 };
 
 export default function NotFound() {
+  const manifest = getManifest();
+  const total = TRADITIONS.reduce((sum, rel) => sum + (manifest[rel] || []).length, 0);
+  const traditions = TRADITIONS.map((rel) => ({
+    rel,
+    count: (manifest[rel] || []).length,
+  }));
+
   return (
     <div className="container-page py-16 sm:py-24">
       <div className="mx-auto max-w-2xl text-center">
@@ -27,7 +44,7 @@ export default function NotFound() {
             <input
               type="search"
               name="q"
-              placeholder="Search 42,000+ baby names…"
+              placeholder={`Search ${total.toLocaleString()} baby names…`}
               aria-label="Search baby names"
               className="input flex-1"
               autoComplete="off"
@@ -44,34 +61,16 @@ export default function NotFound() {
             Explore traditions
           </h2>
           <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <Link
-              href="/names/islamic"
-              className="rounded-xl border border-nv-border bg-nv-subtle p-3 text-center transition hover:border-nv-accent hover:text-nv-accent"
-            >
-              <span className="block text-sm font-semibold text-nv-text">Islamic</span>
-              <span className="text-xs text-nv-text-muted">18k+ names</span>
-            </Link>
-            <Link
-              href="/names/christian"
-              className="rounded-xl border border-nv-border bg-nv-subtle p-3 text-center transition hover:border-nv-accent hover:text-nv-accent"
-            >
-              <span className="block text-sm font-semibold text-nv-text">Christian</span>
-              <span className="text-xs text-nv-text-muted">12k+ names</span>
-            </Link>
-            <Link
-              href="/names/hindu"
-              className="rounded-xl border border-nv-border bg-nv-subtle p-3 text-center transition hover:border-nv-accent hover:text-nv-accent"
-            >
-              <span className="block text-sm font-semibold text-nv-text">Hindu</span>
-              <span className="text-xs text-nv-text-muted">10k+ names</span>
-            </Link>
-            <Link
-              href="/names/italian"
-              className="rounded-xl border border-nv-border bg-nv-subtle p-3 text-center transition hover:border-nv-accent hover:text-nv-accent"
-            >
-              <span className="block text-sm font-semibold text-nv-text">Italian</span>
-              <span className="text-xs text-nv-text-muted">350+ names</span>
-            </Link>
+            {traditions.map(({ rel, count }) => (
+              <Link
+                key={rel}
+                href={`/names/${rel}`}
+                className="rounded-xl border border-nv-border bg-nv-subtle p-3 text-center transition hover:border-nv-accent hover:text-nv-accent"
+              >
+                <span className="block text-sm font-semibold capitalize text-nv-text">{rel}</span>
+                <span className="text-xs text-nv-text-muted">{count.toLocaleString()} names</span>
+              </Link>
+            ))}
           </div>
 
           <div className="mt-6 flex flex-wrap justify-center gap-2">

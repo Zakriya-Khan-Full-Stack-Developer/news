@@ -1,93 +1,107 @@
-# Why nameverse.site is stuck at ~400 pages while the old domain keeps 14,000
+# Why nameverse.site is stuck at ~400 pages while nameverse.vercel.app keeps 14,000
 
 Diagnosed 2026-10-13 against commit `3f7cff4` and the live site.
+Updated after the old host was confirmed as `nameverse.vercel.app`.
 
 ---
 
-## TL;DR
+## Correction first
 
-**You did not do a migration. You published a second copy of the site.**
+My original headline was **"you never did a migration — nothing redirects the old host"**.
 
-Nothing anywhere in this project tells Google the site moved:
+**That was wrong.** Vercel automatically redirects a project's production URL to its assigned custom domain, and I verified it on three paths including a 404:
 
-- `vercel.json` has **no `redirects` block**.
-- `next.config.js` `redirects()` can only rewrite a path **on the same host** — it cannot redirect another domain, and it only contains three internal redirects (`/home`, `/homepage`, `/unique-names`).
-- The canonical tags all correctly point at `https://nameverse.site/...`, but **a canonical tag is a hint; a 301 is an instruction.** Without the 301, the old host keeps serving HTTP 200 with its own pages, and Google sees two independent sites publishing identical content.
+```
+https://nameverse.vercel.app/names/islamic/aaban  ->  https://nameverse.site/names/islamic/aaban
+https://nameverse.vercel.app/robots.txt           ->  https://nameverse.site/robots.txt
+https://nameverse.vercel.app/this-page-does-not-exist-xyz123  ->  https://nameverse.site/... (404)
+```
 
-When Google sees two copies, it keeps the one it already trusts — the old one, with its 14,000 indexed URLs and its history — and classifies the new one as **"Duplicate, Google chose different canonical than user"** or **"Crawled — currently not indexed"**. That is exactly the symptom you are describing: old domain frozen at 14k, new domain frozen at ~400, two months in.
-
-Then, on top of that, this repo was actively making it worse (see below): the sitemap was submitting ~941 URLs that simultaneously served `noindex`, and a whole advertised section of the site (Italian, 352 names) was linking to hard 404s — including from the homepage's #1 trending slot.
+The redirect is in place and working URL-for-URL. The `middleware.js` I added is still correct and useful (it pins `www.*` and any future host, and it makes the behaviour explicit rather than dependent on a platform default), but it was **not** the missing piece.
 
 ---
 
-## Evidence
+## So what is actually wrong
 
-| Check | Result |
-|---|---|
-| Canonical tags on new domain | ✅ correct — all self-referencing to `https://nameverse.site` |
-| Content uniqueness (250-page sample, 5-gram Jaccard on main content) | ✅ median similarity **0.16**, max 0.34; ~820 words/page, ~55% unique shingles. **Content is not thin and not duplicated.** |
-| Content quality | ✅ fine. Ruled out as the cause. |
-| Old → new 301 redirects | ❌ **none exist** |
-| Sitemap URLs serving `noindex` | ❌ **941 of 12,438** (48 of a 700-URL sample) |
-| Child sitemaps advertised but returning 404 | ❌ 1 (`/sitemap/italian.xml`) |
-| Sitemap URLs that 308-redirect | ❌ 1 (`/unique-names`) |
-| `lastmod` trustworthiness | ❌ every URL stamped with the build timestamp |
-| robots.txt sources | ❌ two conflicting files, environment-dependent |
-| Internal links to 404s | ❌ homepage + ~40 hubs → **352 dead Italian URLs** |
-| Indexability flag agreement (manifest vs page) | ❌ disagreed on **1,919 of 13,801** records |
+### The real cause: ~28,500 pages were deleted at the same time as the move
 
-### The 404 factory
+The site used to advertise **42,310 names**. It now has **13,801**. `scripts/generate-manifest.mjs` says so in its own comments:
 
-The Italian dataset is 352 records where `meaning`, `longMeaning` and `gender` are **all empty strings**. Zero of them are indexable, so with `dynamicParams = false` **every Italian name URL is a hard 404** — while the homepage, `/names`, `/names/italian`, all 26 letter hubs, `/origins/italian`, `/categories/italian`, `/trending-names` and the US cluster pages all linked straight into them. The homepage's **#1 trending name** linked to `/names/italian/davide` → 404.
+> "The committed manifest advertised 42,310 names while only 13,802 JSON files existed on disk. The sitemaps are generated from the manifest, so they published ~28,508 URLs that 404."
 
-A crawler that lands on your homepage and immediately hits a 404 is about the worst first impression a brand-new domain can make.
+The stale numbers are still baked into the UI, which is how the scale of the collapse is visible from outside:
 
-### The self-contradicting sitemap
+| Where | Claimed | Actual |
+|---|---|---|
+| `app/not-found.jsx` search box | "Search 42,000+ baby names" | 13,801 |
+| `app/not-found.jsx` tradition tiles | Islamic 18k / Christian 12k / Hindu 10k | 5,180 / 4,136 / 4,133 |
+| `app/page.jsx` FAQ | "indexes over 42,000 baby names" | 13,801 |
+| `app/page.jsx` "Indexable Pages" | 13,801 | 11,499 |
 
-`scripts/generate-manifest.mjs` decided `indexable` from the **raw** source record.
-`app/names/[religion]/[slug]/page.jsx` decided it from the **enriched** record.
+Google had ~14,000 pages indexed on `nameverse.vercel.app` from that larger era. Those URLs now 301 to `nameverse.site`, and **a large fraction of them land on pages that no longer exist**. A redirect to a 404 transfers nothing — Google just drops the URL. So the 14k can never fully arrive at the new domain.
 
-They disagreed on 1,919 records. 941 of those ended up **inside the sitemap while the page served `noindex, follow`** — the site was asking Google to index URLs it was simultaneously telling Google not to index. GSC reports that as *"Submitted URL marked 'noindex'"*, and at that volume it teaches Google the sitemap is not a reliable crawl target. A new domain cannot afford that.
+### Why the survivors are arriving so slowly
 
-### `generate-manifest.mjs` also documents the earlier, bigger version of this
+Even the ~11,500 pages that *do* still exist have to be re-crawled one at a time:
 
-> "The committed manifest advertised **42,310 names** while only **13,802** JSON files existed on disk. The sitemaps are generated from the manifest, so they published **~28,508 URLs that 404** — each one burning a function invocation and poisoning crawl budget."
+1. Google fetches the old URL on `nameverse.vercel.app`
+2. sees the 301
+3. fetches the new URL on `nameverse.site`
+4. indexes it
 
-That is ~28,500 404s served through your sitemap during the window in which Google was first getting to know this domain. On a domain with no trust yet, that alone is enough to cap indexing for a long time.
+That is ~23,000 fetches, and **crawl rate is per-host** — `nameverse.site` starts at zero regardless of how much trust the old host had. Authority only transfers as each individual redirect is confirmed. At a new host's initial crawl rate, 14,000 URLs takes a long time. Two months is not yet abnormal *on its own*.
+
+### …but the sitemap, which is the shortcut, was broken
+
+The sitemap is how Google skips that whole re-crawl loop and goes straight to the live URLs. This one was actively untrustworthy:
+
+- **941 URLs were in the sitemap while the page served `noindex, follow`.** `generate-manifest.mjs` judged the **raw** record; `app/names/[religion]/[slug]/page.jsx` judged the **enriched** record. They disagreed on 1,919 of 13,801 records. GSC reports this as *"Submitted URL marked 'noindex'"* — the site was asking Google to index URLs it was simultaneously telling Google not to index.
+- **`/sitemap/italian.xml` was advertised in the sitemap index and returned 404** (`Math.ceil(0/5000) || 1` evaluates to `1`).
+- **`/unique-names` was in the sitemap and 308-redirects** to `/unique-baby-names`.
+- **Every `lastmod` was the build timestamp** — all ~12,500 URLs claiming to change at the same second on every deploy. Google discounts a `lastmod` it can see is synthetic, and with everything "new" every deploy, nothing is prioritised.
+- **Two conflicting `robots.txt` files** (`public/robots.txt` and `app/robots.js`) saying different things; which one is served is runtime-dependent.
+
+So the shortcut was closed, and Google was left with the slow path.
+
+### Plus a 404 factory
+
+The Italian dataset is 352 records with empty `meaning`, `longMeaning` and `gender`. Zero are indexable, so with `dynamicParams = false` **every Italian name URL is a hard 404** — while the homepage (its **#1 trending slot**), `/names`, `/names/italian`, all 26 letter hubs, `/origins/italian`, `/categories/italian`, `/trending-names` and the US cluster pages linked straight into them.
+
+A crawler that lands on your homepage and immediately hits a 404 is about the worst first impression a brand-new host can make — and during a migration, when Google is deciding how much to trust `nameverse.site`, first impressions are the whole game.
+
+### Ruled out: content quality
+
+250-page sample, 5-gram Jaccard on main content: **median similarity 0.16, max 0.34**, ~820 words per page, ~55% unique shingles. The content is genuinely unique and substantial. It is not the problem.
 
 ---
 
 ## What I changed
 
-### 1. `middleware.js` (new) — the actual migration fix
-301-redirects every host you own to `https://nameverse.site`, preserving path + query, so the move is **URL-for-URL** (which is what carries ranking signals across).
-- Covers `www.nameverse.site` and any `*.vercel.app` automatically. Vercel keeps serving `<project>.vercel.app` forever and it is fully indexable — it must never serve a 200 next to your custom domain.
-- Set `LEGACY_HOSTS` (comma-separated, in `.env.example`) to the subdomain you migrated from; it gets redirected too, no code change.
-- Hosts you do **not** own pass through untouched, so a forged `Host` header can't bounce visitors at an arbitrary domain.
+### 1. Honest numbers everywhere (the 42,000-era leftovers)
+- `app/not-found.jsx`: tradition counts and the search placeholder now read from the manifest. This page is the most-crawled page on the site right now, because thousands of deleted URLs resolve to it — and it was telling Google the site had 42,000 names.
+- `app/page.jsx`: dropped the "42,000 names" FAQ answer; "Indexable Pages" now shows the real 11,499 instead of 13,801; replaced the false *"Zero Soft-404s … instantaneous incremental static regeneration"* claim (ISR was deliberately removed) with something true.
 
-### 2. `scripts/generate-manifest.mjs` — one source of truth for indexability
-Now computes `indexable` through the exact pipeline the page uses: `normalizeNameRecord → enrichNameProfile → isIndexableRecord`.
-**Result: 941 self-contradicting URLs → 0.** (verified: 0 of 1,660 sampled sitemap URLs serve `noindex`, up from 48 of 700.)
+### 2. Sitemap no longer contradicts the pages it points at
+- `generate-manifest.mjs`: `indexable` is now decided by the exact pipeline the page uses — `normalizeNameRecord → enrichNameProfile → isIndexableRecord`. **941 self-contradicting URLs → 0.**
+- `app/sitemap.xml/route.js`: skip traditions with zero indexable records (the `/sitemap/italian.xml` 404).
+- `app/sitemap/[id]/route.js`: `/unique-names` → `/unique-baby-names`; skip empty chunks.
+- Both routes: **removed `lastmod`.** It was fabricated, so Google was ignoring it; omitting it is what the Sitemaps Protocol recommends when accuracy can't be guaranteed.
 
-### 3. Sitemap routes — stop publishing things that aren't there
-- `app/sitemap.xml/route.js`: skip traditions with zero indexable records. `Math.ceil(0/5000) || 1` evaluates to `1`, which is why `/sitemap/italian.xml` was advertised and 404'd.
-- `app/sitemap/[id]/route.js`: `/unique-names` (a 308) → `/unique-baby-names`; skip empty chunks.
-- **Removed `lastmod` everywhere.** All ~12,500 URLs carried `new Date()` — the build timestamp — so on every deploy the entire site claimed to change at the same instant. Google discounts a `lastmod` it can see is synthetic, and with everything "new" on every deploy, nothing is prioritised. On a crawl-budget-limited new domain that stalls indexing by itself. `lastmod` is optional in the Sitemaps Protocol; when it can't be guaranteed accurate it must be omitted.
-
-### 4. No more dead links
+### 3. No more links to pages that do not exist
 - `lib/data/names-data.js`: new exported `isRenderableSlug(rel, slug)` — the single predicate for "does this URL exist?".
-- `components/NameCard.jsx`: only links when the target exists. It was the one component that linked unconditionally; `NameChip` and `RankedNameList` already followed this rule.
-- `scripts/generate-search-index.mjs`: only indexes names with a real page (the three search clients build hrefs straight from this file).
-- `lib/data/us-names.js`: `resolveName()`, `getBiblicalNames()`, `getIslamicNames()` now gate on the same predicate. `resolveName()` carried the comment *"never returns a href that would 404"* — it did.
-- `app/trending-names/page.jsx`: trending lists filter to existing pages.
+- `components/NameCard.jsx`: link only when the target exists. It was the one component that linked unconditionally; `NameChip` and `RankedNameList` already followed this rule.
+- `scripts/generate-search-index.mjs`, `lib/data/us-names.js` (`resolveName`, `getBiblicalNames`, `getIslamicNames`), `app/trending-names/page.jsx`: gate on the same predicate. `resolveName()` carried the comment *"never returns a href that would 404"* — it did.
 
-**Result: broken internal links 18 → 0** (567-URL crawl), and all 352 Italian 404s are no longer linked from anywhere.
+**Broken internal links: 18 → 0** (597-URL crawl). All 352 Italian 404s are no longer linked from anywhere.
 
-### 5. `app/names/[religion]/letter/[letter]/page.jsx` — `%23` double-encoding
-`generateStaticParams` returned the pre-encoded string `'%23'`; Next.js encodes param values itself, so the file landed on disk as `%2523.html` and `/names/christian/letter/%23` — which is in the sitemap and linked from every Christian letter hub — was a guaranteed 404. Now passes the raw `#`. **→ 200.**
+### 4. `app/names/[religion]/letter/[letter]/page.jsx`
+`generateStaticParams` passed the pre-encoded string `'%23'`; Next.js encodes param values itself, so the file landed on disk as `%2523.html` and `/names/christian/letter/%23` — which is in the sitemap and linked from every Christian letter hub — was a guaranteed 404. Now passes the raw `#`. **→ 200.**
+
+### 5. `middleware.js` (new)
+301s every host you own to `https://nameverse.site`, preserving path + query. Covers `www.*` and `*.vercel.app` automatically, plus any host listed in `LEGACY_HOSTS`. Hosts you do **not** own pass through, so it can't be abused as an open redirect. *Not the fix I thought it was — but it makes the canonical-host behaviour explicit instead of relying on a platform default.*
 
 ### 6. `public/robots.txt` deleted
-It conflicted with `app/robots.js` and they did **not** say the same thing (the `public/` copy had no `Disallow` rules and pointed at `sitemap-index.xml`; the route handler had four `Disallow` rules and pointed at `sitemap.xml`). Which one is served is runtime-dependent: `next start` served the `public/` copy, Vercel served the route handler. Two files, two answers, no way to know which Google saw. One source of truth now.
+It conflicted with `app/robots.js` and they said different things (`public/` had no `Disallow` rules and pointed at `sitemap-index.xml`; the route handler had four `Disallow` rules and pointed at `sitemap.xml`). `next start` served one, Vercel served the other. One source of truth now.
 
 ---
 
@@ -99,37 +113,29 @@ It conflicted with `app/robots.js` and they did **not** say the same thing (the 
 | Child sitemaps advertised that 404 | 1 | **0** |
 | Sitemap URLs that redirect | 1 | **0** |
 | `lastmod` | fabricated (build timestamp × 12,563) | **omitted** |
-| Broken internal links | 18 found / 352 Italian linked site-wide | **0** |
+| Broken internal links | 18 found / 352 Italian linked site-wide | **0** (597-URL crawl) |
 | robots.txt sources | 2 conflicting | **1** |
 | Indexability disagreements | 1,919 records | **0** |
-| Old → new 301 | none | **middleware** |
+| Stale "42,000 names" claims | 4 places | **0** |
 | Sitemap URLs (honest & consistent) | 12,438 (941 broken) | **11,624** (all verified 200 + index + self-canonical) |
 
 Build passes all gates: `prerendered routes: 12617`, `indexable records: 11499`, `indexable records with prerendered HTML: 11499`, `PASS`.
 
 ---
 
-## What you still have to do (I can't do these from the repo)
+## What you have to do now
 
-**1. Tell me the old hostname, or set it yourself.**
-Set `LEGACY_HOSTS=<your-old-subdomain>` in Vercel → Project Settings → Environment Variables. Until then the middleware can only redirect hosts it can recognise (`www.*`, `*.vercel.app`).
+**1. Google Search Console → Change of Address.** ⭐ *This is the one that matters.*
+On the **`nameverse.vercel.app`** property: Settings → Change of Address → select `nameverse.site`. It tells Google to prioritise re-crawling the old host and transferring everything, instead of drifting through 14,000 redirects at the default rate. Both properties must be verified first. This is the single highest-value action left.
 
-**2. Google Search Console → Change of Address.**
-On the **old** property: Settings → Change of Address → pick the new property. This only works if the 301s are live first, and both properties must be verified. This is the single highest-value click in the whole migration.
+**2. Resubmit the sitemap** at `https://nameverse.site/sitemap.xml` in the **new** property. It is now clean — 11,624 URLs, every one verified 200 + `index,follow` + self-canonical, no `noindex` contradictions, no 404 children, no redirects, no fake `lastmod`. That gives Google a fast path to the live pages instead of making it re-crawl the old host.
 
-**3. Fix the duplicate verification tag.**
-Every page currently emits **two different** `google-site-verification` values:
-- `fB60sPZ-K1f5t10x-57z6f6_n655` (from `metadata.verification` in `app/layout.jsx`)
-- `bY09F9IpVk_dzOagZu5xAzZwH9U-Io3IeuBeaBkfG0g` (hardcoded in the `<head>` of `app/layout.jsx`)
+**3. Fix the duplicate verification tag.** Every page emits two different `google-site-verification` values — `fB60sPZ-K1f5t10x-57z6f6_n655` (from `metadata.verification`) and `bY09F9IpVk_dzOagZu5xAzZwH9U-Io3IeuBeaBkfG0g` (hardcoded in `layout.jsx`'s `<head>`). One belongs to the old property. Delete the stale one after checking which.
 
-One of these belongs to the old property. Delete the stale one once you've confirmed which.
+**4. Decide about the ~28,500 deleted names.** If any of them had traffic, restore them — that is 28,500 pages of lost index. If they were junk, leave them: they 404 cleanly and will drop out. Do not redirect them to the homepage; that creates soft-404s, which is worse.
 
-**4. Decide what to do about Italian.**
-All 353 records are empty stubs — no meaning, no gender, no body. Nothing links to them now, so they 404 cleanly and will drop out of Google. Either fill the data (352 genuinely indexable pages) or remove the Italian section, because the homepage currently advertises *"352 names → Italian Names"* and links to `/names/italian`, which is a hub with no children.
+**5. Decide about Italian.** 352 empty stubs, nothing links to them now, they 404 cleanly. Either fill the data or remove the section — the homepage currently advertises *"352 names → Italian Names"* pointing at a hub with no children.
 
-**5. Fix the homepage's inaccurate claims** (`app/page.jsx`) — these are trust signals and they are wrong:
-- *"13,801 Indexable Pages"* → the real figure is 11,499.
-- *"Zero Soft-404s"* → until this change the site was serving hundreds of 404s.
-- *"instantaneous incremental static regeneration"* → ISR was deliberately removed; output is static at build time.
+**6. Expect it to take a few more weeks.** Watch *Pages → Why pages aren't indexed* on `nameverse.site`. With Change of Address live and a clean sitemap, the number should start climbing within days — but "crawled" precedes "indexed", and 11,600 URLs does not happen overnight.
 
-**6. Resubmit the sitemap** at `https://nameverse.site/sitemap.xml` in the new property, then watch *Pages → Why pages aren't indexed* for two weeks. The count should start moving within days of the 301s + Change of Address going live, not before.
+**7. Optional:** set `LEGACY_HOSTS=nameverse.vercel.app` in Vercel → Environment Variables. Not required — `middleware.js` already covers all `*.vercel.app` — but it makes the intent explicit.

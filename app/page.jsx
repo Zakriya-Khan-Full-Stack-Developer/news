@@ -116,11 +116,15 @@ const latestArticles = [
   },
 ];
 
+// FIX — this answer claimed "over 42,000 baby names". The dataset is 13,801
+// records; the 42,310 figure came from the old manifest that advertised ~28,500
+// URLs which 404'd. Removed the number rather than restating it, so it cannot
+// drift out of date again.
 const faqs = [
   {
     question: 'How does the NameVerse instant autosearch work?',
     answer:
-      'Our instant search engine dynamically indexes over 42,000 baby names across Islamic, Christian, Hindu, and Italian traditions. As you type in the search bar, it immediately analyzes spelling, etymological root, meaning, and origin, presenting instant suggestions, gender badges, and quick links directly to full profiles without requiring page reloads.',
+      'Our instant search engine indexes the full NameVerse collection across Islamic, Christian, Hindu, and Italian traditions. As you type in the search bar, it immediately analyzes spelling, etymological root, meaning, and origin, presenting instant suggestions, gender badges, and quick links directly to full profiles without requiring page reloads.',
   },
   {
     question: 'How do I search for baby names by specific meaning on NameVerse?',
@@ -154,6 +158,15 @@ export default function HomePage() {
   const religions = ['islamic', 'christian', 'hindu', 'italian'];
   const counts = Object.fromEntries(religions.map((r) => [r, (manifest[r] || []).length]));
   const totalNames = religions.reduce((sum, r) => sum + counts[r], 0);
+  // FIX — the "Indexable Pages" stat below was showing totalNames. The real
+  // indexable count is lower: records that are negative-assertion stubs, and
+  // duplicates consolidated onto a canonical page, are deliberately not
+  // indexable. Publishing a number that does not match what the sitemap
+  // actually contains is the same category of error as the 42,000 claim.
+  const indexableNames = religions.reduce(
+    (sum, r) => sum + (manifest[r] || []).filter((i) => i.indexable).length,
+    0
+  );
 
   const genderHubs = GENDER_HUB_DEFS.map((d) => ({
     ...d,
@@ -235,7 +248,7 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <span className="font-display text-2xl font-bold text-christian sm:text-3xl">
-                {Object.values(counts).reduce((s, c) => s + c, 0).toLocaleString()}
+                {indexableNames.toLocaleString()}
               </span>
               <span className="mt-0.5 block text-xs font-semibold text-nv-text-muted">Indexable Pages</span>
             </div>
@@ -509,9 +522,10 @@ export default function HomePage() {
               <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-500 text-white font-bold">
                 ⚡
               </div>
-              <h4 className="font-display text-base font-bold text-nv-text">Zero Soft-404s</h4>
+              <h4 className="font-display text-base font-bold text-nv-text">Stable, Crawlable URLs</h4>
               <p className="mt-1.5 text-xs text-nv-text-secondary leading-relaxed">
-                Clean Google Search crawlability, strict canonical tags, and instantaneous incremental static regeneration.
+                Every name page is prerendered at build time, self-canonicalised and linked from
+                a sitemap that lists only URLs that actually exist.
               </p>
             </div>
           </div>
