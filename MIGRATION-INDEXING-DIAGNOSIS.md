@@ -185,18 +185,54 @@ On the **`nameverse.vercel.app`** property: Settings → Change of Address → s
 
 ---
 
-## What I still can't confirm from the repo
+## ⭐ The original cause: Vercel paused your site
 
-You said the new domain was not indexing **three months ago, before** the dataset was cut. If so, the two things above — the letter-URL change and the data loss — are recent amplifiers, not the original cause. Two candidates fit "broken from day one", and both need your side to confirm:
+This is the one that explains "not indexing from day one", and it is written down in this repository. From `scripts/verify-static.mjs`:
 
-**A. The site was exhausting its Vercel compute allowance and failing to serve.**
-`lib/data/names-data.js` documents this in its own comments: the detail route used to set `dynamicParams = true` and prerender only 4,000 names, leaving ~9,800 to render **on demand** at ~60 ms CPU each. It states this *"consumed 12h 15m of Fluid Active CPU against a 4h allowance in half a day."*
+> "**The site was paused on Vercel because Fluid Active CPU hit 12h 15m against a 4h allowance.** The cause was a single line: the name detail route declared `dynamicParams = true` and prerendered only the top 4,000 names, so ~9,800 indexable pages were rendered on demand — each one re-running the full normalise + enrich + compose pipeline."
 
-If that was happening during the first weeks after the move, pages were being throttled or erroring, Google's crawler was hitting failures, and it backs off hard from a host that returns errors — and a *new* domain that returns errors loses crawl trust very quickly and recovers slowly. If this was fixed only recently, that alone would explain "nothing indexed for three months".
+And from `lib/data/names-data.js`: on-demand renders cost *"60 ms of CPU for a cold render"*, and *"a single crawler walking the sitemap could trigger thousands of them."*
 
-Check: Vercel → Project → Usage / Logs for August–September. Look for spend-cap or Fluid Active CPU warnings, or elevated 5xx.
+You confirmed you hit Vercel usage limits in August–September. Here is the full chain:
 
-**B. The new property never had a sitemap submitted, and Change of Address was never used.**
-Without either, Google's only way to find `nameverse.site` pages is to re-crawl 14,000 old URLs one at a time at the default rate — slow enough that three months of near-zero growth is entirely possible. Change of Address is the thing that raises the priority of that re-crawl.
+1. **3 months ago** you set `nameverse.site` as the production domain. Vercel starts 301ing `nameverse.vercel.app` → `nameverse.site`.
+2. Google begins re-crawling the **14,000 indexed old URLs** and following each one to the new host.
+3. Most of those pages were **not prerendered** — only 4,000 were. Each arriving request rendered the page from scratch at ~60 ms CPU.
+4. Fluid Active CPU hit **12h 15m against a 4h allowance**. Vercel **paused the site**.
+5. Google's crawler hits a paused/erroring host. It backs off hard, and a *brand new* domain that returns errors loses crawl trust very fast and recovers slowly.
+6. `nameverse.site` freezes at ~400. `nameverse.vercel.app` keeps its 14,000, because Google never successfully completed the transfer.
 
-Either way, the fixes already shipped (clean sitemap, no 404s, legacy redirects, static output) are prerequisites — they make it possible for Google to index the site *once it comes back and looks*. They just can't retroactively fix a period when the site was erroring or undiscoverable.
+Everything else on this page is a secondary amplifier — real, and now fixed, but not what broke it at the start:
+
+- the sitemap you submitted was misleading (941 URLs serving `noindex`, a 404 child sitemap, fabricated `lastmod`)
+- the legacy `/names/islamic/c` letter URLs redirected into 404s
+- ~28,500 names are gone from the dataset
+
+### Why the timing matters
+
+The fix — `dynamicParams = false`, every page prerendered at build time — is in `HEAD`, and `HEAD` is what is deployed (the live sitemap's build timestamp matches the HEAD commit). **So the site only became reliably servable on 10 Oct, three days ago.**
+
+That is good news: it means the last three months are not a mystery and not permanent damage. It also means **you should not expect results yet** — Google has barely seen a healthy `nameverse.site`.
+
+### The important consequence
+
+The traffic that broke the site is now essentially **free**. The migration sends Google to ~14,000 URLs; before, each one cost ~60 ms of server CPU, and the site collapsed under it. Now every one of them is a static file served from Vercel's CDN edge at **zero** Active CPU:
+
+```
+prerendered routes:      12,617
+routes with ISR:              0
+dynamic (ƒ) routes:           0
+```
+
+Google can re-crawl all 14,000 without touching your allowance. The thing that broke the migration cannot break it again — `verify-static.mjs` runs on every build and fails it if a dynamic route ever comes back.
+
+---
+
+## What to do now
+
+1. **Confirm Vercel usage is healthy.** Vercel → Project → Usage. With everything static, Active CPU should now be near zero even under a full crawl. Do this before anything else — if it is still climbing, nothing below will work.
+2. **GSC → Change of Address** on the `nameverse.vercel.app` property → `nameverse.site`. This raises the priority of re-crawling the old host. Highest-value click remaining.
+3. **Resubmit `https://nameverse.site/sitemap.xml`.** It is clean now: 11,624 URLs, every one verified 200 + `index,follow` + self-canonical, no `noindex` contradictions, no 404 children, no redirects, no fake `lastmod`.
+4. **Request indexing on 10–20 key pages** (homepage, the four tradition hubs, a few high-value names). Google processes these within days and it re-establishes that the host is alive.
+5. **Check GSC → Indexing → Pages → "Not found".** That lists every old URL that redirected into a 404. The letter-page shape is the pattern I could confirm from outside; there may be others.
+6. **Give it 2–4 weeks.** Crawl trust after a host that errored rebuilds slowly. Watch *Pages → Why pages aren't indexed* — "crawled" precedes "indexed".
