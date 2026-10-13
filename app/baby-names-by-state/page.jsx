@@ -227,7 +227,7 @@ export default function BabyNamesByStatePage() {
             { href: '/top-baby-names-2026', label: 'Top baby names 2026', note: 'Boys and girls' },
             { href: '/unique-baby-names', label: 'Unique baby names', note: 'Outside the top 100' },
             { href: '/vintage-baby-names', label: 'Vintage baby names', note: 'Classics returning' },
-            { href: '/names', label: 'All 13,801 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
             { href: '/names-by-origin', label: 'Names by origin', note: 'Browse by language' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">

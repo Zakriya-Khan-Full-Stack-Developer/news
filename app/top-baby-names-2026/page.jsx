@@ -87,7 +87,7 @@ export default function TopBabyNames2026Page() {
             Find the name that fits your family
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-nv-text-secondary">
-            Filter 13,801 names by tradition, gender, origin and meaning \u2014 or start from a curated
+            Filter 11,632 names by tradition, gender, origin and meaning \u2014 or start from a curated
             shortlist.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">

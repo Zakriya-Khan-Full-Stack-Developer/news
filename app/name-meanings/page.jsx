@@ -6,7 +6,7 @@ import AdSlot from '../../components/AdSlot.jsx';
 export const metadata = {
   title: 'Baby Name Meanings — 100 Names Explained',
   description:
-    'Discover 100 beautiful baby names and their verified meanings, origins and lucky numbers — hand-picked from 13,801 names across four traditions.',
+    'Discover 100 beautiful baby names and their verified meanings, origins and lucky numbers — hand-picked from 11,632 names across three traditions.',
   alternates: {
     canonical: 'https://nameverse.site/name-meanings',
   },
@@ -32,7 +32,7 @@ export default function NameMeaningsPage() {
             Baby Name Meanings
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-nv-text-secondary">
-            100 beautiful names from Islamic, Christian, Hindu and Italian traditions — with verified meanings on every entry.
+            100 beautiful names from Islamic, Christian and Hindu traditions — with verified meanings on every entry.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Link href="/names-by-meaning" className="btn-ghost">

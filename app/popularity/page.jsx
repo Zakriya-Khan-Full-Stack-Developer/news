@@ -6,7 +6,7 @@ import AdSlot from '../../components/AdSlot.jsx';
 export const metadata = {
   title: 'Baby Name Popularity Comparison Tool',
   description:
-    'Compare any two baby names side by side with the NameVerse popularity score. Plus the 50 most popular names of 2026 across Islamic, Christian, Hindu and Italian traditions.',
+    'Compare any two baby names side by side with the NameVerse popularity score. Plus the 50 most popular names of 2026 across Islamic, Christian and Hindu traditions.',
   alternates: {
     canonical: 'https://nameverse.site/popularity',
   },
@@ -32,7 +32,7 @@ export default function PopularityPage() {
             Compare Baby Name Popularity
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-nv-text-secondary">
-            Search 13,801 names, add your shortlist, and see how they rank against each other on the NameVerse popularity scale.
+            Search 11,632 names, add your shortlist, and see how they rank against each other on the NameVerse popularity scale.
           </p>
         </header>
 

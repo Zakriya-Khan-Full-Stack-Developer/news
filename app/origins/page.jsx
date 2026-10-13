@@ -6,7 +6,7 @@ import AdSlot from '../../components/AdSlot.jsx';
 export const metadata = {
   title: 'Baby Names by Origin — Arabic, Biblical, Sanskrit',
   description:
-    'Browse 13,801 baby names grouped by linguistic and cultural origin: Arabic, Biblical, Sanskrit, Hindu, Italian, Persian, Tamil and more, with verified meanings.',
+    'Browse 11,632 baby names grouped by linguistic and cultural origin: Arabic, Biblical, Sanskrit, Hindu, Italian, Persian, Tamil and more, with verified meanings.',
   alternates: {
     canonical: 'https://nameverse.site/origins',
   },

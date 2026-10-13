@@ -1,10 +1,19 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getManifest, normalizeReligion } from '../../../../../lib/data/names-data.js';
-import { ALL_RELIGIONS, ALL_LETTERS, lettersFor } from '../../../../../lib/data/letter-browser.js';
+import {
+  ALL_RELIGIONS,
+  ALL_LETTERS,
+  LETTER_PAGE_SIZE,
+  letterPageCount,
+  lettersFor,
+  namesForLetter,
+  parseLetterParam,
+} from '../../../../../lib/data/letter-browser.js';
 import { isBoy, isGirl, religionLabel } from '../../../../../lib/data/name-utils.js';
 import AlphabetNav from '../../../../../components/AlphabetNav.jsx';
 import NameCard from '../../../../../components/NameCard.jsx';
+import LetterPagination from '../../../../../components/LetterPagination.jsx';
 import AdSlot from '../../../../../components/AdSlot.jsx';
 
 // FIX — Fluid Active CPU: every letter hub that has names is prerendered by
@@ -37,18 +46,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const finalReligion = normalizeReligion(params.religion);
   if (!finalReligion) return {};
-  const rawLetter = decodeURIComponent(params.letter || '');
-  const letter = rawLetter === '%23' || rawLetter === '#' ? '#' : rawLetter.toLowerCase();
+  const letter = parseLetterParam(params.letter);
   const relLabel = religionLabel(finalReligion);
   const letterDisplay = letter === '#' ? 'Other / Special' : letter.toUpperCase();
   const letterUrlSegment = letter === '#' ? '%23' : letter;
 
   const manifest = getManifest();
-  const count = (manifest[finalReligion] || []).filter((item) => {
-    if (!item.name) return false;
-    const firstChar = item.name.trim().charAt(0).toLowerCase();
-    return letter === '#' ? !/^[a-z]$/.test(firstChar) : firstChar === letter;
-  }).length;
+  const count = namesForLetter(finalReligion, letter, manifest).length;
 
   return {
     title: `"${letterDisplay}" ${relLabel} Baby Names & Meanings (${count})`,
@@ -63,8 +67,7 @@ export default function LetterBrowsePage({ params }) {
   const finalReligion = normalizeReligion(params.religion);
   if (!finalReligion) notFound();
 
-  const rawLetter = decodeURIComponent(params.letter || '');
-  const letter = rawLetter === '%23' || rawLetter === '#' ? '#' : rawLetter.toLowerCase();
+  const letter = parseLetterParam(params.letter);
   const relLabel = religionLabel(finalReligion);
   const letterDisplay = letter === '#' ? 'Other / Special' : letter.toUpperCase();
   const letterUrlSegment = letter === '#' ? '%23' : letter;
@@ -73,21 +76,18 @@ export default function LetterBrowsePage({ params }) {
   const manifest = getManifest();
   const availableLetters = lettersFor(finalReligion, manifest);
 
-  const names = (manifest[finalReligion] || [])
-    .filter((item) => {
-      if (!item.name) return false;
-      const firstChar = item.name.trim().charAt(0).toLowerCase();
-      return letter === '#' ? !/^[a-z]$/.test(firstChar) : firstChar === letter;
-    })
-    .sort((a, b) => (b.popularity_score || 0) - (a.popularity_score || 0));
+  const names = namesForLetter(finalReligion, letter, manifest);
 
   if (names.length === 0 && !availableLetters.has(letter)) {
     notFound();
   }
 
-  // To prevent the 1.6MB mobile crash identified in the audit while maintaining fast crawlability,
-  // we display the top 300 names and provide instant search links for the full collection
-  const topNames = names.slice(0, 300);
+  // Page 1 of the hub. The 300-per-page cap stays — a single page holding all
+  // 975 "a" names was heavy enough to crash mobile browsers — but instead of
+  // truncating and orphaning the rest, the remainder now lives on
+  // /page/2 … /page/N and is linked from the pager below.
+  const pageCount = letterPageCount(finalReligion, letter, manifest);
+  const topNames = names.slice(0, LETTER_PAGE_SIZE);
   const boyCount = names.filter(isBoy).length;
   const girlCount = names.filter(isGirl).length;
 
@@ -182,17 +182,12 @@ export default function LetterBrowsePage({ params }) {
           ))}
         </div>
 
-        {names.length > 300 && (
-          <p className="mt-10 text-center text-sm text-nv-text-secondary">
-            Showing top 300 of {names.length.toLocaleString()} names.{' '}
-            <Link
-              href={`/search?religion=${finalReligion}&q=${letterDisplay.toLowerCase()}&sort=popularity`}
-              className="font-semibold text-nv-accent hover:underline"
-            >
-              Search all {names.length.toLocaleString()} &rarr;
-            </Link>
-          </p>
-        )}
+        <LetterPagination
+          religion={finalReligion}
+          letter={letter}
+          currentPage={1}
+          pageCount={pageCount}
+        />
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import AdSlot from '../../components/AdSlot.jsx';
 export const metadata = {
   title: 'Trending Baby Names of 2026 — Most Searched Right Now',
   description:
-    'Discover the baby names trending in 2026 across Islamic, Hindu, Christian and Italian traditions — ranked by live popularity score with meanings and origins.',
+    'Discover the baby names trending in 2026 across Islamic, Christian and Hindu traditions — ranked by live popularity score with meanings and origins.',
   alternates: {
     canonical: 'https://nameverse.site/trending-names',
   },

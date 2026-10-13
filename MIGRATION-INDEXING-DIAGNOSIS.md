@@ -50,7 +50,7 @@ That is the whole mechanism. A redirect that ends at a 404 transfers nothing: th
 
 ### Second factor: ~28,500 names are gone from the dataset
 
-The site used to advertise **42,310 names**. It now has **13,801**. The names on the old indexed page prove the content itself was replaced, not just the URLs:
+The site used to advertise **42,310 names**. It now has **11,632**. The names on the old indexed page prove the content itself was replaced, not just the URLs:
 
 ```
 caamira     GONE
@@ -66,7 +66,7 @@ Any old URL pointing at a removed name can never transfer, no matter how good th
 
 ### Third factor: the site may have been failing to serve pages at all
 
-The site used to advertise **42,310 names**. It now has **13,801**. `scripts/generate-manifest.mjs` says so in its own comments:
+The site used to advertise **42,310 names**. It now has **11,632**. `scripts/generate-manifest.mjs` says so in its own comments:
 
 > "The committed manifest advertised 42,310 names while only 13,802 JSON files existed on disk. The sitemaps are generated from the manifest, so they published ~28,508 URLs that 404."
 
@@ -74,10 +74,10 @@ The stale numbers are still baked into the UI, which is how the scale of the col
 
 | Where | Claimed | Actual |
 |---|---|---|
-| `app/not-found.jsx` search box | "Search 13,801 baby names" | 13,801 |
+| `app/not-found.jsx` search box | "Search 11,632 baby names" | 11,632 |
 | `app/not-found.jsx` tradition tiles | Islamic 18k / Christian 12k / Hindu 10k | 5,180 / 4,136 / 4,133 |
-| `app/page.jsx` FAQ | "indexes over 42,000 baby names" | 13,801 |
-| `app/page.jsx` "Indexable Pages" | 13,801 | 11,499 |
+| `app/page.jsx` FAQ | "indexes over 42,000 baby names" | 11,632 |
+| `app/page.jsx` "Indexable Pages" | 11,632 | 11,499 |
 
 Google had ~14,000 pages indexed on `nameverse.vercel.app` from that larger era. Those URLs now 301 to `nameverse.site`, and **a large fraction of them land on pages that no longer exist**. A redirect to a 404 transfers nothing — Google just drops the URL. So the 14k can never fully arrive at the new domain.
 
@@ -96,7 +96,7 @@ That is ~23,000 fetches, and **crawl rate is per-host** — `nameverse.site` sta
 
 The sitemap is how Google skips that whole re-crawl loop and goes straight to the live URLs. This one was actively untrustworthy:
 
-- **941 URLs were in the sitemap while the page served `noindex, follow`.** `generate-manifest.mjs` judged the **raw** record; `app/names/[religion]/[slug]/page.jsx` judged the **enriched** record. They disagreed on 1,919 of 13,801 records. GSC reports this as *"Submitted URL marked 'noindex'"* — the site was asking Google to index URLs it was simultaneously telling Google not to index.
+- **941 URLs were in the sitemap while the page served `noindex, follow`.** `generate-manifest.mjs` judged the **raw** record; `app/names/[religion]/[slug]/page.jsx` judged the **enriched** record. They disagreed on 1,919 of 11,632 records. GSC reports this as *"Submitted URL marked 'noindex'"* — the site was asking Google to index URLs it was simultaneously telling Google not to index.
 - **`/sitemap/italian.xml` was advertised in the sitemap index and returned 404** (`Math.ceil(0/5000) || 1` evaluates to `1`).
 - **`/unique-names` was in the sitemap and 308-redirects** to `/unique-baby-names`.
 - **Every `lastmod` was the build timestamp** — all ~12,500 URLs claiming to change at the same second on every deploy. Google discounts a `lastmod` it can see is synthetic, and with everything "new" every deploy, nothing is prioritised.
@@ -120,7 +120,7 @@ A crawler that lands on your homepage and immediately hits a 404 is about the wo
 
 ### 1. Honest numbers everywhere (the 42,000-era leftovers)
 - `app/not-found.jsx`: tradition counts and the search placeholder now read from the manifest. This page is the most-crawled page on the site right now, because thousands of deleted URLs resolve to it — and it was telling Google the site had 42,000 names.
-- `app/page.jsx`: dropped the "42,000 names" FAQ answer; "Indexable Pages" now shows the real 11,499 instead of 13,801; replaced the false *"Zero Soft-404s … instantaneous incremental static regeneration"* claim (ISR was deliberately removed) with something true.
+- `app/page.jsx`: dropped the "42,000 names" FAQ answer; "Indexable Pages" now shows the real 11,499 instead of 11,632; replaced the false *"Zero Soft-404s … instantaneous incremental static regeneration"* claim (ISR was deliberately removed) with something true.
 
 ### 2. Sitemap no longer contradicts the pages it points at
 - `generate-manifest.mjs`: `indexable` is now decided by the exact pipeline the page uses — `normalizeNameRecord → enrichNameProfile → isIndexableRecord`. **941 self-contradicting URLs → 0.**

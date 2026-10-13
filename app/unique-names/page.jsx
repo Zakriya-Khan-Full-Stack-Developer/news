@@ -6,7 +6,7 @@ import AdSlot from '../../components/AdSlot.jsx';
 export const metadata = {
   title: 'Unique & Rare Baby Names — 100 Distinctive Picks',
   description:
-    'Discover 100 unique and rare baby names from Islamic, Hindu, Christian and Italian traditions — beautiful, meaningful and unlikely to be shared at school.',
+    'Discover 100 unique and rare baby names from Islamic, Christian and Hindu traditions — beautiful, meaningful and unlikely to be shared at school.',
   alternates: {
     canonical: 'https://nameverse.site/unique-names',
   },

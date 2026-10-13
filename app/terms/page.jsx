@@ -21,7 +21,7 @@ const sections = [
   },
   {
     title: '3. No warranties',
-    body: 'Content is provided "as is". We work hard for accuracy across 13,801 entries but cannot guarantee that every meaning, origin or pronunciation is complete or authoritative.',
+    body: 'Content is provided "as is". We work hard for accuracy across 11,632 entries but cannot guarantee that every meaning, origin or pronunciation is complete or authoritative.',
   },
   {
     title: '4. Acceptable use',

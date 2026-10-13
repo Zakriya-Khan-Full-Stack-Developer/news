@@ -189,7 +189,7 @@ export default function VintageBabyNamesPage() {
             { href: '/nature-baby-names', label: 'Nature baby names', note: 'Botanical and celestial' },
             { href: '/short-baby-names', label: 'Short baby names', note: 'One and two syllables' },
             { href: '/top-baby-names-2026', label: 'Top names 2026', note: 'Current rankings' },
-            { href: '/names', label: 'All 13,801 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>

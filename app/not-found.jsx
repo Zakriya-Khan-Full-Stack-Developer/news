@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { getManifest } from '../lib/data/names-data.js';
 
 // FIX — these counts were hardcoded in the era when the manifest advertised
-// 42,310 names. The dataset is now 13,801 records, so the 404 page was telling
+// 42,310 names. The dataset is now 11,632 records, so the 404 page was telling
 // users and crawlers that ~28,500 names exist which do not. During a migration
 // that matters a great deal: thousands of removed URLs now resolve to this
 // page, so it is the single most-crawled page on the site, and it was

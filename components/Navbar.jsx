@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { HeaderLogo } from './Logo.jsx';
 
-// Counts are the REAL manifest counts (13,801 total). The previous hardcoded
+// Counts are the REAL manifest counts (11,632 total). The previous hardcoded
 // figures (18,800+ / 12,300+ / 10,700+) overstated the dataset by 3x, which is
 // both a trust problem and a mismatch against the sitemap.
 const TRADITIONS = [
@@ -183,7 +183,7 @@ export default function Navbar() {
                       Naming Traditions
                     </span>
                     <Link href="/names" className="text-xs font-semibold text-nv-accent hover:underline">
-                      All 13,801 &rarr;
+                      All 11,632 &rarr;
                     </Link>
                   </div>
                   <div className="grid gap-2">
@@ -347,7 +347,7 @@ export default function Navbar() {
               </div>
 
               <Link href="/search" className="btn-primary w-full">
-                Search all 13,801 names
+                Search all 11,632 names
               </Link>
             </div>
           </div>

@@ -5,7 +5,7 @@ import AdSlot from '../../components/AdSlot.jsx';
 export const metadata = {
   title: 'Advanced Baby Name Search — Filter by Gender',
   description:
-    'Advanced baby name search with multi-filters: combine religion, gender, origin, category and popularity across 13,801 Islamic, Hindu, Christian and Italian names.',
+    'Advanced baby name search with multi-filters: combine religion, gender, origin, category and popularity across 11,632 Islamic, Christian and Hindu names.',
   robots: {
     index: false,
     follow: true,

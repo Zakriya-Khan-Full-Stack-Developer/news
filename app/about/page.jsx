@@ -48,7 +48,7 @@ export default function AboutPage() {
             <h2 className="font-display text-xl font-bold text-nv-text">Our Mission</h2>
             <p className="mt-3 text-sm leading-relaxed text-nv-text-secondary sm:text-base">
               A name carries meaning, heritage and identity. We built NameVerse so parents can search
-              13,801 names across Islamic, Hindu, Christian and Italian traditions with verified
+              11,632 names across Islamic, Christian and Hindu traditions with verified
               meanings, origins, pronunciation guidance and cultural context — all in one fast,
               free, mobile-friendly place.
             </p>

@@ -62,8 +62,8 @@ export default function Footer() {
               A Cultural Name Anthology, Not a Name Generator
             </h2>
             <p className="mt-1 text-xs text-nv-text-secondary">
-              13,801 baby names documented with etymological roots, original script forms,
-              pronunciation and cultural context across four traditions.
+              11,632 baby names documented with etymological roots, original script forms,
+              pronunciation and cultural context across three traditions.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3">
@@ -83,12 +83,12 @@ export default function Footer() {
             <FooterLogo />
             <p className="text-sm leading-relaxed text-nv-text-secondary">
               NameVerse helps parents worldwide find baby names of genuine cultural and
-              spiritual significance across Islamic, Christian, Hindu and Italian traditions.
+              spiritual significance across Islamic, Christian and Hindu traditions.
               Every entry is documented with its origin, script forms and meaning.
             </p>
             <div className="flex items-center gap-2 text-xs font-semibold text-nv-success">
               <span className="flex h-2 w-2 rounded-full bg-nv-success" />
-              <span>13,801 names indexed &bull; zero soft-404s</span>
+              <span>11,632 names indexed &bull; zero soft-404s</span>
             </div>
           </div>
 

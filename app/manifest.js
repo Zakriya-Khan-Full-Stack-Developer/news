@@ -17,7 +17,7 @@ export default function manifest() {
     name: 'NameVerse — Baby Names with Meanings, Origins & Cultural Context',
     short_name: 'NameVerse',
     description:
-      'Search baby names with verified meanings, origins, pronunciation, script forms and cultural context across Islamic, Christian, Hindu and Italian traditions.',
+      'Search baby names with verified meanings, origins, pronunciation, script forms and cultural context across Islamic, Christian and Hindu traditions.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

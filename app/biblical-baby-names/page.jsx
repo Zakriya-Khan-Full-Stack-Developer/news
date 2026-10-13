@@ -163,7 +163,7 @@ export default function BiblicalBabyNamesPage() {
             { href: '/unique-baby-names', label: 'Unique baby names', note: 'Outside the top 100' },
             { href: '/top-baby-names-2026', label: 'Top names 2026', note: 'Current rankings' },
             { href: '/categories/biblical', label: 'Biblical category', note: 'Full category hub' },
-            { href: '/names', label: 'All 13,801 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>

@@ -5,7 +5,7 @@ import AdSlot from '../../components/AdSlot.jsx';
 export const metadata = {
   title: 'Baby Names by Meaning — Light, Love, Strength',
   description:
-    'Browse 13,801 baby names by meaning: light, love, strength, peace, gift, beautiful and more. Find the perfect meaningful name for your baby.',
+    'Browse 11,632 baby names by meaning: light, love, strength, peace, gift, beautiful and more. Find the perfect meaningful name for your baby.',
   alternates: {
     canonical: 'https://nameverse.site/names-by-meaning',
   },

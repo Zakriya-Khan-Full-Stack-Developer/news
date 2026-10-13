@@ -1,6 +1,6 @@
 import { getManifest, getBlogPosts } from '../../../lib/data/names-data.js';
-import { ORIGIN_SLUGS, CATEGORY_SLUGS } from '../../../lib/data/name-utils.js';
-import { ALL_RELIGIONS, ALL_LETTERS, lettersFor } from '../../../lib/data/letter-browser.js';
+import { ORIGIN_SLUGS, CATEGORY_SLUGS, categorySlugFor, originSlugFor } from '../../../lib/data/name-utils.js';
+import { ALL_LETTERS, lettersFor, letterPageCount } from '../../../lib/data/letter-browser.js';
 
 // Prerender every sitemap chunk at build time so this route is static (○),
 // not server-rendered on demand (ƒ). Without this, each crawler hit on a
@@ -77,8 +77,18 @@ export async function GET(request, { params }) {
     urls.push(`${siteUrl}/short-baby-names`);
     urls.push(`${siteUrl}/editorial-policy`);
 
+    // FIX — the name-detail sitemaps below already skip a tradition with zero
+    // indexable records, but the hub list did not. /names/italian ships 352
+    // records and not one of them has content, so the sitemap was advertising a
+    // page that reads "352 names · 0 boys · 0 girls" and whose every card is an
+    // unlinkable "soon" stub. Only list hubs for traditions that publish
+    // something.
+    const publishableReligions = ['islamic', 'christian', 'hindu', 'italian'].filter(
+      (rel) => (manifest[rel] || []).filter((i) => i.indexable).length > 0,
+    );
+
     // Tradition hubs
-    for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {
+    for (const rel of publishableReligions) {
       urls.push(`${siteUrl}/names/${rel}`);
     }
 
@@ -92,27 +102,46 @@ export async function GET(request, { params }) {
       'hindu-girl-names',
       'italian-boy-names',
       'italian-girl-names',
-    ];
+    ].filter((gh) => publishableReligions.some((rel) => gh.startsWith(rel)));
     for (const gh of genderHubs) {
       urls.push(`${siteUrl}/${gh}`);
     }
 
+    // Origin and category hubs. Same rule as the tradition hubs: a hub whose
+    // every entry is a content-free stub has nothing for a visitor or a
+    // crawler, so it does not belong in the sitemap. /categories/islamic
+    // renders "0 names" and /origins/italian renders 352 names of which none is
+    // linkable — both were being submitted as real pages.
+    const publishableCount = (pred) =>
+      ['islamic', 'christian', 'hindu', 'italian'].reduce(
+        (sum, rel) => sum + (manifest[rel] || []).filter((i) => i.indexable && pred(i)).length,
+        0,
+      );
+
     // Origin hubs
     for (const o of ORIGIN_SLUGS) {
+      if (publishableCount((i) => originSlugFor(i.origin) === o) === 0) continue;
       urls.push(`${siteUrl}/origins/${o}`);
     }
 
     // Category hubs
     for (const c of CATEGORY_SLUGS) {
+      if (publishableCount((i) => categorySlugFor(i.category) === c) === 0) continue;
       urls.push(`${siteUrl}/categories/${c}`);
     }
 
-    // Letter browse hubs
-    for (const rel of ALL_RELIGIONS) {
+    // Letter browse hubs — plus every paginated continuation. The hub used to
+    // cap at 300 names, so anything past that had no crawlable path at all;
+    // listing pages 2..N here is what gives those ~2,700 name pages a route in.
+    for (const rel of publishableReligions) {
       const avail = lettersFor(rel, manifest);
       for (const letter of ALL_LETTERS) {
-        if (avail.has(letter)) {
-          urls.push(`${siteUrl}/names/${rel}/letter/${letter === '#' ? '%23' : letter}`);
+        if (!avail.has(letter)) continue;
+        const segment = letter === '#' ? '%23' : letter;
+        urls.push(`${siteUrl}/names/${rel}/letter/${segment}`);
+        const pageCount = letterPageCount(rel, letter, manifest);
+        for (let page = 2; page <= pageCount; page += 1) {
+          urls.push(`${siteUrl}/names/${rel}/letter/${segment}/page/${page}`);
         }
       }
     }
