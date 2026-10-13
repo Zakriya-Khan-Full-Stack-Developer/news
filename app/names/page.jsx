@@ -6,9 +6,9 @@ import PageJsonLd from '../../components/PageJsonLd.jsx';
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'All Baby Names by Religion — 42,000+ Names & Meanings',
+  title: 'All Baby Names by Religion — 13,801 Names & Meanings',
   description:
-    'Browse 42,000+ baby names by religion: Islamic, Christian, Hindu & Italian names with verified meanings, origins and lucky numbers. Free A–Z browsing.',
+    'Browse 13,801 baby names by religion: Islamic, Christian, Hindu & Italian names with verified meanings, origins and lucky numbers. Free A–Z browsing.',
   alternates: {
     canonical: 'https://nameverse.site/names',
   },
@@ -18,7 +18,7 @@ const namesIndexJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'All Baby Names',
-  description: 'Browse 42,000+ baby names across Islamic, Christian, Hindu, and Italian traditions.',
+  description: 'Browse 13,801 baby names across Islamic, Christian, Hindu, and Italian traditions.',
   url: 'https://nameverse.site/names',
   isPartOf: {
     '@type': 'WebSite',

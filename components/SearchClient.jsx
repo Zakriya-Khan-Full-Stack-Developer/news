@@ -207,7 +207,7 @@ export default function SearchClient({ initialQuery = '', initialReligion = '', 
       <div className="mb-4 flex items-center justify-between px-1">
         <div className="flex items-center gap-2">
           <span className="text-sm font-bold text-nv-text">
-            {loading ? 'Searching 42,000+ names…' : `${results.length} Matches Found`}
+            {loading ? 'Searching 13,801 names…' : `${results.length} Matches Found`}
           </span>
           {results.length >= 200 && (
             <span className="badge border border-nv-border bg-nv-subtle text-nv-text-secondary text-[11px]">

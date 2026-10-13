@@ -4,9 +4,9 @@ import PageJsonLd from '../../components/PageJsonLd.jsx';
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Search 42,000+ Baby Names by Meaning, Origin & Tradition | NameVerse',
+  title: 'Search Baby Names by Meaning & Origin',
   description:
-    'Search 42,000+ baby names by name, meaning, origin, religion, gender or category. Filter results and rank by popularity — free and instant.',
+    'Search 13,801 baby names by name, meaning, origin, religion, gender or category. Filter results and rank by popularity — free and instant.',
   robots: {
     index: false,
     follow: true,
@@ -17,7 +17,7 @@ const searchJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: 'Search Baby Names',
-  description: 'Search 42,000+ baby names by meaning, origin, religion, gender, and popularity.',
+  description: 'Search 13,801 baby names by meaning, origin, religion, gender, and popularity.',
   url: 'https://nameverse.site/search',
   potentialAction: {
     '@type': 'SearchAction',
@@ -37,7 +37,7 @@ export default function SearchPage() {
             Search Baby Names
           </h1>
           <p className="mx-auto mt-3 max-w-2xl text-nv-text-secondary">
-            Search 42,000+ baby names across traditions by keyword, meaning, language or gender.
+            Search 13,801 baby names across traditions by keyword, meaning, language or gender.
           </p>
         </header>
 
@@ -53,7 +53,7 @@ export default function SearchPage() {
           </h2>
           <div className="mt-4 space-y-4 text-sm leading-relaxed text-nv-text-secondary sm:text-base">
             <p>
-              NameVerse indexes every one of its 42,000+ names so you can search the way you actually
+              NameVerse indexes every one of its 13,801 names so you can search the way you actually
               think — by a name you heard, a meaning you love, a language you come from, or a faith
               you follow. Because every record carries its religion, gender, origin, category and
               popularity score, a single search can answer &ldquo;Arabic girl names that mean light&rdquo; as

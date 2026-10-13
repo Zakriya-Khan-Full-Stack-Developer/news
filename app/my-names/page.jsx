@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'My Saved Names | NameVerse',
+  title: 'My Saved Names',
   description: 'Your personal shortlist of baby names.',
   robots: {
     index: false,

@@ -48,12 +48,22 @@ export const metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  applicationName: siteName,
+  authors: [{ name: 'NameVerse', url: siteUrl }],
+  category: 'Parenting',
   twitter: {
-    card: 'summary',
+    // FIX — was 'summary' here while the US cluster pages used
+    // 'summary_large_image', so the same link rendered two completely different
+    // ways depending on which page it pointed at. A shared baby-name page is a
+    // visual, emotional share; the small square thumbnail wastes the slot.
+    // Large image is the right default for every page on this site.
+    card: 'summary_large_image',
     title: 'Baby Names with Meanings, Origins & Lucky Numbers | NameVerse',
     description:
       'Search 13,801 baby names with verified meanings, origins, pronunciation and cultural context.',
-    images: [siteLogo],
+    images: [{ url: siteLogo, width: 512, height: 512, alt: `${siteName} — baby names with meanings` }],
+    site: '@NameVerseOfficial',
+    creator: '@NameVerseOfficial',
   },
   robots: {
     index: true,

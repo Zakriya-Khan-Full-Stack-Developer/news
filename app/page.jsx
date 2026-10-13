@@ -6,7 +6,7 @@ import PageJsonLd from '../components/PageJsonLd.jsx';
 import AdSlot from '../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Baby Names with Meanings, Origins & Cultural Context | NameVerse',
+  title: 'Baby Names with Meanings, Origins & Cultural Context',
   description:
     'Search 13,801 baby names with meanings, origins, pronunciation guides, script forms and cultural context across Islamic, Christian, Hindu and Italian traditions.',
   alternates: {

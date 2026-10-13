@@ -4,7 +4,7 @@ import NameCard from '../../components/NameCard.jsx';
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Unique & Rare Baby Names — 100 Distinctive Picks | NameVerse',
+  title: 'Unique & Rare Baby Names — 100 Distinctive Picks',
   description:
     'Discover 100 unique and rare baby names from Islamic, Hindu, Christian and Italian traditions — beautiful, meaningful and unlikely to be shared at school.',
   alternates: {

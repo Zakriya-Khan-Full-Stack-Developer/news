@@ -9,7 +9,7 @@ const SITE_URL = 'https://nameverse.site';
 const cluster = getCluster('biblical-baby-names');
 const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
-const TITLE = 'Biblical Baby Names for Boys and Girls \u2014 With Meanings';
+const TITLE = 'Biblical Baby Names for Boys & Girls';
 const DESCRIPTION =
   'Biblical baby names for boys and girls with their meanings and origins, drawn from our verified database of scripture-rooted names. Includes Hebrew, Greek and Latin forms.';
 
@@ -21,6 +21,7 @@ export const metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: PAGE_URL,
+    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
     type: 'article',
     locale: 'en_US',
   },

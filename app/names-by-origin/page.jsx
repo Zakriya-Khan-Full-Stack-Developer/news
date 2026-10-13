@@ -4,7 +4,7 @@ import { ORIGIN_SLUGS, ORIGIN_LABELS, originSlugFor } from '../../lib/data/name-
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Baby Names by Origin — Arabic, Biblical, Sanskrit & More | NameVerse',
+  title: 'Baby Names by Origin — Arabic & Biblical',
   description:
     'Browse baby names by linguistic and cultural origin: Arabic, Biblical, Sanskrit, Persian, Tamil, Hindi and more — with verified meanings on every name.',
   alternates: {

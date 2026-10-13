@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { HeaderLogo } from './Logo.jsx';
 
 // Counts are the REAL manifest counts (13,801 total). The previous hardcoded
 // figures (18,800+ / 12,300+ / 10,700+) overstated the dataset by 3x, which is
@@ -136,20 +137,10 @@ export default function Navbar() {
     <>
       <header className="sticky top-0 z-50 border-b border-nv-border/80 bg-nv-surface/90 backdrop-blur-xl transition-colors">
         <div className="container-page flex h-16 items-center justify-between gap-3">
-          {/* Brand */}
-          <Link href="/" className="group flex shrink-0 items-center gap-2.5" aria-label="NameVerse home">
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-nv-primary font-display text-xl font-bold text-white shadow-sm transition-transform group-hover:scale-105">
-              N
-            </span>
-            <span className="flex flex-col leading-none">
-              <span className="font-display text-lg font-bold tracking-tight text-nv-text transition-colors group-hover:text-nv-accent">
-                NameVerse
-              </span>
-              <span className="hidden text-[10px] font-semibold uppercase tracking-[0.14em] text-nv-text-muted sm:block">
-                Baby Names &amp; Meanings
-              </span>
-            </span>
-          </Link>
+          {/* Brand — the real NameVerse mark. It used to be a bare letter "N"
+              in a coloured square; the logo file existed but was rendered
+              nowhere on the site. */}
+          <HeaderLogo />
 
           {/* Desktop nav */}
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">

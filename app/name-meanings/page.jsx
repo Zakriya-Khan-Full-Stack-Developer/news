@@ -4,9 +4,9 @@ import NameCard from '../../components/NameCard.jsx';
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Baby Name Meanings — 100 Beautiful Names & What They Mean | NameVerse',
+  title: 'Baby Name Meanings — 100 Names Explained',
   description:
-    'Discover 100 beautiful baby names and their verified meanings, origins and lucky numbers — hand-picked from 42,000+ names across four traditions.',
+    'Discover 100 beautiful baby names and their verified meanings, origins and lucky numbers — hand-picked from 13,801 names across four traditions.',
   alternates: {
     canonical: 'https://nameverse.site/name-meanings',
   },

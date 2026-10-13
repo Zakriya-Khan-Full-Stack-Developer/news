@@ -34,7 +34,7 @@ export async function generateMetadata({ params }) {
   const count = (manifest[finalReligion] || []).length;
 
   return {
-    title: `${label} Baby Names with Meanings, Origins & Lucky Numbers (${count.toLocaleString()})`,
+    title: `${label} Baby Names \u2014 Meanings & Origins (${count.toLocaleString()})`,
     description: `Browse ${count.toLocaleString()} ${label.toLowerCase()} baby names with verified meanings, origins, gender and lucky numbers. Explore popular ${label.toLowerCase()} names A–Z.`,
     alternates: {
       canonical: `https://nameverse.site/names/${finalReligion}`,

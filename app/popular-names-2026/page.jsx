@@ -26,6 +26,7 @@ export const metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: PAGE_URL,
+    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
     type: 'article',
     locale: 'en_US',
   },

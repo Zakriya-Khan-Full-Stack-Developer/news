@@ -74,7 +74,7 @@ The stale numbers are still baked into the UI, which is how the scale of the col
 
 | Where | Claimed | Actual |
 |---|---|---|
-| `app/not-found.jsx` search box | "Search 42,000+ baby names" | 13,801 |
+| `app/not-found.jsx` search box | "Search 13,801 baby names" | 13,801 |
 | `app/not-found.jsx` tradition tiles | Islamic 18k / Christian 12k / Hindu 10k | 5,180 / 4,136 / 4,133 |
 | `app/page.jsx` FAQ | "indexes over 42,000 baby names" | 13,801 |
 | `app/page.jsx` "Indexable Pages" | 13,801 | 11,499 |

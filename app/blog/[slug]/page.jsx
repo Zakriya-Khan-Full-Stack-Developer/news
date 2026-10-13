@@ -59,10 +59,13 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: post.title,
       description: post.excerpt,
+      url: `https://nameverse.site/blog/${post.id}`,
       type: 'article',
       publishedTime: post.publishDate,
       modifiedTime: post.lastUpdated,
+      images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
     },
+    twitter: { card: 'summary_large_image', title: post.title, description: post.excerpt },
   };
 }
 

@@ -1,7 +1,7 @@
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Terms of Service | NameVerse',
+  title: 'Terms of Service',
   description:
     'NameVerse terms of service: acceptable use, accuracy disclaimer for name meanings, intellectual property and more.',
   robots: {
@@ -21,7 +21,7 @@ const sections = [
   },
   {
     title: '3. No warranties',
-    body: 'Content is provided "as is". We work hard for accuracy across 42,000+ entries but cannot guarantee that every meaning, origin or pronunciation is complete or authoritative.',
+    body: 'Content is provided "as is". We work hard for accuracy across 13,801 entries but cannot guarantee that every meaning, origin or pronunciation is complete or authoritative.',
   },
   {
     title: '4. Acceptable use',

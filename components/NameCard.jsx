@@ -29,7 +29,13 @@ const GENDER_STYLES = {
   unisex: 'border-purple-200 bg-purple-50 text-purple-700 dark:border-purple-800/50 dark:bg-purple-950/50 dark:text-purple-300',
 };
 
-export default function NameCard({ item, showReligion = false, headingTag = 'h3' }) {
+// `headingTag` defaults to a paragraph, not a heading. A listing page can hold
+// 300 of these cards; as <h3> every one of them entered the document outline as
+// a sibling section heading, so /origins/arabic, /islamic-boy-names and the
+// letter hubs each shipped 300+ H3s under a single H2. Google reads that as a
+// page with no discernible structure. The cards are list items, not sections —
+// the H2 above the grid is the heading, and the name is the link text.
+export default function NameCard({ item, showReligion = false, headingTag = 'p' }) {
   if (!item) return null;
 
   const meaning = item.short_meaning || item.meaning || '';

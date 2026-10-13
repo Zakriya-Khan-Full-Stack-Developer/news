@@ -9,7 +9,7 @@ const SITE_URL = 'https://nameverse.site';
 const cluster = getCluster('nature-baby-names');
 const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
-const TITLE = 'Nature Baby Names \u2014 Botanical, Celestial and Earth Names';
+const TITLE = 'Nature Baby Names \u2014 Botanical & Celestial';
 const DESCRIPTION =
   'Nature baby names drawn from plants, trees, weather, landscapes and the night sky, with verified meanings and origins. Includes botanical, celestial and earth-name groups.';
 
@@ -21,6 +21,7 @@ export const metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: PAGE_URL,
+    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
     type: 'article',
     locale: 'en_US',
   },

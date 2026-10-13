@@ -3,9 +3,9 @@ import { getManifest } from '../../lib/data/names-data.js';
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Baby Names by Meaning — Light, Love, Strength, Peace & More | NameVerse',
+  title: 'Baby Names by Meaning — Light, Love, Strength',
   description:
-    'Browse 42,000+ baby names by meaning: light, love, strength, peace, gift, beautiful and more. Find the perfect meaningful name for your baby.',
+    'Browse 13,801 baby names by meaning: light, love, strength, peace, gift, beautiful and more. Find the perfect meaningful name for your baby.',
   alternates: {
     canonical: 'https://nameverse.site/names-by-meaning',
   },
