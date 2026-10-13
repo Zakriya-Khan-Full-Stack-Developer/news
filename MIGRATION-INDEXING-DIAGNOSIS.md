@@ -23,7 +23,48 @@ The redirect is in place and working URL-for-URL. The `middleware.js` I added is
 
 ## So what is actually wrong
 
-### The real cause: ~28,500 pages were deleted at the same time as the move
+### ⭐ The real cause: the letter-browse URLs changed shape, so every redirect lands on a 404
+
+Google still has pages indexed on `nameverse.vercel.app` under the **old** URL shape:
+
+```
+indexed:  https://nameverse.vercel.app/names/islamic/c
+redirect: https://nameverse.site/names/islamic/c   ->   404
+```
+
+The site now serves that page at `/names/islamic/**letter/**c`. So the redirect destination matches the *name-detail* route `/names/[religion]/[slug]`, looks for a name called "c", finds none, and 404s.
+
+**Verified live:** `https://nameverse.site/names/islamic/c` → 404. Verified safe to fix: the dataset contains **zero** single-character name slugs, so a letter redirect cannot shadow a real name page.
+
+That is the whole mechanism. A redirect that ends at a 404 transfers nothing: the old URL is dropped, no new URL is indexed, and `nameverse.site` never accumulates pages. The ~400 pages that *are* indexed are the ones Google found fresh — homepage, hubs, and a slice of the sitemap — not anything that arrived via the migration.
+
+**Fixed** in `next.config.js`:
+
+```js
+{ source: '/names/:religion/:letter([a-z]|%23)',
+  destination: '/names/:religion/letter/:letter',
+  permanent: true }
+```
+
+66 of 108 legacy letter URLs now resolve to 200. The other 42 (e.g. `/names/islamic/z`) still 404 because the current dataset genuinely has no names for those letters — 404 is the correct answer there, and redirecting them somewhere unrelated would just create soft-404s.
+
+### Second factor: ~28,500 names are gone from the dataset
+
+The site used to advertise **42,310 names**. It now has **13,801**. The names on the old indexed page prove the content itself was replaced, not just the URLs:
+
+```
+caamira     GONE
+caferun     GONE
+caftaanun   GONE
+chabuk      GONE
+chadia      present
+```
+
+Any old URL pointing at a removed name can never transfer, no matter how good the redirects are.
+
+**Timeline caveat:** you said the removal was recent and that the new domain was already not indexing three months ago, before the cut. If that is right, then the data loss and the URL-shape change are *recent* amplifiers, not the original cause — see [What I still can't confirm](#what-i-still-cant-confirm-from-the-repo).
+
+### Third factor: the site may have been failing to serve pages at all
 
 The site used to advertise **42,310 names**. It now has **13,801**. `scripts/generate-manifest.mjs` says so in its own comments:
 
@@ -139,3 +180,23 @@ On the **`nameverse.vercel.app`** property: Settings → Change of Address → s
 **6. Expect it to take a few more weeks.** Watch *Pages → Why pages aren't indexed* on `nameverse.site`. With Change of Address live and a clean sitemap, the number should start climbing within days — but "crawled" precedes "indexed", and 11,600 URLs does not happen overnight.
 
 **7. Optional:** set `LEGACY_HOSTS=nameverse.vercel.app` in Vercel → Environment Variables. Not required — `middleware.js` already covers all `*.vercel.app` — but it makes the intent explicit.
+
+**8. Check GSC → Indexing → Pages → "Not found"** on the `nameverse.site` property. That report lists every old URL that redirected into a 404. The letter-page shape is the one pattern I could confirm from the outside, but there may be others (old name-detail URLs, old hub shapes, query-string variants). That report is the definitive list — whatever else shows up there needs either a redirect to a real page, or to be allowed to 404.
+
+---
+
+## What I still can't confirm from the repo
+
+You said the new domain was not indexing **three months ago, before** the dataset was cut. If so, the two things above — the letter-URL change and the data loss — are recent amplifiers, not the original cause. Two candidates fit "broken from day one", and both need your side to confirm:
+
+**A. The site was exhausting its Vercel compute allowance and failing to serve.**
+`lib/data/names-data.js` documents this in its own comments: the detail route used to set `dynamicParams = true` and prerender only 4,000 names, leaving ~9,800 to render **on demand** at ~60 ms CPU each. It states this *"consumed 12h 15m of Fluid Active CPU against a 4h allowance in half a day."*
+
+If that was happening during the first weeks after the move, pages were being throttled or erroring, Google's crawler was hitting failures, and it backs off hard from a host that returns errors — and a *new* domain that returns errors loses crawl trust very quickly and recovers slowly. If this was fixed only recently, that alone would explain "nothing indexed for three months".
+
+Check: Vercel → Project → Usage / Logs for August–September. Look for spend-cap or Fluid Active CPU warnings, or elevated 5xx.
+
+**B. The new property never had a sitemap submitted, and Change of Address was never used.**
+Without either, Google's only way to find `nameverse.site` pages is to re-crawl 14,000 old URLs one at a time at the default rate — slow enough that three months of near-zero growth is entirely possible. Change of Address is the thing that raises the priority of that re-crawl.
+
+Either way, the fixes already shipped (clean sitemap, no 404s, legacy redirects, static output) are prerequisites — they make it possible for Google to index the site *once it comes back and looks*. They just can't retroactively fix a period when the site was erroring or undiscoverable.
