@@ -1,0 +1,126 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# NameVerse on Netlify
+#
+# GOAL: zero serverless invocations, zero edge invocations, minimal bandwidth.
+# Every one of the ~12,600 pages is prerendered HTML served straight from
+# Netlify's CDN, so the only thing Netlify bills for is build minutes and
+# bandwidth. Nothing here can turn into a function call at request time.
+#
+# WHAT THE SITE COSTS AT REQUEST TIME
+#   HTML pages ......... static, served from the CDN edge. No compute.
+#   _next/static ....... immutable, cached for a year.
+#   sitemaps ........... static files, cached for 30 days.
+#   search indexes ..... static JSON, cached.
+#   Functions .......... NONE. `npm run postbuild` fails the build if a
+#                        dynamic route ever appears again.
+#   Edge middleware .... NONE. middleware.js was removed on purpose — see below.
+# ─────────────────────────────────────────────────────────────────────────────
+
+[build]
+  # `npm run build` runs: prebuild (manifest + search index + verifiers),
+  # `next build`, then the static-output safety gate.
+  # `prune` is last — it deletes the 217 MB source dataset from the publish
+  # payload AFTER the HTML has been generated. See scripts/prune-build-assets.mjs.
+  command = "npm run build && npm run prune"
+
+  # No `publish` key: the Essential Next.js plugin sets it.
+
+[build.environment]
+  NODE_VERSION = "20"
+  # Telemetry writes to disk and phones home on every build. Off.
+  NEXT_TELEMETRY_DISABLED = "1"
+  # Cap build workers. Each worker loads the 2.4 MB manifest, so on a many-core
+  # build machine the default worker count multiplies memory use and can OOM.
+  NEXT_BUILD_CPUS = "4"
+  # The two content verifiers cost ~11 s of build time. They are a safety net
+  # for local development, not something to pay for on every deploy — the
+  # static-output gate (verify-static.mjs) still runs and is the one that
+  # protects against the failure mode that actually paused the site.
+  SKIP_CONTENT_VERIFIERS = "1"
+
+[[plugins]]
+  # Official Netlify runtime for Next.js. Handles routing, image optimisation
+  # and cache headers, and publishes the prerendered pages to the CDN.
+  package = "@netlify/plugin-nextjs"
+
+# ── Caching ──────────────────────────────────────────────────────────────────
+# These replace the headers block in vercel.json, which does nothing on Netlify.
+# Aggressive caching is the main bandwidth lever: a returning visitor or a
+# repeat crawler hit costs nothing.
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/nameverse_logo_emblem.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# The search indexes are fetched by the client search components. They are NOT
+# immutable — the filename is reused when the dataset changes — so they get a
+# short browser life and a long CDN life with stale-while-revalidate.
+[[headers]]
+  for = "/names/*/_search-index.json"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, s-maxage=2592000, stale-while-revalidate=86400"
+
+# Sitemaps: long CDN cache, so Google's frequent sitemap polls never touch the
+# origin or count as a fresh asset transfer.
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, s-maxage=2592000, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/sitemap-index.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, s-maxage=2592000, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/sitemap/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, s-maxage=2592000, stale-while-revalidate=86400"
+
+# ── Security headers ─────────────────────────────────────────────────────────
+# Previously duplicated between next.config.js and vercel.json. Defined once
+# here, because Netlify serves the HTML and can add these at the edge for free.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    # Netlify already serves gzip and brotli for text assets.
+    Vary = "Accept-Encoding"
+
+# ── Redirects ────────────────────────────────────────────────────────────────
+# Deliberately almost empty.
+#
+# The legacy letter-browse redirect (/names/islamic/c -> /names/islamic/letter/c)
+# lives in next.config.js, NOT here, because Netlify placeholders cannot be
+# constrained with a regex. A Netlify rule like /names/:religion/:letter would
+# match EVERY name page too and break all 12,600 of them. next.config.js uses
+# path-to-regexp (`([a-z]|%23)`) so it can be matched exactly, and the
+# Essential Next.js plugin honours it.
+#
+# Canonical host (www.*, *.netlify.app, *.vercel.app -> nameverse.site) is
+# handled by Netlify natively: set nameverse.site as the PRIMARY DOMAIN in
+# Site configuration → Domain management. Netlify then 301s every other
+# assigned domain to it at the edge, for free, before any code runs.
+# That is why middleware.js was deleted — an Edge Function running on every
+# single request is exactly the kind of cost this config is trying to avoid.
+
+[[redirects]]
+  from = "/homepage"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+  force = true
