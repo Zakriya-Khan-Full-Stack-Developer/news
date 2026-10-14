@@ -56,7 +56,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `"${letterDisplay}" ${relLabel} Baby Names & Meanings (${count})`,
-    description: `Browse ${count} ${relLabel} baby names starting with "${letterDisplay}" — verified meanings, origins, gender and lucky numbers. Free A–Z browsing.`,
+    description: `Browse ${count} ${relLabel} baby names starting with "${letterDisplay}" — documented meanings, origins, gender and lucky numbers. Free A–Z browsing.`,
     alternates: {
       canonical: `https://nameverse.site/names/${finalReligion}/letter/${letterUrlSegment}`,
     },

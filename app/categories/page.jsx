@@ -6,7 +6,7 @@ import AdSlot from '../../components/AdSlot.jsx';
 export const metadata = {
   title: 'Baby Names by Category — Islamic, Hindu, Biblical',
   description:
-    'Browse 11,632 baby names grouped by category: Islamic, Hindu, Biblical, Saint, Virtue and Italian — each with verified meanings, origins and lucky numbers.',
+    'Browse 11,412 published baby names grouped by category: Islamic, Hindu, Biblical, Saint and Virtue — each with documented meanings, origins and traditional context.',
   alternates: {
     canonical: 'https://nameverse.site/categories',
   },
@@ -16,13 +16,15 @@ export default function CategoriesIndexPage() {
   const manifest = getManifest();
   const categories = CATEGORY_SLUGS.map((slug) => {
     let count = 0;
-    for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {
+    for (const rel of ['islamic', 'christian', 'hindu']) {
       for (const item of manifest[rel] || []) {
-        if (categorySlugFor(item.category) === slug) count++;
+        if (item.indexable && categorySlugFor(item.category) === slug) count++;
       }
     }
     return { slug, label: CATEGORY_LABELS[slug], count };
-  }).sort((a, b) => b.count - a.count);
+  })
+    .filter((category) => category.count > 0)
+    .sort((a, b) => b.count - a.count);
 
   const blurb = {
     islamic: 'Names from the Quran, Islamic tradition and classical Arabic culture.',
@@ -30,7 +32,6 @@ export default function CategoriesIndexPage() {
     biblical: 'Names that appear in the Bible, rich with faith and history.',
     saint: 'Timeless names of venerated saints that inspire virtue.',
     virtue: 'Names that express noble qualities like love, wisdom and strength.',
-    italian: 'Melodic Italian names rooted in Latin and Mediterranean tradition.',
   };
 
   return (

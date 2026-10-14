@@ -10,19 +10,24 @@
     "prune": "node scripts/prune-build-assets.mjs",
     "verify": "node scripts/verify-content.mjs && node scripts/verify-uniqueness.mjs",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint app components lib scripts src --ext .js,.jsx,.mjs"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",
     "@fontsource-variable/inter": "^5.3.0",
-    "next": "^14.2.15",
+    "next": "^15.5.27",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^5.10.7",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.27",
+    "postcss": "^8.5.30",
     "tailwindcss": "^3.4.14"
+  },
+  "overrides": {
+    "postcss": "$postcss"
   }
 }

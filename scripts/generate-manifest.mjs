@@ -1,6 +1,5 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { isNegativeAssertion } from '../lib/data/indexability.js';
 import { isIndexableRecord } from '../lib/data/indexability.js';
 import { normalizeNameRecord } from '../lib/data/name-normalizer.js';
 import { enrichNameProfile } from '../lib/data/name-enricher.js';

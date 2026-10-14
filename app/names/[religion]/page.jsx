@@ -23,7 +23,10 @@ export const dynamicParams = false;
 // Fix 2 — prerender the four tradition hubs at build time so they are served
 // from the CDN edge with zero function invocations.
 export function generateStaticParams() {
-  return VALID_RELIGIONS.map((religion) => ({ religion }));
+  const manifest = getManifest();
+  return VALID_RELIGIONS
+    .filter((religion) => (manifest[religion] || []).some((item) => item.indexable))
+    .map((religion) => ({ religion }));
 }
 
 export async function generateMetadata({ params }) {
@@ -31,11 +34,12 @@ export async function generateMetadata({ params }) {
   if (!finalReligion) return {};
   const label = religionLabel(finalReligion);
   const manifest = getManifest();
-  const count = (manifest[finalReligion] || []).length;
+  const count = (manifest[finalReligion] || []).filter((item) => item.indexable).length;
+  if (!count) return { robots: { index: false, follow: true } };
 
   return {
     title: `${label} Baby Names \u2014 Meanings & Origins (${count.toLocaleString()})`,
-    description: `Browse ${count.toLocaleString()} ${label.toLowerCase()} baby names with verified meanings, origins, gender and lucky numbers. Explore popular ${label.toLowerCase()} names A–Z.`,
+    description: `Browse ${count.toLocaleString()} ${label.toLowerCase()} baby names with documented meanings, origins, gender and lucky numbers. Explore popular ${label.toLowerCase()} names A–Z.`,
     alternates: {
       canonical: `https://nameverse.site/names/${finalReligion}`,
     },
@@ -47,7 +51,8 @@ export default function ReligionHubPage({ params }) {
   if (!finalReligion) notFound();
 
   const manifest = getManifest();
-  const allNames = manifest[finalReligion] || [];
+  const allNames = (manifest[finalReligion] || []).filter((item) => item.indexable);
+  if (!allNames.length) notFound();
   const label = religionLabel(finalReligion);
   const availableLetters = lettersFor(finalReligion, manifest);
 
@@ -122,7 +127,7 @@ export default function ReligionHubPage({ params }) {
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-nv-text-secondary sm:text-lg">
             {label} baby names carry rich linguistic heritage and spiritual meaning. Browse the complete
-            collection — each with verified meaning, origin, pronunciation guide and lucky numbers.
+            collection — each with documented meaning, origin, pronunciation guide and lucky numbers.
           </p>
 
           {/* Gender Buttons */}
@@ -152,7 +157,7 @@ export default function ReligionHubPage({ params }) {
         <section className="mb-14" aria-labelledby="popular-heading">
           <div className="mb-6 flex items-end justify-between gap-4">
             <div>
-              <span className="eyebrow">Most searched</span>
+              <span className="eyebrow">Highest popularity scores</span>
               <h2 id="popular-heading" className="mt-2 font-display text-2xl font-bold tracking-tight text-nv-text sm:text-3xl">
                 Popular {label} Names
               </h2>

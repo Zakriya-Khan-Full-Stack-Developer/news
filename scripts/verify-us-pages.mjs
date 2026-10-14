@@ -69,6 +69,8 @@ const NON_HTML = [
   /^\/sitemap[\w.-]*\.xml$/,
   /^\/robots\.txt$/,
   /^\/favicon\.ico$/,
+  /^\/manifest\.webmanifest$/,
+  /^\/(?:nameverse_logo_emblem|icon-192|icon-512)\.(?:webp|png)$/,
 ];
 
 const EXPECTED_SCHEMA = ['CollectionPage', 'ItemList', 'FAQPage', 'BreadcrumbList', 'Article'];

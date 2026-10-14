@@ -6,7 +6,7 @@ import AdSlot from '../../components/AdSlot.jsx';
 export const metadata = {
   title: 'Baby Name Meanings — 100 Names Explained',
   description:
-    'Discover 100 beautiful baby names and their verified meanings, origins and lucky numbers — hand-picked from 11,632 names across three traditions.',
+    'Discover 100 beautiful baby names and their documented meanings, origins and lucky numbers — hand-picked from 11,412 names across three traditions.',
   alternates: {
     canonical: 'https://nameverse.site/name-meanings',
   },
@@ -15,9 +15,9 @@ export const metadata = {
 export default function NameMeaningsPage() {
   const manifest = getManifest();
   const all = [];
-  for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {
+  for (const rel of ['islamic', 'christian', 'hindu']) {
     for (const item of manifest[rel] || []) {
-      if (item.meaning && item.slug && item.name) all.push({ ...item, religion: rel });
+      if (item.indexable && item.meaning && item.slug && item.name) all.push({ ...item, religion: rel });
     }
   }
   all.sort((a, b) => a.name.localeCompare(b.name));
@@ -32,7 +32,7 @@ export default function NameMeaningsPage() {
             Baby Name Meanings
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-nv-text-secondary">
-            100 beautiful names from Islamic, Christian and Hindu traditions — with verified meanings on every entry.
+            100 beautiful names from Islamic, Christian and Hindu traditions — with documented meanings on every entry.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Link href="/names-by-meaning" className="btn-ghost">

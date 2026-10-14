@@ -20,7 +20,14 @@ const VALID_HUBS = {
 
 // Fix 2 — prerender all eight gender hubs at build time.
 export function generateStaticParams() {
-  return Object.keys(VALID_HUBS).map((genderHub) => ({ genderHub }));
+  const manifest = getManifest();
+  return Object.entries(VALID_HUBS)
+    .filter(([, config]) =>
+      (manifest[config.religion] || []).some(
+        (item) => item.indexable && normalizeGender(item.gender) === config.gender,
+      ),
+    )
+    .map(([genderHub]) => ({ genderHub }));
 }
 
 export async function generateMetadata({ params }) {
@@ -32,13 +39,16 @@ export async function generateMetadata({ params }) {
   const genLabel = genderLabel(gender);
   const manifest = getManifest();
   const allItems = manifest[religion] || [];
-  const items = allItems.filter((item) => normalizeGender(item.gender) === gender);
+  const items = allItems.filter(
+    (item) => item.indexable && normalizeGender(item.gender) === gender,
+  );
+  if (!items.length) return { robots: { index: false, follow: true } };
 
   const canonicalUrl = `https://nameverse.site/${params.genderHub}`;
 
   return {
     title: `${genLabel} ${relLabel} Baby Names & Meanings (${items.length.toLocaleString()})`,
-    description: `Browse ${items.length.toLocaleString()} ${relLabel.toLowerCase()} ${gender} baby names with verified meanings, origins and lucky numbers — ranked by popularity.`,
+    description: `Browse ${items.length.toLocaleString()} ${relLabel.toLowerCase()} ${gender} baby names with documented meanings, origins and lucky numbers — ranked by popularity.`,
     alternates: {
       canonical: canonicalUrl,
     },
@@ -57,8 +67,9 @@ export default function GenderHubPage({ params }) {
   const manifest = getManifest();
   const allItems = manifest[religion] || [];
   const items = allItems
-    .filter((item) => normalizeGender(item.gender) === gender)
+    .filter((item) => item.indexable && normalizeGender(item.gender) === gender)
     .sort((a, b) => (b.popularity_score || 0) - (a.popularity_score || 0));
+  if (!items.length) notFound();
 
   const topNames = items.slice(0, 300);
 
@@ -109,7 +120,7 @@ export default function GenderHubPage({ params }) {
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-nv-text-secondary">
             {items.length.toLocaleString()} {relLabel.toLowerCase()} {gender} names, ranked by
-            popularity and each with a verified meaning, cultural origin and lucky number.
+            popularity and each with a documented meaning, cultural origin and lucky number.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-2">
             <Link href={`/search?religion=${religion}&gender=${gender}&sort=popularity`} className="btn-primary">

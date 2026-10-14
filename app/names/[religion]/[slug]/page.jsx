@@ -6,13 +6,16 @@ import {
   normalizeSlug,
   getKnownSlugsMap,
   getRenderableSlugs,
-  isRenderableSlug,
+  getCanonicalSlug,
+  isIndexableSlug,
 } from '@/lib/data/names-data.js';
 import { religionLabel, genderLabel, slugify, originSlugFor, ORIGIN_LABELS } from '@/lib/data/name-utils.js';
 import { enrichNameProfile } from '@/lib/data/name-enricher.js';
 import { isIndexableRecord } from '@/lib/data/indexability.js';
 import AdSlot from '@/components/AdSlot.jsx';
 import SocialShare from '@/components/SocialShare.jsx';
+import NameTrustMeta from '@/components/NameTrustMeta.jsx';
+import { AUTHOR, LAST_UPDATED, PUBLISHER } from '@/lib/data/editorial.js';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // FIX — Fluid Active CPU
@@ -60,6 +63,79 @@ export function generateStaticParams() {
 // ─────────────────────────────────────────────────────────────────────────────
 function isIndexable(n) {
   return isIndexableRecord(n);
+}
+
+function VerificationPendingProfile({ name, relLabel, religion, variants = [] }) {
+  return (
+    <div className="container-page py-8 sm:py-12">
+      <div className="mx-auto max-w-3xl">
+        <nav className="mb-6 flex flex-wrap items-center gap-2 text-sm text-nv-text-secondary" aria-label="Breadcrumb">
+          <Link href="/" className="font-medium hover:text-nv-accent">Home</Link>
+          <span aria-hidden="true">/</span>
+          <Link href="/names" className="font-medium hover:text-nv-accent">All Names</Link>
+          <span aria-hidden="true">/</span>
+          <Link href={`/names/${religion}`} className="font-medium hover:text-nv-accent">{relLabel} Names</Link>
+          <span aria-hidden="true">/</span>
+          <span className="font-medium text-nv-text">{name}</span>
+        </nav>
+
+        <article className="card p-6 sm:p-10">
+          <span className="badge border border-amber-200 bg-amber-50 text-amber-800 dark:border-amber-800/50 dark:bg-amber-950/40 dark:text-amber-300">
+            Verification pending
+          </span>
+          <h1 className="mt-4 break-words font-display text-4xl font-extrabold tracking-tight text-nv-text sm:text-5xl">
+            {name}
+          </h1>
+          <p className="mt-4 text-base leading-relaxed text-nv-text-secondary sm:text-lg">
+            NameVerse has a source record for <strong>{name}</strong> in the {relLabel.toLowerCase()}{' '}
+            collection, but we cannot currently verify a stable meaning and origin for this spelling.
+            We do not invent an etymology, so this page is kept out of search results until the record
+            can meet our publication standard.
+          </p>
+
+          <dl className="mt-8 grid gap-3 sm:grid-cols-2">
+            <div className="stat-tile">
+              <dt className="stat-label">Tradition collection</dt>
+              <dd className="stat-value">{relLabel}</dd>
+            </div>
+            <div className="stat-tile">
+              <dt className="stat-label">Profile status</dt>
+              <dd className="stat-value">Research in progress</dd>
+            </div>
+          </dl>
+
+          {variants.length > 0 && (
+            <div className="mt-7">
+              <h2 className="font-display text-xl font-bold text-nv-text">Recorded spelling variants</h2>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {variants.map((variant) => (
+                  <span key={variant} className="chip">{variant}</span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="mt-8 border-t border-nv-border pt-6">
+            <p className="text-sm leading-relaxed text-nv-text-secondary">
+              Browse published profiles in this tradition or search for another spelling while our
+              editorial team continues the source review.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link href={`/names/${religion}`} className="btn-primary">
+                Browse {relLabel} names
+              </Link>
+              <Link href="/search" className="btn-ghost">
+                Search all names
+              </Link>
+              <Link href="/editorial-policy" className="btn-ghost">
+                Read our editorial policy
+              </Link>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  );
 }
 
 export async function generateMetadata({ params }) {
@@ -147,6 +223,21 @@ export default async function NameDetailPage({ params }) {
   const letterSegment = /^[a-z]$/.test(firstLetter) ? firstLetter : '%23';
   const letterDisplay = /^[a-z]$/.test(firstLetter) ? firstLetter.toUpperCase() : 'Other';
 
+  // Real source records that do not yet meet the publication standard remain
+  // accessible as honest noindex profiles instead of returning a misleading
+  // 404. Canonical duplicates still use the full profile template below so
+  // their canonical link can pass equity to the surviving page.
+  if (!indexable && !canonicalSlug) {
+    return (
+      <VerificationPendingProfile
+        name={n.name}
+        relLabel={relLabel}
+        religion={finalReligion}
+        variants={n.variants}
+      />
+    );
+  }
+
   // ── internal linking: resolve similar/related names to real pages ─────────
   function resolveNameLink(rawName) {
     const targetSlug = slugify(rawName);
@@ -158,12 +249,15 @@ export default async function NameDetailPage({ params }) {
     // is a hard 404 rather than an on-demand render. NameCard already applied
     // this guard — the related-name chips did not, which is how
     // /names/islamic/adem shipped a link to the 404 /names/islamic/man.
-    if (isRenderableSlug(finalReligion, targetSlug)) {
-      return { name: rawName, href: `/names/${finalReligion}/${targetSlug}` };
+    if (isIndexableSlug(finalReligion, targetSlug)) {
+      return {
+        name: rawName,
+        href: `/names/${finalReligion}/${getCanonicalSlug(finalReligion, targetSlug)}`,
+      };
     }
     for (const r of ['islamic', 'christian', 'hindu', 'italian']) {
-      if (r !== finalReligion && isRenderableSlug(r, targetSlug)) {
-        return { name: rawName, href: `/names/${r}/${targetSlug}` };
+      if (r !== finalReligion && isIndexableSlug(r, targetSlug)) {
+        return { name: rawName, href: `/names/${r}/${getCanonicalSlug(r, targetSlug)}` };
       }
     }
     return { name: rawName, href: null };
@@ -174,16 +268,20 @@ export default async function NameDetailPage({ params }) {
   const originSlug = originSlugFor(n.origin);
 
   // ── structured data ───────────────────────────────────────────────────────
-  const personSchema = {
+  const nameSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Person',
+    '@type': 'DefinedTerm',
+    '@id': `${canonicalUrl}#name`,
     name: n.name,
     alternateName: n.variants.length ? n.variants : undefined,
     description: n.shortMeaning
       ? `${n.name} is a ${relLabel} name meaning "${n.shortMeaning}".`
       : undefined,
-    knowsLanguage: n.languages.length ? n.languages : undefined,
-    gender: n.genderKey === 'boy' ? 'Male' : n.genderKey === 'girl' ? 'Female' : undefined,
+    inDefinedTermSet: {
+      '@type': 'DefinedTermSet',
+      name: `${relLabel} baby names`,
+      url: `${SITE_URL}/names/${finalReligion}`,
+    },
   };
 
   const articleSchema = {
@@ -203,12 +301,37 @@ export default async function NameDetailPage({ params }) {
       name: 'NameVerse',
       url: SITE_URL,
     },
+    author: {
+      '@type': AUTHOR.isOrganisation ? 'Organization' : 'Person',
+      name: AUTHOR.name,
+      url: AUTHOR.bioUrl,
+    },
     publisher: {
       '@type': 'Organization',
-      name: 'NameVerse',
-      url: SITE_URL,
+      name: PUBLISHER.name,
+      url: PUBLISHER.url,
+      logo: { '@type': 'ImageObject', url: PUBLISHER.logo },
     },
-    dateModified: n.updatedAt || undefined,
+    datePublished: LAST_UPDATED,
+    dateModified: LAST_UPDATED,
+    citation: [{
+      '@type': 'CreativeWork',
+      name: 'NameVerse Editorial Policy',
+      url: `${SITE_URL}/editorial-policy`,
+    }],
+  };
+
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${canonicalUrl}#webpage`,
+    name: n.seo.h1,
+    description: n.seo.meta_description,
+    url: canonicalUrl,
+    inLanguage: 'en',
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    publisher: { '@id': `${SITE_URL}/#organization` },
+    mainEntity: { '@id': `${canonicalUrl}#name` },
   };
 
   const breadcrumbSchema = {
@@ -251,7 +374,8 @@ export default async function NameDetailPage({ params }) {
 
   return (
     <div className="container-page py-6 sm:py-10">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(nameSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {faqSchema && (
@@ -357,6 +481,8 @@ export default async function NameDetailPage({ params }) {
             <p>{n.intro}</p>
           </div>
         </section>
+
+        <NameTrustMeta name={n.name} origin={n.origin} meaning={n.shortMeaning} />
 
         {/* ── MEANING ── */}
         {n.meaningSection.length > 0 && (

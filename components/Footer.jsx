@@ -11,7 +11,6 @@ const TRADITIONS = [
   { name: 'Hindu Baby Names', href: '/names/hindu' },
   { name: 'Hindu Boy Names', href: '/hindu-boy-names' },
   { name: 'Hindu Girl Names', href: '/hindu-girl-names' },
-  { name: 'Italian Baby Names', href: '/names/italian' },
 ];
 
 const DISCOVERY = [
@@ -57,12 +56,12 @@ export default function Footer() {
       <div className="border-b border-nv-border/60 bg-nv-subtle/40 py-8">
         <div className="container-page flex flex-col items-center justify-between gap-6 text-center md:flex-row md:text-left">
           <div className="max-w-xl">
-            <span className="eyebrow">Verified &amp; Sourced</span>
+            <span className="eyebrow">Documented &amp; Sourced</span>
             <h2 className="mt-1 font-display text-lg font-bold text-nv-text">
               A Cultural Name Anthology, Not a Name Generator
             </h2>
             <p className="mt-1 text-xs text-nv-text-secondary">
-              11,632 baby names documented with etymological roots, original script forms,
+              11,412 baby names documented with etymological roots, original script forms,
               pronunciation and cultural context across three traditions.
             </p>
           </div>
@@ -88,7 +87,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 text-xs font-semibold text-nv-success">
               <span className="flex h-2 w-2 rounded-full bg-nv-success" />
-              <span>11,632 names indexed &bull; zero soft-404s</span>
+              <span>11,412 names indexed &bull; zero soft-404s</span>
             </div>
           </div>
 

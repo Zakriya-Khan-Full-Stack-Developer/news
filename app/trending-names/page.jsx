@@ -1,13 +1,13 @@
 import Link from 'next/link';
-import { getManifest, isRenderableSlug } from '../../lib/data/names-data.js';
+import { getManifest } from '../../lib/data/names-data.js';
 import { religionLabel } from '../../lib/data/name-utils.js';
 import NameCard from '../../components/NameCard.jsx';
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Trending Baby Names of 2026 — Most Searched Right Now',
+  title: 'Trending Baby Names of 2026 — Highest Popularity Scores',
   description:
-    'Discover the baby names trending in 2026 across Islamic, Christian and Hindu traditions — ranked by live popularity score with meanings and origins.',
+    'Discover high-scoring baby names in 2026 across Islamic, Christian and Hindu traditions — with documented meanings, origins and transparent popularity context.',
   alternates: {
     canonical: 'https://nameverse.site/trending-names',
   },
@@ -16,12 +16,11 @@ export const metadata = {
 export default function TrendingNamesPage() {
   const manifest = getManifest();
   const all = [];
-  for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {
+  for (const rel of ['islamic', 'christian', 'hindu']) {
     for (const item of manifest[rel] || []) {
-      // FIX — only surface names whose page exists. "Trending" previously ranked
-      // by popularity_score alone, so an Italian stub with a high score took the
-      // top slot and linked to a 404.
-      if (item.slug && item.name && isRenderableSlug(rel, item.slug)) {
+      // Trending is an indexable discovery surface: exclude verification-
+      // pending records and canonical aliases from the ranked list.
+      if (item.slug && item.name && item.indexable) {
         all.push({ ...item, religion: rel });
       }
     }
@@ -30,10 +29,10 @@ export default function TrendingNamesPage() {
   const trending = all.slice(0, 60);
 
   const byReligion = Object.fromEntries(
-    ['islamic', 'christian', 'hindu', 'italian'].map((rel) => [
+    ['islamic', 'christian', 'hindu'].map((rel) => [
       rel,
       (manifest[rel] || [])
-        .filter((i) => i.slug && isRenderableSlug(rel, i.slug))
+        .filter((i) => i.slug && i.indexable)
         .slice()
         .sort((a, b) => (b.popularity_score || 0) - (a.popularity_score || 0))
         .slice(0, 6),
@@ -44,13 +43,13 @@ export default function TrendingNamesPage() {
     <div className="container-page py-10 sm:py-14">
       <div className="mx-auto max-w-6xl">
         <header className="mb-10 text-center">
-          <span className="eyebrow">What parents search now</span>
+          <span className="eyebrow">Highest-scoring profiles</span>
           <h1 className="mt-2 font-display text-3xl font-bold tracking-tight text-nv-text sm:text-5xl">
             Trending Baby Names
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-nv-text-secondary">
-            The 60 baby names parents are searching for most on NameVerse right now — ranked by
-            popularity score, with verified meanings and cultural origins.
+            The 60 published profiles with the highest popularity scores in our collection — with
+            documented meanings, origins and cultural context.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Link href="/popularity" className="btn-primary">

@@ -1,14 +1,14 @@
 import Link from 'next/link';
-import { getManifest, getPopularSlugs } from '../../lib/data/names-data.js';
+import { getManifest, getPopularItems } from '../../lib/data/names-data.js';
 import { isBoy, isGirl } from '../../lib/data/name-utils.js';
 import NameCard from '../../components/NameCard.jsx';
 import PageJsonLd from '../../components/PageJsonLd.jsx';
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'All Baby Names by Religion — 11,632 Names & Meanings',
+  title: 'All Baby Names by Religion — 11,412 Names & Meanings',
   description:
-    'Browse 11,632 baby names by religion: Islamic, Christian, Hindu & Italian names with verified meanings, origins and lucky numbers. Free A–Z browsing.',
+    'Browse 11,412 published baby names across Islamic, Christian and Hindu traditions with documented meanings, origins and lucky numbers. Free A–Z browsing.',
   alternates: {
     canonical: 'https://nameverse.site/names',
   },
@@ -18,7 +18,7 @@ const namesIndexJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'All Baby Names',
-  description: 'Browse 11,632 baby names across Islamic, Christian and Hindu traditions.',
+  description: 'Browse 11,412 published baby names across Islamic, Christian and Hindu traditions.',
   url: 'https://nameverse.site/names',
   isPartOf: {
     '@type': 'WebSite',
@@ -33,21 +33,18 @@ export default function NamesIndexPage() {
     { key: 'islamic', label: 'Islamic Names', description: 'Quranic, Arabic & Urdu names', badgeClass: 'bg-cyan-50 text-cyan-800 dark:bg-cyan-950/50 dark:text-cyan-300' },
     { key: 'christian', label: 'Christian Names', description: 'Biblical & modern names', badgeClass: 'bg-amber-50 text-amber-800 dark:bg-amber-950/50 dark:text-amber-300' },
     { key: 'hindu', label: 'Hindu Names', description: 'Sanskrit & Vedic names', badgeClass: 'bg-red-50 text-red-800 dark:bg-red-950/50 dark:text-red-300' },
-    { key: 'italian', label: 'Italian Names', description: 'Classical Italian names', badgeClass: 'bg-emerald-50 text-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-300' },
-  ].map((r) => {
-    const items = manifest[r.key] || [];
-    const boyCount = items.filter(isBoy).length;
-    const girlCount = items.filter(isGirl).length;
-    return { ...r, count: items.length, boyCount, girlCount };
-  });
+  ]
+    .map((r) => {
+      const items = (manifest[r.key] || []).filter((item) => item.indexable);
+      const boyCount = items.filter(isBoy).length;
+      const girlCount = items.filter(isGirl).length;
+      return { ...r, count: items.length, boyCount, girlCount };
+    })
+    .filter((r) => r.count > 0);
 
   const totalCount = religions.reduce((s, r) => s + r.count, 0);
 
-  const bySlug = {};
-  for (const key of ['islamic', 'christian', 'hindu', 'italian']) {
-    for (const item of manifest[key] || []) bySlug[item.slug] = item;
-  }
-  const topNames = getPopularSlugs(24).map(({ slug }) => bySlug[slug]).filter(Boolean);
+  const topNames = getPopularItems(24);
 
   return (
     <div className="container-page py-10 sm:py-14">

@@ -4,12 +4,11 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
-const RELIGIONS = ['islamic', 'christian', 'hindu', 'italian'];
+const RELIGIONS = ['islamic', 'christian', 'hindu'];
 const RELIGION_LABELS = {
   islamic: 'Islamic',
   christian: 'Christian',
   hindu: 'Hindu',
-  italian: 'Italian',
 };
 
 const TRENDING_SUGGESTIONS = [
@@ -35,7 +34,7 @@ function normalizeGender(gender) {
 export default function HomepageSearch() {
   const router = useRouter();
   const [query, setQuery] = useState('');
-  const [activeFilter, setActiveFilter] = useState('all'); // all, islamic, christian, hindu, italian, boy, girl
+  const [activeFilter, setActiveFilter] = useState('all'); // all, islamic, christian, hindu, boy, girl
   const [allNames, setAllNames] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -220,7 +219,6 @@ export default function HomepageSearch() {
           { id: 'islamic', label: 'Islamic' },
           { id: 'christian', label: 'Christian' },
           { id: 'hindu', label: 'Hindu' },
-          { id: 'italian', label: 'Italian' },
           { id: 'boy', label: 'Boys ♂' },
           { id: 'girl', label: 'Girls ♀' },
         ].map((f) => (
@@ -352,7 +350,7 @@ export default function HomepageSearch() {
                 onClick={handleSearchSubmit}
                 className="btn-primary mt-3 !min-h-[36px] !px-4 text-xs"
               >
-                Search Full 11,632 Database &rarr;
+                Search Full 11,412 Database &rarr;
               </button>
             </div>
           )}

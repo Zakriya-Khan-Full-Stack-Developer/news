@@ -16,7 +16,7 @@ export const metadata = {
     default: 'Baby Names with Meanings, Origins & Lucky Numbers | NameVerse',
   },
   description:
-    'Search 11,632 baby names with verified meanings, origins, pronunciation guides, script forms and cultural context across Islamic, Christian and Hindu traditions.',
+    'Search 11,412 baby names with documented meanings, origins, pronunciation guides, script forms and cultural context across Islamic, Christian and Hindu traditions.',
   alternates: {
     canonical: siteUrl,
   },
@@ -27,14 +27,13 @@ export const metadata = {
     'Islamic baby names',
     'Christian baby names',
     'Hindu baby names',
-    'Italian baby names',
     'baby name finder',
     'names by meaning',
   ],
   openGraph: {
     title: 'Baby Names with Meanings, Origins & Lucky Numbers | NameVerse',
     description:
-      'Search 11,632 baby names with verified meanings, origins, pronunciation and cultural context across three traditions.',
+      'Search 11,412 baby names with documented meanings, origins, pronunciation and cultural context across three traditions.',
     url: siteUrl,
     siteName,
     images: [
@@ -60,7 +59,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Baby Names with Meanings, Origins & Lucky Numbers | NameVerse',
     description:
-      'Search 11,632 baby names with verified meanings, origins, pronunciation and cultural context.',
+      'Search 11,412 baby names with documented meanings, origins, pronunciation and cultural context.',
     images: [{ url: siteLogo, width: 512, height: 512, alt: `${siteName} — baby names with meanings` }],
     site: '@NameVerseOfficial',
     creator: '@NameVerseOfficial',

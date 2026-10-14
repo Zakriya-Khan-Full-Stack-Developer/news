@@ -13,11 +13,12 @@ const nextConfig = {
     minimumCacheTTL: 2592000,
     deviceSizes: [640, 828, 1080, 1280],
   },
-  // Keep the 216 MB dataset out of the serverless bundle.
+  // Keep the 216 MB dataset out of the serverless bundle. Next 15 promotes
+  // this option out of `experimental`.
+  outputFileTracingExcludes: {
+    '/**': ['./public/names/**/*'],
+  },
   experimental: {
-    outputFileTracingExcludes: {
-      '/**': ['./public/names/**/*'],
-    },
     // Cap build workers. Each worker loads the manifest, so on a many-core
     // machine the default worker count multiplies memory use and can OOM a
     // small container. Vercel's builder is unaffected by this ceiling.

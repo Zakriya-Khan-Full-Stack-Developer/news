@@ -10,7 +10,7 @@ export default function PopularityClient({ initialList = [] }) {
 
   useEffect(() => {
     Promise.all(
-      ['islamic', 'christian', 'hindu', 'italian'].map((r) =>
+      ['islamic', 'christian', 'hindu'].map((r) =>
         fetch(`/names/${r}/_search-index.json`)
           .then((res) => (res.ok ? res.json() : []))
           .then((items) => items.map((item) => ({ ...item, religion: r })))
@@ -43,7 +43,7 @@ export default function PopularityClient({ initialList = [] }) {
   const presets = [
     { a: 'Muhammad', rA: 'islamic', b: 'Aarav', rB: 'hindu' },
     { a: 'Noah', rA: 'christian', b: 'Liam', rB: 'christian' },
-    { a: 'Sofia', rA: 'italian', b: 'Zainab', rB: 'islamic' },
+    { a: 'Sofia', rA: 'christian', b: 'Zainab', rB: 'islamic' },
   ];
 
   const loadPreset = (nameA, nameB) => {
@@ -168,7 +168,7 @@ export default function PopularityClient({ initialList = [] }) {
 
                   {item.m && (
                     <p className="mt-3 text-xs leading-relaxed text-nv-text-secondary line-clamp-2">
-                      "{item.m}"
+                      &ldquo;{item.m}&rdquo;
                     </p>
                   )}
 

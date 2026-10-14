@@ -6,7 +6,7 @@ import AdSlot from '../../components/AdSlot.jsx';
 export const metadata = {
   title: 'Baby Names by Origin — Arabic & Biblical',
   description:
-    'Browse baby names by linguistic and cultural origin: Arabic, Biblical, Sanskrit, Persian, Tamil, Hindi and more — with verified meanings on every name.',
+    'Browse baby names by linguistic and cultural origin: Arabic, Biblical, Sanskrit, Persian, Tamil, Hindi and more — with documented meanings on every name.',
   alternates: {
     canonical: 'https://nameverse.site/names-by-origin',
   },
@@ -16,20 +16,21 @@ export default function NamesByOriginPage() {
   const manifest = getManifest();
   const origins = ORIGIN_SLUGS.map((slug) => {
     let count = 0;
-    for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {
+    for (const rel of ['islamic', 'christian', 'hindu']) {
       for (const item of manifest[rel] || []) {
-        if (originSlugFor(item.origin) === slug) count++;
+        if (item.indexable && originSlugFor(item.origin) === slug) count++;
       }
     }
     return { slug, label: ORIGIN_LABELS[slug], count };
-  }).sort((a, b) => b.count - a.count);
+  })
+    .filter((origin) => origin.count > 0)
+    .sort((a, b) => b.count - a.count);
 
   const blurb = {
     arabic: 'Quranic, classical and modern names from the Arab world.',
     biblical: 'Names from the Bible across Hebrew, Greek and Latin forms.',
     sanskrit: "Names from ancient India's language of scripture and philosophy.",
     hindu: 'Names rooted in Hindu mythology, deities and traditions.',
-    italian: 'Melodic names from Italy, many derived from Latin.',
     persian: 'Names from Iran and the Persian-speaking world.',
     english: 'Names shaped by English language and culture.',
     tamil: 'Names from the Tamil-speaking regions of South Asia.',

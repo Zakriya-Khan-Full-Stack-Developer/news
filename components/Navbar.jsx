@@ -5,14 +5,14 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { HeaderLogo } from './Logo.jsx';
 
-// Counts are the REAL manifest counts (11,632 total). The previous hardcoded
-// figures (18,800+ / 12,300+ / 10,700+) overstated the dataset by 3x, which is
-// both a trust problem and a mismatch against the sitemap.
+// Counts are the REAL published manifest counts (11,412 total). Verification-
+// pending records stay out of the navigation, so these figures match the
+// indexable hubs and sitemaps rather than the raw source folders.
 const TRADITIONS = [
   {
     name: 'Islamic Names',
     href: '/names/islamic',
-    count: '5,180',
+    count: '3,480',
     desc: 'Quranic, Arabic & Urdu names',
     boyHref: '/islamic-boy-names',
     girlHref: '/islamic-girl-names',
@@ -21,7 +21,7 @@ const TRADITIONS = [
   {
     name: 'Christian Names',
     href: '/names/christian',
-    count: '4,136',
+    count: '4,026',
     desc: 'Biblical, Hebrew & Greek names',
     boyHref: '/christian-boy-names',
     girlHref: '/christian-girl-names',
@@ -30,20 +30,11 @@ const TRADITIONS = [
   {
     name: 'Hindu Names',
     href: '/names/hindu',
-    count: '4,133',
+    count: '3,906',
     desc: 'Sanskrit & Vedic names',
     boyHref: '/hindu-boy-names',
     girlHref: '/hindu-girl-names',
     tone: 'hindu',
-  },
-  {
-    name: 'Italian Names',
-    href: '/names/italian',
-    count: '352',
-    desc: 'Roman & Renaissance names',
-    boyHref: '/names/italian',
-    girlHref: '/names/italian',
-    tone: 'italian',
   },
 ];
 
@@ -51,7 +42,7 @@ const EXPLORE = [
   { name: 'Most Popular 2026', href: '/popular-names-2026', desc: 'US national ranking, sourced' },
   { name: 'Top Baby Names 2026', href: '/top-baby-names-2026', desc: 'Boys and girls, ranked' },
   { name: 'Names by State', href: '/baby-names-by-state', desc: 'All 50 states and DC' },
-  { name: 'Unique & Rare Names', href: '/unique-baby-names', desc: 'Outside the US top 100' },
+  { name: 'Unique & Rare Names', href: '/unique-baby-names', desc: 'Outside published lists' },
   { name: 'Gender-Neutral Names', href: '/gender-neutral-names', desc: 'Used across genders' },
   { name: 'Vintage Names', href: '/vintage-baby-names', desc: 'Classics making a comeback' },
   { name: 'Biblical Names', href: '/biblical-baby-names', desc: 'Scripture-rooted picks' },
@@ -183,7 +174,7 @@ export default function Navbar() {
                       Naming Traditions
                     </span>
                     <Link href="/names" className="text-xs font-semibold text-nv-accent hover:underline">
-                      All 11,632 &rarr;
+                      All 11,412 &rarr;
                     </Link>
                   </div>
                   <div className="grid gap-2">
@@ -347,7 +338,7 @@ export default function Navbar() {
               </div>
 
               <Link href="/search" className="btn-primary w-full">
-                Search all 11,632 names
+                Search all 11,412 names
               </Link>
             </div>
           </div>

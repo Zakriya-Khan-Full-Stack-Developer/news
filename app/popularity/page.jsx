@@ -15,9 +15,9 @@ export const metadata = {
 export default function PopularityPage() {
   const manifest = getManifest();
   const popular = [];
-  for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {
+  for (const rel of ['islamic', 'christian', 'hindu']) {
     for (const item of manifest[rel] || []) {
-      popular.push({ ...item, religion: rel });
+      if (item.indexable) popular.push({ ...item, religion: rel });
     }
   }
   popular.sort((a, b) => (b.popularity_score || 0) - (a.popularity_score || 0));
@@ -32,7 +32,7 @@ export default function PopularityPage() {
             Compare Baby Name Popularity
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-nv-text-secondary">
-            Search 11,632 names, add your shortlist, and see how they rank against each other on the NameVerse popularity scale.
+            Search 11,412 names, add your shortlist, and see how they rank against each other on the NameVerse popularity scale.
           </p>
         </header>
 

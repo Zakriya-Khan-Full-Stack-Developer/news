@@ -11,7 +11,7 @@ const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
 const TITLE = 'Muslim Baby Names Popular in America \u2014 With Meanings';
 const DESCRIPTION =
-  'Muslim and Islamic baby names used by families in the United States, with verified meanings, Arabic script forms and pronunciation. Includes names that appear in US national rankings.';
+  'Muslim and Islamic baby names used by families in the United States, with documented meanings, Arabic script forms and pronunciation. Includes names that appear in US national rankings.';
 
 export const metadata = {
   title: TITLE,
@@ -73,7 +73,7 @@ export default function MuslimBabyNamesAmericaPage() {
   return (
     <UsPageShell
       cluster={cluster}
-      intro="Muslim and Islamic baby names used by families in the United States, with verified meanings, Arabic script forms and pronunciation guides. Several of these names now appear in the US national rankings, which is why this page sits alongside our American popularity data rather than apart from it."
+      intro="Muslim and Islamic baby names used by families in the United States, with documented meanings, Arabic script forms and pronunciation guides. Several of these names now appear in the US national rankings, which is why this page sits alongside our American popularity data rather than apart from it."
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
@@ -135,7 +135,7 @@ export default function MuslimBabyNamesAmericaPage() {
           id="list-heading"
           className="font-display text-2xl font-bold tracking-tight text-nv-text sm:text-3xl"
         >
-          Islamic names with verified meanings
+          Islamic names with documented meanings
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary">
           Ordered by how thoroughly documented each name is in our database. Every entry has a recorded
@@ -193,12 +193,12 @@ export default function MuslimBabyNamesAmericaPage() {
         </h2>
         <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            { href: '/names/islamic', label: 'Islamic names hub', note: 'All 5,180 names' },
+            { href: '/names/islamic', label: 'Islamic names hub', note: '3,480 published profiles' },
             { href: '/islamic-boy-names', label: 'Islamic boy names', note: 'By gender' },
             { href: '/islamic-girl-names', label: 'Islamic girl names', note: 'By gender' },
             { href: '/biblical-baby-names', label: 'Biblical baby names', note: 'Scripture-rooted' },
             { href: '/popular-names-2026', label: 'Most popular 2026', note: 'US national ranking' },
-            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,412 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>

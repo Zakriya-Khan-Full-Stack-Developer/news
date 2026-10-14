@@ -4,7 +4,6 @@ import {
   getCluster,
   SSA_TOP_10,
   BABYCENTER_2026,
-  resolveNames,
 } from '../../lib/data/us-names.js';
 import { buildUsPageSchema } from '../../lib/data/us-schema.js';
 import { EDITORIAL_FAQ } from '../../lib/data/editorial.js';
@@ -17,7 +16,7 @@ const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
 const TITLE = 'Unique Baby Names \u2014 Rare Picks With Real Meaning';
 const DESCRIPTION =
-  'Unique baby names that sit outside the US top 100 but still carry a verified meaning and origin. 120 rare, distinctive picks from four naming traditions, each with pronunciation and cultural context.';
+  'Unique baby names outside the published US ranking lists used here, with a documented meaning and origin. Explore 120 rare, distinctive picks across three traditions, each with pronunciation and cultural context.';
 
 export const metadata = {
   title: TITLE,
@@ -35,7 +34,7 @@ export const metadata = {
 };
 
 // The mainstream set we exclude. A name is only "unique" relative to what is
-// actually common, so the definition is anchored to the real top-100 lists
+// visible in the published national and independent lists used by this page,
 // rather than to a subjective sense of rarity.
 const MAINSTREAM = new Set(
   [...SSA_TOP_10.boys, ...SSA_TOP_10.girls, ...BABYCENTER_2026.boys, ...BABYCENTER_2026.girls].map((n) =>
@@ -48,7 +47,7 @@ function selectUnique(limit = 120) {
   const pool = [];
   for (const rel of Object.keys(manifest)) {
     for (const item of manifest[rel] || []) {
-      if (!item.slug || !item.meaning || !item.origin) continue;
+      if (!item.slug || !item.indexable || !item.meaning || !item.origin || item.canonicalSlug) continue;
       if (String(item.origin) === 'Unknown') continue;
       if (MAINSTREAM.has(String(item.name).toLowerCase())) continue;
       pool.push({ ...item, religion: rel });
@@ -63,7 +62,7 @@ function selectUnique(limit = 120) {
 const FAQS = [
   {
     q: 'What counts as a unique baby name?',
-    a: 'On this page, a unique name is one that carries a verified meaning and origin in our database but does not appear in the current US top 100 for either gender. That is a deliberately strict definition: it excludes names that are merely unfamiliar to one reader but common nationally.',
+    a: 'On this page, a unique name is one that carries a documented meaning and origin in our database but does not appear in the national and independent ranking lists used by this guide. That is a deliberately practical definition: it excludes names that are merely unfamiliar to one reader but common in the published lists we compare.',
   },
   {
     q: 'Will a unique name cause problems for my child?',
@@ -71,7 +70,7 @@ const FAQS = [
   },
   {
     q: 'Are rare names harder to research?',
-    a: 'They can be, which is why we only list names we hold a documented meaning and origin for. A rare name with no verifiable meaning is a name you cannot explain to your child later, and we do not publish those.',
+    a: 'They can be, which is why we only list names we hold a documented meaning and origin for. A rare name with no documented meaning is a name you cannot explain to your child later, and we do not publish those.',
   },
   ...EDITORIAL_FAQ.slice(0, 2),
 ];
@@ -80,7 +79,6 @@ const BREADCRUMB = [{ name: 'Unique Baby Names', href: '/unique-baby-names' }];
 
 export default function UniqueBabyNamesPage() {
   const unique = selectUnique(120);
-  const resolved = resolveNames(unique.map((u) => u.name));
 
   const schema = buildUsPageSchema({
     url: PAGE_URL,
@@ -98,7 +96,7 @@ export default function UniqueBabyNamesPage() {
   return (
     <UsPageShell
       cluster={cluster}
-      intro="Unique baby names that sit outside the current US top 100 but still carry a verified meaning and origin. Every pick below is drawn from our database of 11,632 documented names, so rarity never costs you the cultural depth behind the name."
+      intro="Unique baby names that sit outside the published national and independent ranking lists used here, while still carrying a documented meaning and origin. Every pick below is drawn from our database of 11,412 published profiles, so rarity never costs you the cultural depth behind the name."
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
@@ -155,16 +153,16 @@ export default function UniqueBabyNamesPage() {
             one family and common in another country, or rare nationally and ordinary in one state. So
             we anchor the definition to something checkable: a name qualifies for this page if it has a
             documented meaning and origin in our database and does <strong>not</strong> appear in the
-            current US top 100 for either gender.
+            national or independent ranking lists used by this guide.
           </p>
           <p>
             That is a strict test, and it deliberately excludes a lot of names that other sites call
             unique. It also means the list changes as the national rankings move \u2014 a name that
-            enters the top 100 leaves this page, because at that point it is no longer rare.
+            appears on one of those lists, it leaves this page so the definition stays consistent over time.
           </p>
           <p>
             The second filter is documentation. We only list names we can explain. A rare name with no
-            verifiable meaning is a name you cannot tell your child about later, and publishing those
+            documented meaning is a name you cannot tell your child about later, and publishing those
             would make this page longer without making it more useful.
           </p>
         </div>
@@ -216,7 +214,7 @@ export default function UniqueBabyNamesPage() {
             { href: '/nature-baby-names', label: 'Nature baby names', note: 'Botanical and celestial' },
             { href: '/short-baby-names', label: 'Short baby names', note: 'One and two syllables' },
             { href: '/popular-names-2026', label: 'Most popular 2026', note: 'What to avoid if you want rare' },
-            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,412 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>
