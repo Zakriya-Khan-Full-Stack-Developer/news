@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import AdScripts from '../components/AdScripts.jsx';
+import { FOUNDER, CONTACT, POSTAL_ADDRESS_SCHEMA } from '../lib/data/editorial.js';
 
 const siteUrl = 'https://nameverse.site';
 const siteName = 'NameVerse';
@@ -48,7 +49,12 @@ export const metadata = {
     type: 'website',
   },
   applicationName: siteName,
-  authors: [{ name: 'NameVerse', url: siteUrl }],
+  // A named author and publisher, not an anonymous "Team". This was
+  // `authors: [{ name: 'NameVerse' }]` — an organisation standing in for a
+  // person who now exists and is named on /about.
+  authors: [{ name: FOUNDER.name, url: `${siteUrl}/about#founder` }],
+  creator: FOUNDER.name,
+  publisher: siteName,
   category: 'Parenting',
   twitter: {
     // FIX — was 'summary' here while the US cluster pages used
@@ -90,11 +96,26 @@ const orgJsonLd = {
         width: 512,
         height: 512,
       },
+      email: CONTACT.email,
+      telephone: CONTACT.phone.e164,
+      founder: {
+        '@type': 'Person',
+        '@id': `${siteUrl}/about#founder`,
+        name: FOUNDER.name,
+        jobTitle: FOUNDER.role,
+        url: `${siteUrl}/about#founder`,
+      },
+      address: POSTAL_ADDRESS_SCHEMA,
       contactPoint: {
         '@type': 'ContactPoint',
-        email: 'hello@nameverse.site',
+        email: CONTACT.email,
+        telephone: CONTACT.phone.e164,
         contactType: 'customer support',
+        contactOption: 'TollFree',
+        areaServed: 'Worldwide',
+        availableLanguage: FOUNDER.languages,
       },
+      sameAs: FOUNDER.sameAs,
     },
     {
       '@type': 'WebSite',

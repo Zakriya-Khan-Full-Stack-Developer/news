@@ -27,11 +27,19 @@ export default function EditorialMeta({
       {/* ── Byline + freshness ─────────────────────────────────────────── */}
       <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
         <div className="flex items-center gap-3">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-nv-accent-subtle text-xs font-bold text-nv-accent">
-            NV
+          <span
+            aria-hidden="true"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-nv-accent-subtle text-xs font-bold text-nv-accent"
+          >
+            ZK
           </span>
           <div>
-            <p className="text-sm font-semibold text-nv-text">By {AUTHOR.name}</p>
+            <p className="text-sm font-semibold text-nv-text">
+              By{' '}
+              <Link href="/about#founder" className="hover:text-nv-accent hover:underline">
+                {AUTHOR.name}
+              </Link>
+            </p>
             <p className="text-xs text-nv-text-muted">{AUTHOR.role}</p>
           </div>
         </div>
@@ -55,6 +63,10 @@ export default function EditorialMeta({
         {AUTHOR.credentials}{' '}
         <Link href="/editorial-policy" className="font-semibold text-nv-accent hover:underline">
           Read our editorial policy
+        </Link>{' '}
+        or{' '}
+        <Link href="/contact" className="font-semibold text-nv-accent hover:underline">
+          report a correction
         </Link>
         .
       </p>

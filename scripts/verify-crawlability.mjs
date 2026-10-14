@@ -90,7 +90,30 @@ async function runTests() {
     assert(name.body.includes('rel="canonical" href="https://nameverse.site/names/islamic/aaban"'), '5. Name page canonical is exact and self-referencing');
     assert(name.body.includes('"@type":"BreadcrumbList"'), '5. Name page BreadcrumbList schema present');
     assert(name.body.includes('"@type":"WebPage"'), '5. Name page WebPage schema present');
-    assert(!name.body.includes('"@type":"Person"'), '5. Name page has NO deceptive Person schema');
+    // ── 5b. No deceptive Person schema ────────────────────────────────────
+    // The original check was a blunt `!/"@type":"Person"/`, which was correct
+    // while the byline was an Organization placeholder: any Person node on a
+    // name page was suspect. The site now has a real, named author, so a
+    // Person node is EXPECTED — as long as it is the writer.
+    //
+    // The deception this must keep catching is the one it was written for: a
+    // page that tells Google the NAME ITSELF is a person (the classic
+    // "entity-stuffing" move on name sites). So the assertion is now specific:
+    // every Person node must be the author, not the subject.
+    const personNodes = [...name.body.matchAll(/"@type":"Person"[^}]*?"name":"([^"]*)"/g)].map((m) => m[1]);
+    const NAME_AUTHOR = 'Zakriya Khan';
+    const impersonated = personNodes.filter((personName) => personName.toLowerCase().includes('aaban'));
+    assert(personNodes.length > 0, '5. Name page declares its named author in Person schema');
+    assert(
+      impersonated.length === 0,
+      '5. Name page does NOT present the name itself as a person',
+      `Person nodes: ${personNodes.join(', ')}`,
+    );
+    assert(
+      personNodes.every((personName) => personName === NAME_AUTHOR),
+      '5. Name page Person schema is the author only',
+      `Person nodes: ${personNodes.join(', ')}`,
+    );
 
     // 6. Blog page
     const blog = await fetchPage('/blog/jewish-baby-names-torah');
@@ -147,6 +170,44 @@ async function runTests() {
     assert(girlHub.status === 200, '15. Gender hub (/christian-girl-names) HTTP 200', `Got ${girlHub.status}`);
     assert(readable(girlHub.body).includes('Girl Christian Names & Meanings'), '15. Gender hub renders girl names H1');
     assert(!girlHub.body.includes('0 girl names'), '15. Girl names filter bug is FIXED (shows non-zero count)');
+
+    // ── 16. About page — the E-E-A-T page itself ──────────────────────────
+    // Checks the four things a quality rater looks for: a named person, a
+    // reachable contact route, a stated methodology, and machine-readable
+    // identity that matches what is on the page.
+    const about = await fetchPage('/about');
+    assert(about.status === 200, '16. About page (/about) HTTP 200', `Got ${about.status}`);
+    assert(about.body.includes('rel="canonical" href="https://nameverse.site/about"'), '16. About canonical is exact');
+    assert(about.body.includes('name="robots" content="index, follow'), '16. About is indexable');
+    assert(readable(about.body).includes('Zakriya Khan'), '16. About names the founder in the visible copy');
+    assert(about.body.includes('id="founder"'), '16. About carries the #founder anchor that bylines link to');
+    assert(about.body.includes('coding4443@gmail.com'), '16. About shows a working contact address');
+    assert(about.body.includes('+923497174815'), '16. About carries a dialable phone number (E.164)');
+    assert(about.body.includes('"@type":"AboutPage"'), '16. About has AboutPage schema');
+    assert(about.body.includes('"@type":"Person"'), '16. About declares the founder as a Person entity');
+    assert(about.body.includes('"@type":"FAQPage"'), '16. About has FAQPage schema for its visible FAQ');
+    // The counts printed on the page must be the counted ones, not stale copy.
+    assert(readable(about.body).includes('11,412'), '16. About prints the real published-record count');
+    assert(!readable(about.body).includes('42,000'), '16. About carries no stale 42,000-name claim');
+
+    // ── 17. Contact page ─────────────────────────────────────────────────
+    const contact = await fetchPage('/contact');
+    assert(contact.status === 200, '17. Contact page (/contact) HTTP 200', `Got ${contact.status}`);
+    assert(contact.body.includes('rel="canonical" href="https://nameverse.site/contact"'), '17. Contact canonical is exact');
+    assert(contact.body.includes('name="robots" content="index, follow'), '17. Contact is indexable');
+    assert(contact.body.includes('mailto:coding4443@gmail.com'), '17. Contact exposes a real mailto link');
+    assert(contact.body.includes('tel:+923497174815'), '17. Contact exposes a tel: link');
+    assert(contact.body.includes('https://wa.me/923497174815'), '17. Contact exposes a WhatsApp route');
+    assert(contact.body.includes('"@type":"ContactPage"'), '17. Contact has ContactPage schema');
+    assert(contact.body.includes('"@type":"ContactPoint"'), '17. Contact has a ContactPoint entity');
+    // No address on the site's own domain may be offered if nobody reads it.
+    assert(!contact.body.includes('@nameverse.site'), '17. Contact offers no unmonitored role addresses');
+
+    // ── 18. Sitemap includes the trust pages, and the homepage links them ──
+    assert(pagesSitemap.body.includes('<loc>https://nameverse.site/about</loc>'), '18. pages.xml lists /about');
+    assert(pagesSitemap.body.includes('<loc>https://nameverse.site/contact</loc>'), '18. pages.xml lists /contact');
+    assert(home.body.includes('href="/about"'), '18. Homepage links to /about in the header or body');
+    assert(home.body.includes('/about#founder'), '18. Homepage links the founder bio anchor');
 
     console.log(`\n=== AUDIT SUMMARY: ${passed} PASSED, ${failed} FAILED ===`);
     if (failed === 0) {

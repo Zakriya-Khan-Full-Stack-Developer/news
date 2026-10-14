@@ -251,6 +251,21 @@ export default function Navbar() {
             >
               Guides
             </Link>
+
+            {/* About sits in the header, not only in the footer. It is the page
+                that names the person behind the data, and a trust page nobody
+                can find from the top of the site is a trust page that does not
+                count. */}
+            <Link
+              href="/about"
+              className={`rounded-lg px-3 py-2 text-sm font-semibold transition ${
+                pathname.startsWith('/about')
+                  ? 'bg-nv-accent-subtle text-nv-accent'
+                  : 'text-nv-text-secondary hover:bg-nv-subtle hover:text-nv-text'
+              }`}
+            >
+              About
+            </Link>
           </nav>
 
           {/* Controls */}
@@ -340,6 +355,21 @@ export default function Navbar() {
               <Link href="/search" className="btn-primary w-full">
                 Search all 11,412 names
               </Link>
+
+              <div className="flex gap-3">
+                <Link
+                  href="/about"
+                  className="flex-1 rounded-xl border border-nv-border p-3 text-center text-xs font-semibold text-nv-text"
+                >
+                  About us
+                </Link>
+                <Link
+                  href="/contact"
+                  className="flex-1 rounded-xl border border-nv-border p-3 text-center text-xs font-semibold text-nv-text"
+                >
+                  Contact
+                </Link>
+              </div>
             </div>
           </div>
         )}

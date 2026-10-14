@@ -1,9 +1,10 @@
 import AdSlot from '../../components/AdSlot.jsx';
+import { FOUNDER, CONTACT, PUBLISHER } from '../../lib/data/editorial.js';
 
 export const metadata = {
   title: 'Privacy Policy',
   description:
-    'How NameVerse handles data: anonymous analytics, advertising cookies, local theme preferences and your rights. We never sell personal data.',
+    'How NameVerse handles data: anonymous analytics, advertising cookies, local theme preferences and your rights. We never sell personal data. Data controller: Zakriya Khan.',
   robots: {
     index: false,
     follow: true,
@@ -33,10 +34,14 @@ const sections = [
   },
   {
     title: '6. Your rights',
-    body: 'Depending on your region, you may have rights to access, correct or delete personal data, and to object to certain processing. To exercise these rights, contact privacy@nameverse.site.',
+    body: `Depending on your region, you may have rights to access, correct or delete personal data, and to object to certain processing. To exercise these rights, write to ${CONTACT.email}.`,
   },
   {
-    title: '7. Changes to this policy',
+    title: '7. Who is responsible for your data',
+    body: `${PUBLISHER.name} is operated by ${FOUNDER.name}, ${FOUNDER.location.label}. He is the data controller for this site and the only person with access to messages sent to ${CONTACT.email}. There is no third-party data processor between you and the site owner.`,
+  },
+  {
+    title: '8. Changes to this policy',
     body: 'We may update this policy as the site evolves. Material changes will be reflected by the "last updated" date below.',
   },
 ];
@@ -64,9 +69,14 @@ export default function PrivacyPage() {
           ))}
           <p className="pt-4 text-sm text-nv-text-secondary">
             Questions? Write to{' '}
-            <a href="mailto:privacy@nameverse.site" className="font-semibold text-nv-accent hover:underline">
-              privacy@nameverse.site
-            </a>.
+            <a href={`mailto:${CONTACT.email}?subject=Privacy%20question`} className="font-semibold text-nv-accent hover:underline">
+              {CONTACT.email}
+            </a>{' '}
+            — the same inbox the site owner reads for everything else. You can also call or message{' '}
+            <a href={CONTACT.phone.href} className="font-semibold text-nv-accent hover:underline">
+              {CONTACT.phone.international}
+            </a>
+            .
           </p>
         </div>
       </div>

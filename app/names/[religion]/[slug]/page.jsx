@@ -301,9 +301,15 @@ export default async function NameDetailPage({ params }) {
       name: 'NameVerse',
       url: SITE_URL,
     },
+    // The author is a named person now, so this is a Person node — but it is
+    // the AUTHOR of the page, never the name being described. The page must not
+    // tell Google that "Aaban" is a person; it describes a word. The verifier
+    // asserts exactly that distinction (see verify-crawlability.mjs, check 5).
     author: {
       '@type': AUTHOR.isOrganisation ? 'Organization' : 'Person',
+      '@id': AUTHOR.isOrganisation ? undefined : `${SITE_URL}/about#founder`,
       name: AUTHOR.name,
+      jobTitle: AUTHOR.isOrganisation ? undefined : AUTHOR.role,
       url: AUTHOR.bioUrl,
     },
     publisher: {

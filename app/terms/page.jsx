@@ -1,9 +1,11 @@
+import Link from 'next/link';
 import AdSlot from '../../components/AdSlot.jsx';
+import { FOUNDER, CONTACT } from '../../lib/data/editorial.js';
 
 export const metadata = {
   title: 'Terms of Service',
   description:
-    'NameVerse terms of service: acceptable use, accuracy disclaimer for name meanings, intellectual property and more.',
+    'NameVerse terms of service: acceptable use, accuracy disclaimer for name meanings, the free name API, intellectual property, and who owns the site.',
   robots: {
     index: false,
     follow: true,
@@ -25,7 +27,7 @@ const sections = [
   },
   {
     title: '4. Acceptable use',
-    body: 'You may not scrape, bulk-download or republish our name database or content without written permission. Personal, non-commercial browsing and sharing of individual pages is welcome.',
+    body: 'You may not scrape, bulk-download or republish our name database or content without written permission. Personal, non-commercial browsing and sharing of individual pages is welcome. The published JSON endpoints (see the About page) are intended to be read and cited; redistributing the database in bulk as your own dataset is not permitted.',
   },
   {
     title: '5. Intellectual property',
@@ -36,7 +38,11 @@ const sections = [
     body: 'The site contains advertising and links to third-party services. We are not responsible for their content or policies.',
   },
   {
-    title: '7. Changes',
+    title: '7. Who operates this site',
+    body: `NameVerse is operated by ${FOUNDER.name}, ${FOUNDER.location.label}. Requests about these terms, permissions, licensing or takedowns should be sent to ${CONTACT.email}.`,
+  },
+  {
+    title: '8. Changes',
     body: 'We may update these terms at any time. Continued use after changes constitutes acceptance of the updated terms.',
   },
 ];
@@ -64,9 +70,14 @@ export default function TermsPage() {
           ))}
           <p className="pt-4 text-sm text-nv-text-secondary">
             Questions? Write to{' '}
-            <a href="mailto:legal@nameverse.site" className="font-semibold text-nv-accent hover:underline">
-              legal@nameverse.site
-            </a>.
+            <a href={`mailto:${CONTACT.email}?subject=Terms%20question`} className="font-semibold text-nv-accent hover:underline">
+              {CONTACT.email}
+            </a>{' '}
+            or contact the site owner through the{' '}
+            <Link href="/contact" className="font-semibold text-nv-accent hover:underline">
+              contact page
+            </Link>
+            .
           </p>
         </div>
       </div>
