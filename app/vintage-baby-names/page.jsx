@@ -11,7 +11,7 @@ const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
 const TITLE = 'Vintage Baby Names Making a Comeback in 2026';
 const DESCRIPTION =
-  'Vintage and old-fashioned baby names returning to use, from Eleanor and Theodore to Mabel and Percival. Each name links to its verified meaning, origin and pronunciation.';
+  'Vintage and old-fashioned baby names returning to use, from Eleanor and Theodore to Mabel and Percival. Each name links to its documented meaning, origin and pronunciation.';
 
 export const metadata = {
   title: TITLE,
@@ -67,7 +67,7 @@ export default function VintageBabyNamesPage() {
   return (
     <UsPageShell
       cluster={cluster}
-      intro="Vintage baby names that were common a century ago, went quiet, and are now being used again. Every name below links to its verified meaning, origin and pronunciation where we hold a profile — so you can check what a name actually means before you revive it."
+      intro="Vintage baby names that were common a century ago, went quiet, and are now being used again. Every name below links to its documented meaning, origin and pronunciation where we hold a profile — so you can check what a name actually means before you revive it."
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
@@ -101,7 +101,7 @@ export default function VintageBabyNamesPage() {
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary">
           {cov.linked} of these {cov.total} names have a full profile in our database. Solid chips link
-          to the profile; dashed chips are names we list but do not yet hold a verified record for.
+          to the profile; dashed chips are names we list but do not yet hold a documented profile for.
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
           {resolved.map((item) => (
@@ -184,12 +184,12 @@ export default function VintageBabyNamesPage() {
         </h2>
         <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            { href: '/unique-baby-names', label: 'Unique baby names', note: 'Outside the top 100' },
+            { href: '/unique-baby-names', label: 'Unique baby names', note: 'Outside published lists' },
             { href: '/biblical-baby-names', label: 'Biblical baby names', note: 'Scripture-rooted' },
             { href: '/nature-baby-names', label: 'Nature baby names', note: 'Botanical and celestial' },
             { href: '/short-baby-names', label: 'Short baby names', note: 'One and two syllables' },
             { href: '/top-baby-names-2026', label: 'Top names 2026', note: 'Current rankings' },
-            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,412 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>

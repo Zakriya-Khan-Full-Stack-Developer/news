@@ -77,7 +77,7 @@ export default function PopularNames2026Page() {
   return (
     <UsPageShell
       cluster={cluster}
-      intro="The most popular baby names of 2026 in the United States, ranked from Social Security Administration birth-record data and cross-checked against BabyCenter's independent 2026 table. Every name below is linked to its verified meaning, origin and pronunciation where we hold a profile."
+      intro="The most popular baby names of 2026 in the United States, ranked from Social Security Administration birth-record data and cross-checked against BabyCenter's independent 2026 table. Every name below is linked to its documented meaning, origin and pronunciation where we hold a profile."
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
@@ -95,7 +95,7 @@ export default function PopularNames2026Page() {
               Browse unique baby names
             </Link>
             <Link href="/search" className="btn-ghost">
-              Search all 11,632 names
+              Search all 11,412 names
             </Link>
           </div>
         </>
@@ -240,7 +240,7 @@ export default function PopularNames2026Page() {
             { href: '/unique-baby-names', label: 'Unique baby names', note: 'Rare, meaningful picks' },
             { href: '/vintage-baby-names', label: 'Vintage baby names', note: 'Classics making a comeback' },
             { href: '/gender-neutral-names', label: 'Gender-neutral names', note: 'Used across genders' },
-            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,412 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>

@@ -5,7 +5,7 @@ import AdSlot from '../../components/AdSlot.jsx';
 export const metadata = {
   title: 'About NameVerse — Our Mission & Editorial Standards',
   description:
-    'NameVerse helps parents find meaningful baby names across Islamic, Hindu, Christian and global traditions. Learn about our mission, data and editorial standards.',
+    'NameVerse helps parents find meaningful baby names across Islamic, Christian and Hindu traditions. Learn about our mission, data and editorial standards.',
   alternates: {
     canonical: 'https://nameverse.site/about',
   },
@@ -16,7 +16,7 @@ const aboutJsonLd = {
   '@type': 'AboutPage',
   name: 'About NameVerse',
   description:
-    'NameVerse helps parents find meaningful baby names across Islamic, Hindu, Christian and global traditions.',
+    'NameVerse helps parents find meaningful baby names across Islamic, Christian and Hindu traditions.',
   url: 'https://nameverse.site/about',
   publisher: {
     '@type': 'Organization',
@@ -48,7 +48,7 @@ export default function AboutPage() {
             <h2 className="font-display text-xl font-bold text-nv-text">Our Mission</h2>
             <p className="mt-3 text-sm leading-relaxed text-nv-text-secondary sm:text-base">
               A name carries meaning, heritage and identity. We built NameVerse so parents can search
-              11,632 names across Islamic, Christian and Hindu traditions with verified
+              11,412 names across Islamic, Christian and Hindu traditions with documented
               meanings, origins, pronunciation guidance and cultural context — all in one fast,
               free, mobile-friendly place.
             </p>
@@ -59,7 +59,7 @@ export default function AboutPage() {
             <ul className="mt-4 space-y-3 text-sm leading-relaxed text-nv-text-secondary sm:text-base">
               <li className="flex gap-3">
                 <span className="text-nv-success font-bold">&#10003;</span>
-                <span>Verified meanings with linguistic and cultural context, not one-line auto-translations.</span>
+                <span>Documented meanings with linguistic and cultural context, not one-line auto-translations.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-nv-success font-bold">&#10003;</span>
@@ -79,9 +79,9 @@ export default function AboutPage() {
           <section className="card p-6 sm:p-8">
             <h2 className="font-display text-xl font-bold text-nv-text">Editorial Standards</h2>
             <p className="mt-3 text-sm leading-relaxed text-nv-text-secondary sm:text-base">
-              Entries are reviewed for linguistic origin, common usage and faith-aware interpretation
-              before they appear in search results and curated lists. When traditions differ on a
-              meaning or pronunciation, we note the variation rather than picking a side. If you spot
+              Entries are checked against structured meaning, origin and usage fields before they
+              appear in search results and curated lists. When traditions differ on a meaning or
+              pronunciation, we note the variation rather than picking a side. If you spot
               an error, tell us via our{' '}
               <Link href="/contact" className="font-semibold text-nv-accent hover:underline">
                 contact page

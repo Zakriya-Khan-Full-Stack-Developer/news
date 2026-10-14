@@ -11,7 +11,7 @@ const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
 const TITLE = 'Nature Baby Names \u2014 Botanical & Celestial';
 const DESCRIPTION =
-  'Nature baby names drawn from plants, trees, weather, landscapes and the night sky, with verified meanings and origins. Includes botanical, celestial and earth-name groups.';
+  'Nature baby names drawn from plants, trees, weather, landscapes and the night sky, with documented meanings and origins. Includes botanical, celestial and earth-name groups.';
 
 export const metadata = {
   title: TITLE,
@@ -67,7 +67,7 @@ export default function NatureBabyNamesPage() {
   return (
     <UsPageShell
       cluster={cluster}
-      intro="Nature baby names drawn from plants, trees, weather, landscapes and the night sky. Every name below links to its verified meaning and origin where we hold a profile, so you can check what a name actually means rather than assuming the literal reading."
+      intro="Nature baby names drawn from plants, trees, weather, landscapes and the night sky. Every name below links to its documented meaning and origin where we hold a profile, so you can check what a name actually means rather than assuming the literal reading."
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
@@ -79,7 +79,7 @@ export default function NatureBabyNamesPage() {
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-nv-text-secondary">
             The best-known nature names are now crowded. Our unique names page filters for picks that
-            sit outside the US top 100.
+            sit outside the published national and independent ranking lists used in the guide.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/unique-baby-names" className="btn-primary">
@@ -101,7 +101,7 @@ export default function NatureBabyNamesPage() {
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary">
           {cov.linked} of these {cov.total} names have a full profile in our database. Solid chips link
-          to the profile; dashed chips are names we list but do not yet hold a verified record for.
+          to the profile; dashed chips are names we list but do not yet hold a documented profile for.
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
           {resolved.map((item) => (
@@ -190,12 +190,12 @@ export default function NatureBabyNamesPage() {
         </h2>
         <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            { href: '/unique-baby-names', label: 'Unique baby names', note: 'Outside the top 100' },
+            { href: '/unique-baby-names', label: 'Unique baby names', note: 'Outside published lists' },
             { href: '/vintage-baby-names', label: 'Vintage baby names', note: 'Classics returning' },
             { href: '/gender-neutral-names', label: 'Gender-neutral names', note: 'Used across genders' },
             { href: '/short-baby-names', label: 'Short baby names', note: 'One and two syllables' },
             { href: '/top-baby-names-2026', label: 'Top names 2026', note: 'Current rankings' },
-            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,412 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>

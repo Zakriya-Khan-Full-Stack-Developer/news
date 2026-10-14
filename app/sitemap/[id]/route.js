@@ -76,6 +76,7 @@ export async function GET(request, { params }) {
     urls.push(`${siteUrl}/nature-baby-names`);
     urls.push(`${siteUrl}/short-baby-names`);
     urls.push(`${siteUrl}/editorial-policy`);
+    urls.push(`${siteUrl}/guides/expert-naming-guide`);
 
     // FIX — the name-detail sitemaps below already skip a tradition with zero
     // indexable records, but the hub list did not. /names/italian ships 352

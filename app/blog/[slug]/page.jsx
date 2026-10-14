@@ -1,54 +1,26 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getBlogPosts } from '../../../lib/data/names-data.js';
+import { AUTHOR, PUBLISHER, resolveSources } from '../../../lib/data/editorial.js';
+import { resolveName } from '../../../lib/data/us-names.js';
 import AdSlot from '../../../components/AdSlot.jsx';
 
 export const dynamicParams = false;
 
-// Fix 2 — prerender every blog post plus the three static stubs.
-const BLOG_STUB_SLUGS = [
-  'top-islamic-baby-names-2026',
-  'hindu-baby-names-meanings',
-  'christian-baby-names-bible',
-];
-
+// Every published article is prerendered. There are no placeholder or
+// "coming soon" blog routes: a slug is generated only when its data record
+// contains the article body rendered below.
 export function generateStaticParams() {
-  const posts = getBlogPosts();
-  const slugs = new Set(BLOG_STUB_SLUGS);
-  for (const post of posts) {
-    if (post && post.id) slugs.add(post.id);
-  }
-  return [...slugs].map((slug) => ({ slug }));
+  return getBlogPosts()
+    .filter((post) => post && post.id && post.content?.introduction && post.content?.sections?.length)
+    .map((post) => ({ slug: post.id }));
 }
 
 export async function generateMetadata({ params }) {
   const blogPosts = getBlogPosts();
   const post = blogPosts.find((p) => p.id === params.slug);
 
-  if (!post) {
-    if (params.slug === 'top-islamic-baby-names-2026') {
-      return {
-        title: 'Top Islamic Baby Names for 2026',
-        description: 'Explore the most searched Muslim baby names this year with meanings and origins.',
-        alternates: { canonical: 'https://nameverse.site/blog/top-islamic-baby-names-2026' },
-      };
-    }
-    if (params.slug === 'hindu-baby-names-meanings') {
-      return {
-        title: 'Hindu Baby Names with Deep Meanings',
-        description: 'Sanskrit and Vedic names carrying spiritual significance and heritage.',
-        alternates: { canonical: 'https://nameverse.site/blog/hindu-baby-names-meanings' },
-      };
-    }
-    if (params.slug === 'christian-baby-names-bible') {
-      return {
-        title: 'Christian Baby Names from the Bible',
-        description: 'Timeless biblical names with Hebrew and Greek roots, explained.',
-        alternates: { canonical: 'https://nameverse.site/blog/christian-baby-names-bible' },
-      };
-    }
-    return {};
-  }
+  if (!post) return {};
 
   return {
     title: `${post.title} | NameVerse`,
@@ -73,53 +45,7 @@ export default function BlogPostPage({ params }) {
   const blogPosts = getBlogPosts();
   const post = blogPosts.find((p) => p.id === params.slug);
 
-  // Handle static stubs gracefully
-  if (!post) {
-    const stubs = {
-      'top-islamic-baby-names-2026': {
-        title: 'Top Islamic Baby Names for 2026',
-        description: 'Explore the most searched Muslim baby names this year with meanings and origins.',
-        targetDir: '/names/islamic',
-        dirLabel: 'Islamic Names Directory',
-      },
-      'hindu-baby-names-meanings': {
-        title: 'Hindu Baby Names with Deep Meanings',
-        description: 'Sanskrit and Vedic names carrying spiritual significance and heritage.',
-        targetDir: '/names/hindu',
-        dirLabel: 'Hindu Names Directory',
-      },
-      'christian-baby-names-bible': {
-        title: 'Christian Baby Names from the Bible',
-        description: 'Timeless biblical names with Hebrew and Greek roots, explained.',
-        targetDir: '/names/christian',
-        dirLabel: 'Christian Names Directory',
-      },
-    };
-
-    const stub = stubs[params.slug];
-    if (!stub) notFound();
-
-    return (
-      <div className="container-page py-10 sm:py-14">
-        <div className="mx-auto max-w-3xl">
-          <Link href="/blog" className="text-sm font-semibold text-nv-accent hover:underline">
-            &larr; Back to Blog
-          </Link>
-          <h1 className="font-display mt-4 text-3xl font-bold text-nv-text sm:text-4xl">{stub.title}</h1>
-          <p className="mt-4 text-nv-text-secondary">{stub.description}</p>
-          <div className="mt-6 rounded-2xl border border-nv-border bg-nv-surface p-6">
-            <p className="text-sm text-nv-text-secondary">
-              This guide is being updated for 2026. In the meantime, explore our{' '}
-              <Link href={stub.targetDir} className="font-semibold text-nv-accent hover:underline">
-                {stub.dirLabel}
-              </Link>{' '}
-              for full meanings, origins, and lucky numbers.
-            </p>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  if (!post) notFound();
 
   const {
     title,
@@ -132,8 +58,13 @@ export default function BlogPostPage({ params }) {
     readTime,
     content,
   } = post;
-
+  const sources = resolveSources(post.sourceKeys || ['ssa', 'babycenter']);
   const formattedDate = new Date(publishDate).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+  const updatedDate = new Date(lastUpdated || publishDate).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -147,14 +78,18 @@ export default function BlogPostPage({ params }) {
     datePublished: publishDate,
     dateModified: lastUpdated,
     author: {
-      '@type': 'Organization',
-      name: author || 'NameVerse Editorial Team',
+      '@type': AUTHOR.isOrganisation ? 'Organization' : 'Person',
+      name: author || AUTHOR.name,
+      url: AUTHOR.bioUrl,
     },
     publisher: {
       '@type': 'Organization',
-      name: 'NameVerse',
-      url: 'https://nameverse.site',
+      name: PUBLISHER.name,
+      url: PUBLISHER.url,
+      logo: { '@type': 'ImageObject', url: PUBLISHER.logo },
     },
+    image: 'https://nameverse.site/nameverse_logo_emblem.webp',
+    citation: sources.map((source) => source.url),
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `https://nameverse.site/blog/${post.id}`,
@@ -201,6 +136,10 @@ export default function BlogPostPage({ params }) {
             <span>&bull;</span>
             <time dateTime={publishDate}>{formattedDate}</time>
           </div>
+          <p className="mb-3 text-xs leading-relaxed text-nv-text-muted">
+            By <Link href={AUTHOR.bioUrl} className="font-semibold text-nv-accent hover:underline">{author || AUTHOR.name}</Link>
+            {' '}&mdash; {AUTHOR.credentials}. Updated <time dateTime={lastUpdated || publishDate}>{updatedDate}</time>.
+          </p>
           <h1 className="font-display text-3xl font-bold tracking-tight text-nv-text sm:text-5xl">
             {title}
           </h1>
@@ -233,15 +172,18 @@ export default function BlogPostPage({ params }) {
                     Featured names in this section:
                   </span>
                   <div className="flex flex-wrap gap-2">
-                    {section.featuredNames.map((name) => (
-                      <Link
-                        key={name}
-                        href={`/search?q=${encodeURIComponent(name)}`}
-                        className="rounded-full border border-nv-border bg-nv-surface px-3 py-1 text-xs font-semibold text-nv-accent hover:bg-nv-accent-subtle transition"
-                      >
-                        {name}
-                      </Link>
-                    ))}
+                    {section.featuredNames.map((name) => {
+                      const resolved = resolveName(name);
+                      return (
+                        <Link
+                          key={name}
+                          href={resolved?.href || `/search?q=${encodeURIComponent(name)}`}
+                          className="rounded-full border border-nv-border bg-nv-surface px-3 py-1 text-xs font-semibold text-nv-accent hover:bg-nv-accent-subtle transition"
+                        >
+                          {name}
+                        </Link>
+                      );
+                    })}
                   </div>
                 </div>
               )}
@@ -272,6 +214,32 @@ export default function BlogPostPage({ params }) {
               ))}
             </div>
           </section>
+        )}
+
+        {sources.length > 0 && (
+          <aside className="mt-10 rounded-2xl border border-nv-border bg-nv-subtle/50 p-6 sm:p-8" aria-labelledby="sources-heading">
+            <h2 id="sources-heading" className="font-display text-xl font-bold text-nv-text">
+              Sources and editorial note
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-nv-text-secondary">
+              This guide combines cultural context with the NameVerse structured name database. Popularity
+              figures are signals for discovery, not religious or linguistic evidence; verify a name with
+              trusted family and community sources before making a decision.
+            </p>
+            <ul className="mt-4 space-y-2 text-sm">
+              {sources.map((source) => (
+                <li key={source.url}>
+                  <a href={source.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-nv-accent hover:underline">
+                    {source.name}
+                  </a>
+                  <span className="text-nv-text-muted"> &mdash; {source.note}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-xs text-nv-text-muted">
+              Corrections and source questions are welcome via the <Link href="/contact" className="font-semibold text-nv-accent hover:underline">contact page</Link>.
+            </p>
+          </aside>
         )}
 
         <div className="mt-12 pt-6 border-t border-nv-border flex justify-between items-center">

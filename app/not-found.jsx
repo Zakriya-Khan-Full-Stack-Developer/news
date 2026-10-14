@@ -2,13 +2,13 @@ import Link from 'next/link';
 import { getManifest } from '../lib/data/names-data.js';
 
 // FIX — these counts were hardcoded in the era when the manifest advertised
-// 42,310 names. The dataset is now 11,632 records, so the 404 page was telling
+// 42,310 names. The dataset is now 11,412 records, so the 404 page was telling
 // users and crawlers that ~28,500 names exist which do not. During a migration
 // that matters a great deal: thousands of removed URLs now resolve to this
 // page, so it is the single most-crawled page on the site, and it was
 // over-claiming the site's size on every hit. Read the real numbers from the
 // manifest so they can never drift again.
-const TRADITIONS = ['islamic', 'christian', 'hindu', 'italian'];
+const TRADITIONS = ['islamic', 'christian', 'hindu'];
 
 export const metadata = {
   title: 'Page Not Found',
@@ -21,10 +21,13 @@ export const metadata = {
 
 export default function NotFound() {
   const manifest = getManifest();
-  const total = TRADITIONS.reduce((sum, rel) => sum + (manifest[rel] || []).length, 0);
+  const total = TRADITIONS.reduce(
+    (sum, rel) => sum + (manifest[rel] || []).filter((item) => item.indexable).length,
+    0,
+  );
   const traditions = TRADITIONS.map((rel) => ({
     rel,
-    count: (manifest[rel] || []).length,
+    count: (manifest[rel] || []).filter((item) => item.indexable).length,
   }));
 
   return (

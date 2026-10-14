@@ -11,7 +11,7 @@ const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
 const TITLE = 'Biblical Baby Names for Boys & Girls';
 const DESCRIPTION =
-  'Biblical baby names for boys and girls with their meanings and origins, drawn from our verified database of scripture-rooted names. Includes Hebrew, Greek and Latin forms.';
+  'Biblical baby names for boys and girls with their meanings and origins, drawn from our documented database of scripture-rooted names. Includes Hebrew, Greek and Latin forms.';
 
 export const metadata = {
   title: TITLE,
@@ -70,7 +70,7 @@ export default function BiblicalBabyNamesPage() {
   return (
     <UsPageShell
       cluster={cluster}
-      intro="Biblical baby names for boys and girls, drawn from our verified database of scripture-rooted names. Every entry carries a documented meaning and origin, and each card links to the full profile with pronunciation, script forms and cultural context."
+      intro="Biblical baby names for boys and girls, drawn from our documented database of scripture-rooted names. Every entry carries a documented meaning and origin, and each card links to the full profile with pronunciation, script forms and cultural context."
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
@@ -100,7 +100,7 @@ export default function BiblicalBabyNamesPage() {
           id="list-heading"
           className="font-display text-2xl font-bold tracking-tight text-nv-text sm:text-3xl"
         >
-          Biblical names with verified meanings
+          Biblical names with documented meanings
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary">
           Ordered by how thoroughly documented each name is in our database. Every one of these names
@@ -160,10 +160,10 @@ export default function BiblicalBabyNamesPage() {
           {[
             { href: '/vintage-baby-names', label: 'Vintage baby names', note: 'Classics returning' },
             { href: '/muslim-baby-names-america', label: 'Muslim names in America', note: 'Arabic and Quranic' },
-            { href: '/unique-baby-names', label: 'Unique baby names', note: 'Outside the top 100' },
+            { href: '/unique-baby-names', label: 'Unique baby names', note: 'Outside published lists' },
             { href: '/top-baby-names-2026', label: 'Top names 2026', note: 'Current rankings' },
             { href: '/categories/biblical', label: 'Biblical category', note: 'Full category hub' },
-            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,412 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>

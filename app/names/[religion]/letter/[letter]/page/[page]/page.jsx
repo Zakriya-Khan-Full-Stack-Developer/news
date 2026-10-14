@@ -60,7 +60,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `"${letterDisplay}" ${relLabel} Baby Names — Page ${page} of ${pageCount}`,
-    description: `${relLabel} baby names starting with "${letterDisplay}", page ${page} of ${pageCount} (${names.length.toLocaleString()} names) — verified meanings, origins, gender and lucky numbers.`,
+    description: `${relLabel} baby names starting with "${letterDisplay}", page ${page} of ${pageCount} (${names.length.toLocaleString()} names) — documented meanings, origins, gender and lucky numbers.`,
     alternates: {
       canonical: `https://nameverse.site/names/${finalReligion}/letter/${segment}/page/${page}`,
     },

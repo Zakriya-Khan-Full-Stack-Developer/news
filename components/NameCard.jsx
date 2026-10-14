@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { normalizeGender } from '../lib/data/name-utils.js';
-import { isRenderableSlug } from '../lib/data/names-data.js';
+import { getCanonicalSlug, isIndexableSlug } from '../lib/data/names-data.js';
 
 // Tradition accent styling. Uses the design-system tokens so the card colours
 // stay in sync with the rest of the site and remain AA-contrast in both themes.
@@ -57,10 +57,11 @@ export default function NameCard({ item, showReligion = false, headingTag = 'p' 
   // was a hard 404 — 352 of them from the Italian set alone, published from the
   // homepage, the letter hubs, the tradition hubs, /names, /origins/italian,
   // /categories/italian and /trending-names.
-  const linkable = isRenderableSlug(religion, item.slug);
+  const targetSlug = getCanonicalSlug(religion, item.slug);
+  const linkable = isIndexableSlug(religion, targetSlug);
   const Wrapper = linkable ? Link : 'div';
   const wrapperProps = linkable
-    ? { href: `/names/${religion}/${item.slug}`, prefetch: false }
+    ? { href: `/names/${religion}/${targetSlug}`, prefetch: false }
     : {};
 
   return (

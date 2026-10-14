@@ -115,7 +115,7 @@ export function getPopularSlugs(limit = 20000) {
     .map((item) => ({ religion: item.religion, slug: item.slug }));
 }
 
-export default {
+const moduleApi = {
   getReligionDirs,
   getSlugs,
   readNameData,
@@ -124,3 +124,5 @@ export default {
   getPopularSlugs,
   normalizeReligion,
 };
+
+export default moduleApi;

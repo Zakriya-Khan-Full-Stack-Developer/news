@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { normalizeGender, religionLabel } from '../lib/data/name-utils.js';
 
-const RELIGIONS = ['islamic', 'christian', 'hindu', 'italian'];
-const RELIGION_LABELS = { christian: 'Christian', hindu: 'Hindu', islamic: 'Islamic', italian: 'Italian' };
+const RELIGIONS = ['islamic', 'christian', 'hindu'];
+const RELIGION_LABELS = { christian: 'Christian', hindu: 'Hindu', islamic: 'Islamic' };
 const GENDER_OPTIONS = [
   { key: '', label: 'All Genders' },
   { key: 'boy', label: 'Boys' },
@@ -19,7 +19,6 @@ const ORIGIN_LABELS = {
   biblical: 'Biblical',
   sanskrit: 'Sanskrit',
   hindu: 'Hindu',
-  italian: 'Italian',
   persian: 'Persian',
   english: 'English',
   tamil: 'Tamil',
@@ -207,7 +206,7 @@ export default function SearchClient({ initialQuery = '', initialReligion = '', 
       <div className="mb-4 flex items-center justify-between px-1">
         <div className="flex items-center gap-2">
           <span className="text-sm font-bold text-nv-text">
-            {loading ? 'Searching 11,632 names…' : `${results.length} Matches Found`}
+            {loading ? 'Searching 11,412 names…' : `${results.length} Matches Found`}
           </span>
           {results.length >= 200 && (
             <span className="badge border border-nv-border bg-nv-subtle text-nv-text-secondary text-[11px]">
@@ -295,7 +294,7 @@ export default function SearchClient({ initialQuery = '', initialReligion = '', 
             🔍
           </div>
           <p className="text-base font-bold text-nv-text">No names matched your filters.</p>
-          <p className="mt-1 text-xs text-nv-text-secondary">Try a shorter query, select "All Traditions", or explore our curated lists.</p>
+          <p className="mt-1 text-xs text-nv-text-secondary">Try a shorter query, select &quot;All Traditions&quot;, or explore our curated lists.</p>
           <button
             type="button"
             onClick={() => {

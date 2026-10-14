@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getManifest, getPopularSlugs } from '../lib/data/names-data.js';
+import { getManifest, getPopularItems } from '../lib/data/names-data.js';
 import NameCard from '../components/NameCard.jsx';
 import HomepageSearch from '../components/HomepageSearch.jsx';
 import PageJsonLd from '../components/PageJsonLd.jsx';
@@ -8,7 +8,7 @@ import AdSlot from '../components/AdSlot.jsx';
 export const metadata = {
   title: 'Baby Names with Meanings, Origins & Cultural Context',
   description:
-    'Search 11,632 baby names with meanings, origins, pronunciation guides, script forms and cultural context across Islamic, Christian and Hindu traditions.',
+    'Search 11,412 baby names with meanings, origins, pronunciation guides, script forms and cultural context across Islamic, Christian and Hindu traditions.',
   alternates: {
     canonical: 'https://nameverse.site',
   },
@@ -48,17 +48,6 @@ const hubs = [
     badge: 'bg-rose-50 text-rose-800 dark:bg-rose-950/60 dark:text-rose-300 border-rose-200 dark:border-rose-800',
     tag: 'Sanskrit & Vedic Heritage',
   },
-  {
-    religion: 'italian',
-    label: 'Italian Names',
-    description: 'Classical Italian and Roman names celebrating European culture, lyrical melodies, and Renaissance heritage.',
-    href: '/names/italian',
-    boyHref: '/names/italian',
-    girlHref: '/names/italian',
-    accent: 'border-amber-200/80 dark:border-amber-800/40 hover:border-amber-500/60',
-    badge: 'bg-amber-50 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300 border-amber-200 dark:border-amber-800',
-    tag: 'Roman & Renaissance Heritage',
-  },
 ];
 
 // Counts are derived from the manifest at render time rather than hardcoded,
@@ -73,12 +62,12 @@ const GENDER_HUB_DEFS = [
 ];
 
 const meaningThemes = [
-  { name: 'Light & Radiance', slug: 'light', desc: 'Names embodying illumination, dawn, and clarity', count: '1,420+ names' },
-  { name: 'Love & Affection', slug: 'love', desc: 'Expressions of divine grace, belovedness, and devotion', count: '980+ names' },
-  { name: 'Strength & Power', slug: 'strength', desc: 'Names of courageous guardians, warriors, and leaders', count: '1,890+ names' },
-  { name: 'Peace & Serenity', slug: 'peace', desc: 'Calm waters, harmony, and celestial tranquility', count: '860+ names' },
-  { name: 'Wisdom & Truth', slug: 'wisdom', desc: 'Scholars, intellect, discerning minds, and truth', count: '740+ names' },
-  { name: 'Blessing & Grace', slug: 'blessing', desc: 'Gifts from above, fortunate destinies, and joy', count: '1,120+ names' },
+  { name: 'Light & Radiance', slug: 'light', desc: 'Names embodying illumination, dawn, and clarity' },
+  { name: 'Love & Affection', slug: 'love', desc: 'Expressions of divine grace, belovedness, and devotion' },
+  { name: 'Strength & Power', slug: 'strength', desc: 'Names of courageous guardians, warriors, and leaders' },
+  { name: 'Peace & Serenity', slug: 'peace', desc: 'Calm waters, harmony, and celestial tranquility' },
+  { name: 'Wisdom & Truth', slug: 'wisdom', desc: 'Scholars, intellect, discerning minds, and truth' },
+  { name: 'Blessing & Grace', slug: 'blessing', desc: 'Gifts from above, fortunate destinies, and joy' },
 ];
 
 const intentChips = [
@@ -95,36 +84,34 @@ const intentChips = [
 const latestArticles = [
   {
     title: 'Top Islamic Baby Names for 2026',
-    excerpt: 'The most searched Muslim baby names this year, with verified Quranic roots, transliterations, and lucky numbers.',
+    excerpt: 'A meaning-first guide to Quranic, Arabic and Muslim naming choices, including transliteration and popularity context.',
     href: '/blog/top-islamic-baby-names-2026',
-    date: 'Jan 2026',
+    date: 'Oct 2026',
     tag: 'Islamic Naming',
   },
   {
-    title: 'Hindu Baby Names with Deep Spiritual Meanings',
-    excerpt: 'Sanskrit and Vedic names carrying spiritual significance, nakshatra alignments, and auspicious beginnings.',
+    title: 'Hindu Baby Names with Deep Meanings',
+    excerpt: 'How to compare Sanskrit, devotional and regional naming traditions while checking pronunciation and context.',
     href: '/blog/hindu-baby-names-meanings',
-    date: 'Jan 2026',
-    tag: 'Vedic Heritage',
+    date: 'Oct 2026',
+    tag: 'Hindu Naming',
   },
   {
-    title: 'Timeless Christian Baby Names from the Bible',
-    excerpt: 'Discover ancient Hebrew and Greek roots behind enduring biblical names for boys and girls.',
+    title: 'Christian Baby Names from the Bible',
+    excerpt: 'Biblical, Hebrew, Greek and Latin names explained with historical context beyond a simple list.',
     href: '/blog/christian-baby-names-bible',
-    date: 'Dec 2025',
-    tag: 'Biblical Heritage',
+    date: 'Oct 2026',
+    tag: 'Christian Naming',
   },
 ];
 
-// FIX — this answer claimed "over 42,000 baby names". The dataset is 11,632
-// records; the 42,310 figure came from the old manifest that advertised ~28,500
-// URLs which 404'd. Removed the number rather than restating it, so it cannot
-// drift out of date again.
+// Homepage FAQs answer the actual product and editorial questions without
+// claiming that every source record has the same level of verification.
 const faqs = [
   {
     question: 'How does the NameVerse instant autosearch work?',
     answer:
-      'Our instant search engine indexes the full NameVerse collection across Islamic, Christian and Hindu traditions. As you type in the search bar, it immediately analyzes spelling, etymological root, meaning, and origin, presenting instant suggestions, gender badges, and quick links directly to full profiles without requiring page reloads.',
+      'The homepage search loads compact, build-generated indexes for the published profiles. As you type, it matches the name, recorded meaning and origin in your browser, then offers a direct link to the full profile without a page reload.',
   },
   {
     question: 'How do I search for baby names by specific meaning on NameVerse?',
@@ -134,17 +121,17 @@ const faqs = [
   {
     question: 'Are name origins, original scripts, and pronunciations verified?',
     answer:
-      'Yes. Every entry on NameVerse is rigorously cross-referenced against authentic classical texts, dictionaries, and spiritual traditions. We display authentic Arabic calligraphy, Urdu typography, Devanagari Sanskrit, and Latin etymologies, accompanied by precise English phonetic and IPA pronunciation guides.',
+      'A profile enters the published directory only when its structured record includes both a meaning and an origin. Script forms and pronunciations are shown when the record contains them, and uncertain or missing claims are labelled rather than filled with guesses. See our editorial policy for the review standard.',
   },
   {
     question: 'How are the lucky numbers, gemstones, and numerological profiles calculated?',
     answer:
-      'Numerological alignments are derived from classical Pythagorean and Chaldean vibrational matrices. Each letter carries a specific energetic frequency that sums into an overarching Destiny Number, harmonic lucky days, resonant gemstones, and color spectrums that parents can reference for auspicious naming.',
+      'NameVerse calculates the displayed number with a Pythagorean letter-to-number mapping. Lucky numbers, colours, stones and letter symbolism are traditional, belief-based associations; they are not linguistic, scientific or predictive facts.',
   },
   {
     question: 'How are popularity scores and 2026 baby name trends determined?',
     answer:
-      'Popularity indices combine national civil birth registry records, worldwide digital search frequencies, and on-site engagement analytics across NameVerse, giving parents an up-to-the-minute gauge of rising, trending, and timeless classics.',
+      'Popularity is displayed from the score carried by each structured name record. It is a discovery aid, not an official national ranking. The dedicated ranking pages identify their external sources and methodology; a score is never presented as a guarantee of future popularity.'
   },
   {
     question: 'Can I compare multiple baby names side by side?',
@@ -155,15 +142,13 @@ const faqs = [
 
 export default function HomePage() {
   const manifest = getManifest();
-  const religions = ['islamic', 'christian', 'hindu', 'italian'];
+  const religions = ['islamic', 'christian', 'hindu'];
   const counts = Object.fromEntries(religions.map((r) => [r, (manifest[r] || []).length]));
   const totalNames = religions.reduce((sum, r) => sum + counts[r], 0);
 
-  // FIX — a tradition with zero publishable records was still being promoted as
-  // one of the four pillars of the site. The Italian set holds 352 entries and
-  // not one has content: /names/italian reads "352 names · 0 boys · 0 girls"
-  // and every card on it is an unlinkable "soon" stub. Count only what a visitor
-  // can actually open, and drop empty traditions from the homepage grid.
+  // Only traditions with published profiles are promoted in the homepage grid.
+  // Verification-pending source records remain reachable only through their
+  // noindex handling, so they cannot create empty navigation destinations.
   const indexableCounts = Object.fromEntries(
     religions.map((r) => [r, (manifest[r] || []).filter((i) => i.indexable).length]),
   );
@@ -181,16 +166,35 @@ export default function HomePage() {
   const genderHubs = GENDER_HUB_DEFS.map((d) => ({
     ...d,
     count: (manifest[d.religion] || [])
-      .filter((i) => i.gender === d.gender)
+      .filter((i) => i.indexable && i.gender === d.gender)
       .length.toLocaleString(),
   }));
 
-  const popularSlugs = getPopularSlugs(12);
-  const bySlug = {};
-  for (const r of religions) {
-    for (const item of manifest[r] || []) bySlug[item.slug] = item;
-  }
-  const popularNames = popularSlugs.map(({ slug }) => bySlug[slug]).filter(Boolean);
+  const popularNames = getPopularItems(12);
+  const meaningTerms = {
+    light: ['light', 'bright', 'radiance', 'dawn', 'illumination', 'glow'],
+    love: ['love', 'beloved', 'affection', 'devotion', 'dear'],
+    strength: ['strength', 'strong', 'power', 'courage', 'brave', 'might'],
+    peace: ['peace', 'calm', 'serenity', 'harmony', 'tranquil'],
+    wisdom: ['wisdom', 'wise', 'knowledge', 'truth', 'intellect'],
+    blessing: ['blessing', 'blessed', 'gift', 'grace', 'fortunate', 'prosperity'],
+  };
+  const meaningThemeCounts = Object.fromEntries(
+    meaningThemes.map((theme) => {
+      const terms = meaningTerms[theme.slug] || [theme.slug];
+      const count = religions.reduce(
+        (sum, rel) =>
+          sum +
+          (manifest[rel] || []).filter((item) => {
+            if (!item.indexable) return false;
+            const meaning = String(item.meaning || '').toLowerCase();
+            return terms.some((term) => meaning.includes(term));
+          }).length,
+        0,
+      );
+      return [theme.slug, count];
+    }),
+  );
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -248,22 +252,22 @@ export default function HomePage() {
           <div className="mx-auto mt-12 grid max-w-4xl grid-cols-2 gap-4 rounded-2xl border border-nv-border/80 bg-nv-surface/70 p-5 shadow-sm backdrop-blur-md sm:grid-cols-4">
             <div className="text-center">
               <span className="font-display text-2xl font-bold text-nv-text sm:text-3xl">
-                {totalNames.toLocaleString()}
+                {indexableNames.toLocaleString()}
               </span>
-              <span className="mt-0.5 block text-xs font-semibold text-nv-text-muted">Names Documented</span>
+              <span className="mt-0.5 block text-xs font-semibold text-nv-text-muted">Published Profiles</span>
             </div>
             <div className="text-center">
-              <span className="font-display text-2xl font-bold text-islamic sm:text-3xl">4</span>
+              <span className="font-display text-2xl font-bold text-islamic sm:text-3xl">{activeReligions.length}</span>
               <span className="mt-0.5 block text-xs font-semibold text-nv-text-muted">Naming Traditions</span>
             </div>
             <div className="text-center">
               <span className="font-display text-2xl font-bold text-christian sm:text-3xl">
-                {indexableNames.toLocaleString()}
+                {totalNames.toLocaleString()}
               </span>
-              <span className="mt-0.5 block text-xs font-semibold text-nv-text-muted">Indexable Pages</span>
+              <span className="mt-0.5 block text-xs font-semibold text-nv-text-muted">Source Records</span>
             </div>
             <div className="text-center">
-              <span className="font-display text-2xl font-bold text-italian sm:text-3xl">2026</span>
+              <span className="font-display text-2xl font-bold text-nv-accent sm:text-3xl">2026</span>
               <span className="mt-0.5 block text-xs font-semibold text-nv-text-muted">Trend Data</span>
             </div>
           </div>
@@ -387,16 +391,16 @@ export default function HomePage() {
         <section aria-labelledby="trending-heading">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
             <div>
-              <span className="eyebrow">Top Searches</span>
+              <span className="eyebrow">Highest popularity scores</span>
               <h2 id="trending-heading" className="mt-1 font-display text-2xl font-bold tracking-tight text-nv-text sm:text-3xl">
                 Trending Baby Names for 2026
               </h2>
               <p className="mt-1 text-xs text-nv-text-secondary">
-                The most popular selections searched by expecting parents this month.
+                Published profiles with the highest popularity scores in our collection.
               </p>
             </div>
             <Link href="/trending-names" className="btn-ghost !min-h-[40px] !px-4 !text-xs self-start sm:self-auto">
-              View All 100 Trending Names &rarr;
+              View All Trending Names &rarr;
             </Link>
           </div>
 
@@ -431,7 +435,7 @@ export default function HomePage() {
                     {theme.name}
                   </span>
                   <span className="badge border border-nv-border bg-nv-subtle text-[11px] text-nv-text-secondary">
-                    {theme.count}
+                    {meaningThemeCounts[theme.slug].toLocaleString()} profiles
                   </span>
                 </div>
                 <p className="mt-2 text-xs text-nv-text-secondary leading-relaxed">
@@ -463,7 +467,7 @@ export default function HomePage() {
                 <span className="text-nv-accent">01.</span> Cultural &amp; Spiritual Roots
               </h3>
               <p className="text-xs sm:text-sm text-nv-text-secondary leading-relaxed">
-                Whether selecting an authentic Quranic name from the Islamic tradition, a timeless biblical virtue name from Christian heritage, a sacred Sanskrit mantra name from Vedic lineage, or a melodic Italian classic, cultural roots anchor your child in a legacy of enduring virtue and pride.
+                Whether selecting an authentic Quranic name from the Islamic tradition, a timeless biblical virtue name from Christian heritage, or a sacred Sanskrit name from Vedic lineage, cultural roots anchor your child in a legacy of enduring virtue and pride.
               </p>
             </div>
 
@@ -472,7 +476,7 @@ export default function HomePage() {
                 <span className="text-nv-accent">02.</span> Sound, Rhythm &amp; Phonetics
               </h3>
               <p className="text-xs sm:text-sm text-nv-text-secondary leading-relaxed">
-                A great baby name rolls smoothly off the tongue. On NameVerse, we provide syllable breakdowns, International Phonetic Alphabet (IPA) standards, and original script pronunciations in Arabic, Urdu, and Hindi to ensure your child’s name sounds balanced and resonant across global cultures.
+                A great baby name rolls smoothly off the tongue. NameVerse records syllable breakdowns, pronunciation notes, and available original script forms so families can test how a name sounds in the languages they use.
               </p>
             </div>
 
@@ -481,7 +485,7 @@ export default function HomePage() {
                 <span className="text-nv-accent">03.</span> Numerological Harmony
               </h3>
               <p className="text-xs sm:text-sm text-nv-text-secondary leading-relaxed">
-                Each letter possesses an energetic frequency. Classical Pythagorean and Chaldean numerology matrices calculate Destiny Numbers, auspicious days, and harmonizing color vibrations, allowing parents to align their naming choice with universal harmony and positive life path aspirations.
+                NameVerse also displays traditional numerology and lucky-number associations where the source record includes them. These are belief-based cultural interpretations, not scientific predictions; meaning, origin and pronunciation are the fields to use for factual comparison.
               </p>
             </div>
           </div>
@@ -495,7 +499,7 @@ export default function HomePage() {
               Why Parents Trust NameVerse
             </h2>
             <p className="mx-auto mt-2 max-w-xl text-xs text-nv-text-secondary">
-              We combine linguistic research, sacred scripture archives, and cultural verification.
+              We combine structured source records, transparent editorial notes and cultural context.
             </p>
           </div>
 
@@ -506,7 +510,7 @@ export default function HomePage() {
               </div>
               <h4 className="font-display text-base font-bold text-nv-text">Original Scripts</h4>
               <p className="mt-1.5 text-xs text-nv-text-secondary leading-relaxed">
-                Authentic Arabic calligraphy, Urdu typography, Devanagari Sanskrit, and Latin etymological stems.
+                Available Arabic, Urdu, Devanagari and Latin script forms, shown alongside transliteration where the record supplies them.
               </p>
             </div>
 
@@ -516,7 +520,7 @@ export default function HomePage() {
               </div>
               <h4 className="font-display text-base font-bold text-nv-text">Lucky Numerology</h4>
               <p className="mt-1.5 text-xs text-nv-text-secondary leading-relaxed">
-                Chaldean and Pythagorean numerology matrices, lucky numbers, days, colors, and astrological life paths.
+                Traditional numerology, lucky numbers and related associations are labelled as belief-based context rather than fact.
               </p>
             </div>
 
@@ -524,9 +528,9 @@ export default function HomePage() {
               <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500 text-white font-bold">
                 ✓
               </div>
-              <h4 className="font-display text-base font-bold text-nv-text">Verified Etymology</h4>
+              <h4 className="font-display text-base font-bold text-nv-text">Documented Meaning</h4>
               <p className="mt-1.5 text-xs text-nv-text-secondary leading-relaxed">
-                Every meaning is cross-referenced against historical dictionaries, classical texts, and regional registries.
+                Published profiles carry a documented meaning and origin; uncertain claims are labelled and verification-pending records stay out of the index.
               </p>
             </div>
 
@@ -549,7 +553,7 @@ export default function HomePage() {
             <div>
               <span className="eyebrow">Editorial Guides</span>
               <h2 id="articles-heading" className="mt-1 font-display text-2xl font-bold tracking-tight text-nv-text sm:text-3xl">
-                Expert Naming Guides &amp; Insights
+                Editorial Naming Guides &amp; Insights
               </h2>
               <p className="mt-1 text-xs text-nv-text-secondary">
                 Cultural context, traditional naming ceremonies, and baby naming etiquette.

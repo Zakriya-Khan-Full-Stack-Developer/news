@@ -9,7 +9,14 @@ export const dynamicParams = false;
 
 // Fix 2 — prerender all curated origin hubs at build time.
 export function generateStaticParams() {
-  return ORIGIN_SLUGS.map((origin) => ({ origin }));
+  const manifest = getManifest();
+  return ORIGIN_SLUGS
+    .filter((origin) =>
+      Object.values(manifest).some((items) =>
+        (items || []).some((item) => item.indexable && originSlugFor(item.origin) === origin),
+      ),
+    )
+    .map((origin) => ({ origin }));
 }
 
 export async function generateMetadata({ params }) {
@@ -19,7 +26,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${label} Baby Names with Meanings & Origins`,
-    description: `Browse ${label} baby names with verified meanings, origins, gender and lucky numbers — ranked by popularity for 2026.`,
+    description: `Browse ${label} baby names with documented meanings, origins, gender and lucky numbers — ranked by popularity for 2026.`,
     alternates: {
       canonical: `https://nameverse.site/origins/${origin}`,
     },
@@ -39,7 +46,7 @@ export default function OriginDetailPage({ params }) {
 
   for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {
     for (const item of manifest[rel] || []) {
-      if (originSlugFor(item.origin) === origin) {
+      if (item.indexable && originSlugFor(item.origin) === origin) {
         all.push({ ...item, religion: rel });
         religionCounts.set(rel, (religionCounts.get(rel) || 0) + 1);
       }
@@ -47,6 +54,7 @@ export default function OriginDetailPage({ params }) {
   }
 
   all.sort((a, b) => (b.popularity_score || 0) - (a.popularity_score || 0));
+  if (!all.length) notFound();
   const topNames = all.slice(0, 300);
   const religionsWithNames = [...religionCounts.entries()].sort((a, b) => b[1] - a[1]);
 

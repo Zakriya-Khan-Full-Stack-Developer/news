@@ -228,7 +228,7 @@ export default function EditorialPolicyPage() {
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <Link href="/names" className="btn-primary">
-              All 11,632 names
+              All 11,412 names
             </Link>
             <Link href="/popular-names-2026" className="btn-ghost">
               Most popular 2026

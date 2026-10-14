@@ -35,6 +35,15 @@ async function runTests() {
   let passed = 0;
   let failed = 0;
 
+  function readable(body) {
+    return String(body || '')
+      .replace(/<!--\s*-->\s*/g, ' ')
+      .replace(/\s+/g, ' ')
+      .replace(/&amp;/g, '&')
+      .replace(/&quot;/g, '"')
+      .replace(/&#x27;|&#39;/g, "'");
+  }
+
   function assert(condition, testName, details = '') {
     if (condition) {
       console.log(`[PASS] ${testName}`);
@@ -59,26 +68,26 @@ async function runTests() {
     const rel = await fetchPage('/names/islamic');
     assert(rel.status === 200, '2. Religion page (/names/islamic) HTTP 200', `Got ${rel.status}`);
     assert(rel.body.includes('rel="canonical" href="https://nameverse.site/names/islamic"'), '2. Religion canonical matches exact URL');
-    assert(rel.body.includes('Islamic Baby Names with Meanings'), '2. Religion H1 present in HTML');
+    assert(readable(rel.body).includes('Islamic Baby Names with Meanings'), '2. Religion H1 present in HTML');
     assert(rel.body.includes('"@type":"CollectionPage"'), '2. Religion CollectionPage schema present');
 
     // 3. Category page
     const cat = await fetchPage('/categories/biblical');
     assert(cat.status === 200, '3. Category page (/categories/biblical) HTTP 200', `Got ${cat.status}`);
     assert(cat.body.includes('rel="canonical" href="https://nameverse.site/categories/biblical"'), '3. Category canonical matches exact URL');
-    assert(cat.body.includes('Biblical Baby Names &amp; Meanings'), '3. Category H1 present in HTML');
+    assert(readable(cat.body).includes('Biblical Baby Names with Meanings'), '3. Category H1 present in HTML');
 
     // 4. Letter page
     const letter = await fetchPage('/names/islamic/letter/a');
     assert(letter.status === 200, '4. Letter page (/names/islamic/letter/a) HTTP 200', `Got ${letter.status}`);
     assert(letter.body.includes('rel="canonical" href="https://nameverse.site/names/islamic/letter/a"'), '4. Letter canonical matches exact URL');
 
-    // 5. Name page (On-demand ISR generation)
-    const name = await fetchPage('/names/islamic/zakriya');
-    assert(name.status === 200, '5. Name page (/names/islamic/zakriya) ISR HTTP 200', `Got ${name.status}`);
+    // 5. Name page (a prerendered canonical profile)
+    const name = await fetchPage('/names/islamic/aaban');
+    assert(name.status === 200, '5. Name page (/names/islamic/aaban) HTTP 200', `Got ${name.status}`);
     assert(name.body.includes('<h1'), '5. Name page has H1 in raw HTML');
-    assert(name.body.includes('Zakriya'), '5. Name page contains name in raw HTML');
-    assert(name.body.includes('rel="canonical" href="https://nameverse.site/names/islamic/zakriya"'), '5. Name page canonical is exact and self-referencing');
+    assert(readable(name.body).includes('Aaban'), '5. Name page contains name in raw HTML');
+    assert(name.body.includes('rel="canonical" href="https://nameverse.site/names/islamic/aaban"'), '5. Name page canonical is exact and self-referencing');
     assert(name.body.includes('"@type":"BreadcrumbList"'), '5. Name page BreadcrumbList schema present');
     assert(name.body.includes('"@type":"WebPage"'), '5. Name page WebPage schema present');
     assert(!name.body.includes('"@type":"Person"'), '5. Name page has NO deceptive Person schema');
@@ -119,7 +128,7 @@ async function runTests() {
     assert(sitemap.status === 200, '12. /sitemap.xml HTTP 200', `Got ${sitemap.status}`);
     assert(sitemap.body.includes('<sitemapindex'), '12. sitemap.xml is valid sitemapindex');
     assert(sitemap.body.includes('https://nameverse.site/sitemap/pages.xml'), '12. sitemap index includes pages.xml');
-    assert(sitemap.body.includes('https://nameverse.site/sitemap/islamic-1.xml'), '12. sitemap index includes islamic-1.xml');
+    assert(sitemap.body.includes('https://nameverse.site/sitemap/islamic.xml'), '12. sitemap index includes islamic.xml');
 
     // 13. Sub-sitemap pages.xml
     const pagesSitemap = await fetchPage('/sitemap/pages.xml');
@@ -128,15 +137,15 @@ async function runTests() {
     assert(pagesSitemap.body.includes('<loc>https://nameverse.site/names/islamic</loc>'), '13. pages.xml contains canonical URLs without trailing slashes');
     assert(!pagesSitemap.body.includes('/search<'), '13. pages.xml excludes disallowed /search');
 
-    // 14. Sub-sitemap islamic-1.xml
-    const islamicSitemap = await fetchPage('/sitemap/islamic-1.xml');
-    assert(islamicSitemap.status === 200, '14. /sitemap/islamic-1.xml HTTP 200', `Got ${islamicSitemap.status}`);
-    assert(islamicSitemap.body.includes('<loc>https://nameverse.site/names/islamic/'), '14. islamic-1.xml contains name URLs');
+    // 14. Sub-sitemap islamic.xml
+    const islamicSitemap = await fetchPage('/sitemap/islamic.xml');
+    assert(islamicSitemap.status === 200, '14. /sitemap/islamic.xml HTTP 200', `Got ${islamicSitemap.status}`);
+    assert(islamicSitemap.body.includes('<loc>https://nameverse.site/names/islamic/'), '14. islamic.xml contains name URLs');
 
     // 15. Gender hub
     const girlHub = await fetchPage('/christian-girl-names');
     assert(girlHub.status === 200, '15. Gender hub (/christian-girl-names) HTTP 200', `Got ${girlHub.status}`);
-    assert(girlHub.body.includes('Girl Christian Names &amp; Meanings'), '15. Gender hub renders girl names H1');
+    assert(readable(girlHub.body).includes('Girl Christian Names & Meanings'), '15. Gender hub renders girl names H1');
     assert(!girlHub.body.includes('0 girl names'), '15. Girl names filter bug is FIXED (shows non-zero count)');
 
     console.log(`\n=== AUDIT SUMMARY: ${passed} PASSED, ${failed} FAILED ===`);

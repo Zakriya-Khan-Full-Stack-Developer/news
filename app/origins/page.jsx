@@ -6,7 +6,7 @@ import AdSlot from '../../components/AdSlot.jsx';
 export const metadata = {
   title: 'Baby Names by Origin — Arabic, Biblical, Sanskrit',
   description:
-    'Browse 11,632 baby names grouped by linguistic and cultural origin: Arabic, Biblical, Sanskrit, Hindu, Italian, Persian, Tamil and more, with verified meanings.',
+    'Browse 11,412 published baby names grouped by linguistic and cultural origin: Arabic, Biblical, Sanskrit, Persian, Tamil, Hindi, Urdu and more, with documented meanings.',
   alternates: {
     canonical: 'https://nameverse.site/origins',
   },
@@ -16,13 +16,15 @@ export default function OriginsIndexPage() {
   const manifest = getManifest();
   const origins = ORIGIN_SLUGS.map((slug) => {
     let count = 0;
-    for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {
+    for (const rel of ['islamic', 'christian', 'hindu']) {
       for (const item of manifest[rel] || []) {
-        if (originSlugFor(item.origin) === slug) count++;
+        if (item.indexable && originSlugFor(item.origin) === slug) count++;
       }
     }
     return { slug, label: ORIGIN_LABELS[slug], count };
-  }).sort((a, b) => b.count - a.count);
+  })
+    .filter((origin) => origin.count > 0)
+    .sort((a, b) => b.count - a.count);
 
   const total = origins.reduce((sum, o) => sum + o.count, 0);
 

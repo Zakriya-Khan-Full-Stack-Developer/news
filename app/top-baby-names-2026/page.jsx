@@ -77,7 +77,7 @@ export default function TopBabyNames2026Page() {
   return (
     <UsPageShell
       cluster={cluster}
-      intro="The top baby names of 2026 for boys and girls in the United States, ranked from Social Security Administration birth-record data. Each name links to its verified meaning, origin, pronunciation and cultural context."
+      intro="The top baby names of 2026 for boys and girls in the United States, ranked from Social Security Administration birth-record data. Each name links to its documented meaning, origin, pronunciation and cultural context."
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
@@ -87,7 +87,7 @@ export default function TopBabyNames2026Page() {
             Find the name that fits your family
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-nv-text-secondary">
-            Filter 11,632 names by tradition, gender, origin and meaning \u2014 or start from a curated
+            Filter 11,412 names by tradition, gender, origin and meaning \u2014 or start from a curated
             shortlist.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">

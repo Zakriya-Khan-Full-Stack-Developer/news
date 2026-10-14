@@ -13,7 +13,7 @@ const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
 const TITLE = 'Gender-Neutral Baby Names \u2014 Unisex Picks for 2026';
 const DESCRIPTION =
-  'Gender-neutral baby names used across genders, with verified meanings and origins. Includes the unisex names in our database plus guidance on how usage shifts between boys and girls over time.';
+  'Gender-neutral baby names used across genders, with documented meanings and origins. Includes the unisex names in our database plus guidance on how usage shifts between boys and girls over time.';
 
 export const metadata = {
   title: TITLE,
@@ -36,7 +36,7 @@ function selectUnisex(limit = 24) {
   const out = [];
   for (const rel of Object.keys(manifest)) {
     for (const item of manifest[rel] || []) {
-      if (!item.slug || !item.meaning) continue;
+      if (!item.slug || !item.indexable || item.canonicalSlug || !item.meaning) continue;
       if (String(item.gender || '').toLowerCase() !== 'unisex') continue;
       out.push({ ...item, religion: rel });
     }
@@ -87,7 +87,7 @@ export default function GenderNeutralNamesPage() {
   return (
     <UsPageShell
       cluster={cluster}
-      intro="Gender-neutral baby names used across genders, with verified meanings and origins. This page combines a curated list of widely-used unisex names with the names our own database records as unisex, so you can see both the popular choices and the documented ones."
+      intro="Gender-neutral baby names used across genders, with documented meanings and origins. This page combines a curated list of widely-used unisex names with the names our own database records as unisex, so you can see both the popular choices and the documented ones."
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
@@ -120,7 +120,7 @@ export default function GenderNeutralNamesPage() {
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary">
           Names that are given to boys and girls in comparable numbers. Solid chips link to a full
-          profile; dashed chips are names we list but do not yet hold a verified profile for.
+          profile; dashed chips are names we list but do not yet hold a published profile for.
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
           {curated.map((item) => (
@@ -138,7 +138,7 @@ export default function GenderNeutralNamesPage() {
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary">
           These are the names our own records classify as unisex, ordered by how thoroughly documented
-          they are. Each one has a verified meaning, origin and pronunciation guide.
+          they are. Each one has a documented meaning, origin and pronunciation guide.
         </p>
         <div className="mt-6 grid gap-4 min-[480px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {unisex.map((item) => (
@@ -188,11 +188,11 @@ export default function GenderNeutralNamesPage() {
         <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {[
             { href: '/short-baby-names', label: 'Short baby names', note: 'One and two syllables' },
-            { href: '/unique-baby-names', label: 'Unique baby names', note: 'Outside the top 100' },
+            { href: '/unique-baby-names', label: 'Unique baby names', note: 'Outside published lists' },
             { href: '/nature-baby-names', label: 'Nature baby names', note: 'Botanical and celestial' },
             { href: '/top-baby-names-2026', label: 'Top names 2026', note: 'Current rankings' },
             { href: '/names-by-meaning', label: 'Names by meaning', note: 'Search by what it means' },
-            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,412 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>

@@ -15,9 +15,9 @@ export const metadata = {
 export default function UniqueNamesPage() {
   const manifest = getManifest();
   const all = [];
-  for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {
+  for (const rel of ['islamic', 'christian', 'hindu']) {
     for (const item of manifest[rel] || []) {
-      if (item.slug && item.name && (item.popularity_score || 0) > 0) {
+      if (item.slug && item.name && item.indexable && !item.canonicalSlug && (item.popularity_score || 0) > 0) {
         all.push({ ...item, religion: rel });
       }
     }
@@ -35,7 +35,7 @@ export default function UniqueNamesPage() {
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-nv-text-secondary">
             100 rare and distinctive names in the NameVerse database — beautiful, meaningful, and unlikely to
-            be shared. Every pick includes a verified meaning, origin and lucky number.
+            be shared. Every pick includes a documented meaning, origin and lucky number.
           </p>
           <div className="mt-6">
             <Link href="/search?sort=popularity" className="btn-ghost">
