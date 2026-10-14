@@ -4,6 +4,19 @@
 //
 // Usage:  node nameverse/scripts/generate-blog-posts.mjs [count]
 // Default count: 500
+//
+// ⚠️ NOT PART OF THE BUILD, AND CURRENTLY NOT RUNNABLE AS WRITTEN.
+// `ROOT` resolves to `<cwd>/nameverse`, which is the layout this project used
+// before the repository root became the app root, so the paths below no longer
+// point at the real dataset. `public/data/blog-posts.json` is currently
+// maintained by hand (9 long-form articles); this generator's factories produce
+// short list-style posts that are NOT what shipped.
+//
+// It is kept because the factories are useful scaffolding if the article set is
+// ever expanded at scale. Any future run must first fix ROOT and MANIFEST_PATH,
+// and must keep the byline honest: every article is written by one real, named
+// person — there is no roster of anonymous "Senior Researchers" here, and the
+// generator no longer pretends otherwise.
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -172,11 +185,23 @@ function publishDate(index) {
   return `${y}-${mo}-${d}`;
 }
 
-function authorFor(rel) {
-  if (rel === 'islamic') return { author: 'NameVerse Editorial Team', credentials: 'Senior Researcher - Islamic Onomastics & Baby Naming Trends' };
-  if (rel === 'christian') return { author: 'NameVerse Editorial Team', credentials: 'Senior Researcher - Biblical & Christian Naming Traditions' };
-  if (rel === 'hindu') return { author: 'NameVerse Editorial Team', credentials: 'Senior Researcher - Vedic & Sanskrit Name Traditions' };
-  return { author: 'NameVerse Editorial Team', credentials: 'Baby Name Research Specialist' };
+// One byline, and it is a real person.
+//
+// This used to return four different invented job titles ("Senior Researcher —
+// Islamic Onomastics & Baby Naming Trends", etc.) attached to the anonymous
+// string "NameVerse Editorial Team". Four separate claimed specialists who do
+// not exist, on a site whose entire trust proposition is that its claims are
+// traceable — the worst possible signal to send a quality rater.
+//
+// The author of every article is the site's founder and data author. If a
+// genuine named contributor is ever added, give them their own real entry here.
+const BLOG_AUTHOR = {
+  author: 'Zakriya Khan',
+  credentials: 'Founder, NameVerse — compiles and verifies the name database',
+};
+
+function authorFor(_rel) {
+  return BLOG_AUTHOR;
 }
 
 function slugFromName(name) {

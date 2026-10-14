@@ -28,7 +28,13 @@ export default function BlogIndexPage() {
       url: `${siteUrl}/blog/${post.id}`,
       datePublished: post.publishDate,
       dateModified: post.lastUpdated,
-      author: { '@type': 'Organization', name: post.author || 'NameVerse Editorial Team' },
+      // Person, not Organization: every article has one named author.
+      author: {
+        '@type': 'Person',
+        '@id': `${siteUrl}/about#founder`,
+        name: post.author || 'Zakriya Khan',
+        url: `${siteUrl}/about#founder`,
+      },
     })),
   };
 

@@ -79,7 +79,9 @@ export default function BlogPostPage({ params }) {
     dateModified: lastUpdated,
     author: {
       '@type': AUTHOR.isOrganisation ? 'Organization' : 'Person',
+      '@id': AUTHOR.isOrganisation ? undefined : 'https://nameverse.site/about#founder',
       name: author || AUTHOR.name,
+      jobTitle: AUTHOR.isOrganisation ? undefined : AUTHOR.role,
       url: AUTHOR.bioUrl,
     },
     publisher: {
@@ -137,8 +139,16 @@ export default function BlogPostPage({ params }) {
             <time dateTime={publishDate}>{formattedDate}</time>
           </div>
           <p className="mb-3 text-xs leading-relaxed text-nv-text-muted">
-            By <Link href={AUTHOR.bioUrl} className="font-semibold text-nv-accent hover:underline">{author || AUTHOR.name}</Link>
-            {' '}&mdash; {AUTHOR.credentials}. Updated <time dateTime={lastUpdated || publishDate}>{updatedDate}</time>.
+            By{' '}
+            <Link href={AUTHOR.bioUrl} className="font-semibold text-nv-accent hover:underline">
+              {author || AUTHOR.name}
+            </Link>
+            {' '}&mdash; {post.authorCredentials || AUTHOR.credentials}. Updated{' '}
+            <time dateTime={lastUpdated || publishDate}>{updatedDate}</time>.{' '}
+            <Link href="/contact" className="font-semibold text-nv-accent hover:underline">
+              Report a correction
+            </Link>
+            .
           </p>
           <h1 className="font-display text-3xl font-bold tracking-tight text-nv-text sm:text-5xl">
             {title}

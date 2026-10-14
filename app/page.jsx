@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getManifest, getPopularItems } from '../lib/data/names-data.js';
+import { FOUNDER, CONTACT } from '../lib/data/editorial.js';
 import NameCard from '../components/NameCard.jsx';
 import HomepageSearch from '../components/HomepageSearch.jsx';
 import PageJsonLd from '../components/PageJsonLd.jsx';
@@ -588,6 +589,54 @@ export default function HomePage() {
                 </span>
               </Link>
             ))}
+          </div>
+        </section>
+
+        {/* Who is behind the site. The homepage is the most-crawled page on the
+            domain, so the one paragraph that names the publisher, the person
+            who writes the data and the way to reach him lives here — not only
+            three clicks away. */}
+        <section
+          aria-labelledby="publisher-heading"
+          className="rounded-3xl border border-nv-border bg-nv-subtle/40 p-8 sm:p-10"
+        >
+          <span className="eyebrow">Trust &amp; transparency</span>
+          <h2
+            id="publisher-heading"
+            className="mt-1 font-display text-2xl font-bold tracking-tight text-nv-text sm:text-3xl"
+          >
+            Who builds NameVerse
+          </h2>
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary sm:text-base">
+            NameVerse is designed, built and maintained by{' '}
+            <Link href="/about#founder" className="font-semibold text-nv-accent hover:underline">
+              {FOUNDER.name}
+            </Link>
+            , a full-stack web developer in {FOUNDER.location.city}, {FOUNDER.location.region},{' '}
+            {FOUNDER.location.country}. He compiled the name database himself and wrote the site and the
+            API that serves it — every record here carries a documented meaning and origin, and records
+            that only held a guess were withheld rather than padded into the index.
+          </p>
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary sm:text-base">
+            Corrections go straight to him: email{' '}
+            <a
+              href={`mailto:${CONTACT.email}?subject=Name%20correction`}
+              className="font-semibold text-nv-accent hover:underline"
+            >
+              {CONTACT.email}
+            </a>{' '}
+            or call {CONTACT.phone.international}. {CONTACT.correctionResponseTime}
+          </p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link href="/about" className="btn-primary !min-h-[42px] !px-5 !text-xs">
+              About the project
+            </Link>
+            <Link href="/editorial-policy" className="btn-ghost !min-h-[42px] !px-5 !text-xs">
+              Editorial policy
+            </Link>
+            <Link href="/contact" className="btn-ghost !min-h-[42px] !px-5 !text-xs">
+              Contact
+            </Link>
           </div>
         </section>
 

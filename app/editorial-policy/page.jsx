@@ -7,6 +7,7 @@ import {
   LAST_UPDATED,
   LAST_UPDATED_LABEL,
   PUBLISHER,
+  CONTACT,
 } from '../../lib/data/editorial.js';
 import { buildBreadcrumb, buildArticle } from '../../lib/data/us-schema.js';
 import JsonLd from '../../components/JsonLd.jsx';
@@ -206,12 +207,20 @@ export default function EditorialPolicyPage() {
             <p className="mt-3 text-sm leading-relaxed text-nv-text-secondary">
               Corrections and questions go to{' '}
               <a
-                href={`mailto:${PUBLISHER.email}`}
+                href={`mailto:${CONTACT.email}?subject=Name%20correction`}
                 className="font-semibold text-nv-accent hover:underline"
               >
-                {PUBLISHER.email}
-              </a>
-              . We aim to respond to data corrections within five working days.
+                {CONTACT.email}
+              </a>{' '}
+              or {CONTACT.phone.international}. {CONTACT.correctionResponseTime}{' '}
+              {CONTACT.responseTime}
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-nv-text-secondary">
+              This policy, and the data behind it, is written and maintained by{' '}
+              <Link href="/about#founder" className="font-semibold text-nv-accent hover:underline">
+                {AUTHOR.name}
+              </Link>
+              , who built and operates the site. {AUTHOR.credential}
             </p>
             {REVIEWER.name && (
               <p className="mt-3 text-sm leading-relaxed text-nv-text-secondary">

@@ -1,5 +1,6 @@
 import { FooterLogo } from './Logo.jsx';
 import Link from 'next/link';
+import { FOUNDER, CONTACT, PUBLISHER } from '../lib/data/editorial.js';
 
 const TRADITIONS = [
   { name: 'Islamic Baby Names', href: '/names/islamic' },
@@ -42,8 +43,9 @@ const TOOLS = [
 
 const COMPANY = [
   { name: 'About NameVerse', href: '/about' },
+  { name: `Meet the founder, ${FOUNDER.name}`, href: '/about#founder' },
   { name: 'Editorial Policy', href: '/editorial-policy' },
-  { name: 'Contact Editorial Team', href: '/contact' },
+  { name: 'Contact Us', href: '/contact' },
   { name: 'Privacy Policy', href: '/privacy' },
   { name: 'Terms of Service', href: '/terms' },
 ];
@@ -89,6 +91,24 @@ export default function Footer() {
               <span className="flex h-2 w-2 rounded-full bg-nv-success" />
               <span>11,412 names indexed &bull; zero soft-404s</span>
             </div>
+
+            {/* Who is actually behind the site, in the footer of every page.
+                This is the one line a reviewer or a visitor can follow to a
+                named person without hunting through the About page. */}
+            <p className="text-xs leading-relaxed text-nv-text-muted">
+              Built, owned and maintained by{' '}
+              <Link href="/about#founder" className="font-semibold text-nv-text-secondary hover:text-nv-accent">
+                {FOUNDER.name}
+              </Link>
+              , full-stack developer in {FOUNDER.location.city}, {FOUNDER.location.country}. Contact:{' '}
+              <a href={`mailto:${CONTACT.email}`} className="font-semibold text-nv-text-secondary hover:text-nv-accent">
+                {CONTACT.email}
+              </a>{' '}
+              &middot;{' '}
+              <a href={CONTACT.phone.href} className="font-semibold text-nv-text-secondary hover:text-nv-accent">
+                {CONTACT.phone.international}
+              </a>
+            </p>
           </div>
 
           <nav aria-label="Traditions and gender collections">
@@ -143,7 +163,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-nv-border/80 pt-6 text-xs text-nv-text-muted sm:flex-row">
-          <p>&copy; {year} NameVerse. All rights reserved.</p>
+          <p>
+            &copy; {year} {PUBLISHER.name}. All rights reserved. Created by {FOUNDER.name}.
+          </p>
           <div className="flex items-center gap-5">
             <Link href="/privacy" className="transition hover:text-nv-accent">Privacy</Link>
             <Link href="/terms" className="transition hover:text-nv-accent">Terms</Link>
