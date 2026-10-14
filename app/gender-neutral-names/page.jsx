@@ -23,6 +23,7 @@ export const metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: PAGE_URL,
+    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
     type: 'article',
     locale: 'en_US',
   },
@@ -59,7 +60,7 @@ const FAQS = [
   },
   {
     q: 'How many gender-neutral names does NameVerse list?',
-    a: 'Our database records several hundred names as unisex across the four traditions we cover. The selection on this page shows the best-documented of them; the full set is available through the names directory filtered by unisex usage.',
+    a: 'Our database records several hundred names as unisex across the three traditions we cover. The selection on this page shows the best-documented of them; the full set is available through the names directory filtered by unisex usage.',
   },
   ...EDITORIAL_FAQ.slice(0, 2),
 ];
@@ -191,7 +192,7 @@ export default function GenderNeutralNamesPage() {
             { href: '/nature-baby-names', label: 'Nature baby names', note: 'Botanical and celestial' },
             { href: '/top-baby-names-2026', label: 'Top names 2026', note: 'Current rankings' },
             { href: '/names-by-meaning', label: 'Names by meaning', note: 'Search by what it means' },
-            { href: '/names', label: 'All 13,801 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>

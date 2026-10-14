@@ -4,9 +4,9 @@ import { CATEGORY_SLUGS, CATEGORY_LABELS, categorySlugFor } from '../../lib/data
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Baby Names by Category — Islamic, Hindu, Biblical, Saint, Virtue, Italian',
+  title: 'Baby Names by Category — Islamic, Hindu, Biblical',
   description:
-    'Browse 42,000+ baby names grouped by category: Islamic, Hindu, Biblical, Saint, Virtue and Italian — each with verified meanings, origins and lucky numbers.',
+    'Browse 11,632 baby names grouped by category: Islamic, Hindu, Biblical, Saint, Virtue and Italian — each with verified meanings, origins and lucky numbers.',
   alternates: {
     canonical: 'https://nameverse.site/categories',
   },

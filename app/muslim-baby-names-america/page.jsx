@@ -21,6 +21,7 @@ export const metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: PAGE_URL,
+    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
     type: 'article',
     locale: 'en_US',
   },
@@ -197,7 +198,7 @@ export default function MuslimBabyNamesAmericaPage() {
             { href: '/islamic-girl-names', label: 'Islamic girl names', note: 'By gender' },
             { href: '/biblical-baby-names', label: 'Biblical baby names', note: 'Scripture-rooted' },
             { href: '/popular-names-2026', label: 'Most popular 2026', note: 'US national ranking' },
-            { href: '/names', label: 'All 13,801 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>

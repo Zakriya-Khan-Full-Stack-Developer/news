@@ -45,7 +45,13 @@ let total = 0;
 
 for (const rel of VALID_RELIGIONS) {
   const items = (manifest[rel] || [])
-    .filter((item) => item.slug && item.name)
+    // FIX — only index names that have a real page. HomepageSearch,
+    // SearchClient and PopularityClient all build hrefs as
+    // `/names/${religion}/${item.s}` straight from this file, so every entry
+    // that is neither `indexable` nor a canonicalised duplicate became a link
+    // to a 404. The detail route sets `dynamicParams = false`, so there is no
+    // on-demand render to catch the miss — it is a hard 404 every time.
+    .filter((item) => item.slug && item.name && (item.indexable || item.canonicalSlug))
     .map(compact)
     .sort((a, b) => a.n.localeCompare(b.n));
 

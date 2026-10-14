@@ -1,6 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { isNegativeAssertion } from '../lib/data/indexability.js';
+import { isIndexableRecord } from '../lib/data/indexability.js';
+import { normalizeNameRecord } from '../lib/data/name-normalizer.js';
+import { enrichNameProfile } from '../lib/data/name-enricher.js';
 
 // ---------------------------------------------------------------------------
 // Fix 3 — reconcile the manifest with the filesystem.
@@ -121,14 +124,23 @@ for (const rel of VALID_RELIGIONS) {
 
     // Indexability is decided HERE, once, and carried on the manifest entry so
     // the sitemap, the detail page and the gates all read the same verdict.
-    // A record whose meaning or origin is a negative assertion ("no confident
-    // lexical sense is asserted") is a real, honest entry but not an indexable
-    // page — it is served noindex and kept out of the sitemap.
-    const indexable =
-      Boolean(meaning) &&
-      Boolean(origin) &&
-      !isNegativeAssertion(meaning) &&
-      !isNegativeAssertion(origin);
+    //
+    // FIX — the verdict must be produced by the EXACT pipeline the detail page
+    // uses: normalise -> enrich -> isIndexableRecord.
+    //
+    // This file used to judge the RAW source record (Boolean(meaning) &&
+    // Boolean(origin) && !isNegativeAssertion(...)) while
+    // app/names/[religion]/[slug]/page.jsx judged the ENRICHED record via
+    // isIndexableRecord(enrichNameProfile(normalizeNameRecord(raw))). The two
+    // disagreed on 1,919 of 13,801 records. ~857 of those ended up INSIDE the
+    // sitemap while the page served `noindex, follow` — i.e. the site was
+    // submitting URLs to Google and simultaneously telling Google not to index
+    // them. GSC reports that as "Submitted URL marked 'noindex'"; at scale it
+    // teaches Google that this sitemap is not a reliable crawl target, which is
+    // exactly what a brand-new domain cannot afford during a migration.
+    const indexable = isIndexableRecord(
+      enrichNameProfile(normalizeNameRecord(data, rel, slug))
+    );
 
     manifest[rel].push({
       name: firstString(data.name, identity.display_name),

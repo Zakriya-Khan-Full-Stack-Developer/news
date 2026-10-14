@@ -9,7 +9,7 @@ const SITE_URL = 'https://nameverse.site';
 const cluster = getCluster('biblical-baby-names');
 const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
-const TITLE = 'Biblical Baby Names for Boys and Girls \u2014 With Meanings';
+const TITLE = 'Biblical Baby Names for Boys & Girls';
 const DESCRIPTION =
   'Biblical baby names for boys and girls with their meanings and origins, drawn from our verified database of scripture-rooted names. Includes Hebrew, Greek and Latin forms.';
 
@@ -21,6 +21,7 @@ export const metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: PAGE_URL,
+    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
     type: 'article',
     locale: 'en_US',
   },
@@ -162,7 +163,7 @@ export default function BiblicalBabyNamesPage() {
             { href: '/unique-baby-names', label: 'Unique baby names', note: 'Outside the top 100' },
             { href: '/top-baby-names-2026', label: 'Top names 2026', note: 'Current rankings' },
             { href: '/categories/biblical', label: 'Biblical category', note: 'Full category hub' },
-            { href: '/names', label: 'All 13,801 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>

@@ -6,9 +6,9 @@ import PageJsonLd from '../../components/PageJsonLd.jsx';
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'All Baby Names by Religion — 42,000+ Names & Meanings',
+  title: 'All Baby Names by Religion — 11,632 Names & Meanings',
   description:
-    'Browse 42,000+ baby names by religion: Islamic, Christian, Hindu & Italian names with verified meanings, origins and lucky numbers. Free A–Z browsing.',
+    'Browse 11,632 baby names by religion: Islamic, Christian, Hindu & Italian names with verified meanings, origins and lucky numbers. Free A–Z browsing.',
   alternates: {
     canonical: 'https://nameverse.site/names',
   },
@@ -18,7 +18,7 @@ const namesIndexJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'All Baby Names',
-  description: 'Browse 42,000+ baby names across Islamic, Christian, Hindu, and Italian traditions.',
+  description: 'Browse 11,632 baby names across Islamic, Christian and Hindu traditions.',
   url: 'https://nameverse.site/names',
   isPartOf: {
     '@type': 'WebSite',
@@ -97,7 +97,7 @@ export default function NamesIndexPage() {
           <Link href="/categories" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">By category</Link>
           <Link href="/origins" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">Origins index</Link>
           <Link href="/trending-names" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">Trending</Link>
-          <Link href="/unique-names" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">Unique</Link>
+          <Link href="/unique-baby-names" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">Unique</Link>
           <Link href="/popularity" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">Popularity tool</Link>
         </div>
 

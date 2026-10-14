@@ -3,7 +3,7 @@ import PageJsonLd from '../../components/PageJsonLd.jsx';
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Contact NameVerse — Feedback, Corrections & Suggestions',
+  title: 'Contact NameVerse — Corrections & Feedback',
   description:
     'Contact the NameVerse team: report a name meaning correction, suggest a topic, or share feedback. We read every message.',
   alternates: {

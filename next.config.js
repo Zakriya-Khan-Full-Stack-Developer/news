@@ -44,6 +44,42 @@ const nextConfig = {
         destination: '/unique-baby-names',
         permanent: true,
       },
+      // ──────────────────────────────────────────────────────────────────────
+      // LEGACY LETTER-BROWSE URLS — the single biggest cause of the stalled
+      // migration.
+      //
+      // The site used to serve the A-Z browse pages at
+      //
+      //     /names/islamic/c
+      //
+      // and now serves them at
+      //
+      //     /names/islamic/letter/c
+      //
+      // Google still has ~14,000 pages indexed on nameverse.vercel.app under the
+      // OLD shape. Vercel's automatic redirect sends each of them to
+      // nameverse.site/names/<religion>/<letter> — which matches the name-detail
+      // route /names/[religion]/[slug], finds no name called "c", and 404s.
+      //
+      // So every one of those 14,000 redirects was landing on a 404. A redirect
+      // to a 404 transfers nothing: the old URL is dropped, no new URL is
+      // indexed, and the new domain never accumulates pages. That is the whole
+      // reason nameverse.site has been frozen at ~400 while the old host keeps
+      // its 14,000.
+      //
+      // Verified live: https://nameverse.site/names/islamic/c -> 404.
+      // Verified safe: the dataset contains ZERO single-character name slugs, so
+      // this cannot shadow a real name page.
+      //
+      // Redirects are matched before filesystem routes, so this takes precedence
+      // over /names/[religion]/[slug]. The destination has four segments and
+      // cannot re-match this three-segment pattern, so there is no redirect loop.
+      // ──────────────────────────────────────────────────────────────────────
+      {
+        source: '/names/:religion/:letter([a-z]|%23)',
+        destination: '/names/:religion/letter/:letter',
+        permanent: true,
+      },
     ];
   },
   async headers() {

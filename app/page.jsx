@@ -6,9 +6,9 @@ import PageJsonLd from '../components/PageJsonLd.jsx';
 import AdSlot from '../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Baby Names with Meanings, Origins & Cultural Context | NameVerse',
+  title: 'Baby Names with Meanings, Origins & Cultural Context',
   description:
-    'Search 13,801 baby names with meanings, origins, pronunciation guides, script forms and cultural context across Islamic, Christian, Hindu and Italian traditions.',
+    'Search 11,632 baby names with meanings, origins, pronunciation guides, script forms and cultural context across Islamic, Christian and Hindu traditions.',
   alternates: {
     canonical: 'https://nameverse.site',
   },
@@ -87,7 +87,7 @@ const intentChips = [
   { label: 'Names meaning light', href: '/search?q=light' },
   { label: 'Names meaning love', href: '/search?q=love' },
   { label: 'Names meaning strength', href: '/search?q=strength' },
-  { label: 'Unique names', href: '/unique-names' },
+  { label: 'Unique names', href: '/unique-baby-names' },
   { label: 'Trending 2026', href: '/trending-names' },
   { label: 'Biblical names', href: '/categories/biblical' },
 ];
@@ -116,11 +116,15 @@ const latestArticles = [
   },
 ];
 
+// FIX — this answer claimed "over 42,000 baby names". The dataset is 11,632
+// records; the 42,310 figure came from the old manifest that advertised ~28,500
+// URLs which 404'd. Removed the number rather than restating it, so it cannot
+// drift out of date again.
 const faqs = [
   {
     question: 'How does the NameVerse instant autosearch work?',
     answer:
-      'Our instant search engine dynamically indexes over 42,000 baby names across Islamic, Christian, Hindu, and Italian traditions. As you type in the search bar, it immediately analyzes spelling, etymological root, meaning, and origin, presenting instant suggestions, gender badges, and quick links directly to full profiles without requiring page reloads.',
+      'Our instant search engine indexes the full NameVerse collection across Islamic, Christian and Hindu traditions. As you type in the search bar, it immediately analyzes spelling, etymological root, meaning, and origin, presenting instant suggestions, gender badges, and quick links directly to full profiles without requiring page reloads.',
   },
   {
     question: 'How do I search for baby names by specific meaning on NameVerse?',
@@ -154,6 +158,25 @@ export default function HomePage() {
   const religions = ['islamic', 'christian', 'hindu', 'italian'];
   const counts = Object.fromEntries(religions.map((r) => [r, (manifest[r] || []).length]));
   const totalNames = religions.reduce((sum, r) => sum + counts[r], 0);
+
+  // FIX — a tradition with zero publishable records was still being promoted as
+  // one of the four pillars of the site. The Italian set holds 352 entries and
+  // not one has content: /names/italian reads "352 names · 0 boys · 0 girls"
+  // and every card on it is an unlinkable "soon" stub. Count only what a visitor
+  // can actually open, and drop empty traditions from the homepage grid.
+  const indexableCounts = Object.fromEntries(
+    religions.map((r) => [r, (manifest[r] || []).filter((i) => i.indexable).length]),
+  );
+  const activeReligions = religions.filter((r) => indexableCounts[r] > 0);
+  // FIX — the "Indexable Pages" stat below was showing totalNames. The real
+  // indexable count is lower: records that are negative-assertion stubs, and
+  // duplicates consolidated onto a canonical page, are deliberately not
+  // indexable. Publishing a number that does not match what the sitemap
+  // actually contains is the same category of error as the 42,000 claim.
+  const indexableNames = religions.reduce(
+    (sum, r) => sum + (manifest[r] || []).filter((i) => i.indexable).length,
+    0
+  );
 
   const genderHubs = GENDER_HUB_DEFS.map((d) => ({
     ...d,
@@ -201,7 +224,7 @@ export default function HomePage() {
           </h1>
 
           <p className="mx-auto mt-5 max-w-2xl text-base text-nv-text-secondary sm:text-lg sm:leading-relaxed">
-            Search {totalNames.toLocaleString()} baby names across Islamic, Christian, Hindu and Italian
+            Search {indexableNames.toLocaleString()} baby names across {activeReligions.length}{' '}
             traditions — each with its meaning, origin, script forms, pronunciation and cultural context.
           </p>
 
@@ -235,7 +258,7 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <span className="font-display text-2xl font-bold text-christian sm:text-3xl">
-                {Object.values(counts).reduce((s, c) => s + c, 0).toLocaleString()}
+                {indexableNames.toLocaleString()}
               </span>
               <span className="mt-0.5 block text-xs font-semibold text-nv-text-muted">Indexable Pages</span>
             </div>
@@ -267,14 +290,16 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {hubs.map((hub) => (
+            {hubs
+              .filter((hub) => indexableCounts[hub.religion] > 0)
+              .map((hub) => (
               <div
                 key={hub.religion}
                 className={`card group relative flex flex-col p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover border ${hub.accent}`}
               >
                 <div className="flex items-center justify-between">
                   <span className={`badge border text-[11px] font-bold ${hub.badge}`}>
-                    {(counts[hub.religion] || 0).toLocaleString()} names
+                    {(indexableCounts[hub.religion] || 0).toLocaleString()} names
                   </span>
                   <span className="text-xs font-semibold text-nv-accent group-hover:translate-x-1 transition-transform">
                     &rarr;
@@ -509,9 +534,10 @@ export default function HomePage() {
               <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-500 text-white font-bold">
                 ⚡
               </div>
-              <h4 className="font-display text-base font-bold text-nv-text">Zero Soft-404s</h4>
+              <h4 className="font-display text-base font-bold text-nv-text">Stable, Crawlable URLs</h4>
               <p className="mt-1.5 text-xs text-nv-text-secondary leading-relaxed">
-                Clean Google Search crawlability, strict canonical tags, and instantaneous incremental static regeneration.
+                Every name page is prerendered at build time, self-canonicalised and linked from
+                a sitemap that lists only URLs that actually exist.
               </p>
             </div>
           </div>

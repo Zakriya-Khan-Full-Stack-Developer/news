@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Popular Baby Names by State | NameVerse',
+  title: 'Popular Baby Names by State',
   description: 'Explore baby name popularity trends across US states.',
   robots: {
     index: false,

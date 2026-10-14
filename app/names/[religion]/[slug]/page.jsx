@@ -6,6 +6,7 @@ import {
   normalizeSlug,
   getKnownSlugsMap,
   getRenderableSlugs,
+  isRenderableSlug,
 } from '@/lib/data/names-data.js';
 import { religionLabel, genderLabel, slugify, originSlugFor, ORIGIN_LABELS } from '@/lib/data/name-utils.js';
 import { enrichNameProfile } from '@/lib/data/name-enricher.js';
@@ -105,9 +106,19 @@ export async function generateMetadata({ params }) {
       ],
     },
     twitter: {
-      card: 'summary',
+      // summary_large_image, matching the rest of the site — a name page is a
+      // visual share and the small square thumbnail wasted the slot.
+      card: 'summary_large_image',
       title: n.seo.title,
       description: n.seo.meta_description,
+      images: [
+        {
+          url: `${SITE_URL}/nameverse_logo_emblem.webp`,
+          width: 512,
+          height: 512,
+          alt: `${n.name} name meaning`,
+        },
+      ],
     },
   };
 }
@@ -140,11 +151,18 @@ export default async function NameDetailPage({ params }) {
   function resolveNameLink(rawName) {
     const targetSlug = slugify(rawName);
     if (!targetSlug) return null;
-    if (knownSlugsMap.has(`${finalReligion}:${targetSlug}`)) {
+    // Only link to a page that will actually render. `knownSlugsMap` lists
+    // every record in the dataset, including the canonical duplicates and
+    // content-free stubs that the detail route deliberately does not
+    // prerender; because the route sets `dynamicParams = false`, each of those
+    // is a hard 404 rather than an on-demand render. NameCard already applied
+    // this guard — the related-name chips did not, which is how
+    // /names/islamic/adem shipped a link to the 404 /names/islamic/man.
+    if (isRenderableSlug(finalReligion, targetSlug)) {
       return { name: rawName, href: `/names/${finalReligion}/${targetSlug}` };
     }
     for (const r of ['islamic', 'christian', 'hindu', 'italian']) {
-      if (r !== finalReligion && knownSlugsMap.has(`${r}:${targetSlug}`)) {
+      if (r !== finalReligion && isRenderableSlug(r, targetSlug)) {
         return { name: rawName, href: `/names/${r}/${targetSlug}` };
       }
     }
@@ -618,25 +636,28 @@ export default async function NameDetailPage({ params }) {
           </section>
         )}
 
-        {/* ── NAMESAKES ── */}
-        {(n.namesakes.celebrities.length > 0 || n.namesakes.story) && (
+        {/* ── NAMESAKES ──
+            Only claim "people named X" when we can actually name someone. The
+            old condition also fired on a bare `story`, which rendered an
+            "Notable Namesakes / People named X" section whose only content was
+            a panel labelled "Name story" — an empty shell promising namesakes
+            the page does not have. Split the two cases. */}
+        {n.namesakes.celebrities.length > 0 ? (
           <section className="card p-6 sm:p-8">
             <span className="eyebrow">Notable Namesakes</span>
             <h2 className="section-title mt-1">People named {n.name}</h2>
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              {n.namesakes.celebrities.length > 0 && (
-                <div className="inset-panel">
-                  <div className="stat-label">Notable figures</div>
-                  <ul className="mt-3 space-y-2">
-                    {n.namesakes.celebrities.map((c, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm font-semibold text-nv-text">
-                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-nv-accent" />
-                        {c}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              <div className="inset-panel">
+                <div className="stat-label">Notable figures</div>
+                <ul className="mt-3 space-y-2">
+                  {n.namesakes.celebrities.map((c, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm font-semibold text-nv-text">
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-nv-accent" />
+                      {c}
+                    </li>
+                  ))}
+                </ul>
+              </div>
               {n.namesakes.story && n.namesakes.story.text && (
                 <div className="inset-panel">
                   <div className="stat-label">
@@ -650,6 +671,25 @@ export default async function NameDetailPage({ params }) {
               )}
             </div>
           </section>
+        ) : (
+          n.namesakes.story &&
+          n.namesakes.story.text && (
+            <section className="card p-6 sm:p-8">
+              <span className="eyebrow">Name story</span>
+              <h2 className="section-title mt-1">How {n.name} is used</h2>
+              <div className="mt-5">
+                <div className="inset-panel">
+                  <div className="stat-label">
+                    {n.namesakes.story.person || 'Background'}
+                    {n.namesakes.story.location ? ` \u00b7 ${n.namesakes.story.location}` : ''}
+                  </div>
+                  <p className="mt-2 text-sm italic leading-relaxed text-nv-text-secondary">
+                    &ldquo;{n.namesakes.story.text}&rdquo;
+                  </p>
+                </div>
+              </div>
+            </section>
+          )
         )}
 
         {/* ── VARIANTS & RELATED NAMES (internal linking) ── */}

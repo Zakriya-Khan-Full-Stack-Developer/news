@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AdSlot from '../../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Expert Naming Guide | NameVerse',
+  title: 'Expert Naming Guide',
   description: 'Decision framework and expert guidance for choosing the perfect baby name.',
   robots: {
     index: false,

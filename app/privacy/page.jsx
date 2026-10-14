@@ -1,7 +1,7 @@
 import AdSlot from '../../components/AdSlot.jsx';
 
 export const metadata = {
-  title: 'Privacy Policy | NameVerse',
+  title: 'Privacy Policy',
   description:
     'How NameVerse handles data: anonymous analytics, advertising cookies, local theme preferences and your rights. We never sell personal data.',
   robots: {

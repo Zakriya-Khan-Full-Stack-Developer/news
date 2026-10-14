@@ -27,6 +27,7 @@ export const metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: PAGE_URL,
+    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
     type: 'article',
     locale: 'en_US',
   },
@@ -97,7 +98,7 @@ export default function UniqueBabyNamesPage() {
   return (
     <UsPageShell
       cluster={cluster}
-      intro="Unique baby names that sit outside the current US top 100 but still carry a verified meaning and origin. Every pick below is drawn from our database of 13,801 documented names, so rarity never costs you the cultural depth behind the name."
+      intro="Unique baby names that sit outside the current US top 100 but still carry a verified meaning and origin. Every pick below is drawn from our database of 11,632 documented names, so rarity never costs you the cultural depth behind the name."
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
@@ -215,7 +216,7 @@ export default function UniqueBabyNamesPage() {
             { href: '/nature-baby-names', label: 'Nature baby names', note: 'Botanical and celestial' },
             { href: '/short-baby-names', label: 'Short baby names', note: 'One and two syllables' },
             { href: '/popular-names-2026', label: 'Most popular 2026', note: 'What to avoid if you want rare' },
-            { href: '/names', label: 'All 13,801 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>

@@ -3,6 +3,23 @@ import path from 'node:path';
 import { normalizeNameRecord } from '../lib/data/name-normalizer.js';
 import { enrichNameProfile } from '../lib/data/name-enricher.js';
 
+// ─────────────────────────────────────────────────────────────────────────────
+// NETLIFY BUILD COST
+// This verifier costs ~0.8 s of build time on every deploy. It is a
+// development safety net, not a deploy gate — the gate that protects against the
+// failure mode that actually paused the site is verify-static.mjs, which runs
+// after `next build` and is never skipped.
+//
+// Netlify sets SKIP_CONTENT_VERIFIERS=1 in netlify.toml, so deploys skip this
+// and pay only for the build itself. Run it locally (or in CI) with:
+//   npm run verify
+// ─────────────────────────────────────────────────────────────────────────────
+if (process.env.SKIP_CONTENT_VERIFIERS === '1') {
+  console.log('verify-content: skipped (SKIP_CONTENT_VERIFIERS=1)');
+  process.exit(0);
+}
+
+
 // ---------------------------------------------------------------------------
 // Content quality gate — runs on every build via `prebuild`.
 //

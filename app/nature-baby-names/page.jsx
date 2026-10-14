@@ -9,7 +9,7 @@ const SITE_URL = 'https://nameverse.site';
 const cluster = getCluster('nature-baby-names');
 const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
-const TITLE = 'Nature Baby Names \u2014 Botanical, Celestial and Earth Names';
+const TITLE = 'Nature Baby Names \u2014 Botanical & Celestial';
 const DESCRIPTION =
   'Nature baby names drawn from plants, trees, weather, landscapes and the night sky, with verified meanings and origins. Includes botanical, celestial and earth-name groups.';
 
@@ -21,6 +21,7 @@ export const metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: PAGE_URL,
+    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
     type: 'article',
     locale: 'en_US',
   },
@@ -194,7 +195,7 @@ export default function NatureBabyNamesPage() {
             { href: '/gender-neutral-names', label: 'Gender-neutral names', note: 'Used across genders' },
             { href: '/short-baby-names', label: 'Short baby names', note: 'One and two syllables' },
             { href: '/top-baby-names-2026', label: 'Top names 2026', note: 'Current rankings' },
-            { href: '/names', label: 'All 13,801 names', note: 'Full directory' },
+            { href: '/names', label: 'All 11,632 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">
               <span className="block text-sm font-bold text-nv-text">{l.label}</span>

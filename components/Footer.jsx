@@ -1,3 +1,4 @@
+import { FooterLogo } from './Logo.jsx';
 import Link from 'next/link';
 
 const TRADITIONS = [
@@ -61,8 +62,8 @@ export default function Footer() {
               A Cultural Name Anthology, Not a Name Generator
             </h2>
             <p className="mt-1 text-xs text-nv-text-secondary">
-              13,801 baby names documented with etymological roots, original script forms,
-              pronunciation and cultural context across four traditions.
+              11,632 baby names documented with etymological roots, original script forms,
+              pronunciation and cultural context across three traditions.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3">
@@ -79,22 +80,15 @@ export default function Footer() {
       <div className="container-page py-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           <div className="flex flex-col gap-4 pr-0 lg:col-span-2 lg:pr-8">
-            <Link href="/" className="flex items-center gap-3" aria-label="NameVerse home">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-nv-primary font-display text-xl font-bold text-white">
-                N
-              </span>
-              <span className="font-display text-xl font-bold tracking-tight text-nv-text">
-                NameVerse
-              </span>
-            </Link>
+            <FooterLogo />
             <p className="text-sm leading-relaxed text-nv-text-secondary">
               NameVerse helps parents worldwide find baby names of genuine cultural and
-              spiritual significance across Islamic, Christian, Hindu and Italian traditions.
+              spiritual significance across Islamic, Christian and Hindu traditions.
               Every entry is documented with its origin, script forms and meaning.
             </p>
             <div className="flex items-center gap-2 text-xs font-semibold text-nv-success">
               <span className="flex h-2 w-2 rounded-full bg-nv-success" />
-              <span>13,801 names indexed &bull; zero soft-404s</span>
+              <span>11,632 names indexed &bull; zero soft-404s</span>
             </div>
           </div>
 

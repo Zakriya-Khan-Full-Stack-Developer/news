@@ -27,6 +27,7 @@ export const metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: PAGE_URL,
+    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
     type: 'article',
     locale: 'en_US',
   },
@@ -227,7 +228,7 @@ export default function EditorialPolicyPage() {
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <Link href="/names" className="btn-primary">
-              All 13,801 names
+              All 11,632 names
             </Link>
             <Link href="/popular-names-2026" className="btn-ghost">
               Most popular 2026
