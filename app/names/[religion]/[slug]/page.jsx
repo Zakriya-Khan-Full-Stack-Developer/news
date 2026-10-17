@@ -15,7 +15,9 @@ import { isIndexableRecord } from '@/lib/data/indexability.js';
 import AdSlot from '@/components/AdSlot.jsx';
 import SocialShare from '@/components/SocialShare.jsx';
 import NameTrustMeta from '@/components/NameTrustMeta.jsx';
-import { AUTHOR, LAST_UPDATED, PUBLISHER } from '@/lib/data/editorial.js';
+import { AUTHOR } from '@/lib/data/editorial.js';
+import { DEFAULT_SHARE_IMAGE } from '@/lib/seo.js';
+import SaveNameButton from '@/components/SaveNameButton.jsx';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // FIX — Fluid Active CPU
@@ -171,15 +173,10 @@ export async function generateMetadata({ params }) {
       title: n.seo.title,
       description: n.seo.meta_description,
       url: canonicalUrl,
-      type: 'article',
-      images: [
-        {
-          url: `${SITE_URL}/nameverse_logo_emblem.webp`,
-          width: 512,
-          height: 512,
-          alt: `${n.name} name meaning`,
-        },
-      ],
+      type: 'website',
+      siteName: 'NameVerse',
+      locale: 'en_US',
+      images: [{ ...DEFAULT_SHARE_IMAGE, alt: `${n.name} name meaning` }],
     },
     twitter: {
       // summary_large_image, matching the rest of the site — a name page is a
@@ -187,14 +184,7 @@ export async function generateMetadata({ params }) {
       card: 'summary_large_image',
       title: n.seo.title,
       description: n.seo.meta_description,
-      images: [
-        {
-          url: `${SITE_URL}/nameverse_logo_emblem.webp`,
-          width: 512,
-          height: 512,
-          alt: `${n.name} name meaning`,
-        },
-      ],
+      images: [DEFAULT_SHARE_IMAGE.url],
     },
   };
 }
@@ -216,7 +206,8 @@ export default async function NameDetailPage({ params }) {
   const canonicalUrl = canonicalSlug
     ? `${SITE_URL}/names/${finalReligion}/${canonicalSlug}`
     : `${SITE_URL}/names/${finalReligion}/${normalizedSlug}`;
-  const genLabel = n.genderKey ? genderLabel(n.genderKey) : 'Unisex';
+  // A record with no gender is "not recorded", never silently "Unisex".
+  const genLabel = n.genderKey ? genderLabel(n.genderKey) : 'Not recorded';
   const indexable = isIndexable(n) && !canonicalSlug;
 
   const firstLetter = n.name.trim().charAt(0).toLowerCase();
@@ -284,43 +275,11 @@ export default async function NameDetailPage({ params }) {
     },
   };
 
-  const articleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: n.seo.h1,
-    description: n.seo.meta_description,
-    url: canonicalUrl,
-    inLanguage: 'en',
-    about: {
-      '@type': 'Thing',
-      name: n.name,
-      description: n.shortMeaning || undefined,
-    },
-    isPartOf: {
-      '@type': 'WebSite',
-      name: 'NameVerse',
-      url: SITE_URL,
-    },
-    author: {
-      '@type': AUTHOR.isOrganisation ? 'Organization' : 'Person',
-      name: AUTHOR.name,
-      url: AUTHOR.bioUrl,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: PUBLISHER.name,
-      url: PUBLISHER.url,
-      logo: { '@type': 'ImageObject', url: PUBLISHER.logo },
-    },
-    datePublished: LAST_UPDATED,
-    dateModified: LAST_UPDATED,
-    citation: [{
-      '@type': 'CreativeWork',
-      name: 'NameVerse Editorial Policy',
-      url: `${SITE_URL}/editorial-policy`,
-    }],
-  };
-
+  // No Article node here. This used to emit an Article whose datePublished and
+  // dateModified were the single site-wide editorial date for all 11,412
+  // profiles, citing only our own policy page. A reference profile is better
+  // described as a WebPage whose main entity is the DefinedTerm, and no date is
+  // better than a date that is not this record's.
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -331,6 +290,11 @@ export default async function NameDetailPage({ params }) {
     inLanguage: 'en',
     isPartOf: { '@id': `${SITE_URL}/#website` },
     publisher: { '@id': `${SITE_URL}/#organization` },
+    author: {
+      '@type': AUTHOR.isOrganisation ? 'Organization' : 'Person',
+      name: AUTHOR.name,
+      url: AUTHOR.bioUrl,
+    },
     mainEntity: { '@id': `${canonicalUrl}#name` },
   };
 
@@ -376,7 +340,6 @@ export default async function NameDetailPage({ params }) {
     <div className="container-page py-6 sm:py-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(nameSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {faqSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -459,15 +422,25 @@ export default async function NameDetailPage({ params }) {
               <dd className="stat-value">{genLabel}</dd>
             </div>
             <div className="stat-tile">
-              <dt className="stat-label">Syllables</dt>
-              <dd className="stat-value">
-                {n.syllables} &bull; {n.letterCount} letters
+              <dt className="stat-label">Syllables (est.)</dt>
+              <dd className="stat-value" title="Estimated from the romanised spelling; pronunciation may differ">
+                ~{n.syllables} &bull; {n.letterCount} letters
               </dd>
             </div>
           </dl>
 
-          <div className="mt-6 flex items-center justify-between border-t border-nv-border pt-6">
+          <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-nv-border pt-6">
             <SocialShare title={`Meaning of ${n.name} on NameVerse`} url={canonicalUrl} />
+            <SaveNameButton
+              item={{
+                n: n.name,
+                s: canonicalSlug || normalizedSlug,
+                r: finalReligion,
+                m: n.shortMeaning || '',
+                o: n.origin || '',
+                g: n.genderKey || '',
+              }}
+            />
           </div>
         </header>
 
@@ -669,7 +642,7 @@ export default async function NameDetailPage({ params }) {
                   <dd className="mt-1 text-2xl font-black text-nv-accent">{n.luckyNumber}</dd>
                 </div>
                 <div className="inset-panel">
-                  <dt className="stat-label">Life path</dt>
+                  <dt className="stat-label">Life path (traditional)</dt>
                   <dd className="mt-1 text-2xl font-black text-nv-text">{n.lifePath}</dd>
                 </div>
                 <div className="inset-panel">

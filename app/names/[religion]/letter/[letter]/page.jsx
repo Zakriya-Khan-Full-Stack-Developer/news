@@ -15,6 +15,7 @@ import AlphabetNav from '../../../../../components/AlphabetNav.jsx';
 import NameCard from '../../../../../components/NameCard.jsx';
 import LetterPagination from '../../../../../components/LetterPagination.jsx';
 import AdSlot from '../../../../../components/AdSlot.jsx';
+import { pageMetadata } from '../../../../../lib/seo.js';
 
 // FIX — Fluid Active CPU: every letter hub that has names is prerendered by
 // generateStaticParams below, so no unknown letter can fall through to an
@@ -54,13 +55,11 @@ export async function generateMetadata({ params }) {
   const manifest = getManifest();
   const count = namesForLetter(finalReligion, letter, manifest).length;
 
-  return {
+  return pageMetadata({
     title: `"${letterDisplay}" ${relLabel} Baby Names & Meanings (${count})`,
     description: `Browse ${count} ${relLabel} baby names starting with "${letterDisplay}" — documented meanings, origins, gender and lucky numbers. Free A–Z browsing.`,
-    alternates: {
-      canonical: `https://nameverse.site/names/${finalReligion}/letter/${letterUrlSegment}`,
-    },
-  };
+    path: `/names/${finalReligion}/letter/${letterUrlSegment}`,
+  });
 }
 
 export default function LetterBrowsePage({ params }) {

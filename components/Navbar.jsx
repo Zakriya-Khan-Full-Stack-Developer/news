@@ -39,8 +39,8 @@ const TRADITIONS = [
 ];
 
 const EXPLORE = [
-  { name: 'Most Popular 2026', href: '/popular-names-2026', desc: 'US national ranking, sourced' },
-  { name: 'Top Baby Names 2026', href: '/top-baby-names-2026', desc: 'Boys and girls, ranked' },
+  { name: 'Top Baby Names 2026', href: '/top-baby-names-2026', desc: 'Latest SSA ranking + BabyCenter 2026' },
+  { name: 'Rising Names', href: '/trending-names', desc: 'Measured SSA risers, 2024 \u2192 2025' },
   { name: 'Names by State', href: '/baby-names-by-state', desc: 'All 50 states and DC' },
   { name: 'Unique & Rare Names', href: '/unique-baby-names', desc: 'Outside published lists' },
   { name: 'Gender-Neutral Names', href: '/gender-neutral-names', desc: 'Used across genders' },
@@ -51,6 +51,7 @@ const EXPLORE = [
   { name: 'Names by Meaning', href: '/names-by-meaning', desc: 'Light, strength, peace & grace' },
   { name: 'Names by Origin', href: '/origins', desc: 'Arabic, Hebrew, Sanskrit, Latin' },
   { name: 'Compare Names', href: '/popularity', desc: 'Weigh your finalists side by side' },
+  { name: 'My Saved Names', href: '/my-names', desc: 'Your shortlist, kept on this device' },
 ];
 
 const TONE_CLASS = {
@@ -82,10 +83,12 @@ const TABS = [
     icon: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z',
   },
   {
-    label: 'Trending',
-    href: '/trending-names',
-    match: (p) => p.startsWith('/trending'),
-    icon: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6',
+    // The shortlist is now real (on-device persistence), so it earns the
+    // fourth tab. Rising names remain one tap away in the Explore menu.
+    label: 'Saved',
+    href: '/my-names',
+    match: (p) => p.startsWith('/my-names') || p.startsWith('/popularity'),
+    icon: 'M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z',
   },
 ];
 

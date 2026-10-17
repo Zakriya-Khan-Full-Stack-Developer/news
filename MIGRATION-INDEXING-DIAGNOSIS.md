@@ -1,3 +1,5 @@
+> **Historical report.** This document describes the site at the time it was written. Page counts, findings and recommendations may be out of date — see `README.md` for the current state (last reviewed 2026-10-17).
+
 # Why nameverse.site is stuck at ~400 pages while nameverse.vercel.app keeps 14,000
 
 Diagnosed 2026-10-13 against commit `3f7cff4` and the live site.

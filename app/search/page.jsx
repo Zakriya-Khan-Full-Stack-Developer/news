@@ -1,23 +1,26 @@
 import { Suspense } from 'react';
+import Link from 'next/link';
 import SearchClient from '../../components/SearchClient.jsx';
 import PageJsonLd from '../../components/PageJsonLd.jsx';
 import AdSlot from '../../components/AdSlot.jsx';
+import { pageMetadata, NOINDEX_FOLLOW } from '../../lib/seo.js';
 
-export const metadata = {
-  title: 'Search Baby Names by Meaning & Origin',
+// Search is a utility page: noindex, follow — and NOT blocked in robots.txt,
+// so crawlers can read the noindex and follow the result links.
+export const metadata = pageMetadata({
+  title: 'Search Baby Names by Name, Meaning & Origin',
   description:
-    'Search 11,412 baby names by name, meaning, origin, religion, gender or category. Filter results and rank by popularity — free and instant.',
-  robots: {
-    index: false,
-    follow: true,
-  },
-};
+    'Search 11,412 baby names by name, meaning or origin, and filter by tradition, recorded gender and origin — free and instant.',
+  path: '/search',
+  robots: NOINDEX_FOLLOW,
+  canonical: false,
+});
 
 const searchJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: 'Search Baby Names',
-  description: 'Search 11,412 baby names by meaning, origin, religion, gender, and popularity.',
+  description: 'Search 11,412 baby names by name, meaning or origin, filtered by tradition, gender and origin.',
   url: 'https://nameverse.site/search',
   potentialAction: {
     '@type': 'SearchAction',
@@ -53,16 +56,18 @@ export default function SearchPage() {
           </h2>
           <div className="mt-4 space-y-4 text-sm leading-relaxed text-nv-text-secondary sm:text-base">
             <p>
-              NameVerse indexes every one of its 11,412 names so you can search the way you actually
-              think — by a name you heard, a meaning you love, a language you come from, or a faith
-              you follow. Because every record carries its religion, gender, origin, category and
-              popularity score, a single search can answer &ldquo;Arabic girl names that mean light&rdquo; as
-              easily as it can find a specific spelling.
+              NameVerse indexes every one of its 11,412 published names so you can search the way you
+              actually think &mdash; by a name you heard, a meaning you love, or a language you come from.
+              The search box matches the name, its recorded meaning and its origin, so typing
+              &ldquo;light&rdquo; with the Arabic origin and Girls filters selected finds Arabic girl names whose
+              recorded meaning mentions light.
             </p>
             <p>
-              Use the filters above to combine traditions with gender, then sort by popularity to see
-              which choices are beloved by parents right now. Every result opens into a full profile
-              with pronunciation, lucky numbers, numerology, name variations and cultural context.
+              Results are ordered by how well they match: an exact name first, then names that start with
+              what you typed, then meaning and origin matches. Every result opens into a full profile with the
+              recorded meaning, origin, pronunciation where available, variants and cultural context &mdash;
+              and you can save any name to your{' '}
+              <Link href="/my-names" className="font-semibold text-nv-accent hover:underline">shortlist</Link>.
             </p>
           </div>
         </section>

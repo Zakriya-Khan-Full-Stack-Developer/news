@@ -33,7 +33,11 @@ export function normalizeGender(gender) {
   if (isMale && isFemale) return 'unisex';
   if (isFemale) return 'girl';
   if (isMale) return 'boy';
-  if (/unisex|neutral|genderless|unknown|unspecified/.test(g)) return 'unisex';
+  // "unknown" / "unspecified" mean the record does not say — that is NOT the
+  // same claim as "used for both boys and girls". Only explicit unisex /
+  // neutral values map to unisex; everything else is unrecorded (null).
+  if (/unknown|unspecified|n\/a|not\s/.test(g)) return null;
+  if (/unisex|neutral|genderless/.test(g)) return 'unisex';
   return null;
 }
 
@@ -95,15 +99,23 @@ export const ORIGIN_LABELS = {
 };
 
 // Match an origin string (which may be messy) to a curated origin slug.
+//
+// TAXONOMY RULES
+//   • A record is filed under an origin hub only when its origin string names
+//     that origin. There are no silent re-mappings: Sikh is not Hindu, and
+//     Punjabi or Marathi are not Hindi. "Mythology" says nothing about which
+//     tradition (Greek? Hindu? Norse?), so it maps to no hub. Records with
+//     such origins keep their own label on the profile and simply do not
+//     appear on an unrelated hub.
+//   • Negative statements ("no specific Hindu origin", "not directly from
+//     Hindu sources") must not be read as positive matches.
 export function originSlugFor(origin) {
   const o = String(origin || '').toLowerCase();
   if (!o) return null;
+  if (/\bno\b|\bnot\b|\bnon-/.test(o)) return null;
   for (const slug of ORIGIN_SLUGS) {
     if (o.includes(slug)) return slug;
   }
-  if (o.includes('mytholog')) return 'hindu';
-  if (o.includes('sikh')) return 'hindu';
-  if (o.includes('marathi') || o.includes('punjabi')) return 'hindi';
   return null;
 }
 

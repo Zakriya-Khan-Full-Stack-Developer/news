@@ -1,4 +1,5 @@
-import { getManifest, getBlogPosts } from '../../../lib/data/names-data.js';
+import { getManifest } from '../../../lib/data/names-data.js';
+import { getPublishedPosts } from '../../../lib/data/blog.js';
 import { ORIGIN_SLUGS, CATEGORY_SLUGS, categorySlugFor, originSlugFor } from '../../../lib/data/name-utils.js';
 import { ALL_LETTERS, lettersFor, letterPageCount } from '../../../lib/data/letter-browser.js';
 
@@ -8,7 +9,9 @@ import { ALL_LETTERS, lettersFor, letterPageCount } from '../../../lib/data/lett
 export function generateStaticParams() {
   const manifest = getManifest();
   const chunkSize = 5000;
-  const ids = ['pages'];
+  // `blog` is a dedicated child sitemap for the articles in
+  // public/data/blog-posts.json, with an honest per-post <lastmod>.
+  const ids = ['pages', 'blog'];
 
   for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {
     const count = (manifest[rel] || []).filter((i) => i.indexable).length;
@@ -35,48 +38,69 @@ function escapeXml(str) {
     .replace(/"/g, '&quot;');
 }
 
+// Blog URLs carry a real <lastmod>: each article records the date it was last
+// edited (`lastUpdated`), so unlike a build timestamp the value is accurate.
+function isoDate(value) {
+  const s = String(value || '').slice(0, 10);
+  return /^\d{4}-\d{2}-\d{2}$/.test(s) ? s : null;
+}
+
 export async function GET(request, { params }) {
   const siteUrl = 'https://nameverse.site';
   const manifest = getManifest();
-  const id = params.id.replace(/\.xml$/, '');
+  const { id: rawId } = await params;
+  const id = String(rawId).replace(/\.xml$/, '');
 
-  let urls = [];
+  // Entries are { loc, lastmod? }. A Map keyed by loc guarantees every URL is
+  // listed exactly once — /unique-baby-names used to be pushed twice.
+  const entries = new Map();
+  const add = (loc, lastmod = null) => {
+    if (!entries.has(loc)) entries.set(loc, { loc, lastmod });
+  };
 
-  if (id === 'pages') {
+  if (id === 'blog') {
+    const posts = getPublishedPosts();
+    const newest = posts
+      .map((p) => isoDate(p.lastUpdated || p.publishDate))
+      .filter(Boolean)
+      .sort()
+      .pop();
+    add(`${siteUrl}/blog`, newest || null);
+    for (const post of posts) {
+      add(`${siteUrl}/blog/${post.id}`, isoDate(post.lastUpdated || post.publishDate));
+    }
+  } else if (id === 'pages') {
     // Core pages
-    urls.push(`${siteUrl}/`);
-    urls.push(`${siteUrl}/names`);
-    urls.push(`${siteUrl}/origins`);
-    urls.push(`${siteUrl}/categories`);
-    urls.push(`${siteUrl}/blog`);
-    urls.push(`${siteUrl}/about`);
-    urls.push(`${siteUrl}/contact`);
-    urls.push(`${siteUrl}/trending-names`);
-    // FIX — was `/unique-names`, which next.config.js permanently redirects
-    // (308) to /unique-baby-names. A URL that redirects has no place in a
-    // sitemap: GSC flags it as "Sitemap contains URLs which redirect", and the
-    // crawler has to spend a second fetch to find the real destination.
-    urls.push(`${siteUrl}/unique-baby-names`);
-    urls.push(`${siteUrl}/popularity`);
-    urls.push(`${siteUrl}/name-meanings`);
-    urls.push(`${siteUrl}/names-by-meaning`);
-    urls.push(`${siteUrl}/names-by-origin`);
+    add(`${siteUrl}/`);
+    add(`${siteUrl}/names`);
+    add(`${siteUrl}/origins`);
+    add(`${siteUrl}/categories`);
+    add(`${siteUrl}/about`);
+    add(`${siteUrl}/contact`);
+    add(`${siteUrl}/trending-names`);
+    add(`${siteUrl}/popularity`);
+    add(`${siteUrl}/name-meanings`);
+    add(`${siteUrl}/names-by-meaning`);
+    add(`${siteUrl}/names-by-origin`);
 
     // US (Tier 1) search-demand pages. These are the highest-value commercial
     // and informational targets, so they are listed explicitly rather than
-    // being left to discovery.
-    urls.push(`${siteUrl}/popular-names-2026`);
-    urls.push(`${siteUrl}/top-baby-names-2026`);
-    urls.push(`${siteUrl}/unique-baby-names`);
-    urls.push(`${siteUrl}/gender-neutral-names`);
-    urls.push(`${siteUrl}/baby-names-by-state`);
-    urls.push(`${siteUrl}/vintage-baby-names`);
-    urls.push(`${siteUrl}/biblical-baby-names`);
-    urls.push(`${siteUrl}/muslim-baby-names-america`);
-    urls.push(`${siteUrl}/nature-baby-names`);
-    urls.push(`${siteUrl}/short-baby-names`);
-    urls.push(`${siteUrl}/editorial-policy`);
-    urls.push(`${siteUrl}/guides/expert-naming-guide`);
+    // being left to discovery. /popular-names-2026 is NOT listed: it now
+    // 301-redirects to /top-baby-names-2026 (one page per search intent), and
+    // a redirecting URL has no place in a sitemap. Likewise /unique-names
+    // redirects to /unique-baby-names.
+    add(`${siteUrl}/top-baby-names-2026`);
+    add(`${siteUrl}/unique-baby-names`);
+    add(`${siteUrl}/gender-neutral-names`);
+    add(`${siteUrl}/baby-names-by-state`);
+    add(`${siteUrl}/vintage-baby-names`);
+    add(`${siteUrl}/biblical-baby-names`);
+    add(`${siteUrl}/muslim-baby-names-america`);
+    add(`${siteUrl}/nature-baby-names`);
+    add(`${siteUrl}/short-baby-names`);
+    add(`${siteUrl}/editorial-policy`);
+    // /guides/expert-naming-guide now 301s to /blog/how-to-choose-a-baby-name,
+    // which is listed in the blog sitemap.
 
     // FIX — the name-detail sitemaps below already skip a tradition with zero
     // indexable records, but the hub list did not. /names/italian ships 352
@@ -90,7 +114,7 @@ export async function GET(request, { params }) {
 
     // Tradition hubs
     for (const rel of publishableReligions) {
-      urls.push(`${siteUrl}/names/${rel}`);
+      add(`${siteUrl}/names/${rel}`);
     }
 
     // Gender hubs
@@ -105,7 +129,7 @@ export async function GET(request, { params }) {
       'italian-girl-names',
     ].filter((gh) => publishableReligions.some((rel) => gh.startsWith(rel)));
     for (const gh of genderHubs) {
-      urls.push(`${siteUrl}/${gh}`);
+      add(`${siteUrl}/${gh}`);
     }
 
     // Origin and category hubs. Same rule as the tradition hubs: a hub whose
@@ -122,13 +146,13 @@ export async function GET(request, { params }) {
     // Origin hubs
     for (const o of ORIGIN_SLUGS) {
       if (publishableCount((i) => originSlugFor(i.origin) === o) === 0) continue;
-      urls.push(`${siteUrl}/origins/${o}`);
+      add(`${siteUrl}/origins/${o}`);
     }
 
     // Category hubs
     for (const c of CATEGORY_SLUGS) {
       if (publishableCount((i) => categorySlugFor(i.category) === c) === 0) continue;
-      urls.push(`${siteUrl}/categories/${c}`);
+      add(`${siteUrl}/categories/${c}`);
     }
 
     // Letter browse hubs — plus every paginated continuation. The hub used to
@@ -139,21 +163,15 @@ export async function GET(request, { params }) {
       for (const letter of ALL_LETTERS) {
         if (!avail.has(letter)) continue;
         const segment = letter === '#' ? '%23' : letter;
-        urls.push(`${siteUrl}/names/${rel}/letter/${segment}`);
+        add(`${siteUrl}/names/${rel}/letter/${segment}`);
         const pageCount = letterPageCount(rel, letter, manifest);
         for (let page = 2; page <= pageCount; page += 1) {
-          urls.push(`${siteUrl}/names/${rel}/letter/${segment}/page/${page}`);
+          add(`${siteUrl}/names/${rel}/letter/${segment}/page/${page}`);
         }
       }
     }
 
-    // Blog posts
-    const blogPosts = getBlogPosts();
-    for (const post of blogPosts) {
-      if (post.id) {
-        urls.push(`${siteUrl}/blog/${post.id}`);
-      }
-    }
+    // Blog posts are published in their own child sitemap (/sitemap/blog.xml).
   } else {
     // Name detail sitemaps: e.g. islamic-1, islamic-2, or italian
     let religion = id;
@@ -178,15 +196,16 @@ export async function GET(request, { params }) {
     const chunkItems = items.slice(start, start + chunkSize);
 
     for (const item of chunkItems) {
-      urls.push(`${siteUrl}/names/${religion}/${item.slug}`);
+      add(`${siteUrl}/names/${religion}/${item.slug}`);
     }
   }
 
-  if (urls.length === 0) {
+  if (entries.size === 0) {
     return new Response('Sitemap not found', { status: 404 });
   }
 
-  // FIX — no <lastmod>. Every URL previously carried `new Date().toISOString()`,
+  // <lastmod> policy: only emitted where the date is real (blog articles).
+  // FIX — no <lastmod> elsewhere. Every URL previously carried `new Date().toISOString()`,
   // so all ~12,500 URLs claimed to be modified at the exact same second on
   // every deploy, regardless of whether the underlying record changed. That is
   // the canonical example of a lastmod Google learns to ignore, and it gave the
@@ -196,10 +215,11 @@ export async function GET(request, { params }) {
   // Sitemaps Protocol; when it cannot be guaranteed accurate it must be omitted.
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls
+${[...entries.values()]
   .map(
-    (url) => `  <url>
-    <loc>${escapeXml(url)}</loc>
+    (e) => `  <url>
+    <loc>${escapeXml(e.loc)}</loc>${e.lastmod ? `
+    <lastmod>${e.lastmod}</lastmod>` : ''}
   </url>`
   )
   .join('\n')}

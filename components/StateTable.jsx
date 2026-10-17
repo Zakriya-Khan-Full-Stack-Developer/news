@@ -6,7 +6,9 @@ import Link from 'next/link';
 // compares the current top name against the previous year's, which is the part
 // of this dataset readers actually come for — a static list of state winners is
 // available everywhere, the movement is not.
-export default function StateTable({ rows, resolve }) {
+export default function StateTable({ rows, resolve, year, previousYear }) {
+  const cur = year ? ` (${year})` : '';
+  const prevLabel = previousYear ? `Change from ${previousYear}` : 'Change from last year';
   if (!rows || !rows.length) return null;
 
   function Cell({ name }) {
@@ -37,14 +39,15 @@ export default function StateTable({ rows, resolve }) {
     <div className="overflow-x-auto rounded-card border border-nv-border bg-nv-surface">
       <table className="data-table min-w-[640px]">
         <caption className="sr-only">
-          Most popular baby names by US state, with the previous year&rsquo;s top name for comparison.
+          Most popular baby names by US state{year ? ` for babies born in ${year}` : ''}, with the
+          {previousYear ? ` ${previousYear}` : ' previous year\u2019s'} top name for comparison.
         </caption>
         <thead>
           <tr>
             <th scope="col" className="px-4 pt-4">State</th>
-            <th scope="col" className="px-4 pt-4">Top boy name</th>
-            <th scope="col" className="px-4 pt-4">Top girl name</th>
-            <th scope="col" className="px-4 pt-4">Change from last year</th>
+            <th scope="col" className="px-4 pt-4">Top boy name{cur}</th>
+            <th scope="col" className="px-4 pt-4">Top girl name{cur}</th>
+            <th scope="col" className="px-4 pt-4">{prevLabel}</th>
           </tr>
         </thead>
         <tbody>

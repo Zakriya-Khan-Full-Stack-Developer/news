@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { getManifest } from '../../lib/data/names-data.js';
-import { getCluster, GENDER_NEUTRAL_NAMES, resolveNames } from '../../lib/data/us-names.js';
+import { getCluster, GENDER_NEUTRAL_NAMES, resolveNames, spreadByInitial } from '../../lib/data/us-names.js';
 import { buildUsPageSchema } from '../../lib/data/us-schema.js';
 import { EDITORIAL_FAQ } from '../../lib/data/editorial.js';
+import { pageMetadata } from '../../lib/seo.js';
 import UsPageShell from '../../components/UsPageShell.jsx';
 import NameChip from '../../components/NameChip.jsx';
 import NameCard from '../../components/NameCard.jsx';
@@ -11,26 +12,17 @@ const SITE_URL = 'https://nameverse.site';
 const cluster = getCluster('gender-neutral-names');
 const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
-const TITLE = 'Gender-Neutral Baby Names \u2014 Unisex Picks for 2026';
+const TITLE = 'Gender-Neutral Baby Names \u2014 Unisex Names With Meanings';
 const DESCRIPTION =
-  'Gender-neutral baby names used across genders, with documented meanings and origins. Includes the unisex names in our database plus guidance on how usage shifts between boys and girls over time.';
+  'Gender-neutral baby names with meanings and origins: names used for boys and girls, unisex names from our database, and how to check current usage.';
+const SOURCE_KEYS = ['ssa', 'wikiUnisex', 'behindthename'];
 
-export const metadata = {
-  title: TITLE,
-  description: DESCRIPTION,
-  alternates: { canonical: PAGE_URL },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: PAGE_URL,
-    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
-    type: 'article',
-    locale: 'en_US',
-  },
-  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
-};
+export const metadata = pageMetadata({ title: TITLE, description: DESCRIPTION, path: `/${cluster.slug}`, type: 'article' });
 
-// Names our own database records as unisex, ranked by documentation depth.
+// Names our own records classify as unisex. There is no meaningful ranking
+// for these (the old comment said "ranked by documentation depth" while the
+// code sorted by an undocumented popularity score), so take a spread across
+// the alphabet and list it A–Z.
 function selectUnisex(limit = 24) {
   const manifest = getManifest();
   const out = [];
@@ -41,8 +33,7 @@ function selectUnisex(limit = 24) {
       out.push({ ...item, religion: rel });
     }
   }
-  out.sort((a, b) => (b.popularity_score || 0) - (a.popularity_score || 0));
-  return out.slice(0, limit);
+  return spreadByInitial(out, limit);
 }
 
 const FAQS = [
@@ -52,7 +43,7 @@ const FAQS = [
   },
   {
     q: 'Do gender-neutral names stay neutral?',
-    a: 'Not always. Names often drift toward one gender once they become popular for that gender, and a name that is balanced today can be strongly one-sided a decade later. Checking current usage rather than relying on a name\u2019s reputation is the only reliable approach.',
+    a: 'Not always. A name that is balanced today can become strongly associated with one gender later, as usage shifts. SSA publishes US counts by sex for every name given to at least five babies a year, so you can check a name\u2019s current balance rather than relying on its reputation.',
   },
   {
     q: 'Are unisex names a modern invention?',
@@ -60,7 +51,7 @@ const FAQS = [
   },
   {
     q: 'How many gender-neutral names does NameVerse list?',
-    a: 'Our database records several hundred names as unisex across the three traditions we cover. The selection on this page shows the best-documented of them; the full set is available through the names directory filtered by unisex usage.',
+    a: 'About 1,000 published profiles are classified as unisex in their source records across the three traditions we cover. That is the record\u2019s classification, not a measurement of how often each name is given to boys and girls. This page shows a spread of them across the alphabet; the search page can filter the full set.',
   },
   ...EDITORIAL_FAQ.slice(0, 2),
 ];
@@ -82,26 +73,29 @@ export default function GenderNeutralNamesPage() {
       description: u.meaning || undefined,
     })),
     faqs: FAQS,
+    sourceKeys: SOURCE_KEYS,
+    ordered: false,
   });
 
   return (
     <UsPageShell
       cluster={cluster}
-      intro="Gender-neutral baby names used across genders, with documented meanings and origins. This page combines a curated list of widely-used unisex names with the names our own database records as unisex, so you can see both the popular choices and the documented ones."
+      intro="Gender-neutral baby names with recorded meanings and origins. This page combines an editorial list of names commonly given to both boys and girls with the names our own records classify as unisex \u2014 and explains how to check how a name is actually used today."
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
+      sources={SOURCE_KEYS}
       cta={
         <>
           <h2 className="font-display text-xl font-bold text-nv-text sm:text-2xl">
             Check how a name is actually used
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-nv-text-secondary">
-            Neutrality shifts over time. Every profile shows recorded gender usage alongside the
-            meaning and origin, so you can judge the name as it is used now.
+            Neutrality shifts over time. Profiles show the gender recorded in the source record; for current US
+            usage by sex, check the name in SSA&rsquo;s data.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/search" className="btn-primary">
+            <Link href="/search?gender=unisex" className="btn-primary">
               Search unisex names
             </Link>
             <Link href="/names" className="btn-ghost">
@@ -119,8 +113,9 @@ export default function GenderNeutralNamesPage() {
           Widely-used gender-neutral names
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary">
-          Names that are given to boys and girls in comparable numbers. Solid chips link to a full
-          profile; dashed chips are names we list but do not yet hold a published profile for.
+          An editorial list of names commonly used for both boys and girls in English-speaking countries. The
+          balance between boys and girls differs from name to name and changes over time. Solid chips link to a
+          full profile; dashed chips are names we list but do not yet hold a published profile for.
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
           {curated.map((item) => (
@@ -137,8 +132,9 @@ export default function GenderNeutralNamesPage() {
           Unisex names in our database
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary">
-          These are the names our own records classify as unisex, ordered by how thoroughly documented
-          they are. Each one has a documented meaning, origin and pronunciation guide.
+          Names our source records classify as unisex &mdash; a spread across the alphabet, listed A&ndash;Z. Each
+          has a recorded meaning and origin. &ldquo;Unisex&rdquo; here is the record&rsquo;s classification, not a
+          measurement of how often the name is given to boys and girls.
         </p>
         <div className="mt-6 grid gap-4 min-[480px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {unisex.map((item) => (
@@ -158,13 +154,14 @@ export default function GenderNeutralNamesPage() {
           <p>
             Gender association is not a property a name has; it is a pattern in how people use it, and
             patterns move. A name can be evenly split for a generation and then tip decisively one way
-            once it becomes fashionable for that gender. The reverse happens too, though less often.
+            once it becomes fashionable for that gender.
           </p>
           <p>
             This matters practically. If you choose a neutral name because you want it to stay neutral,
             the useful question is not &ldquo;is this name unisex?&rdquo; but &ldquo;which direction is
             its usage moving?&rdquo; A name that is 60/40 today and drifting is a different choice from
-            one that has held near 50/50 for decades.
+            one that has held near 50/50 for decades. In the US you can answer that from SSA&rsquo;s published
+            counts by sex and year.
           </p>
           <p>
             The second thing worth knowing is that neutrality is cultural, not universal. A name that is

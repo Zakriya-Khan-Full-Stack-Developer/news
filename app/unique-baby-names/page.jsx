@@ -2,11 +2,14 @@ import Link from 'next/link';
 import { getManifest } from '../../lib/data/names-data.js';
 import {
   getCluster,
-  SSA_TOP_10,
+  SSA_2025_TOP_20,
+  SSA_TOP_1000_SHARE_2025,
   BABYCENTER_2026,
+  sampleEvenly,
 } from '../../lib/data/us-names.js';
 import { buildUsPageSchema } from '../../lib/data/us-schema.js';
 import { EDITORIAL_FAQ } from '../../lib/data/editorial.js';
+import { pageMetadata } from '../../lib/seo.js';
 import UsPageShell from '../../components/UsPageShell.jsx';
 import NameCard from '../../components/NameCard.jsx';
 
@@ -16,30 +19,22 @@ const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
 const TITLE = 'Unique Baby Names \u2014 Rare Picks With Real Meaning';
 const DESCRIPTION =
-  'Unique baby names outside the published US ranking lists used here, with a documented meaning and origin. Explore 120 rare, distinctive picks across three traditions, each with pronunciation and cultural context.';
+  '120 unique baby names outside the latest US rankings, each with a recorded meaning and origin \u2014 plus how to check how rare a name really is.';
 
-export const metadata = {
-  title: TITLE,
-  description: DESCRIPTION,
-  alternates: { canonical: PAGE_URL },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: PAGE_URL,
-    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
-    type: 'article',
-    locale: 'en_US',
-  },
-  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
-};
+const SOURCE_KEYS = ['ssa2025', 'ssaLimits', 'ssa', 'babycenter'];
+
+export const metadata = pageMetadata({ title: TITLE, description: DESCRIPTION, path: `/${cluster.slug}`, type: 'article' });
 
 // The mainstream set we exclude. A name is only "unique" relative to what is
 // visible in the published national and independent lists used by this page,
 // rather than to a subjective sense of rarity.
 const MAINSTREAM = new Set(
-  [...SSA_TOP_10.boys, ...SSA_TOP_10.girls, ...BABYCENTER_2026.boys, ...BABYCENTER_2026.girls].map((n) =>
-    n.toLowerCase()
-  )
+  [
+    ...SSA_2025_TOP_20.boys.map((r) => r.name),
+    ...SSA_2025_TOP_20.girls.map((r) => r.name),
+    ...BABYCENTER_2026.boys,
+    ...BABYCENTER_2026.girls,
+  ].map((n) => n.toLowerCase())
 );
 
 function selectUnique(limit = 120) {
@@ -53,10 +48,9 @@ function selectUnique(limit = 120) {
       pool.push({ ...item, religion: rel });
     }
   }
-  // Highest-scoring first: these are the best-documented records in the set,
-  // which is what makes the page useful rather than merely obscure.
-  pool.sort((a, b) => (b.popularity_score || 0) - (a.popularity_score || 0));
-  return pool.slice(0, limit);
+  // An even A–Z sample. (This used to sort by popularity_score and call the
+  // result "the best-documented records" — the score measures no such thing.)
+  return sampleEvenly(pool, limit);
 }
 
 const FAQS = [
@@ -66,7 +60,11 @@ const FAQS = [
   },
   {
     q: 'Will a unique name cause problems for my child?',
-    a: 'The practical risks are spelling and pronunciation, not the name itself. Every name on this page includes a pronunciation guide and its recorded spelling variants, so you can check both before committing. Names with a clear phonetic structure travel better than names that require an explanation every time.',
+    a: 'The practical risks are spelling and pronunciation, not the name itself. Profiles show a pronunciation guide and recorded spelling variants where the record holds them, so you can check both before committing. Names with a clear phonetic structure travel better than names that require an explanation every time.',
+  },
+  {
+    q: 'How can I check how rare a name really is?',
+    a: `Look it up in the Social Security Administration data for the latest birth year. SSA publishes the top 1,000 names with counts, and those covered about ${Math.round(SSA_TOP_1000_SHARE_2025.total)}% of babies born in 2025 \u2014 so a name outside the top 1,000 is genuinely uncommon nationally. Names given to fewer than five babies in a year are not published at all, for privacy.`,
   },
   {
     q: 'Are rare names harder to research?',
@@ -91,15 +89,17 @@ export default function UniqueBabyNamesPage() {
       description: u.meaning || undefined,
     })),
     faqs: FAQS,
+    sourceKeys: SOURCE_KEYS,
   });
 
   return (
     <UsPageShell
       cluster={cluster}
-      intro="Unique baby names that sit outside the published national and independent ranking lists used here, while still carrying a documented meaning and origin. Every pick below is drawn from our database of 11,412 published profiles, so rarity never costs you the cultural depth behind the name."
+      intro="Unique baby names that sit outside the latest national rankings (SSA\u2019s top 20 for 2025 births and BabyCenter\u2019s 2026 top 40) while still carrying a recorded meaning and origin. Every pick is drawn from our 11,412 published profiles and listed A\u2013Z, so rarity never costs you the cultural depth behind the name."
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
+      sources={SOURCE_KEYS}
       cta={
         <>
           <h2 className="font-display text-xl font-bold text-nv-text sm:text-2xl">
@@ -128,9 +128,9 @@ export default function UniqueBabyNamesPage() {
           120 unique baby names
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary">
-          Ordered by how thoroughly documented each name is in our database, not by how unusual it
-          sounds. Every card links to the full profile: meaning, origin, pronunciation, script forms and
-          cultural context.
+          An even sample across the alphabet, listed A&ndash;Z &mdash; not a ranking. Every card links to the
+          full profile: recorded meaning and origin, plus pronunciation, script forms and cultural context where
+          the record holds them.
         </p>
 
         <div className="mt-6 grid gap-4 min-[480px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -156,9 +156,10 @@ export default function UniqueBabyNamesPage() {
             national or independent ranking lists used by this guide.
           </p>
           <p>
-            That is a strict test, and it deliberately excludes a lot of names that other sites call
-            unique. It also means the list changes as the national rankings move \u2014 a name that
-            appears on one of those lists, it leaves this page so the definition stays consistent over time.
+            That is a practical test rather than a strict one: a name outside these short lists can still be
+            fairly common, so check a favourite against SSA&rsquo;s full top 1,000 before you call it rare. The
+            list also changes as the rankings move \u2014 when a name enters one of those lists, it leaves this
+            page, so the definition stays consistent over time.
           </p>
           <p>
             The second filter is documentation. We only list names we can explain. A rare name with no
@@ -213,7 +214,7 @@ export default function UniqueBabyNamesPage() {
             { href: '/gender-neutral-names', label: 'Gender-neutral names', note: 'Used across genders' },
             { href: '/nature-baby-names', label: 'Nature baby names', note: 'Botanical and celestial' },
             { href: '/short-baby-names', label: 'Short baby names', note: 'One and two syllables' },
-            { href: '/popular-names-2026', label: 'Most popular 2026', note: 'What to avoid if you want rare' },
+            { href: '/top-baby-names-2026', label: 'Top baby names 2026', note: 'What to avoid if you want rare' },
             { href: '/names', label: 'All 11,412 names', note: 'Full directory' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="card card-hover p-4">

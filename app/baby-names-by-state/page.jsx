@@ -1,7 +1,8 @@
 import Link from 'next/link';
-import { getCluster, STATE_TOP_NAMES, resolveName } from '../../lib/data/us-names.js';
+import { getCluster, STATE_TOP_NAMES, STATE_DATA_YEARS, SSA_TOP_10, resolveName } from '../../lib/data/us-names.js';
 import { buildUsPageSchema } from '../../lib/data/us-schema.js';
-import { EDITORIAL_FAQ } from '../../lib/data/editorial.js';
+import { EDITORIAL_FAQ, RANKING_DATA } from '../../lib/data/editorial.js';
+import { pageMetadata } from '../../lib/seo.js';
 import UsPageShell from '../../components/UsPageShell.jsx';
 import StateTable from '../../components/StateTable.jsx';
 
@@ -9,24 +10,13 @@ const SITE_URL = 'https://nameverse.site';
 const cluster = getCluster('baby-names-by-state');
 const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
-const TITLE = 'Most Popular Baby Names by State \u2014 All 50 States';
-const DESCRIPTION =
-  'The most popular baby names in every US state and the District of Columbia, with the top boy and girl name for each and how it changed from the previous year. Sourced from Social Security Administration state data.';
+const { current: YEAR, previous: PREV } = STATE_DATA_YEARS;
+const SOURCE_KEYS = ['ssaState2025', 'ssa', 'wikipedia'];
 
-export const metadata = {
-  title: TITLE,
-  description: DESCRIPTION,
-  alternates: { canonical: PAGE_URL },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: PAGE_URL,
-    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
-    type: 'article',
-    locale: 'en_US',
-  },
-  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
-};
+const TITLE = `Most Popular Baby Names by State (${YEAR} Births)`;
+const DESCRIPTION = `The top boy and girl name in every US state and DC for babies born in ${YEAR} (SSA, released May 2026), and how each changed from ${PREV}.`;
+
+export const metadata = pageMetadata({ title: TITLE, description: DESCRIPTION, path: `/${cluster.slug}`, type: 'article' });
 
 // Derived from the real table rather than asserted, so the numbers on the page
 // and the numbers in the prose can never drift apart.
@@ -46,31 +36,41 @@ function analyseStates() {
   const top = (map) =>
     [...map.entries()].sort((a, b) => b[1] - a[1]).map(([name, count]) => ({ name, count }));
 
+  const national = new Set([...SSA_TOP_10.boys, ...SSA_TOP_10.girls]);
+  const outliers = STATE_TOP_NAMES.flatMap((row) =>
+    [row.boy, row.girl].filter((n) => !national.has(n)).map((n) => ({ state: row.state, name: n })),
+  );
+
   return {
     total: STATE_TOP_NAMES.length,
     boyChanges,
     girlChanges,
     topBoys: top(boyCounts),
     topGirls: top(girlCounts),
+    outliers,
   };
 }
 
+const STATS = analyseStates();
+const [B1, B2, B3] = STATS.topBoys;
+const [G1] = STATS.topGirls;
+
 const FAQS = [
   {
-    q: 'What is the most popular baby name in the United States by state?',
-    a: 'It depends on the state. Oliver and Liam dominate the boys\u2019 lists, while Charlotte and Olivia dominate the girls\u2019. The table on this page shows the exact top boy and girl name for all 50 states and the District of Columbia.',
+    q: 'What is the most popular baby name in each state?',
+    a: `It depends on the state. For babies born in ${YEAR}, ${B1.name} was the top boy name in ${B1.count} of the 51 states and DC, ${B2.name} in ${B2.count} and ${B3.name} in ${B3.count}; ${G1.name} was the top girl name in ${G1.count}. The table on this page lists the top boy and girl name for every state and DC.`,
   },
   {
     q: 'Do the most popular names differ by state?',
-    a: 'Yes, and the differences are larger than the national rankings suggest. Some states have a top name that does not appear in the national top 10 at all, and a handful of states have held the same top name for years while others change annually.',
+    a: `Yes. ${STATS.outliers.length} state top names for ${YEAR} births are not in the national top 10 at all \u2014 for example ${STATS.outliers.slice(0, 3).map((o) => `${o.name} in ${o.state}`).join(', ')}.`,
   },
   {
     q: 'Where does state-level baby name data come from?',
-    a: 'The Social Security Administration publishes state-level name data derived from birth records, covering each state and the District of Columbia. It is the same underlying dataset as the national ranking, broken down geographically.',
+    a: `The Social Security Administration publishes state-level tables from the same Social Security card application data as its national ranking, for each state and DC. This page uses the tables for babies born in ${YEAR} (released ${RANKING_DATA.ssa.releasedLabel}) and ${PREV}.`,
   },
   {
     q: 'Why do some states share the same top name?',
-    a: 'Because the most popular names are popular almost everywhere. A small number of names account for a large share of births nationally, so many states converge on the same top choice. The interesting variation is in the states that break away from that pattern.',
+    a: `Because the same few names lead almost everywhere: ${B1.name}, ${B2.name} and ${B3.name} were together the top boy name in ${B1.count + B2.count + B3.count} of 51 states and DC. The interesting variation is in the states that break away from that pattern.`,
   },
   ...EDITORIAL_FAQ.slice(0, 2),
 ];
@@ -78,7 +78,7 @@ const FAQS = [
 const BREADCRUMB = [{ name: 'Baby Names by State', href: '/baby-names-by-state' }];
 
 export default function BabyNamesByStatePage() {
-  const stats = analyseStates();
+  const stats = STATS;
 
   const schema = buildUsPageSchema({
     url: PAGE_URL,
@@ -90,17 +90,17 @@ export default function BabyNamesByStatePage() {
       description: `Top boy name ${r.boy}, top girl name ${r.girl}.`,
     })),
     faqs: FAQS,
-    sourceKeys: ['ssa', 'wikipedia', 'ssaTop'],
+    sourceKeys: SOURCE_KEYS,
   });
 
   return (
     <UsPageShell
       cluster={cluster}
-      intro="The most popular baby names in every US state and the District of Columbia, with the top boy and girl name for each and how it moved from the previous year. National rankings hide most of this variation — the state view is where the real differences show up."
+      intro={`The top boy and girl name in every US state and the District of Columbia for babies born in ${YEAR}, from Social Security Administration data released ${RANKING_DATA.ssa.releasedLabel} \u2014 with each state\u2019s ${PREV} leader for comparison. National rankings hide most of this variation; the state view is where the real differences show up.`}
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
-      sources={['ssa', 'wikipedia', 'ssaTop']}
+      sources={SOURCE_KEYS}
       cta={
         <>
           <h2 className="font-display text-xl font-bold text-nv-text sm:text-2xl">
@@ -114,7 +114,7 @@ export default function BabyNamesByStatePage() {
             <Link href="/search" className="btn-primary">
               Search all names
             </Link>
-            <Link href="/popular-names-2026" className="btn-ghost">
+            <Link href="/top-baby-names-2026" className="btn-ghost">
               See the national ranking
             </Link>
           </div>
@@ -126,15 +126,14 @@ export default function BabyNamesByStatePage() {
           id="table-heading"
           className="font-display text-2xl font-bold tracking-tight text-nv-text sm:text-3xl"
         >
-          Top names in all 50 states and DC
+          Top names in all 50 states and DC ({YEAR} births)
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary">
-          The &ldquo;change from last year&rdquo; column compares each state&rsquo;s current top name
-          against the previous year&rsquo;s. &ldquo;Held&rdquo; means the state&rsquo;s top name did not
-          change.
+          The change column compares each state&rsquo;s top name for babies born in {YEAR} with its top name for
+          babies born in {PREV}. &ldquo;Held&rdquo; means the state&rsquo;s top name did not change.
         </p>
         <div className="mt-6">
-          <StateTable rows={STATE_TOP_NAMES} resolve={resolveName} />
+          <StateTable rows={STATE_TOP_NAMES} resolve={resolveName} year={YEAR} previousYear={PREV} />
         </div>
       </section>
 
@@ -157,27 +156,28 @@ export default function BabyNamesByStatePage() {
             </p>
           </div>
           <div className="inset-panel">
-            <h3 className="text-sm font-bold text-nv-text">Girls&rsquo; lists move more</h3>
+            <h3 className="text-sm font-bold text-nv-text">
+              {stats.girlChanges >= stats.boyChanges ? 'Girls\u2019 leaders changed more often' : 'Boys\u2019 leaders changed more often'}
+            </h3>
             <p className="mt-1.5 text-xs leading-relaxed text-nv-text-secondary">
-              {stats.girlChanges} of {stats.total} states changed their top girl name from the previous
-              year, against {stats.boyChanges} for boys. Girls&rsquo; naming is measurably more volatile
-              at the top of the list.
+              Between {PREV} and {YEAR} births, {stats.girlChanges} of {stats.total} states changed their top girl
+              name and {stats.boyChanges} changed their top boy name. One year is a snapshot, not a long-run rule.
             </p>
           </div>
           <div className="inset-panel">
             <h3 className="text-sm font-bold text-nv-text">Regional character survives</h3>
             <p className="mt-1.5 text-xs leading-relaxed text-nv-text-secondary">
-              Some states hold a top name that is not in the national top 10 at all. Those outliers are
-              the most useful part of this dataset \u2014 they show where local naming culture is still
-              distinct from the national average.
+              {stats.outliers.length} state leaders are not in the national top 10 at all:{' '}
+              {stats.outliers.map((o) => `${o.name} (${o.state})`).join(', ')}. These outliers show where local
+              naming culture is still distinct from the national picture.
             </p>
           </div>
           <div className="inset-panel">
-            <h3 className="text-sm font-bold text-nv-text">Stability is the norm</h3>
+            <h3 className="text-sm font-bold text-nv-text">Who held their leader</h3>
             <p className="mt-1.5 text-xs leading-relaxed text-nv-text-secondary">
-              Most states keep the same top name year over year. A change at the top is a slow signal,
-              not a sudden one \u2014 which is why a name that is climbing is usually visible in the
-              wider top 100 long before it reaches number one.
+              {stats.total - stats.boyChanges} of {stats.total} states kept the same top boy name and{' '}
+              {stats.total - stats.girlChanges} kept the same top girl name from {PREV} to {YEAR}. Close races at the
+              top mean a small shift in births can change the leader.
             </p>
           </div>
         </div>
@@ -202,14 +202,18 @@ export default function BabyNamesByStatePage() {
             you what is most common; the shape of the list tells you what is coming.
           </p>
           <p>
-            One caveat worth stating plainly: state data is published with a lag, and it reflects births
-            rather than current preferences. If you are naming a child now, the state list shows you the
-            cohort your child will join, not the choices parents are making this month. For the leading
-            indicator, our{' '}
-            <Link href="/popular-names-2026" className="font-semibold text-nv-accent hover:underline">
-              2026 popularity analysis
+            One caveat worth stating plainly: state data is published with a lag \u2014 the newest tables
+            cover babies born in {YEAR}. If you are naming a child now, the state list shows the cohort just
+            ahead of yours, not this month&rsquo;s choices. For an early, self-reported look at 2026, see
+            BabyCenter&rsquo;s in-progress table on our{' '}
+            <Link href="/top-baby-names-2026" className="font-semibold text-nv-accent hover:underline">
+              Top Baby Names 2026
             </Link>{' '}
-            is the better starting point.
+            page, and the measured risers on{' '}
+            <Link href="/trending-names" className="font-semibold text-nv-accent hover:underline">
+              Trending Baby Names
+            </Link>
+            .
           </p>
         </div>
       </section>
@@ -223,8 +227,8 @@ export default function BabyNamesByStatePage() {
         </h2>
         <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            { href: '/popular-names-2026', label: 'Most popular names 2026', note: 'National ranking' },
-            { href: '/top-baby-names-2026', label: 'Top baby names 2026', note: 'Boys and girls' },
+            { href: '/top-baby-names-2026', label: 'Top baby names 2026', note: 'National ranking (SSA)' },
+            { href: '/trending-names', label: 'Fastest-rising names', note: 'Measured SSA risers' },
             { href: '/unique-baby-names', label: 'Unique baby names', note: 'Outside published lists' },
             { href: '/vintage-baby-names', label: 'Vintage baby names', note: 'Classics returning' },
             { href: '/names', label: 'All 11,412 names', note: 'Full directory' },
