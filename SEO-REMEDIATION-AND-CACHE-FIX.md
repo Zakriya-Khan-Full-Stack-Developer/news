@@ -1,3 +1,5 @@
+> **Historical report.** This document describes the site at the time it was written. Page counts, findings and recommendations may be out of date — see `README.md` for the current state (last reviewed 2026-10-17).
+
 # SEO Remediation and Caching Fix for NameVerse
 
 ## Executive summary

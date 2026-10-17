@@ -2,15 +2,14 @@ import Link from 'next/link';
 import { getManifest } from '../../lib/data/names-data.js';
 import NameCard from '../../components/NameCard.jsx';
 import AdSlot from '../../components/AdSlot.jsx';
+import { pageMetadata } from '../../lib/seo.js';
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'Baby Name Meanings — 100 Names Explained',
   description:
     'Discover 100 beautiful baby names and their documented meanings, origins and lucky numbers — hand-picked from 11,412 names across three traditions.',
-  alternates: {
-    canonical: 'https://nameverse.site/name-meanings',
-  },
-};
+  path: '/name-meanings',
+});
 
 export default function NameMeaningsPage() {
   const manifest = getManifest();

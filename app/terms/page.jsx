@@ -1,14 +1,13 @@
 import AdSlot from '../../components/AdSlot.jsx';
+import { pageMetadata, NOINDEX_FOLLOW } from '../../lib/seo.js';
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'Terms of Service',
   description:
     'NameVerse terms of service: acceptable use, accuracy disclaimer for name meanings, intellectual property and more.',
-  robots: {
-    index: false,
-    follow: true,
-  },
-};
+  path: '/terms',
+  robots: NOINDEX_FOLLOW,
+});
 
 const sections = [
   {

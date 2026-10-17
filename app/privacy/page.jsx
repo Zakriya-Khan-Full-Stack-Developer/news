@@ -1,43 +1,81 @@
+import Link from 'next/link';
 import AdSlot from '../../components/AdSlot.jsx';
+import { FOUNDER } from '../../lib/data/editorial.js';
+import { pageMetadata, NOINDEX_FOLLOW } from '../../lib/seo.js';
 
-export const metadata = {
+// ─────────────────────────────────────────────────────────────────────────────
+// This policy must describe what the site ACTUALLY runs.
+//
+// Reconciled against the code on 2026-10-17:
+//   • components/AdScripts.jsx loads three third-party scripts from
+//     revolthem.com (an Adsterra delivery domain): a banner/native unit, a
+//     popunder and a "smartlink" popunder, on every page.
+//   • There is NO first-party analytics script, and Google AdSense is NOT
+//     loaded (components/Ad.jsx and NativeAdBanner.jsx are not used).
+//   • localStorage keys: `theme` (light/dark) and `nv-shortlist-v1` (saved
+//     names). Neither is sent to our servers.
+// If any of that changes, update this page in the same commit.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const UPDATED_ISO = '2026-10-17';
+const UPDATED_LABEL = 'October 17, 2026';
+
+export const metadata = pageMetadata({
   title: 'Privacy Policy',
   description:
-    'How NameVerse handles data: anonymous analytics, advertising cookies, local theme preferences and your rights. We never sell personal data.',
-  robots: {
-    index: false,
-    follow: true,
-  },
-};
+    'How NameVerse handles data: third-party ad scripts, on-device storage for your theme and saved names, hosting logs, and how to contact us.',
+  path: '/privacy',
+  robots: NOINDEX_FOLLOW,
+});
 
 const sections = [
   {
-    title: '1. What we collect',
-    body: 'NameVerse is an open informational website. We do not require accounts and do not ask for personal information. We may collect anonymous, aggregated usage statistics (pages visited, approximate region, device type) to understand which features and traditions matter to our visitors.',
+    title: '1. Who we are',
+    body: [
+      `NameVerse (nameverse.site) is a free baby-name reference founded and run by ${FOUNDER.name}. For anything in this policy, contact ${FOUNDER.email} or WhatsApp ${FOUNDER.whatsappDisplay}.`,
+    ],
   },
   {
-    title: '2. Advertising',
-    body: 'We display advertising to keep the service free for all families. Third-party advertising partners and networks (including Revolthem and Google AdSense) may use cookies or web beacons to serve advertisements based on prior visits. You can manage or disable cookie preferences in your browser settings at any time.',
+    title: '2. What we collect ourselves',
+    body: [
+      'Nothing that identifies you. There are no accounts, no sign-up forms and no newsletter on NameVerse, and we do not run our own analytics or tracking scripts.',
+      'Like any website, our hosting provider automatically processes technical request data (such as IP address, browser type, the page requested and the time) to deliver pages and protect the service. We do not use these logs to build profiles of visitors.',
+      'If you email or message us on WhatsApp, we receive your address or number and what you write, and use it only to reply to you.',
+    ],
   },
   {
-    title: '3. Local storage',
-    body: 'We use your browser’s local storage only to remember your light/dark theme preference on this device. This preference data never leaves your browser.',
+    title: '3. Advertising',
+    body: [
+      'NameVerse is funded by advertising. Every page loads three scripts from revolthem.com, which delivers ads for the Adsterra network: a banner or native ad unit, a pop-under ad, and a "smartlink" that can open an advertiser page in a new window or tab.',
+      'These scripts are run by the ad network, not by us. When they load, the network and its partners may receive your IP address, device and browser information and the page you are viewing, and may use cookies or similar technologies to choose, limit and measure ads. Their handling of that data is governed by their own privacy policies.',
+      'We do not use Google AdSense or any other ad network at present. If that changes, we will update this page.',
+    ],
   },
   {
-    title: '4. Third-party services',
-    body: 'Analytics and advertising partners process anonymized usage data under their own privacy policies. We do not sell personal data, and we do not share identifiable information with advertisers.',
+    title: '4. Storage on your device',
+    body: [
+      'We use your browser\u2019s local storage for two things only: your light/dark theme choice (key "theme") and the names you save to your shortlist (key "nv-shortlist-v1"). Both stay in your browser and are never sent to our servers. Clearing your browser\u2019s site data removes them.',
+      'If you use "Copy share link" on the My Saved Names page, the link contains the names in your shortlist; it is shared only with whoever you choose to send it to.',
+    ],
   },
   {
-    title: '5. Children’s privacy',
-    body: 'NameVerse is a general-audience informational site and does not knowingly collect personal information from children under 13.',
+    title: '5. Your choices',
+    body: [
+      'You can block or delete cookies and site data in your browser settings, use your browser\u2019s tracking protection, or use an ad blocker. NameVerse remains fully usable without ads.',
+      'Depending on where you live, you may have rights to access, correct or delete personal data and to object to certain processing. Because we do not hold personal data about visitors beyond messages you send us, requests about advertising data should also be directed to the ad network; we will help where we can.',
+    ],
   },
   {
-    title: '6. Your rights',
-    body: 'Depending on your region, you may have rights to access, correct or delete personal data, and to object to certain processing. To exercise these rights, contact privacy@nameverse.site.',
+    title: '6. Children\u2019s privacy',
+    body: [
+      'NameVerse is a general-audience reference for parents and is not directed at children under 13. We do not knowingly collect personal information from children.',
+    ],
   },
   {
     title: '7. Changes to this policy',
-    body: 'We may update this policy as the site evolves. Material changes will be reflected by the "last updated" date below.',
+    body: [
+      'We update this policy whenever the scripts or storage the site uses change. The date at the top shows the most recent revision.',
+    ],
   },
 ];
 
@@ -47,10 +85,10 @@ export default function PrivacyPage() {
       <div className="mx-auto max-w-3xl">
         <header className="mb-8">
           <span className="eyebrow">Legal</span>
-          <h1 className="mt-2 font-display text-3xl font-bold tracking-tight text-nv-text sm:text-5xl">
-            Privacy Policy
-          </h1>
-          <p className="mt-3 text-sm text-nv-text-secondary">Last updated: August 2026</p>
+          <h1 className="mt-2 font-display text-3xl font-bold tracking-tight text-nv-text sm:text-5xl">Privacy Policy</h1>
+          <p className="mt-3 text-sm text-nv-text-secondary">
+            Last updated: <time dateTime={UPDATED_ISO}>{UPDATED_LABEL}</time>
+          </p>
         </header>
 
         <AdSlot placement="privacy-top" />
@@ -59,14 +97,23 @@ export default function PrivacyPage() {
           {sections.map((s) => (
             <section key={s.title} className="card p-6">
               <h2 className="font-display text-lg font-bold text-nv-text">{s.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-nv-text-secondary">{s.body}</p>
+              <div className="mt-2 space-y-3 text-sm leading-relaxed text-nv-text-secondary">
+                {s.body.map((p) => (
+                  <p key={p}>{p}</p>
+                ))}
+              </div>
             </section>
           ))}
           <p className="pt-4 text-sm text-nv-text-secondary">
-            Questions? Write to{' '}
-            <a href="mailto:privacy@nameverse.site" className="font-semibold text-nv-accent hover:underline">
-              privacy@nameverse.site
-            </a>.
+            Questions? Email{' '}
+            <a href={`mailto:${FOUNDER.email}`} className="font-semibold text-nv-accent hover:underline">
+              {FOUNDER.email}
+            </a>{' '}
+            or see the{' '}
+            <Link href="/contact" className="font-semibold text-nv-accent hover:underline">
+              contact page
+            </Link>
+            .
           </p>
         </div>
       </div>

@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { sampleEvenly } from '../../../lib/data/us-names.js';
+import { pageMetadata } from '../../../lib/seo.js';
 import { notFound } from 'next/navigation';
 import { getManifest, normalizeReligion, VALID_RELIGIONS } from '../../../lib/data/names-data.js';
 import { lettersFor } from '../../../lib/data/letter-browser.js';
@@ -37,13 +39,11 @@ export async function generateMetadata({ params }) {
   const count = (manifest[finalReligion] || []).filter((item) => item.indexable).length;
   if (!count) return { robots: { index: false, follow: true } };
 
-  return {
+  return pageMetadata({
     title: `${label} Baby Names \u2014 Meanings & Origins (${count.toLocaleString()})`,
-    description: `Browse ${count.toLocaleString()} ${label.toLowerCase()} baby names with documented meanings, origins, gender and lucky numbers. Explore popular ${label.toLowerCase()} names A–Z.`,
-    alternates: {
-      canonical: `https://nameverse.site/names/${finalReligion}`,
-    },
-  };
+    description: `Browse ${count.toLocaleString()} ${label.toLowerCase()} baby names with recorded meanings, origins and gender, A\u2013Z, with pronunciation and script forms where available.`,
+    path: `/names/${finalReligion}`,
+  });
 }
 
 export default function ReligionHubPage({ params }) {
@@ -56,10 +56,9 @@ export default function ReligionHubPage({ params }) {
   const label = religionLabel(finalReligion);
   const availableLetters = lettersFor(finalReligion, manifest);
 
-  const popular = allNames
-    .slice()
-    .sort((a, b) => (b.popularity_score || 0) - (a.popularity_score || 0))
-    .slice(0, 16);
+  // A sample across the alphabet — not a popularity ranking (Islamic records
+  // carry no score; the Christian/Hindu score is undocumented).
+  const popular = sampleEvenly(allNames, 16);
 
   const boyCount = allNames.filter(isBoy).length;
   const girlCount = allNames.filter(isGirl).length;
@@ -157,13 +156,13 @@ export default function ReligionHubPage({ params }) {
         <section className="mb-14" aria-labelledby="popular-heading">
           <div className="mb-6 flex items-end justify-between gap-4">
             <div>
-              <span className="eyebrow">Highest popularity scores</span>
+              <span className="eyebrow">A&ndash;Z sample</span>
               <h2 id="popular-heading" className="mt-2 font-display text-2xl font-bold tracking-tight text-nv-text sm:text-3xl">
-                Popular {label} Names
+                Start Exploring {label} Names
               </h2>
             </div>
-            <Link href={`/search?religion=${finalReligion}&sort=popularity`} className="btn-ghost text-xs">
-              View All Ranked by Popularity &rarr;
+            <Link href={`/search?religion=${finalReligion}`} className="btn-ghost text-xs">
+              Search all {label.toLowerCase()} names &rarr;
             </Link>
           </div>
           <div className="grid gap-4 min-[480px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

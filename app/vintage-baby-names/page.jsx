@@ -3,30 +3,18 @@ import { getCluster, VINTAGE_NAMES, resolveNames, coverage } from '../../lib/dat
 import { buildUsPageSchema } from '../../lib/data/us-schema.js';
 import { EDITORIAL_FAQ } from '../../lib/data/editorial.js';
 import UsPageShell from '../../components/UsPageShell.jsx';
+import { pageMetadata } from '../../lib/seo.js';
 import NameChip from '../../components/NameChip.jsx';
 
 const SITE_URL = 'https://nameverse.site';
 const cluster = getCluster('vintage-baby-names');
 const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
-const TITLE = 'Vintage Baby Names Making a Comeback in 2026';
+const TITLE = 'Vintage Baby Names \u2014 Old-Fashioned Names With Meanings';
 const DESCRIPTION =
-  'Vintage and old-fashioned baby names returning to use, from Eleanor and Theodore to Mabel and Percival. Each name links to its documented meaning, origin and pronunciation.';
+  'Vintage and old-fashioned baby names, from revivals like Theodore and Eleanor to rarer classics like Mabel and Percival \u2014 each with its meaning and origin.';
 
-export const metadata = {
-  title: TITLE,
-  description: DESCRIPTION,
-  alternates: { canonical: PAGE_URL },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: PAGE_URL,
-    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
-    type: 'article',
-    locale: 'en_US',
-  },
-  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
-};
+export const metadata = pageMetadata({ title: TITLE, description: DESCRIPTION, path: `/${cluster.slug}`, type: 'article' });
 
 const FAQS = [
   {
@@ -39,11 +27,11 @@ const FAQS = [
   },
   {
     q: 'Are vintage names the same as classic names?',
-    a: 'Not quite. A classic name has been in continuous use \u2014 Elizabeth, James, William. A vintage name went away and came back. The distinction matters because vintage names are still climbing, so a name that feels rare today may be considerably more common in ten years.',
+    a: 'Not quite. A classic name has been in continuous use \u2014 Elizabeth, James, William. A vintage name went away and came back. The distinction matters because a revival can become very common: check a vintage name\u2019s latest SSA rank before assuming it is rare.',
   },
   {
-    q: 'Which vintage names are rising fastest?',
-    a: 'The strongest revivals tend to be names with a soft sound and a clear literary or historical association. Names ending in a vowel or a soft consonant \u2014 Eloise, Theodore, Matilda, Silas \u2014 have moved fastest, while harder-edged Victorian names such as Percival and Archibald remain genuinely rare.',
+    q: 'Which vintage names are already common?',
+    a: 'Several revivals are now firmly mainstream. In SSA\u2019s ranking for babies born in 2025, Charlotte is No. 2 for girls, Theodore No. 4 and Henry No. 5 for boys, Evelyn No. 8 and Eleanor No. 12 for girls. Harder-edged Victorian names such as Percival and Archibald are much rarer choices in the US.',
   },
   ...EDITORIAL_FAQ.slice(0, 2),
 ];
@@ -61,7 +49,7 @@ export default function VintageBabyNamesPage() {
     breadcrumb: BREADCRUMB,
     items: resolved.map((r) => ({ name: r.name, url: r.href, description: r.meaning || undefined })),
     faqs: FAQS,
-    sourceKeys: ['ssa', 'babycenter', 'nameberry'],
+    sourceKeys: ['ssa2025', 'ssa', 'behindthename'],
   });
 
   return (
@@ -71,7 +59,7 @@ export default function VintageBabyNamesPage() {
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
-      sources={['ssa', 'babycenter', 'nameberry']}
+      sources={['ssa2025', 'ssa', 'behindthename']}
       cta={
         <>
           <h2 className="font-display text-xl font-bold text-nv-text sm:text-2xl">
@@ -131,14 +119,14 @@ export default function VintageBabyNamesPage() {
             names have both in abundance.
           </p>
           <p>
-            There is a practical consequence worth knowing. Because vintage names are still climbing,
-            the ones that feel rare today are the ones with the strongest associations \u2014 the harder
-            Victorian names, the ones tied to a specific historical figure. The soft, vowel-ending
-            revivals are already well into the mainstream, and our{' '}
-            <Link href="/popular-names-2026" className="font-semibold text-nv-accent hover:underline">
-              2026 ranking
+            There is a practical consequence worth knowing. The soft, vowel-ending revivals are already
+            well into the mainstream \u2014 Theodore was the No. 4 boy name for babies born in 2025 \u2014
+            while the harder Victorian names, and the ones tied to a specific historical figure, remain
+            rarer. Our{' '}
+            <Link href="/top-baby-names-2026" className="font-semibold text-nv-accent hover:underline">
+              Top Baby Names 2026
             </Link>{' '}
-            shows how far some of them have travelled.
+            page shows how far some of them have travelled.
           </p>
         </div>
       </section>

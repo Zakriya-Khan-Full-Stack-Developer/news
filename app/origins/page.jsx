@@ -2,15 +2,14 @@ import Link from 'next/link';
 import { getManifest } from '../../lib/data/names-data.js';
 import { ORIGIN_SLUGS, ORIGIN_LABELS, originSlugFor } from '../../lib/data/name-utils.js';
 import AdSlot from '../../components/AdSlot.jsx';
+import { pageMetadata } from '../../lib/seo.js';
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'Baby Names by Origin — Arabic, Biblical, Sanskrit',
   description:
-    'Browse 11,412 published baby names grouped by linguistic and cultural origin: Arabic, Biblical, Sanskrit, Persian, Tamil, Hindi, Urdu and more, with documented meanings.',
-  alternates: {
-    canonical: 'https://nameverse.site/origins',
-  },
-};
+    'Browse baby names by origin \u2014 Arabic, Sanskrit, Persian, Hebrew/Biblical, Tamil, Hindi, Urdu and more \u2014 each with a recorded meaning.',
+  path: '/origins',
+});
 
 export default function OriginsIndexPage() {
   const manifest = getManifest();

@@ -1,3 +1,5 @@
+> **Historical report.** This document describes the site at the time it was written. Page counts, findings and recommendations may be out of date — see `README.md` for the current state (last reviewed 2026-10-17).
+
 # Deep audit: content presentation, headings, metadata, brand
 
 Audited: 38 representative pages of live HTML + a crawl of 608 internal URLs.

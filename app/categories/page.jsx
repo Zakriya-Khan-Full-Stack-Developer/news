@@ -2,15 +2,14 @@ import Link from 'next/link';
 import { getManifest } from '../../lib/data/names-data.js';
 import { CATEGORY_SLUGS, CATEGORY_LABELS, categorySlugFor } from '../../lib/data/name-utils.js';
 import AdSlot from '../../components/AdSlot.jsx';
+import { pageMetadata } from '../../lib/seo.js';
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'Baby Names by Category — Islamic, Hindu, Biblical',
   description:
-    'Browse 11,412 published baby names grouped by category: Islamic, Hindu, Biblical, Saint and Virtue — each with documented meanings, origins and traditional context.',
-  alternates: {
-    canonical: 'https://nameverse.site/categories',
-  },
-};
+    'Browse baby names by category \u2014 Hindu, Biblical, Saint and Virtue \u2014 each with a recorded meaning, origin and traditional context.',
+  path: '/categories',
+});
 
 export default function CategoriesIndexPage() {
   const manifest = getManifest();

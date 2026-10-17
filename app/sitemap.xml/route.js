@@ -7,6 +7,8 @@ export async function GET() {
   const chunkSize = 5000;
   const sitemaps = [
     { loc: `${siteUrl}/sitemap/pages.xml` },
+    // Blog articles (public/data/blog-posts.json), with per-post <lastmod>.
+    { loc: `${siteUrl}/sitemap/blog.xml` },
   ];
 
   for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {

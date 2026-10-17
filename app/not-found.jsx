@@ -80,14 +80,14 @@ export default function NotFound() {
             <Link href="/" className="btn-primary">
               Back to Homepage
             </Link>
-            <Link href="/trending-names" className="btn-ghost">
-              Trending Names
+            <Link href="/top-baby-names-2026" className="btn-ghost">
+              Top Names 2026
             </Link>
             <Link href="/unique-baby-names" className="btn-ghost">
               Unique Names
             </Link>
             <Link href="/popularity" className="btn-ghost">
-              Popularity Tool
+              Compare Names
             </Link>
           </div>
         </div>

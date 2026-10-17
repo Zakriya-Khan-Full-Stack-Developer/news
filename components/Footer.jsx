@@ -15,13 +15,12 @@ const TRADITIONS = [
 
 const DISCOVERY = [
   { name: 'Browse All Names', href: '/names' },
-  { name: 'Most Popular 2026', href: '/popular-names-2026' },
   { name: 'Top Baby Names 2026', href: '/top-baby-names-2026' },
   { name: 'Names by State', href: '/baby-names-by-state' },
   { name: 'Names by Origin', href: '/origins' },
   { name: 'Names by Meaning', href: '/names-by-meaning' },
   { name: 'Curated Categories', href: '/categories' },
-  { name: 'Trending Names 2026', href: '/trending-names' },
+  { name: 'Fastest-Rising Names', href: '/trending-names' },
   { name: 'Unique & Rare Names', href: '/unique-baby-names' },
   { name: 'Gender-Neutral Names', href: '/gender-neutral-names' },
   { name: 'Vintage Baby Names', href: '/vintage-baby-names' },
@@ -33,9 +32,10 @@ const DISCOVERY = [
 ];
 
 const TOOLS = [
-  { name: 'Compare Name Popularity', href: '/popularity' },
+  { name: 'Compare Names Side by Side', href: '/popularity' },
+  { name: 'My Saved Names', href: '/my-names' },
   { name: 'Instant Name Search', href: '/search' },
-  { name: 'Expert Naming Guide', href: '/guides/expert-naming-guide' },
+  { name: 'How to Choose a Baby Name', href: '/blog/how-to-choose-a-baby-name' },
   { name: 'Baby Naming Articles', href: '/blog' },
   { name: 'XML Sitemap', href: '/sitemap.xml' },
 ];
@@ -43,7 +43,7 @@ const TOOLS = [
 const COMPANY = [
   { name: 'About NameVerse', href: '/about' },
   { name: 'Editorial Policy', href: '/editorial-policy' },
-  { name: 'Contact Editorial Team', href: '/contact' },
+  { name: 'Contact Us', href: '/contact' },
   { name: 'Privacy Policy', href: '/privacy' },
   { name: 'Terms of Service', href: '/terms' },
 ];
@@ -61,8 +61,8 @@ export default function Footer() {
               A Cultural Name Anthology, Not a Name Generator
             </h2>
             <p className="mt-1 text-xs text-nv-text-secondary">
-              11,412 baby names documented with etymological roots, original script forms,
-              pronunciation and cultural context across three traditions.
+              11,412 baby names with recorded meanings and origins &mdash; plus script forms, pronunciation and
+              cultural context where the record holds them &mdash; across three traditions.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3">
@@ -83,11 +83,12 @@ export default function Footer() {
             <p className="text-sm leading-relaxed text-nv-text-secondary">
               NameVerse helps parents worldwide find baby names of genuine cultural and
               spiritual significance across Islamic, Christian and Hindu traditions.
-              Every entry is documented with its origin, script forms and meaning.
+              Every published entry has a recorded meaning and origin. Founded and run by{' '}
+              <Link href="/about" className="font-semibold text-nv-accent hover:underline">Zakriya Khan</Link>.
             </p>
             <div className="flex items-center gap-2 text-xs font-semibold text-nv-success">
               <span className="flex h-2 w-2 rounded-full bg-nv-success" />
-              <span>11,412 names indexed &bull; zero soft-404s</span>
+              <span>11,412 published name profiles</span>
             </div>
           </div>
 

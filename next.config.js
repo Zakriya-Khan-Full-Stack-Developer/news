@@ -45,6 +45,55 @@ const nextConfig = {
         destination: '/unique-baby-names',
         permanent: true,
       },
+      // One page per search intent. /popular-names-2026 and
+      // /top-baby-names-2026 rendered the same SSA and BabyCenter lists for the
+      // same query family, so they competed with each other. The unique
+      // analysis from the popular page now lives on /top-baby-names-2026.
+      {
+        source: '/popular-names-2026',
+        destination: '/top-baby-names-2026',
+        permanent: true,
+      },
+      // /popular-by-state was a "coming soon" stub that only linked onward;
+      // the real state data lives on /baby-names-by-state.
+      {
+        source: '/popular-by-state',
+        destination: '/baby-names-by-state',
+        permanent: true,
+      },
+      // /advanced-search rendered the same component as /search and promised
+      // filters that did not exist. All filters now live on /search.
+      {
+        source: '/advanced-search',
+        destination: '/search',
+        permanent: true,
+      },
+      // Three short (~250-word) blog posts duplicated the intent of stronger
+      // evergreen pages and carried unsupported "2026 trend" claims. They were
+      // consolidated into those pages; the redirects keep any links working.
+      {
+        source: '/blog/gender-neutral-baby-names-2026',
+        destination: '/gender-neutral-names',
+        permanent: true,
+      },
+      {
+        source: '/blog/nature-inspired-baby-names',
+        destination: '/nature-baby-names',
+        permanent: true,
+      },
+      {
+        source: '/blog/short-simple-modern-baby-names-2026',
+        destination: '/short-baby-names',
+        permanent: true,
+      },
+      // The old naming-framework page targeted the same query ("how to choose
+      // a baby name") as the full step-by-step article, so the two competed.
+      // Consolidated into the article.
+      {
+        source: '/guides/expert-naming-guide',
+        destination: '/blog/how-to-choose-a-baby-name',
+        permanent: true,
+      },
       // ──────────────────────────────────────────────────────────────────────
       // LEGACY LETTER-BROWSE URLS — the single biggest cause of the stalled
       // migration.

@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import { getManifest } from '../../../lib/data/names-data.js';
 import { ORIGIN_SLUGS, ORIGIN_LABELS, originSlugFor, religionLabel } from '../../../lib/data/name-utils.js';
 import NameCard from '../../../components/NameCard.jsx';
+import { sampleEvenly } from '../../../lib/data/us-names.js';
+import { pageMetadata } from '../../../lib/seo.js';
 import AdSlot from '../../../components/AdSlot.jsx';
 
 export const dynamicParams = false;
@@ -24,13 +26,11 @@ export async function generateMetadata({ params }) {
   if (!ORIGIN_SLUGS.includes(origin)) return {};
   const label = ORIGIN_LABELS[origin] || origin.charAt(0).toUpperCase() + origin.slice(1);
 
-  return {
+  return pageMetadata({
     title: `${label} Baby Names with Meanings & Origins`,
-    description: `Browse ${label} baby names with documented meanings, origins, gender and lucky numbers — ranked by popularity for 2026.`,
-    alternates: {
-      canonical: `https://nameverse.site/origins/${origin}`,
-    },
-  };
+    description: `Browse ${label} baby names with recorded meanings, origins and gender across Islamic, Christian and Hindu traditions, listed A\u2013Z.`,
+    path: `/origins/${origin}`,
+  });
 }
 
 export default function OriginDetailPage({ params }) {
@@ -53,9 +53,10 @@ export default function OriginDetailPage({ params }) {
     }
   }
 
-  all.sort((a, b) => (b.popularity_score || 0) - (a.popularity_score || 0));
   if (!all.length) notFound();
-  const topNames = all.slice(0, 300);
+  // Even A–Z sample — no popularity ordering (the score is undocumented and
+  // absent from every Islamic record).
+  const topNames = sampleEvenly(all, 300);
   const religionsWithNames = [...religionCounts.entries()].sort((a, b) => b[1] - a[1]);
 
   const collectionSchema = {
@@ -102,8 +103,11 @@ export default function OriginDetailPage({ params }) {
             {label} Baby Names &amp; Meanings
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-nv-text-secondary">
-            {all.length.toLocaleString()} names tracing their roots to {label} linguistic and cultural heritage.
-            Below are the 300 most popular choices.
+            {all.length.toLocaleString()} names whose records give {label} as their origin.
+            {all.length > 300 ? ' Below is an even sample of 300 across the alphabet, listed A\u2013Z.' : ' Listed A\u2013Z.'}
+            {origin === 'biblical' || origin === 'hindu'
+              ? ` \u201c${label}\u201d is a tradition label carried in the source records rather than a language, so check each profile for the underlying language.`
+              : ''}
           </p>
 
           {religionsWithNames.length > 1 && (
@@ -131,8 +135,8 @@ export default function OriginDetailPage({ params }) {
 
         {all.length > 300 && (
           <p className="mt-10 text-center text-sm text-nv-text-secondary">
-            Showing the 300 most popular of {all.length.toLocaleString()}.{' '}
-            <Link href={`/search?origin=${origin}&sort=popularity`} className="font-semibold text-nv-accent hover:underline">
+            Showing 300 of {all.length.toLocaleString()}, spread evenly across the alphabet.{' '}
+            <Link href={`/search?origin=${origin}`} className="font-semibold text-nv-accent hover:underline">
               Search the full list &rarr;
             </Link>
           </p>

@@ -1,15 +1,14 @@
 import Link from 'next/link';
 import { getManifest } from '../../lib/data/names-data.js';
 import AdSlot from '../../components/AdSlot.jsx';
+import { pageMetadata } from '../../lib/seo.js';
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'Baby Names by Meaning — Light, Love, Strength',
   description:
     'Browse 11,412 baby names by meaning: light, love, strength, peace, gift, beautiful and more. Find the perfect meaningful name for your baby.',
-  alternates: {
-    canonical: 'https://nameverse.site/names-by-meaning',
-  },
-};
+  path: '/names-by-meaning',
+});
 
 const STOPWORDS = new Set([
   'a', 'an', 'the', 'and', 'or', 'of', 'to', 'in', 'on', 'for', 'with', 'who', 'that', 'this',

@@ -39,8 +39,10 @@ export default function NameCard({ item, showReligion = false, headingTag = 'p' 
   if (!item) return null;
 
   const meaning = item.short_meaning || item.meaning || '';
-  const genderKey = normalizeGender(item.gender) || 'unisex';
-  const genderText = genderKey === 'boy' ? 'Boy' : genderKey === 'girl' ? 'Girl' : 'Unisex';
+  // No recorded gender → no gender badge. It used to default to "Unisex",
+  // which asserted a fact the record does not contain.
+  const genderKey = normalizeGender(item.gender);
+  const genderText = genderKey === 'boy' ? 'Boy' : genderKey === 'girl' ? 'Girl' : genderKey === 'unisex' ? 'Unisex' : null;
   const religion = item.religion || '';
   const luckyNumber = item.lucky_number ?? item.luckyNumber;
   const style = TRADITION_STYLES[religion] || {
@@ -79,9 +81,11 @@ export default function NameCard({ item, showReligion = false, headingTag = 'p' 
         <Heading className="font-display text-lg font-bold tracking-tight text-nv-text transition-colors group-hover:text-nv-accent">
           {item.name}
         </Heading>
-        <span className={`badge shrink-0 border text-[11px] ${GENDER_STYLES[genderKey]}`}>
-          {genderText}
-        </span>
+        {genderText && (
+          <span className={`badge shrink-0 border text-[11px] ${GENDER_STYLES[genderKey]}`}>
+            {genderText}
+          </span>
+        )}
       </div>
 
       {meaning && (

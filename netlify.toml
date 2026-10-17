@@ -2,7 +2,7 @@
 # NameVerse on Netlify
 #
 # GOAL: zero serverless invocations, zero edge invocations, minimal bandwidth.
-# Every one of the ~12,600 pages is prerendered HTML served straight from
+# Every one of the ~12,000+ pages is prerendered HTML served straight from
 # Netlify's CDN, so the only thing Netlify bills for is build minutes and
 # bandwidth. Nothing here can turn into a function call at request time.
 #
@@ -32,11 +32,11 @@
   # Cap build workers. Each worker loads the 2.4 MB manifest, so on a many-core
   # build machine the default worker count multiplies memory use and can OOM.
   NEXT_BUILD_CPUS = "4"
-  # The two content verifiers cost ~11 s of build time. They are a safety net
-  # for local development, not something to pay for on every deploy — the
-  # static-output gate (verify-static.mjs) still runs and is the one that
-  # protects against the failure mode that actually paused the site.
-  SKIP_CONTENT_VERIFIERS = "1"
+  # The content verifiers (verify-blog, verify-content, verify-uniqueness) run
+  # on every deploy. They cost roughly 11 s of build time, and the editorial
+  # policy tells readers these checks gate every production build — so they
+  # must not be skipped here. (SKIP_CONTENT_VERIFIERS=1 used to be set, which
+  # made that public claim untrue.) Set it only for an emergency local build.
 
 [[plugins]]
   # Official Netlify runtime for Next.js. Handles routing, image optimisation
@@ -57,6 +57,13 @@
   for = "/nameverse_logo_emblem.webp"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# Share cards are regenerated when a title changes, so they are cached for a
+# week rather than marked immutable.
+[[headers]]
+  for = "/blog/og/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, s-maxage=2592000"
 
 # The search indexes are fetched by the client search components. They are NOT
 # immutable — the filename is reused when the dataset changes — so they get a
@@ -122,5 +129,49 @@
 [[redirects]]
   from = "/home"
   to = "/"
+  status = 301
+  force = true
+
+# Consolidated routes (also declared in next.config.js). Exact paths only, so
+# none of these can shadow a real page.
+[[redirects]]
+  from = "/popular-names-2026"
+  to = "/top-baby-names-2026"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/popular-by-state"
+  to = "/baby-names-by-state"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/advanced-search"
+  to = "/search"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/gender-neutral-baby-names-2026"
+  to = "/gender-neutral-names"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/nature-inspired-baby-names"
+  to = "/nature-baby-names"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/short-simple-modern-baby-names-2026"
+  to = "/short-baby-names"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/expert-naming-guide"
+  to = "/blog/how-to-choose-a-baby-name"
   status = 301
   force = true

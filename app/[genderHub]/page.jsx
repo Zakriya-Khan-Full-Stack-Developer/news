@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getManifest } from '@/lib/data/names-data.js';
 import { normalizeGender, genderLabel, religionLabel } from '@/lib/data/name-utils.js';
+import { sampleEvenly } from '@/lib/data/us-names.js';
+import { pageMetadata } from '@/lib/seo.js';
 import NameCard from '@/components/NameCard.jsx';
 import AdSlot from '@/components/AdSlot.jsx';
 
@@ -44,15 +46,11 @@ export async function generateMetadata({ params }) {
   );
   if (!items.length) return { robots: { index: false, follow: true } };
 
-  const canonicalUrl = `https://nameverse.site/${params.genderHub}`;
-
-  return {
+  return pageMetadata({
     title: `${genLabel} ${relLabel} Baby Names & Meanings (${items.length.toLocaleString()})`,
-    description: `Browse ${items.length.toLocaleString()} ${relLabel.toLowerCase()} ${gender} baby names with documented meanings, origins and lucky numbers — ranked by popularity.`,
-    alternates: {
-      canonical: canonicalUrl,
-    },
-  };
+    description: `Browse ${items.length.toLocaleString()} ${relLabel.toLowerCase()} ${gender} baby names with recorded meanings and origins, A\u2013Z, with pronunciation and script forms where available.`,
+    path: `/${params.genderHub}`,
+  });
 }
 
 export default function GenderHubPage({ params }) {
@@ -66,12 +64,13 @@ export default function GenderHubPage({ params }) {
 
   const manifest = getManifest();
   const allItems = manifest[religion] || [];
-  const items = allItems
-    .filter((item) => item.indexable && normalizeGender(item.gender) === gender)
-    .sort((a, b) => (b.popularity_score || 0) - (a.popularity_score || 0));
+  const items = allItems.filter((item) => item.indexable && normalizeGender(item.gender) === gender);
   if (!items.length) notFound();
 
-  const topNames = items.slice(0, 300);
+  // No popularity ordering: Islamic records carry no score at all, and the
+  // Christian/Hindu score is undocumented. Show an even sample across the
+  // alphabet, listed A–Z, and send readers to search for the full set.
+  const topNames = sampleEvenly(items, 300);
 
   const collectionSchema = {
     '@context': 'https://schema.org',
@@ -119,12 +118,12 @@ export default function GenderHubPage({ params }) {
             {genLabel} {relLabel} Names &amp; Meanings
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-nv-text-secondary">
-            {items.length.toLocaleString()} {relLabel.toLowerCase()} {gender} names, ranked by
-            popularity and each with a documented meaning, cultural origin and lucky number.
+            {items.length.toLocaleString()} {relLabel.toLowerCase()} {gender} names, each with a recorded meaning
+            and origin. Listed A&ndash;Z &mdash; this is a browsing list, not a popularity ranking.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-2">
-            <Link href={`/search?religion=${religion}&gender=${gender}&sort=popularity`} className="btn-primary">
-              See all ranked by popularity
+            <Link href={`/search?religion=${religion}&gender=${gender}`} className="btn-primary">
+              Search all {items.length.toLocaleString()} names
             </Link>
             <Link href={`/names/${religion}`} className="btn-ghost">
               Browse all {relLabel.toLowerCase()} names
@@ -145,9 +144,9 @@ export default function GenderHubPage({ params }) {
 
         {items.length > 300 && (
           <p className="mt-10 text-center text-sm text-nv-text-secondary">
-            Showing the 300 most popular of {items.length.toLocaleString()}.{' '}
+            Showing 300 of {items.length.toLocaleString()}, spread evenly across the alphabet.{' '}
             <Link
-              href={`/search?religion=${religion}&gender=${gender}&sort=popularity`}
+              href={`/search?religion=${religion}&gender=${gender}`}
               className="font-semibold text-nv-accent hover:underline"
             >
               Search the full list &rarr;
@@ -163,13 +162,12 @@ export default function GenderHubPage({ params }) {
             <p>
               A {relLabel.toLowerCase()} {gender} name should feel meaningful to your family, sound
               natural with your surname, and carry the qualities you hope your child will grow into.
-              This ranked list is a great starting point because it shows which choices parents across
-              the world are making right now.
+              Start with meanings that speak to you, then check pronunciation and spelling with the
+              people who will use the name every day.
             </p>
             <p>
-              Once you shortlist a few, open each name to compare pronunciation, lucky numbers,
-              numerology and spelling variations, then use the popularity comparison tool to weigh your
-              finalists side by side.
+              Once you find a few you like, save them to your shortlist from each profile, then compare
+              meanings, origins and spellings side by side on the comparison page.
             </p>
           </div>
         </section>
