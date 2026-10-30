@@ -1,16 +1,15 @@
 import Link from 'next/link';
 import AdSlot from '../../components/AdSlot.jsx';
 import { FOUNDER, CONTACT } from '../../lib/data/editorial.js';
+import { pageMetadata, NOINDEX_FOLLOW } from '../../lib/seo.js';
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'Terms of Service',
   description:
     'NameVerse terms of service: acceptable use, accuracy disclaimer for name meanings, the free name API, intellectual property, and who owns the site.',
-  robots: {
-    index: false,
-    follow: true,
-  },
-};
+  path: '/terms',
+  robots: NOINDEX_FOLLOW,
+});
 
 const sections = [
   {

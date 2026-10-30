@@ -1,19 +1,23 @@
 import Link from 'next/link';
-import { getManifest, getPopularItems } from '../lib/data/names-data.js';
+import { getManifest } from '../lib/data/names-data.js';
+import { SSA_TOP_10, resolveName } from '../lib/data/us-names.js';
+import { getPublishedPosts, formatDate } from '../lib/data/blog.js';
+import { pageMetadata } from '../lib/seo.js';
 import { FOUNDER, CONTACT } from '../lib/data/editorial.js';
 import NameCard from '../components/NameCard.jsx';
 import HomepageSearch from '../components/HomepageSearch.jsx';
 import PageJsonLd from '../components/PageJsonLd.jsx';
 import AdSlot from '../components/AdSlot.jsx';
 
-export const metadata = {
-  title: 'Baby Names with Meanings, Origins & Cultural Context',
+// The root layout's "%s | NameVerse" template does not apply to the root
+// segment itself, so the homepage sets its full title explicitly.
+export const metadata = pageMetadata({
+  title: 'NameVerse \u2014 Baby Names with Meanings, Origins & Cultural Context',
+  absoluteTitle: true,
   description:
     'Search 11,412 baby names with meanings, origins, pronunciation guides, script forms and cultural context across Islamic, Christian and Hindu traditions.',
-  alternates: {
-    canonical: 'https://nameverse.site',
-  },
-};
+  path: '/',
+});
 
 const hubs = [
   {
@@ -78,32 +82,8 @@ const intentChips = [
   { label: 'Names meaning love', href: '/search?q=love' },
   { label: 'Names meaning strength', href: '/search?q=strength' },
   { label: 'Unique names', href: '/unique-baby-names' },
-  { label: 'Trending 2026', href: '/trending-names' },
+  { label: 'Rising names', href: '/trending-names' },
   { label: 'Biblical names', href: '/categories/biblical' },
-];
-
-const latestArticles = [
-  {
-    title: 'Top Islamic Baby Names for 2026',
-    excerpt: 'A meaning-first guide to Quranic, Arabic and Muslim naming choices, including transliteration and popularity context.',
-    href: '/blog/top-islamic-baby-names-2026',
-    date: 'Oct 2026',
-    tag: 'Islamic Naming',
-  },
-  {
-    title: 'Hindu Baby Names with Deep Meanings',
-    excerpt: 'How to compare Sanskrit, devotional and regional naming traditions while checking pronunciation and context.',
-    href: '/blog/hindu-baby-names-meanings',
-    date: 'Oct 2026',
-    tag: 'Hindu Naming',
-  },
-  {
-    title: 'Christian Baby Names from the Bible',
-    excerpt: 'Biblical, Hebrew, Greek and Latin names explained with historical context beyond a simple list.',
-    href: '/blog/christian-baby-names-bible',
-    date: 'Oct 2026',
-    tag: 'Christian Naming',
-  },
 ];
 
 // Homepage FAQs answer the actual product and editorial questions without
@@ -130,14 +110,14 @@ const faqs = [
       'NameVerse calculates the displayed number with a Pythagorean letter-to-number mapping. Lucky numbers, colours, stones and letter symbolism are traditional, belief-based associations; they are not linguistic, scientific or predictive facts.',
   },
   {
-    question: 'How are popularity scores and 2026 baby name trends determined?',
+    question: 'Where do NameVerse popularity and trend figures come from?',
     answer:
-      'Popularity is displayed from the score carried by each structured name record. It is a discovery aid, not an official national ranking. The dedicated ranking pages identify their external sources and methodology; a score is never presented as a guarantee of future popularity.'
+      'Only from named, dated sources: the Social Security Administration ranking for babies born in 2025 (released May 8, 2026) and, labelled separately, BabyCenter\u2019s in-progress 2026 table. Some profiles also carry an internal score from their source record; it is not a birth count, and we never present it as popularity or a trend.',
   },
   {
     question: 'Can I compare multiple baby names side by side?',
     answer:
-      'Yes! Our Name Popularity Comparison Tool allows parents to shortlist favorite baby names and analyze their comparative popularity rankings, origins, and phonetic traits side by side.',
+      'Yes. Save names to your shortlist from any profile, then compare them side by side: recorded meaning, origin, gender and spelling length, plus official US ranks where a name appears in the latest SSA data. The shortlist is stored only in your browser.',
   },
 ];
 
@@ -171,7 +151,29 @@ export default function HomePage() {
       .length.toLocaleString(),
   }));
 
-  const popularNames = getPopularItems(12);
+  // Names from the latest official US top 10 (SSA, babies born in 2025) that
+  // we hold a profile for. A real, dated ranking — not an internal score.
+  const usTopNames = [...SSA_TOP_10.boys.slice(0, 6), ...SSA_TOP_10.girls.slice(0, 6)]
+    .map((n) => resolveName(n))
+    .filter((r) => r.hasProfile)
+    .map((r) => ({
+      name: r.name,
+      slug: r.href.split('/').pop(),
+      religion: r.religion,
+      meaning: r.meaning,
+      origin: r.origin,
+      gender: r.gender,
+    }));
+
+  const latestArticles = getPublishedPosts()
+    .slice(0, 3)
+    .map((post) => ({
+      title: post.title,
+      excerpt: post.excerpt,
+      href: `/blog/${post.id}`,
+      date: formatDate(post.publishDate, { month: 'short', year: 'numeric' }),
+      tag: post.category,
+    }));
   const meaningTerms = {
     light: ['light', 'bright', 'radiance', 'dawn', 'illumination', 'glow'],
     love: ['love', 'beloved', 'affection', 'devotion', 'dear'],
@@ -388,25 +390,31 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Trending Rail */}
-        <section aria-labelledby="trending-heading">
+        {/* US top-10 rail — a dated, sourced ranking */}
+        <section aria-labelledby="us-top-heading">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
             <div>
-              <span className="eyebrow">Highest popularity scores</span>
-              <h2 id="trending-heading" className="mt-1 font-display text-2xl font-bold tracking-tight text-nv-text sm:text-3xl">
-                Trending Baby Names for 2026
+              <span className="eyebrow">SSA &middot; babies born in 2025</span>
+              <h2 id="us-top-heading" className="mt-1 font-display text-2xl font-bold tracking-tight text-nv-text sm:text-3xl">
+                Names From the Latest US Top 10
               </h2>
               <p className="mt-1 text-xs text-nv-text-secondary">
-                Published profiles with the highest popularity scores in our collection.
+                From the Social Security Administration ranking released May 8, 2026 &mdash; the newest official
+                US data.
               </p>
             </div>
-            <Link href="/trending-names" className="btn-ghost !min-h-[40px] !px-4 !text-xs self-start sm:self-auto">
-              View All Trending Names &rarr;
-            </Link>
+            <div className="flex flex-wrap gap-2 self-start sm:self-auto">
+              <Link href="/top-baby-names-2026" className="btn-ghost !min-h-[40px] !px-4 !text-xs">
+                Full ranking &rarr;
+              </Link>
+              <Link href="/trending-names" className="btn-ghost !min-h-[40px] !px-4 !text-xs">
+                Rising names &rarr;
+              </Link>
+            </div>
           </div>
 
           <div className="grid gap-4 min-[480px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {popularNames.map((name) => (
+            {usTopNames.map((name) => (
               <NameCard key={`${name.religion}-${name.slug}`} item={name} showReligion />
             ))}
           </div>

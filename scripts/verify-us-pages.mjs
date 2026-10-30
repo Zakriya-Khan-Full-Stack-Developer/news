@@ -14,8 +14,8 @@ import path from 'node:path';
 
 const APP_DIR = path.join(process.cwd(), '.next', 'server', 'app');
 
+// /popular-names-2026 was merged into /top-baby-names-2026 (301 redirect).
 const PAGES = [
-  'popular-names-2026',
   'top-baby-names-2026',
   'unique-baby-names',
   'gender-neutral-names',

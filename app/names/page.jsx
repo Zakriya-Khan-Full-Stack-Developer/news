@@ -1,18 +1,18 @@
 import Link from 'next/link';
-import { getManifest, getPopularItems } from '../../lib/data/names-data.js';
+import { getManifest } from '../../lib/data/names-data.js';
 import { isBoy, isGirl } from '../../lib/data/name-utils.js';
+import { sampleEvenly } from '../../lib/data/us-names.js';
+import { pageMetadata } from '../../lib/seo.js';
 import NameCard from '../../components/NameCard.jsx';
 import PageJsonLd from '../../components/PageJsonLd.jsx';
 import AdSlot from '../../components/AdSlot.jsx';
 
-export const metadata = {
-  title: 'All Baby Names by Religion — 11,412 Names & Meanings',
+export const metadata = pageMetadata({
+  title: 'All Baby Names by Religion \u2014 11,412 Names & Meanings',
   description:
-    'Browse 11,412 published baby names across Islamic, Christian and Hindu traditions with documented meanings, origins and lucky numbers. Free A–Z browsing.',
-  alternates: {
-    canonical: 'https://nameverse.site/names',
-  },
-};
+    'Browse 11,412 baby names across Islamic, Christian and Hindu traditions with recorded meanings and origins \u2014 A\u2013Z by tradition, gender and letter.',
+  path: '/names',
+});
 
 const namesIndexJsonLd = {
   '@context': 'https://schema.org',
@@ -44,7 +44,10 @@ export default function NamesIndexPage() {
 
   const totalCount = religions.reduce((s, r) => s + r.count, 0);
 
-  const topNames = getPopularItems(24);
+  // Eight from each tradition, sampled evenly across the alphabet.
+  const topNames = religions.flatMap((r) =>
+    sampleEvenly((manifest[r.key] || []).filter((item) => item.indexable), 8).map((item) => ({ ...item, religion: r.key })),
+  );
 
   return (
     <div className="container-page py-10 sm:py-14">
@@ -57,7 +60,7 @@ export default function NamesIndexPage() {
           </h1>
           <p className="mx-auto mt-3 max-w-2xl text-nv-text-secondary">
             Every name in NameVerse — {totalCount.toLocaleString()} in total — organized by tradition.
-            Pick a religion to browse its full A–Z collection, or start with the most popular names below.
+            Pick a religion to browse its full A–Z collection, or start with the sample of names below.
           </p>
         </header>
 
@@ -93,22 +96,22 @@ export default function NamesIndexPage() {
           <Link href="/names-by-meaning" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">By meaning</Link>
           <Link href="/categories" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">By category</Link>
           <Link href="/origins" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">Origins index</Link>
-          <Link href="/trending-names" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">Trending</Link>
+          <Link href="/trending-names" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">Rising names</Link>
           <Link href="/unique-baby-names" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">Unique</Link>
-          <Link href="/popularity" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">Popularity tool</Link>
+          <Link href="/popularity" className="rounded-full border border-nv-border bg-nv-surface px-4 py-2 text-sm font-semibold text-nv-text-secondary transition hover:border-nv-accent/50 hover:text-nv-accent">Compare names</Link>
         </div>
 
         {/* Most Popular Names */}
         <section className="mt-16" aria-labelledby="popular-heading">
           <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
             <div>
-              <span className="eyebrow">Top picks</span>
+              <span className="eyebrow">A sample from each tradition</span>
               <h2 id="popular-heading" className="mt-2 font-display text-2xl font-bold tracking-tight text-nv-text sm:text-3xl">
-                Most Popular Names Across Traditions
+                Names Across Traditions
               </h2>
             </div>
             <Link href="/popularity" className="btn-ghost text-xs">
-              Compare popularity &rarr;
+              Compare names &rarr;
             </Link>
           </div>
           <div className="grid gap-4 min-[480px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -127,8 +130,8 @@ export default function NamesIndexPage() {
             <p>
               Whether you follow a specific tradition or you are simply hunting for the perfect name,
               the directory covers the two most useful dimensions at once: meaning and heritage. Each
-              tradition hub gives you a complete A–Z index, gender-split counts and the most popular
-              names right now.
+              tradition hub gives you a complete A–Z index, gender-split counts and a sample of names
+              to start from.
             </p>
             <p>
               Every name page goes far beyond a one-line translation — with pronunciation, lucky

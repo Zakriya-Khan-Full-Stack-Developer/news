@@ -8,81 +8,88 @@ import {
   LAST_UPDATED_LABEL,
   PUBLISHER,
   CONTACT,
+  FOUNDER,
+  RANKING_DATA,
 } from '../../lib/data/editorial.js';
 import { buildBreadcrumb, buildArticle } from '../../lib/data/us-schema.js';
+import { pageMetadata } from '../../lib/seo.js';
 import JsonLd from '../../components/JsonLd.jsx';
 import AdSlot from '../../components/AdSlot.jsx';
 
 const SITE_URL = 'https://nameverse.site';
 const PAGE_URL = `${SITE_URL}/editorial-policy`;
 
-const TITLE = 'Editorial Policy \u2014 How We Research and Verify Names';
+const TITLE = 'Editorial Policy \u2014 How We Research, Check and Correct Names';
 const DESCRIPTION =
-  'How NameVerse compiles, verifies and corrects its baby name data: our sources, our review process, our corrections policy, and how we handle belief-based content such as numerology.';
+  'How NameVerse compiles and corrects its name data: who runs the site, our sources, what \u201cverified\u201d means here, our automated checks and corrections log.';
 
-export const metadata = {
-  title: TITLE,
-  description: DESCRIPTION,
-  alternates: { canonical: PAGE_URL },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: PAGE_URL,
-    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
-    type: 'article',
-    locale: 'en_US',
-  },
-};
+export const metadata = pageMetadata({ title: TITLE, description: DESCRIPTION, path: '/editorial-policy', type: 'article' });
 
 const BREADCRUMB = [{ name: 'Editorial Policy', href: '/editorial-policy' }];
 
 const SECTIONS = [
   {
     id: 'who',
-    h2: 'Who writes NameVerse',
+    h2: 'Who runs NameVerse',
     body: [
-      `${AUTHOR.name} is responsible for the name data published on this site. ${AUTHOR.credentials}`,
-      'We are a data and reference publisher, not a medical, legal or religious authority. Where a name has a religious or cultural meaning, we report what the sources record rather than interpreting it ourselves.',
+      `NameVerse was founded and is run by ${FOUNDER.name}, a full-stack developer who builds and maintains the site, its name database and its editorial pages. Pages are bylined \u201c${AUTHOR.name}\u201d: they are compiled from our structured name database and from the dated sources listed below.`,
+      'We are a data and reference publisher, not a medical, legal or religious authority. Where a name has a religious or cultural meaning, we report what the sources record rather than issuing rulings; for religious questions about a name, ask a scholar or teacher you trust.',
     ],
   },
   {
     id: 'sources',
     h2: 'Our sources',
     body: [
-      'Every figure we publish is traceable to a named source. National and state rankings come from the Social Security Administration, which compiles them from US birth records. We cross-check those rankings against independent published tables and show both where they differ.',
-      'Individual name profiles are built from our own structured database. Each record carries a meaning, an origin, gender usage, script forms and pronunciation. We do not publish a profile until it carries a documented meaning and origin.',
+      `Ranking figures are traceable to named, dated sources. National and state rankings come from the Social Security Administration, compiled from Social Security card applications for babies born in a given year \u2014 the most recent cohort is babies born in ${RANKING_DATA.ssa.dataYear}, released ${RANKING_DATA.ssa.releasedLabel}. BabyCenter\u2019s in-progress 2026 table is shown separately and labelled as self-reported. National statistics do not record religion, so we never present a ranking as a measure of use within a faith community.`,
+      'Individual name profiles are built from our own structured database. A profile is published only when its record carries a meaning and an origin; script forms and pronunciation are shown when the record contains them. Per-record source citations are being added; until a profile shows them, it reflects its record rather than an individual external check.',
     ],
   },
   {
     id: 'verification',
-    h2: 'How we verify',
+    h2: 'What \u201cverified\u201d means here \u2014 and what it does not',
     body: [
-      'Name records are checked against published naming references before publication. Where a name has more than one documented meaning, we record the one with the strongest sourcing and note the alternative rather than choosing silently.',
-      'Our build process runs an automated content check on every deployment. It samples records and fails the build if the composed content is not unique, or if coverage of meaning and origin fields drops below threshold. This prevents thin or duplicated pages from reaching the index.',
+      'We do not claim that each of the 11,412 published profiles has been individually checked against an external reference. What we do: publish a profile only when its record has a meaning and an origin; label uncertain or missing fields instead of filling them with guesses (an unrecorded gender is shown as \u201cnot recorded\u201d, never as \u201cunisex\u201d); and check every statistic in our ranking pages and guides against the cited source when it is written.',
+      'Our build runs two automated content checks before every production deployment. One samples 1,500 published records and fails the build if meaning and origin coverage falls below threshold; the other samples 1,200 records and fails the build if composed text is too similar between profiles. They catch thin and duplicated pages at scale; they do not prove that a particular meaning is correct, which is why reader corrections matter.',
     ],
   },
   {
     id: 'belief',
     h2: 'Belief-based content',
     body: [
-      'Numerology, lucky numbers, lucky days, lucky stones and letter symbolism are traditional belief-based associations. We label them as such throughout the site and never present them as linguistic or scientific fact.',
-      'Meaning, origin, gender usage and pronunciation are the fields we treat as factual and verify. If you see a claim on this site that is not labelled as traditional, it is a claim we are prepared to source.',
+      'Numerology, lucky numbers, lucky days, lucky stones and letter symbolism are traditional belief-based associations. We label them as such throughout the site and never present them as linguistic or scientific fact. Syllable counts are estimated from the spelling and are labelled as estimates.',
+      'Meaning, origin, recorded gender and pronunciation are the fields we treat as factual. If you see an unlabelled claim on this site, it is one we are prepared to source \u2014 and to correct if a better source shows it is wrong.',
     ],
   },
   {
     id: 'corrections',
     h2: 'Corrections',
     body: [
-      'Errors are corrected at the source record, which updates every page that draws on it. If you spot an error, write to us and we will investigate it against the sources above.',
-      'Substantive corrections are noted on this page. We do not silently rewrite published content.',
+      `Errors are corrected at the source record, which updates every page that draws on it. Send corrections on WhatsApp (${FOUNDER.whatsappDisplay}) or by email to ${FOUNDER.email}, with the name and what looks wrong \u2014 a source helps.`,
+      'Substantive corrections are listed in the corrections log below. We do not silently rewrite published claims.',
     ],
   },
   {
     id: 'ai',
-    h2: 'Use of automation',
+    h2: 'Use of automation and AI',
     body: [
-      'We use automation to compose prose from structured records and to check content quality at build time. We do not use automation to invent facts, and we do not publish generated content that is not grounded in a record we hold.',
-      'Every page on this site is derived from data we can point to. Where we hold no data for a name, we say so rather than filling the gap.',
+      'We use automation to compose profile prose from structured records and to check content quality at build time. We do not use automation to invent facts, and we do not publish generated profile text that is not grounded in a record we hold.',
+      'Some guides are drafted with the help of AI writing tools. Drafts are checked against their cited sources before publication; statistics appear only with a named, dated source, and etymologies that scholars dispute are labelled as disputed.',
+    ],
+  },
+];
+
+// Substantive, reader-visible corrections. Newest first.
+const CORRECTIONS_LOG = [
+  {
+    date: '2026-10-17',
+    label: 'October 17, 2026',
+    items: [
+      'Ranking pages now state that the newest official US data covers babies born in 2025 (SSA, released May 8, 2026), separately from BabyCenter\u2019s in-progress 2026 table. The two overlapping 2026 ranking pages were merged.',
+      'The \u201ctrending\u201d page was rebuilt on measured change between the 2024 and 2025 SSA cohorts; it previously sorted an undated internal score.',
+      'The Muslim baby names guide no longer implies Muslim-American usage rankings, which no national dataset can provide.',
+      'Profiles with no recorded gender are no longer labelled \u201cUnisex\u201d, and Sikh, Punjabi and Marathi origins are no longer filed under Hindu or Hindi origin pages.',
+      'Name profiles no longer show a site-wide date as a per-profile \u201clast reviewed\u201d date.',
+      'Three short blog posts that repeated our evergreen gender-neutral, nature and short-name pages, and an older naming-framework page that duplicated our step-by-step naming guide, were consolidated into those fuller pages (old links redirect). Twenty new sourced guides were published.',
     ],
   },
 ];
@@ -94,7 +101,7 @@ export default function EditorialPolicyPage() {
       url: PAGE_URL,
       headline: TITLE,
       description: DESCRIPTION,
-      sourceKeys: Object.keys(SOURCES),
+      sourceKeys: ['ssa2025', 'ssa', 'ssaState2025', 'ssaLimits', 'babycenter', 'behindthename'],
     }),
   ];
 
@@ -170,6 +177,26 @@ export default function EditorialPolicyPage() {
             </div>
           </section>
 
+          <section aria-labelledby="log-heading">
+            <h2 id="log-heading" className="font-display text-xl font-bold tracking-tight text-nv-text sm:text-2xl">
+              Corrections log
+            </h2>
+            <div className="mt-4 space-y-4">
+              {CORRECTIONS_LOG.map((entry) => (
+                <div key={entry.date} className="inset-panel">
+                  <h3 className="text-sm font-bold text-nv-text">
+                    <time dateTime={entry.date}>{entry.label}</time>
+                  </h3>
+                  <ul className="mt-2 list-disc space-y-1.5 pl-5 text-xs leading-relaxed text-nv-text-secondary">
+                    {entry.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </section>
+
           <section aria-labelledby="sources-heading">
             <h2
               id="sources-heading"
@@ -212,8 +239,10 @@ export default function EditorialPolicyPage() {
               >
                 {CONTACT.email}
               </a>{' '}
-              or {CONTACT.phone.international}. {CONTACT.correctionResponseTime}{' '}
-              {CONTACT.responseTime}
+              or{' '}
+              <a href={CONTACT.phone.href} className="font-semibold text-nv-accent hover:underline">
+                {CONTACT.phone.international}
+              </a>. {CONTACT.correctionResponseTime} {CONTACT.responseTime}
             </p>
             <p className="mt-3 text-sm leading-relaxed text-nv-text-secondary">
               This policy, and the data behind it, is written and maintained by{' '}
@@ -239,8 +268,8 @@ export default function EditorialPolicyPage() {
             <Link href="/names" className="btn-primary">
               All 11,412 names
             </Link>
-            <Link href="/popular-names-2026" className="btn-ghost">
-              Most popular 2026
+            <Link href="/top-baby-names-2026" className="btn-ghost">
+              Top baby names 2026
             </Link>
           </div>
         </div>

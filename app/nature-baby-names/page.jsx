@@ -3,6 +3,7 @@ import { getCluster, NATURE_NAMES, resolveNames, coverage } from '../../lib/data
 import { buildUsPageSchema } from '../../lib/data/us-schema.js';
 import { EDITORIAL_FAQ } from '../../lib/data/editorial.js';
 import UsPageShell from '../../components/UsPageShell.jsx';
+import { pageMetadata } from '../../lib/seo.js';
 import NameChip from '../../components/NameChip.jsx';
 
 const SITE_URL = 'https://nameverse.site';
@@ -11,22 +12,9 @@ const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
 const TITLE = 'Nature Baby Names \u2014 Botanical & Celestial';
 const DESCRIPTION =
-  'Nature baby names drawn from plants, trees, weather, landscapes and the night sky, with documented meanings and origins. Includes botanical, celestial and earth-name groups.';
+  'Nature baby names from plants, trees, weather, landscapes and the night sky, with meanings and origins \u2014 botanical, celestial and earth names.';
 
-export const metadata = {
-  title: TITLE,
-  description: DESCRIPTION,
-  alternates: { canonical: PAGE_URL },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: PAGE_URL,
-    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
-    type: 'article',
-    locale: 'en_US',
-  },
-  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
-};
+export const metadata = pageMetadata({ title: TITLE, description: DESCRIPTION, path: `/${cluster.slug}`, type: 'article' });
 
 const FAQS = [
   {
@@ -35,15 +23,15 @@ const FAQS = [
   },
   {
     q: 'Are nature names suitable for boys and girls?',
-    a: 'Many are used across genders. Botanical names skew toward girls in current US usage, while landscape and celestial names skew toward boys, but the split is not fixed and several names \u2014 Rowan, Sage, River, Wren \u2014 are genuinely neutral.',
+    a: 'Many are. Flower names such as Rose, Lily and Violet are mostly given to girls in the US, while several nature names \u2014 Rowan, Sage, River, Wren \u2014 are used for both boys and girls. SSA publishes counts by sex if you want to check a particular name.',
   },
   {
     q: 'Do nature names have meanings beyond the obvious?',
     a: 'Often, yes. Many plant and tree names carry symbolic associations that predate their use as names, and several have separate documented meanings in different traditions. Our profiles record the meaning we hold for each name rather than assuming the literal plant name is the whole story.',
   },
   {
-    q: 'Which nature names are rising fastest?',
-    a: 'Short, soft botanical names and celestial names have moved fastest \u2014 Wren, Juniper, Nova, Luna, Aurora. Longer botanical names such as Magnolia and Camellia remain comparatively rare, which makes them the better choice if you want a nature name that is not already common.',
+    q: 'Which nature names are already common?',
+    a: 'Several are mainstream. Violet, Aurora and Lily are in SSA\u2019s girls\u2019 top 20 for babies born in 2025, and BabyCenter\u2019s in-progress 2026 table also has Hazel, Luna, Willow, Nova, Iris and Ivy in its top 40. Longer botanical names such as Magnolia and Camellia rank much lower, which makes them better picks if you want a nature name that is not already common.',
   },
   ...EDITORIAL_FAQ.slice(0, 2),
 ];
@@ -61,7 +49,7 @@ export default function NatureBabyNamesPage() {
     breadcrumb: BREADCRUMB,
     items: resolved.map((r) => ({ name: r.name, url: r.href, description: r.meaning || undefined })),
     faqs: FAQS,
-    sourceKeys: ['ssa', 'babycenter', 'nameberry'],
+    sourceKeys: ['ssa2025', 'babycenter', 'behindthename'],
   });
 
   return (
@@ -71,7 +59,7 @@ export default function NatureBabyNamesPage() {
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
-      sources={['ssa', 'babycenter', 'nameberry']}
+      sources={['ssa2025', 'babycenter', 'behindthename']}
       cta={
         <>
           <h2 className="font-display text-xl font-bold text-nv-text sm:text-2xl">

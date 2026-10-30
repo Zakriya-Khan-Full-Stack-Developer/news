@@ -3,6 +3,7 @@ import { getCluster, SHORT_NAMES, resolveNames, coverage } from '../../lib/data/
 import { buildUsPageSchema } from '../../lib/data/us-schema.js';
 import { EDITORIAL_FAQ } from '../../lib/data/editorial.js';
 import UsPageShell from '../../components/UsPageShell.jsx';
+import { pageMetadata } from '../../lib/seo.js';
 import NameChip from '../../components/NameChip.jsx';
 
 const SITE_URL = 'https://nameverse.site';
@@ -11,35 +12,22 @@ const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
 const TITLE = 'Short Baby Names \u2014 One and Two Syllable Picks';
 const DESCRIPTION =
-  'Short baby names of one and two syllables, with documented meanings and origins. Includes three-letter names, minimalist picks and short names that work across languages.';
+  'Short baby names of one and two syllables with meanings and origins \u2014 three-letter names, minimalist picks and names that work across languages.';
 
-export const metadata = {
-  title: TITLE,
-  description: DESCRIPTION,
-  alternates: { canonical: PAGE_URL },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: PAGE_URL,
-    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
-    type: 'article',
-    locale: 'en_US',
-  },
-  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
-};
+export const metadata = pageMetadata({ title: TITLE, description: DESCRIPTION, path: `/${cluster.slug}`, type: 'article' });
 
 const FAQS = [
   {
     q: 'What are the shortest baby names?',
-    a: 'The shortest usable names are three letters \u2014 Kai, Leo, Max, Eli, Ivy, Ava, Mia, Zoe. Two-letter names exist but are rare in English-speaking countries. Three-letter names are the practical floor for a name that will not be constantly misspelled.',
+    a: 'The shortest common names are three letters \u2014 Kai, Leo, Max, Eli, Ivy, Ava, Mia, Zoe. Two-letter names such as Bo and Jo exist but are rare as full names in English-speaking countries.',
   },
   {
     q: 'Why are short baby names so popular?',
-    a: 'They are easy to spell, easy to pronounce across languages, and they fit well with long surnames. They also tend to be unisex, which makes them flexible. The current US top 10 is dominated by one and two syllable names for exactly these reasons.',
+    a: 'They are easy to spell, easy to pronounce across languages, and they fit well with long surnames. Several sit near the top of the US ranking: for babies born in 2025, Mia was No. 6 and Ava No. 11 for girls, and Jack No. 15 and Leo No. 19 for boys (SSA).',
   },
   {
     q: 'Do short names have less meaning?',
-    a: 'No. Length and meaning are unrelated. Many short names carry substantial documented meanings, and several are contractions of longer traditional names \u2014 Eli from Elijah, Leo from Leonidas, Mia from Maria. Our profiles record the meaning we hold for each.',
+    a: 'No. Length and meaning are unrelated. Many short names carry substantial meanings, and several double as short forms of longer names \u2014 Eli is a biblical name in its own right that also shortens Elijah, Mia began as a diminutive of Maria, and Leo is Latin for \u201clion\u201d as well as a short form of Leonard. Our profiles record the meaning we hold for each.',
   },
   {
     q: 'Are short names good for bilingual families?',
@@ -62,7 +50,7 @@ export default function ShortBabyNamesPage() {
     breadcrumb: BREADCRUMB,
     items: resolved.map((r) => ({ name: r.name, url: r.href, description: r.meaning || undefined })),
     faqs: FAQS,
-    sourceKeys: ['ssa', 'babycenter'],
+    sourceKeys: ['ssa2025', 'ssa', 'behindthename'],
   });
 
   return (
@@ -72,7 +60,7 @@ export default function ShortBabyNamesPage() {
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
-      sources={['ssa', 'babycenter']}
+      sources={['ssa2025', 'ssa', 'behindthename']}
       cta={
         <>
           <h2 className="font-display text-xl font-bold text-nv-text sm:text-2xl">

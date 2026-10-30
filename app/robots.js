@@ -2,17 +2,17 @@
 // NOTE — there must be exactly ONE source of robots.txt.
 //
 // This project previously shipped BOTH app/robots.js and public/robots.txt, and
-// they did not say the same thing:
+// they did not say the same thing. public/robots.txt has been deleted so this
+// file is the single source of truth.
 //
-//   public/robots.txt   "User-agent: * / Allow: /  / Sitemap: .../sitemap-index.xml"
-//   app/robots.js       the same Allow plus four Disallow rules, and
-//                       "Sitemap: .../sitemap.xml"
-//
-// Which one is served depends on the runtime: `next start` served the static
-// public/ copy (so /search, /advanced-search, /my-names and /popular-by-state
-// were crawlable after all), while the Vercel deployment served this route
-// handler. Two files, two answers, and no way to know which one Google saw.
-// public/robots.txt has been deleted so this file is the single source of truth.
+// NO DISALLOW RULES FOR NOINDEX PAGES.
+// /search and /my-names are deliberately `noindex, follow`. They used to be
+// listed under `disallow` here as well — but a crawler that is blocked from
+// fetching a URL can never SEE its noindex tag, so a blocked URL that is
+// linked from elsewhere can still be indexed (as a bare URL with no snippet).
+// Google's guidance is to rely on noindex alone and leave such pages
+// crawlable. /advanced-search and /popular-by-state now 301-redirect to
+// /search and /baby-names-by-state (next.config.js).
 // ─────────────────────────────────────────────────────────────────────────────
 export default function robots() {
   return {
@@ -20,11 +20,8 @@ export default function robots() {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/search', '/advanced-search', '/my-names', '/popular-by-state'],
       },
     ],
-    sitemap: [
-      'https://nameverse.site/sitemap.xml',
-    ],
+    sitemap: ['https://nameverse.site/sitemap.xml'],
   };
 }

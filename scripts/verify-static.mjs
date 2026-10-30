@@ -71,6 +71,22 @@ if (!fs.existsSync(prerenderManifestPath)) {
   }
 }
 
+// ── 1b. Every non-parameterised app route must be prerendered ───────────────
+// A route with no [segments] that is missing from the prerender manifest was
+// built as a server function (ƒ) — e.g. /sitemap-index.xml, whose re-exported
+// handler is not statically analysable. Check 1 only covers [param] routes.
+const appRoutesPath = path.join(NEXT_DIR, 'app-path-routes-manifest.json');
+if (fs.existsSync(appRoutesPath) && fs.existsSync(prerenderManifestPath)) {
+  const appRoutes = Object.values(JSON.parse(fs.readFileSync(appRoutesPath, 'utf8')));
+  const pm = JSON.parse(fs.readFileSync(prerenderManifestPath, 'utf8'));
+  const staticRoutes = new Set(Object.keys(pm.routes || {}));
+  const fnRoutes = appRoutes.filter((r) => !r.includes('[') && r !== '/_not-found' && !staticRoutes.has(r));
+  notes.push(`app routes: ${appRoutes.length} · server-rendered (ƒ): ${fnRoutes.length}`);
+  if (fnRoutes.length) {
+    fail(`route(s) built as server functions (ƒ): ${fnRoutes.join(', ')} — add \`export const dynamic = 'force-static'\``);
+  }
+}
+
 // ── 2. No route may declare dynamicParams = true ────────────────────────────
 const ROUTE_FILES = [
   'app/names/[religion]/[slug]/page.jsx',
@@ -138,6 +154,58 @@ if (fs.existsSync(sitemapRoute)) {
   }
 }
 
+// ── 5. Built sitemaps: unique URLs, each backed by a prerendered page ───────
+// Reads the sitemap bodies Next.js prerendered (route handlers with
+// generateStaticParams are written as <id>.xml.body files). Fails on:
+//   • a URL listed more than once across all child sitemaps (/unique-baby-names
+//     used to appear twice in pages.xml);
+//   • a URL whose page was not prerendered (it would 404 or render on demand);
+//   • a sitemap index that does not advertise the blog sitemap.
+const SITEMAP_DIR = path.join(APP_DIR, 'sitemap');
+const INDEX_BODY = path.join(APP_DIR, 'sitemap.xml.body');
+
+function htmlExistsFor(urlPath) {
+  const clean = urlPath.replace(/\/+$/, '') || '/';
+  if (clean === '/') return fs.existsSync(path.join(APP_DIR, 'index.html'));
+  const variants = new Set([clean, decodeURIComponent(clean)]);
+  for (const v of variants) {
+    if (fs.existsSync(path.join(APP_DIR, `${v}.html`))) return true;
+    if (fs.existsSync(path.join(APP_DIR, v, 'index.html'))) return true;
+  }
+  return false;
+}
+
+if (fs.existsSync(SITEMAP_DIR)) {
+  const bodies = fs.readdirSync(SITEMAP_DIR).filter((f) => f.endsWith('.xml.body'));
+  const seen = new Map();
+  const duplicates = [];
+  const missingPages = [];
+  let total = 0;
+  for (const file of bodies) {
+    const xml = fs.readFileSync(path.join(SITEMAP_DIR, file), 'utf8');
+    for (const m of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) {
+      total += 1;
+      const loc = m[1].replace(/&amp;/g, '&');
+      if (seen.has(loc)) duplicates.push(`${loc} (${seen.get(loc)} and ${file})`);
+      else seen.set(loc, file);
+      const urlPath = loc.replace(/^https?:\/\/[^/]+/, '');
+      if (!htmlExistsFor(urlPath)) missingPages.push(urlPath);
+    }
+  }
+  notes.push(`sitemap files: ${bodies.length} · sitemap URLs: ${total} · unique: ${seen.size}`);
+  if (duplicates.length) fail(`${duplicates.length} duplicate sitemap URL(s): ${duplicates.slice(0, 5).join('; ')}`);
+  if (missingPages.length) {
+    fail(`${missingPages.length} sitemap URL(s) have no prerendered page: ${missingPages.slice(0, 10).join(', ')}`);
+  }
+  if (!bodies.includes('blog.xml.body')) fail('blog sitemap (/sitemap/blog.xml) was not generated');
+  if (fs.existsSync(INDEX_BODY)) {
+    const index = fs.readFileSync(INDEX_BODY, 'utf8');
+    if (!/\/sitemap\/blog\.xml<\/loc>/.test(index)) fail('sitemap index does not list /sitemap/blog.xml');
+  }
+} else {
+  notes.push('sitemap bodies not found under .next/server/app/sitemap — skipped sitemap URL checks');
+}
+
 // ── Report ──────────────────────────────────────────────────────────────────
 console.log('\nSTATIC-OUTPUT SAFETY GATE');
 console.log('─'.repeat(64));
@@ -150,5 +218,5 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log('\n  PASS  no dynamic routes, no dynamicParams=true, all indexable pages prerendered');
+console.log('\n  PASS  no dynamic routes, no dynamicParams=true, all indexable pages prerendered, sitemaps clean');
 console.log('─'.repeat(64));

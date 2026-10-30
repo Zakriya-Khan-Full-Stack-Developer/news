@@ -3,6 +3,7 @@ import { getCluster, getBiblicalNames } from '../../lib/data/us-names.js';
 import { buildUsPageSchema } from '../../lib/data/us-schema.js';
 import { EDITORIAL_FAQ } from '../../lib/data/editorial.js';
 import UsPageShell from '../../components/UsPageShell.jsx';
+import { pageMetadata } from '../../lib/seo.js';
 import NameCard from '../../components/NameCard.jsx';
 
 const SITE_URL = 'https://nameverse.site';
@@ -11,27 +12,14 @@ const PAGE_URL = `${SITE_URL}/${cluster.slug}`;
 
 const TITLE = 'Biblical Baby Names for Boys & Girls';
 const DESCRIPTION =
-  'Biblical baby names for boys and girls with their meanings and origins, drawn from our documented database of scripture-rooted names. Includes Hebrew, Greek and Latin forms.';
+  'Biblical baby names for boys and girls with meanings and origins \u2014 Hebrew, Greek and Latin forms, plus which biblical names lead the latest US ranking.';
 
-export const metadata = {
-  title: TITLE,
-  description: DESCRIPTION,
-  alternates: { canonical: PAGE_URL },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: PAGE_URL,
-    images: [{ url: 'https://nameverse.site/nameverse_logo_emblem.webp', width: 512, height: 512, alt: 'NameVerse — baby names with meanings and origins' }],
-    type: 'article',
-    locale: 'en_US',
-  },
-  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
-};
+export const metadata = pageMetadata({ title: TITLE, description: DESCRIPTION, path: `/${cluster.slug}`, type: 'article' });
 
 const FAQS = [
   {
     q: 'What are the most popular biblical baby names?',
-    a: 'For boys, Elijah, Levi, Ezra, Asher, Isaiah, Josiah and Gabriel all sit inside the current US top 40. For girls, Hannah, Abigail, Elizabeth, Naomi and Delilah are the strongest performers. Biblical names are no longer a niche category \u2014 they are the centre of the mainstream list.',
+    a: 'In SSA\u2019s ranking for babies born in 2025, the boys\u2019 top 20 includes Noah (No. 2), James (No. 6), Elijah (No. 7), Benjamin (No. 11), Levi (No. 12), Samuel (No. 18) and Ezra (No. 20); for girls, Elizabeth is No. 17. BabyCenter\u2019s in-progress 2026 table shows the same pattern, with Josiah, Gabriel and Isaiah in its boys\u2019 top 40 and Delilah in its girls\u2019 top 40.',
   },
   {
     q: 'Are biblical names Hebrew in origin?',
@@ -64,7 +52,7 @@ export default function BiblicalBabyNamesPage() {
       description: n.meaning || undefined,
     })),
     faqs: FAQS,
-    sourceKeys: ['ssa', 'babycenter'],
+    sourceKeys: ['ssa2025', 'bibleGateway', 'behindthename', 'wikiHebrewName'],
   });
 
   return (
@@ -74,7 +62,7 @@ export default function BiblicalBabyNamesPage() {
       breadcrumb={BREADCRUMB}
       faqs={FAQS}
       schema={schema}
-      sources={['ssa', 'babycenter']}
+      sources={['ssa2025', 'bibleGateway', 'behindthename', 'wikiHebrewName']}
       cta={
         <>
           <h2 className="font-display text-xl font-bold text-nv-text sm:text-2xl">
@@ -103,9 +91,8 @@ export default function BiblicalBabyNamesPage() {
           Biblical names with documented meanings
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary">
-          Ordered by how thoroughly documented each name is in our database. Every one of these names
-          has a recorded meaning and origin \u2014 we do not list scripture-rooted names we cannot
-          explain.
+          An even sample of names our records file in the Biblical category, listed A&ndash;Z &mdash; not a
+          ranking. Every one has a recorded meaning; check the profile for where the name occurs in scripture.
         </p>
         <div className="mt-6 grid gap-4 min-[480px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {names.map((item) => (

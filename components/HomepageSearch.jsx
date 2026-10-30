@@ -11,9 +11,11 @@ const RELIGION_LABELS = {
   hindu: 'Hindu',
 };
 
-const TRENDING_SUGGESTIONS = [
-  { term: 'Aarav', tag: 'Trending Hindu Boy' },
-  { term: 'Aaban', tag: 'Trending Islamic Boy' },
+// Starter suggestions for the empty search box. These are examples, not a
+// ranking — nothing here claims a name is "trending".
+const STARTER_SUGGESTIONS = [
+  { term: 'Aarav', tag: 'Hindu boy name' },
+  { term: 'Aaban', tag: 'Islamic boy name' },
   { term: 'Ayla', tag: 'Meaning Moon / Light' },
   { term: 'Noah', tag: 'Biblical Classic' },
   { term: 'Zayn', tag: 'Meaning Beauty & Grace' },
@@ -244,14 +246,14 @@ export default function HomepageSearch() {
       {isOpen && (
         <div className="absolute left-0 right-0 top-full z-40 mt-2 overflow-hidden rounded-2xl border border-nv-border bg-nv-surface/98 shadow-2xl backdrop-blur-2xl animate-in fade-in slide-in-from-top-2 duration-150">
           {query.trim().length === 0 ? (
-            /* Blank state: show Trending suggestions */
+            /* Blank state: starter suggestions */
             <div className="p-4">
               <div className="mb-2.5 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-nv-text-muted">
-                <span>🔥 Trending Baby Names</span>
+                <span>Try one of these</span>
                 <span className="text-[11px] font-normal normal-case">Type to auto-search</span>
               </div>
               <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-                {TRENDING_SUGGESTIONS.map((item) => (
+                {STARTER_SUGGESTIONS.map((item) => (
                   <button
                     key={item.term}
                     type="button"

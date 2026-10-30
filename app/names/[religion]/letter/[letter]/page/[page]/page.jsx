@@ -19,6 +19,7 @@ import AlphabetNav from '@/components/AlphabetNav.jsx';
 import NameCard from '@/components/NameCard.jsx';
 import LetterPagination from '@/components/LetterPagination.jsx';
 import AdSlot from '@/components/AdSlot.jsx';
+import { pageMetadata } from '@/lib/seo.js';
 
 export const dynamicParams = false;
 
@@ -58,13 +59,11 @@ export async function generateMetadata({ params }) {
   const letterDisplay = letter === '#' ? 'Other / Special' : letter.toUpperCase();
   const segment = letterUrlSegment(letter);
 
-  return {
+  return pageMetadata({
     title: `"${letterDisplay}" ${relLabel} Baby Names — Page ${page} of ${pageCount}`,
     description: `${relLabel} baby names starting with "${letterDisplay}", page ${page} of ${pageCount} (${names.length.toLocaleString()} names) — documented meanings, origins, gender and lucky numbers.`,
-    alternates: {
-      canonical: `https://nameverse.site/names/${finalReligion}/letter/${segment}/page/${page}`,
-    },
-  };
+    path: `/names/${finalReligion}/letter/${segment}/page/${page}`,
+  });
 }
 
 export default function LetterBrowsePagedPage({ params }) {

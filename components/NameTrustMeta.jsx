@@ -12,6 +12,12 @@ import {
  * Name pages should not repeat the full US-page methodology block: that would
  * add a large identical footer to thousands of documents. This keeps the
  * important E-E-A-T facts visible while sending readers to the complete policy.
+ *
+ * HONESTY NOTE — this block used to say "Last reviewed {site date}" on every
+ * one of the 11,412 profiles. No per-profile review date exists, so a single
+ * global date presented as a review of THIS record overstated what happened.
+ * The date shown is now labelled for what it is: the date the site-wide
+ * methodology was last updated.
  */
 export default function NameTrustMeta({ name, origin, meaning }) {
   return (
@@ -25,7 +31,7 @@ export default function NameTrustMeta({ name, origin, meaning }) {
         </span>
         <span aria-hidden="true">&bull;</span>
         <span>
-          Last reviewed <time dateTime={LAST_UPDATED}>{LAST_UPDATED_LABEL}</time>
+          Site methodology updated <time dateTime={LAST_UPDATED}>{LAST_UPDATED_LABEL}</time>
         </span>
         <span aria-hidden="true">&bull;</span>
         <a
@@ -36,9 +42,10 @@ export default function NameTrustMeta({ name, origin, meaning }) {
         </a>
       </div>
       <p className="mt-3 max-w-3xl text-sm leading-relaxed text-nv-text-secondary">
-        This {name} profile is assembled from a structured name record with a documented meaning
-        {origin ? ` and recorded ${origin} origin` : ''}. The meaning shown here is “{meaning}”.
-        Numerology and letter symbolism are cultural interpretations, not linguistic evidence.
+        This {name} profile is assembled from a structured name record with a recorded meaning
+        {origin ? ` and a recorded ${origin} origin` : ''}. The meaning shown here is “{meaning}”. Individual
+        source citations are still being added to profiles, so check important details with a naming reference or
+        your community. Numerology and letter symbolism are cultural interpretations, not linguistic evidence.
       </p>
       <Link href="/editorial-policy" className="mt-3 inline-flex text-sm font-semibold text-nv-accent hover:underline">
         Read how NameVerse researches and corrects profiles &rarr;

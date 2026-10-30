@@ -4,9 +4,11 @@ export async function GET() {
   const siteUrl = 'https://nameverse.site';
   const manifest = getManifest();
 
-  const chunkSize = 5000;
+  const chunkSize = 2500;
   const sitemaps = [
     { loc: `${siteUrl}/sitemap/pages.xml` },
+    // Blog articles (public/data/blog-posts.json), with per-post <lastmod>.
+    { loc: `${siteUrl}/sitemap/blog.xml` },
   ];
 
   for (const rel of ['islamic', 'christian', 'hindu', 'italian']) {

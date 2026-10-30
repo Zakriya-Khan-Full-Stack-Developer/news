@@ -14,26 +14,47 @@ const GENDER_OPTIONS = [
   { key: 'unisex', label: 'Unisex' },
 ];
 
-const ORIGIN_LABELS = {
-  arabic: 'Arabic',
-  biblical: 'Biblical',
-  sanskrit: 'Sanskrit',
-  hindu: 'Hindu',
-  persian: 'Persian',
-  english: 'English',
-  tamil: 'Tamil',
-  hindi: 'Hindi',
-  bengali: 'Bengali',
-  urdu: 'Urdu',
-};
+// Origin filter options are DERIVED FROM THE DATA that was loaded, not from a
+// hard-coded list. The old list offered origins that matched almost nothing
+// (exact string equality against values such as "(Sanskrit, Hindi, etc.)").
+function originLabel(raw) {
+  return String(raw || '')
+    .replace(/[()]/g, '')
+    .split(/[,;/]/)[0]
+    .trim();
+}
 
-export default function SearchClient({ initialQuery = '', initialReligion = '', initialGender = '', isAdvanced = false }) {
+function escapeRegExp(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Transparent relevance: exact name > name prefix > name contains > a word in
+// the meaning starts with the query > meaning contains > origin contains.
+// Ties are broken alphabetically. The undocumented popularity score is no
+// longer a ranking factor.
+function relevance(item, q, wordStart) {
+  const name = String(item.n || '').toLowerCase();
+  if (name === q) return 100;
+  if (name.startsWith(q)) return 80;
+  if (name.includes(q)) return 60;
+  const meaning = String(item.m || '').toLowerCase();
+  if (wordStart.test(meaning)) return 40;
+  if (meaning.includes(q)) return 30;
+  if (String(item.o || '').toLowerCase().includes(q)) return 20;
+  return 0;
+}
+
+const PAGE_SIZE = 200;
+
+export default function SearchClient({ initialQuery = '', initialReligion = '', initialGender = '' }) {
   const searchParams = useSearchParams();
   const [query, setQuery] = useState(initialQuery || searchParams.get('q') || '');
   const [religion, setReligion] = useState(initialReligion || searchParams.get('religion') || '');
   const [gender, setGender] = useState(initialGender || searchParams.get('gender') || '');
-  const [origin, setOrigin] = useState(searchParams.get('origin') || '');
-  const [sort, setSort] = useState(searchParams.get('sort') || 'relevance');
+  const [origin, setOrigin] = useState(String(searchParams.get('origin') || '').toLowerCase());
+  // `sort=popularity` links from older pages fall back to relevance.
+  const [sort, setSort] = useState(searchParams.get('sort') === 'name' ? 'name' : 'relevance');
+  const [limit, setLimit] = useState(PAGE_SIZE);
 
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -58,38 +79,53 @@ export default function SearchClient({ initialQuery = '', initialReligion = '', 
     };
   }, []);
 
-  const results = useMemo(() => {
+  // New filters start again from the first page of results.
+  useEffect(() => {
+    setLimit(PAGE_SIZE);
+  }, [query, religion, gender, origin, sort]);
+
+  const originOptions = useMemo(() => {
+    const counts = new Map();
+    for (const item of data) {
+      if (religion && item.religion !== religion) continue;
+      const label = originLabel(item.o);
+      if (!label) continue;
+      const key = label.toLowerCase();
+      const cur = counts.get(key) || { label, count: 0 };
+      cur.count += 1;
+      counts.set(key, cur);
+    }
+    return [...counts.entries()]
+      .filter(([, v]) => v.count >= 5)
+      .sort((a, b) => b[1].count - a[1].count)
+      .slice(0, 24)
+      .map(([key, v]) => ({ key, label: v.label, count: v.count }));
+  }, [data, religion]);
+
+  const allResults = useMemo(() => {
     if (!data || data.length === 0) return [];
     const q = query.trim().toLowerCase();
+    const wordStart = q ? new RegExp(`(^|[^a-z])${escapeRegExp(q)}`) : null;
 
-    let filtered = data.filter((item) => {
-      if (religion && item.religion !== religion) return false;
-      if (gender && normalizeGender(item.g) !== gender) return false;
-      if (origin && String(item.o || '').toLowerCase() !== origin) return false;
-      if (!q) return true;
-      const name = (item.n || '').toLowerCase();
-      const meaning = (item.m || '').toLowerCase();
-      return name.includes(q) || meaning.includes(q);
-    });
-
-    if (sort === 'popularity') {
-      filtered.sort((a, b) => (b.p || 0) - (a.p || 0));
-    } else if (sort === 'name') {
-      filtered.sort((a, b) => (a.n || '').localeCompare(b.n || ''));
-    } else if (q) {
-      filtered.sort((a, b) => {
-        const aName = (a.n || '').toLowerCase();
-        const bName = (b.n || '').toLowerCase();
-        if (aName === q && bName !== q) return -1;
-        if (bName === q && aName !== q) return 1;
-        if (aName.startsWith(q) && !bName.startsWith(q)) return -1;
-        if (bName.startsWith(q) && !aName.startsWith(q)) return 1;
-        return (b.p || 0) - (a.p || 0);
-      });
+    const scored = [];
+    for (const item of data) {
+      if (religion && item.religion !== religion) continue;
+      if (gender && normalizeGender(item.g) !== gender) continue;
+      if (origin && originLabel(item.o).toLowerCase() !== origin) continue;
+      const score = q ? relevance(item, q, wordStart) : 0;
+      if (q && score === 0) continue;
+      scored.push({ item, score });
     }
 
-    return filtered.slice(0, 200);
+    if (sort === 'name' || !q) {
+      scored.sort((a, b) => String(a.item.n || '').localeCompare(String(b.item.n || '')));
+    } else {
+      scored.sort((a, b) => b.score - a.score || String(a.item.n || '').localeCompare(String(b.item.n || '')));
+    }
+    return scored.map((x) => x.item);
   }, [data, query, religion, gender, origin, sort]);
+
+  const results = allResults.slice(0, limit);
 
   return (
     <div>
@@ -104,8 +140,8 @@ export default function SearchClient({ initialQuery = '', initialReligion = '', 
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search by name, meaning or origin… (e.g. light, Aarav, peace, Zain)"
-            aria-label="Search baby names"
+            placeholder="Search by name, meaning or origin… (e.g. light, Aarav, peace, Persian)"
+            aria-label="Search baby names by name, meaning or origin"
             className="w-full rounded-xl border border-nv-border bg-nv-subtle/50 py-3.5 pl-12 pr-10 text-base text-nv-text placeholder-nv-text-muted transition focus:border-nv-accent focus:bg-nv-surface focus:outline-none focus:ring-2 focus:ring-nv-accent/20"
           />
           {query && (
@@ -180,8 +216,10 @@ export default function SearchClient({ initialQuery = '', initialReligion = '', 
               aria-label="Filter by origin"
             >
               <option value="">Any origin</option>
-              {Object.entries(ORIGIN_LABELS).map(([k, label]) => (
-                <option key={k} value={k}>{label}</option>
+              {originOptions.map((o) => (
+                <option key={o.key} value={o.key}>
+                  {o.label} ({o.count.toLocaleString()})
+                </option>
               ))}
             </select>
           </label>
@@ -194,8 +232,7 @@ export default function SearchClient({ initialQuery = '', initialReligion = '', 
               className="input !py-2 text-xs"
               aria-label="Sort order"
             >
-              <option value="relevance">Relevance</option>
-              <option value="popularity">Most popular</option>
+              <option value="relevance">Best match</option>
               <option value="name">Alphabetical (A–Z)</option>
             </select>
           </label>
@@ -205,12 +242,14 @@ export default function SearchClient({ initialQuery = '', initialReligion = '', 
       {/* Results Meta Bar */}
       <div className="mb-4 flex items-center justify-between px-1">
         <div className="flex items-center gap-2">
-          <span className="text-sm font-bold text-nv-text">
-            {loading ? 'Searching 11,412 names…' : `${results.length} Matches Found`}
+          <span className="text-sm font-bold text-nv-text" role="status" aria-live="polite">
+            {loading
+              ? 'Loading 11,412 names…'
+              : `${allResults.length.toLocaleString()} ${allResults.length === 1 ? 'match' : 'matches'}`}
           </span>
-          {results.length >= 200 && (
+          {allResults.length > results.length && (
             <span className="badge border border-nv-border bg-nv-subtle text-nv-text-secondary text-[11px]">
-              Top 200 displayed
+              Showing {results.length.toLocaleString()}
             </span>
           )}
         </div>
@@ -248,17 +287,19 @@ export default function SearchClient({ initialQuery = '', initialReligion = '', 
                 <span className="font-display text-lg font-bold text-nv-text group-hover:text-nv-accent transition-colors">
                   {item.n}
                 </span>
-                <span
-                  className={`badge shrink-0 border text-[11px] ${
-                    isBoy
-                      ? 'border-sky-200 bg-sky-50 text-sky-700 dark:border-sky-800/50 dark:bg-sky-950/50 dark:text-sky-300'
-                      : isGirl
-                      ? 'border-rose-200 bg-rose-50 text-rose-700 dark:border-rose-800/50 dark:bg-rose-950/50 dark:text-rose-300'
-                      : 'border-purple-200 bg-purple-50 text-purple-700 dark:border-purple-800/50 dark:bg-purple-950/50 dark:text-purple-300'
-                  }`}
-                >
-                  {isBoy ? 'Boy' : isGirl ? 'Girl' : 'Unisex'}
-                </span>
+                {g && (
+                  <span
+                    className={`badge shrink-0 border text-[11px] ${
+                      isBoy
+                        ? 'border-sky-200 bg-sky-50 text-sky-700 dark:border-sky-800/50 dark:bg-sky-950/50 dark:text-sky-300'
+                        : isGirl
+                        ? 'border-rose-200 bg-rose-50 text-rose-700 dark:border-rose-800/50 dark:bg-rose-950/50 dark:text-rose-300'
+                        : 'border-purple-200 bg-purple-50 text-purple-700 dark:border-purple-800/50 dark:bg-purple-950/50 dark:text-purple-300'
+                    }`}
+                  >
+                    {isBoy ? 'Boy' : isGirl ? 'Girl' : 'Unisex'}
+                  </span>
+                )}
               </div>
 
               {item.m && (
@@ -287,6 +328,14 @@ export default function SearchClient({ initialQuery = '', initialReligion = '', 
           );
         })}
       </div>
+
+      {allResults.length > results.length && (
+        <div className="mt-8 text-center">
+          <button type="button" onClick={() => setLimit((n) => n + PAGE_SIZE)} className="btn-ghost">
+            Show more results ({(allResults.length - results.length).toLocaleString()} more)
+          </button>
+        </div>
+      )}
 
       {!loading && results.length === 0 && (
         <div className="rounded-2xl border border-nv-border bg-nv-surface p-12 text-center shadow-sm">

@@ -5,22 +5,36 @@ import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import AdScripts from '../components/AdScripts.jsx';
 import { FOUNDER, CONTACT, POSTAL_ADDRESS_SCHEMA } from '../lib/data/editorial.js';
+import { DEFAULT_SHARE_IMAGE } from '../lib/seo.js';
 
 const siteUrl = 'https://nameverse.site';
 const siteName = 'NameVerse';
 const siteLogo = `${siteUrl}/nameverse_logo_emblem.webp`;
 
+// ─────────────────────────────────────────────────────────────────────────────
+// ROOT METADATA — site-wide DEFAULTS ONLY.
+//
+// Next.js merges metadata shallowly: any page that does not define its own
+// `openGraph`, `twitter` or `alternates` inherits these objects wholesale.
+// This block used to carry the homepage's canonical, og:url, og:title and
+// og:description, so ~25 pages (search, about, blog, tradition hubs …)
+// declared the HOMEPAGE as their share target, and noindex utility pages
+// inherited a canonical pointing at the homepage. The root now carries only
+// values that are true for every page; each route sets its own canonical and
+// social metadata through lib/seo.js#pageMetadata.
+//
+// The @NameVerseOfficial twitter:site/creator handle was removed: it could not
+// be verified as an account the site controls, and claiming an unowned handle
+// attributes our pages to whoever holds it.
+// ─────────────────────────────────────────────────────────────────────────────
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     template: '%s | NameVerse',
-    default: 'Baby Names with Meanings, Origins & Lucky Numbers | NameVerse',
+    default: 'Baby Names with Meanings, Origins & Cultural Context | NameVerse',
   },
   description:
-    'Search 11,412 baby names with documented meanings, origins, pronunciation guides, script forms and cultural context across Islamic, Christian and Hindu traditions.',
-  alternates: {
-    canonical: siteUrl,
-  },
+    'Search 11,412 baby names with meanings, origins, pronunciation guides, script forms and cultural context across Islamic, Christian and Hindu traditions.',
   keywords: [
     'baby names',
     'baby name meanings',
@@ -32,43 +46,20 @@ export const metadata = {
     'names by meaning',
   ],
   openGraph: {
-    title: 'Baby Names with Meanings, Origins & Lucky Numbers | NameVerse',
-    description:
-      'Search 11,412 baby names with documented meanings, origins, pronunciation and cultural context across three traditions.',
-    url: siteUrl,
     siteName,
-    images: [
-      {
-        url: siteLogo,
-        width: 512,
-        height: 512,
-        alt: 'NameVerse',
-      },
-    ],
+    images: [DEFAULT_SHARE_IMAGE],
     locale: 'en_US',
     type: 'website',
   },
   applicationName: siteName,
-  // A named author and publisher, not an anonymous "Team". This was
-  // `authors: [{ name: 'NameVerse' }]` — an organisation standing in for a
-  // person who now exists and is named on /about.
   authors: [{ name: FOUNDER.name, url: `${siteUrl}/about#founder` }],
   creator: FOUNDER.name,
   publisher: siteName,
   category: 'Parenting',
   twitter: {
-    // FIX — was 'summary' here while the US cluster pages used
-    // 'summary_large_image', so the same link rendered two completely different
-    // ways depending on which page it pointed at. A shared baby-name page is a
-    // visual, emotional share; the small square thumbnail wastes the slot.
-    // Large image is the right default for every page on this site.
+    // summary_large_image everywhere: a shared name page is a visual share.
     card: 'summary_large_image',
-    title: 'Baby Names with Meanings, Origins & Lucky Numbers | NameVerse',
-    description:
-      'Search 11,412 baby names with documented meanings, origins, pronunciation and cultural context.',
-    images: [{ url: siteLogo, width: 512, height: 512, alt: `${siteName} — baby names with meanings` }],
-    site: '@NameVerseOfficial',
-    creator: '@NameVerseOfficial',
+    images: [DEFAULT_SHARE_IMAGE.url],
   },
   robots: {
     index: true,
@@ -106,16 +97,15 @@ const orgJsonLd = {
         url: `${siteUrl}/about#founder`,
       },
       address: POSTAL_ADDRESS_SCHEMA,
+      sameAs: FOUNDER.sameAs,
       contactPoint: {
         '@type': 'ContactPoint',
         email: CONTACT.email,
         telephone: CONTACT.phone.e164,
         contactType: 'customer support',
-        contactOption: 'TollFree',
         areaServed: 'Worldwide',
         availableLanguage: FOUNDER.languages,
       },
-      sameAs: FOUNDER.sameAs,
     },
     {
       '@type': 'WebSite',
