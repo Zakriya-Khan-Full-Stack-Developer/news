@@ -1,70 +1,61 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abdus",
     "slug": "abdus",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abdus",
       "normalized_name": "abdus",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "medium",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "MEDIUM",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abdus",
         "abdus"
       ],
-      "search_variants": [
-        "Abdus",
-        "abdus"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Servant, worshipper (of God)",
-      "primary_meaning": "Servant",
-      "secondary_meanings": [
-        "worshipper (of God)"
-      ],
-      "literal_meaning": "Servant",
-      "extended_meaning": "Servant, worshipper (of God)",
-      "meaning_explanation": "Abdus corresponds to the Arabic form عبدال (ع ب د). Its core sense is servant, worshipper (of god). Shortened form of عبد الـ ('servant of the…'). The source record's spelling عبدس is not a standard Arabic form.",
-      "meaning_confidence": "medium"
+      "short_meaning": "Servant of the…",
+      "primary_meaning": "Abdus appears to represent the incomplete Arabic prefix عبد الـ (“servant of the…”), but the exact spelling عبدال is not a complete compound and should not be treated as a full meaning.",
+      "literal_meaning": "The name is the Arabic word itself, used unchanged as a given name rather than a derived or diminutive form.",
+      "meaning_explanation": "The element عبد means servant/worshipper; the following element of a compound is needed to identify the full name. The record's Latin form may be a regional abbreviation, but the intended full compound is not guessed.",
+      "meaning_confidence": "LOW"
     },
     "etymology": {
       "primary_language": "Arabic",
-      "lexical_form": "عبدال",
+      "lexical_form": "عبد الـ",
       "transliteration": "abdus",
-      "romanization": "abdus",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Servant",
-        "worshipper (of God)"
-      ],
-      "etymology_explanation": "The form عبدال is an established Arabic lexical item. Shortened form of عبد الـ ('servant of the…'). The source record's spelling عبدس is not a standard Arabic form.",
-      "etymology_confidence": "medium",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Incomplete compound prefix; full name unresolved.",
+      "feminine_form": null,
+      "etymological_meaning": "Servant of the… (incomplete)",
+      "root_family": [],
+      "etymology_explanation": "The form عبدال is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "LOW",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عبدال is an established Arabic form.",
-        "Urdu": "عبدال is used in Urdu.",
-        "Hindi": "अब्दुस is used in Hindi.",
-        "Pashto": "عبدال is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عبدال.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "medium"
+      "language_confidence": "MEDIUM"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "medium",
-      "origin_explanation": "The name is associated with the Arabic form عبدال. Shortened form of عبد الـ ('servant of the…'). The source record's spelling عبدس is not a standard Arabic form.",
+      "origin_confidence": "MEDIUM",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -73,405 +64,446 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Abdus may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abdus is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "root ع ب د occurs in the Qur'an; عبدال is a shortened compound form"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abdus is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abdus as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense servant, worshipper (of god).",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Servant",
+      "primary_semantic_domain": "Servant of the…",
       "related_concepts": [
-        "servant",
-        "worshipper (of god)"
-      ],
-      "semantic_relationship": "The central semantic idea is servant; other senses are extended associations."
+        "Servant of the…"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of servant.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Servant of the…” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Servant of the….",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Servant",
-        "Worshipper (of god)"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 2,
+      "life_path_number": 2,
+      "ruling_planet": "Moon",
+      "lucky_day": "Monday",
+      "lucky_colors": [
+        "White",
+        "Silver"
+      ],
+      "lucky_stone": "Pearl",
+      "meaning": "In Pythagorean numerology the letters of Abdus total 2, associated with cooperation, balance and sensitivity. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 2,
+      "lucky_day": "Monday",
+      "lucky_colors": [
+        "White",
+        "Silver"
+      ],
+      "lucky_stone": "Pearl",
+      "ruling_planet": "Moon"
     },
     "translations": {
       "english": {
         "name": "Abdus",
-        "meaning": "Servant, worshipper (of God)",
-        "long_meaning": "Abdus is a Arabic-origin name. Its core meaning is servant, worshipper (of god). Shortened form of عبد الـ ('servant of the…'). The source record's spelling عبدس is not a standard Arabic form."
+        "script": "Abdus",
+        "meaning": "Incomplete compound prefix; full name unresolved",
+        "long_meaning": "The prefix عبد الـ means “servant of the…” and requires a following element; the intended full name is not guessed."
       },
       "urdu": {
         "name": "عبدال",
-        "meaning": "بندہ، خادم، عابد",
-        "long_meaning": "Abdus (عبدال) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم بندہ، خادم، عابد ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "عبدال",
+        "meaning": "Incomplete compound prefix; full name unresolved",
+        "long_meaning": "The prefix عبد الـ means “servant of the…” and requires a following element; the intended full name is not guessed."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Abdus",
+        "script": "Abdus",
+        "meaning": "Incomplete compound prefix; full name unresolved",
+        "long_meaning": "The prefix عبد الـ means “servant of the…” and requires a following element; the intended full name is not guessed."
       },
       "hindi": {
         "name": "अब्दुस",
-        "meaning": "दास, सेवक, उपासक",
-        "long_meaning": "Abdus (अब्दुस) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ दास, सेवक, उपासक है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "अब्दुस",
+        "meaning": "Incomplete compound prefix; full name unresolved",
+        "long_meaning": "The prefix عبد الـ means “servant of the…” and requires a following element; the intended full name is not guessed."
       },
       "pashto": {
         "name": "عبدال",
-        "meaning": "بنده، خدمتګار",
-        "long_meaning": "Abdus (عبدال) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې بنده، خدمتګار ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "عبدال",
+        "meaning": "Incomplete compound prefix; full name unresolved",
+        "long_meaning": "The prefix عبد الـ means “servant of the…” and requires a following element; the intended full name is not guessed.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "عبدال",
-        "meaning": "عبد، خادم، عابد",
-        "long_meaning": "Abdus (عبدال) اسم مأخوذ من اللغة العربية، ومعناه الأساسي عبد، خادم، عابد. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "عبدال",
+        "meaning": "Incomplete compound prefix; full name unresolved",
+        "long_meaning": "The prefix عبد الـ means “servant of the…” and requires a following element; the intended full name is not guessed.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "medium"
+      "confidence": "MEDIUM",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "ab-dus",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عبدال",
-      "persian": null,
-      "hindi": "अब्दुस",
-      "pashto": "عبدال"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عبدال"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Abdus",
-        "abdus"
+        "Abdus"
       ],
-      "script_variants": [
+      "script_forms": [
         "عبدال",
         "अब्दुस"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عبدال is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "medium",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عبدال is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abdus can be understood through the Arabic form عبدال, whose central sense is servant, worshipper (of god). Shortened form of عبد الـ ('servant of the…'). The source record's spelling عبدس is not a standard Arabic form.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abdus mean?",
-        "answer": "Abdus is associated with the Arabic form عبدال, whose core sense is servant, worshipper (of god)."
+        "q": "What does Abdus mean?",
+        "a": "The recorded form appears to be an incomplete prefix meaning “servant of the…”; the full name is unresolved."
       },
       {
-        "question": "What is the origin of Abdus?",
-        "answer": "Abdus is associated with Arabic. Shortened form of عبد الـ ('servant of the…'). The source record's spelling عبدس is not a standard Arabic form."
+        "q": "What is the origin of Abdus?",
+        "a": "Arabic is plausible, but the intended full compound is not established."
       },
       {
-        "question": "Is Abdus an Arabic name?",
-        "answer": "Yes — the underlying form عبدال is Arabic."
+        "q": "Is Abdus an Arabic name?",
+        "a": "The form is not a complete name meaning by itself; the following element matters."
       },
       {
-        "question": "Is Abdus an Islamic name?",
-        "answer": "Abdus can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Abdus?",
+        "a": "The lexical element عبد means servant/worshipper; the compound is incomplete."
       },
       {
-        "question": "Is Abdus a Quranic name?",
-        "answer": "Abdus should not be classified as a Quranic personal name without a direct Quranic basis. root ع ب د occurs in the Qur'an; عبدال is a shortened compound form"
+        "q": "Is Abdus an Islamic name?",
+        "a": "No specific religious status is asserted for an incomplete form."
       },
       {
-        "question": "What does Abdus mean in Urdu?",
-        "answer": "In Urdu, Abdus is rendered عبدال and carries the sense بندہ، خادم، عابد."
+        "q": "Is Abdus a Quranic name?",
+        "a": "This record does not establish the incomplete form as a Qur'anic personal name."
       },
       {
-        "question": "What does Abdus mean in Persian?",
-        "answer": "No verified Persian form was established for Abdus."
+        "q": "What does Abdus mean in Urdu?",
+        "a": "A verified Urdu meaning is not asserted for the incomplete form."
       },
       {
-        "question": "How is Abdus pronounced?",
-        "answer": "A romanized syllable approximation is ab-dus. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abdus pronounced?",
+        "a": "Pronunciation is provisional until the full name is known."
       },
       {
-        "question": "What are the variants of Abdus?",
-        "answer": "Romanization variants include Abdus, abdus. Script forms are عبدال, अब्दुस."
-      },
-      {
-        "question": "Is Abdus a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Abdus a boy's or girl's name?",
+        "a": "The record classifies it as male, but the incomplete form's usage needs review."
       }
     ],
     "seo": {
-      "title": "Abdus Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Abdus (عبدال).",
-      "h1": "Abdus Name Meaning, Origin and Cultural Background",
+      "title": "Abdus Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abdus (عبدال) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abdus meaning, Abdus name meaning, Abdus origin, Abdus meaning in Urdu, Abdus pronunciation, Abdus Islamic name",
+      "description_paragraph": "Abdus is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abdus meaning",
+        "Abdus name meaning",
+        "Abdus origin",
+        "Abdus meaning in Urdu",
+        "Abdus pronunciation",
+        "Abdus Islamic name"
+      ],
       "focus_keyword": "Abdus meaning",
       "secondary_keywords": [
         "Abdus name meaning",
-        "Abdus meaning in Urdu",
         "Abdus origin",
-        "Abdus Islamic name",
+        "Abdus meaning in Urdu",
         "Abdus pronunciation",
-        "Abdus name in Urdu"
+        "Abdus Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abdus (عبدال) is associated with the Arabic form عبدال, whose core sense is servant, worshipper (of god). Shortened form of عبد الـ ('servant of the…'). The source record's spelling عبدس is not a standard Arabic form.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abdus",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abdus is associated with the Arabic form عبدال, whose core sense is servant, worshipper (of god).",
-      "meaning_section": "The central meaning of Abdus is servant, worshipper (of god).",
-      "origin_section": "Abdus is associated with Arabic rather than with a different language.",
-      "islam_section": "Abdus can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Abdus is with the sense servant.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abdus, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Abdus is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abdus",
       "#AbdusMeaning",
-      "#AbdusName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "medium",
-      "linguistic_authenticity": "medium",
-      "etymological_authenticity": "medium",
-      "meaning_authenticity": "medium",
-      "translation_quality": "medium",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "incomplete_compound_prefix",
+        "full_name_not_established",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 147,
+      "quality_score": 78,
+      "quality_score_basis": "Provisional editorial score only; incomplete forms or unsourced compound components require further verification."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "https://www.laneslexicon.com/word/%D8%B9%D8%A8%D8%AF/n27791"
+      ],
+      "verification_method": "Direct source is listed only where checked. Unsourced compound components and all regional translations require separate verification.",
+      "claim_evidence": [
         {
-          "claim": "Abdus corresponds to the Arabic form عبدال",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "Lane's Lexicon supports عبد as servant/worshipper; the recorded prefix is incomplete and the intended compound is unknown.",
+          "source": "https://www.laneslexicon.com/word/%D8%B9%D8%A8%D8%AF/n27791",
+          "status": "lexical_source_checked"
         },
         {
-          "claim": "Abdus has the core sense servant, worshipper (of god)",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "Personal-name usage and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "PARTIAL_SOURCE_CHECKED; REVIEW_OPEN"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Reviewed incomplete prefixes and compound-name components; corrected the شكور/كريم conflation; retained manual source and translation checks.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abdus",
-      "alternateName": [
-        "Abdus",
-        "abdus"
-      ],
-      "description": "A name associated with the Arabic form عبدال, meaning servant, worshipper (of god).",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "abdus",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Abdus",
+          "description": "Abdus — Abdus appears to represent the incomplete Arabic prefix عبد الـ (“servant of the…”), but the exact spelling عبدال is not a complete compound and should not be treated as a full meaning.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abdus mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded form appears to be an incomplete prefix meaning “servant of the…”; the full name is unresolved."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abdus?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Arabic is plausible, but the intended full compound is not established."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdus an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form is not a complete name meaning by itself; the following element matters."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abdus?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The lexical element عبد means servant/worshipper; the compound is incomplete."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdus an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No specific religious status is asserted for an incomplete form."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdus a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish the incomplete form as a Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abdus mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A verified Urdu meaning is not asserted for the incomplete form."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abdus pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pronunciation is provisional until the full name is known."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdus a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record classifies it as male, but the incomplete form's usage needs review."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abdus",
+              "item": "https://nameverse.site/names/islamic/abdus"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abdus, associated with the Arabic form عبدال, meaning servant, worshipper (of god)."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "incomplete_compound_prefix",
+        "full_name_not_established",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; source/name-use/translation review pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

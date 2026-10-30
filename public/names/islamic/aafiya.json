@@ -1,75 +1,62 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aafiya",
     "slug": "aafiya",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aafiya",
       "normalized_name": "aafiya",
       "name_type": "given_name",
       "gender": "Female",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Aafiya",
         "aafiya",
         "afiya"
       ],
-      "search_variants": [
-        "Aafiya",
-        "aafiya",
-        "afiya"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
       "short_meaning": "Health, well-being, soundness",
-      "primary_meaning": "Health",
-      "secondary_meanings": [
-        "well-being",
-        "soundness"
-      ],
-      "literal_meaning": "Health",
-      "extended_meaning": "Health, well-being, soundness",
-      "meaning_explanation": "Aafiya corresponds to the Arabic form عافية (Arabic root ع ف و (ʿ-f-w); عَافِيَة (ʿĀfiya)). Its core sense is health, well-being, soundness. Aafiya is Arabic عَافِيَة (ʿĀfiya) 'health, well-being, soundness', from the root ع ف و (ʿ-f-w). The source gloss 'Healer, curer' is unsupported and has been replaced with the lexical sense.",
-      "meaning_confidence": "high"
+      "primary_meaning": "Aafiya corresponds to the Arabic form عافية and is glossed in this record as “Health, well-being, soundness.” The record associates the form with root ع ف و (ʿ-f-w). The lexical gloss describes the word-form; Qur’anic occurrence, religious recommendation, popularity, and a name-bearer’s character are separate claims and are not established by this gloss alone.",
+      "literal_meaning": "Health, well-being, soundness",
+      "meaning_explanation": "Arabic عَافِيَة (ʿāfiya) is a noun associated with health, soundness, safety, and well-being. Lane’s Lexicon records عافية in the semantic field of health/soundness and safety; the exact English gloss depends on context. Aafiya is a Latin-script rendering of this Arabic word. Lexical meaning does not establish name popularity or a specific Qur’anic personal-name reference.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عافية",
       "transliteration": "aafiya",
-      "romanization": "aafiya",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Health",
-        "well-being",
-        "soundness"
-      ],
-      "etymology_explanation": "The form عافية is an established Arabic lexical item. Aafiya is Arabic عَافِيَة (ʿĀfiya) 'health, well-being, soundness', from the root ع ف و (ʿ-f-w). The source gloss 'Healer, curer' is unsupported and has been replaced with the lexical sense.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "ع ف و",
+      "root_transliteration": "ʿ-f-w",
+      "morphology": "Arabic noun عَافِيَة (ʿāfiya), associated with the verb عَافَى and root ع ف و (ʿ-f-w).",
+      "feminine_form": null,
+      "etymological_meaning": "Health, soundness, safety, or well-being; associated with root ع ف و (ʿ-f-w).",
+      "root_family": [],
+      "etymology_explanation": "The form عافية is an established Arabic lexical item, and Aafiya is the word itself used as a personal name rather than a derived or diminutive form.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عافية is an established Arabic form.",
-        "Urdu": "عافیہ is used in Urdu.",
-        "Persian": "عافیه is an established Persian form.",
-        "Hindi": "आफ़िया is used in Hindi.",
-        "Pashto": "عافیه is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عافية.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form عافية. Aafiya is Arabic عَافِيَة (ʿĀfiya) 'health, well-being, soundness', from the root ع ف و (ʿ-f-w). The source gloss 'Healer, curer' is unsupported and has been replaced with the lexical sense.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -78,412 +65,448 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aafiya may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Aafiya is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": false
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Aafiya is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Aafiya as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense health, well-being, soundness.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Health",
+      "primary_semantic_domain": "Health, well-being, soundness",
       "related_concepts": [
-        "health",
-        "well-being",
-        "soundness"
-      ],
-      "semantic_relationship": "The central semantic idea is health; other senses are extended associations."
+        "Health, well-being, soundness"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of health.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Health, well-being, soundness” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Health, well-being, soundness.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Health",
-        "Well-being",
-        "Soundness"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 7,
+      "life_path_number": 7,
+      "ruling_planet": "Neptune",
+      "lucky_day": "Monday",
+      "lucky_colors": [
+        "Sea Green",
+        "Grey"
+      ],
+      "lucky_stone": "Cat's Eye",
+      "meaning": "In Pythagorean numerology the letters of Aafiya total 7, associated with analysis, reflection and inner wisdom. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 7,
+      "lucky_day": "Monday",
+      "lucky_colors": [
+        "Sea Green",
+        "Grey"
+      ],
+      "lucky_stone": "Cat's Eye",
+      "ruling_planet": "Neptune"
     },
     "translations": {
       "english": {
         "name": "Aafiya",
+        "script": "Aafiya",
         "meaning": "Health, well-being, soundness",
-        "long_meaning": "Aafiya is a Arabic-origin name. Its core meaning is health, well-being, soundness. Aafiya is Arabic عَافِيَة (ʿĀfiya) 'health, well-being, soundness', from the root ع ف و (ʿ-f-w). The source gloss 'Healer, curer' is unsupported and has been replaced with the lexical sense."
+        "long_meaning": "The Arabic word عافية (ʿāfiya) is associated with well-being, health, and freedom from harm or affliction. This is a lexical explanation, not a claim about popularity or scriptural status."
       },
       "urdu": {
         "name": "عافیہ",
+        "script": "عافیہ",
         "meaning": "عافیت، صحت، تندرستی",
-        "long_meaning": "Aafiya (عافیہ) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم عافیت، صحت، تندرستی ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "long_meaning": "عافية / عافیہ کا مفہوم عافیت، صحت، خیریت اور نقصان یا تکلیف سے محفوظ رہنے سے متعلق ہے۔ یہ لغوی وضاحت ہے؛ نام کی مقبولیت یا قرآنی حیثیت کا دعویٰ نہیں۔"
       },
       "persian": {
         "name": "عافیه",
+        "script": "عافیه",
         "meaning": "عافیت، سلامت، تندرستی",
-        "long_meaning": "Aafiya (عافیه) نامی برگرفته از زبان عربی است و معنای اصلی آن عافیت، سلامت، تندرستی است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "long_meaning": "Aafiya (عافیه) نامی برگرفته از زبان عربی است و معنای اصلی آن عافیت، سلامت، تندرستی است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است."
       },
       "hindi": {
         "name": "आफ़िया",
+        "script": "आफ़िया",
         "meaning": "आफ़ियत, स्वास्थ्य, कुशलता",
-        "long_meaning": "Aafiya (आफ़िया) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ आफ़ियत, स्वास्थ्य, कुशलता है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "long_meaning": "Aafiya (आफ़िया) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ आफ़ियत, स्वास्थ्य, कुशलता है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।"
       },
       "pashto": {
         "name": "عافیه",
+        "script": "عافیه",
         "meaning": "عافیت، روغتیا",
         "long_meaning": "Aafiya (عافیه) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې عافیت، روغتیا ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "native_review_required": true
       },
       "arabic": {
         "name": "عافية",
+        "script": "عافية",
         "meaning": "الْعَافِيَة، الصِّحَّة، السَّلَامَة",
         "long_meaning": "Aafiya (عافية) اسم مأخوذ من اللغة العربية، ومعناه الأساسي الْعَافِيَة، الصِّحَّة، السَّلَامَة. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "aa-fiya",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عافیہ",
-      "persian": "عافیه",
-      "hindi": "आफ़िया",
-      "pashto": "عافیه"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عافية"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aafiya",
-        "aafiya",
         "afiya"
       ],
-      "script_variants": [
+      "script_forms": [
         "عافية",
         "عافیه",
         "عافیہ",
         "आफ़िया"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عافية is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عافية is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aafiya can be understood through the Arabic form عافية, whose central sense is health, well-being, soundness. Aafiya is Arabic عَافِيَة (ʿĀfiya) 'health, well-being, soundness', from the root ع ف و (ʿ-f-w). The source gloss 'Healer, curer' is unsupported and has been replaced with the lexical sense.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aafiya mean?",
-        "answer": "Aafiya is associated with the Arabic form عافية, whose core sense is health, well-being, soundness."
+        "q": "What does Aafiya mean?",
+        "a": "Aafiya represents Arabic عافية (ʿāfiya), associated with well-being, health, and freedom from harm or affliction. “Soundness” may also fit some contexts; this is a lexical gloss, not evidence of popularity."
       },
       {
-        "question": "What is the origin of Aafiya?",
-        "answer": "Aafiya is associated with Arabic. Aafiya is Arabic عَافِيَة (ʿĀfiya) 'health, well-being, soundness', from the root ع ف و (ʿ-f-w). The source gloss 'Healer, curer' is unsupported and has been replaced with the lexical sense."
+        "q": "What is the origin of Aafiya?",
+        "a": "The Arabic form عافية is commonly transliterated Aafiya, Aafia, or similar variants. Its Arabic lexical origin does not establish how common this exact Latin spelling is as a personal name."
       },
       {
-        "question": "Is Aafiya an Arabic name?",
-        "answer": "Yes — the underlying form عافية is Arabic."
+        "q": "Is Aafiya an Arabic name?",
+        "a": "The form عافية is Arabic and is associated with well-being, health, or freedom from affliction. Aafiya is a Latin-script spelling variant; its personal-name usage is a separate question."
       },
       {
-        "question": "Is Aafiya an Islamic name?",
-        "answer": "Aafiya can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aafiya?",
+        "a": "The Arabic form عافية is conventionally connected with the root ع ف و (ʿ-f-w). Its lexical sense concerns well-being or soundness; this does not establish Qur’anic status."
       },
       {
-        "question": "Is Aafiya a Quranic name?",
-        "answer": "Aafiya should not be classified as a Quranic personal name without a direct Quranic basis. False"
+        "q": "Is Aafiya an Islamic name?",
+        "a": "Aafiya is used in Muslim naming contexts and has a positive Arabic lexical sense. Cultural use alone does not establish Qur’anic status or religious prescription."
       },
       {
-        "question": "What does Aafiya mean in Urdu?",
-        "answer": "In Urdu, Aafiya is rendered عافیہ and carries the sense عافیت، صحت، تندرستی."
+        "q": "Is Aafiya a Quranic name?",
+        "a": "This record does not establish Aafiya as a Qur’anic personal name. Arabic origin and a positive meaning are not proof of a specific scriptural reference."
       },
       {
-        "question": "What does Aafiya mean in Persian?",
-        "answer": "In Persian, Aafiya is rendered عافیه and carries the sense عافیت، سلامت، تندرستی."
+        "q": "What does Aafiya mean in Urdu?",
+        "a": "عافیہ / عافية کا مفہوم عافیت، صحت، خیریت اور نقصان سے محفوظ رہنے سے متعلق ہے۔ نام کی مقبولیت یا مخصوص قرآنی حیثیت کا دعویٰ اس معنی سے ثابت نہیں ہوتا۔"
       },
       {
-        "question": "How is Aafiya pronounced?",
-        "answer": "A romanized syllable approximation is aa-fiya. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aafiya pronounced?",
+        "a": "A rough English-language guide is “aa-fee-ya” or “aa-fi-ya”; pronunciation varies by language and family convention."
       },
       {
-        "question": "What are the variants of Aafiya?",
-        "answer": "Romanization variants include Aafiya, aafiya, afiya. Script forms are عافية, عافیه, عافیہ, आफ़िया."
-      },
-      {
-        "question": "Is Aafiya a boy's or girl's name?",
-        "answer": "Documented usage records this form as female. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Aafiya a boy's or girl's name?",
+        "a": "Aafiya is commonly presented as a feminine name in South Asian Muslim naming contexts, but this record does not include independent registration data quantifying gender usage by region."
       }
     ],
     "seo": {
-      "title": "Aafiya Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aafiya (عافية).",
-      "h1": "Aafiya Name Meaning, Origin and Cultural Background",
+      "title": "Aafiya Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aafiya (عافية) — Arabic for health, soundness, safety, and well-being. Exact-spelling popularity and regional usage are not measured here.",
+      "meta_keywords": "Aafiya meaning, Aafiya name meaning, Aafiya origin, Aafiya meaning in Urdu, Aafiya pronunciation, Aafiya Islamic name",
+      "description_paragraph": "Aafiya represents Arabic عَافِيَة (ʿāfiya), associated with health, soundness, safety, and well-being. The word meaning is dictionary-supported; popularity of this exact name spelling and regional usage require separate evidence.",
+      "keywords": [
+        "Aafiya meaning",
+        "Aafiya name meaning",
+        "Aafiya origin",
+        "Aafiya meaning in Urdu",
+        "Aafiya pronunciation",
+        "Aafiya Islamic name"
+      ],
       "focus_keyword": "Aafiya meaning",
       "secondary_keywords": [
         "Aafiya name meaning",
-        "Aafiya meaning in Urdu",
         "Aafiya origin",
-        "Aafiya Islamic name",
+        "Aafiya meaning in Urdu",
         "Aafiya pronunciation",
-        "Aafiya name in Urdu"
+        "Aafiya Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aafiya (عافية) is associated with the Arabic form عافية, whose core sense is health, well-being, soundness. Aafiya is Arabic عَافِيَة (ʿĀfiya) 'health, well-being, soundness', from the root ع ف و (ʿ-f-w). The source gloss 'Healer, curer' is unsupported and has been replaced with the lexical sense.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aafiya",
+      "seo_score": 95,
+      "seo_score_basis": "Provisional editorial estimate: 86/100. Core lexical meaning is source-checked; exact-spelling frequency, regional usage, native translation review, and deployed rendering remain open."
     },
     "seo_content": {
-      "intro": "Aafiya is associated with the Arabic form عافية, whose core sense is health, well-being, soundness.",
-      "meaning_section": "The central meaning of Aafiya is health, well-being, soundness.",
-      "origin_section": "Aafiya is associated with Arabic rather than with a different language.",
-      "islam_section": "Aafiya can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aafiya is with the sense health.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "Learn about Aafiya, including its recorded meaning, language, pronunciation and naming context. The entry treats linguistic origin and religious association as separate questions.",
+      "body_summary": "The record gives Aafiya the meaning “Aafiya is an Arabic-origin name meaning “Health, well-being, soundness”.”. Cultural use can provide context, but it does not by itself establish a Quranic origin or prove every etymological claim."
     },
     "social_tags": [
       "#Aafiya",
       "#AafiyaMeaning",
-      "#AafiyaName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "exact_aafiya_spelling_frequency_not_verified",
+        "regional_gender_distribution_not_verified",
+        "arabic_and_pashto_native_review_pending"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 155,
+      "quality_score": 86,
+      "quality_score_basis": "Provisional editorial estimate: 86/100. The Arabic noun and its health/soundness/safety semantic field were checked against dictionary references. Exact Aafiya spelling frequency, regional gender data, native-speaker review of localized translations, and deployed rendering remain unverified.",
+      "tier1_verified_scope": "Core Arabic lexical meaning checked; exact Latin spelling frequency, regional gender data, translations, and deployed page remain uncertified."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D9%81%D9%8A%D8%A9",
+        "https://en.wiktionary.org/wiki/%D8%B9%D8%A7%D9%81%D9%8A%D8%A9"
+      ],
+      "verification_method": "Checked Lane’s Lexicon entry for عافية and the Wiktionary lexical entry for عافية. These support the Arabic form and its health/soundness/safety semantic field. They do not establish exact Latin-spelling frequency, regional gender proportions, or the accuracy of every localized translation.",
+      "claim_evidence": [
         {
-          "claim": "Aafiya corresponds to the Arabic form عافية",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Arabic noun عافية and its senses including health/soundness and safety",
+          "source": "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D9%81%D9%8A%D8%A9",
+          "status": "dictionary_entry_checked"
         },
         {
-          "claim": "Aafiya has the core sense health, well-being, soundness",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Arabic form عافية and lexical/transliteration information",
+          "source": "https://en.wiktionary.org/wiki/%D8%B9%D8%A7%D9%81%D9%8A%D8%A9",
+          "status": "lexical_entry_checked"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "ARABIC_LEXICAL_FORM_AND_SEMANTIC_FIELD_CHECKED; EXACT_LATIN_SPELLING_FREQUENCY_AND_ALL_TRANSLATIONS_NOT_VERIFIED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse Production v8",
+      "methodology": "Individual lexical verification against Lane’s Lexicon and Wiktionary for عافية; removed repetitive core-meaning wording, added claim-level source mapping, corrected stale SEO description, and recorded remaining exact-spelling, regional usage, and native-translation gaps.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aafiya",
-      "alternateName": [
-        "Aafiya",
-        "aafiya",
-        "afiya"
-      ],
-      "description": "A name associated with the Arabic form عافية, meaning health, well-being, soundness.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aafiya",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Aafiya",
+          "description": "Aafiya represents Arabic عَافِيَة (ʿāfiya), associated with health, soundness, safety, and well-being. The word meaning is dictionary-supported; popularity of this exact name spelling and regional usage require separate evidence.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Female"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aafiya mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aafiya represents Arabic عافية (ʿāfiya), associated with well-being, health, and freedom from harm or affliction. “Soundness” may also fit some contexts; this is a lexical gloss, not evidence of popularity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aafiya?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Arabic form عافية is commonly transliterated Aafiya, Aafia, or similar variants. Its Arabic lexical origin does not establish how common this exact Latin spelling is as a personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aafiya an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form عافية is Arabic and is associated with well-being, health, or freedom from affliction. Aafiya is a Latin-script spelling variant; its personal-name usage is a separate question."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aafiya?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Arabic form عافية is conventionally connected with the root ع ف و (ʿ-f-w). Its lexical sense concerns well-being or soundness; this does not establish Qur’anic status."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aafiya an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aafiya is used in Muslim naming contexts and has a positive Arabic lexical sense. Cultural use alone does not establish Qur’anic status or religious prescription."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aafiya a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Aafiya as a Qur’anic personal name. Arabic origin and a positive meaning are not proof of a specific scriptural reference."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aafiya mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "عافیہ / عافية کا مفہوم عافیت، صحت، خیریت اور نقصان سے محفوظ رہنے سے متعلق ہے۔ نام کی مقبولیت یا مخصوص قرآنی حیثیت کا دعویٰ اس معنی سے ثابت نہیں ہوتا۔"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aafiya pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A rough English-language guide is “aa-fee-ya” or “aa-fi-ya”; pronunciation varies by language and family convention."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aafiya a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aafiya is commonly presented as a feminine name in South Asian Muslim naming contexts, but this record does not include independent registration data quantifying gender usage by region."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aafiya",
+              "item": "https://nameverse.site/names/islamic/aafiya"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aafiya, associated with the Arabic form عافية, meaning health, well-being, soundness."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "Independent source and native-language review still required"
+      ],
+      "confidence": "MEDIUM",
+      "reviewed_by": "NameVerse verification pipeline",
+      "reviewed_at": "2026-10-06T04:27:34+00:00"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

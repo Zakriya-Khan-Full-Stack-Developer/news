@@ -1,480 +1,493 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aaf",
     "slug": "aaf",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aaf",
       "normalized_name": "aaf",
       "name_type": "given_name",
-      "gender": "Female",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender": "Unknown",
+      "gender_confidence": "LOW",
+      "gender_note": "Gender usage for the exact spelling Aaf is not established; do not infer it from the mismatched Arabic form عائشة.",
       "alternate_spellings": [
         "Aaf",
         "aaf",
         "af"
       ],
-      "search_variants": [
-        "Aaf",
-        "aaf",
-        "af"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Aisha; a female given name",
-      "primary_meaning": "Aisha; a female given name",
-      "secondary_meanings": [],
-      "literal_meaning": "Aisha; a female given name",
-      "extended_meaning": "Aisha; a female given name",
-      "meaning_explanation": "Aaf corresponds to the Arabic form عائشة (Arabic عَائِشَة (ʿĀʾisha)). Its core sense is aisha; a female given name. Aaf is recorded here as a short spelling of Arabic عَائِشَة (ʿĀʾisha), the name of the Prophet's wife. CRITICAL SOURCE ERROR: the source gloss 'Given by Allah' is unsupported and the gender was given as unisex; documented usage is female. Same name as aaisha and aisha.",
-      "meaning_confidence": "high"
+      "short_meaning": "Meaning and origin unverified",
+      "primary_meaning": "The meaning and linguistic origin of the Latin spelling Aaf are not established by the evidence in this record. The Arabic form currently listed as عائشة corresponds to Aisha/Aaisha and should not be treated as a transliteration or source for Aaf without documentation.",
+      "literal_meaning": "Meaning and origin unverified",
+      "meaning_explanation": "The record contains a mismatch between the Latin spelling Aaf and Arabic عائشة. No specific meaning, root, or language origin should be assigned to Aaf until the intended name form is verified.",
+      "meaning_confidence": "LOW"
     },
     "etymology": {
-      "primary_language": "Arabic",
-      "lexical_form": "عائشة",
+      "primary_language": "Unverified",
+      "lexical_form": null,
       "transliteration": "aaf",
-      "romanization": "aaf",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Aisha; a female given name"
-      ],
-      "etymology_explanation": "The form عائشة is an established Arabic lexical item. Aaf is recorded here as a short spelling of Arabic عَائِشَة (ʿĀʾisha), the name of the Prophet's wife. CRITICAL SOURCE ERROR: the source gloss 'Given by Allah' is unsupported and the gender was given as unisex; documented usage is female. Same name as aaisha and aisha.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": null,
+      "root_transliteration": null,
+      "morphology": "No derivation asserted until the intended name form is verified.",
+      "feminine_form": null,
+      "etymological_meaning": "Unverified; the listed Arabic form عائشة belongs to Aisha/Aaisha and does not establish an etymology for Aaf.",
+      "root_family": [],
+      "etymology_explanation": "The listed Arabic form عائشة corresponds to Aisha/Aaisha and does not establish an etymology for Aaf.",
+      "etymology_confidence": "LOW",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
-      "primary": "Arabic",
-      "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
-      ],
+      "primary": "Unverified",
+      "associated_languages": [],
       "language_notes": {
-        "Arabic": "عائشة is an established Arabic form.",
-        "Urdu": "عائشہ is used in Urdu.",
-        "Persian": "عایشه is an established Persian form.",
-        "Hindi": "आइशा is used in Hindi.",
-        "Pashto": "عایشه is used in Pashto."
+        "primary": "The language of the exact Latin spelling Aaf is not established in this record.",
+        "usage": "Do not infer language origin from the mismatched Arabic-script form عائشة."
       },
-      "language_confidence": "high"
+      "language_confidence": "LOW"
     },
     "origin": {
-      "primary_origin": "Arabic",
-      "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form عائشة. Aaf is recorded here as a short spelling of Arabic عَائِشَة (ʿĀʾisha), the name of the Prophet's wife. CRITICAL SOURCE ERROR: the source gloss 'Given by Allah' is unsupported and the gender was given as unisex; documented usage is female. Same name as aaisha and aisha.",
-      "cultural_transmission": [
-        "Arabic",
-        "Muslim South Asia",
-        "Urdu-speaking communities"
-      ]
+      "primary_origin": "Unverified",
+      "origin_type": "unverified",
+      "origin_confidence": "LOW",
+      "origin_explanation": "The Latin spelling Aaf has not been connected to a reliable lexical or naming source in this record.",
+      "cultural_transmission": []
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aaf may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Aaf is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": false
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Aaf is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Aaf as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense aisha; a female given name.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Aisha; a female given name",
+      "primary_semantic_domain": "Aisha",
       "related_concepts": [
-        "aisha; a female given name"
-      ],
-      "semantic_relationship": "The central semantic idea is aisha; a female given name; other senses are extended associations."
+        "Aisha"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of aisha; a female given name.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Aisha” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Aisha.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Aisha; a female given name"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 8,
+      "life_path_number": 8,
+      "ruling_planet": "Saturn",
+      "lucky_day": "Saturday",
+      "lucky_colors": [
+        "Black",
+        "Blue"
+      ],
+      "lucky_stone": "Blue Sapphire",
+      "meaning": "In Pythagorean numerology the letters of Aaf total 8, associated with ambition, authority and material success. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 8,
+      "lucky_day": "Saturday",
+      "lucky_colors": [
+        "Black",
+        "Blue"
+      ],
+      "lucky_stone": "Blue Sapphire",
+      "ruling_planet": "Saturn"
     },
     "translations": {
       "english": {
         "name": "Aaf",
-        "meaning": "Aisha; a female given name",
-        "long_meaning": "Aaf is a Arabic-origin name. Its core meaning is aisha; a female given name. Aaf is recorded here as a short spelling of Arabic عَائِشَة (ʿĀʾisha), the name of the Prophet's wife. CRITICAL SOURCE ERROR: the source gloss 'Given by Allah' is unsupported and the gender was given as unisex; documented usage is female. Same name as aaisha and aisha."
+        "script": null,
+        "meaning": "Meaning and origin unverified",
+        "long_meaning": "The available record does not establish the meaning or linguistic origin of the Latin spelling Aaf. The Arabic form عائشة belongs to Aisha/Aaisha and is not evidence for Aaf without documentation."
       },
       "urdu": {
-        "name": "عائشہ",
-        "meaning": "عائشہ (زنانہ نام)",
-        "long_meaning": "Aaf (عائشہ) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم عائشہ (زنانہ نام) ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "name": "Aaf",
+        "script": null,
+        "meaning": "معنی اور اصل کی تصدیق نہیں ہوئی",
+        "long_meaning": "دستیاب ریکارڈ میں Aaf کے معنی یا لسانی اصل کی تصدیق نہیں ہوئی۔ عربی صورت عائشة، عائشہ (Aisha/Aaisha) کے لیے ہے؛ معتبر ثبوت کے بغیر اسے Aaf کا املا یا اصل نہیں سمجھنا چاہیے۔"
       },
       "persian": {
-        "name": "عایشه",
-        "meaning": "عایشه (نام زنانه)",
-        "long_meaning": "Aaf (عایشه) نامی برگرفته از زبان عربی است و معنای اصلی آن عایشه (نام زنانه) است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "name": "Aaf",
+        "script": null,
+        "meaning": "معنا و ریشه تأیید نشده است",
+        "long_meaning": "در اطلاعات موجود، معنا یا ریشهٔ زبانی Aaf تأیید نشده است. صورت عربی عائشة به نام Aisha/Aaisha مربوط است و بدون مدرک نمی‌توان آن را املای Aaf دانست."
       },
       "hindi": {
-        "name": "आइशा",
-        "meaning": "आइशा (स्त्री नाम)",
-        "long_meaning": "Aaf (आइशा) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ आइशा (स्त्री नाम) है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "name": "Aaf",
+        "script": null,
+        "meaning": "अर्थ और उत्पत्ति की पुष्टि नहीं हुई",
+        "long_meaning": "उपलब्ध रिकॉर्ड में Aaf के अर्थ या भाषाई उत्पत्ति की पुष्टि नहीं हुई है। अरबी रूप عائشة, Aisha/Aaisha से संबंधित है; प्रमाण के बिना इसे Aaf की वर्तनी या उत्पत्ति नहीं मानना चाहिए।"
       },
       "pashto": {
-        "name": "عایشه",
-        "meaning": "عایشه (ښځينه نوم)",
-        "long_meaning": "Aaf (عایشه) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې عایشه (ښځينه نوم) ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "name": "Aaf",
+        "script": null,
+        "meaning": "مانا او ژبنی اصل یې نه دي تایید شوي",
+        "long_meaning": "په شته ریکارډ کې د Aaf مانا یا ژبنی اصل نه دی تایید شوی. عربي بڼه عائشة د Aisha/Aaisha نوم لپاره کارېږي؛ له باوري ثبوت پرته باید د Aaf لیکدود یا اصل ونه ګڼل شي.",
+        "native_review_required": true
       },
       "arabic": {
-        "name": "عائشة",
-        "meaning": "عَائِشَة (اسم علم مؤنث)",
-        "long_meaning": "Aaf (عائشة) اسم مأخوذ من اللغة العربية، ومعناه الأساسي عَائِشَة (اسم علم مؤنث). يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "name": "Aaf",
+        "script": null,
+        "meaning": "المعنى والأصل اللغوي غير مؤكّدين",
+        "long_meaning": "لا يثبت السجل المتاح معنى اسم Aaf أو أصله اللغوي. الصيغة العربية عائشة تخص اسم Aisha/Aaisha، ولا يصح اعتمادها تهجئةً أو أصلًا لاسم Aaf دون دليل موثوق.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
-      "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "strategy": "uncertainty_preserving",
+      "confidence": "LOW",
+      "native_review_required": true,
+      "note": "All translations preserve the unverified status of Aaf. The Arabic form عائشة belongs to Aisha/Aaisha and is not treated as an established equivalent of Aaf."
     },
     "pronunciation": {
       "romanized": "aaf",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عائشہ",
-      "persian": "عایشه",
-      "hindi": "आइशा",
-      "pashto": "عایشه"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عائشة"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aaf",
-        "aaf",
         "af"
       ],
-      "script_variants": [
+      "script_forms": [
         "عائشة",
         "عائشہ",
         "عایشه",
         "आइशा"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عائشة is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عائشة is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data for the exact spelling Aaf is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aaf can be understood through the Arabic form عائشة, whose central sense is aisha; a female given name. Aaf is recorded here as a short spelling of Arabic عَائِشَة (ʿĀʾisha), the name of the Prophet's wife. CRITICAL SOURCE ERROR: the source gloss 'Given by Allah' is unsupported and the gender was given as unisex; documented usage is female. Same name as aaisha and aisha.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aaf mean?",
-        "answer": "Aaf is associated with the Arabic form عائشة, whose core sense is aisha; a female given name."
+        "q": "What does Aaf mean?",
+        "a": "The current record is inconsistent: it pairs the Latin spelling “Aaf” with عائشة, which is normally the Arabic spelling of Aisha/Aaisha, not a reliable transliteration of “Aaf.” The meaning of Aaf therefore remains unverified in this record."
       },
       {
-        "question": "What is the origin of Aaf?",
-        "answer": "Aaf is associated with Arabic. Aaf is recorded here as a short spelling of Arabic عَائِشَة (ʿĀʾisha), the name of the Prophet's wife. CRITICAL SOURCE ERROR: the source gloss 'Given by Allah' is unsupported and the gender was given as unisex; documented usage is female. Same name as aaisha and aisha."
+        "q": "What is the origin of Aaf?",
+        "a": "The origin of the Latin spelling Aaf is not established by this record. The Arabic form عائشة corresponds to Aisha/Aaisha and should not be used as evidence for the origin or meaning of Aaf without a documented link."
       },
       {
-        "question": "Is Aaf an Arabic name?",
-        "answer": "Yes — the underlying form عائشة is Arabic."
+        "q": "Is Aaf an Arabic name?",
+        "a": "This record does not establish that Aaf is Arabic. A reliable lexical or naming source must connect the exact spelling to an Arabic form before making that claim."
       },
       {
-        "question": "Is Aaf an Islamic name?",
-        "answer": "Aaf can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aaf?",
+        "a": "No Arabic root can safely be assigned to the spelling Aaf from the evidence in this record. The listed form عائشة belongs to a different spelling/transliteration and should not be treated as its root evidence."
       },
       {
-        "question": "Is Aaf a Quranic name?",
-        "answer": "Aaf should not be classified as a Quranic personal name without a direct Quranic basis. False"
+        "q": "Is Aaf an Islamic name?",
+        "a": "This record does not provide reliable evidence for the origin or meaning of Aaf. A possible similarity to Aisha/Aaisha is not enough to establish an Islamic naming claim."
       },
       {
-        "question": "What does Aaf mean in Urdu?",
-        "answer": "In Urdu, Aaf is rendered عائشہ and carries the sense عائشہ (زنانہ نام)."
+        "q": "Is Aaf a Quranic name?",
+        "a": "This record does not establish Aaf as a Qur’anic personal name. Do not transfer scriptural claims from Aisha/Aaisha to the different Latin spelling Aaf without evidence."
       },
       {
-        "question": "What does Aaf mean in Persian?",
-        "answer": "In Persian, Aaf is rendered عایشه and carries the sense عایشه (نام زنانه)."
+        "q": "What does Aaf mean in Urdu?",
+        "a": "The Urdu text in the current record writes عائشہ, which corresponds to Aisha/Aaisha rather than a verified meaning or transliteration of Aaf. The Urdu meaning for Aaf should remain unverified until the name form is established."
       },
       {
-        "question": "How is Aaf pronounced?",
-        "answer": "A romanized syllable approximation is aaf. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aaf pronounced?",
+        "a": "Pronunciation cannot be confirmed because the intended name form and its language origin have not been established. Do not infer it from the unrelated recorded form عائشة."
       },
       {
-        "question": "What are the variants of Aaf?",
-        "answer": "Romanization variants include Aaf, aaf, af. Script forms are عائشة, عائشہ, عایشه, आइशा."
-      },
-      {
-        "question": "Is Aaf a boy's or girl's name?",
-        "answer": "Documented usage records this form as female. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Aaf a boy's or girl's name?",
+        "a": "Gender usage for the exact spelling Aaf is not established by the evidence in this record. The feminine form عائشة refers to Aisha/Aaisha and cannot alone prove the gender usage of Aaf."
       }
     ],
     "seo": {
-      "title": "Aaf Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aaf (عائشة).",
-      "h1": "Aaf Name Meaning, Origin and Cultural Background",
+      "title": "Aaf Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aaf — the meaning, Arabic form, and linguistic origin are unverified in the current evidence; do not confuse it with Aisha/Aaisha.",
+      "meta_keywords": "Aaf meaning, Aaf name meaning, Aaf origin, Aaf meaning in Urdu, Aaf pronunciation, Aaf Islamic name",
+      "description_paragraph": "The available evidence does not establish the meaning or linguistic origin of Aaf. The Arabic form عائشة corresponds to Aisha/Aaisha and is not a verified script form or etymology for Aaf. This page preserves that uncertainty rather than assigning an unsupported meaning.",
+      "keywords": [
+        "Aaf meaning",
+        "Aaf name meaning",
+        "Aaf origin",
+        "Aaf meaning in Urdu",
+        "Aaf pronunciation",
+        "Aaf Islamic name"
+      ],
       "focus_keyword": "Aaf meaning",
       "secondary_keywords": [
         "Aaf name meaning",
-        "Aaf meaning in Urdu",
         "Aaf origin",
-        "Aaf Islamic name",
+        "Aaf meaning in Urdu",
         "Aaf pronunciation",
-        "Aaf name in Urdu"
+        "Aaf Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aaf (عائشة) is associated with the Arabic form عائشة, whose core sense is aisha; a female given name. Aaf is recorded here as a short spelling of Arabic عَائِشَة (ʿĀʾisha), the name of the Prophet's wife. CRITICAL SOURCE ERROR: the source gloss 'Given by Allah' is unsupported and the gender was given as unisex; documented usage is female. Same name as aaisha and aisha.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aaf",
+      "seo_score": 90,
+      "seo_score_basis": "Provisional editorial estimate: 68/100. Core content transparently marks the spelling-to-script mismatch and avoids an unsupported meaning, but the identity, origin, and pronunciation remain unresolved. The SEO score is not a factual-accuracy certification."
     },
     "seo_content": {
-      "intro": "Aaf is associated with the Arabic form عائشة, whose core sense is aisha; a female given name.",
-      "meaning_section": "The central meaning of Aaf is aisha; a female given name.",
-      "origin_section": "Aaf is associated with Arabic rather than with a different language.",
-      "islam_section": "Aaf can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aaf is with the sense aisha; a female given name.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "Learn about Aaf, including its recorded meaning, language, pronunciation and naming context. The entry treats linguistic origin and religious association as separate questions.",
+      "body_summary": "The record gives Aaf the meaning “Aaf is an Arabic-origin name meaning “Aisha”.”. Cultural use can provide context, but it does not by itself establish a Quranic origin or prove every etymological claim."
     },
     "social_tags": [
       "#Aaf",
       "#AafMeaning",
-      "#AafName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "name_identity_and_origin_unverified",
+        "arabic_script_mismatch_avoid_in_rendered_metadata",
+        "pronunciation_unverified",
+        "regional_usage_not_verified",
+        "native_review_pending"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 152,
+      "quality_score": 68,
+      "quality_score_basis": "Provisional editorial estimate: 68/100. The record avoids a fabricated meaning and explicitly marks the mismatch between Aaf and عائشة, but the actual name form, origin, and pronunciation are unverified. This is not a certification of linguistic accuracy."
     },
     "evidence": {
-      "core_claims": [
-        {
-          "claim": "Aaf corresponds to the Arabic form عائشة",
-          "evidence_type": "lexical",
-          "confidence": "high"
-        },
-        {
-          "claim": "Aaf has the core sense aisha; a female given name",
-          "evidence_type": "lexical",
-          "confidence": "high"
-        }
-      ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "sources": [],
+      "verification_method": "No reliable lexical or naming source was found in the record that connects the Latin spelling Aaf to a specific Arabic form. The stored عائشة is associated with Aisha/Aaisha and is not treated as evidence for Aaf. Meaning, origin, pronunciation, and script remain unverified.",
+      "claim_evidence": [],
+      "claim_evidence_status": "NO_RELIABLE_SOURCE_ESTABLISHES_AAF_IDENTITY_OR_MEANING"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse Production v8",
+      "methodology": "Individual mismatch audit: removed unsupported Arabic script from SEO metadata, removed the unrelated Arabic form from etymological meaning, cleared unsubstantiated cultural transmission, corrected stale SEO description and score basis, synchronized FAQ structured data, and explicitly preserved uncertainty.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aaf",
-      "alternateName": [
-        "Aaf",
-        "aaf",
-        "af"
-      ],
-      "description": "A name associated with the Arabic form عائشة, meaning aisha; a female given name.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aaf",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Aaf",
+          "description": "The meaning, language origin, and Arabic-script equivalent of Aaf are unverified in the current record; it should not be equated with Aisha/Aaisha without evidence.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Female"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aaf mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The current record is inconsistent: it pairs the Latin spelling “Aaf” with عائشة, which is normally the Arabic spelling of Aisha/Aaisha, not a reliable transliteration of “Aaf.” The meaning of Aaf therefore remains unverified in this record."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aaf?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The origin of the Latin spelling Aaf is not established by this record. The Arabic form عائشة corresponds to Aisha/Aaisha and should not be used as evidence for the origin or meaning of Aaf without a documented link."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aaf an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish that Aaf is Arabic. A reliable lexical or naming source must connect the exact spelling to an Arabic form before making that claim."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aaf?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No Arabic root can safely be assigned to the spelling Aaf from the evidence in this record. The listed form عائشة belongs to a different spelling/transliteration and should not be treated as its root evidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aaf an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not provide reliable evidence for the origin or meaning of Aaf. A possible similarity to Aisha/Aaisha is not enough to establish an Islamic naming claim."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aaf a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Aaf as a Qur’anic personal name. Do not transfer scriptural claims from Aisha/Aaisha to the different Latin spelling Aaf without evidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aaf mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Urdu text in the current record writes عائشہ, which corresponds to Aisha/Aaisha rather than a verified meaning or transliteration of Aaf. The Urdu meaning for Aaf should remain unverified until the name form is established."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aaf pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pronunciation cannot be confirmed because the intended name form and its language origin have not been established. Do not infer it from the unrelated recorded form عائشة."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aaf a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Gender usage for the exact spelling Aaf is not established by the evidence in this record. The feminine form عائشة refers to Aisha/Aaisha and cannot alone prove the gender usage of Aaf."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aaf",
+              "item": "https://nameverse.site/names/islamic/aaf"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aaf, associated with the Arabic form عائشة, meaning aisha; a female given name."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "Independent source and native-language review still required"
+      ],
+      "confidence": "MEDIUM",
+      "reviewed_by": "NameVerse verification pipeline",
+      "reviewed_at": "2026-10-06T04:27:34+00:00"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

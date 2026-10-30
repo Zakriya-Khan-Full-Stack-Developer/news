@@ -1,67 +1,61 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abdulqadir",
     "slug": "abdulqadir",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abdulqadir",
       "normalized_name": "abdulqadir",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abdulqadir",
         "abdulqadir"
       ],
-      "search_variants": [
-        "Abdulqadir",
-        "abdulqadir"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
       "short_meaning": "Servant of the Almighty",
-      "primary_meaning": "Servant of the Almighty",
-      "secondary_meanings": [],
+      "primary_meaning": "Abdulqadir corresponds to the Arabic form عبد القادر and is glossed in this record as “Servant of the Almighty.” The lexical gloss describes the word-form; Qur’anic occurrence, religious recommendation, popularity, and a name-bearer’s character are separate claims and are not established by this gloss alone.",
       "literal_meaning": "Servant of the Almighty",
-      "extended_meaning": "Servant of the Almighty",
       "meaning_explanation": "Abdulqadir corresponds to the Arabic form عبد القادر (ع ب د). Its core sense is servant of the almighty. ʿAbd al-Qādir ('servant of the Almighty'). Associated with the Hanbali scholar ʿAbd al-Qādir al-Jīlānī (d. 1166).",
-      "meaning_confidence": "high"
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عبد القادر",
       "transliteration": "abdulqadir",
-      "romanization": "abdulqadir",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Servant of the Almighty"
-      ],
-      "etymology_explanation": "The form عبد القادر is an established Arabic lexical item. ʿAbd al-Qādir ('servant of the Almighty'). Associated with the Hanbali scholar ʿAbd al-Qādir al-Jīlānī (d. 1166).",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Arabic word عبد القادر",
+      "root_family": [],
+      "etymology_explanation": "The form عبد القادر is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عبد القادر is an established Arabic form.",
-        "Urdu": "عبدالقادر is used in Urdu.",
-        "Hindi": "अब्दुल क़ादिर is used in Hindi.",
-        "Pashto": "عبدالقادر is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عبد القادر.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form عبد القادر. ʿAbd al-Qādir ('servant of the Almighty'). Associated with the Hanbali scholar ʿAbd al-Qādir al-Jīlānī (d. 1166).",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -70,404 +64,448 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Abdulqadir may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abdulqadir is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "root ع ب د occurs in the Qur'an; the compound عبد القادر is not a Qur'anic form"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abdulqadir is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abdulqadir as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense servant of the almighty.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
       "primary_semantic_domain": "Servant of the Almighty",
       "related_concepts": [
-        "servant of the almighty"
-      ],
-      "semantic_relationship": "The central semantic idea is servant of the almighty; other senses are extended associations."
+        "Servant of the Almighty"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of servant of the almighty.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Servant of the Almighty” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Servant of the Almighty.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Servant of the almighty"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 8,
+      "life_path_number": 8,
+      "ruling_planet": "Saturn",
+      "lucky_day": "Saturday",
+      "lucky_colors": [
+        "Black",
+        "Blue"
+      ],
+      "lucky_stone": "Blue Sapphire",
+      "meaning": "In Pythagorean numerology the letters of Abdulqadir total 8, associated with ambition, authority and material success. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 8,
+      "lucky_day": "Saturday",
+      "lucky_colors": [
+        "Black",
+        "Blue"
+      ],
+      "lucky_stone": "Blue Sapphire",
+      "ruling_planet": "Saturn"
     },
     "translations": {
       "english": {
         "name": "Abdulqadir",
+        "script": "Abdulqadir",
         "meaning": "Servant of the Almighty",
-        "long_meaning": "Abdulqadir is a Arabic-origin name. Its core meaning is servant of the almighty. ʿAbd al-Qādir ('servant of the Almighty'). Associated with the Hanbali scholar ʿAbd al-Qādir al-Jīlānī (d. 1166)."
+        "long_meaning": "Abdulqadir is an Arabic-origin given name; in Arabic the word means “Servant of the Almighty”."
       },
       "urdu": {
         "name": "عبدالقادر",
+        "script": "عبدالقادر",
         "meaning": "قادر مطلق کا بندہ",
-        "long_meaning": "Abdulqadir (عبدالقادر) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم قادر مطلق کا بندہ ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "long_meaning": "Abdulqadir (عبدالقادر) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم قادر مطلق کا بندہ ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔"
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Abdulqadir",
+        "script": "Abdulqadir",
+        "meaning": "Servant of the Almighty",
+        "long_meaning": "Servant of the Almighty"
       },
       "hindi": {
         "name": "अब्दुल क़ादिर",
+        "script": "अब्दुल क़ादिर",
         "meaning": "सर्वशक्तिमान का दास",
-        "long_meaning": "Abdulqadir (अब्दुल क़ादिर) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ सर्वशक्तिमान का दास है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "long_meaning": "Abdulqadir (अब्दुल क़ादिर) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ सर्वशक्तिमान का दास है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।"
       },
       "pashto": {
         "name": "عبدالقادر",
+        "script": "عبدالقادر",
         "meaning": "د قادر مطلق بنده",
         "long_meaning": "Abdulqadir (عبدالقادر) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې د قادر مطلق بنده ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "native_review_required": true
       },
       "arabic": {
         "name": "عبد القادر",
+        "script": "عبد القادر",
         "meaning": "عبد القادر",
         "long_meaning": "Abdulqadir (عبد القادر) اسم مأخوذ من اللغة العربية، ومعناه الأساسي عبد القادر. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "ab-dul-qa-dir",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عبدالقادر",
-      "persian": null,
-      "hindi": "अब्दुल क़ादिर",
-      "pashto": "عبدالقادر"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عبد القادر"
+      }
     },
     "name_variants": {
       "romanized_variants": [
         "Abdulqadir",
-        "abdulqadir"
+        "abdulqadeer"
       ],
-      "script_variants": [
+      "script_forms": [
         "عبد القادر",
         "عبدالقادر",
         "अब्दुल क़ादिर"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
-      "do_not_merge_with": []
+      "variant_notes": "Abdulqadeer/Abdulqadir are candidate romanization variants of the same Arabic compound عبد القادر; keep routes pending manual canonical review.",
+      "do_not_merge_with": [
+        "abdulqadeer"
+      ]
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عبد القادر is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عبد القادر is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abdulqadir can be understood through the Arabic form عبد القادر, whose central sense is servant of the almighty. ʿAbd al-Qādir ('servant of the Almighty'). Associated with the Hanbali scholar ʿAbd al-Qādir al-Jīlānī (d. 1166).",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abdulqadir mean?",
-        "answer": "Abdulqadir is associated with the Arabic form عبد القادر, whose core sense is servant of the almighty."
+        "q": "What does Abdulqadir mean?",
+        "a": "The recorded compound is عبد القادر; its gloss remains provisional until each component is directly sourced."
       },
       {
-        "question": "What is the origin of Abdulqadir?",
-        "answer": "Abdulqadir is associated with Arabic. ʿAbd al-Qādir ('servant of the Almighty'). Associated with the Hanbali scholar ʿAbd al-Qādir al-Jīlānī (d. 1166)."
+        "q": "What is the origin of Abdulqadir?",
+        "a": "The recorded compound is Arabic-script; regional transmission and modern name use require separate evidence."
       },
       {
-        "question": "Is Abdulqadir an Arabic name?",
-        "answer": "Yes — the underlying form عبد القادر is Arabic."
+        "q": "Is Abdulqadir an Arabic name?",
+        "a": "The compound combines عبد (“servant”) with a divine epithet; each component needs its own lexical source."
       },
       {
-        "question": "Is Abdulqadir an Islamic name?",
-        "answer": "Abdulqadir can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Abdulqadir?",
+        "a": "The compound's meaning depends on both elements; a direct component-level review remains open."
       },
       {
-        "question": "Is Abdulqadir a Quranic name?",
-        "answer": "Abdulqadir should not be classified as a Quranic personal name without a direct Quranic basis. root ع ب د occurs in the Qur'an; the compound عبد القادر is not a Qur'anic form"
+        "q": "Is Abdulqadir an Islamic name?",
+        "a": "The compound has religious wording, but this record is not a separate naming recommendation."
       },
       {
-        "question": "What does Abdulqadir mean in Urdu?",
-        "answer": "In Urdu, Abdulqadir is rendered عبدالقادر and carries the sense قادر مطلق کا بندہ."
+        "q": "Is Abdulqadir a Quranic name?",
+        "a": "This record does not establish the Latin spelling as an explicitly named Qur'anic personal name."
       },
       {
-        "question": "What does Abdulqadir mean in Persian?",
-        "answer": "No verified Persian form was established for Abdulqadir."
+        "q": "What does Abdulqadir mean in Urdu?",
+        "a": "Locale translations are provisional and need fluent review."
       },
       {
-        "question": "How is Abdulqadir pronounced?",
-        "answer": "A romanized syllable approximation is ab-dul-qa-dir. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abdulqadir pronounced?",
+        "a": "Pronunciation is approximate and transliteration-dependent."
       },
       {
-        "question": "What are the variants of Abdulqadir?",
-        "answer": "Romanization variants include Abdulqadir, abdulqadir. Script forms are عبد القادر, عبدالقادر, अब्दुल क़ादिर."
-      },
-      {
-        "question": "Is Abdulqadir a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Abdulqadir a boy's or girl's name?",
+        "a": "The record classifies this as male; regional name-frequency data has not been supplied."
       }
     ],
     "seo": {
-      "title": "Abdulqadir Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Abdulqadir (عبد القادر).",
-      "h1": "Abdulqadir Name Meaning, Origin and Cultural Background",
+      "title": "Abdulqadir Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abdulqadir (عبد القادر) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abdulqadir meaning, Abdulqadir name meaning, Abdulqadir origin, Abdulqadir meaning in Urdu, Abdulqadir pronunciation, Abdulqadir Islamic name",
+      "description_paragraph": "Abdulqadir is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abdulqadir meaning",
+        "Abdulqadir name meaning",
+        "Abdulqadir origin",
+        "Abdulqadir meaning in Urdu",
+        "Abdulqadir pronunciation",
+        "Abdulqadir Islamic name"
+      ],
       "focus_keyword": "Abdulqadir meaning",
       "secondary_keywords": [
         "Abdulqadir name meaning",
-        "Abdulqadir meaning in Urdu",
         "Abdulqadir origin",
-        "Abdulqadir Islamic name",
+        "Abdulqadir meaning in Urdu",
         "Abdulqadir pronunciation",
-        "Abdulqadir name in Urdu"
+        "Abdulqadir Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abdulqadir (عبد القادر) is associated with the Arabic form عبد القادر, whose core sense is servant of the almighty. ʿAbd al-Qādir ('servant of the Almighty'). Associated with the Hanbali scholar ʿAbd al-Qādir al-Jīlānī (d. 1166).",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abdulqadir",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abdulqadir is associated with the Arabic form عبد القادر, whose core sense is servant of the almighty.",
-      "meaning_section": "The central meaning of Abdulqadir is servant of the almighty.",
-      "origin_section": "Abdulqadir is associated with Arabic rather than with a different language.",
-      "islam_section": "Abdulqadir can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Abdulqadir is with the sense servant of the almighty.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abdulqadir, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Abdulqadir is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abdulqadir",
       "#AbdulqadirMeaning",
-      "#AbdulqadirName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "compound_component_sources_incomplete",
+        "personal_name_frequency_not_verified",
+        "native_translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 148,
+      "quality_score": 82,
+      "quality_score_basis": "Provisional editorial score only; compound component sources and native translation review remain incomplete."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "No direct component-level dictionary source was checked for this compound in this pass. Keep the existing gloss provisional until both عبد and the divine epithet are independently sourced; translation review is separate.",
+      "claim_evidence": [
         {
-          "claim": "Abdulqadir corresponds to the Arabic form عبد القادر",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "No direct component-level source was checked for this compound in this pass; meaning remains provisional.",
+          "source": null,
+          "status": "no_direct_component_source_checked; compound_gloss_provisional"
         },
         {
-          "claim": "Abdulqadir has the core sense servant of the almighty",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Personal-name usage, frequency, and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "COMPOUND_COMPONENT_SOURCES_NEEDED; NAME_USAGE_AND_TRANSLATIONS_PENDING"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Reviewed compound structure and candidate romanization variants; corrected an unnatural rendering for al-Matīn; component sources and native translation review remain open.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abdulqadir",
-      "alternateName": [
-        "Abdulqadir",
-        "abdulqadir"
-      ],
-      "description": "A name associated with the Arabic form عبد القادر, meaning servant of the almighty.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "abdulqadir",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Abdulqadir",
+          "description": "Abdulqadir — Abdulqadir is an Arabic-origin name meaning “Servant of the Almighty”.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abdulqadir mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded compound is عبد القادر; its gloss remains provisional until each component is directly sourced."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abdulqadir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded compound is Arabic-script; regional transmission and modern name use require separate evidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdulqadir an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The compound combines عبد (“servant”) with a divine epithet; each component needs its own lexical source."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abdulqadir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The compound's meaning depends on both elements; a direct component-level review remains open."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdulqadir an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The compound has religious wording, but this record is not a separate naming recommendation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdulqadir a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish the Latin spelling as an explicitly named Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abdulqadir mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Locale translations are provisional and need fluent review."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abdulqadir pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pronunciation is approximate and transliteration-dependent."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdulqadir a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record classifies this as male; regional name-frequency data has not been supplied."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abdulqadir",
+              "item": "https://nameverse.site/names/islamic/abdulqadir"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abdulqadir, associated with the Arabic form عبد القادر, meaning servant of the almighty."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "compound_component_sources_incomplete",
+        "personal_name_frequency_not_verified",
+        "native_translation_review_required"
+      ],
+      "confidence": "MEDIUM",
+      "reviewed_by": "NameVerse evidence-led review; compound component sources and native translations pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

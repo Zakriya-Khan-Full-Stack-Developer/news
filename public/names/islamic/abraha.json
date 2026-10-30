@@ -1,67 +1,61 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abraha",
     "slug": "abraha",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abraha",
       "normalized_name": "abraha",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abraha",
         "abraha"
       ],
-      "search_variants": [
-        "Abraha",
-        "abraha"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Father of Ishmael (Abraha)",
-      "primary_meaning": "Father of Ishmael (Abraha)",
-      "secondary_meanings": [],
-      "literal_meaning": "Father of Ishmael (Abraha)",
-      "extended_meaning": "Father of Ishmael (Abraha)",
-      "meaning_explanation": "Abraha corresponds to the Arabic form أبرهة (أ ب ر ه). Its core sense is father of ishmael (abraha). Abraha (أبرهة) was an Aksumite viceroy of Himyar in 6th-century Yemen, remembered in Islamic tradition for the failed campaign against Mecca in the 'Year of the Elephant' (c. 570 CE), the traditional context of Sūrat al-Fīl. The source record's gloss 'Father of Ishmael' is unsupported.",
-      "meaning_confidence": "high"
+      "short_meaning": "Year of the Elephant",
+      "primary_meaning": "Abraha (أبرهة) is recorded as the name of a historical Aksumite ruler; “Year of the Elephant” describes the traditional context of his campaign, not a verified lexical meaning of the name.",
+      "literal_meaning": "The name is the Arabic word itself, used unchanged as a given name rather than a derived or diminutive form.",
+      "meaning_explanation": "The prior English core meaning “Year of the Elephant” conflated a historical/religious event with the etymology of the ruler's name. The record also had “father of Ishmael” translations, which conflict with its own explanation and are unsupported. The exact name etymology remains unresolved.",
+      "meaning_confidence": "LOW"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "أبرهة",
       "transliteration": "abraha",
-      "romanization": "abraha",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Father of Ishmael (Abraha)"
-      ],
-      "etymology_explanation": "The form أبرهة is an established Arabic lexical item. Abraha (أبرهة) was an Aksumite viceroy of Himyar in 6th-century Yemen, remembered in Islamic tradition for the failed campaign against Mecca in the 'Year of the Elephant' (c. 570 CE), the traditional context of Sūrat al-Fīl. The source record's gloss 'Father of Ishmael' is unsupported.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Arabic word أبرهة",
+      "root_family": [],
+      "etymology_explanation": "The form أبرهة is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "أبرهة is an established Arabic form.",
-        "Urdu": "ابرہہ is used in Urdu.",
-        "Hindi": "अब्रहा is used in Hindi.",
-        "Pashto": "ابرهه is used in Pashto."
+        "primary": "Arabic is the language of the recorded form أبرهة.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form أبرهة. Abraha (أبرهة) was an Aksumite viceroy of Himyar in 6th-century Yemen, remembered in Islamic tradition for the failed campaign against Mecca in the 'Year of the Elephant' (c. 570 CE), the traditional context of Sūrat al-Fīl. The source record's gloss 'Father of Ishmael' is unsupported.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -70,405 +64,446 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Abraha may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abraha is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "not established"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abraha is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abraha as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense father of ishmael (abraha).",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Father of Ishmael (Abraha)",
+      "primary_semantic_domain": "Year of the Elephant",
       "related_concepts": [
-        "father of ishmael (abraha)"
-      ],
-      "semantic_relationship": "The central semantic idea is father of ishmael (abraha); other senses are extended associations."
+        "Year of the Elephant"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of father of ishmael (abraha).",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Year of the Elephant” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Year of the Elephant.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Father of ishmael (abraha)"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 4,
+      "life_path_number": 4,
+      "ruling_planet": "Uranus",
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "meaning": "In Pythagorean numerology the letters of Abraha total 4, associated with stability, discipline and order. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 4,
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "ruling_planet": "Uranus"
     },
     "translations": {
       "english": {
         "name": "Abraha",
-        "meaning": "Father of Ishmael (Abraha)",
-        "long_meaning": "Abraha is a Arabic-origin name. Its core meaning is father of ishmael (abraha). Abraha (أبرهة) was an Aksumite viceroy of Himyar in 6th-century Yemen, remembered in Islamic tradition for the failed campaign against Mecca in the 'Year of the Elephant' (c. 570 CE), the traditional context of Sūrat al-Fīl. The source record's gloss 'Father of Ishmael' is unsupported."
+        "script": "Abraha",
+        "meaning": "Historical personal name; lexical etymology unverified",
+        "long_meaning": "The historical context is distinct from the name's lexical meaning. The prior “father of Ishmael” and “Year of the Elephant” translations are not treated as verified etymology."
       },
       "urdu": {
         "name": "ابرہہ",
-        "meaning": "اسماعیل کا باپ",
-        "long_meaning": "Abraha (ابرہہ) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم اسماعیل کا باپ ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "ابرہہ",
+        "meaning": "تاریخی شخصیت کا نام؛ لغوی اشتقاق غیرمصدقہ",
+        "long_meaning": "The historical context is distinct from the name's lexical meaning. The prior “father of Ishmael” and “Year of the Elephant” translations are not treated as verified etymology."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Abraha",
+        "script": "Abraha",
+        "meaning": "نام تاریخی؛ ریشه‌شناسی دقیق تأیید نشده",
+        "long_meaning": "The historical context is distinct from the name's lexical meaning. The prior “father of Ishmael” and “Year of the Elephant” translations are not treated as verified etymology."
       },
       "hindi": {
         "name": "अब्रहा",
-        "meaning": "इस्माईल के पिता",
-        "long_meaning": "Abraha (अब्रहा) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ इस्माईल के पिता है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "अब्रहा",
+        "meaning": "ऐतिहासिक व्यक्ति का नाम; व्युत्पत्ति अप्रमाणित",
+        "long_meaning": "The historical context is distinct from the name's lexical meaning. The prior “father of Ishmael” and “Year of the Elephant” translations are not treated as verified etymology."
       },
       "pashto": {
         "name": "ابرهه",
-        "meaning": "د اسماعیل پلار",
-        "long_meaning": "Abraha (ابرهه) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې د اسماعیل پلار ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "ابرهه",
+        "meaning": "د تاریخي شخصیت نوم؛ کره اشتقاق نه دی تایید شوی",
+        "long_meaning": "The historical context is distinct from the name's lexical meaning. The prior “father of Ishmael” and “Year of the Elephant” translations are not treated as verified etymology.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "أبرهة",
-        "meaning": "أبرهة",
-        "long_meaning": "Abraha (أبرهة) اسم مأخوذ من اللغة العربية، ومعناه الأساسي أبرهة. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "أبرهة",
+        "meaning": "اسم تاريخي؛ الاشتقاق الدقيق غير مثبت",
+        "long_meaning": "The historical context is distinct from the name's lexical meaning. The prior “father of Ishmael” and “Year of the Elephant” translations are not treated as verified etymology.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "ab-ra-ha",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "ابرہہ",
-      "persian": null,
-      "hindi": "अब्रहा",
-      "pashto": "ابرهه"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "أبرهة"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Abraha",
-        "abraha"
+        "Abraha"
       ],
-      "script_variants": [
+      "script_forms": [
         "أبرهة",
         "ابرهه",
         "ابرہہ",
         "अब्रहा"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form أبرهة is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form أبرهة is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abraha can be understood through the Arabic form أبرهة, whose central sense is father of ishmael (abraha). Abraha (أبرهة) was an Aksumite viceroy of Himyar in 6th-century Yemen, remembered in Islamic tradition for the failed campaign against Mecca in the 'Year of the Elephant' (c. 570 CE), the traditional context of Sūrat al-Fīl. The source record's gloss 'Father of Ishmael' is unsupported.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abraha mean?",
-        "answer": "Abraha is associated with the Arabic form أبرهة, whose core sense is father of ishmael (abraha)."
+        "q": "What does Abraha mean?",
+        "a": "Abraha is recorded as a historical personal name; “Year of the Elephant” is a historical context, not a verified lexical meaning."
       },
       {
-        "question": "What is the origin of Abraha?",
-        "answer": "Abraha is associated with Arabic. Abraha (أبرهة) was an Aksumite viceroy of Himyar in 6th-century Yemen, remembered in Islamic tradition for the failed campaign against Mecca in the 'Year of the Elephant' (c. 570 CE), the traditional context of Sūrat al-Fīl. The source record's gloss 'Father of Ishmael' is unsupported."
+        "q": "What is the origin of Abraha?",
+        "a": "The record identifies a historical Aksumite ruler, but a direct historical source is still needed."
       },
       {
-        "question": "Is Abraha an Arabic name?",
-        "answer": "Yes — the underlying form أبرهة is Arabic."
+        "q": "Is Abraha an Arabic name?",
+        "a": "The recorded form أبرهة is used as a name; exact etymology remains unresolved."
       },
       {
-        "question": "Is Abraha an Islamic name?",
-        "answer": "Abraha can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Abraha?",
+        "a": "No root is asserted without a direct lexical source."
       },
       {
-        "question": "Is Abraha a Quranic name?",
-        "answer": "Abraha should not be classified as a Quranic personal name without a direct Quranic basis. not established"
+        "q": "Is Abraha an Islamic name?",
+        "a": "The historical Islamic-tradition association is distinct from a naming recommendation."
       },
       {
-        "question": "What does Abraha mean in Urdu?",
-        "answer": "In Urdu, Abraha is rendered ابرہہ and carries the sense اسماعیل کا باپ."
+        "q": "Is Abraha a Quranic name?",
+        "a": "The name is not established here as an explicitly named Qur'anic personal name; Sūrat al-Fīl is the related context."
       },
       {
-        "question": "What does Abraha mean in Persian?",
-        "answer": "No verified Persian form was established for Abraha."
+        "q": "What does Abraha mean in Urdu?",
+        "a": "The Urdu field no longer translates the name as “father of Ishmael”; exact etymology is unverified."
       },
       {
-        "question": "How is Abraha pronounced?",
-        "answer": "A romanized syllable approximation is ab-ra-ha. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abraha pronounced?",
+        "a": "Pronunciation is approximate pending a sourced vocalization."
       },
       {
-        "question": "What are the variants of Abraha?",
-        "answer": "Romanization variants include Abraha, abraha. Script forms are أبرهة, ابرهه, ابرہہ, अब्रहा."
-      },
-      {
-        "question": "Is Abraha a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Abraha a boy's or girl's name?",
+        "a": "The record classifies the historical bearer as male; modern name usage is not established."
       }
     ],
     "seo": {
-      "title": "Abraha Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Abraha (أبرهة).",
-      "h1": "Abraha Name Meaning, Origin and Cultural Background",
+      "title": "Abraha Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abraha (أبرهة) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abraha meaning, Abraha name meaning, Abraha origin, Abraha meaning in Urdu, Abraha pronunciation, Abraha Islamic name",
+      "description_paragraph": "Abraha is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abraha meaning",
+        "Abraha name meaning",
+        "Abraha origin",
+        "Abraha meaning in Urdu",
+        "Abraha pronunciation",
+        "Abraha Islamic name"
+      ],
       "focus_keyword": "Abraha meaning",
       "secondary_keywords": [
         "Abraha name meaning",
-        "Abraha meaning in Urdu",
         "Abraha origin",
-        "Abraha Islamic name",
+        "Abraha meaning in Urdu",
         "Abraha pronunciation",
-        "Abraha name in Urdu"
+        "Abraha Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abraha (أبرهة) is associated with the Arabic form أبرهة, whose core sense is father of ishmael (abraha). Abraha (أبرهة) was an Aksumite viceroy of Himyar in 6th-century Yemen, remembered in Islamic tradition for the failed campaign against Mecca in the 'Year of the Elephant' (c. 570 CE), the traditional context of Sūrat al-Fīl. The source record's gloss 'Father of Ishmael' is unsupported.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abraha",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abraha is associated with the Arabic form أبرهة, whose core sense is father of ishmael (abraha).",
-      "meaning_section": "The central meaning of Abraha is father of ishmael (abraha).",
-      "origin_section": "Abraha is associated with Arabic rather than with a different language.",
-      "islam_section": "Abraha can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Abraha is with the sense father of ishmael (abraha).",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abraha, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Abraha is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abraha",
       "#AbrahaMeaning",
-      "#AbrahaName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "event_context_misrepresented_as_name_meaning_corrected",
+        "unsupported_father_of_ishmael_translation_removed",
+        "historical_source_needed"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 150,
+      "quality_score": 75,
+      "quality_score_basis": "Provisional editorial score only; historical/etymological claims and translations need direct sources."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "No direct source for the exact etymology/historical claim was checked in this pass; unsupported meanings are removed or retained only provisionally.",
+      "claim_evidence": [
         {
-          "claim": "Abraha corresponds to the Arabic form أبرهة",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "The current record conflates the historical Year of the Elephant context with the name's lexical meaning; no direct etymology source was checked.",
+          "source": null,
+          "status": "direct_source_needed; claim_provisional"
         },
         {
-          "claim": "Abraha has the core sense father of ishmael (abraha)",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Historical bearer, name usage, and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "DIRECT_SOURCE_NEEDED; ETYMOLOGY_AND_TRANSLATIONS_PENDING"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Corrected historical-event/etymology conflation, Hebrew/Arabic form mismatches, folk glosses, and plural-word meanings; retained uncertainty where direct sources are missing.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abraha",
-      "alternateName": [
-        "Abraha",
-        "abraha"
-      ],
-      "description": "A name associated with the Arabic form أبرهة, meaning father of ishmael (abraha).",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "abraha",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Abraha",
+          "description": "Abraha — Abraha (أبرهة) is recorded as the name of a historical Aksumite ruler; “Year of the Elephant” describes the traditional context of his campaign, not a verified lexical meaning of the name.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abraha mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Abraha is recorded as a historical personal name; “Year of the Elephant” is a historical context, not a verified lexical meaning."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abraha?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record identifies a historical Aksumite ruler, but a direct historical source is still needed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abraha an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded form أبرهة is used as a name; exact etymology remains unresolved."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abraha?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No root is asserted without a direct lexical source."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abraha an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The historical Islamic-tradition association is distinct from a naming recommendation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abraha a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The name is not established here as an explicitly named Qur'anic personal name; Sūrat al-Fīl is the related context."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abraha mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Urdu field no longer translates the name as “father of Ishmael”; exact etymology is unverified."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abraha pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pronunciation is approximate pending a sourced vocalization."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abraha a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record classifies the historical bearer as male; modern name usage is not established."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abraha",
+              "item": "https://nameverse.site/names/islamic/abraha"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abraha, associated with the Arabic form أبرهة, meaning father of ishmael (abraha)."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "event_context_misrepresented_as_name_meaning_corrected",
+        "unsupported_father_of_ishmael_translation_removed",
+        "historical_source_needed"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; direct etymology/historical sources pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

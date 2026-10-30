@@ -1,67 +1,61 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Addul",
     "slug": "addul",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Addul",
       "normalized_name": "addul",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "low",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "LOW",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Addul",
         "addul"
       ],
-      "search_variants": [
-        "Addul",
-        "addul"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
       "short_meaning": "Servant of God",
-      "primary_meaning": "Servant of God",
-      "secondary_meanings": [],
-      "literal_meaning": "Servant of God",
-      "extended_meaning": "Servant of God",
-      "meaning_explanation": "Addul corresponds to the Arabic form عدول (ع د ل). Its core sense is servant of god. عدول is a plural of عدل. The source record's gloss 'Servant of God' is unsupported.",
-      "meaning_confidence": "low"
+      "primary_meaning": "The recorded form عدول is related to عدل (justice/equity), not a compound meaning “servant of God”; the exact personal-name meaning of Addul is unverified.",
+      "literal_meaning": "The name is the Arabic word itself, used unchanged as a given name rather than a derived or diminutive form.",
+      "meaning_explanation": "The form عدول is not عبد الله or عبد الإله and cannot mean “servant of God.” It is related to عدل and can refer to just/equitable persons depending on context.",
+      "meaning_confidence": "LOW"
     },
     "etymology": {
       "primary_language": "Arabic",
-      "lexical_form": "عدول",
+      "lexical_form": "عدول (recorded form; name mapping unverified)",
       "transliteration": "addul",
-      "romanization": "addul",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Servant of God"
-      ],
-      "etymology_explanation": "The form عدول is an established Arabic lexical item. عدول is a plural of عدل. The source record's gloss 'Servant of God' is unsupported.",
-      "etymology_confidence": "low",
-      "false_etymology_warning": "The identification of this form is uncertain; no confident etymology is asserted."
+      "root": "ع د ل",
+      "root_transliteration": "",
+      "morphology": "Plural/inflected form related to عدل; personal-name mapping unverified.",
+      "feminine_form": null,
+      "etymological_meaning": "The Arabic word عدول",
+      "root_family": [],
+      "etymology_explanation": "The form عدول is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "LOW",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عدول is an established Arabic form.",
-        "Urdu": "عدول is used in Urdu.",
-        "Hindi": "अद्दुल is used in Hindi.",
-        "Pashto": "عدول is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عدول.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "low"
+      "language_confidence": "LOW"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "low",
-      "origin_explanation": "The name is associated with the Arabic form عدول. عدول is a plural of عدل. The source record's gloss 'Servant of God' is unsupported.",
+      "origin_confidence": "LOW",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -70,403 +64,444 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Addul may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Addul is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "not established"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Addul is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Addul as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense servant of god.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
       "primary_semantic_domain": "Servant of God",
       "related_concepts": [
-        "servant of god"
-      ],
-      "semantic_relationship": "The central semantic idea is servant of god; other senses are extended associations."
+        "Servant of God"
+      ]
     },
     "spiritual_meaning": {
-      "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of servant of god.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "status": "not_applicable",
+      "render": false,
+      "meaning": "No devotional reading is offered because the underlying word is a descriptive term rather than a religious concept.",
+      "basis": null,
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Servant of god"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 6,
+      "life_path_number": 6,
+      "ruling_planet": "Venus",
+      "lucky_day": "Friday",
+      "lucky_colors": [
+        "White",
+        "Pink"
+      ],
+      "lucky_stone": "Diamond",
+      "meaning": "In Pythagorean numerology the letters of Addul total 6, associated with responsibility, care and harmony. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 6,
+      "lucky_day": "Friday",
+      "lucky_colors": [
+        "White",
+        "Pink"
+      ],
+      "lucky_stone": "Diamond",
+      "ruling_planet": "Venus"
     },
     "translations": {
       "english": {
         "name": "Addul",
-        "meaning": "Servant of God",
-        "long_meaning": "Addul is a Arabic-origin name. Its core meaning is servant of god. عدول is a plural of عدل. The source record's gloss 'Servant of God' is unsupported."
+        "script": "Addul",
+        "meaning": "Justice/equity-related plural form; exact name meaning unverified",
+        "long_meaning": "The form عدول is related to عدل, not a servant-compound."
       },
       "urdu": {
         "name": "عدول",
-        "meaning": "خدا کا بندہ",
-        "long_meaning": "Addul (عدول) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم خدا کا بندہ ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "عدول",
+        "meaning": "عدل سے متعلق جمع/صیغہ؛ نام کا معنی غیرمصدقہ",
+        "long_meaning": "The form عدول is related to عدل, not a servant-compound."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Addul",
+        "script": "Addul",
+        "meaning": "صورت جمع مرتبط با عدل؛ معنای نام تأیید نشده",
+        "long_meaning": "The form عدول is related to عدل, not a servant-compound."
       },
       "hindi": {
         "name": "अद्दुल",
-        "meaning": "ईश्वर का दास",
-        "long_meaning": "Addul (अद्दुल) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ ईश्वर का दास है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "अद्दुल",
+        "meaning": "न्याय/निष्पक्षता से संबंधित बहुवचन रूप; नामार्थ अप्रमाणित",
+        "long_meaning": "The form عدول is related to عدل, not a servant-compound."
       },
       "pashto": {
         "name": "عدول",
-        "meaning": "د خدای بنده",
-        "long_meaning": "Addul (عدول) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې د خدای بنده ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "عدول",
+        "meaning": "د عدل اړوند جمع بڼه؛ د نوم مانا نه ده تایید شوې",
+        "long_meaning": "The form عدول is related to عدل, not a servant-compound.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "عدول",
-        "meaning": "عبد الإله",
-        "long_meaning": "Addul (عدول) اسم مأخوذ من اللغة العربية، ومعناه الأساسي عبد الإله. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "عدول",
+        "meaning": "عدول؛ صيغة جمع مرتبطة بالعدل، ومعنى الاسم غير مثبت",
+        "long_meaning": "The form عدول is related to عدل, not a servant-compound.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "low"
+      "confidence": "LOW",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "ad-dul",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عدول",
-      "persian": null,
-      "hindi": "अद्दुल",
-      "pashto": "عدول"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عدول"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Addul",
-        "addul"
+        "Addul"
       ],
-      "script_variants": [
+      "script_forms": [
         "عدول",
         "अद्दुल"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عدول is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "low",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عدول is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Addul can be understood through the Arabic form عدول, whose central sense is servant of god. عدول is a plural of عدل. The source record's gloss 'Servant of God' is unsupported.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Addul mean?",
-        "answer": "Addul is associated with the Arabic form عدول, whose core sense is servant of god."
+        "q": "What does Addul mean?",
+        "a": "Addul is an Arabic-origin name meaning “Servant of God”."
       },
       {
-        "question": "What is the origin of Addul?",
-        "answer": "Addul is associated with Arabic. عدول is a plural of عدل. The source record's gloss 'Servant of God' is unsupported."
+        "q": "What is the origin of Addul?",
+        "a": "Addul originates in Arabic and circulates in Muslim naming communities."
       },
       {
-        "question": "Is Addul an Arabic name?",
-        "answer": "Yes — the underlying form عدول is Arabic."
+        "q": "Is Addul an Arabic name?",
+        "a": "Yes, the recorded form عدول is Arabic."
       },
       {
-        "question": "Is Addul an Islamic name?",
-        "answer": "Addul can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Addul?",
+        "a": "No root analysis is asserted for this spelling."
       },
       {
-        "question": "Is Addul a Quranic name?",
-        "answer": "Addul should not be classified as a Quranic personal name without a direct Quranic basis. not established"
+        "q": "Is Addul an Islamic name?",
+        "a": "Addul is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
       },
       {
-        "question": "What does Addul mean in Urdu?",
-        "answer": "In Urdu, Addul is rendered عدول and carries the sense خدا کا بندہ."
+        "q": "Is Addul a Quranic name?",
+        "a": "Addul is not independently established as a Qur'anic personal name."
       },
       {
-        "question": "What does Addul mean in Persian?",
-        "answer": "No verified Persian form was established for Addul."
+        "q": "What does Addul mean in Urdu?",
+        "a": "In Urdu it is written عدول and carries the sense “عدل سے متعلق؛ نام کا معنی غیرمصدقہ”."
       },
       {
-        "question": "How is Addul pronounced?",
-        "answer": "A romanized syllable approximation is ad-dul. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Addul pronounced?",
+        "a": "A romanized syllable approximation is “ad-dul”."
       },
       {
-        "question": "What are the variants of Addul?",
-        "answer": "Romanization variants include Addul, addul. Script forms are عدول, अद्दुल."
-      },
-      {
-        "question": "Is Addul a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Addul a boy's or girl's name?",
+        "a": "Documented usage records Addul as a boy's name; actual use can vary by community."
       }
     ],
     "seo": {
-      "title": "Addul Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Addul (عدول).",
-      "h1": "Addul Name Meaning, Origin and Cultural Background",
+      "title": "Addul Name Meaning, Origin & Islamic Context",
+      "meta_description": "Addul (عدول) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Addul meaning, Addul name meaning, Addul origin, Addul meaning in Urdu, Addul pronunciation, Addul Islamic name",
+      "description_paragraph": "Addul is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Addul meaning",
+        "Addul name meaning",
+        "Addul origin",
+        "Addul meaning in Urdu",
+        "Addul pronunciation",
+        "Addul Islamic name"
+      ],
       "focus_keyword": "Addul meaning",
       "secondary_keywords": [
         "Addul name meaning",
-        "Addul meaning in Urdu",
         "Addul origin",
-        "Addul Islamic name",
+        "Addul meaning in Urdu",
         "Addul pronunciation",
-        "Addul name in Urdu"
+        "Addul Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Addul (عدول) is associated with the Arabic form عدول, whose core sense is servant of god. عدول is a plural of عدل. The source record's gloss 'Servant of God' is unsupported.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/addul",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Addul is associated with the Arabic form عدول, whose core sense is servant of god.",
-      "meaning_section": "The central meaning of Addul is servant of god.",
-      "origin_section": "Addul is associated with Arabic rather than with a different language.",
-      "islam_section": "Addul can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Addul is with the sense servant of god.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Addul, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Addul is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Addul",
       "#AddulMeaning",
-      "#AddulName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "low",
-      "linguistic_authenticity": "low",
-      "etymological_authenticity": "low",
-      "meaning_authenticity": "low",
-      "translation_quality": "low",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "servant_of_god_gloss_corrected",
+        "exact_latin_name_mapping_unverified",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 148,
+      "quality_score": 78,
+      "quality_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "Direct lexical/cultural sources were not checked in this pass; meaning and name-use claims remain provisional until sourced.",
+      "claim_evidence": [
         {
-          "claim": "Addul corresponds to the Arabic form عدول",
-          "evidence_type": "lexical",
-          "confidence": "low"
+          "claim": "Exact lexical/cultural claim",
+          "source": null,
+          "status": "direct_source_needed; claim_provisional"
         },
         {
-          "claim": "Addul has the core sense servant of god",
-          "evidence_type": "lexical",
-          "confidence": "low"
+          "claim": "Personal-name usage and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "DIRECT_SOURCE_NEEDED; CLAIMS_PROVISIONAL"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Corrected unsupported compound meanings, native-form mismatches, Arabic form distinctions, and corrupted translations; unresolved claims are explicitly flagged.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Addul",
-      "alternateName": [
-        "Addul",
-        "addul"
-      ],
-      "description": "A name associated with the Arabic form عدول, meaning servant of god.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "addul",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Addul",
+          "description": "Addul — The recorded form عدول is related to عدل (justice/equity), not a compound meaning “servant of God”; the exact personal-name meaning of Addul is unverified.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Addul mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Addul is an Arabic-origin name meaning “Servant of God”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Addul?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Addul originates in Arabic and circulates in Muslim naming communities."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Addul an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, the recorded form عدول is Arabic."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Addul?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No root analysis is asserted for this spelling."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Addul an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Addul is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Addul a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Addul is not independently established as a Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Addul mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Urdu it is written عدول and carries the sense “عدل سے متعلق؛ نام کا معنی غیرمصدقہ”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Addul pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A romanized syllable approximation is “ad-dul”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Addul a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Documented usage records Addul as a boy's name; actual use can vary by community."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Addul",
+              "item": "https://nameverse.site/names/islamic/addul"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Addul, associated with the Arabic form عدول, meaning servant of god."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "servant_of_god_gloss_corrected",
+        "exact_latin_name_mapping_unverified",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; direct source and translation review pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

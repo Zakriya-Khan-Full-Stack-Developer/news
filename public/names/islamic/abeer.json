@@ -1,72 +1,61 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abeer",
     "slug": "abeer",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abeer",
       "normalized_name": "abeer",
       "name_type": "given_name",
       "gender": "Female",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abeer",
         "abeer"
       ],
-      "search_variants": [
-        "Abeer",
-        "abeer"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
       "short_meaning": "Fragrance, scent, perfume",
-      "primary_meaning": "Fragrance",
-      "secondary_meanings": [
-        "scent",
-        "perfume"
-      ],
-      "literal_meaning": "Fragrance",
-      "extended_meaning": "Fragrance, scent, perfume",
+      "primary_meaning": "Abeer corresponds to the Arabic form عبير and is glossed in this record as “Fragrance, scent, perfume.” The lexical gloss describes the word-form; Qur’anic occurrence, religious recommendation, popularity, and a name-bearer’s character are separate claims and are not established by this gloss alone.",
+      "literal_meaning": "Fragrance, scent, perfume",
       "meaning_explanation": "Abeer corresponds to the Arabic form عبير (ع ب ر). Its core sense is fragrance, scent, perfume. ʿAbīr ('fragrance, scent, perfume'). The source record left this name with no script form and no origin; the Arabic form is عبير.",
-      "meaning_confidence": "high"
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عبير",
       "transliteration": "abeer",
-      "romanization": "abeer",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Fragrance",
-        "scent",
-        "perfume"
-      ],
-      "etymology_explanation": "The form عبير is an established Arabic lexical item. ʿAbīr ('fragrance, scent, perfume'). The source record left this name with no script form and no origin; the Arabic form is عبير.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Arabic word عبير",
+      "root_family": [],
+      "etymology_explanation": "The form عبير is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عبير is an established Arabic form.",
-        "Urdu": "عبیر is used in Urdu.",
-        "Hindi": "अबीर is used in Hindi.",
-        "Pashto": "عبير is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عبير.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form عبير. ʿAbīr ('fragrance, scent, perfume'). The source record left this name with no script form and no origin; the Arabic form is عبير.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -75,408 +64,445 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Abeer may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abeer is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "not established"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abeer is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abeer as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense fragrance, scent, perfume.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Fragrance",
+      "primary_semantic_domain": "Fragrance, scent, perfume",
       "related_concepts": [
-        "fragrance",
-        "scent",
-        "perfume"
-      ],
-      "semantic_relationship": "The central semantic idea is fragrance; other senses are extended associations."
+        "Fragrance, scent, perfume"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of fragrance.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Fragrance, scent, perfume” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Fragrance, scent, perfume.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Fragrance",
-        "Scent",
-        "Perfume"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 4,
+      "life_path_number": 4,
+      "ruling_planet": "Uranus",
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "meaning": "In Pythagorean numerology the letters of Abeer total 4, associated with stability, discipline and order. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 4,
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "ruling_planet": "Uranus"
     },
     "translations": {
       "english": {
         "name": "Abeer",
+        "script": "Abeer",
         "meaning": "Fragrance, scent, perfume",
-        "long_meaning": "Abeer is a Arabic-origin name. Its core meaning is fragrance, scent, perfume. ʿAbīr ('fragrance, scent, perfume'). The source record left this name with no script form and no origin; the Arabic form is عبير."
+        "long_meaning": "Abeer is an Arabic-origin given name; in Arabic the word means “Fragrance, scent, perfume”."
       },
       "urdu": {
         "name": "عبیر",
+        "script": "عبیر",
         "meaning": "خوشبو، عطر",
-        "long_meaning": "Abeer (عبیر) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم خوشبو، عطر ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "long_meaning": "Abeer (عبیر) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم خوشبو، عطر ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔"
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Abeer",
+        "script": "Abeer",
+        "meaning": "Fragrance, scent, perfume",
+        "long_meaning": "Fragrance, scent, perfume"
       },
       "hindi": {
         "name": "अबीर",
+        "script": "अबीर",
         "meaning": "सुगंध, खुशबू, इत्र",
-        "long_meaning": "Abeer (अबीर) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ सुगंध, खुशबू, इत्र है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "long_meaning": "Abeer (अबीर) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ सुगंध, खुशबू, इत्र है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।"
       },
       "pashto": {
         "name": "عبير",
+        "script": "عبير",
         "meaning": "خوشبویه، عطر",
         "long_meaning": "Abeer (عبير) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې خوشبویه، عطر ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "native_review_required": true
       },
       "arabic": {
         "name": "عبير",
+        "script": "عبير",
         "meaning": "عبير، أريج، شذا",
         "long_meaning": "Abeer (عبير) اسم مأخوذ من اللغة العربية، ومعناه الأساسي عبير، أريج، شذا. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "a-beer",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عبیر",
-      "persian": null,
-      "hindi": "अबीर",
-      "pashto": "عبير"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عبير"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Abeer",
-        "abeer"
+        "Abeer"
       ],
-      "script_variants": [
+      "script_forms": [
         "عبير",
         "عبیر",
         "अबीर"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عبير is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عبير is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abeer can be understood through the Arabic form عبير, whose central sense is fragrance, scent, perfume. ʿAbīr ('fragrance, scent, perfume'). The source record left this name with no script form and no origin; the Arabic form is عبير.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abeer mean?",
-        "answer": "Abeer is associated with the Arabic form عبير, whose core sense is fragrance, scent, perfume."
+        "q": "What does Abeer mean?",
+        "a": "Arabic عبير has a fragrance/perfume-related sense."
       },
       {
-        "question": "What is the origin of Abeer?",
-        "answer": "Abeer is associated with Arabic. ʿAbīr ('fragrance, scent, perfume'). The source record left this name with no script form and no origin; the Arabic form is عبير."
+        "q": "What is the origin of Abeer?",
+        "a": "The recorded form is Arabic عبير."
       },
       {
-        "question": "Is Abeer an Arabic name?",
-        "answer": "Yes — the underlying form عبير is Arabic."
+        "q": "Is Abeer an Arabic name?",
+        "a": "The lexical form is Arabic; modern name use requires separate evidence."
       },
       {
-        "question": "Is Abeer an Islamic name?",
-        "answer": "Abeer can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Abeer?",
+        "a": "The record's root analysis should be checked by a specialist; the lexical meaning is supported."
       },
       {
-        "question": "Is Abeer a Quranic name?",
-        "answer": "Abeer should not be classified as a Quranic personal name without a direct Quranic basis. not established"
+        "q": "Is Abeer an Islamic name?",
+        "a": "Arabic origin does not establish a naming recommendation."
       },
       {
-        "question": "What does Abeer mean in Urdu?",
-        "answer": "In Urdu, Abeer is rendered عبیر and carries the sense خوشبو، عطر."
+        "q": "Is Abeer a Quranic name?",
+        "a": "This record does not establish Abeer as an explicitly named Qur'anic personal name."
       },
       {
-        "question": "What does Abeer mean in Persian?",
-        "answer": "No verified Persian form was established for Abeer."
+        "q": "What does Abeer mean in Urdu?",
+        "a": "A cautious Urdu gloss is “خوشبو، عطر”; native review is pending."
       },
       {
-        "question": "How is Abeer pronounced?",
-        "answer": "A romanized syllable approximation is a-beer. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abeer pronounced?",
+        "a": "“A-beer” is approximate; Arabic vowel length varies."
       },
       {
-        "question": "What are the variants of Abeer?",
-        "answer": "Romanization variants include Abeer, abeer. Script forms are عبير, عبیر, अबीर."
-      },
-      {
-        "question": "Is Abeer a boy's or girl's name?",
-        "answer": "Documented usage records this form as female. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Abeer a boy's or girl's name?",
+        "a": "Modern regional frequency data has not been supplied."
       }
     ],
     "seo": {
-      "title": "Abeer Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Abeer (عبير).",
-      "h1": "Abeer Name Meaning, Origin and Cultural Background",
+      "title": "Abeer Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abeer (عبير) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abeer meaning, Abeer name meaning, Abeer origin, Abeer meaning in Urdu, Abeer pronunciation, Abeer Islamic name",
+      "description_paragraph": "Abeer is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abeer meaning",
+        "Abeer name meaning",
+        "Abeer origin",
+        "Abeer meaning in Urdu",
+        "Abeer pronunciation",
+        "Abeer Islamic name"
+      ],
       "focus_keyword": "Abeer meaning",
       "secondary_keywords": [
         "Abeer name meaning",
-        "Abeer meaning in Urdu",
         "Abeer origin",
-        "Abeer Islamic name",
+        "Abeer meaning in Urdu",
         "Abeer pronunciation",
-        "Abeer name in Urdu"
+        "Abeer Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abeer (عبير) is associated with the Arabic form عبير, whose core sense is fragrance, scent, perfume. ʿAbīr ('fragrance, scent, perfume'). The source record left this name with no script form and no origin; the Arabic form is عبير.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abeer",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abeer is associated with the Arabic form عبير, whose core sense is fragrance, scent, perfume.",
-      "meaning_section": "The central meaning of Abeer is fragrance, scent, perfume.",
-      "origin_section": "Abeer is associated with Arabic rather than with a different language.",
-      "islam_section": "Abeer can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Abeer is with the sense fragrance.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abeer, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Abeer is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abeer",
       "#AbeerMeaning",
-      "#AbeerName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "personal_name_frequency_not_verified",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 149,
+      "quality_score": 78,
+      "quality_score_basis": "Provisional editorial score only; exact lexical form, personal-name usage, and fluent translations require separate verification."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "https://www.laneslexicon.com/word/%D8%B9%D8%A8%D9%8A%D8%B1"
+      ],
+      "verification_method": "Sources are listed only where checked. Cultural/name usage, exact morphology, and translation quality require separate evidence.",
+      "claim_evidence": [
         {
-          "claim": "Abeer corresponds to the Arabic form عبير",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Lane's Lexicon supports عبير with a fragrance/perfume sense; personal-name frequency and translations remain separate.",
+          "source": "https://www.laneslexicon.com/word/%D8%B9%D8%A8%D9%8A%D8%B1",
+          "status": "lexical_source_checked"
         },
         {
-          "claim": "Abeer has the core sense fragrance, scent, perfume",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Personal-name usage and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "LEXICAL_SOURCE_CHECKED; NAME_USAGE_AND_TRANSLATIONS_PENDING"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Corrected gendered translation mismatches, ambiguous vocalization, and non-Arabic native-script conflation; separated lexical evidence from personal-name usage.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abeer",
-      "alternateName": [
-        "Abeer",
-        "abeer"
-      ],
-      "description": "A name associated with the Arabic form عبير, meaning fragrance, scent, perfume.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "abeer",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Abeer",
+          "description": "Abeer — Abeer is an Arabic-origin name meaning “Fragrance, scent, perfume”.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Female"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abeer mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Arabic عبير has a fragrance/perfume-related sense."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abeer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded form is Arabic عبير."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abeer an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The lexical form is Arabic; modern name use requires separate evidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abeer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record's root analysis should be checked by a specialist; the lexical meaning is supported."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abeer an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Arabic origin does not establish a naming recommendation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abeer a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Abeer as an explicitly named Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abeer mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A cautious Urdu gloss is “خوشبو، عطر”; native review is pending."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abeer pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "“A-beer” is approximate; Arabic vowel length varies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abeer a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Modern regional frequency data has not been supplied."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abeer",
+              "item": "https://nameverse.site/names/islamic/abeer"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abeer, associated with the Arabic form عبير, meaning fragrance, scent, perfume."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "personal_name_frequency_not_verified",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; direct name-use and translation review pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

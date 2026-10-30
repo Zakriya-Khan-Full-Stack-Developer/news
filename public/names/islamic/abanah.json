@@ -1,0 +1,497 @@
+{
+  "schema_version": "super-2.0",
+  "success": true,
+  "data": {
+    "name": "Abanah",
+    "slug": "abanah",
+    "content_revision": "v9",
+    "page_type": "name_meaning",
+    "identity": {
+      "display_name": "Abanah",
+      "normalized_name": "abanah",
+      "name_type": "given_name",
+      "gender": "Male",
+      "gender_confidence": "MEDIUM",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
+      "alternate_spellings": [
+        "Abanah",
+        "abanah"
+      ],
+      "name_status": "attested"
+    },
+    "core_meaning": {
+      "short_meaning": "Arabic historical name form; exact lexical meaning not established in this draft.",
+      "primary_meaning": "Abanah (أبانة) is recorded as a historical Arabic name form, but its exact lexical meaning and intended morphology remain unverified.",
+      "literal_meaning": "Arabic historical name form; exact lexical meaning not established in this draft.",
+      "meaning_explanation": "The existing source is a search page, not a direct biographical or lexical entry for this exact form. The historical-name assertion and gender assignment require a source tied to a specific person or dictionary.",
+      "meaning_confidence": "LOW"
+    },
+    "etymology": {
+      "primary_language": "Arabic",
+      "lexical_form": "أبانة",
+      "transliteration": "abanah",
+      "root": null,
+      "root_transliteration": null,
+      "morphology": "Not assigned without specialist lexical evidence.",
+      "feminine_form": null,
+      "etymological_meaning": "Arabic historical name form; exact lexical meaning not established in this draft.",
+      "root_family": [],
+      "etymology_explanation": "Exact etymology remains unverified; no folk derivation is asserted.",
+      "etymology_confidence": "LOW",
+      "false_etymology_warning": "Do not infer a definitive meaning from spelling alone."
+    },
+    "language": {
+      "primary": "Arabic",
+      "associated_languages": [
+        "Arabic"
+      ],
+      "language_notes": {
+        "primary": "The draft records أبانة as the Arabic-script form.",
+        "usage": "Transliterations and alternate spellings require review."
+      },
+      "language_confidence": "MEDIUM"
+    },
+    "origin": {
+      "primary_origin": "Arabic historical usage",
+      "origin_type": "historical personal-name form",
+      "origin_confidence": "LOW",
+      "origin_explanation": "Abanah is a historical name form requiring direct biographical-source verification.",
+      "cultural_transmission": [
+        "Arabic",
+        "Historical Muslim naming contexts"
+      ]
+    },
+    "religion": {
+      "primary_association": "Historical Muslim naming context",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Historical usage; no exclusive religious status asserted",
+      "religious_explanation": "Historical Muslim use does not establish Qur'anic status or religious prescription.",
+      "quranic_status": {
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "No claim of Qur'anic personal-name status is made."
+      },
+      "hadith_status": {
+        "status": "not_verified",
+        "note": "No hadith prescribing this name is claimed."
+      },
+      "prophetic_status": {
+        "status": "not_verified",
+        "note": "No prophet-name claim is made."
+      },
+      "companion_status": {
+        "status": "requires_manual_verification",
+        "note": "Abanah is a historical name form requiring direct biographical-source verification."
+      }
+    },
+    "islamic_naming_context": {
+      "can_be_used_by_muslims": true,
+      "context": "Historical Muslim naming context",
+      "interpretation": "Historical attestation may help document use, but does not establish religious merit.",
+      "important_distinction": "Do not equate historical usage with Qur'anic status or current popularity."
+    },
+    "cultural_context": {
+      "primary_cultural_associations": [
+        "Arabic",
+        "Historical Muslim communities"
+      ],
+      "cultural_meaning": "Arabic historical name form; exact lexical meaning not established in this draft.",
+      "personal_name_interpretation": "No personality or spiritual interpretation is inferred.",
+      "interpretation_warning": "Distinguish lexical meaning from historical use."
+    },
+    "semantic_field": {
+      "primary_semantic_domain": "Arabic historical name form; exact lexical meaning not established in this draft.",
+      "related_concepts": []
+    },
+    "spiritual_meaning": {
+      "status": "interpretive",
+      "render": true,
+      "meaning": "Families may read the sense “Arabic historical name form; exact lexical meaning not established in this draft.” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Arabic historical name form; exact lexical meaning not established in this draft..",
+      "is_direct_religious_definition": false
+    },
+    "personality_associations": {
+      "status": "not_verified",
+      "render": false,
+      "note": "No evidence links the name to personality traits."
+    },
+    "hidden_personality_traits": {
+      "status": "not_verified",
+      "render": false,
+      "note": "No evidence supports hidden traits."
+    },
+    "numerology": {
+      "status": "not_verified",
+      "render": false,
+      "lucky_number": null,
+      "life_path_number": null,
+      "ruling_planet": null,
+      "lucky_day": null,
+      "lucky_colors": [],
+      "lucky_stone": null,
+      "meaning": "No factual destiny or personality claim is made.",
+      "note": "Non-empirical numerology is not presented as fact."
+    },
+    "lucky_attributes": {
+      "status": "not_verified",
+      "render": false,
+      "lucky_number": null,
+      "lucky_day": null,
+      "lucky_colors": [],
+      "lucky_stone": null,
+      "ruling_planet": null
+    },
+    "translations": {
+      "english": {
+        "name": "Abanah",
+        "script": "Abanah",
+        "meaning": "Arabic historical name form; exact lexical meaning not established in this draft.",
+        "long_meaning": "Abanah (أبانة) is recorded as an Arabic historical personal-name form. Arabic historical name form; exact lexical meaning not established in this draft."
+      },
+      "urdu": {
+        "name": "أبانة",
+        "script": "أبانة",
+        "meaning": "عربی تاریخی نام؛ قطعی لغوی معنی کی تصدیق درکار ہے",
+        "long_meaning": "Abanah (أبانة) عربی تاریخی نام کے طور پر درج ہے۔ اس کے لغوی معنی اور اصل کی حتمی تصدیق کے لیے معتبر لغت اور تاریخی ماخذ کا جائزہ ضروری ہے۔"
+      },
+      "persian": {
+        "name": "أبانة",
+        "script": "أبانة",
+        "meaning": "نام تاریخی کاربرد عربی دارد؛ ریشهٔ دقیق نیازمند بررسی است",
+        "long_meaning": "Abanah (أبانة) به‌عنوان نامی در کاربرد تاریخی عربی ثبت شده است. برای تعیین دقیق ریشه و معنی باید منابع لغوی و تاریخی معتبر بررسی شوند."
+      },
+      "hindi": {
+        "name": "Abanah",
+        "script": "Abanah",
+        "meaning": "अरबी ऐतिहासिक नाम; सटीक व्युत्पत्ति की पुष्टि आवश्यक",
+        "long_meaning": "Abanah (أبانة) अरबी ऐतिहासिक व्यक्तिगत नाम के रूप में दर्ज है। इसके सटीक अर्थ और व्युत्पत्ति की पुष्टि के लिए विश्वसनीय शब्दकोश और ऐतिहासिक स्रोतों की समीक्षा आवश्यक है।"
+      },
+      "pashto": {
+        "name": "أبانة",
+        "script": "أبانة",
+        "meaning": "عربي تاریخي نوم؛ د کره مانا تایید ته اړتیا لري",
+        "long_meaning": "Abanah (أبانة) د عربي تاریخي شخصي نوم په توګه ثبت شوی. د کره مانا او ریښې د تایید لپاره د باوري لغت او تاریخي سرچینو بیاکتنه اړینه ده.",
+        "native_review_required": true
+      },
+      "arabic": {
+        "name": "أبانة",
+        "script": "أبانة",
+        "meaning": "اسم تاريخي؛ يحتاج الاشتقاق الدقيق إلى تحقق معجمي",
+        "long_meaning": "يُسجَّل أبانة بوصفه صيغة اسم شخصي في الاستعمال التاريخي العربي. ولا يُجزم بمعناه الاشتقاقي الدقيق قبل مراجعة معجم عربي متخصص ومصدر تاريخي موثوق.",
+        "native_review_required": true
+      }
+    },
+    "translation_quality": {
+      "strategy": "conservative descriptive translation",
+      "confidence": "LOW",
+      "native_review_required": true,
+      "note": "Translations describe the current uncertainty; they are not certified native-reviewed name-meaning translations."
+    },
+    "pronunciation": {
+      "romanized": "aa-bid",
+      "ipa": null,
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "أبانة"
+      }
+    },
+    "name_variants": {
+      "romanized_variants": [],
+      "script_forms": [
+        "أبانة"
+      ],
+      "variant_notes": "Alternate spellings and alias collisions still require a full-dataset scan.",
+      "do_not_merge_with": []
+    },
+    "related_names": [],
+    "historical_context": {
+      "status": "requires_source_review",
+      "note": "Abanah is a historical name form requiring direct biographical-source verification."
+    },
+    "modern_usage": {
+      "status": "requires_frequency_data",
+      "note": "Modern popularity has not been measured."
+    },
+    "popularity": {
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No registration dataset checked."
+    },
+    "celebrity_usage": {
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No celebrity claims are made."
+    },
+    "real_world_usage": {
+      "status": "not_verified",
+      "render": false,
+      "note": "No personal story is invented."
+    },
+    "name_story": {
+      "status": "none",
+      "render": false,
+      "story": ""
+    },
+    "faq": [
+      {
+        "q": "What does Abanah mean?",
+        "a": "The exact lexical meaning of أبانة is not established by the current evidence."
+      },
+      {
+        "q": "What is the origin of Abanah?",
+        "a": "The form is recorded as Arabic, but the exact historical identity and etymology need direct sources."
+      },
+      {
+        "q": "How is Abanah written in Arabic?",
+        "a": "The record's Arabic form is أبانة; name-specific usage remains under review."
+      },
+      {
+        "q": "Is Abanah an Islamic name?",
+        "a": "No root is asserted pending direct lexical verification."
+      },
+      {
+        "q": "Is Abanah mentioned in the Qur'an?",
+        "a": "A specific religious status is not established by the current source."
+      },
+      {
+        "q": "Is Abanah a Companion's name?",
+        "a": "This record does not establish Abanah as a Qur'anic personal name."
+      },
+      {
+        "q": "How is Abanah pronounced?",
+        "a": "The current Urdu translation is provisional and needs direct evidence."
+      },
+      {
+        "q": "Is Abanah popular today?",
+        "a": "Pronunciation is approximate until the form is verified."
+      },
+      {
+        "q": "Are the meaning and translations fully verified?",
+        "a": "The gender assignment needs a direct historical/usage source."
+      }
+    ],
+    "seo": {
+      "title": "Abanah Name Meaning, Arabic Form & Historical Context",
+      "meta_description": "Research entry for Abanah (أبانة), with cautious meaning notes and historical context.",
+      "meta_keywords": "Abanah meaning, Abanah Arabic, Abanah origin",
+      "description_paragraph": "A cautious research entry for Abanah, with Arabic script and clearly marked verification needs.",
+      "keywords": [
+        "Abanah meaning",
+        "Abanah Arabic",
+        "Abanah origin"
+      ],
+      "focus_keyword": "Abanah meaning",
+      "secondary_keywords": [
+        "Abanah Arabic",
+        "Abanah origin"
+      ],
+      "canonical_url": "https://nameverse.site/names/islamic/abanah",
+      "seo_score": 70,
+      "seo_score_basis": "Draft score only; direct evidence and editorial verification are incomplete."
+    },
+    "seo_content": {
+      "intro_paragraph": "This research draft documents Abanah (أبانة) as an Arabic historical personal-name form.",
+      "body_summary": "Historical attestation is distinguished from definitive etymology and modern popularity."
+    },
+    "social_tags": [
+      "#Abanah",
+      "#ArabicNames",
+      "#NameHistory"
+    ],
+    "content_quality": {
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "source_verification_required",
+        "lexical_review_required",
+        "native_translation_review_required",
+        "alias_scan_required",
+        "historical_name_form_needs_direct_biographical_source",
+        "lexical_meaning_unverified",
+        "gender_claim_needs_source"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 153,
+      "quality_score": 80,
+      "quality_score_basis": "Provisional editorial score only; source support for lexical claims does not certify name use, popularity, religious status, or native translation quality."
+    },
+    "evidence": {
+      "sources": [
+        "https://sunnah.com/search?q=Abanah"
+      ],
+      "verification_method": "Checked only the listed lexical/reference sources. Claims without direct evidence remain provisional; modern name use and translation fluency require separate review.",
+      "claim_evidence": [
+        {
+          "claim": "The current search URL does not independently verify the exact form, meaning, or gender; claims remain provisional.",
+          "source": "https://sunnah.com/search?q=Abanah",
+          "status": "source_checked"
+        },
+        {
+          "claim": "Personal-name usage, frequency, and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
+        }
+      ],
+      "claim_evidence_status": "SOURCE_CHECKED; NAME_USAGE_AND_TRANSLATIONS_PENDING"
+    },
+    "provenance": {
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Checked direct lexical/reference sources where listed; corrected contradictory glosses and translation errors; separated lexical meaning from personal-name usage.",
+      "upgraded_from": "super-2.0 template",
+      "processed_at": "2026-10-16T00:00:00+00:00"
+    },
+    "structured_data": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "DefinedTerm",
+          "description": "Abanah — Abanah (أبانة) is recorded as a historical Arabic name form, but its exact lexical meaning and intended morphology remain unverified.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          },
+          "name": "Abanah"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abanah mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The exact lexical meaning of أبانة is not established by the current evidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abanah?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form is recorded as Arabic, but the exact historical identity and etymology need direct sources."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abanah written in Arabic?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record's Arabic form is أبانة; name-specific usage remains under review."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abanah an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No root is asserted pending direct lexical verification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abanah mentioned in the Qur'an?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A specific religious status is not established by the current source."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abanah a Companion's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Abanah as a Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abanah pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The current Urdu translation is provisional and needs direct evidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abanah popular today?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pronunciation is approximate until the form is verified."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are the meaning and translations fully verified?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The gender assignment needs a direct historical/usage source."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abanah",
+              "item": "https://nameverse.site/names/islamic/abanah"
+            }
+          ]
+        }
+      ]
+    },
+    "editorial_validation": {
+      "needs_manual_verification": true,
+      "flags": [
+        "source_verification",
+        "dictionary_etymology",
+        "native_translation",
+        "alias_scan",
+        "historical_name_form_needs_direct_biographical_source",
+        "lexical_meaning_unverified",
+        "gender_claim_needs_source"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; manual name-use/translation review pending",
+      "reviewed_at": "2026-10-16"
+    },
+    "render_policy": {
+      "render_verified": false,
+      "render_interpretive": false,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
+    }
+  }
+}

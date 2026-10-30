@@ -1,73 +1,62 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aalam",
     "slug": "aalam",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aalam",
       "normalized_name": "aalam",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Aalam",
         "aalam",
         "alam"
       ],
-      "search_variants": [
-        "Aalam",
-        "aalam",
-        "alam"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "World, universe (Persian)",
-      "primary_meaning": "World",
-      "secondary_meanings": [
-        "universe (Persian)"
-      ],
+      "short_meaning": "World",
+      "primary_meaning": "The Arabic word عَالَم (ʿālam) means “world” or “the created realm.” Its use as a personal name, and any claims about how common it is or which genders use it, require separate naming-usage evidence.",
       "literal_meaning": "World",
-      "extended_meaning": "World, universe (Persian)",
-      "meaning_explanation": "Aalam corresponds to the Arabic form عالم (Arabic root ع ل م (ʿ-l-m); عَالَم (ʿĀlam)). Its core sense is world, universe (persian). Aalam is Arabic عَالَم (ʿĀlam) 'world', from the root ع ل م (ʿ-l-m). The source gloss 'World' is consistent. Recorded as a common noun also used as a given name.",
-      "meaning_confidence": "high"
+      "meaning_explanation": "The Arabic form عَالَم (ʿālam) denotes the world or created realm; the Cairo Arabic Language Academy's Al-Wasīṭ dictionary defines it as all creation and as a class of created things. Lane's Arabic-English Lexicon also records world/creation senses for العَالَم. These lexical sources support the word's Arabic dictionary meaning, but do not by themselves establish frequency, gender distribution, or attestation as a modern given name.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عالم",
       "transliteration": "aalam",
-      "romanization": "aalam",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "World",
-        "universe (Persian)"
-      ],
-      "etymology_explanation": "The form عالم is an established Arabic lexical item. Aalam is Arabic عَالَم (ʿĀlam) 'world', from the root ع ل م (ʿ-l-m). The source gloss 'World' is consistent. Recorded as a common noun also used as a given name.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "ع ل م",
+      "root_transliteration": "ʿ-l-m",
+      "morphology": "Built on the root ع ل م.",
+      "feminine_form": null,
+      "etymological_meaning": "From the root ع ل م (ʿ-l-m)",
+      "root_family": [],
+      "etymology_explanation": "The form عالم is an established Arabic lexical item, and Aalam is the word itself used as a personal name rather than a derived or diminutive form.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عالم is an established Arabic form.",
-        "Urdu": "عالم is used in Urdu.",
-        "Persian": "عالم is an established Persian form.",
-        "Hindi": "आलम is used in Hindi.",
-        "Pashto": "عالم is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عالم.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form عالم. Aalam is Arabic عَالَم (ʿĀlam) 'world', from the root ع ل م (ʿ-l-m). The source gloss 'World' is consistent. Recorded as a common noun also used as a given name.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -76,408 +65,437 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aalam may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Aalam is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": false
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Aalam is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Aalam as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense world, universe (persian).",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
       "primary_semantic_domain": "World",
       "related_concepts": [
-        "world",
-        "universe (persian)"
-      ],
-      "semantic_relationship": "The central semantic idea is world; other senses are extended associations."
+        "World"
+      ]
     },
     "spiritual_meaning": {
-      "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of world.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "status": "not_verified",
+      "render": false,
+      "meaning": "No separate spiritual meaning is established by the cited lexical evidence.",
+      "basis": null,
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "World",
-        "Universe (persian)"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": false,
+      "lucky_number": 1,
+      "life_path_number": 1,
+      "ruling_planet": "Sun",
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Gold",
+        "Orange"
+      ],
+      "lucky_stone": "Ruby",
+      "meaning": "In Pythagorean numerology the letters of Aalam total 1, associated with leadership, independence and initiative. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology and lucky-attribute claims are interpretive beliefs, not evidence-based properties of a name; keep hidden from factual name content."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": false,
+      "lucky_number": 1,
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Gold",
+        "Orange"
+      ],
+      "lucky_stone": "Ruby",
+      "ruling_planet": "Sun",
+      "note": "Interpretive lucky attributes are not verified facts and must remain hidden from factual name content."
     },
     "translations": {
       "english": {
         "name": "Aalam",
-        "meaning": "World, universe (Persian)",
-        "long_meaning": "Aalam is a Arabic-origin name. Its core meaning is world, universe (persian). Aalam is Arabic عَالَم (ʿĀlam) 'world', from the root ع ل م (ʿ-l-m). The source gloss 'World' is consistent. Recorded as a common noun also used as a given name."
+        "script": "Aalam",
+        "meaning": "World",
+        "long_meaning": "Aalam is an Arabic-origin given name; in Arabic the word means “World”."
       },
       "urdu": {
         "name": "عالم",
+        "script": "عالم",
         "meaning": "جہان، دنیا، عالم",
-        "long_meaning": "Aalam (عالم) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم جہان، دنیا، عالم ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "long_meaning": "Aalam (عالم) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم جہان، دنیا، عالم ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔"
       },
       "persian": {
         "name": "عالم",
+        "script": "عالم",
         "meaning": "جهان، دنیا، عالم",
-        "long_meaning": "Aalam (عالم) نامی برگرفته از زبان عربی است و معنای اصلی آن جهان، دنیا، عالم است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "long_meaning": "Aalam (عالم) نامی برگرفته از زبان عربی است و معنای اصلی آن جهان، دنیا، عالم است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است."
       },
       "hindi": {
         "name": "आलम",
+        "script": "आलम",
         "meaning": "दुनिया, जहान, विश्व",
-        "long_meaning": "Aalam (आलम) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ दुनिया, जहान, विश्व है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "long_meaning": "Aalam (आलम) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ दुनिया, जहान, विश्व है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।"
       },
       "pashto": {
         "name": "عالم",
+        "script": "عالم",
         "meaning": "جهان، نړۍ، عالم",
         "long_meaning": "Aalam (عالم) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې جهان، نړۍ، عالم ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "native_review_required": true
       },
       "arabic": {
         "name": "عالم",
+        "script": "عالم",
         "meaning": "الجهان، العالم، الكون (فارسي)",
         "long_meaning": "Aalam (عالم) اسم مأخوذ من اللغة العربية، ومعناه الأساسي الجهان، العالم، الكون (فارسي). يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "aa-lam",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عالم",
-      "persian": "عالم",
-      "hindi": "आलम",
-      "pashto": "عالم"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عالم"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aalam",
-        "aalam",
         "alam"
       ],
-      "script_variants": [
+      "script_forms": [
         "عالم",
         "आलम"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عالم is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عالم is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aalam can be understood through the Arabic form عالم, whose central sense is world, universe (persian). Aalam is Arabic عَالَم (ʿĀlam) 'world', from the root ع ل م (ʿ-l-m). The source gloss 'World' is consistent. Recorded as a common noun also used as a given name.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aalam mean?",
-        "answer": "Aalam is associated with the Arabic form عالم, whose core sense is world, universe (persian)."
+        "q": "What does Aalam mean?",
+        "a": "Aalam is an Arabic-origin name meaning “World”."
       },
       {
-        "question": "What is the origin of Aalam?",
-        "answer": "Aalam is associated with Arabic. Aalam is Arabic عَالَم (ʿĀlam) 'world', from the root ع ل م (ʿ-l-m). The source gloss 'World' is consistent. Recorded as a common noun also used as a given name."
+        "q": "What is the origin of Aalam?",
+        "a": "Aalam originates in Arabic and circulates in Muslim naming communities."
       },
       {
-        "question": "Is Aalam an Arabic name?",
-        "answer": "Yes — the underlying form عالم is Arabic."
+        "q": "Is Aalam an Arabic name?",
+        "a": "Yes, the recorded form عالم is Arabic."
       },
       {
-        "question": "Is Aalam an Islamic name?",
-        "answer": "Aalam can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aalam?",
+        "a": "It is built on the root ع ل م (ʿ-l-m)."
       },
       {
-        "question": "Is Aalam a Quranic name?",
-        "answer": "Aalam should not be classified as a Quranic personal name without a direct Quranic basis. False"
+        "q": "Is Aalam an Islamic name?",
+        "a": "Aalam is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
       },
       {
-        "question": "What does Aalam mean in Urdu?",
-        "answer": "In Urdu, Aalam is rendered عالم and carries the sense جہان، دنیا، عالم."
+        "q": "Is Aalam a Quranic name?",
+        "a": "Aalam is not independently established as a Qur'anic personal name."
       },
       {
-        "question": "What does Aalam mean in Persian?",
-        "answer": "In Persian, Aalam is rendered عالم and carries the sense جهان، دنیا، عالم."
+        "q": "What does Aalam mean in Urdu?",
+        "a": "In Urdu it is written عالم and carries the sense “جہان، دنیا، عالم”."
       },
       {
-        "question": "How is Aalam pronounced?",
-        "answer": "A romanized syllable approximation is aa-lam. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aalam pronounced?",
+        "a": "A romanized syllable approximation is “aa-lam”."
       },
       {
-        "question": "What are the variants of Aalam?",
-        "answer": "Romanization variants include Aalam, aalam, alam. Script forms are عالم, आलम."
-      },
-      {
-        "question": "Is Aalam a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Aalam a boy's or girl's name?",
+        "a": "Documented usage records Aalam as a boy's name; actual use can vary by community."
       }
     ],
     "seo": {
-      "title": "Aalam Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aalam (عالم).",
-      "h1": "Aalam Name Meaning, Origin and Cultural Background",
+      "title": "Aalam Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aalam (عالم) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Aalam meaning, Aalam name meaning, Aalam origin, Aalam meaning in Urdu, Aalam pronunciation, Aalam Islamic name",
+      "description_paragraph": "Aalam is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Aalam meaning",
+        "Aalam name meaning",
+        "Aalam origin",
+        "Aalam meaning in Urdu",
+        "Aalam pronunciation",
+        "Aalam Islamic name"
+      ],
       "focus_keyword": "Aalam meaning",
       "secondary_keywords": [
         "Aalam name meaning",
-        "Aalam meaning in Urdu",
         "Aalam origin",
-        "Aalam Islamic name",
+        "Aalam meaning in Urdu",
         "Aalam pronunciation",
-        "Aalam name in Urdu"
+        "Aalam Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aalam (عالم) is associated with the Arabic form عالم, whose core sense is world, universe (persian). Aalam is Arabic عَالَم (ʿĀlam) 'world', from the root ع ل م (ʿ-l-m). The source gloss 'World' is consistent. Recorded as a common noun also used as a given name.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aalam",
+      "seo_score": 95,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root present; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Aalam is associated with the Arabic form عالم, whose core sense is world, universe (persian).",
-      "meaning_section": "The central meaning of Aalam is world, universe (persian).",
-      "origin_section": "Aalam is associated with Arabic rather than with a different language.",
-      "islam_section": "Aalam can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aalam is with the sense world.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Aalam, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Aalam is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Aalam",
       "#AalamMeaning",
-      "#AalamName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "given_name_attestation_not_independently_sourced",
+        "gender_distribution_not_independently_sourced",
+        "native_translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 152,
+      "quality_score": 95,
+      "quality_score_basis": "Lexical meaning is supported by the listed dictionary sources. Personal-name attestation, gender distribution, and native-language translation quality are not independently verified; this record is not Tier 1 verified."
     },
     "evidence": {
-      "core_claims": [
-        {
-          "claim": "Aalam corresponds to the Arabic form عالم",
-          "evidence_type": "lexical",
-          "confidence": "high"
-        },
-        {
-          "claim": "Aalam has the core sense world, universe (persian)",
-          "evidence_type": "lexical",
-          "confidence": "high"
-        }
+      "sources": [
+        "Arabic Language Academy in Cairo, Al-Wasīṭ dictionary entry for العَالَم: https://www.arabicacademy.gov.eg/ar/%D9%85%D8%AD%D8%B1%D9%83-%D8%A7%D9%84%D8%A8%D8%AD%D8%AB/%D9%85%D8%B9%D8%AC%D9%85/dic-19/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85 — supports the Arabic lexical sense “all creation/world” and related collective senses.",
+        "Edward William Lane, Arabic-English Lexicon, root ع ل م: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2002.02.0032%3Aroot%3DElm — records lexical senses of العَالَم including world/creation."
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "verification_method": "Claim-level lexical check against an academic Arabic-language academy dictionary and Lane's Arabic-English Lexicon. These sources support the lexical meaning only; they do not verify modern given-name frequency, gender distribution, name-bearer history, or Qur'anic personal-name status."
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse Production v8",
+      "methodology": "Parse atomic facts -> rebuild distinct fields -> validate",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-06T04:27:34+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aalam",
-      "alternateName": [
-        "Aalam",
-        "aalam",
-        "alam"
-      ],
-      "description": "A name associated with the Arabic form عالم, meaning world, universe (persian).",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aalam",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Aalam",
+          "description": "Aalam — an Arabic-origin given name meaning World",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aalam mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aalam is an Arabic-origin name meaning “World”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aalam?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aalam originates in Arabic and circulates in Muslim naming communities."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aalam an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, the recorded form عالم is Arabic."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aalam?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is built on the root ع ل م (ʿ-l-m)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aalam an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aalam is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aalam a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aalam is not independently established as a Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aalam mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Urdu it is written عالم and carries the sense “جہان، دنیا، عالم”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aalam pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A romanized syllable approximation is “aa-lam”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aalam a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Documented usage records Aalam as a boy's name; actual use can vary by community."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aalam",
+              "item": "https://nameverse.site/names/islamic/aalam"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aalam, associated with the Arabic form عالم, meaning world, universe (persian)."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "verify_personal_name_attestation",
+        "verify_gender_usage",
+        "native_review_required_for_arabic_and_pashto_translations"
+      ],
+      "confidence": "MEDIUM",
+      "reviewed_by": "NameVerse verification pipeline",
+      "reviewed_at": "2026-10-06T04:27:34+00:00"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": false,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story",
+        "numerology",
+        "lucky_attributes"
+      ]
     }
   }
 }

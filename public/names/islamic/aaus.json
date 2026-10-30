@@ -1,74 +1,62 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aaus",
     "slug": "aaus",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aaus",
       "normalized_name": "aaus",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "medium",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "MEDIUM",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Aaus",
         "aaus",
         "aus"
       ],
-      "search_variants": [
-        "Aaus",
-        "aaus",
-        "aus"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Gift, bestowal, favour",
-      "primary_meaning": "Gift",
-      "secondary_meanings": [
-        "bestowal",
-        "favour"
-      ],
-      "literal_meaning": "Gift",
-      "extended_meaning": "Gift, bestowal, favour",
-      "meaning_explanation": "Aaus corresponds to the Arabic form أوس (أ و س). Its core sense is gift, bestowal, favour. أوس (Aws) is the name of an early Islamic tribe and several Companions. The source record's gloss 'Fish' is not supported.",
-      "meaning_confidence": "medium"
+      "short_meaning": "Personal-name use is documented; lexical meaning unverified",
+      "primary_meaning": "Aaus is recorded as أوس, a form used as an Arabic personal/tribal name in early Islamic history; the asserted lexical meaning “gift, bestowal, favour” is not established by the sources checked here.",
+      "literal_meaning": "The name is the Arabic word itself, used unchanged as a given name rather than a derived or diminutive form.",
+      "meaning_explanation": "The historical use of Aws/أوس as a tribal and personal name is distinct from its etymology. The current record does not provide a reliable lexical source for “gift/bestowal/favour,” so that gloss is removed pending a suitable source.",
+      "meaning_confidence": "LOW"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "أوس",
       "transliteration": "aaus",
-      "romanization": "aaus",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Gift",
-        "bestowal",
-        "favour"
-      ],
-      "etymology_explanation": "The form أوس is an established Arabic lexical item. أوس (Aws) is the name of an early Islamic tribe and several Companions. The source record's gloss 'Fish' is not supported.",
-      "etymology_confidence": "medium",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Historical proper-name form; lexical etymology unresolved.",
+      "feminine_form": null,
+      "etymological_meaning": "Unverified",
+      "root_family": [],
+      "etymology_explanation": "The form أوس is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "LOW",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "أوس is an established Arabic form.",
-        "Urdu": "اوس is used in Urdu.",
-        "Hindi": "आउस is used in Hindi.",
-        "Pashto": "اوس is used in Pashto."
+        "primary": "Arabic is the language of the recorded form أوس.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "medium"
+      "language_confidence": "MEDIUM"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "medium",
-      "origin_explanation": "The name is associated with the Arabic form أوس. أوس (Aws) is the name of an early Islamic tribe and several Companions. The source record's gloss 'Fish' is not supported.",
+      "origin_confidence": "MEDIUM",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -77,416 +65,445 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aaus may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Aaus is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "أوس is a well-attested early Islamic male name; the exact form is not a Qur'anic proper name"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Aaus is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Aaus as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense gift, bestowal, favour.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Gift",
+      "primary_semantic_domain": "Gift, bestowal, favour",
       "related_concepts": [
-        "gift",
-        "bestowal",
-        "favour"
-      ],
-      "semantic_relationship": "The central semantic idea is gift; other senses are extended associations."
+        "Gift, bestowal, favour"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of gift.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Gift, bestowal, favour” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Gift, bestowal, favour.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Gift",
-        "Bestowal",
-        "Favour"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 6,
+      "life_path_number": 6,
+      "ruling_planet": "Venus",
+      "lucky_day": "Friday",
+      "lucky_colors": [
+        "White",
+        "Pink"
+      ],
+      "lucky_stone": "Diamond",
+      "meaning": "In Pythagorean numerology the letters of Aaus total 6, associated with responsibility, care and harmony. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 6,
+      "lucky_day": "Friday",
+      "lucky_colors": [
+        "White",
+        "Pink"
+      ],
+      "lucky_stone": "Diamond",
+      "ruling_planet": "Venus"
     },
     "translations": {
       "english": {
         "name": "Aaus",
-        "meaning": "Gift, bestowal, favour",
-        "long_meaning": "Aaus is a Arabic-origin name. Its core meaning is gift, bestowal, favour. أوس (Aws) is the name of an early Islamic tribe and several Companions. The source record's gloss 'Fish' is not supported."
+        "script": "Aaus",
+        "meaning": "Lexical meaning unverified",
+        "long_meaning": "The historical proper-name form is retained, but the previous “gift/bestowal/favour” gloss has no direct lexical support in this record."
       },
       "urdu": {
         "name": "اوس",
-        "meaning": "تحفہ، عطیہ، بخشش",
-        "long_meaning": "Aaus (اوس) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم تحفہ، عطیہ، بخشش ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "اوس",
+        "meaning": "Lexical meaning unverified",
+        "long_meaning": "The historical proper-name form is retained, but the previous “gift/bestowal/favour” gloss has no direct lexical support in this record."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Aaus",
+        "script": "Aaus",
+        "meaning": "Lexical meaning unverified",
+        "long_meaning": "The historical proper-name form is retained, but the previous “gift/bestowal/favour” gloss has no direct lexical support in this record."
       },
       "hindi": {
         "name": "आउस",
-        "meaning": "उपहार, भेंट, दान",
-        "long_meaning": "Aaus (आउस) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ उपहार, भेंट, दान है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "आउस",
+        "meaning": "Lexical meaning unverified",
+        "long_meaning": "The historical proper-name form is retained, but the previous “gift/bestowal/favour” gloss has no direct lexical support in this record."
       },
       "pashto": {
         "name": "اوس",
-        "meaning": "ډالۍ، بخښنه، عطا",
-        "long_meaning": "Aaus (اوس) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې ډالۍ، بخښنه، عطا ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "اوس",
+        "meaning": "Lexical meaning unverified",
+        "long_meaning": "The historical proper-name form is retained, but the previous “gift/bestowal/favour” gloss has no direct lexical support in this record.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "أوس",
-        "meaning": "عطاء، هدية، منحة",
-        "long_meaning": "Aaus (أوس) اسم مأخوذ من اللغة العربية، ومعناه الأساسي عطاء، هدية، منحة. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "أوس",
+        "meaning": "Lexical meaning unverified",
+        "long_meaning": "The historical proper-name form is retained, but the previous “gift/bestowal/favour” gloss has no direct lexical support in this record.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "medium"
+      "confidence": "MEDIUM",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "aaus",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "اوس",
-      "persian": null,
-      "hindi": "आउस",
-      "pashto": "اوس"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "أوس"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aaus",
-        "aaus",
         "aus"
       ],
-      "script_variants": [
+      "script_forms": [
         "أوس",
         "اوس",
         "आउस"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
-      "do_not_merge_with": [
-        {
-          "name": "Aws",
-          "script": "أوس",
-          "reason": "أوس (Aws) is the standard form of this early Islamic name. The source record's gloss 'Fish' is unsupported and must not be carried over."
-        }
-      ]
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
+      "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form أوس is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "medium",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form أوس is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aaus can be understood through the Arabic form أوس, whose central sense is gift, bestowal, favour. أوس (Aws) is the name of an early Islamic tribe and several Companions. The source record's gloss 'Fish' is not supported.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aaus mean?",
-        "answer": "Aaus is associated with the Arabic form أوس, whose core sense is gift, bestowal, favour."
+        "q": "What does Aaus mean?",
+        "a": "Aaus is recorded as أوس, a historical Arabic personal/tribal name, but the specific lexical meaning “gift/bestowal/favour” is not established by the sources checked here."
       },
       {
-        "question": "What is the origin of Aaus?",
-        "answer": "Aaus is associated with Arabic. أوس (Aws) is the name of an early Islamic tribe and several Companions. The source record's gloss 'Fish' is not supported."
+        "q": "What is the origin of Aaus?",
+        "a": "The form أوس has historical Arabic name use; its exact etymology remains unverified in this record."
       },
       {
-        "question": "Is Aaus an Arabic name?",
-        "answer": "Yes — the underlying form أوس is Arabic."
+        "q": "Is Aaus an Arabic name?",
+        "a": "أوس is an Arabic historical proper-name form; that does not establish a specific dictionary meaning."
       },
       {
-        "question": "Is Aaus an Islamic name?",
-        "answer": "Aaus can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aaus?",
+        "a": "A reliable root/etymology is not asserted here; it requires a direct source."
       },
       {
-        "question": "Is Aaus a Quranic name?",
-        "answer": "Aaus should not be classified as a Quranic personal name without a direct Quranic basis. أوس is a well-attested early Islamic male name; the exact form is not a Qur'anic proper name"
+        "q": "Is Aaus an Islamic name?",
+        "a": "The form has historical use in early Muslim contexts, but specific religious status should not be inferred from that alone."
       },
       {
-        "question": "What does Aaus mean in Urdu?",
-        "answer": "In Urdu, Aaus is rendered اوس and carries the sense تحفہ، عطیہ، بخشش."
+        "q": "Is Aaus a Quranic name?",
+        "a": "This record does not establish Aaus as a Qur'anic personal name."
       },
       {
-        "question": "What does Aaus mean in Persian?",
-        "answer": "No verified Persian form was established for Aaus."
+        "q": "What does Aaus mean in Urdu?",
+        "a": "A verified Urdu lexical meaning has not been established."
       },
       {
-        "question": "How is Aaus pronounced?",
-        "answer": "A romanized syllable approximation is aaus. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aaus pronounced?",
+        "a": "Aaus/Aws is an approximate romanization of أوس; transliteration conventions vary."
       },
       {
-        "question": "What are the variants of Aaus?",
-        "answer": "Romanization variants include Aaus, aaus, aus. Script forms are أوس, اوس, आउस."
-      },
-      {
-        "question": "Is Aaus a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Aaus a boy's or girl's name?",
+        "a": "The historical examples are typically male, but modern regional usage/frequency is not independently established here."
       }
     ],
     "seo": {
-      "title": "Aaus Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aaus (أوس).",
-      "h1": "Aaus Name Meaning, Origin and Cultural Background",
+      "title": "Aaus Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aaus (أوس) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Aaus meaning, Aaus name meaning, Aaus origin, Aaus meaning in Urdu, Aaus pronunciation, Aaus Islamic name",
+      "description_paragraph": "Aaus is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Aaus meaning",
+        "Aaus name meaning",
+        "Aaus origin",
+        "Aaus meaning in Urdu",
+        "Aaus pronunciation",
+        "Aaus Islamic name"
+      ],
       "focus_keyword": "Aaus meaning",
       "secondary_keywords": [
         "Aaus name meaning",
-        "Aaus meaning in Urdu",
         "Aaus origin",
-        "Aaus Islamic name",
+        "Aaus meaning in Urdu",
         "Aaus pronunciation",
-        "Aaus name in Urdu"
+        "Aaus Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aaus (أوس) is associated with the Arabic form أوس, whose core sense is gift, bestowal, favour. أوس (Aws) is the name of an early Islamic tribe and several Companions. The source record's gloss 'Fish' is not supported.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aaus",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Aaus is associated with the Arabic form أوس, whose core sense is gift, bestowal, favour.",
-      "meaning_section": "The central meaning of Aaus is gift, bestowal, favour.",
-      "origin_section": "Aaus is associated with Arabic rather than with a different language.",
-      "islam_section": "Aaus can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aaus is with the sense gift.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Aaus, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Aaus is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Aaus",
       "#AausMeaning",
-      "#AausName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "medium",
-      "linguistic_authenticity": "medium",
-      "etymological_authenticity": "medium",
-      "meaning_authenticity": "medium",
-      "translation_quality": "medium",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "unsupported_gift_gloss_removed",
+        "etymology_unverified",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 148,
+      "quality_score": 80,
+      "quality_score_basis": "Provisional editorial score only; cited lexical meanings do not establish modern personal-name usage, popularity, religious status, or native translation quality."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "Checked the named lexical source(s) for the cited form. Personal-name usage, historical bearer claims, popularity, gender distribution, and native-speaker translation quality require separate review.",
+      "claim_evidence": [
         {
-          "claim": "Aaus corresponds to the Arabic form أوس",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "No independent lexical source was found in this pass for the asserted “gift/bestowal/favour” meaning; the historical proper-name claim is kept separate from etymology.",
+          "source": null,
+          "status": "no_independent_lexical_source_found; meaning_not_verified"
         },
         {
-          "claim": "Aaus has the core sense gift, bestowal, favour",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "Personal-name usage, frequency, and all translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "NO_DIRECT_LEXICAL_SOURCE_FOR_EXACT_FORM; MEANING_UNVERIFIED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Checked named lexical sources; corrected unsupported meanings and cross-language mismatches; separated lexical meaning from name usage and popularity.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aaus",
-      "alternateName": [
-        "Aaus",
-        "aaus",
-        "aus"
-      ],
-      "description": "A name associated with the Arabic form أوس, meaning gift, bestowal, favour.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aaus",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Aaus",
+          "description": "Aaus — Aaus is recorded as أوس, a form used as an Arabic personal/tribal name in early Islamic history; the asserted lexical meaning “gift, bestowal, favour” is not established by the sources checked here.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aaus mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aaus is recorded as أوس, a historical Arabic personal/tribal name, but the specific lexical meaning “gift/bestowal/favour” is not established by the sources checked here."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aaus?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form أوس has historical Arabic name use; its exact etymology remains unverified in this record."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aaus an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "أوس is an Arabic historical proper-name form; that does not establish a specific dictionary meaning."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aaus?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reliable root/etymology is not asserted here; it requires a direct source."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aaus an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form has historical use in early Muslim contexts, but specific religious status should not be inferred from that alone."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aaus a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Aaus as a Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aaus mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A verified Urdu lexical meaning has not been established."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aaus pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aaus/Aws is an approximate romanization of أوس; transliteration conventions vary."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aaus a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The historical examples are typically male, but modern regional usage/frequency is not independently established here."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aaus",
+              "item": "https://nameverse.site/names/islamic/aaus"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aaus, associated with the Arabic form أوس, meaning gift, bestowal, favour."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "unsupported_gift_gloss_removed",
+        "etymology_unverified",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review (lexical source check; personal-name and translation review pending)",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

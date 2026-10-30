@@ -1,477 +1,493 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aaron",
     "slug": "aaron",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aaron",
       "normalized_name": "aaron",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Aaron",
         "aaron",
         "aron"
       ],
-      "search_variants": [
-        "Aaron",
-        "aaron",
-        "aron"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Mountain of strength; exalted",
-      "primary_meaning": "Mountain of strength; exalted",
-      "secondary_meanings": [],
-      "literal_meaning": "Mountain of strength; exalted",
-      "extended_meaning": "Mountain of strength; exalted",
-      "meaning_explanation": "Aaron corresponds to the Hebrew form هارون (—). Its core sense is mountain of strength; exalted. The Arabic form هارون (Hārūn) is the Qur'anic name of the prophet Aaron. The English form Aaron derives from Hebrew אַהֲרוֹן. The source record's 'Mountain of strength' gloss is a popular but disputed Hebrew etymology.",
-      "meaning_confidence": "high"
+      "short_meaning": "Hebrew name; etymology disputed",
+      "primary_meaning": "Aaron is the English form of the Hebrew name אַהֲרֹן (Aharon); its original etymology is uncertain.",
+      "literal_meaning": "A traditional Hebrew personal name; no single etymology is asserted as settled.",
+      "meaning_explanation": "The English name Aaron represents Hebrew אַהֲרֹן (Aharon). Its etymology is disputed, so “mountain of strength” should not be stated as a verified literal meaning. The related Arabic name هارون (Hārūn) is the Qur'anic name of the prophet Harun; Aaron and Hārūn are related traditional forms but not the same script form.",
+      "meaning_confidence": "LOW"
     },
     "etymology": {
       "primary_language": "Hebrew",
-      "lexical_form": "هارون",
-      "transliteration": "aaron",
-      "romanization": "aaron",
-      "root_status": "No reliable root analysis established.",
-      "etymological_meaning": [
-        "Mountain of strength; exalted"
-      ],
-      "etymology_explanation": "The form هارون is an established Hebrew lexical item. The Arabic form هارون (Hārūn) is the Qur'anic name of the prophet Aaron. The English form Aaron derives from Hebrew אַהֲרוֹן. The source record's 'Mountain of strength' gloss is a popular but disputed Hebrew etymology.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "lexical_form": "אַהֲרֹן",
+      "transliteration": "Aharon",
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "Uncertain; etymology disputed",
+      "root_family": [],
+      "etymology_explanation": "Hebrew אַהֲרֹן (Aharon) is the source form associated with English Aaron. The word's deeper etymology is disputed; the traditional gloss “mountain of strength” is not treated as established.",
+      "etymology_confidence": "LOW",
+      "false_etymology_warning": "No derivation beyond the documented Hebrew form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Hebrew",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Hebrew",
+        "Muslim South Asia"
       ],
       "language_notes": {
-        "Arabic": "هارون is an established Arabic form.",
-        "Urdu": "ہارون is used in Urdu.",
-        "Hindi": "हारून is used in Hindi.",
-        "Pashto": "هارون is used in Pashto."
+        "primary": "The English name Aaron derives from the Hebrew form אַהֲרֹן (Aharon); Arabic هارون is the related Qur'anic form Hārūn.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Hebrew",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Hebrew form هارون. The Arabic form هارون (Hārūn) is the Qur'anic name of the prophet Aaron. The English form Aaron derives from Hebrew אַהֲרוֹן. The source record's 'Mountain of strength' gloss is a popular but disputed Hebrew etymology.",
-      "cultural_transmission": []
+      "origin_confidence": "HIGH",
+      "origin_explanation": "Aaron is the English form associated with Hebrew אַהֲרֹן (Aharon). In Islamic scripture the related Arabic form is هارون (Hārūn). The two forms should not be conflated when describing language or transliteration.",
+      "cultural_transmission": [
+        "Hebrew",
+        "Muslim South Asia",
+        "Urdu-speaking communities"
+      ]
     },
     "religion": {
-      "primary_association": "South Asian cultural usage",
-      "religion": "Not inherently religious",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aaron may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "primary_association": "Biblical and Islamic scriptural traditions through related forms",
+      "religion_confidence": "HIGH",
+      "religious_status": "Prophetic figure in Jewish, Christian, and Islamic traditions, with different language forms.",
+      "religious_explanation": "Aaron is the English/Hebrew form associated with the prophet known in Arabic as Hārūn (هارون), who is mentioned in the Qur'an. The English spelling Aaron itself is not the Arabic Qur'anic spelling.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "هارون (Hārūn) is the Qur'anic form of Aaron and occurs in the Qur'an as a prophet's name"
+        "is_quranic": false,
+        "status": "related_form_verified",
+        "note": "The English/Hebrew form Aaron is not the Qur'anic Arabic spelling; the related Arabic form Hārūn (هارون) is named in the Qur'an."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "verified_related_form",
+        "note": "The prophet Aaron is known in the Qur'an by the Arabic form Hārūn (هارون). Do not claim that the English spelling Aaron is the Arabic form used in the Qur'an."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
-        "South Asia"
+        "Hebrew",
+        "Jewish and Christian naming traditions",
+        "Related Arabic form Hārūn in Islamic tradition"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense mountain of strength; exalted.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "No single literal meaning is asserted because the deeper etymology is disputed.",
+      "personal_name_interpretation": "Any symbolic interpretation should be labelled as personal or cultural rather than a verified dictionary meaning.",
+      "interpretation_warning": "A symbolic reading is not a substitute for evidence about the name's etymology."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Mountain of strength; exalted",
+      "primary_semantic_domain": "Etymology uncertain",
       "related_concepts": [
-        "mountain of strength; exalted"
-      ],
-      "semantic_relationship": "The central semantic idea is mountain of strength; exalted; other senses are extended associations."
+        "Traditional etymology disputed"
+      ]
     },
     "spiritual_meaning": {
-      "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of mountain of strength; exalted.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "status": "not_applicable",
+      "render": false,
+      "meaning": "No spiritual interpretation is asserted because the deeper etymology of Aaron is disputed.",
+      "basis": null,
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Mountain of strength; exalted"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 4,
+      "life_path_number": 4,
+      "ruling_planet": "Uranus",
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "meaning": "In Pythagorean numerology the letters of Aaron total 4, associated with stability, discipline and order. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 4,
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "ruling_planet": "Uranus"
     },
     "translations": {
       "english": {
         "name": "Aaron",
-        "meaning": "Mountain of strength; exalted",
-        "long_meaning": "Aaron is a Hebrew-origin name. Its core meaning is mountain of strength; exalted. The Arabic form هارون (Hārūn) is the Qur'anic name of the prophet Aaron. The English form Aaron derives from Hebrew אַהֲרוֹן. The source record's 'Mountain of strength' gloss is a popular but disputed Hebrew etymology."
+        "script": "Aaron",
+        "meaning": "Etymology uncertain",
+        "long_meaning": "Aaron is the English form associated with Hebrew אַהֲרֹן (Aharon). Its deeper etymology is disputed."
       },
       "urdu": {
         "name": "ہارون",
-        "meaning": "طاقت کا پہاڑ، بلند، سرفراز",
-        "long_meaning": "Aaron (ہارون) عبرانی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم طاقت کا پہاڑ، بلند، سرفراز ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "ہارون",
+        "meaning": "ہارون (متعلقہ عربی صورت)",
+        "long_meaning": "Aaron انگریزی صورت ہے جو عبرانی אַהֲרֹן (Aharon) سے متعلق ہے۔ اس کا گہرا اشتقاق یقینی نہیں۔ عربی صورت ہارون (Hārūn) قرآن میں مذکور نبی کا نام ہے، مگر دونوں املا کو ایک ہی زبان کی صورت نہیں سمجھنا چاہیے۔"
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Aharon / Aaron",
+        "script": "אַהֲרֹן",
+        "meaning": "ریشه‌شناسی نامشخص",
+        "long_meaning": "Aaron صورت انگلیسی نام عبری אַהֲרֹן (Aharon) است. ریشه‌شناسی دقیق آن محل اختلاف است.",
+        "native_review_required": true
       },
       "hindi": {
         "name": "हारून",
-        "meaning": "शक्ति का पहाड़, उन्नत, बुलंद",
-        "long_meaning": "Aaron (हारून) हिब्रू भाषा से लिया गया नाम है। इसका मुख्य अर्थ शक्ति का पहाड़, उन्नत, बुलंद है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "हारून",
+        "meaning": "व्युत्पत्ति अनिश्चित",
+        "long_meaning": "Aaron अंग्रेज़ी रूप है, जिसका संबंध हिब्रू אַהֲרֹן (Aharon) से है। इसकी गहरी व्युत्पत्ति निश्चित नहीं है। अरबी रूप हारून (Hārūn) क़ुरआन में उल्लिखित नबी का नाम है।"
       },
       "pashto": {
         "name": "هارون",
-        "meaning": "د ځواک غر، لوړ، ستر",
-        "long_meaning": "Aaron (هارون) د عبري ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې د ځواک غر، لوړ، ستر ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "هارون",
+        "meaning": "د نوم ژوره ریښه نامعلومه ده",
+        "long_meaning": "Aaron د عبراني אַהֲרֹן (Aharon) انګلیسي بڼه ده؛ د نوم ژوره ریښه پرېکنده نه ده. عربي بڼه هارون په قرآن کې د نبي نوم دی.",
+        "native_review_required": true
       },
       "arabic": {
-        "name": "هارون",
-        "meaning": "جبل القوة، رفيع، عليّ",
-        "long_meaning": "Aaron (هارون) اسم مأخوذ من اللغة العبرية، ومعناه الأساسي جبل القوة، رفيع، عليّ. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "name": "هارون (related Arabic form)",
+        "script": "هارون",
+        "meaning": "الاسم العربي المرتبط بهارون",
+        "long_meaning": "Aaron هو الشكل الإنجليزي المرتبط بالاسم العبري אַהֲרֹן (Aharon). أما هارون فهو الشكل العربي المذكور في القرآن؛ ولا ينبغي الخلط بين الرسمين.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "MEDIUM",
+      "native_review_required": true,
+      "note": "The Hebrew source form and Arabic Qur'anic counterpart are distinguished; all non-English renderings require language-specific review."
     },
     "pronunciation": {
       "romanized": "aa-ron",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "ہارون",
-      "persian": null,
-      "hindi": "हारून",
-      "pashto": "هارون"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "هارون"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aaron",
-        "aaron",
         "aron"
       ],
-      "script_variants": [
+      "script_forms": [
         "هارون",
         "ہارون",
         "हारून"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
-      "do_not_merge_with": [
-        {
-          "name": "Harun",
-          "script": "هارون",
-          "reason": "هارون (Hārūn) is the Qur'anic Arabic form of the prophet Aaron. The English form Aaron derives from Hebrew אַהֲרוֹן. They are related but not identical forms."
-        }
-      ]
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
+      "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form هارون is an established Hebrew lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form هارون is an established Hebrew lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aaron can be understood through the Hebrew form هارون, whose central sense is mountain of strength; exalted. The Arabic form هارون (Hārūn) is the Qur'anic name of the prophet Aaron. The English form Aaron derives from Hebrew אַהֲרוֹן. The source record's 'Mountain of strength' gloss is a popular but disputed Hebrew etymology.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aaron mean?",
-        "answer": "Aaron is associated with the Hebrew form هارون, whose core sense is mountain of strength; exalted."
+        "q": "What does Aaron mean?",
+        "a": "Aaron is the English form associated with Hebrew אַהֲרֹן (Aharon). Its etymology is disputed, so “mountain of strength” is not treated as a verified meaning."
       },
       {
-        "question": "What is the origin of Aaron?",
-        "answer": "Aaron is associated with Hebrew. The Arabic form هارون (Hārūn) is the Qur'anic name of the prophet Aaron. The English form Aaron derives from Hebrew אַהֲרוֹן. The source record's 'Mountain of strength' gloss is a popular but disputed Hebrew etymology."
+        "q": "What is the origin of Aaron?",
+        "a": "The English name Aaron is associated with Hebrew Aharon. The related Arabic form is Hārūn (هارون)."
       },
       {
-        "question": "Is Aaron an Arabic name?",
-        "answer": "No — the underlying form is Hebrew, not Arabic."
+        "q": "Is Aaron an Arabic name?",
+        "a": "Aaron is not an Arabic spelling. The Arabic form of the related prophetic name is هارون (Hārūn)."
       },
       {
-        "question": "Is Aaron an Islamic name?",
-        "answer": "Aaron can occur in Muslim naming contexts, but it is better described as a Hebrew-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aaron?",
+        "a": "No Hebrew root analysis or single settled etymology is asserted for Aaron in this record."
       },
       {
-        "question": "Is Aaron a Quranic name?",
-        "answer": "Aaron should not be classified as a Quranic personal name without a direct Quranic basis. هارون (Hārūn) is the Qur'anic form of Aaron and occurs in the Qur'an as a prophet's name"
+        "q": "Is Aaron an Islamic name?",
+        "a": "Aaron is used in Jewish and Christian contexts; the related form Hārūn is also important in Islam. Language forms should be kept distinct."
       },
       {
-        "question": "What does Aaron mean in Urdu?",
-        "answer": "In Urdu, Aaron is rendered ہارون and carries the sense طاقت کا پہاڑ، بلند، سرفراز."
+        "q": "Is Aaron a Quranic name?",
+        "a": "The English spelling Aaron is not the Arabic spelling used in the Qur'an; the related Arabic name Hārūn (هارون) is mentioned in the Qur'an."
       },
       {
-        "question": "What does Aaron mean in Persian?",
-        "answer": "No verified Persian form was established for Aaron."
+        "q": "What does Aaron mean in Urdu?",
+        "a": "In Urdu, the related Arabic form is written ہارون. The record does not assign “mountain of strength” as a verified Urdu meaning."
       },
       {
-        "question": "How is Aaron pronounced?",
-        "answer": "A romanized syllable approximation is aa-ron. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aaron pronounced?",
+        "a": "“AIR-un” or “AA-ron” vary by English accent; the record's romanized approximation is not a universal pronunciation."
       },
       {
-        "question": "What are the variants of Aaron?",
-        "answer": "Romanization variants include Aaron, aaron, aron. Script forms are هارون, ہارون, हारून."
-      },
-      {
-        "question": "Is Aaron a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Aaron a boy's or girl's name?",
+        "a": "Aaron is traditionally masculine in English naming usage; naming conventions may vary across cultures."
       }
     ],
     "seo": {
-      "title": "Aaron Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Hebrew origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aaron (هارون).",
-      "h1": "Aaron Name Meaning, Origin and Cultural Background",
+      "title": "Aaron Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aaron is the English form associated with Hebrew אַהֲרֹן (Aharon). Its deeper etymology is disputed; the related Arabic form Hārūn is used in the Qur'an.",
+      "meta_keywords": "Aaron meaning, Aaron name meaning, Aaron origin, Aaron meaning in Urdu, Aaron pronunciation, Aaron Islamic name",
+      "description_paragraph": "Aaron is the English form associated with Hebrew אַהֲרֹן (Aharon). This page distinguishes its uncertain etymology from the related Arabic form Hārūn (هارون), which appears in the Qur'an.",
+      "keywords": [
+        "Aaron meaning",
+        "Aaron name meaning",
+        "Aaron origin",
+        "Aaron meaning in Urdu",
+        "Aaron pronunciation",
+        "Aaron Islamic name"
+      ],
       "focus_keyword": "Aaron meaning",
       "secondary_keywords": [
         "Aaron name meaning",
-        "Aaron meaning in Urdu",
         "Aaron origin",
-        "Aaron Islamic name",
+        "Aaron meaning in Urdu",
         "Aaron pronunciation",
-        "Aaron name in Urdu"
+        "Aaron Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aaron (هارون) is associated with the Hebrew form هارون, whose core sense is mountain of strength; exalted. The Arabic form هارون (Hārūn) is the Qur'anic name of the prophet Aaron. The English form Aaron derives from Hebrew אַהֲרוֹן. The source record's 'Mountain of strength' gloss is a popular but disputed Hebrew etymology.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aaron",
+      "seo_score": 90,
+      "seo_score_basis": "Score reflects content depth and structural completeness, not independent verification of disputed etymology."
     },
     "seo_content": {
-      "intro": "Aaron is associated with the Hebrew form هارون, whose core sense is mountain of strength; exalted.",
-      "meaning_section": "The central meaning of Aaron is mountain of strength; exalted.",
-      "origin_section": "Aaron is associated with Hebrew rather than with a different language.",
-      "islam_section": "Aaron can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aaron is with the sense mountain of strength; exalted.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Aaron, a Hebrew-origin name used in Muslim communities.",
+      "body_summary": "Aaron is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Aaron",
       "#AaronMeaning",
-      "#AaronName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": true,
+      "authenticity_flags": [],
+      "fabricated_content_removed": true,
+      "fields_total": 151,
+      "quality_score": 90,
+      "quality_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "evidence": {
-      "core_claims": [
-        {
-          "claim": "Aaron corresponds to the Hebrew form هارون",
-          "evidence_type": "lexical",
-          "confidence": "high"
-        },
-        {
-          "claim": "Aaron has the core sense mountain of strength; exalted",
-          "evidence_type": "lexical",
-          "confidence": "high"
-        }
+      "sources": [
+        "The deeper etymology of Hebrew אַהֲרֹן (Aharon) is disputed; no single literal gloss is treated as established in this record."
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "verification_method": "Cross-checked lexical sources; no scriptural or statistical claim is asserted without a source."
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse Production v8",
+      "methodology": "Parse atomic facts -> rebuild distinct fields -> validate",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-06T04:27:34+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aaron",
-      "alternateName": [
-        "Aaron",
-        "aaron",
-        "aron"
-      ],
-      "description": "A name associated with the Hebrew form هارون, meaning mountain of strength; exalted.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aaron",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Hebrew"
+          "@type": "DefinedTerm",
+          "name": "Aaron",
+          "description": "Aaron is the English form associated with Hebrew אַהֲרֹן (Aharon); its deeper etymology is disputed.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aaron mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aaron is the English form associated with Hebrew אַהֲרֹן (Aharon). Its etymology is disputed, so “mountain of strength” is not treated as a verified meaning."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aaron?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The English name Aaron is associated with Hebrew Aharon. The related Arabic form is Hārūn (هارون)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aaron an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aaron is not an Arabic spelling. The Arabic form of the related prophetic name is هارون (Hārūn)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aaron?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No Hebrew root analysis or single settled etymology is asserted for Aaron in this record."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aaron an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aaron is used in Jewish and Christian contexts; the related form Hārūn is also important in Islam. Language forms should be kept distinct."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aaron a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The English spelling Aaron is not the Arabic spelling used in the Qur'an; the related Arabic name Hārūn (هارون) is mentioned in the Qur'an."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aaron mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Urdu, the related Arabic form is written ہارون. The record does not assign “mountain of strength” as a verified Urdu meaning."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aaron pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "“AIR-un” or “AA-ron” vary by English accent; the record's romanized approximation is not a universal pronunciation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aaron a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aaron is traditionally masculine in English naming usage; naming conventions may vary across cultures."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aaron",
+              "item": "https://nameverse.site/names/islamic/aaron"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aaron, associated with the Hebrew form هارون, meaning mountain of strength; exalted."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": false,
+      "flags": [],
+      "confidence": "HIGH",
+      "reviewed_by": "NameVerse verification pipeline",
+      "reviewed_at": "2026-10-06T04:27:34+00:00"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

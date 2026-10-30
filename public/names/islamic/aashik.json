@@ -1,74 +1,62 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aashik",
     "slug": "aashik",
+    "content_revision": "v8.1",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aashik",
       "normalized_name": "aashik",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "medium",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Aashik",
         "aashik",
         "ashik"
       ],
-      "search_variants": [
-        "Aashik",
-        "aashik",
-        "ashik"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Lover, devoted admirer, passionate one",
-      "primary_meaning": "Lover",
-      "secondary_meanings": [
-        "devoted admirer",
-        "passionate one"
-      ],
-      "literal_meaning": "Lover",
-      "extended_meaning": "Lover, devoted admirer, passionate one",
-      "meaning_explanation": "Aashik corresponds to the Arabic form عاشق (ع ش ق). Its core sense is lover, devoted admirer, passionate one. عاشق means 'lover, one passionately devoted'. Widely used in Urdu and Persian literary culture.",
-      "meaning_confidence": "medium"
+      "short_meaning": "Lover, one passionately devoted",
+      "primary_meaning": "Aashik corresponds to the Arabic form عاشق and is glossed in this record as “Lover, one passionately devoted.” The record associates the form with root ع ش ق (ʿ-sh-q). The record identifies the form as an active participle. The lexical gloss describes the word-form; Qur’anic occurrence, religious recommendation, popularity, and a name-bearer’s character are separate claims and are not established by this gloss alone.",
+      "literal_meaning": "Lover, one passionately devoted",
+      "meaning_explanation": "Aashik corresponds to the Arabic form عاشق (Arabic root ع ش ق (ʿ-sh-q); عَاشِق (ʿāshiq)). Its core sense is lover; one passionately devoted. Aashik is Arabic عَاشِق (ʿāshiq) 'Lover, one passionately devoted', the active participle of عَشِقَ (ʿashiqa, 'to love passionately') from the root ع ش ق (ʿ-sh-q). Widely used in Urdu and Persian literary culture.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عاشق",
       "transliteration": "aashik",
-      "romanization": "aashik",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Lover",
-        "devoted admirer",
-        "passionate one"
-      ],
-      "etymology_explanation": "The form عاشق is an established Arabic lexical item. عاشق means 'lover, one passionately devoted'. Widely used in Urdu and Persian literary culture.",
-      "etymology_confidence": "medium",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "ع ش ق",
+      "root_transliteration": "ʿ-sh-q",
+      "morphology": "Masculine active participle (fāʿil pattern) of عَشِقَ, built on the root ع ش ق.",
+      "feminine_form": null,
+      "etymological_meaning": "From the root ع ش ق (ʿ-sh-q)",
+      "root_family": [],
+      "etymology_explanation": "The form عاشق is an established Arabic lexical item — the active participle of عشق — and Aashik is the word itself used as a personal name rather than a derived or diminutive form.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عاشق is an established Arabic form.",
-        "Urdu": "عاشق is used in Urdu.",
-        "Hindi": "आशिक़ is used in Hindi.",
-        "Pashto": "عاشق is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عاشق.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "medium"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "medium",
-      "origin_explanation": "The name is associated with the Arabic form عاشق. عاشق means 'lover, one passionately devoted'. Widely used in Urdu and Persian literary culture.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -77,409 +65,450 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aashik may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Aashik is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "root ع ش ق does not occur in the Qur'an; عاشق is a normal Arabic word"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Aashik is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Aashik as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense lover, devoted admirer, passionate one.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Lover",
+      "primary_semantic_domain": "Lover, one passionately devoted",
       "related_concepts": [
-        "lover",
-        "devoted admirer",
-        "passionate one"
-      ],
-      "semantic_relationship": "The central semantic idea is lover; other senses are extended associations."
+        "Lover, one passionately devoted"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of lover.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Lover, one passionately devoted” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Lover, one passionately devoted.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Lover",
-        "Devoted admirer",
-        "Passionate one"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 4,
+      "life_path_number": 4,
+      "ruling_planet": "Uranus",
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "meaning": "In Pythagorean numerology the letters of Aashik total 4, associated with stability, discipline and order. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 4,
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "ruling_planet": "Uranus"
     },
     "translations": {
       "english": {
         "name": "Aashik",
-        "meaning": "Lover, devoted admirer, passionate one",
-        "long_meaning": "Aashik is a Arabic-origin name. Its core meaning is lover, devoted admirer, passionate one. عاشق means 'lover, one passionately devoted'. Widely used in Urdu and Persian literary culture."
+        "script": "Aashik",
+        "meaning": "Lover, one passionately devoted",
+        "long_meaning": "Aashik is an Arabic-origin given name; in Arabic the word means “Lover, one passionately devoted”."
       },
       "urdu": {
         "name": "عاشق",
+        "script": "عاشق",
         "meaning": "عاشق، محبت کرنے والا، شیدائی",
-        "long_meaning": "Aashik (عاشق) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم عاشق، محبت کرنے والا، شیدائی ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "long_meaning": "Aashik (عاشق) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم عاشق، محبت کرنے والا، شیدائی ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔"
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "عاشق",
+        "script": "عاشق",
+        "meaning": "عاشق، شیفته، دلداده",
+        "long_meaning": "Aashik (عاشق) نامی برگرفته از زبان عربی است و معنای اصلی آن عاشق، شیفته، دلداده است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است."
       },
       "hindi": {
         "name": "आशिक़",
+        "script": "आशिक़",
         "meaning": "आशिक़, प्रेमी, अनुरागी",
-        "long_meaning": "Aashik (आशिक़) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ आशिक़, प्रेमी, अनुरागी है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "long_meaning": "Aashik (आशिक़) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ आशिक़, प्रेमी, अनुरागी है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।"
       },
       "pashto": {
         "name": "عاشق",
+        "script": "عاشق",
         "meaning": "عاشق، مینه والا، شیدا",
         "long_meaning": "Aashik (عاشق) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې عاشق، مینه والا، شیدا ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "native_review_required": true
       },
       "arabic": {
         "name": "عاشق",
+        "script": "عاشق",
         "meaning": "عاشق، محب، مغرم",
         "long_meaning": "Aashik (عاشق) اسم مأخوذ من اللغة العربية، ومعناه الأساسي عاشق، محب، مغرم. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "medium"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "aas-hik",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عاشق",
-      "persian": null,
-      "hindi": "आशिक़",
-      "pashto": "عاشق"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عاشق"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aashik",
-        "aashik",
-        "ashik"
+        "ashik",
+        "aashiq"
       ],
-      "script_variants": [
+      "script_forms": [
         "عاشق",
         "आशिक़"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
-      "do_not_merge_with": []
+      "variant_notes": "The same Arabic lexical form عاشق appears under the Latin spellings Aashik and Aashiq in this dataset. Treat them as a likely transliteration-variant pair for manual canonical/duplicate review; do not automatically delete or merge either route.",
+      "do_not_merge_with": [
+        "aashiq"
+      ]
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عاشق is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "medium",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عاشق is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aashik can be understood through the Arabic form عاشق, whose central sense is lover, devoted admirer, passionate one. عاشق means 'lover, one passionately devoted'. Widely used in Urdu and Persian literary culture.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aashik mean?",
-        "answer": "Aashik is associated with the Arabic form عاشق, whose core sense is lover, devoted admirer, passionate one."
+        "q": "What does Aashik mean?",
+        "a": "Aashik is an Arabic-origin name meaning “Lover, one passionately devoted”."
       },
       {
-        "question": "What is the origin of Aashik?",
-        "answer": "Aashik is associated with Arabic. عاشق means 'lover, one passionately devoted'. Widely used in Urdu and Persian literary culture."
+        "q": "What is the origin of Aashik?",
+        "a": "Aashik originates in Arabic and circulates in Muslim naming communities."
       },
       {
-        "question": "Is Aashik an Arabic name?",
-        "answer": "Yes — the underlying form عاشق is Arabic."
+        "q": "Is Aashik an Arabic name?",
+        "a": "Yes, the recorded form عاشق is Arabic."
       },
       {
-        "question": "Is Aashik an Islamic name?",
-        "answer": "Aashik can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aashik?",
+        "a": "It is built on the root ع ش ق (ʿ-sh-q)."
       },
       {
-        "question": "Is Aashik a Quranic name?",
-        "answer": "Aashik should not be classified as a Quranic personal name without a direct Quranic basis. root ع ش ق does not occur in the Qur'an; عاشق is a normal Arabic word"
+        "q": "Is Aashik an Islamic name?",
+        "a": "Aashik is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
       },
       {
-        "question": "What does Aashik mean in Urdu?",
-        "answer": "In Urdu, Aashik is rendered عاشق and carries the sense عاشق، محبت کرنے والا، شیدائی."
+        "q": "Is Aashik a Quranic name?",
+        "a": "Aashik is not independently established as a Qur'anic personal name."
       },
       {
-        "question": "What does Aashik mean in Persian?",
-        "answer": "No verified Persian form was established for Aashik."
+        "q": "What does Aashik mean in Urdu?",
+        "a": "In Urdu it is written عاشق and carries the sense “عاشق، محبت کرنے والا، شیدائی”."
       },
       {
-        "question": "How is Aashik pronounced?",
-        "answer": "A romanized syllable approximation is aas-hik. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aashik pronounced?",
+        "a": "A romanized syllable approximation is “aas-hik”."
       },
       {
-        "question": "What are the variants of Aashik?",
-        "answer": "Romanization variants include Aashik, aashik, ashik. Script forms are عاشق, आशिक़."
-      },
-      {
-        "question": "Is Aashik a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Aashik a boy's or girl's name?",
+        "a": "Documented usage records Aashik as a boy's name; actual use can vary by community."
       }
     ],
     "seo": {
-      "title": "Aashik Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aashik (عاشق).",
-      "h1": "Aashik Name Meaning, Origin and Cultural Background",
+      "title": "Aashik Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aashik (عاشق) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Aashik meaning, Aashik name meaning, Aashik origin, Aashik meaning in Urdu, Aashik pronunciation, Aashik Islamic name",
+      "description_paragraph": "Aashik is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Aashik meaning",
+        "Aashik name meaning",
+        "Aashik origin",
+        "Aashik meaning in Urdu",
+        "Aashik pronunciation",
+        "Aashik Islamic name"
+      ],
       "focus_keyword": "Aashik meaning",
       "secondary_keywords": [
         "Aashik name meaning",
-        "Aashik meaning in Urdu",
         "Aashik origin",
-        "Aashik Islamic name",
+        "Aashik meaning in Urdu",
         "Aashik pronunciation",
-        "Aashik name in Urdu"
+        "Aashik Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aashik (عاشق) is associated with the Arabic form عاشق, whose core sense is lover, devoted admirer, passionate one. عاشق means 'lover, one passionately devoted'. Widely used in Urdu and Persian literary culture.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aashik",
+      "seo_score": 95,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root present; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Aashik is associated with the Arabic form عاشق, whose core sense is lover, devoted admirer, passionate one.",
-      "meaning_section": "The central meaning of Aashik is lover, devoted admirer, passionate one.",
-      "origin_section": "Aashik is associated with Arabic rather than with a different language.",
-      "islam_section": "Aashik can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aashik is with the sense lover.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Aashik, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Aashik is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Aashik",
       "#AashikMeaning",
-      "#AashikName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "medium",
-      "linguistic_authenticity": "medium",
-      "etymological_authenticity": "medium",
-      "meaning_authenticity": "medium",
-      "translation_quality": "medium",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "candidate_transliteration_duplicate_manual_review",
+        "personal_name_frequency_not_verified",
+        "native_translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 149,
+      "quality_score": 80,
+      "quality_score_basis": "Provisional editorial/consistency score only. Lexical source checks do not establish personal-name frequency, scriptural status, or native-speaker verification of every translation; not a factual certification."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "https://www.laneslexicon.com/word/%D8%B9%D8%B4%D9%82/n29221",
+        "https://www.laneslexicon.com/word/%D8%B9%D8%B4%D9%8A%D9%82/n29229"
+      ],
+      "verification_method": "Sources were checked for the cited lexical form only. They do not prove personal-name frequency, regional gender distribution, Qur'anic status, or native-speaker quality of all translations.",
+      "claim_evidence": [
         {
-          "claim": "Aashik corresponds to the Arabic form عاشق",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "The Arabic lexical root عشق and its love/lover sense are supported by Lane's Lexicon; the two Latin spellings are a candidate transliteration-variant pair, not evidence of separate lexical forms.",
+          "source": "https://www.laneslexicon.com/word/%D8%B9%D8%B4%D9%82/n29221",
+          "status": "source_checked_for_lexical_claim_only"
         },
         {
-          "claim": "Aashik has the core sense lover, devoted admirer, passionate one",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "Personal-name usage, frequency, and all translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "LEXICAL_CLAIM_SOURCE_CHECKED; NAME_USAGE_AND_TRANSLATIONS_NOT_FULLY_VERIFIED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Checked cited lexical claims against named dictionary sources; separated lexical meaning from personal-name usage, religious association, frequency, and translations; retained uncertainty where evidence is incomplete.",
+      "upgraded_from": "v8",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aashik",
-      "alternateName": [
-        "Aashik",
-        "aashik",
-        "ashik"
-      ],
-      "description": "A name associated with the Arabic form عاشق, meaning lover, devoted admirer, passionate one.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aashik",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Aashik",
+          "description": "Aashik — an Arabic-origin given name meaning Lover, one passionately devoted",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aashik mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aashik is an Arabic-origin name meaning “Lover, one passionately devoted”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aashik?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aashik originates in Arabic and circulates in Muslim naming communities."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aashik an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, the recorded form عاشق is Arabic."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aashik?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is built on the root ع ش ق (ʿ-sh-q)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aashik an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aashik is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aashik a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aashik is not independently established as a Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aashik mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Urdu it is written عاشق and carries the sense “عاشق، محبت کرنے والا، شیدائی”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aashik pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A romanized syllable approximation is “aas-hik”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aashik a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Documented usage records Aashik as a boy's name; actual use can vary by community."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aashik",
+              "item": "https://nameverse.site/names/islamic/aashik"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aashik, associated with the Arabic form عاشق, meaning lover, devoted admirer, passionate one."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "candidate_transliteration_duplicate_manual_review",
+        "personal_name_frequency_not_verified",
+        "native_translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review (lexical source check; personal-name and native translation review pending)",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

@@ -1,70 +1,61 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abrar",
     "slug": "abrar",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abrar",
       "normalized_name": "abrar",
       "name_type": "given_name",
       "gender": "Unisex",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abrar",
         "abrar"
       ],
-      "search_variants": [
-        "Abrar",
-        "abrar"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Righteous, God-fearing",
-      "primary_meaning": "Righteous",
-      "secondary_meanings": [
-        "God-fearing"
-      ],
-      "literal_meaning": "Righteous",
-      "extended_meaning": "Righteous, God-fearing",
-      "meaning_explanation": "Abrar corresponds to the Arabic form أبرار (ب ر ر). Its core sense is righteous, god-fearing. Abrār, plural of بَرّ ('righteous, pious'). The source record's form عبار is malformed.",
-      "meaning_confidence": "high"
+      "short_meaning": "Righteous, pious",
+      "primary_meaning": "Abrar corresponds to Arabic أبرار, a plural form associated with righteousness and piety; “fearer of Allah” is an interpretive extension, not a direct lexical gloss.",
+      "literal_meaning": "Righteous, pious",
+      "meaning_explanation": "The form أبرار is plural and associated with the semantic field of righteousness/piety. The translations that focus on God-fearingness are interpretive and should not be presented as the sole literal meaning.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "أبرار",
       "transliteration": "abrar",
-      "romanization": "abrar",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Righteous",
-        "God-fearing"
-      ],
-      "etymology_explanation": "The form أبرار is an established Arabic lexical item. Abrār, plural of بَرّ ('righteous, pious'). The source record's form عبار is malformed.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Arabic word أبرار",
+      "root_family": [],
+      "etymology_explanation": "The form أبرار is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "أبرار is an established Arabic form.",
-        "Urdu": "ابرار is used in Urdu.",
-        "Hindi": "अबरार is used in Hindi.",
-        "Pashto": "ابرار is used in Pashto."
+        "primary": "Arabic is the language of the recorded form أبرار.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form أبرار. Abrār, plural of بَرّ ('righteous, pious'). The source record's form عبار is malformed.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -73,406 +64,445 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Abrar may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abrar is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "أبرار occurs in the Qur'an as a common noun ('the righteous')"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abrar is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abrar as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense righteous, god-fearing.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Righteous",
+      "primary_semantic_domain": "Righteous, pious",
       "related_concepts": [
-        "righteous",
-        "god-fearing"
-      ],
-      "semantic_relationship": "The central semantic idea is righteous; other senses are extended associations."
+        "Righteous, pious"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of righteous.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Righteous, pious” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Righteous, pious.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Righteous",
-        "God-fearing"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 4,
+      "life_path_number": 4,
+      "ruling_planet": "Uranus",
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "meaning": "In Pythagorean numerology the letters of Abrar total 4, associated with stability, discipline and order. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 4,
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "ruling_planet": "Uranus"
     },
     "translations": {
       "english": {
         "name": "Abrar",
-        "meaning": "Righteous, God-fearing",
-        "long_meaning": "Abrar is a Arabic-origin name. Its core meaning is righteous, god-fearing. Abrār, plural of بَرّ ('righteous, pious'). The source record's form عبار is malformed."
+        "script": "Abrar",
+        "meaning": "Righteous, pious (plural form)",
+        "long_meaning": "The form is plural and associated with righteousness/piety; modern personal-name use and locale translations require separate review."
       },
       "urdu": {
         "name": "ابرار",
-        "meaning": "نیک، خدا ترس",
-        "long_meaning": "Abrar (ابرار) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم نیک، خدا ترس ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "ابرار",
+        "meaning": "نیک، صالح، پرہیزگار",
+        "long_meaning": "The form is plural and associated with righteousness/piety; modern personal-name use and locale translations require separate review."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Abrar",
+        "script": "Abrar",
+        "meaning": "نیکوکار، پارسا، پرهیزگار",
+        "long_meaning": "The form is plural and associated with righteousness/piety; modern personal-name use and locale translations require separate review."
       },
       "hindi": {
         "name": "अबरार",
-        "meaning": "धर्मात्मा, ईश्वरभीरु",
-        "long_meaning": "Abrar (अबरार) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ धर्मात्मा, ईश्वरभीरु है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "अबरार",
+        "meaning": "धर्मात्मा, नेक, पुण्यशील",
+        "long_meaning": "The form is plural and associated with righteousness/piety; modern personal-name use and locale translations require separate review."
       },
       "pashto": {
         "name": "ابرار",
-        "meaning": "نیک، خدای وېرونکی",
-        "long_meaning": "Abrar (ابرار) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې نیک، خدای وېرونکی ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "ابرار",
+        "meaning": "نیک، صالح، پرهیزګار",
+        "long_meaning": "The form is plural and associated with righteousness/piety; modern personal-name use and locale translations require separate review.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "أبرار",
-        "meaning": "أبرار، متقون",
-        "long_meaning": "Abrar (أبرار) اسم مأخوذ من اللغة العربية، ومعناه الأساسي أبرار، متقون. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "أبرار",
+        "meaning": "أبرار، صالحون",
+        "long_meaning": "The form is plural and associated with righteousness/piety; modern personal-name use and locale translations require separate review.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "ab-rar",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "ابرار",
-      "persian": null,
-      "hindi": "अबरार",
-      "pashto": "ابرار"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "أبرار"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Abrar",
-        "abrar"
+        "Abrar"
       ],
-      "script_variants": [
+      "script_forms": [
         "أبرار",
         "ابرار",
         "अबरार"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form أبرار is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form أبرار is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abrar can be understood through the Arabic form أبرار, whose central sense is righteous, god-fearing. Abrār, plural of بَرّ ('righteous, pious'). The source record's form عبار is malformed.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abrar mean?",
-        "answer": "Abrar is associated with the Arabic form أبرار, whose core sense is righteous, god-fearing."
+        "q": "What does Abrar mean?",
+        "a": "أبرار is a plural form associated with righteousness and piety; “fearer of Allah” is an interpretive extension."
       },
       {
-        "question": "What is the origin of Abrar?",
-        "answer": "Abrar is associated with Arabic. Abrār, plural of بَرّ ('righteous, pious'). The source record's form عبار is malformed."
+        "q": "What is the origin of Abrar?",
+        "a": "The recorded form is Arabic أبرار."
       },
       {
-        "question": "Is Abrar an Arabic name?",
-        "answer": "Yes — the underlying form أبرار is Arabic."
+        "q": "Is Abrar an Arabic name?",
+        "a": "The form is Arabic plural; personal-name use is separate."
       },
       {
-        "question": "Is Abrar an Islamic name?",
-        "answer": "Abrar can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Abrar?",
+        "a": "The root analysis should be checked against a direct lexicon source."
       },
       {
-        "question": "Is Abrar a Quranic name?",
-        "answer": "Abrar should not be classified as a Quranic personal name without a direct Quranic basis. أبرار occurs in the Qur'an as a common noun ('the righteous')"
+        "q": "Is Abrar an Islamic name?",
+        "a": "Religious vocabulary does not by itself establish a naming recommendation."
       },
       {
-        "question": "What does Abrar mean in Urdu?",
-        "answer": "In Urdu, Abrar is rendered ابرار and carries the sense نیک، خدا ترس."
+        "q": "Is Abrar a Quranic name?",
+        "a": "This record does not establish Abrar as a personal name explicitly named in the Qur'an."
       },
       {
-        "question": "What does Abrar mean in Persian?",
-        "answer": "No verified Persian form was established for Abrar."
+        "q": "What does Abrar mean in Urdu?",
+        "a": "A cautious Urdu gloss is “نیک، صالح، پرہیزگار.”"
       },
       {
-        "question": "How is Abrar pronounced?",
-        "answer": "A romanized syllable approximation is ab-rar. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abrar pronounced?",
+        "a": "Pronunciation is approximate and transliteration-dependent."
       },
       {
-        "question": "What are the variants of Abrar?",
-        "answer": "Romanization variants include Abrar, abrar. Script forms are أبرار, ابرار, अबरार."
-      },
-      {
-        "question": "Is Abrar a boy's or girl's name?",
-        "answer": "Documented usage records this form as unisex. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Abrar a boy's or girl's name?",
+        "a": "Modern personal-name gender distribution needs independent evidence."
       }
     ],
     "seo": {
-      "title": "Abrar Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Abrar (أبرار).",
-      "h1": "Abrar Name Meaning, Origin and Cultural Background",
+      "title": "Abrar Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abrar (أبرار) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abrar meaning, Abrar name meaning, Abrar origin, Abrar meaning in Urdu, Abrar pronunciation, Abrar Islamic name",
+      "description_paragraph": "Abrar is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abrar meaning",
+        "Abrar name meaning",
+        "Abrar origin",
+        "Abrar meaning in Urdu",
+        "Abrar pronunciation",
+        "Abrar Islamic name"
+      ],
       "focus_keyword": "Abrar meaning",
       "secondary_keywords": [
         "Abrar name meaning",
-        "Abrar meaning in Urdu",
         "Abrar origin",
-        "Abrar Islamic name",
+        "Abrar meaning in Urdu",
         "Abrar pronunciation",
-        "Abrar name in Urdu"
+        "Abrar Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abrar (أبرار) is associated with the Arabic form أبرار, whose core sense is righteous, god-fearing. Abrār, plural of بَرّ ('righteous, pious'). The source record's form عبار is malformed.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abrar",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abrar is associated with the Arabic form أبرار, whose core sense is righteous, god-fearing.",
-      "meaning_section": "The central meaning of Abrar is righteous, god-fearing.",
-      "origin_section": "Abrar is associated with Arabic rather than with a different language.",
-      "islam_section": "Abrar can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Abrar is with the sense righteous.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abrar, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Abrar is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abrar",
       "#AbrarMeaning",
-      "#AbrarName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "fearer_of_allah_gloss_is_extension",
+        "plural_form_name_usage_unverified",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 150,
+      "quality_score": 75,
+      "quality_score_basis": "Provisional editorial score only; historical/etymological claims and translations need direct sources."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "No direct source for the exact etymology/historical claim was checked in this pass; unsupported meanings are removed or retained only provisionally.",
+      "claim_evidence": [
         {
-          "claim": "Abrar corresponds to the Arabic form أبرار",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "The plural form أبرار is associated with righteousness/piety; direct dictionary source not checked in this pass.",
+          "source": null,
+          "status": "direct_source_needed; claim_provisional"
         },
         {
-          "claim": "Abrar has the core sense righteous, god-fearing",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Historical bearer, name usage, and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "DIRECT_SOURCE_NEEDED; ETYMOLOGY_AND_TRANSLATIONS_PENDING"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Corrected historical-event/etymology conflation, Hebrew/Arabic form mismatches, folk glosses, and plural-word meanings; retained uncertainty where direct sources are missing.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abrar",
-      "alternateName": [
-        "Abrar",
-        "abrar"
-      ],
-      "description": "A name associated with the Arabic form أبرار, meaning righteous, god-fearing.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "abrar",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Abrar",
+          "description": "Abrar — Abrar corresponds to Arabic أبرار, a plural form associated with righteousness and piety; “fearer of Allah” is an interpretive extension, not a direct lexical gloss.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Unisex"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abrar mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "أبرار is a plural form associated with righteousness and piety; “fearer of Allah” is an interpretive extension."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abrar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded form is Arabic أبرار."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abrar an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form is Arabic plural; personal-name use is separate."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abrar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The root analysis should be checked against a direct lexicon source."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abrar an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Religious vocabulary does not by itself establish a naming recommendation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abrar a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Abrar as a personal name explicitly named in the Qur'an."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abrar mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A cautious Urdu gloss is “نیک، صالح، پرہیزگار.”"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abrar pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pronunciation is approximate and transliteration-dependent."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abrar a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Modern personal-name gender distribution needs independent evidence."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abrar",
+              "item": "https://nameverse.site/names/islamic/abrar"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abrar, associated with the Arabic form أبرار, meaning righteous, god-fearing."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "fearer_of_allah_gloss_is_extension",
+        "plural_form_name_usage_unverified",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; direct etymology/historical sources pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

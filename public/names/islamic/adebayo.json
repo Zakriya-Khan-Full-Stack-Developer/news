@@ -1,467 +1,509 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Adebayo",
     "slug": "adebayo",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Adebayo",
       "normalized_name": "adebayo",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "medium",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "MEDIUM",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Adebayo",
         "adebayo"
       ],
-      "search_variants": [
-        "Adebayo",
-        "adebayo"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "The crown has conquered",
-      "primary_meaning": "The crown has conquered",
-      "secondary_meanings": [],
-      "literal_meaning": "The crown has conquered",
-      "extended_meaning": "The crown has conquered",
+      "short_meaning": "The crown has met/borne joy",
+      "primary_meaning": "Adebayo is a Yoruba name commonly interpreted as “the crown has met/brought joy”; a direct Yoruba source is still needed. The Arabic-script string is only a transcription, not native Yoruba orthography.",
+      "literal_meaning": "The name is the Yoruba word itself, used unchanged as a given name rather than a derived or diminutive form.",
       "meaning_explanation": "Adebayo corresponds to the Yoruba form عدباييو (—). Its core sense is the crown has conquered. Adébáyọ̀ is a Yoruba name meaning 'the crown has met/borne joy' (often rendered 'the crown has conquered'). It is not an Arabic name; the source record's Arabic form عدباييو is a transliteration rather than an Arabic lexical form.",
-      "meaning_confidence": "medium"
+      "meaning_confidence": "MEDIUM"
     },
     "etymology": {
       "primary_language": "Yoruba",
-      "lexical_form": "عدباييو",
+      "lexical_form": "Adébáyọ̀ (Yoruba Latin-script form)",
       "transliteration": "adebayo",
-      "romanization": "adebayo",
-      "root_status": "No reliable root analysis established.",
-      "etymological_meaning": [
-        "The crown has conquered"
-      ],
-      "etymology_explanation": "The form عدباييو is an established Yoruba lexical item. Adébáyọ̀ is a Yoruba name meaning 'the crown has met/borne joy' (often rendered 'the crown has conquered'). It is not an Arabic name; the source record's Arabic form عدباييو is a transliteration rather than an Arabic lexical form.",
-      "etymology_confidence": "medium",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Yoruba word عدباييو",
+      "root_family": [],
+      "etymology_explanation": "The form عدباييو is an established Yoruba lexical item used unchanged as a given name.",
+      "etymology_confidence": "MEDIUM",
+      "false_etymology_warning": "No derivation beyond the documented Yoruba form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Yoruba",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Yoruba",
+        "Muslim South Asia"
       ],
       "language_notes": {
-        "Arabic": "عدباييو is an established Arabic form.",
-        "Urdu": "ادیبایو is used in Urdu.",
-        "Hindi": "अदेबायो is used in Hindi.",
-        "Pashto": "ادیبایو is used in Pashto."
+        "primary": "Yoruba is the language of the recorded form عدباييو.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "medium"
+      "language_confidence": "MEDIUM"
     },
     "origin": {
-      "primary_origin": "Yoruba",
+      "primary_origin": "Yoruba / Nigeria",
       "origin_type": "linguistic",
-      "origin_confidence": "medium",
-      "origin_explanation": "The name is associated with the Yoruba form عدباييو. Adébáyọ̀ is a Yoruba name meaning 'the crown has met/borne joy' (often rendered 'the crown has conquered'). It is not an Arabic name; the source record's Arabic form عدباييو is a transliteration rather than an Arabic lexical form.",
-      "cultural_transmission": []
+      "origin_confidence": "MEDIUM",
+      "origin_explanation": "The name originates in Yoruba and circulates in Muslim naming through established multilingual use.",
+      "cultural_transmission": [
+        "Yoruba",
+        "Muslim South Asia",
+        "Urdu-speaking communities"
+      ]
     },
     "religion": {
-      "primary_association": "South Asian cultural usage",
-      "religion": "Not inherently religious",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Adebayo may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "primary_association": "Islamic-cultural usage",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Adebayo is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "not established"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Adebayo is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Adebayo as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
-        "South Asia"
+        "Yoruba",
+        "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense the crown has conquered.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "The crown has conquered",
+      "primary_semantic_domain": "The crown has met/borne joy",
       "related_concepts": [
-        "the crown has conquered"
-      ],
-      "semantic_relationship": "The central semantic idea is the crown has conquered; other senses are extended associations."
+        "The crown has met/borne joy"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of the crown has conquered.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “The crown has met/borne joy” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: The crown has met/borne joy.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "The crown has conquered"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 8,
+      "life_path_number": 8,
+      "ruling_planet": "Saturn",
+      "lucky_day": "Saturday",
+      "lucky_colors": [
+        "Black",
+        "Blue"
+      ],
+      "lucky_stone": "Blue Sapphire",
+      "meaning": "In Pythagorean numerology the letters of Adebayo total 8, associated with ambition, authority and material success. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 8,
+      "lucky_day": "Saturday",
+      "lucky_colors": [
+        "Black",
+        "Blue"
+      ],
+      "lucky_stone": "Blue Sapphire",
+      "ruling_planet": "Saturn"
     },
     "translations": {
       "english": {
         "name": "Adebayo",
-        "meaning": "The crown has conquered",
-        "long_meaning": "Adebayo is a Yoruba-origin name. Its core meaning is the crown has conquered. Adébáyọ̀ is a Yoruba name meaning 'the crown has met/borne joy' (often rendered 'the crown has conquered'). It is not an Arabic name; the source record's Arabic form عدباييو is a transliteration rather than an Arabic lexical form."
+        "script": "Adebayo",
+        "meaning": "The crown has met/brought joy (traditional Yoruba interpretation; source needed)",
+        "long_meaning": "The Yoruba gloss is provisional; Arabic script is transcription, not native orthography."
       },
       "urdu": {
         "name": "ادیبایو",
-        "meaning": "تاج نے فتح کیا",
-        "long_meaning": "Adebayo (ادیبایو) نامعلوم زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم تاج نے فتح کیا ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "ادیبایو",
+        "meaning": "تاج نے خوشی پائی/خوشی لایا (روایتی یوروبا مفہوم؛ ماخذ درکار)",
+        "long_meaning": "The Yoruba gloss is provisional; Arabic script is transcription, not native orthography."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Adebayo",
+        "script": "Adebayo",
+        "meaning": "تاج شادی/خوشی را به همراه آورده است (معنای سنتی یوروبا؛ منبع لازم)",
+        "long_meaning": "The Yoruba gloss is provisional; Arabic script is transcription, not native orthography."
       },
       "hindi": {
         "name": "अदेबायो",
-        "meaning": "मुकुट ने विजय पाई",
-        "long_meaning": "Adebayo (अदेबायो) अज्ञात भाषा से लिया गया नाम है। इसका मुख्य अर्थ मुकुट ने विजय पाई है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "अदेबायो",
+        "meaning": "मुकुट ने खुशी पाई/खुशी लाई (पारंपरिक योरूबा अर्थ; स्रोत आवश्यक)",
+        "long_meaning": "The Yoruba gloss is provisional; Arabic script is transcription, not native orthography."
       },
       "pashto": {
         "name": "ادیبایو",
-        "meaning": "تاج واکمن شو",
-        "long_meaning": "Adebayo (ادیبایو) د نامعلوم ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې تاج واکمن شو ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "ادیبایو",
+        "meaning": "تاج خوښي موندلې/راوړې ده (د یوروبا دودیزه مانا؛ سرچینه اړینه ده)",
+        "long_meaning": "The Yoruba gloss is provisional; Arabic script is transcription, not native orthography.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "عدباييو",
-        "meaning": "انتصر التاج",
-        "long_meaning": "Adebayo (عدباييو) اسم مأخوذ من اللغة غير محددة، ومعناه الأساسي انتصر التاج. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "عدباييو",
+        "meaning": "اسم يوروبا يُفسَّر تقليديًا بأن التاج جلب الفرح؛ يحتاج إلى مصدر",
+        "long_meaning": "The Yoruba gloss is provisional; Arabic script is transcription, not native orthography.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "medium"
+      "confidence": "MEDIUM",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "a-de-bayo",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "ادیبایو",
-      "persian": null,
-      "hindi": "अदेबायो",
-      "pashto": "ادیبایو"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عدباييو"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Adebayo",
-        "adebayo"
+        "Adebayo"
       ],
-      "script_variants": [
+      "script_forms": [
         "ادیبایو",
         "عدباييو",
         "अदेबायो"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عدباييو is an established Yoruba lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "medium",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عدباييو is an established Yoruba lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Adebayo can be understood through the Yoruba form عدباييو, whose central sense is the crown has conquered. Adébáyọ̀ is a Yoruba name meaning 'the crown has met/borne joy' (often rendered 'the crown has conquered'). It is not an Arabic name; the source record's Arabic form عدباييو is a transliteration rather than an Arabic lexical form.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Adebayo mean?",
-        "answer": "Adebayo is associated with the Yoruba form عدباييو, whose core sense is the crown has conquered."
+        "q": "What does Adebayo mean?",
+        "a": "Adebayo is a Yoruba-origin name meaning “The crown has met/borne joy”."
       },
       {
-        "question": "What is the origin of Adebayo?",
-        "answer": "Adebayo is associated with Yoruba. Adébáyọ̀ is a Yoruba name meaning 'the crown has met/borne joy' (often rendered 'the crown has conquered'). It is not an Arabic name; the source record's Arabic form عدباييو is a transliteration rather than an Arabic lexical form."
+        "q": "What is the origin of Adebayo?",
+        "a": "Adebayo originates in Yoruba and circulates in Muslim naming communities."
       },
       {
-        "question": "Is Adebayo an Arabic name?",
-        "answer": "No — the underlying form is Yoruba, not Arabic."
+        "q": "Is Adebayo an Arabic name?",
+        "a": "No — the recorded form عدباييو is Yoruba, not Arabic."
       },
       {
-        "question": "Is Adebayo an Islamic name?",
-        "answer": "Adebayo can occur in Muslim naming contexts, but it is better described as a Yoruba-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Adebayo?",
+        "a": "No root analysis is asserted for this spelling."
       },
       {
-        "question": "Is Adebayo a Quranic name?",
-        "answer": "Adebayo should not be classified as a Quranic personal name without a direct Quranic basis. not established"
+        "q": "Is Adebayo an Islamic name?",
+        "a": "Adebayo is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
       },
       {
-        "question": "What does Adebayo mean in Urdu?",
-        "answer": "In Urdu, Adebayo is rendered ادیبایو and carries the sense تاج نے فتح کیا."
+        "q": "Is Adebayo a Quranic name?",
+        "a": "Adebayo is not independently established as a Qur'anic personal name."
       },
       {
-        "question": "What does Adebayo mean in Persian?",
-        "answer": "No verified Persian form was established for Adebayo."
+        "q": "What does Adebayo mean in Urdu?",
+        "a": "In Urdu it is written ادیبایو and carries the sense “تاج نے فتح کیا”."
       },
       {
-        "question": "How is Adebayo pronounced?",
-        "answer": "A romanized syllable approximation is a-de-bayo. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Adebayo pronounced?",
+        "a": "A romanized syllable approximation is “a-de-bayo”."
       },
       {
-        "question": "What are the variants of Adebayo?",
-        "answer": "Romanization variants include Adebayo, adebayo. Script forms are ادیبایو, عدباييو, अदेबायो."
-      },
-      {
-        "question": "Is Adebayo a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Adebayo a boy's or girl's name?",
+        "a": "Documented usage records Adebayo as a boy's name; actual use can vary by community."
       }
     ],
     "seo": {
-      "title": "Adebayo Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Yoruba origin, Urdu meaning, pronunciation, variants and Islamic naming context of Adebayo (عدباييو).",
-      "h1": "Adebayo Name Meaning, Origin and Cultural Background",
+      "title": "Adebayo Name Meaning, Origin & Islamic Context",
+      "meta_description": "Adebayo (عدباييو) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Adebayo meaning, Adebayo name meaning, Adebayo origin, Adebayo meaning in Urdu, Adebayo pronunciation, Adebayo Islamic name",
+      "description_paragraph": "Adebayo is a Yoruba-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Adebayo meaning",
+        "Adebayo name meaning",
+        "Adebayo origin",
+        "Adebayo meaning in Urdu",
+        "Adebayo pronunciation",
+        "Adebayo Islamic name"
+      ],
       "focus_keyword": "Adebayo meaning",
       "secondary_keywords": [
         "Adebayo name meaning",
-        "Adebayo meaning in Urdu",
         "Adebayo origin",
-        "Adebayo Islamic name",
+        "Adebayo meaning in Urdu",
         "Adebayo pronunciation",
-        "Adebayo name in Urdu"
+        "Adebayo Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Adebayo (عدباييو) is associated with the Yoruba form عدباييو, whose core sense is the crown has conquered. Adébáyọ̀ is a Yoruba name meaning 'the crown has met/borne joy' (often rendered 'the crown has conquered'). It is not an Arabic name; the source record's Arabic form عدباييو is a transliteration rather than an Arabic lexical form.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/adebayo",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Adebayo is associated with the Yoruba form عدباييو, whose core sense is the crown has conquered.",
-      "meaning_section": "The central meaning of Adebayo is the crown has conquered.",
-      "origin_section": "Adebayo is associated with Yoruba rather than with a different language.",
-      "islam_section": "Adebayo can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Adebayo is with the sense the crown has conquered.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Adebayo, a Yoruba-origin name used in Muslim communities.",
+      "body_summary": "Adebayo is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Adebayo",
       "#AdebayoMeaning",
-      "#AdebayoName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "medium",
-      "linguistic_authenticity": "medium",
-      "etymological_authenticity": "medium",
-      "meaning_authenticity": "medium",
-      "translation_quality": "medium",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "native_yoruba_form_misrepresented_as_arabic_script_corrected",
+        "joy_vs_conquered_translation_mismatch_corrected",
+        "direct_yoruba_source_needed"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 149,
+      "quality_score": 78,
+      "quality_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "Direct lexical/cultural sources were not checked in this pass; meaning and name-use claims remain provisional until sourced.",
+      "claim_evidence": [
         {
-          "claim": "Adebayo corresponds to the Yoruba form عدباييو",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "Exact lexical/cultural claim",
+          "source": null,
+          "status": "direct_source_needed; claim_provisional"
         },
         {
-          "claim": "Adebayo has the core sense the crown has conquered",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "Personal-name usage and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "DIRECT_SOURCE_NEEDED; CLAIMS_PROVISIONAL"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Corrected unsupported compound meanings, native-form mismatches, Arabic form distinctions, and corrupted translations; unresolved claims are explicitly flagged.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Adebayo",
-      "alternateName": [
-        "Adebayo",
-        "adebayo"
-      ],
-      "description": "A name associated with the Yoruba form عدباييو, meaning the crown has conquered.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "adebayo",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Yoruba"
+          "@type": "DefinedTerm",
+          "name": "Adebayo",
+          "description": "Adebayo — Adebayo is a Yoruba name commonly interpreted as “the crown has met/brought joy”; a direct Yoruba source is still needed. The Arabic-script string is only a transcription, not native Yoruba orthography.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Adebayo mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Adebayo is a Yoruba-origin name meaning “The crown has met/borne joy”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Adebayo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Adebayo originates in Yoruba and circulates in Muslim naming communities."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Adebayo an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No — the recorded form عدباييو is Yoruba, not Arabic."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Adebayo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No root analysis is asserted for this spelling."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Adebayo an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Adebayo is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Adebayo a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Adebayo is not independently established as a Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Adebayo mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Urdu it is written ادیبایو and carries the sense “تاج نے فتح کیا”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Adebayo pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A romanized syllable approximation is “a-de-bayo”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Adebayo a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Documented usage records Adebayo as a boy's name; actual use can vary by community."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Adebayo",
+              "item": "https://nameverse.site/names/islamic/adebayo"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Adebayo, associated with the Yoruba form عدباييو, meaning the crown has conquered."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "native_yoruba_form_misrepresented_as_arabic_script_corrected",
+        "joy_vs_conquered_translation_mismatch_corrected",
+        "direct_yoruba_source_needed"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; direct source and translation review pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

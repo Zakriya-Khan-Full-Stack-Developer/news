@@ -1,472 +1,526 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aabish",
     "slug": "aabish",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aabish",
       "normalized_name": "aabish",
       "name_type": "given_name",
       "gender": "Unknown",
-      "gender_confidence": "unknown",
-      "gender_note": "No documented personal-name gender usage was established for this form.",
+      "gender_confidence": "LOW",
+      "gender_note": "Available online name lists conflict and do not provide primary evidence of gender usage; retain unknown until reliable naming records are found.",
       "alternate_spellings": [
         "Aabish",
         "aabish",
         "abish"
       ],
-      "search_variants": [
-        "Aabish",
-        "aabish",
-        "abish"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "unverified"
     },
     "core_meaning": {
-      "short_meaning": "Meaning not objectively established",
-      "primary_meaning": "Meaning not objectively established",
-      "secondary_meanings": [],
-      "literal_meaning": "Meaning not objectively established",
-      "extended_meaning": "Meaning not objectively established",
-      "meaning_explanation": "Aabish corresponds to the Unknown form عابش (No reliable root analysis established.). Its core sense is meaning not objectively established. Aabish is recorded at low confidence. The source gave عابش and glossed the name 'Father of the spring'; no verified Arabic lexical form could be confirmed for this spelling. No confident meaning is asserted.",
-      "meaning_confidence": "low"
+      "short_meaning": "Meaning and origin unverified",
+      "primary_meaning": "Aabish remains unverified as a personal name in this record. The Latin spelling and the recorded Arabic-script form عابش have not been matched to a reliable lexical entry that establishes a single origin and meaning. Online name lists repeat “father of the spring,” while another list gives a different historical claim; these secondary lists do not establish the etymology. Do not publish either claim as fact without a traceable primary or scholarly source.",
+      "literal_meaning": "Meaning and origin unverified",
+      "meaning_explanation": "Searches for Aabish and عابش did not establish a reliable dictionary entry connecting this spelling to the claim “father of the spring.” That English phrase appears in secondary baby-name lists, but no supporting Arabic morphology or authoritative lexical source was located. A separate secondary list associates Aabish with a queen of Iran, illustrating that name-list claims conflict. Keep meaning, language origin, and gender unverified until stronger evidence is found.",
+      "meaning_confidence": "LOW"
     },
     "etymology": {
-      "primary_language": "Unknown",
+      "primary_language": "Unverified",
       "lexical_form": "عابش",
       "transliteration": "aabish",
-      "romanization": "aabish",
-      "root_status": "No reliable root analysis established.",
-      "etymological_meaning": [
-        "Meaning not objectively established"
-      ],
-      "etymology_explanation": "The form عابش is an established Unknown lexical item. Aabish is recorded at low confidence. The source gave عابش and glossed the name 'Father of the spring'; no verified Arabic lexical form could be confirmed for this spelling. No confident meaning is asserted.",
-      "etymology_confidence": "low",
-      "false_etymology_warning": "The identification of this form is uncertain; no confident etymology is asserted."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "No reliable morphological analysis established.",
+      "feminine_form": null,
+      "etymological_meaning": "Unverified",
+      "root_family": [],
+      "etymology_explanation": "No etymology is asserted. The claimed meaning “father of the spring” is not supported by a demonstrated Arabic compound or a reliable lexical source for عابش. Do not infer that meaning by splitting the Latin spelling or by relying on repeated baby-name websites.",
+      "etymology_confidence": "LOW",
+      "false_etymology_warning": "Do not publish “father of the spring,” a Persian/Arabic origin, or any gender assignment as fact without a reliable lexical or historical source matching this exact spelling and script form."
     },
     "language": {
       "primary": "Unknown",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Unknown",
+        "Muslim South Asia"
       ],
       "language_notes": {
-        "Arabic": "عابش is an established Arabic form.",
-        "Urdu": "عابش is used in Urdu.",
-        "Persian": "عابش is an established Persian form.",
-        "Hindi": "आबिश is used in Hindi.",
-        "Pashto": "عابش is used in Pashto."
+        "primary": "The language of origin has not been established; the Arabic-script spelling in this record is not sufficient to determine it.",
+        "usage": "Do not infer an origin or root until a reliable lexical or naming source is found."
       },
-      "language_confidence": "low"
+      "language_confidence": "LOW"
     },
     "origin": {
-      "primary_origin": "Unknown",
-      "origin_type": "linguistic",
-      "origin_confidence": "low",
-      "origin_explanation": "The name is associated with the Unknown form عابش. Aabish is recorded at low confidence. The source gave عابش and glossed the name 'Father of the spring'; no verified Arabic lexical form could be confirmed for this spelling. No confident meaning is asserted.",
-      "cultural_transmission": []
+      "primary_origin": "Unverified",
+      "origin_type": "unverified",
+      "origin_confidence": "LOW",
+      "origin_explanation": "No reliable source found in this review establishes the linguistic origin of the exact spelling Aabish or Arabic-script form عابش.",
+      "cultural_transmission": [
+        "Unverified; do not infer from list-site categorization"
+      ]
     },
     "religion": {
-      "primary_association": "South Asian cultural usage",
-      "religion": "Not inherently religious",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aabish may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "primary_association": "Islamic-cultural usage",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Aabish is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": false
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Aabish is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Aabish as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "No confident interpretation is asserted.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
-        "South Asia"
+        "Unknown",
+        "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense meaning not objectively established.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "No cultural association is asserted without a reliable source for this spelling.",
+      "personal_name_interpretation": "No interpretation is offered until the name’s meaning and origin are verified.",
+      "interpretation_warning": "Separate dictionary meaning, religious reference, cultural use, and personal interpretation. Do not treat them as interchangeable."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Meaning not objectively established",
-      "related_concepts": [
-        "meaning not objectively established"
-      ],
-      "semantic_relationship": "The central semantic idea is meaning not objectively established; other senses are extended associations."
+      "primary_semantic_domain": "unverified",
+      "related_concepts": []
     },
     "spiritual_meaning": {
-      "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of meaning not objectively established.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "status": "not_verified",
+      "render": false,
+      "meaning": "No separate spiritual meaning is asserted beyond the documented lexical or religious reference.",
+      "basis": null,
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Meaning not objectively established"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": false,
+      "lucky_number": 4,
+      "life_path_number": 4,
+      "ruling_planet": "Uranus",
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "meaning": "In Pythagorean numerology the letters of Aabish total 4, associated with stability, discipline and order. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology/lucky-attribute claims are interpretive beliefs, not evidence-based properties of a name; keep hidden from factual name content."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": false,
+      "lucky_number": 4,
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "ruling_planet": "Uranus",
+      "note": "Numerology/lucky-attribute claims are interpretive beliefs, not evidence-based properties of a name; keep hidden from factual name content."
     },
     "translations": {
       "english": {
         "name": "Aabish",
-        "meaning": "Meaning not objectively established",
-        "long_meaning": "Aabish is a Unknown-origin name. Its core meaning is meaning not objectively established. Aabish is recorded at low confidence. The source gave عابش and glossed the name 'Father of the spring'; no verified Arabic lexical form could be confirmed for this spelling. No confident meaning is asserted."
+        "script": "عابش",
+        "meaning": "Meaning and origin unverified",
+        "long_meaning": "The meaning and linguistic origin of Aabish are not sufficiently established from the evidence available for this record. The Arabic spelling عابش does not, on its own, substantiate the commonly repeated gloss “father of the spring.” Treat the name’s meaning as unverified until a reliable lexicon or documented naming source is found."
       },
       "urdu": {
         "name": "عابش",
-        "meaning": "معنی مصدق نہیں",
-        "long_meaning": "Aabish (عابش) نامعلوم زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم معنی مصدق نہیں ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "عابش",
+        "meaning": "معنی اور اصل کی تصدیق نہیں ہوئی",
+        "long_meaning": "اس ریکارڈ میں Aabish کے معنی یا لسانی اصل کے لیے قابلِ اعتماد لغوی ثبوت موجود نہیں۔ اس لیے کسی مشہور معنی کو مستند حقیقت کے طور پر بیان نہیں کیا جا رہا؛ مزید تحقیق ضروری ہے۔"
       },
       "persian": {
         "name": "عابش",
-        "meaning": "معنا تأیید نشده",
-        "long_meaning": "Aabish (عابش) نامی برگرفته از زبان نامعلوم است و معنای اصلی آن معنا تأیید نشده است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "script": "عابش",
+        "meaning": "معنا و ریشه تأیید نشده است",
+        "long_meaning": "برای معنی و ریشهٔ زبانی نام Aabish در این رکورد مدرک واژه‌شناختی قابل‌اعتمادی ثبت نشده است. بنابراین نباید معنی رایجی را بدون منبع معتبر، قطعی معرفی کرد."
       },
       "hindi": {
         "name": "आबिश",
-        "meaning": "अर्थ प्रमाणित नहीं",
-        "long_meaning": "Aabish (आबिश) अज्ञात भाषा से लिया गया नाम है। इसका मुख्य अर्थ अर्थ प्रमाणित नहीं है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "आबिश",
+        "meaning": "अर्थ और उत्पत्ति की पुष्टि नहीं हुई",
+        "long_meaning": "इस रिकॉर्ड में Aabish के अर्थ और भाषाई मूल के लिए भरोसेमंद शब्दकोशीय प्रमाण उपलब्ध नहीं है। इसलिए किसी प्रचलित दावे को प्रमाणित अर्थ नहीं माना जाना चाहिए, जब तक विश्वसनीय स्रोत न मिले।"
       },
       "pashto": {
         "name": "عابش",
-        "meaning": "مانا تایید شوې نه ده",
-        "long_meaning": "Aabish (عابش) د نامعلوم ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې مانا تایید شوې نه ده ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "عابش",
+        "meaning": "مانا او ژبنی اصل یې نه دي تایید شوي",
+        "long_meaning": "د Aabish لپاره په دې ریکارډ کې باوري لغوي سرچینه نه ده ثبت شوې چې مانا یا ژبنی اصل یې ثابت کړي. د عابش عربي لیکدود په یوازې ځان د کومې مانا ثبوت نه دی. تر هغه چې معتبره سرچینه ونه موندل شي، باید مشهوره ادعا د تایید شوې مانا په توګه ونه ښودل شي.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "عابش",
-        "meaning": "المعنى غير محقق",
-        "long_meaning": "Aabish (عابش) اسم مأخوذ من اللغة غير محددة، ومعناه الأساسي المعنى غير محقق. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "عابش",
+        "meaning": "المعنى والأصل اللغوي غير مثبتين في هذا السجل.",
+        "long_meaning": "لم يُثبت هذا السجل معنى معجميًا موثوقًا أو أصلًا لغويًا مؤكدًا لاسم Aabish. لذلك لا ينبغي تقديم تهجئة عابش أو أي تفسير شائع على أنه حقيقة مؤكدة دون مصدر لغوي موثوق.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "low"
+      "confidence": "MEDIUM",
+      "native_review_required": true,
+      "note": "English, Urdu, Persian, and Hindi explanations were revised for name-specific semantic consistency. Arabic and Pashto wording remains provisional and requires review by qualified native speakers; no translation is represented as professionally verified."
     },
     "pronunciation": {
       "romanized": "aa-bish",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عابش",
-      "persian": "عابش",
-      "hindi": "आबिश",
-      "pashto": "عابش"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عابش"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aabish",
-        "aabish",
         "abish"
       ],
-      "script_variants": [
+      "script_forms": [
         "عابش",
         "आबिश"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عابش is an established Unknown lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "low",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "not_verified",
+      "note": "No verified lexical history is available."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aabish can be understood through the Unknown form عابش, whose central sense is meaning not objectively established. Aabish is recorded at low confidence. The source gave عابش and glossed the name 'Father of the spring'; no verified Arabic lexical form could be confirmed for this spelling. No confident meaning is asserted.",
-      "is_fictional": false
+      "status": "not_published",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aabish mean?",
-        "answer": "Aabish is associated with the Unknown form عابش, whose core sense is meaning not objectively established."
+        "q": "What does Aabish mean?",
+        "a": "Aabish remains unverified in this record. Secondary name lists repeat “father of the spring,” but no reliable lexical source matching the recorded form عابش was found to substantiate that meaning."
       },
       {
-        "question": "What is the origin of Aabish?",
-        "answer": "Aabish is associated with Unknown. Aabish is recorded at low confidence. The source gave عابش and glossed the name 'Father of the spring'; no verified Arabic lexical form could be confirmed for this spelling. No confident meaning is asserted."
+        "q": "What is the origin of Aabish?",
+        "a": "The linguistic origin of Aabish is not established. Online name lists make conflicting claims, and none located in this review supplies a reliable lexical source for the exact spelling."
       },
       {
-        "question": "Is Aabish an Arabic name?",
-        "answer": "No — the underlying form is Unknown, not Arabic."
+        "q": "Is Aabish an Arabic name?",
+        "a": "An Arabic origin is not established by the recorded spelling عابش alone. A reliable lexicon or documented onomastic source matching this exact form is needed."
       },
       {
-        "question": "Is Aabish an Islamic name?",
-        "answer": "Aabish can occur in Muslim naming contexts, but it is better described as a Unknown-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aabish?",
+        "a": "No Arabic root is asserted for Aabish: the spelling has not been connected to a reliable lexical entry in this record."
       },
       {
-        "question": "Is Aabish a Quranic name?",
-        "answer": "Aabish should not be classified as a Quranic personal name without a direct Quranic basis. False"
+        "q": "Is Aabish an Islamic name?",
+        "a": "The record does not yet establish the linguistic origin or meaning of Aabish. Its appearance in Muslim-name lists, if any, would not by itself establish Qur’anic status or religious prescription."
       },
       {
-        "question": "What does Aabish mean in Urdu?",
-        "answer": "In Urdu, Aabish is rendered عابش and carries the sense معنی مصدق نہیں."
+        "q": "Is Aabish a Quranic name?",
+        "a": "This record does not establish Aabish as a Qur’anic personal name. No scriptural reference is claimed because a reliable source connecting this spelling to such a reference has not been identified."
       },
       {
-        "question": "What does Aabish mean in Persian?",
-        "answer": "In Persian, Aabish is rendered عابش and carries the sense معنا تأیید نشده."
+        "q": "What does Aabish mean in Urdu?",
+        "a": "The meaning remains unverified. A descriptive Urdu note is “اس نام کے معنی اور لسانی اصل کی تصدیق نہیں ہوئی” until a reliable naming or lexical source is found."
       },
       {
-        "question": "How is Aabish pronounced?",
-        "answer": "A romanized syllable approximation is aa-bish. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aabish pronounced?",
+        "a": "A rough romanized guide is “aa-bish”; pronunciation may vary by language and family."
       },
       {
-        "question": "What are the variants of Aabish?",
-        "answer": "Romanization variants include Aabish, aabish, abish. Script forms are عابش, आबिश."
+        "q": "Is Aabish a boy's or girl's name?",
+        "a": "Gender usage is not verified for this spelling; it should not be labelled male or female without evidence."
       },
       {
-        "question": "Is Aabish a boy's or girl's name?",
-        "answer": "Documented usage records this form as unknown. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "What should be verified about Aabish before relying on its meaning?",
+        "a": "A primary or scholarly lexical source matching the exact spelling and script form is needed. Secondary lists make conflicting claims; meaning, origin, gender, and usage frequency remain unverified."
       }
     ],
     "seo": {
-      "title": "Aabish Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Unknown origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aabish (عابش).",
-      "h1": "Aabish Name Meaning, Origin and Cultural Background",
+      "title": "Aabish Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aabish (عابش) — meaning, language background, pronunciation and carefully qualified naming context.",
+      "meta_keywords": "Aabish meaning, Aabish name meaning, Aabish origin, Aabish meaning in Urdu, Aabish pronunciation, Aabish Islamic name",
+      "description_paragraph": "The meaning and origin of Aabish are not established by reliable lexical evidence in this record. Secondary name lists make conflicting claims, so neither “father of the spring” nor another proposed meaning is presented as verified.",
+      "keywords": [
+        "Aabish meaning",
+        "Aabish name meaning",
+        "Aabish origin",
+        "Aabish meaning in Urdu",
+        "Aabish pronunciation",
+        "Aabish Islamic name"
+      ],
       "focus_keyword": "Aabish meaning",
       "secondary_keywords": [
         "Aabish name meaning",
-        "Aabish meaning in Urdu",
         "Aabish origin",
-        "Aabish Islamic name",
+        "Aabish meaning in Urdu",
         "Aabish pronunciation",
-        "Aabish name in Urdu"
+        "Aabish Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aabish (عابش) is associated with the Unknown form عابش, whose core sense is meaning not objectively established. Aabish is recorded at low confidence. The source gave عابش and glossed the name 'Father of the spring'; no verified Arabic lexical form could be confirmed for this spelling. No confident meaning is asserted.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aabish",
+      "seo_score": 52,
+      "seo_score_basis": "Provisional editorial score reflects transparency and schema consistency, not a verified etymology; core meaning and origin remain unresolved."
     },
     "seo_content": {
-      "intro": "Aabish is associated with the Unknown form عابش, whose core sense is meaning not objectively established.",
-      "meaning_section": "The central meaning of Aabish is meaning not objectively established.",
-      "origin_section": "Aabish is associated with Unknown rather than with a different language.",
-      "islam_section": "Aabish can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aabish is with the sense meaning not objectively established.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "The origin and meaning of Aabish remain unverified. This entry separates repeated online name-list claims from evidence that would be needed to establish a reliable etymology.",
+      "body_summary": "The meaning and origin of Aabish are not established by reliable lexical evidence in this record. Secondary name lists make conflicting claims, so neither “father of the spring” nor another proposed meaning is presented as verified."
     },
     "social_tags": [
       "#Aabish",
       "#AabishMeaning",
-      "#AabishName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "low",
-      "linguistic_authenticity": "low",
-      "etymological_authenticity": "low",
-      "meaning_authenticity": "low",
-      "translation_quality": "low",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "Meaning unverified",
+        "Origin unverified",
+        "Gender usage unverified",
+        "Conflicting secondary name-list claims found; neither accepted as authoritative",
+        "Arabic and Pashto translations require native review"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 153,
+      "quality_score": 52,
+      "quality_score_basis": "Provisional editorial assessment reflects responsible uncertainty and suppression of unsupported claims, not verified meaning accuracy. Origin, meaning, gender, and frequency remain unverified because no reliable lexical source matching the exact form was found.",
+      "tier1_verified_scope": "Core meaning and every associated claim have not been independently re-verified in this pass; source links, translation review, and usage evidence have separate status."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "Secondary list repeating the claim “father of the spring” (not accepted as proof): https://nameverse.vercel.app/names/islamic/letter/A/1",
+        "Secondary list giving a conflicting claim (“Queen of Iran, daughter of Saad”; not independently verified): https://darsequranonline.com/muslim-baby-girl-names/"
+      ],
+      "verification_method": "Searched the exact Latin spelling and recorded Arabic-script form, including claimed meaning. Search results surfaced conflicting secondary name-list claims but no reliable dictionary or scholarly source establishing the exact form’s origin or meaning. The conflicting claims are documented only to explain why the entry remains unverified; they are not treated as evidence.",
+      "claim_evidence": [
         {
-          "claim": "Aabish corresponds to the Unknown form عابش",
-          "evidence_type": "lexical",
-          "confidence": "low"
+          "claim": "“Father of the spring” claim appears in a secondary NameVerse list",
+          "source": "https://nameverse.vercel.app/names/islamic/letter/A/1",
+          "status": "secondary_list_claim_only_not_lexically_verified"
         },
         {
-          "claim": "Aabish has the core sense meaning not objectively established",
-          "evidence_type": "lexical",
-          "confidence": "low"
+          "claim": "A different historical claim appears in a secondary baby-name list",
+          "source": "https://darsequranonline.com/muslim-baby-girl-names/",
+          "status": "secondary_list_claim_only_not_independently_verified"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "CONFLICTING_SECONDARY_NAME_LISTS; NO_RELIABLE_LEXICAL_SOURCE_ESTABLISHED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse editorial revision",
+      "methodology": "Individual source-search review; conflicting secondary name-list claims recorded as non-authoritative, no meaning or origin inferred without lexical evidence, and FAQ/structured data synchronized.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T06:10:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aabish",
-      "alternateName": [
-        "Aabish",
-        "aabish",
-        "abish"
-      ],
-      "description": "A name associated with the Unknown form عابش, meaning meaning not objectively established.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aabish",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Unknown"
+          "@type": "DefinedTerm",
+          "name": "Aabish",
+          "description": "The meaning and origin of Aabish are not established by reliable lexical evidence in this record. Secondary name lists make conflicting claims, so neither “father of the spring” nor another proposed meaning is presented as verified.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Unknown"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aabish mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aabish remains unverified in this record. Secondary name lists repeat “father of the spring,” but no reliable lexical source matching the recorded form عابش was found to substantiate that meaning."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aabish?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The linguistic origin of Aabish is not established. Online name lists make conflicting claims, and none located in this review supplies a reliable lexical source for the exact spelling."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aabish an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "An Arabic origin is not established by the recorded spelling عابش alone. A reliable lexicon or documented onomastic source matching this exact form is needed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aabish?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No Arabic root is asserted for Aabish: the spelling has not been connected to a reliable lexical entry in this record."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aabish an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record does not yet establish the linguistic origin or meaning of Aabish. Its appearance in Muslim-name lists, if any, would not by itself establish Qur’anic status or religious prescription."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aabish a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Aabish as a Qur’anic personal name. No scriptural reference is claimed because a reliable source connecting this spelling to such a reference has not been identified."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aabish mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The meaning remains unverified. A descriptive Urdu note is “اس نام کے معنی اور لسانی اصل کی تصدیق نہیں ہوئی” until a reliable naming or lexical source is found."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aabish pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A rough romanized guide is “aa-bish”; pronunciation may vary by language and family."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aabish a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Gender usage is not verified for this spelling; it should not be labelled male or female without evidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should be verified about Aabish before relying on its meaning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A primary or scholarly lexical source matching the exact spelling and script form is needed. Secondary lists make conflicting claims; meaning, origin, gender, and usage frequency remain unverified."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aabish",
+              "item": "https://nameverse.site/names/islamic/aabish"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aabish, associated with the Unknown form عابش, meaning meaning not objectively established."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "Find a primary or scholarly source matching exact Latin and script forms",
+        "Do not claim “father of the spring” without lexical evidence",
+        "Confirm whether عابش is the intended script form or a transliteration error",
+        "Gender and modern name usage unverified",
+        "Native review required for Arabic and Pashto"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse editorial revision (automated consistency pass; native/human review still required)",
+      "reviewed_at": "2026-10-15"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

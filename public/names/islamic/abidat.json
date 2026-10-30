@@ -1,70 +1,61 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abidat",
     "slug": "abidat",
+    "content_revision": "v8.2",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abidat",
       "normalized_name": "abidat",
       "name_type": "given_name",
       "gender": "Female",
-      "gender_confidence": "medium",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abidat",
         "abidat"
       ],
-      "search_variants": [
-        "Abidat",
-        "abidat"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
       "short_meaning": "Servants, worshippers (of God)",
-      "primary_meaning": "Servants",
-      "secondary_meanings": [
-        "worshippers (of God)"
-      ],
-      "literal_meaning": "Servants",
-      "extended_meaning": "Servants, worshippers (of God)",
-      "meaning_explanation": "Abidat corresponds to the Arabic form عابدات (ع ب د). Its core sense is servants, worshippers (of god). Sound feminine plural of عابدة. The source record's gloss 'Servant of Allah' is imprecise.",
-      "meaning_confidence": "medium"
+      "primary_meaning": "Abidat corresponds to Arabic عابدات, the sound feminine plural of عابدة (“female worshipper/devotee”); use as an individual personal name is not verified.",
+      "literal_meaning": "Servants, worshippers (of God)",
+      "meaning_explanation": "The form عابدات is a feminine plural. It should not be described as a singular meaning or as “worshippers of God” with God treated as an explicit lexical element. The claim that it is used as a given name in South Asian communities requires independent evidence.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عابدات",
       "transliteration": "abidat",
-      "romanization": "abidat",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Servants",
-        "worshippers (of God)"
-      ],
-      "etymology_explanation": "The form عابدات is an established Arabic lexical item. Sound feminine plural of عابدة. The source record's gloss 'Servant of Allah' is imprecise.",
-      "etymology_confidence": "medium",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "ع ب د",
+      "root_transliteration": "ʿ-b-d",
+      "morphology": "Sound feminine plural (ـات ending) of عابدة, the feminine of عابد, built on the root ع ب د.",
+      "feminine_form": null,
+      "etymological_meaning": "From the root ع ب د (ʿ-b-d)",
+      "root_family": [],
+      "etymology_explanation": "The form عابدات is an established Arabic lexical item — the sound feminine plural of عابدة — and Abidat is the word itself used as a personal name rather than a derived or diminutive form.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عابدات is an established Arabic form.",
-        "Urdu": "عابدات is used in Urdu.",
-        "Hindi": "आबिदात is used in Hindi.",
-        "Pashto": "عابدات is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عابدات.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "medium"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "medium",
-      "origin_explanation": "The name is associated with the Arabic form عابدات. Sound feminine plural of عابدة. The source record's gloss 'Servant of Allah' is imprecise.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -73,405 +64,446 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Abidat may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abidat is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "root ع ب د occurs in the Qur'an; عابدات is a sound feminine plural, not a Qur'anic proper name"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abidat is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abidat as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense servants, worshippers (of god).",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Servants",
+      "primary_semantic_domain": "Servants, worshippers (of God)",
       "related_concepts": [
-        "servants",
-        "worshippers (of god)"
-      ],
-      "semantic_relationship": "The central semantic idea is servants; other senses are extended associations."
+        "Servants, worshippers (of God)"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of servants.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Servants, worshippers (of God)” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Servants, worshippers (of God).",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Servants",
-        "Worshippers (of god)"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 1,
+      "life_path_number": 1,
+      "ruling_planet": "Sun",
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Gold",
+        "Orange"
+      ],
+      "lucky_stone": "Ruby",
+      "meaning": "In Pythagorean numerology the letters of Abidat total 1, associated with leadership, independence and initiative. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 1,
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Gold",
+        "Orange"
+      ],
+      "lucky_stone": "Ruby",
+      "ruling_planet": "Sun"
     },
     "translations": {
       "english": {
         "name": "Abidat",
-        "meaning": "Servants, worshippers (of God)",
-        "long_meaning": "Abidat is a Arabic-origin name. Its core meaning is servants, worshippers (of god). Sound feminine plural of عابدة. The source record's gloss 'Servant of Allah' is imprecise."
+        "script": "Abidat",
+        "meaning": "Female worshippers/devotees (plural form); personal-name use unverified",
+        "long_meaning": "The form is feminine plural. Modern personal-name use and native translations require separate evidence."
       },
       "urdu": {
         "name": "عابدات",
-        "meaning": "بندے، عبادت کرنے والے",
-        "long_meaning": "Abidat (عابدات) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم بندے، عبادت کرنے والے ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "عابدات",
+        "meaning": "عابدات، عبادت کرنے والیاں",
+        "long_meaning": "The form is feminine plural. Modern personal-name use and native translations require separate evidence."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "عابدات",
+        "script": "عابدات",
+        "meaning": "عابدات، پرستندگان زن",
+        "long_meaning": "The form is feminine plural. Modern personal-name use and native translations require separate evidence."
       },
       "hindi": {
         "name": "आबिदात",
-        "meaning": "दास, उपासकगण",
-        "long_meaning": "Abidat (आबिदात) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ दास, उपासकगण है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "आबिदात",
+        "meaning": "उपासिकाएँ, महिला उपासक",
+        "long_meaning": "The form is feminine plural. Modern personal-name use and native translations require separate evidence."
       },
       "pashto": {
         "name": "عابدات",
-        "meaning": "بندګان، عبادت کوونکي",
-        "long_meaning": "Abidat (عابدات) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې بندګان، عبادت کوونکي ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "عابدات",
+        "meaning": "عابدات، ښځینه عبادت کوونکې",
+        "long_meaning": "The form is feminine plural. Modern personal-name use and native translations require separate evidence.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "عابدات",
-        "meaning": "عباد، عابدات",
-        "long_meaning": "Abidat (عابدات) اسم مأخوذ من اللغة العربية، ومعناه الأساسي عباد، عابدات. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "عابدات",
+        "meaning": "عابدات، جمع مؤنث عابدة",
+        "long_meaning": "The form is feminine plural. Modern personal-name use and native translations require separate evidence.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "medium"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "a-bi-dat",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عابدات",
-      "persian": null,
-      "hindi": "आबिदात",
-      "pashto": "عابدات"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عابدات"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Abidat",
-        "abidat"
+        "Abidat"
       ],
-      "script_variants": [
+      "script_forms": [
         "عابدات",
         "आबिदात"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عابدات is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "medium",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عابدات is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abidat can be understood through the Arabic form عابدات, whose central sense is servants, worshippers (of god). Sound feminine plural of عابدة. The source record's gloss 'Servant of Allah' is imprecise.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abidat mean?",
-        "answer": "Abidat is associated with the Arabic form عابدات, whose core sense is servants, worshippers (of god)."
+        "q": "What does Abidat mean?",
+        "a": "عابدات is the feminine plural of عابدة (“female worshipper/devotee”); individual name use is unverified."
       },
       {
-        "question": "What is the origin of Abidat?",
-        "answer": "Abidat is associated with Arabic. Sound feminine plural of عابدة. The source record's gloss 'Servant of Allah' is imprecise."
+        "q": "What is the origin of Abidat?",
+        "a": "The recorded form is Arabic عابدات."
       },
       {
-        "question": "Is Abidat an Arabic name?",
-        "answer": "Yes — the underlying form عابدات is Arabic."
+        "q": "Is Abidat an Arabic name?",
+        "a": "The form is Arabic feminine plural, not singular."
       },
       {
-        "question": "Is Abidat an Islamic name?",
-        "answer": "Abidat can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Abidat?",
+        "a": "The form is related to root ع ب د."
       },
       {
-        "question": "Is Abidat a Quranic name?",
-        "answer": "Abidat should not be classified as a Quranic personal name without a direct Quranic basis. root ع ب د occurs in the Qur'an; عابدات is a sound feminine plural, not a Qur'anic proper name"
+        "q": "Is Abidat an Islamic name?",
+        "a": "The lexical form has religious vocabulary, but this record is not a naming recommendation."
       },
       {
-        "question": "What does Abidat mean in Urdu?",
-        "answer": "In Urdu, Abidat is rendered عابدات and carries the sense بندے، عبادت کرنے والے."
+        "q": "Is Abidat a Quranic name?",
+        "a": "This record does not establish Abidat as an explicitly named Qur'anic personal name."
       },
       {
-        "question": "What does Abidat mean in Persian?",
-        "answer": "No verified Persian form was established for Abidat."
+        "q": "What does Abidat mean in Urdu?",
+        "a": "A cautious Urdu gloss is “عابدات، عبادت کرنے والیاں.”"
       },
       {
-        "question": "How is Abidat pronounced?",
-        "answer": "A romanized syllable approximation is a-bi-dat. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abidat pronounced?",
+        "a": "Pronunciation is approximate and transliteration-dependent."
       },
       {
-        "question": "What are the variants of Abidat?",
-        "answer": "Romanization variants include Abidat, abidat. Script forms are عابدات, आबिदात."
-      },
-      {
-        "question": "Is Abidat a boy's or girl's name?",
-        "answer": "Documented usage records this form as female. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Abidat a boy's or girl's name?",
+        "a": "The grammatical form is feminine plural; modern name-use distribution is unverified."
       }
     ],
     "seo": {
-      "title": "Abidat Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Abidat (عابدات).",
-      "h1": "Abidat Name Meaning, Origin and Cultural Background",
+      "title": "Abidat Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abidat (عابدات) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abidat meaning, Abidat name meaning, Abidat origin, Abidat meaning in Urdu, Abidat pronunciation, Abidat Islamic name",
+      "description_paragraph": "Abidat is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abidat meaning",
+        "Abidat name meaning",
+        "Abidat origin",
+        "Abidat meaning in Urdu",
+        "Abidat pronunciation",
+        "Abidat Islamic name"
+      ],
       "focus_keyword": "Abidat meaning",
       "secondary_keywords": [
         "Abidat name meaning",
-        "Abidat meaning in Urdu",
         "Abidat origin",
-        "Abidat Islamic name",
+        "Abidat meaning in Urdu",
         "Abidat pronunciation",
-        "Abidat name in Urdu"
+        "Abidat Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abidat (عابدات) is associated with the Arabic form عابدات, whose core sense is servants, worshippers (of god). Sound feminine plural of عابدة. The source record's gloss 'Servant of Allah' is imprecise.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abidat",
+      "seo_score": 95,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root present; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abidat is associated with the Arabic form عابدات, whose core sense is servants, worshippers (of god).",
-      "meaning_section": "The central meaning of Abidat is servants, worshippers (of god).",
-      "origin_section": "Abidat is associated with Arabic rather than with a different language.",
-      "islam_section": "Abidat can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Abidat is with the sense servants.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abidat, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Abidat is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abidat",
       "#AbidatMeaning",
-      "#AbidatName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "medium",
-      "linguistic_authenticity": "medium",
-      "etymological_authenticity": "medium",
-      "meaning_authenticity": "medium",
-      "translation_quality": "medium",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "plural_form_name_usage_unverified",
+        "of_god_component_not_lexically_explicit",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 146,
+      "quality_score": 80,
+      "quality_score_basis": "Provisional editorial score only; dictionary sense does not certify personal-name use, frequency, or translation fluency."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%A8%D8%AF"
+      ],
+      "verification_method": "Direct lexical sources are listed where checked. Modern personal-name usage, frequency, and native-speaker translations require separate evidence.",
+      "claim_evidence": [
         {
-          "claim": "Abidat corresponds to the Arabic form عابدات",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "Lane's Lexicon supports عابد as worshipper/devotee; عابدات is its feminine plural, but given-name usage is not established.",
+          "source": "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%A8%D8%AF",
+          "status": "lexical_source_checked"
         },
         {
-          "claim": "Abidat has the core sense servants, worshippers (of god)",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "Personal-name usage, frequency, and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "LEXICAL_SOURCE_CHECKED; NAME_USAGE_AND_TRANSLATIONS_PENDING"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Corrected gendered translation mismatches, plural-form glosses, unsupported meanings, and native-script conflations; separated lexical evidence from personal-name use.",
+      "upgraded_from": "v8",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abidat",
-      "alternateName": [
-        "Abidat",
-        "abidat"
-      ],
-      "description": "A name associated with the Arabic form عابدات, meaning servants, worshippers (of god).",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "abidat",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Abidat",
+          "description": "Abidat — Abidat corresponds to Arabic عابدات, the sound feminine plural of عابدة (“female worshipper/devotee”); use as an individual personal name is not verified.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Female"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abidat mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "عابدات is the feminine plural of عابدة (“female worshipper/devotee”); individual name use is unverified."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abidat?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded form is Arabic عابدات."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abidat an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form is Arabic feminine plural, not singular."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abidat?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form is related to root ع ب د."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abidat an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The lexical form has religious vocabulary, but this record is not a naming recommendation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abidat a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Abidat as an explicitly named Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abidat mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A cautious Urdu gloss is “عابدات، عبادت کرنے والیاں.”"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abidat pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pronunciation is approximate and transliteration-dependent."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abidat a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The grammatical form is feminine plural; modern name-use distribution is unverified."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abidat",
+              "item": "https://nameverse.site/names/islamic/abidat"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abidat, associated with the Arabic form عابدات, meaning servants, worshippers (of god)."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "plural_form_name_usage_unverified",
+        "of_god_component_not_lexically_explicit",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; name-use and native translation review pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

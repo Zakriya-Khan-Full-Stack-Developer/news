@@ -1,73 +1,62 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aabir",
     "slug": "aabir",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aabir",
       "normalized_name": "aabir",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "MEDIUM",
+      "gender_note": "Aabir is commonly listed as a masculine given name in Urdu and Muslim-name references; the Arabic form is grammatically masculine, with feminine عابرة (ʿābira). This does not measure gender distribution in every region.",
       "alternate_spellings": [
         "Aabir",
         "aabir",
         "abir"
       ],
-      "search_variants": [
-        "Aabir",
-        "aabir",
-        "abir"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Passer-by, one who crosses",
-      "primary_meaning": "Passer-by",
-      "secondary_meanings": [
-        "one who crosses"
-      ],
-      "literal_meaning": "Passer-by",
-      "extended_meaning": "Passer-by, one who crosses",
-      "meaning_explanation": "Aabir corresponds to the Arabic form عابر (Arabic root ع ب ر (ʿ-b-r); عَابِر (ʿĀbir)). Its core sense is passer-by, one who crosses. Aabir is Arabic عَابِر (ʿĀbir) 'passer-by, one who crosses', from the root ع ب ر (ʿ-b-r). The source gloss 'The Last' is unsupported and has been replaced with the lexical sense.",
-      "meaning_confidence": "high"
+      "short_meaning": "Passer-by; one who crosses; wayfarer",
+      "primary_meaning": "Aabir (عابر, ʿābir) represents an Arabic active-participle form meaning “one who passes,” “passer-by,” or “wayfarer.” It is associated with the root ع ب ر (ʿ-b-r). The direct lexical sense concerns passing or crossing; the frequently circulated gloss “the last” is not supported by the sources checked for this form. This word meaning does not by itself establish name popularity or a special religious status.",
+      "literal_meaning": "Passer-by; wayfarer",
+      "meaning_explanation": "Arabic عَابِر (ʿābir) is an active participle associated with عَبَرَ and the root ع ب ر, with senses such as passing, crossing, or going through. “Wayfarer” is a natural contextual rendering for a person who passes along a route. “The last” is not supported by the consulted lexical references for this form.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عابر",
       "transliteration": "aabir",
-      "romanization": "aabir",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Passer-by",
-        "one who crosses"
-      ],
-      "etymology_explanation": "The form عابر is an established Arabic lexical item. Aabir is Arabic عَابِر (ʿĀbir) 'passer-by, one who crosses', from the root ع ب ر (ʿ-b-r). The source gloss 'The Last' is unsupported and has been replaced with the lexical sense.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "ع ب ر",
+      "root_transliteration": "ʿ-b-r",
+      "morphology": "Arabic active participle (اسم فاعل) associated with عَبَرَ (ʿabara), from the triliteral root ع ب ر (ʿ-b-r).",
+      "feminine_form": "عابرة (ʿābira)",
+      "etymological_meaning": "One who passes or crosses",
+      "root_family": [],
+      "etymology_explanation": "The lexical form عابر is the active participle associated with the Arabic verb عَبَرَ and root ع ب ر. Dictionaries gloss it as someone who passes or crosses, including a wayfarer. This morphology does not support “the last” as its direct meaning.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "Do not infer a Qur'anic status, religious prescription, popularity, personality trait, or separate etymology from Muslim usage or Latin spelling alone."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عابر is an established Arabic form.",
-        "Urdu": "عابر is used in Urdu.",
-        "Persian": "عابر is an established Persian form.",
-        "Hindi": "आबिर is used in Hindi.",
-        "Pashto": "عابر is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عابر.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form عابر. Aabir is Arabic عَابِر (ʿĀbir) 'passer-by, one who crosses', from the root ع ب ر (ʿ-b-r). The source gloss 'The Last' is unsupported and has been replaced with the lexical sense.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The recorded lexical form عابر is Arabic. It also appears as a personal name in Urdu/Muslim naming references; prevalence by region is not measured in this record.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -76,408 +65,469 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aabir may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Aabir is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": false
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Aabir is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Aabir as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense passer-by, one who crosses.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "The name’s lexical meaning is the best-supported description here. Any family or community symbolism is interpretive and should not be presented as a verified cultural fact.",
+      "personal_name_interpretation": "Families may choose the name for its lexical meaning or religious/cultural associations; that choice is personal and does not establish additional factual meanings.",
+      "interpretation_warning": "Separate dictionary meaning, religious reference, cultural use, and personal interpretation. Do not treat them as interchangeable."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Passer-by",
+      "primary_semantic_domain": "Passing, crossing, wayfarer",
       "related_concepts": [
-        "passer-by",
-        "one who crosses"
-      ],
-      "semantic_relationship": "The central semantic idea is passer-by; other senses are extended associations."
+        "Passing by",
+        "Crossing",
+        "Wayfarer"
+      ]
     },
     "spiritual_meaning": {
-      "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of passer-by.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "status": "not_verified",
+      "render": false,
+      "meaning": "No separate spiritual meaning is asserted beyond the documented lexical or religious reference.",
+      "basis": null,
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Passer-by",
-        "One who crosses"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": false,
+      "lucky_number": 4,
+      "life_path_number": 4,
+      "ruling_planet": "Uranus",
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "meaning": "In Pythagorean numerology the letters of Aabir total 4, associated with stability, discipline and order. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology/lucky-attribute claims are interpretive beliefs, not evidence-based properties of a name; keep hidden from factual name content."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": false,
+      "lucky_number": 4,
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "ruling_planet": "Uranus",
+      "note": "Numerology/lucky-attribute claims are interpretive beliefs, not evidence-based properties of a name; keep hidden from factual name content."
     },
     "translations": {
       "english": {
         "name": "Aabir",
-        "meaning": "Passer-by, one who crosses",
-        "long_meaning": "Aabir is a Arabic-origin name. Its core meaning is passer-by, one who crosses. Aabir is Arabic عَابِر (ʿĀbir) 'passer-by, one who crosses', from the root ع ب ر (ʿ-b-r). The source gloss 'The Last' is unsupported and has been replaced with the lexical sense."
+        "script": "عابر",
+        "meaning": "Passer-by; one who crosses; wayfarer",
+        "long_meaning": "Aabir (عابر, ʿābir) represents an Arabic active-participle form meaning “one who passes,” “passer-by,” or “wayfarer.” It is associated with the root ع ب ر (ʿ-b-r). The direct lexical sense concerns passing or crossing; the frequently circulated gloss “the last” is not supported by the sources checked for this form. This word meaning does not by itself establish name popularity or a special religious status."
       },
       "urdu": {
         "name": "عابر",
-        "meaning": "گزرنے والا، راہگیر",
-        "long_meaning": "Aabir (عابر) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم گزرنے والا، راہگیر ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "عابر",
+        "meaning": "گزرنے والا، راہ گیر",
+        "long_meaning": "عابر عربی اسمِ فاعل ہے، جس کے معنی «گزرنے والا»، «عبور کرنے والا» یا «راہ گیر» ہیں۔ یہ عربی مادہ ع ب ر سے متعلق ہے۔ مستند لغوی مراجع میں اس لفظ کے لیے «آخری» کا معنی ثابت نہیں ہوتا۔ لفظ کا معنی نام کی علاقائی مقبولیت یا کسی خاص مذہبی حیثیت کا ثبوت نہیں۔"
       },
       "persian": {
         "name": "عابر",
+        "script": "عابر",
         "meaning": "گذرنده، رهگذر",
-        "long_meaning": "Aabir (عابر) نامی برگرفته از زبان عربی است و معنای اصلی آن گذرنده، رهگذر است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "long_meaning": "عابر صورتِ اسم فاعل در عربی و مرتبط با فعل عَبَرَ و ریشهٔ ع ب ر است؛ معنای آن «گذرنده»، «عبورکننده» یا «رهگذر» است. منابع لغوی بررسی‌شده معنای «آخرین» را برای این صورت تأیید نمی‌کنند. معنای واژه به‌تنهایی میزان رواج آن به‌عنوان نام شخصی یا جایگاه دینی خاص را ثابت نمی‌کند."
       },
       "hindi": {
         "name": "आबिर",
-        "meaning": "गुज़रने वाला, राहगीर",
-        "long_meaning": "Aabir (आबिर) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ गुज़रने वाला, राहगीर है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "आबिर",
+        "meaning": "राहगीर, गुज़रने वाला",
+        "long_meaning": "आबिर अरबी عابر का लिप्यंतरण है। इसका अर्थ “गुज़रने वाला”, “पार करने वाला” या “राहगीर” है और यह अरबी मूल ع ب ر से जुड़ा है। जाँचे गए शब्दकोश इस रूप के लिए “आख़िरी” अर्थ की पुष्टि नहीं करते। शब्दार्थ से नाम की क्षेत्रीय लोकप्रियता या विशेष धार्मिक स्थिति सिद्ध नहीं होती।"
       },
       "pashto": {
         "name": "عابر",
-        "meaning": "تېرېدونکی",
-        "long_meaning": "Aabir (عابر) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې تېرېدونکی ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "عابر",
+        "meaning": "تېرېدونکی، لاروی",
+        "long_meaning": "عابر د عربي اسم فاعل بڼه ده او د عَبَرَ فعل او ع ب ر ریښې سره تړاو لري. مانا یې «تېرېدونکی»، «عبور کوونکی» یا «لاروی» ده. کتل شويو لغوي سرچینو د دې بڼې لپاره د «وروستي» مانا نه ده تایید کړې. د کلمې مانا په یوازې ځان د نوم سیمه‌ییز رواج یا ځانګړی دیني حیثیت نه ثابتوي.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "عابر",
-        "meaning": "الْعَابِر، الْمَارّ",
-        "long_meaning": "Aabir (عابر) اسم مأخوذ من اللغة العربية، ومعناه الأساسي الْعَابِر، الْمَارّ. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "عابر",
+        "meaning": "عابر، مارّ أو مجتاز؛ أي شخص يمرّ بمكان.",
+        "long_meaning": "عابر اسم فاعل مرتبط بالفعل عَبَرَ والجذر ع ب ر، ومعناه «المارّ» أو «الذي يعبر» أو «المجتاز». ولا تؤيد المراجع المعجمية التي روجعت معنى «الأخير» لهذه الصيغة. ولا يثبت المعنى اللغوي وحده شيوع الاسم في منطقة معينة أو تمتعه بمكانة دينية خاصة.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "MEDIUM",
+      "native_review_required": true,
+      "note": "English, Urdu, Persian, and Hindi explanations were revised for name-specific semantic consistency. Arabic and Pashto wording remains provisional and requires review by qualified native speakers; no translation is represented as professionally verified."
     },
     "pronunciation": {
       "romanized": "aa-bir",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عابر",
-      "persian": "عابر",
-      "hindi": "आबिर",
-      "pashto": "عابر"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عابر"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aabir",
-        "aabir",
         "abir"
       ],
-      "script_variants": [
+      "script_forms": [
         "عابر",
         "आबिर"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عابر is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عابر is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aabir can be understood through the Arabic form عابر, whose central sense is passer-by, one who crosses. Aabir is Arabic عَابِر (ʿĀbir) 'passer-by, one who crosses', from the root ع ب ر (ʿ-b-r). The source gloss 'The Last' is unsupported and has been replaced with the lexical sense.",
-      "is_fictional": false
+      "status": "not_published",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aabir mean?",
-        "answer": "Aabir is associated with the Arabic form عابر, whose core sense is passer-by, one who crosses."
+        "q": "What does Aabir mean?",
+        "a": "Aabir (عابر, ʿābir) is an Arabic form meaning “one who passes,” “passer-by,” or “wayfarer,” associated with root ع ب ر. The consulted lexical references do not support “the last” as its direct meaning."
       },
       {
-        "question": "What is the origin of Aabir?",
-        "answer": "Aabir is associated with Arabic. Aabir is Arabic عَابِر (ʿĀbir) 'passer-by, one who crosses', from the root ع ب ر (ʿ-b-r). The source gloss 'The Last' is unsupported and has been replaced with the lexical sense."
+        "q": "What is the origin of Aabir?",
+        "a": "The recorded form عابر (ʿābir) is Arabic and is associated with the root ع ب ر. This supports the linguistic origin of the word, but does not establish personal-name popularity by region."
       },
       {
-        "question": "Is Aabir an Arabic name?",
-        "answer": "Yes — the underlying form عابر is Arabic."
+        "q": "Is Aabir an Arabic name?",
+        "a": "Yes. Aabir represents Arabic عابر (ʿābir), commonly glossed as “one who passes” or “wayfarer.” Aabir is a Latin-script transliteration, and transliteration practices can produce variant spellings."
       },
       {
-        "question": "Is Aabir an Islamic name?",
-        "answer": "Aabir can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aabir?",
+        "a": "Aabir represents عابر, an Arabic active-participle form associated with عَبَرَ and root ع ب ر, concerning passing or crossing."
       },
       {
-        "question": "Is Aabir a Quranic name?",
-        "answer": "Aabir should not be classified as a Quranic personal name without a direct Quranic basis. False"
+        "q": "Is Aabir an Islamic name?",
+        "a": "Aabir is used in some Muslim naming contexts and has an Arabic lexical origin. That cultural association does not establish Qur’anic status or religious prescription."
       },
       {
-        "question": "What does Aabir mean in Urdu?",
-        "answer": "In Urdu, Aabir is rendered عابر and carries the sense گزرنے والا، راہگیر."
+        "q": "Is Aabir a Quranic name?",
+        "a": "This record does not establish Aabir as a Qur’anic personal name. Arabic origin alone is not evidence that the name appears in the Qur’an."
       },
       {
-        "question": "What does Aabir mean in Persian?",
-        "answer": "In Persian, Aabir is rendered عابر and carries the sense گذرنده، رهگذر."
+        "q": "What does Aabir mean in Urdu?",
+        "a": "In Urdu, the core gloss is “گزرنے والا، راہ گیر”. This is a concise semantic rendering, not a claim about regional popularity."
       },
       {
-        "question": "How is Aabir pronounced?",
-        "answer": "A romanized syllable approximation is aa-bir. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aabir pronounced?",
+        "a": "A rough romanized guide is “aa-bir”; pronunciation may vary by language and family."
       },
       {
-        "question": "What are the variants of Aabir?",
-        "answer": "Romanization variants include Aabir, aabir, abir. Script forms are عابر, आबिर."
+        "q": "Is Aabir a boy's or girl's name?",
+        "a": "This record classifies Aabir as male based on the current dataset; independent frequency data has not been supplied, so regional use may vary."
       },
       {
-        "question": "Is Aabir a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "What should be verified about Aabir before relying on its meaning?",
+        "a": "The lexical meaning was checked against Lane’s Lexicon, Wiktionary, and Rekhta. Regional personal-name frequency is not measured, and Arabic/Pashto translations still require qualified native-speaker review."
       }
     ],
     "seo": {
-      "title": "Aabir Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aabir (عابر).",
-      "h1": "Aabir Name Meaning, Origin and Cultural Background",
+      "title": "Aabir Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aabir (عابر) — meaning, language background, pronunciation and carefully qualified naming context.",
+      "meta_keywords": "Aabir meaning, Aabir name meaning, Aabir origin, Aabir meaning in Urdu, Aabir pronunciation, Aabir Islamic name",
+      "description_paragraph": "Aabir (عابر, ʿābir) is an Arabic form meaning “one who passes,” “passer-by,” or “wayfarer,” associated with the root ع ب ر. Lexical references support these senses; the often-repeated meaning “the last” is not supported for this form.",
+      "keywords": [
+        "Aabir meaning",
+        "Aabir name meaning",
+        "Aabir origin",
+        "Aabir meaning in Urdu",
+        "Aabir pronunciation",
+        "Aabir Islamic name"
+      ],
       "focus_keyword": "Aabir meaning",
       "secondary_keywords": [
         "Aabir name meaning",
-        "Aabir meaning in Urdu",
         "Aabir origin",
-        "Aabir Islamic name",
+        "Aabir meaning in Urdu",
         "Aabir pronunciation",
-        "Aabir name in Urdu"
+        "Aabir Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aabir (عابر) is associated with the Arabic form عابر, whose core sense is passer-by, one who crosses. Aabir is Arabic عَابِر (ʿĀbir) 'passer-by, one who crosses', from the root ع ب ر (ʿ-b-r). The source gloss 'The Last' is unsupported and has been replaced with the lexical sense.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aabir",
+      "seo_score": 82,
+      "seo_score_basis": "Provisional editorial score after source-checking the lexical definition and synchronizing repeated meaning fields; deployment rendering and native translation review remain unverified."
     },
     "seo_content": {
-      "intro": "Aabir is associated with the Arabic form عابر, whose core sense is passer-by, one who crosses.",
-      "meaning_section": "The central meaning of Aabir is passer-by, one who crosses.",
-      "origin_section": "Aabir is associated with Arabic rather than with a different language.",
-      "islam_section": "Aabir can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aabir is with the sense passer-by.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "Aabir (عابر, ʿābir) is associated with the Arabic root ع ب ر and means “one who passes” or “wayfarer.” This guide separates its dictionary meaning from unverified claims about popularity and religious status.",
+      "body_summary": "Aabir (عابر, ʿābir) is an Arabic form meaning “one who passes,” “passer-by,” or “wayfarer,” associated with the root ع ب ر. Lexical references support these senses; the often-repeated meaning “the last” is not supported for this form."
     },
     "social_tags": [
       "#Aabir",
       "#AabirMeaning",
-      "#AabirName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "Regional personal-name frequency not verified",
+        "Pashto and Arabic translations require native-speaker review",
+        "Gender distribution across regions not measured"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 153,
+      "quality_score": 82,
+      "quality_score_basis": "Provisional editorial assessment after checking lexical references and correcting meaning, translations, and repeated definitions. Not a guarantee of complete accuracy: regional name-frequency evidence and native-speaker review of Arabic/Pashto translations remain outstanding.",
+      "tier1_verified_scope": "Core meaning and every associated claim have not been independently re-verified in this pass; source links, translation review, and usage evidence have separate status."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "Lane's Arabic-English Lexicon, عابر: https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%A8%D8%B1",
+        "Wiktionary, Arabic عابر: https://en.wiktionary.org/wiki/عابر",
+        "Rekhta Dictionary, Aabir/عابر: https://www.rekhtadictionary.com/meaning-of-aabir"
+      ],
+      "verification_method": "Checked the Arabic lexical gloss and active-participle/root analysis against Lane’s Lexicon, Wiktionary’s Arabic entry, and Rekhta’s Urdu/English dictionary entry. These sources support the passing/wayfarer sense; they do not establish regional name frequency. Native review of Pashto and Arabic translations remains pending.",
+      "claim_evidence": [
         {
-          "claim": "Aabir corresponds to the Arabic form عابر",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Arabic lexical meaning and root ع ب ر",
+          "source": "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%A8%D8%B1",
+          "status": "checked_against_listed_lexical_reference"
         },
         {
-          "claim": "Aabir has the core sense passer-by, one who crosses",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Active participle of عَبَرَ; passing/crossing sense",
+          "source": "https://en.wiktionary.org/wiki/عابر",
+          "status": "checked_against_listed_lexical_reference"
+        },
+        {
+          "claim": "Urdu personal-name and dictionary usage",
+          "source": "https://www.rekhtadictionary.com/meaning-of-aabir",
+          "status": "dictionary_entry_checked; regional_frequency_not_measured"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "LEXICAL_REFERENCES_CHECKED; NAME_FREQUENCY_AND_NATIVE_TRANSLATION_REVIEW_PENDING"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse editorial revision",
+      "methodology": "Individual review with lexical-source cross-checking, meaning and translation revision, and synchronization of FAQ/structured data; name-frequency and native translation verification remain pending.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T05:45:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aabir",
-      "alternateName": [
-        "Aabir",
-        "aabir",
-        "abir"
-      ],
-      "description": "A name associated with the Arabic form عابر, meaning passer-by, one who crosses.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aabir",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Aabir",
+          "description": "Aabir (عابر, ʿābir) is an Arabic form meaning “one who passes,” “passer-by,” or “wayfarer,” associated with the root ع ب ر. Lexical references support these senses; the often-repeated meaning “the last” is not supported for this form.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aabir mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aabir (عابر, ʿābir) is an Arabic form meaning “one who passes,” “passer-by,” or “wayfarer,” associated with root ع ب ر. The consulted lexical references do not support “the last” as its direct meaning."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aabir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded form عابر (ʿābir) is Arabic and is associated with the root ع ب ر. This supports the linguistic origin of the word, but does not establish personal-name popularity by region."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aabir an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Aabir represents Arabic عابر (ʿābir), commonly glossed as “one who passes” or “wayfarer.” Aabir is a Latin-script transliteration, and transliteration practices can produce variant spellings."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aabir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aabir represents عابر, an Arabic active-participle form associated with عَبَرَ and root ع ب ر, concerning passing or crossing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aabir an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aabir is used in some Muslim naming contexts and has an Arabic lexical origin. That cultural association does not establish Qur’anic status or religious prescription."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aabir a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Aabir as a Qur’anic personal name. Arabic origin alone is not evidence that the name appears in the Qur’an."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aabir mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Urdu, the core gloss is “گزرنے والا، راہ گیر”. This is a concise semantic rendering, not a claim about regional popularity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aabir pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A rough romanized guide is “aa-bir”; pronunciation may vary by language and family."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aabir a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record classifies Aabir as male based on the current dataset; independent frequency data has not been supplied, so regional use may vary."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should be verified about Aabir before relying on its meaning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The lexical meaning was checked against Lane’s Lexicon, Wiktionary, and Rekhta. Regional personal-name frequency is not measured, and Arabic/Pashto translations still require qualified native-speaker review."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aabir",
+              "item": "https://nameverse.site/names/islamic/aabir"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aabir, associated with the Arabic form عابر, meaning passer-by, one who crosses."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "Native review required for Arabic and Pashto translations",
+        "Modern name frequency not independently measured",
+        "Rendered canonical/breadcrumb URLs require deployment-level verification"
+      ],
+      "confidence": "HIGH",
+      "reviewed_by": "NameVerse editorial revision (automated consistency pass; native/human review still required)",
+      "reviewed_at": "2026-10-15"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

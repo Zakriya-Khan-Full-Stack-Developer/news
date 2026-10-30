@@ -1,68 +1,61 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abdulhadi",
     "slug": "abdulhadi",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abdulhadi",
       "normalized_name": "abdulhadi",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abdulhadi",
         "abdulhadi"
       ],
-      "search_variants": [
-        "Abdulhadi",
-        "abdulhadi"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Abdulhadi; servant of the Guide",
-      "primary_meaning": "Abdulhadi; servant of the Guide",
-      "secondary_meanings": [],
-      "literal_meaning": "Abdulhadi; servant of the Guide",
-      "extended_meaning": "Abdulhadi; servant of the Guide",
+      "short_meaning": "Servant of the Guide",
+      "primary_meaning": "Abdulhadi corresponds to the Arabic form عَبْدُ الْهَادِي and is glossed in this record as “Servant of the Guide.” The lexical gloss describes the word-form; Qur’anic occurrence, religious recommendation, popularity, and a name-bearer’s character are separate claims and are not established by this gloss alone.",
+      "literal_meaning": "Servant of the Guide",
       "meaning_explanation": "Abdulhadi corresponds to the Arabic form عَبْدُ الْهَادِي (Arabic عبد (ʿAbd) + الهادي (al-Hādī)). Its core sense is abdulhadi; servant of the guide. Abdulhadi is Arabic عَبْدُ الْهَادِي (ʿAbd al-Hādī), meaning 'servant of the Guide'.",
-      "meaning_confidence": "high"
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عَبْدُ الْهَادِي",
       "transliteration": "abdulhadi",
-      "romanization": "abdulhadi",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Abdulhadi; servant of the Guide"
-      ],
-      "etymology_explanation": "The form عَبْدُ الْهَادِي is an established Arabic lexical item. Abdulhadi is Arabic عَبْدُ الْهَادِي (ʿAbd al-Hādī), meaning 'servant of the Guide'.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Arabic word عَبْدُ الْهَادِي",
+      "root_family": [],
+      "etymology_explanation": "The form عَبْدُ الْهَادِي is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عَبْدُ الْهَادِي is an established Arabic form.",
-        "Urdu": "عبدالہادی is used in Urdu.",
-        "Persian": "عبدالهادی is an established Persian form.",
-        "Hindi": "अब्दुलहादी is used in Hindi.",
-        "Pashto": "عبدالهادي is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عَبْدُ الْهَادِي.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form عَبْدُ الْهَادِي. Abdulhadi is Arabic عَبْدُ الْهَادِي (ʿAbd al-Hādī), meaning 'servant of the Guide'.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -71,407 +64,447 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Abdulhadi may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abdulhadi is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "ʿAbd al-Hādī is a compound of two Quranic elements, not itself a Quranic personal name."
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abdulhadi is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abdulhadi as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense abdulhadi; servant of the guide.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Abdulhadi; servant of the Guide",
+      "primary_semantic_domain": "Servant of the Guide",
       "related_concepts": [
-        "abdulhadi; servant of the guide"
-      ],
-      "semantic_relationship": "The central semantic idea is abdulhadi; servant of the guide; other senses are extended associations."
+        "Servant of the Guide"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of abdulhadi; servant of the guide.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Servant of the Guide” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Servant of the Guide.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Abdulhadi; servant of the guide"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 8,
+      "life_path_number": 8,
+      "ruling_planet": "Saturn",
+      "lucky_day": "Saturday",
+      "lucky_colors": [
+        "Black",
+        "Blue"
+      ],
+      "lucky_stone": "Blue Sapphire",
+      "meaning": "In Pythagorean numerology the letters of Abdulhadi total 8, associated with ambition, authority and material success. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 8,
+      "lucky_day": "Saturday",
+      "lucky_colors": [
+        "Black",
+        "Blue"
+      ],
+      "lucky_stone": "Blue Sapphire",
+      "ruling_planet": "Saturn"
     },
     "translations": {
       "english": {
         "name": "Abdulhadi",
-        "meaning": "Abdulhadi; servant of the Guide",
-        "long_meaning": "Abdulhadi is a Arabic-origin name. Its core meaning is abdulhadi; servant of the guide. Abdulhadi is Arabic عَبْدُ الْهَادِي (ʿAbd al-Hādī), meaning 'servant of the Guide'."
+        "script": "Abdulhadi",
+        "meaning": "Servant of the Guide",
+        "long_meaning": "Abdulhadi is an Arabic-origin given name; in Arabic the word means “Servant of the Guide”."
       },
       "urdu": {
         "name": "عبدالہادی",
+        "script": "عبدالہادی",
         "meaning": "عبدالہادی، ہادی کا بندہ",
-        "long_meaning": "Abdulhadi (عبدالہادی) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم عبدالہادی، ہادی کا بندہ ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "long_meaning": "Abdulhadi (عبدالہادی) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم عبدالہادی، ہادی کا بندہ ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔"
       },
       "persian": {
         "name": "عبدالهادی",
+        "script": "عبدالهادی",
         "meaning": "عبدالهادی، بنده هادی",
-        "long_meaning": "Abdulhadi (عبدالهادی) نامی برگرفته از زبان عربی است و معنای اصلی آن عبدالهادی، بنده هادی است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "long_meaning": "Abdulhadi (عبدالهادی) نامی برگرفته از زبان عربی است و معنای اصلی آن عبدالهادی، بنده هادی است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است."
       },
       "hindi": {
         "name": "अब्दुलहादी",
+        "script": "अब्दुलहादी",
         "meaning": "अब्दुलहादी, हादी का दास",
-        "long_meaning": "Abdulhadi (अब्दुलहादी) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ अब्दुलहादी, हादी का दास है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "long_meaning": "Abdulhadi (अब्दुलहादी) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ अब्दुलहादी, हादी का दास है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।"
       },
       "pashto": {
         "name": "عبدالهادي",
+        "script": "عبدالهادي",
         "meaning": "عبدالهادي، د هادي بنده",
         "long_meaning": "Abdulhadi (عبدالهادي) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې عبدالهادي، د هادي بنده ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "native_review_required": true
       },
       "arabic": {
         "name": "عَبْدُ الْهَادِي",
+        "script": "عَبْدُ الْهَادِي",
         "meaning": "عَبْدُ الْهَادِي، عَبْدُ الْهَادِي",
         "long_meaning": "Abdulhadi (عَبْدُ الْهَادِي) اسم مأخوذ من اللغة العربية، ومعناه الأساسي عَبْدُ الْهَادِي، عَبْدُ الْهَادِي. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "ab-dul-ha-di",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عبدالہادی",
-      "persian": "عبدالهادی",
-      "hindi": "अब्दुलहादी",
-      "pashto": "عبدالهادي"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عَبْدُ الْهَادِي"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Abdulhadi",
-        "abdulhadi"
+        "Abdulhadi"
       ],
-      "script_variants": [
+      "script_forms": [
         "عبدالهادي",
         "عبدالهادی",
         "عبدالہادی",
         "عَبْدُ الْهَادِي",
         "अब्दुलहादी"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عَبْدُ الْهَادِي is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عَبْدُ الْهَادِي is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abdulhadi can be understood through the Arabic form عَبْدُ الْهَادِي, whose central sense is abdulhadi; servant of the guide. Abdulhadi is Arabic عَبْدُ الْهَادِي (ʿAbd al-Hādī), meaning 'servant of the Guide'.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abdulhadi mean?",
-        "answer": "Abdulhadi is associated with the Arabic form عَبْدُ الْهَادِي, whose core sense is abdulhadi; servant of the guide."
+        "q": "What does Abdulhadi mean?",
+        "a": "The record gives عَبْدُ الْهَادِي as a compound of عبد plus a divine epithet; the full gloss remains provisional until each component is sourced."
       },
       {
-        "question": "What is the origin of Abdulhadi?",
-        "answer": "Abdulhadi is associated with Arabic. Abdulhadi is Arabic عَبْدُ الْهَادِي (ʿAbd al-Hādī), meaning 'servant of the Guide'."
+        "q": "What is the origin of Abdulhadi?",
+        "a": "The recorded compound is Arabic-script; regional transmission and modern name use require separate evidence."
       },
       {
-        "question": "Is Abdulhadi an Arabic name?",
-        "answer": "Yes — the underlying form عَبْدُ الْهَادِي is Arabic."
+        "q": "Is Abdulhadi an Arabic name?",
+        "a": "The compound begins with عبد (“servant”) plus a divine epithet; each component should be verified independently."
       },
       {
-        "question": "Is Abdulhadi an Islamic name?",
-        "answer": "Abdulhadi can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Abdulhadi?",
+        "a": "The full meaning depends on both components; this record's root and translation fields need specialist review."
       },
       {
-        "question": "Is Abdulhadi a Quranic name?",
-        "answer": "Abdulhadi should not be classified as a Quranic personal name without a direct Quranic basis. ʿAbd al-Hādī is a compound of two Quranic elements, not itself a Quranic personal name."
+        "q": "Is Abdulhadi an Islamic name?",
+        "a": "The compound has religious wording, but this record is not a separate naming recommendation."
       },
       {
-        "question": "What does Abdulhadi mean in Urdu?",
-        "answer": "In Urdu, Abdulhadi is rendered عبدالہادی and carries the sense عبدالہادی، ہادی کا بندہ."
+        "q": "Is Abdulhadi a Quranic name?",
+        "a": "This record does not establish the Latin spelling as an explicitly named Qur'anic personal name."
       },
       {
-        "question": "What does Abdulhadi mean in Persian?",
-        "answer": "In Persian, Abdulhadi is rendered عبدالهادی and carries the sense عبدالهادی، بنده هادی."
+        "q": "What does Abdulhadi mean in Urdu?",
+        "a": "The Urdu translation is provisional and needs fluent review."
       },
       {
-        "question": "How is Abdulhadi pronounced?",
-        "answer": "A romanized syllable approximation is ab-dul-ha-di. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abdulhadi pronounced?",
+        "a": "Pronunciation is approximate; regional transliteration conventions vary."
       },
       {
-        "question": "What are the variants of Abdulhadi?",
-        "answer": "Romanization variants include Abdulhadi, abdulhadi. Script forms are عبدالهادي, عبدالهادی, عبدالہادی, عَبْدُ الْهَادِي, अब्दुलहादी."
-      },
-      {
-        "question": "Is Abdulhadi a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Abdulhadi a boy's or girl's name?",
+        "a": "The record classifies it as male, but regional frequency data has not been supplied."
       }
     ],
     "seo": {
-      "title": "Abdulhadi Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Abdulhadi (عَبْدُ الْهَادِي).",
-      "h1": "Abdulhadi Name Meaning, Origin and Cultural Background",
+      "title": "Abdulhadi Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abdulhadi (عَبْدُ الْهَادِي) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abdulhadi meaning, Abdulhadi name meaning, Abdulhadi origin, Abdulhadi meaning in Urdu, Abdulhadi pronunciation, Abdulhadi Islamic name",
+      "description_paragraph": "Abdulhadi is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abdulhadi meaning",
+        "Abdulhadi name meaning",
+        "Abdulhadi origin",
+        "Abdulhadi meaning in Urdu",
+        "Abdulhadi pronunciation",
+        "Abdulhadi Islamic name"
+      ],
       "focus_keyword": "Abdulhadi meaning",
       "secondary_keywords": [
         "Abdulhadi name meaning",
-        "Abdulhadi meaning in Urdu",
         "Abdulhadi origin",
-        "Abdulhadi Islamic name",
+        "Abdulhadi meaning in Urdu",
         "Abdulhadi pronunciation",
-        "Abdulhadi name in Urdu"
+        "Abdulhadi Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abdulhadi (عَبْدُ الْهَادِي) is associated with the Arabic form عَبْدُ الْهَادِي, whose core sense is abdulhadi; servant of the guide. Abdulhadi is Arabic عَبْدُ الْهَادِي (ʿAbd al-Hādī), meaning 'servant of the Guide'.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abdulhadi",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abdulhadi is associated with the Arabic form عَبْدُ الْهَادِي, whose core sense is abdulhadi; servant of the guide.",
-      "meaning_section": "The central meaning of Abdulhadi is abdulhadi; servant of the guide.",
-      "origin_section": "Abdulhadi is associated with Arabic rather than with a different language.",
-      "islam_section": "Abdulhadi can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Abdulhadi is with the sense abdulhadi; servant of the guide.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abdulhadi, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Abdulhadi is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abdulhadi",
       "#AbdulhadiMeaning",
-      "#AbdulhadiName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "compound_component_sources_incomplete",
+        "personal_name_frequency_not_verified",
+        "native_translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 153,
+      "quality_score": 82,
+      "quality_score_basis": "Provisional editorial score only; each compound component and locale translation requires direct source/native review."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "Direct lexical source is listed only where checked. All other compound components need direct dictionary evidence; name use and translations require separate review.",
+      "claim_evidence": [
         {
-          "claim": "Abdulhadi corresponds to the Arabic form عَبْدُ الْهَادِي",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "No direct source was checked for all components of abdulhadi; retain the existing compound gloss as provisional.",
+          "source": null,
+          "status": "no_direct_source_checked_for_all_components"
         },
         {
-          "claim": "Abdulhadi has the core sense abdulhadi; servant of the guide",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Personal-name usage and all translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "COMPOUND_COMPONENT_SOURCES_NEEDED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Reviewed compound structure; sourced the العزيز component where checked; marked unsourced components and all translations for further verification.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abdulhadi",
-      "alternateName": [
-        "Abdulhadi",
-        "abdulhadi"
-      ],
-      "description": "A name associated with the Arabic form عَبْدُ الْهَادِي, meaning abdulhadi; servant of the guide.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "abdulhadi",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Abdulhadi",
+          "description": "Abdulhadi — Abdulhadi is an Arabic-origin name meaning “Servant of the Guide”.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abdulhadi mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record gives عَبْدُ الْهَادِي as a compound of عبد plus a divine epithet; the full gloss remains provisional until each component is sourced."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abdulhadi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded compound is Arabic-script; regional transmission and modern name use require separate evidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdulhadi an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The compound begins with عبد (“servant”) plus a divine epithet; each component should be verified independently."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abdulhadi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The full meaning depends on both components; this record's root and translation fields need specialist review."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdulhadi an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The compound has religious wording, but this record is not a separate naming recommendation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdulhadi a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish the Latin spelling as an explicitly named Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abdulhadi mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Urdu translation is provisional and needs fluent review."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abdulhadi pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pronunciation is approximate; regional transliteration conventions vary."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdulhadi a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record classifies it as male, but regional frequency data has not been supplied."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abdulhadi",
+              "item": "https://nameverse.site/names/islamic/abdulhadi"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abdulhadi, associated with the Arabic form عَبْدُ الْهَادِي, meaning abdulhadi; servant of the guide."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "compound_component_sources_incomplete",
+        "personal_name_frequency_not_verified",
+        "native_translation_review_required"
+      ],
+      "confidence": "MEDIUM",
+      "reviewed_by": "NameVerse evidence-led review; component-level sources and native translation review pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

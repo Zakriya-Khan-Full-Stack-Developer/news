@@ -1,74 +1,62 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aasifah",
     "slug": "aasifah",
+    "content_revision": "v8.1",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aasifah",
       "normalized_name": "aasifah",
       "name_type": "given_name",
       "gender": "Female",
-      "gender_confidence": "medium",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Aasifah",
         "aasifah",
         "asifah"
       ],
-      "search_variants": [
-        "Aasifah",
-        "aasifah",
-        "asifah"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
       "short_meaning": "Storm, tempest, strong wind",
-      "primary_meaning": "Storm",
-      "secondary_meanings": [
-        "tempest",
-        "strong wind"
-      ],
-      "literal_meaning": "Storm",
-      "extended_meaning": "Storm, tempest, strong wind",
-      "meaning_explanation": "Aasifah corresponds to the Arabic form عاصفة (ع ص ف). Its core sense is storm, tempest, strong wind. Variant romanization of aasfa.",
-      "meaning_confidence": "medium"
+      "primary_meaning": "Aasifah corresponds to the Arabic form عاصفة and is glossed in this record as “Storm, tempest, strong wind.” The record associates the form with root ع ص ف (ʿ-ṣ-f). The record identifies the form as feminine. The lexical gloss describes the word-form; Qur’anic occurrence, religious recommendation, popularity, and a name-bearer’s character are separate claims and are not established by this gloss alone.",
+      "literal_meaning": "Storm, tempest, strong wind",
+      "meaning_explanation": "Aasifah corresponds to the Arabic form عاصفة (Arabic root ع ص ف (ʿ-ṣ-f); عَاصِفَة (ʿāṣifah)). Its core sense is storm, tempest; strong wind. Aasifah is Arabic عَاصِفَة (ʿāṣifah) 'Storm, tempest, strong wind', the established word for a storm, from the root ع ص ف (ʿ-ṣ-f); it is also the feminine of the active participle عَاصِف (ʿāṣif, 'stormy') of عَصَفَ (ʿaṣafa, 'to storm, to rage'). Aasifah is a variant romanization of Aasfa.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عاصفة",
       "transliteration": "aasifah",
-      "romanization": "aasifah",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Storm",
-        "tempest",
-        "strong wind"
-      ],
-      "etymology_explanation": "The form عاصفة is an established Arabic lexical item. Variant romanization of aasfa.",
-      "etymology_confidence": "medium",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "ع ص ف",
+      "root_transliteration": "ʿ-ṣ-f",
+      "morphology": "Established noun (also the feminine of the active participle عاصف) from the root ع ص ف.",
+      "feminine_form": null,
+      "etymological_meaning": "From the root ع ص ف (ʿ-ṣ-f)",
+      "root_family": [],
+      "etymology_explanation": "The form عاصفة is an established Arabic lexical item — the storm-word of the root ع ص ف — and Aasifah is the word itself used as a personal name rather than a derived or diminutive form.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عاصفة is an established Arabic form.",
-        "Urdu": "عاصفہ is used in Urdu.",
-        "Hindi": "आसिफ़ा is used in Hindi.",
-        "Pashto": "عاصفه is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عاصفة.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "medium"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "medium",
-      "origin_explanation": "The name is associated with the Arabic form عاصفة. Variant romanization of aasfa.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -77,411 +65,449 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aasifah may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Aasifah is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "root ع ص ف occurs in the Qur'an; عاصفة is a normal Arabic noun"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Aasifah is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Aasifah as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense storm, tempest, strong wind.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Storm",
+      "primary_semantic_domain": "Storm, tempest, strong wind",
       "related_concepts": [
-        "storm",
-        "tempest",
-        "strong wind"
-      ],
-      "semantic_relationship": "The central semantic idea is storm; other senses are extended associations."
+        "Storm, tempest, strong wind"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of storm.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Storm, tempest, strong wind” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Storm, tempest, strong wind.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Storm",
-        "Tempest",
-        "Strong wind"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 9,
+      "life_path_number": 9,
+      "ruling_planet": "Mars",
+      "lucky_day": "Tuesday",
+      "lucky_colors": [
+        "Red",
+        "Crimson"
+      ],
+      "lucky_stone": "Red Coral",
+      "meaning": "In Pythagorean numerology the letters of Aasifah total 9, associated with compassion, idealism and completion. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 9,
+      "lucky_day": "Tuesday",
+      "lucky_colors": [
+        "Red",
+        "Crimson"
+      ],
+      "lucky_stone": "Red Coral",
+      "ruling_planet": "Mars"
     },
     "translations": {
       "english": {
         "name": "Aasifah",
+        "script": "Aasifah",
         "meaning": "Storm, tempest, strong wind",
-        "long_meaning": "Aasifah is a Arabic-origin name. Its core meaning is storm, tempest, strong wind. Variant romanization of aasfa."
+        "long_meaning": "Aasifah is an Arabic-origin given name; in Arabic the word means “Storm, tempest, strong wind”."
       },
       "urdu": {
         "name": "عاصفہ",
+        "script": "عاصفہ",
         "meaning": "طوفان، آندھی، ہوا",
-        "long_meaning": "Aasifah (عاصفہ) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم طوفان، آندھی، ہوا ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "long_meaning": "Aasifah (عاصفہ) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم طوفان، آندھی، ہوا ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔"
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "عاصفه",
+        "script": "عاصفه",
+        "meaning": "توفان، تندباد",
+        "long_meaning": "Aasifah (عاصفه) نامی برگرفته از زبان عربی است و معنای اصلی آن توفان، تندباد است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است."
       },
       "hindi": {
         "name": "आसिफ़ा",
+        "script": "आसिफ़ा",
         "meaning": "तूफ़ान, आँधी, हवा",
-        "long_meaning": "Aasifah (आसिफ़ा) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ तूफ़ान, आँधी, हवा है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "long_meaning": "Aasifah (आसिफ़ा) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ तूफ़ान, आँधी, हवा है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।"
       },
       "pashto": {
         "name": "عاصفه",
+        "script": "عاصفه",
         "meaning": "طوفان، توفان، باد",
         "long_meaning": "Aasifah (عاصفه) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې طوفان، توفان، باد ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "native_review_required": true
       },
       "arabic": {
         "name": "عاصفة",
+        "script": "عاصفة",
         "meaning": "عاصفة، ريح، إعصار",
         "long_meaning": "Aasifah (عاصفة) اسم مأخوذ من اللغة العربية، ومعناه الأساسي عاصفة، ريح، إعصار. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "medium"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "aa-si-fah",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عاصفہ",
-      "persian": null,
-      "hindi": "आसिफ़ा",
-      "pashto": "عاصفه"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عاصفة"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aasifah",
-        "aasifah",
         "asifah"
       ],
-      "script_variants": [
+      "script_forms": [
         "عاصفة",
         "عاصفه",
         "عاصفہ",
         "आसिफ़ा"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عاصفة is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "medium",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عاصفة is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aasifah can be understood through the Arabic form عاصفة, whose central sense is storm, tempest, strong wind. Variant romanization of aasfa.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aasifah mean?",
-        "answer": "Aasifah is associated with the Arabic form عاصفة, whose core sense is storm, tempest, strong wind."
+        "q": "What does Aasifah mean?",
+        "a": "Aasifah is an Arabic-origin name meaning “Storm, tempest, strong wind”."
       },
       {
-        "question": "What is the origin of Aasifah?",
-        "answer": "Aasifah is associated with Arabic. Variant romanization of aasfa."
+        "q": "What is the origin of Aasifah?",
+        "a": "Aasifah originates in Arabic and circulates in Muslim naming communities."
       },
       {
-        "question": "Is Aasifah an Arabic name?",
-        "answer": "Yes — the underlying form عاصفة is Arabic."
+        "q": "Is Aasifah an Arabic name?",
+        "a": "Yes, the recorded form عاصفة is Arabic."
       },
       {
-        "question": "Is Aasifah an Islamic name?",
-        "answer": "Aasifah can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aasifah?",
+        "a": "It is built on the root ع ص ف (ʿ-ṣ-f)."
       },
       {
-        "question": "Is Aasifah a Quranic name?",
-        "answer": "Aasifah should not be classified as a Quranic personal name without a direct Quranic basis. root ع ص ف occurs in the Qur'an; عاصفة is a normal Arabic noun"
+        "q": "Is Aasifah an Islamic name?",
+        "a": "Aasifah is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
       },
       {
-        "question": "What does Aasifah mean in Urdu?",
-        "answer": "In Urdu, Aasifah is rendered عاصفہ and carries the sense طوفان، آندھی، ہوا."
+        "q": "Is Aasifah a Quranic name?",
+        "a": "Aasifah is not independently established as a Qur'anic personal name."
       },
       {
-        "question": "What does Aasifah mean in Persian?",
-        "answer": "No verified Persian form was established for Aasifah."
+        "q": "What does Aasifah mean in Urdu?",
+        "a": "In Urdu it is written عاصفہ and carries the sense “طوفان، آندھی، ہوا”."
       },
       {
-        "question": "How is Aasifah pronounced?",
-        "answer": "A romanized syllable approximation is aa-si-fah. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aasifah pronounced?",
+        "a": "A romanized syllable approximation is “aa-si-fah”."
       },
       {
-        "question": "What are the variants of Aasifah?",
-        "answer": "Romanization variants include Aasifah, aasifah, asifah. Script forms are عاصفة, عاصفه, عاصفہ, आसिफ़ा."
-      },
-      {
-        "question": "Is Aasifah a boy's or girl's name?",
-        "answer": "Documented usage records this form as female. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Aasifah a boy's or girl's name?",
+        "a": "Documented usage records Aasifah as a girl's name; actual use can vary by community."
       }
     ],
     "seo": {
-      "title": "Aasifah Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aasifah (عاصفة).",
-      "h1": "Aasifah Name Meaning, Origin and Cultural Background",
+      "title": "Aasifah Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aasifah (عاصفة) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Aasifah meaning, Aasifah name meaning, Aasifah origin, Aasifah meaning in Urdu, Aasifah pronunciation, Aasifah Islamic name",
+      "description_paragraph": "Aasifah is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Aasifah meaning",
+        "Aasifah name meaning",
+        "Aasifah origin",
+        "Aasifah meaning in Urdu",
+        "Aasifah pronunciation",
+        "Aasifah Islamic name"
+      ],
       "focus_keyword": "Aasifah meaning",
       "secondary_keywords": [
         "Aasifah name meaning",
-        "Aasifah meaning in Urdu",
         "Aasifah origin",
-        "Aasifah Islamic name",
+        "Aasifah meaning in Urdu",
         "Aasifah pronunciation",
-        "Aasifah name in Urdu"
+        "Aasifah Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aasifah (عاصفة) is associated with the Arabic form عاصفة, whose core sense is storm, tempest, strong wind. Variant romanization of aasfa.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aasifah",
+      "seo_score": 95,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root present; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Aasifah is associated with the Arabic form عاصفة, whose core sense is storm, tempest, strong wind.",
-      "meaning_section": "The central meaning of Aasifah is storm, tempest, strong wind.",
-      "origin_section": "Aasifah is associated with Arabic rather than with a different language.",
-      "islam_section": "Aasifah can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aasifah is with the sense storm.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Aasifah, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Aasifah is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Aasifah",
       "#AasifahMeaning",
-      "#AasifahName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "medium",
-      "linguistic_authenticity": "medium",
-      "etymological_authenticity": "medium",
-      "meaning_authenticity": "medium",
-      "translation_quality": "medium",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "personal_name_frequency_not_verified",
+        "native_translation_review_required",
+        "scriptural_status_not_established_by_lexical_evidence"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 150,
+      "quality_score": 80,
+      "quality_score_basis": "Provisional editorial/consistency score only. Lexical source checks do not establish personal-name frequency, scriptural status, or native-speaker verification of every translation; not a factual certification."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%B5%D9%81",
+        "https://www.rekhta.org/urdudictionary?keyword=aasif"
+      ],
+      "verification_method": "Sources were checked for the cited lexical form only. They do not prove personal-name frequency, regional gender distribution, Qur'anic status, or native-speaker quality of all translations.",
+      "claim_evidence": [
         {
-          "claim": "Aasifah corresponds to the Arabic form عاصفة",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "The recorded Arabic lexical form عاصفة and its stated core sense are supported by the listed Arabic/Urdu dictionary source; modern personal-name frequency and all translations are not thereby verified.",
+          "source": "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%B5%D9%81",
+          "status": "source_checked_for_lexical_claim_only"
         },
         {
-          "claim": "Aasifah has the core sense storm, tempest, strong wind",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "Personal-name usage, frequency, and all translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "LEXICAL_CLAIM_SOURCE_CHECKED; NAME_USAGE_AND_TRANSLATIONS_NOT_FULLY_VERIFIED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Checked cited lexical claims against named dictionary sources; separated lexical meaning from personal-name usage, religious association, frequency, and translations; retained uncertainty where evidence is incomplete.",
+      "upgraded_from": "v8",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aasifah",
-      "alternateName": [
-        "Aasifah",
-        "aasifah",
-        "asifah"
-      ],
-      "description": "A name associated with the Arabic form عاصفة, meaning storm, tempest, strong wind.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aasifah",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Aasifah",
+          "description": "Aasifah — an Arabic-origin given name meaning Storm, tempest, strong wind",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Female"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aasifah mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aasifah is an Arabic-origin name meaning “Storm, tempest, strong wind”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aasifah?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aasifah originates in Arabic and circulates in Muslim naming communities."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aasifah an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, the recorded form عاصفة is Arabic."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aasifah?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is built on the root ع ص ف (ʿ-ṣ-f)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aasifah an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aasifah is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aasifah a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aasifah is not independently established as a Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aasifah mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Urdu it is written عاصفہ and carries the sense “طوفان، آندھی، ہوا”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aasifah pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A romanized syllable approximation is “aa-si-fah”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aasifah a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Documented usage records Aasifah as a girl's name; actual use can vary by community."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aasifah",
+              "item": "https://nameverse.site/names/islamic/aasifah"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aasifah, associated with the Arabic form عاصفة, meaning storm, tempest, strong wind."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "personal_name_frequency_not_verified",
+        "native_translation_review_required",
+        "scriptural_status_not_established_by_lexical_evidence"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review (lexical source check; personal-name and native translation review pending)",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

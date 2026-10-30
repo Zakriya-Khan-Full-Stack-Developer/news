@@ -1,74 +1,62 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aasir",
     "slug": "aasir",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aasir",
       "normalized_name": "aasir",
       "name_type": "given_name",
-      "gender": "Male",
-      "gender_confidence": "low",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender": "Unknown",
+      "gender_confidence": "LOW",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Aasir",
         "aasir",
         "asir"
       ],
-      "search_variants": [
-        "Aasir",
-        "aasir",
-        "asir"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Companion, associate, comrade",
-      "primary_meaning": "Companion",
-      "secondary_meanings": [
-        "associate",
-        "comrade"
-      ],
-      "literal_meaning": "Companion",
-      "extended_meaning": "Companion, associate, comrade",
-      "meaning_explanation": "Aasir corresponds to the Arabic form عاصر (ع ص ر). Its core sense is companion, associate, comrade. عاصر means 'contemporary, one who lives in the same age'. Its use as a personal name is reported but not verified.",
-      "meaning_confidence": "low"
+      "short_meaning": "To be contemporary with; to share the same period",
+      "primary_meaning": "Aasir is provisionally matched to Arabic عاصر, a verb meaning “to be contemporary with” someone or to live in the same period; its use as a personal name is not verified.",
+      "literal_meaning": "The recorded Arabic form عاصر is a verb, not by itself proof of a fixed personal-name meaning.",
+      "meaning_explanation": "Lane's Lexicon records عاصر as meaning to be contemporary with someone or to reach the same period. The previous translations “companion/associate/comrade” do not directly match that dictionary definition and are replaced. Personal-name usage remains unverified.",
+      "meaning_confidence": "MEDIUM"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عاصر",
       "transliteration": "aasir",
-      "romanization": "aasir",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Companion",
-        "associate",
-        "comrade"
-      ],
-      "etymology_explanation": "The form عاصر is an established Arabic lexical item. عاصر means 'contemporary, one who lives in the same age'. Its use as a personal name is reported but not verified.",
-      "etymology_confidence": "low",
-      "false_etymology_warning": "The identification of this form is uncertain; no confident etymology is asserted."
+      "root": "ع ص ر",
+      "root_transliteration": "ʿ-ṣ-r",
+      "morphology": "Form III verb عاصر; the exact intended name derivation remains unverified.",
+      "feminine_form": null,
+      "etymological_meaning": "The Arabic word عاصر",
+      "root_family": [],
+      "etymology_explanation": "The dictionary supports a verbal lexical sense. It does not prove a given-name use, gender distribution, or a separate agent-noun meaning.",
+      "etymology_confidence": "MEDIUM",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عاصر is an established Arabic form.",
-        "Urdu": "عاصر is used in Urdu.",
-        "Hindi": "आसिर is used in Hindi.",
-        "Pashto": "عاصر is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عاصر.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "low"
+      "language_confidence": "LOW"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "low",
-      "origin_explanation": "The name is associated with the Arabic form عاصر. عاصر means 'contemporary, one who lives in the same age'. Its use as a personal name is reported but not verified.",
+      "origin_confidence": "LOW",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -77,409 +65,448 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aasir may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Aasir is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "root ع ص ر occurs in the Qur'an; عاصر is a normal Arabic word"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Aasir is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Aasir as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense companion, associate, comrade.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Companion",
+      "primary_semantic_domain": "Contemporary, one who lives in the same age",
       "related_concepts": [
-        "companion",
-        "associate",
-        "comrade"
-      ],
-      "semantic_relationship": "The central semantic idea is companion; other senses are extended associations."
+        "Contemporary, one who lives in the same age"
+      ]
     },
     "spiritual_meaning": {
-      "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of companion.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "status": "not_applicable",
+      "render": false,
+      "meaning": "No devotional reading is offered because the underlying word is a descriptive term rather than a religious concept.",
+      "basis": null,
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Companion",
-        "Associate",
-        "Comrade"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 3,
+      "life_path_number": 3,
+      "ruling_planet": "Jupiter",
+      "lucky_day": "Thursday",
+      "lucky_colors": [
+        "Yellow",
+        "Gold"
+      ],
+      "lucky_stone": "Yellow Sapphire",
+      "meaning": "In Pythagorean numerology the letters of Aasir total 3, associated with creativity, expression and optimism. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 3,
+      "lucky_day": "Thursday",
+      "lucky_colors": [
+        "Yellow",
+        "Gold"
+      ],
+      "lucky_stone": "Yellow Sapphire",
+      "ruling_planet": "Jupiter"
     },
     "translations": {
       "english": {
         "name": "Aasir",
-        "meaning": "Companion, associate, comrade",
-        "long_meaning": "Aasir is a Arabic-origin name. Its core meaning is companion, associate, comrade. عاصر means 'contemporary, one who lives in the same age'. Its use as a personal name is reported but not verified."
+        "script": "Aasir",
+        "meaning": "To be contemporary with; same period (lexical sense)",
+        "long_meaning": "This rendering follows the dictionary-supported verbal sense of عاصر. It should not be treated as a verified given-name gloss; native review is pending."
       },
       "urdu": {
         "name": "عاصر",
-        "meaning": "ساتھی، رفیق، ہم نشین",
-        "long_meaning": "Aasir (عاصر) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم ساتھی، رفیق، ہم نشین ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "عاصر",
+        "meaning": "ہم عصر ہونا؛ ایک ہی زمانے میں ہونا",
+        "long_meaning": "This rendering follows the dictionary-supported verbal sense of عاصر. It should not be treated as a verified given-name gloss; native review is pending."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Aasir",
+        "script": "Aasir",
+        "meaning": "هم‌عصر بودن؛ در یک دوره زیستن",
+        "long_meaning": "This rendering follows the dictionary-supported verbal sense of عاصر. It should not be treated as a verified given-name gloss; native review is pending."
       },
       "hindi": {
         "name": "आसिर",
-        "meaning": "साथी, रफ़ीक़, हमनशीं",
-        "long_meaning": "Aasir (आसिर) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ साथी, रफ़ीक़, हमनशीं है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "आसिर",
+        "meaning": "समकालीन होना; एक ही समय में रहना",
+        "long_meaning": "This rendering follows the dictionary-supported verbal sense of عاصر. It should not be treated as a verified given-name gloss; native review is pending."
       },
       "pashto": {
         "name": "عاصر",
-        "meaning": "ملګری، رفیق، همسفر",
-        "long_meaning": "Aasir (عاصر) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې ملګری، رفیق، همسفر ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "عاصر",
+        "meaning": "هممهاله اوسېدل؛ په یوه زمانه کې اوسېدل",
+        "long_meaning": "This rendering follows the dictionary-supported verbal sense of عاصر. It should not be treated as a verified given-name gloss; native review is pending.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "عاصر",
-        "meaning": "صاحب، رفيق، قرين",
-        "long_meaning": "Aasir (عاصر) اسم مأخوذ من اللغة العربية، ومعناه الأساسي صاحب، رفيق، قرين. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "عاصر",
+        "meaning": "عاصرَه: كان في عصره أو زمنه؛ والاستعمال اسمًا شخصيًا غير مثبت",
+        "long_meaning": "This rendering follows the dictionary-supported verbal sense of عاصر. It should not be treated as a verified given-name gloss; native review is pending.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "low"
+      "confidence": "LOW",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "aa-sir",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عاصر",
-      "persian": null,
-      "hindi": "आसिर",
-      "pashto": "عاصر"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عاصر"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aasir",
-        "aasir",
         "asir"
       ],
-      "script_variants": [
+      "script_forms": [
         "عاصر",
         "आसिर"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عاصر is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "low",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عاصر is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aasir can be understood through the Arabic form عاصر, whose central sense is companion, associate, comrade. عاصر means 'contemporary, one who lives in the same age'. Its use as a personal name is reported but not verified.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aasir mean?",
-        "answer": "Aasir is associated with the Arabic form عاصر, whose core sense is companion, associate, comrade."
+        "q": "What does Aasir mean?",
+        "a": "The recorded Arabic form عاصر means “to be contemporary with” someone. Its use as a personal name and any name-specific gloss remain unverified."
       },
       {
-        "question": "What is the origin of Aasir?",
-        "answer": "Aasir is associated with Arabic. عاصر means 'contemporary, one who lives in the same age'. Its use as a personal name is reported but not verified."
+        "q": "What is the origin of Aasir?",
+        "a": "The record is provisionally matched to Arabic عاصر, but the exact name origin and usage need separate evidence."
       },
       {
-        "question": "Is Aasir an Arabic name?",
-        "answer": "Yes — the underlying form عاصر is Arabic."
+        "q": "Is Aasir an Arabic name?",
+        "a": "The form عاصر is Arabic; that does not prove every use of the Latin spelling Aasir represents that form."
       },
       {
-        "question": "Is Aasir an Islamic name?",
-        "answer": "Aasir can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aasir?",
+        "a": "The recorded form عاصر belongs to root ع ص ر."
       },
       {
-        "question": "Is Aasir a Quranic name?",
-        "answer": "Aasir should not be classified as a Quranic personal name without a direct Quranic basis. root ع ص ر occurs in the Qur'an; عاصر is a normal Arabic word"
+        "q": "Is Aasir an Islamic name?",
+        "a": "Arabic origin alone does not establish religious prescription or specific Islamic status."
       },
       {
-        "question": "What does Aasir mean in Urdu?",
-        "answer": "In Urdu, Aasir is rendered عاصر and carries the sense ساتھی، رفیق، ہم نشین."
+        "q": "Is Aasir a Quranic name?",
+        "a": "This record does not establish Aasir as a Qur'anic personal name."
       },
       {
-        "question": "What does Aasir mean in Persian?",
-        "answer": "No verified Persian form was established for Aasir."
+        "q": "What does Aasir mean in Urdu?",
+        "a": "A cautious lexical rendering of عاصر is “ہم عصر ہونا” (to be contemporary with); personal-name meaning is unverified."
       },
       {
-        "question": "How is Aasir pronounced?",
-        "answer": "A romanized syllable approximation is aa-sir. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aasir pronounced?",
+        "a": "“Aa-sir” is an approximate romanized guide; pronunciation may vary by language."
       },
       {
-        "question": "What are the variants of Aasir?",
-        "answer": "Romanization variants include Aasir, aasir, asir. Script forms are عاصر, आसिर."
-      },
-      {
-        "question": "Is Aasir a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Aasir a boy's or girl's name?",
+        "a": "Independent modern name-usage data has not been supplied, so gender distribution remains unverified."
       }
     ],
     "seo": {
-      "title": "Aasir Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aasir (عاصر).",
-      "h1": "Aasir Name Meaning, Origin and Cultural Background",
+      "title": "Aasir Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aasir (عاصر) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Aasir meaning, Aasir name meaning, Aasir origin, Aasir meaning in Urdu, Aasir pronunciation, Aasir Islamic name",
+      "description_paragraph": "Aasir is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Aasir meaning",
+        "Aasir name meaning",
+        "Aasir origin",
+        "Aasir meaning in Urdu",
+        "Aasir pronunciation",
+        "Aasir Islamic name"
+      ],
       "focus_keyword": "Aasir meaning",
       "secondary_keywords": [
         "Aasir name meaning",
-        "Aasir meaning in Urdu",
         "Aasir origin",
-        "Aasir Islamic name",
+        "Aasir meaning in Urdu",
         "Aasir pronunciation",
-        "Aasir name in Urdu"
+        "Aasir Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aasir (عاصر) is associated with the Arabic form عاصر, whose core sense is companion, associate, comrade. عاصر means 'contemporary, one who lives in the same age'. Its use as a personal name is reported but not verified.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aasir",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Aasir is associated with the Arabic form عاصر, whose core sense is companion, associate, comrade.",
-      "meaning_section": "The central meaning of Aasir is companion, associate, comrade.",
-      "origin_section": "Aasir is associated with Arabic rather than with a different language.",
-      "islam_section": "Aasir can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aasir is with the sense companion.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Aasir, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Aasir is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Aasir",
       "#AasirMeaning",
-      "#AasirName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "low",
-      "linguistic_authenticity": "low",
-      "etymological_authenticity": "low",
-      "meaning_authenticity": "low",
-      "translation_quality": "low",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "translations_corrected_to_match_lexical_source",
+        "personal_name_usage_unverified",
+        "gender_distribution_unverified",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 149,
+      "quality_score": 80,
+      "quality_score_basis": "Provisional editorial score only; lexical sources do not prove personal-name usage, popularity, scriptural status, or fluent translation review."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%B5%D8%B1"
+      ],
+      "verification_method": "Checked the named lexical source(s) for the specified form or related dictionary entry. This does not establish modern personal-name frequency, regional gender distribution, religious status, or native-speaker translation quality.",
+      "claim_evidence": [
         {
-          "claim": "Aasir corresponds to the Arabic form عاصر",
-          "evidence_type": "lexical",
-          "confidence": "low"
+          "claim": "Lane's Lexicon records عاصر as “to be contemporary with” someone; personal-name use is not established by this source.",
+          "source": "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%B5%D8%B1",
+          "status": "lexical_source_checked; name_usage_not_established"
         },
         {
-          "claim": "Aasir has the core sense companion, associate, comrade",
-          "evidence_type": "lexical",
-          "confidence": "low"
+          "claim": "Personal-name usage, frequency, and all translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "LEXICAL_SOURCE_CHECKED; PERSONAL_NAME_USAGE_AND_TRANSLATIONS_PENDING"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Checked lexical forms against named dictionary sources; separated word meanings from name-use claims; corrected unsupported or contradictory glosses; kept uncertainty explicit.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aasir",
-      "alternateName": [
-        "Aasir",
-        "aasir",
-        "asir"
-      ],
-      "description": "A name associated with the Arabic form عاصر, meaning companion, associate, comrade.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aasir",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Aasir",
+          "description": "Aasir — Aasir is provisionally matched to Arabic عاصر, a verb meaning “to be contemporary with” someone or to live in the same period; its use as a personal name is not verified.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aasir mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded Arabic form عاصر means “to be contemporary with” someone. Its use as a personal name and any name-specific gloss remain unverified."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aasir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record is provisionally matched to Arabic عاصر, but the exact name origin and usage need separate evidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aasir an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form عاصر is Arabic; that does not prove every use of the Latin spelling Aasir represents that form."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aasir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded form عاصر belongs to root ع ص ر."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aasir an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Arabic origin alone does not establish religious prescription or specific Islamic status."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aasir a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Aasir as a Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aasir mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A cautious lexical rendering of عاصر is “ہم عصر ہونا” (to be contemporary with); personal-name meaning is unverified."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aasir pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "“Aa-sir” is an approximate romanized guide; pronunciation may vary by language."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aasir a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Independent modern name-usage data has not been supplied, so gender distribution remains unverified."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aasir",
+              "item": "https://nameverse.site/names/islamic/aasir"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aasir, associated with the Arabic form عاصر, meaning companion, associate, comrade."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "translations_corrected_to_match_lexical_source",
+        "personal_name_usage_unverified",
+        "gender_distribution_unverified",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review (lexical source check; name-use/native translation review pending)",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

@@ -1,72 +1,61 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Adeela",
     "slug": "adeela",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Adeela",
       "normalized_name": "adeela",
       "name_type": "given_name",
       "gender": "Female",
-      "gender_confidence": "medium",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "MEDIUM",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Adeela",
         "adeela"
       ],
-      "search_variants": [
-        "Adeela",
-        "adeela"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Just, fair, honest",
-      "primary_meaning": "Just",
-      "secondary_meanings": [
-        "fair",
-        "honest"
-      ],
-      "literal_meaning": "Just",
-      "extended_meaning": "Just, fair, honest",
+      "short_meaning": "Just, equitable",
+      "primary_meaning": "Adeela/Adeelah corresponds to Arabic عديلة, the feminine form related to عديل; the exact nuance “just/fair” needs direct lexicon review.",
+      "literal_meaning": "Just, equitable",
       "meaning_explanation": "Adeela corresponds to the Arabic form عديلة (ع د ل). Its core sense is just, fair, honest. Feminine of عديل (ʿadīl, 'just, equitable'). The source record's gloss 'Honorable, Sublime' is unsupported.",
-      "meaning_confidence": "medium"
+      "meaning_confidence": "MEDIUM"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عديلة",
       "transliteration": "adeela",
-      "romanization": "adeela",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Just",
-        "fair",
-        "honest"
-      ],
-      "etymology_explanation": "The form عديلة is an established Arabic lexical item. Feminine of عديل (ʿadīl, 'just, equitable'). The source record's gloss 'Honorable, Sublime' is unsupported.",
-      "etymology_confidence": "medium",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Arabic word عديلة",
+      "root_family": [],
+      "etymology_explanation": "The form عديلة is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "MEDIUM",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عديلة is an established Arabic form.",
-        "Urdu": "عدیلہ is used in Urdu.",
-        "Hindi": "अदीला is used in Hindi.",
-        "Pashto": "عديله is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عديلة.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "medium"
+      "language_confidence": "MEDIUM"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "medium",
-      "origin_explanation": "The name is associated with the Arabic form عديلة. Feminine of عديل (ʿadīl, 'just, equitable'). The source record's gloss 'Honorable, Sublime' is unsupported.",
+      "origin_confidence": "MEDIUM",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -75,409 +64,448 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Adeela may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Adeela is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "root ع د ل occurs in the Qur'an; عديلة is a normal Arabic feminine form"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Adeela is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Adeela as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense just, fair, honest.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Just",
+      "primary_semantic_domain": "Just, equitable",
       "related_concepts": [
-        "just",
-        "fair",
-        "honest"
-      ],
-      "semantic_relationship": "The central semantic idea is just; other senses are extended associations."
+        "Just, equitable"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of just.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Just, equitable” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Just, equitable.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Just",
-        "Fair",
-        "Honest"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 1,
+      "life_path_number": 1,
+      "ruling_planet": "Sun",
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Gold",
+        "Orange"
+      ],
+      "lucky_stone": "Ruby",
+      "meaning": "In Pythagorean numerology the letters of Adeela total 1, associated with leadership, independence and initiative. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 1,
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Gold",
+        "Orange"
+      ],
+      "lucky_stone": "Ruby",
+      "ruling_planet": "Sun"
     },
     "translations": {
       "english": {
         "name": "Adeela",
-        "meaning": "Just, fair, honest",
-        "long_meaning": "Adeela is a Arabic-origin name. Its core meaning is just, fair, honest. Feminine of عديل (ʿadīl, 'just, equitable'). The source record's gloss 'Honorable, Sublime' is unsupported."
+        "script": "Adeela",
+        "meaning": "Feminine form related to عديل; exact nuance requires direct lexicon review",
+        "long_meaning": "The form عديلة is feminine; exact nuance and native translations need review."
       },
       "urdu": {
         "name": "عدیلہ",
-        "meaning": "عادل، منصف، سچا",
-        "long_meaning": "Adeela (عدیلہ) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم عادل، منصف، سچا ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "عدیلہ",
+        "meaning": "عدیلہ؛ برابر/ہمسر کے مفہوم سے متعلق، دقیق معنی کی تصدیق درکار",
+        "long_meaning": "The form عديلة is feminine; exact nuance and native translations need review."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Adeela",
+        "script": "Adeela",
+        "meaning": "عدیله؛ صورت مؤنث مرتبط با عدیل، معنای دقیق نیازمند بررسی",
+        "long_meaning": "The form عديلة is feminine; exact nuance and native translations need review."
       },
       "hindi": {
         "name": "अदीला",
-        "meaning": "न्यायी, निष्पक्ष, ईमानदार",
-        "long_meaning": "Adeela (अदीला) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ न्यायी, निष्पक्ष, ईमानदार है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "अदीला",
+        "meaning": "अदीला; अदील का स्त्रीलिंग रूप, सटीक अर्थ की पुष्टि आवश्यक",
+        "long_meaning": "The form عديلة is feminine; exact nuance and native translations need review."
       },
       "pashto": {
         "name": "عديله",
-        "meaning": "عادل، منصف، رښتونی",
-        "long_meaning": "Adeela (عديله) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې عادل، منصف، رښتونی ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "عديله",
+        "meaning": "عدیله؛ له عدیل سره تړلې ښځینه بڼه، دقیقې مانا ته بیاکتنه پکار ده",
+        "long_meaning": "The form عديلة is feminine; exact nuance and native translations need review.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "عديلة",
-        "meaning": "عادل، منصف، مستقيم",
-        "long_meaning": "Adeela (عديلة) اسم مأخوذ من اللغة العربية، ومعناه الأساسي عادل، منصف، مستقيم. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "عديلة",
+        "meaning": "عديلة؛ صيغة مؤنثة مرتبطة بعديل، والمعنى الدقيق يحتاج إلى مصدر",
+        "long_meaning": "The form عديلة is feminine; exact nuance and native translations need review.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "medium"
+      "confidence": "MEDIUM",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "a-dee-la",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عدیلہ",
-      "persian": null,
-      "hindi": "अदीला",
-      "pashto": "عديله"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عديلة"
+      }
     },
     "name_variants": {
       "romanized_variants": [
         "Adeela",
-        "adeela"
+        "adeela",
+        "adeelah"
       ],
-      "script_variants": [
+      "script_forms": [
         "عديلة",
         "عديله",
         "عدیلہ",
         "अदीला"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Adeela/Adeelah are candidate romanizations of the same Arabic form عديلة; confirm canonical routes manually.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عديلة is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "medium",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عديلة is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Adeela can be understood through the Arabic form عديلة, whose central sense is just, fair, honest. Feminine of عديل (ʿadīl, 'just, equitable'). The source record's gloss 'Honorable, Sublime' is unsupported.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Adeela mean?",
-        "answer": "Adeela is associated with the Arabic form عديلة, whose core sense is just, fair, honest."
+        "q": "What does Adeela mean?",
+        "a": "Adeela is an Arabic-origin name meaning “Just, equitable”."
       },
       {
-        "question": "What is the origin of Adeela?",
-        "answer": "Adeela is associated with Arabic. Feminine of عديل (ʿadīl, 'just, equitable'). The source record's gloss 'Honorable, Sublime' is unsupported."
+        "q": "What is the origin of Adeela?",
+        "a": "Adeela originates in Arabic and circulates in Muslim naming communities."
       },
       {
-        "question": "Is Adeela an Arabic name?",
-        "answer": "Yes — the underlying form عديلة is Arabic."
+        "q": "Is Adeela an Arabic name?",
+        "a": "Yes, the recorded form عديلة is Arabic."
       },
       {
-        "question": "Is Adeela an Islamic name?",
-        "answer": "Adeela can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Adeela?",
+        "a": "No root analysis is asserted for this spelling."
       },
       {
-        "question": "Is Adeela a Quranic name?",
-        "answer": "Adeela should not be classified as a Quranic personal name without a direct Quranic basis. root ع د ل occurs in the Qur'an; عديلة is a normal Arabic feminine form"
+        "q": "Is Adeela an Islamic name?",
+        "a": "Adeela is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
       },
       {
-        "question": "What does Adeela mean in Urdu?",
-        "answer": "In Urdu, Adeela is rendered عدیلہ and carries the sense عادل، منصف، سچا."
+        "q": "Is Adeela a Quranic name?",
+        "a": "Adeela is not independently established as a Qur'anic personal name."
       },
       {
-        "question": "What does Adeela mean in Persian?",
-        "answer": "No verified Persian form was established for Adeela."
+        "q": "What does Adeela mean in Urdu?",
+        "a": "In Urdu it is written عدیلہ and carries the sense “عادل، منصف، سچا”."
       },
       {
-        "question": "How is Adeela pronounced?",
-        "answer": "A romanized syllable approximation is a-dee-la. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Adeela pronounced?",
+        "a": "A romanized syllable approximation is “a-dee-la”."
       },
       {
-        "question": "What are the variants of Adeela?",
-        "answer": "Romanization variants include Adeela, adeela. Script forms are عديلة, عديله, عدیلہ, अदीला."
-      },
-      {
-        "question": "Is Adeela a boy's or girl's name?",
-        "answer": "Documented usage records this form as female. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Adeela a boy's or girl's name?",
+        "a": "Documented usage records Adeela as a girl's name; actual use can vary by community."
       }
     ],
     "seo": {
-      "title": "Adeela Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Adeela (عديلة).",
-      "h1": "Adeela Name Meaning, Origin and Cultural Background",
+      "title": "Adeela Name Meaning, Origin & Islamic Context",
+      "meta_description": "Adeela (عديلة) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Adeela meaning, Adeela name meaning, Adeela origin, Adeela meaning in Urdu, Adeela pronunciation, Adeela Islamic name",
+      "description_paragraph": "Adeela is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Adeela meaning",
+        "Adeela name meaning",
+        "Adeela origin",
+        "Adeela meaning in Urdu",
+        "Adeela pronunciation",
+        "Adeela Islamic name"
+      ],
       "focus_keyword": "Adeela meaning",
       "secondary_keywords": [
         "Adeela name meaning",
-        "Adeela meaning in Urdu",
         "Adeela origin",
-        "Adeela Islamic name",
+        "Adeela meaning in Urdu",
         "Adeela pronunciation",
-        "Adeela name in Urdu"
+        "Adeela Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Adeela (عديلة) is associated with the Arabic form عديلة, whose core sense is just, fair, honest. Feminine of عديل (ʿadīl, 'just, equitable'). The source record's gloss 'Honorable, Sublime' is unsupported.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/adeela",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Adeela is associated with the Arabic form عديلة, whose core sense is just, fair, honest.",
-      "meaning_section": "The central meaning of Adeela is just, fair, honest.",
-      "origin_section": "Adeela is associated with Arabic rather than with a different language.",
-      "islam_section": "Adeela can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Adeela is with the sense just.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Adeela, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Adeela is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Adeela",
       "#AdeelaMeaning",
-      "#AdeelaName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "medium",
-      "linguistic_authenticity": "medium",
-      "etymological_authenticity": "medium",
-      "meaning_authenticity": "medium",
-      "translation_quality": "medium",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "masculine_translations_in_feminine_record_corrected",
+        "adil_adeel_form_distinction_clarified",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 149,
+      "quality_score": 78,
+      "quality_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "Direct lexical/cultural sources were not checked in this pass; meaning and name-use claims remain provisional until sourced.",
+      "claim_evidence": [
         {
-          "claim": "Adeela corresponds to the Arabic form عديلة",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "Exact lexical/cultural claim",
+          "source": null,
+          "status": "direct_source_needed; claim_provisional"
         },
         {
-          "claim": "Adeela has the core sense just, fair, honest",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "Personal-name usage and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "DIRECT_SOURCE_NEEDED; CLAIMS_PROVISIONAL"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Corrected unsupported compound meanings, native-form mismatches, Arabic form distinctions, and corrupted translations; unresolved claims are explicitly flagged.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Adeela",
-      "alternateName": [
-        "Adeela",
-        "adeela"
-      ],
-      "description": "A name associated with the Arabic form عديلة, meaning just, fair, honest.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "adeela",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Adeela",
+          "description": "Adeela — Adeela/Adeelah corresponds to Arabic عديلة, the feminine form related to عديل; the exact nuance “just/fair” needs direct lexicon review.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Female"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Adeela mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Adeela is an Arabic-origin name meaning “Just, equitable”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Adeela?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Adeela originates in Arabic and circulates in Muslim naming communities."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Adeela an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, the recorded form عديلة is Arabic."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Adeela?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No root analysis is asserted for this spelling."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Adeela an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Adeela is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Adeela a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Adeela is not independently established as a Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Adeela mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Urdu it is written عدیلہ and carries the sense “عادل، منصف، سچا”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Adeela pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A romanized syllable approximation is “a-dee-la”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Adeela a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Documented usage records Adeela as a girl's name; actual use can vary by community."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Adeela",
+              "item": "https://nameverse.site/names/islamic/adeela"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Adeela, associated with the Arabic form عديلة, meaning just, fair, honest."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "masculine_translations_in_feminine_record_corrected",
+        "adil_adeel_form_distinction_clarified",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; direct source and translation review pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

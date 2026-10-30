@@ -1,68 +1,61 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abdulmajid",
     "slug": "abdulmajid",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abdulmajid",
       "normalized_name": "abdulmajid",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abdulmajid",
         "abdulmajid"
       ],
-      "search_variants": [
-        "Abdulmajid",
-        "abdulmajid"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Abdulmajid; servant of the Glorious",
-      "primary_meaning": "Abdulmajid; servant of the Glorious",
-      "secondary_meanings": [],
-      "literal_meaning": "Abdulmajid; servant of the Glorious",
-      "extended_meaning": "Abdulmajid; servant of the Glorious",
+      "short_meaning": "Servant of the Glorious",
+      "primary_meaning": "Abdulmajid corresponds to the Arabic form عَبْدُ الْمَجِيد and is glossed in this record as “Servant of the Glorious.” The lexical gloss describes the word-form; Qur’anic occurrence, religious recommendation, popularity, and a name-bearer’s character are separate claims and are not established by this gloss alone.",
+      "literal_meaning": "Servant of the Glorious",
       "meaning_explanation": "Abdulmajid corresponds to the Arabic form عَبْدُ الْمَجِيد (Arabic عبد (ʿAbd) + المجيد (al-Majīd)). Its core sense is abdulmajid; servant of the glorious. Abdulmajid is Arabic عَبْدُ الْمَجِيد (ʿAbd al-Majīd), meaning 'servant of the Glorious'.",
-      "meaning_confidence": "high"
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عَبْدُ الْمَجِيد",
       "transliteration": "abdulmajid",
-      "romanization": "abdulmajid",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Abdulmajid; servant of the Glorious"
-      ],
-      "etymology_explanation": "The form عَبْدُ الْمَجِيد is an established Arabic lexical item. Abdulmajid is Arabic عَبْدُ الْمَجِيد (ʿAbd al-Majīd), meaning 'servant of the Glorious'.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Arabic word عَبْدُ الْمَجِيد",
+      "root_family": [],
+      "etymology_explanation": "The form عَبْدُ الْمَجِيد is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عَبْدُ الْمَجِيد is an established Arabic form.",
-        "Urdu": "عبدالمجید is used in Urdu.",
-        "Persian": "عبدالمجید is an established Persian form.",
-        "Hindi": "अब्दुलमजीद is used in Hindi.",
-        "Pashto": "عبدالمجيد is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عَبْدُ الْمَجِيد.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form عَبْدُ الْمَجِيد. Abdulmajid is Arabic عَبْدُ الْمَجِيد (ʿAbd al-Majīd), meaning 'servant of the Glorious'.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -71,406 +64,451 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Abdulmajid may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abdulmajid is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "ʿAbd al-Majīd is a compound of two Quranic elements, not itself a Quranic personal name."
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abdulmajid is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abdulmajid as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense abdulmajid; servant of the glorious.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Abdulmajid; servant of the Glorious",
+      "primary_semantic_domain": "Servant of the Glorious",
       "related_concepts": [
-        "abdulmajid; servant of the glorious"
-      ],
-      "semantic_relationship": "The central semantic idea is abdulmajid; servant of the glorious; other senses are extended associations."
+        "Servant of the Glorious"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of abdulmajid; servant of the glorious.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Servant of the Glorious” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Servant of the Glorious.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Abdulmajid; servant of the glorious"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 5,
+      "life_path_number": 5,
+      "ruling_planet": "Mercury",
+      "lucky_day": "Wednesday",
+      "lucky_colors": [
+        "Green",
+        "Turquoise"
+      ],
+      "lucky_stone": "Emerald",
+      "meaning": "In Pythagorean numerology the letters of Abdulmajid total 5, associated with change, freedom and adaptability. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 5,
+      "lucky_day": "Wednesday",
+      "lucky_colors": [
+        "Green",
+        "Turquoise"
+      ],
+      "lucky_stone": "Emerald",
+      "ruling_planet": "Mercury"
     },
     "translations": {
       "english": {
         "name": "Abdulmajid",
-        "meaning": "Abdulmajid; servant of the Glorious",
-        "long_meaning": "Abdulmajid is a Arabic-origin name. Its core meaning is abdulmajid; servant of the glorious. Abdulmajid is Arabic عَبْدُ الْمَجِيد (ʿAbd al-Majīd), meaning 'servant of the Glorious'."
+        "script": "Abdulmajid",
+        "meaning": "Servant of the Glorious",
+        "long_meaning": "Abdulmajid is an Arabic-origin given name; in Arabic the word means “Servant of the Glorious”."
       },
       "urdu": {
         "name": "عبدالمجید",
+        "script": "عبدالمجید",
         "meaning": "عبدالمجید، مجید کا بندہ",
-        "long_meaning": "Abdulmajid (عبدالمجید) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم عبدالمجید، مجید کا بندہ ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "long_meaning": "Abdulmajid (عبدالمجید) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم عبدالمجید، مجید کا بندہ ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔"
       },
       "persian": {
         "name": "عبدالمجید",
+        "script": "عبدالمجید",
         "meaning": "عبدالمجید، بنده مجید",
-        "long_meaning": "Abdulmajid (عبدالمجید) نامی برگرفته از زبان عربی است و معنای اصلی آن عبدالمجید، بنده مجید است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "long_meaning": "Abdulmajid (عبدالمجید) نامی برگرفته از زبان عربی است و معنای اصلی آن عبدالمجید، بنده مجید است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است."
       },
       "hindi": {
         "name": "अब्दुलमजीद",
+        "script": "अब्दुलमजीद",
         "meaning": "अब्दुलमजीद, मजीद का दास",
-        "long_meaning": "Abdulmajid (अब्दुलमजीद) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ अब्दुलमजीद, मजीद का दास है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "long_meaning": "Abdulmajid (अब्दुलमजीद) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ अब्दुलमजीद, मजीद का दास है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।"
       },
       "pashto": {
         "name": "عبدالمجيد",
+        "script": "عبدالمجيد",
         "meaning": "عبدالمجيد، د مجید بنده",
         "long_meaning": "Abdulmajid (عبدالمجيد) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې عبدالمجيد، د مجید بنده ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "native_review_required": true
       },
       "arabic": {
         "name": "عَبْدُ الْمَجِيد",
+        "script": "عَبْدُ الْمَجِيد",
         "meaning": "عَبْدُ الْمَجِيد، عَبْدُ الْمَجِيد",
         "long_meaning": "Abdulmajid (عَبْدُ الْمَجِيد) اسم مأخوذ من اللغة العربية، ومعناه الأساسي عَبْدُ الْمَجِيد، عَبْدُ الْمَجِيد. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "ab-dul-ma-jid",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عبدالمجید",
-      "persian": "عبدالمجید",
-      "hindi": "अब्दुलमजीद",
-      "pashto": "عبدالمجيد"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عَبْدُ الْمَجِيد"
+      }
     },
     "name_variants": {
       "romanized_variants": [
         "Abdulmajid",
-        "abdulmajid"
+        "abdelmajid"
       ],
-      "script_variants": [
+      "script_forms": [
         "عبدالمجيد",
         "عبدالمجید",
         "عَبْدُ الْمَجِيد",
         "अब्दुलमजीद"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
-      "do_not_merge_with": []
+      "variant_notes": "Abdulmajid/Abdelmajid are candidate regional romanizations of the same Arabic compound عبد المجيد; keep routes pending manual canonical review.",
+      "do_not_merge_with": [
+        "abdelmajid"
+      ]
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عَبْدُ الْمَجِيد is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عَبْدُ الْمَجِيد is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abdulmajid can be understood through the Arabic form عَبْدُ الْمَجِيد, whose central sense is abdulmajid; servant of the glorious. Abdulmajid is Arabic عَبْدُ الْمَجِيد (ʿAbd al-Majīd), meaning 'servant of the Glorious'.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abdulmajid mean?",
-        "answer": "Abdulmajid is associated with the Arabic form عَبْدُ الْمَجِيد, whose core sense is abdulmajid; servant of the glorious."
+        "q": "What does Abdulmajid mean?",
+        "a": "Abdulmajid is an Arabic-origin name meaning “Servant of the Glorious”."
       },
       {
-        "question": "What is the origin of Abdulmajid?",
-        "answer": "Abdulmajid is associated with Arabic. Abdulmajid is Arabic عَبْدُ الْمَجِيد (ʿAbd al-Majīd), meaning 'servant of the Glorious'."
+        "q": "What is the origin of Abdulmajid?",
+        "a": "Abdulmajid originates in Arabic and circulates in Muslim naming communities."
       },
       {
-        "question": "Is Abdulmajid an Arabic name?",
-        "answer": "Yes — the underlying form عَبْدُ الْمَجِيد is Arabic."
+        "q": "Is Abdulmajid an Arabic name?",
+        "a": "Yes, the recorded form عَبْدُ الْمَجِيد is Arabic."
       },
       {
-        "question": "Is Abdulmajid an Islamic name?",
-        "answer": "Abdulmajid can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Abdulmajid?",
+        "a": "No root analysis is asserted for this spelling."
       },
       {
-        "question": "Is Abdulmajid a Quranic name?",
-        "answer": "Abdulmajid should not be classified as a Quranic personal name without a direct Quranic basis. ʿAbd al-Majīd is a compound of two Quranic elements, not itself a Quranic personal name."
+        "q": "Is Abdulmajid an Islamic name?",
+        "a": "Abdulmajid is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
       },
       {
-        "question": "What does Abdulmajid mean in Urdu?",
-        "answer": "In Urdu, Abdulmajid is rendered عبدالمجید and carries the sense عبدالمجید، مجید کا بندہ."
+        "q": "Is Abdulmajid a Quranic name?",
+        "a": "Abdulmajid is not independently established as a Qur'anic personal name."
       },
       {
-        "question": "What does Abdulmajid mean in Persian?",
-        "answer": "In Persian, Abdulmajid is rendered عبدالمجید and carries the sense عبدالمجید، بنده مجید."
+        "q": "What does Abdulmajid mean in Urdu?",
+        "a": "In Urdu it is written عبدالمجید and carries the sense “عبدالمجید، مجید کا بندہ”."
       },
       {
-        "question": "How is Abdulmajid pronounced?",
-        "answer": "A romanized syllable approximation is ab-dul-ma-jid. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abdulmajid pronounced?",
+        "a": "A romanized syllable approximation is “ab-dul-ma-jid”."
       },
       {
-        "question": "What are the variants of Abdulmajid?",
-        "answer": "Romanization variants include Abdulmajid, abdulmajid. Script forms are عبدالمجيد, عبدالمجید, عَبْدُ الْمَجِيد, अब्दुलमजीद."
-      },
-      {
-        "question": "Is Abdulmajid a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Abdulmajid a boy's or girl's name?",
+        "a": "Documented usage records Abdulmajid as a boy's name; actual use can vary by community."
       }
     ],
     "seo": {
-      "title": "Abdulmajid Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Abdulmajid (عَبْدُ الْمَجِيد).",
-      "h1": "Abdulmajid Name Meaning, Origin and Cultural Background",
+      "title": "Abdulmajid Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abdulmajid (عَبْدُ الْمَجِيد) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abdulmajid meaning, Abdulmajid name meaning, Abdulmajid origin, Abdulmajid meaning in Urdu, Abdulmajid pronunciation, Abdulmajid Islamic name",
+      "description_paragraph": "Abdulmajid is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abdulmajid meaning",
+        "Abdulmajid name meaning",
+        "Abdulmajid origin",
+        "Abdulmajid meaning in Urdu",
+        "Abdulmajid pronunciation",
+        "Abdulmajid Islamic name"
+      ],
       "focus_keyword": "Abdulmajid meaning",
       "secondary_keywords": [
         "Abdulmajid name meaning",
-        "Abdulmajid meaning in Urdu",
         "Abdulmajid origin",
-        "Abdulmajid Islamic name",
+        "Abdulmajid meaning in Urdu",
         "Abdulmajid pronunciation",
-        "Abdulmajid name in Urdu"
+        "Abdulmajid Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abdulmajid (عَبْدُ الْمَجِيد) is associated with the Arabic form عَبْدُ الْمَجِيد, whose core sense is abdulmajid; servant of the glorious. Abdulmajid is Arabic عَبْدُ الْمَجِيد (ʿAbd al-Majīd), meaning 'servant of the Glorious'.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abdulmajid",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abdulmajid is associated with the Arabic form عَبْدُ الْمَجِيد, whose core sense is abdulmajid; servant of the glorious.",
-      "meaning_section": "The central meaning of Abdulmajid is abdulmajid; servant of the glorious.",
-      "origin_section": "Abdulmajid is associated with Arabic rather than with a different language.",
-      "islam_section": "Abdulmajid can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Abdulmajid is with the sense abdulmajid; servant of the glorious.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abdulmajid, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Abdulmajid is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abdulmajid",
       "#AbdulmajidMeaning",
-      "#AbdulmajidName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "compound_component_sources_incomplete",
+        "personal_name_frequency_not_verified",
+        "native_translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 152,
+      "quality_score": 82,
+      "quality_score_basis": "Provisional editorial score; compound component sources and native translation review remain incomplete."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "https://www.laneslexicon.com/word/%D9%85%D8%AC%D9%8A%D8%AF/n38229"
+      ],
+      "verification_method": "Direct source is listed only where checked. Other components of the compound and all locale translations still require separate verification.",
+      "claim_evidence": [
         {
-          "claim": "Abdulmajid corresponds to the Arabic form عَبْدُ الْمَجِيد",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "A lexical source was checked for a component of abdulmajid; the full compound and translations remain separate checks.",
+          "source": "https://www.laneslexicon.com/word/%D9%85%D8%AC%D9%8A%D8%AF/n38229",
+          "status": "component_source_checked"
         },
         {
-          "claim": "Abdulmajid has the core sense abdulmajid; servant of the glorious",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Personal-name usage, frequency, and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "PARTIAL_COMPONENT_SOURCE_CHECKED; REVIEW_OPEN"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Reviewed compound structure; checked listed components where available; corrected the Capable/All-Powerful translation nuance and flagged variant spellings.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abdulmajid",
-      "alternateName": [
-        "Abdulmajid",
-        "abdulmajid"
-      ],
-      "description": "A name associated with the Arabic form عَبْدُ الْمَجِيد, meaning abdulmajid; servant of the glorious.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "abdulmajid",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Abdulmajid",
+          "description": "Abdulmajid — an Arabic-origin given name meaning Servant of the Glorious",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abdulmajid mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Abdulmajid is an Arabic-origin name meaning “Servant of the Glorious”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abdulmajid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Abdulmajid originates in Arabic and circulates in Muslim naming communities."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdulmajid an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, the recorded form عَبْدُ الْمَجِيد is Arabic."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abdulmajid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No root analysis is asserted for this spelling."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdulmajid an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Abdulmajid is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdulmajid a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Abdulmajid is not independently established as a Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abdulmajid mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Urdu it is written عبدالمجید and carries the sense “عبدالمجید، مجید کا بندہ”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abdulmajid pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A romanized syllable approximation is “ab-dul-ma-jid”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdulmajid a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Documented usage records Abdulmajid as a boy's name; actual use can vary by community."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abdulmajid",
+              "item": "https://nameverse.site/names/islamic/abdulmajid"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abdulmajid, associated with the Arabic form عَبْدُ الْمَجِيد, meaning abdulmajid; servant of the glorious."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "compound_component_sources_incomplete",
+        "personal_name_frequency_not_verified",
+        "native_translation_review_required"
+      ],
+      "confidence": "MEDIUM",
+      "reviewed_by": "NameVerse evidence-led review; component sources and native translation review pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

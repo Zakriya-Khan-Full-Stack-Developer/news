@@ -1,469 +1,509 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Adama",
     "slug": "adama",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Adama",
       "normalized_name": "adama",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Adama",
         "adama"
       ],
-      "search_variants": [
-        "Adama",
-        "adama"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Adama; Adam (West African form)",
-      "primary_meaning": "Adama; Adam (West African form)",
-      "secondary_meanings": [],
-      "literal_meaning": "Adama; Adam (West African form)",
-      "extended_meaning": "Adama; Adam (West African form)",
-      "meaning_explanation": "Adama corresponds to the African form آدَمَا (Fulani/Hausa Adama (from Adam)). Its core sense is adama; adam (west african form). Adama is the West African (Fulani/Hausa) form of the name Adam. It is used as a male given name.",
-      "meaning_confidence": "high"
+      "short_meaning": "Adam (West African form)",
+      "primary_meaning": "Adama is recorded as a West African form associated with Adam, but the exact Fulani/Hausa language pathway and name meaning need a direct source; آدَمَا is Arabic-script transcription, not native orthography.",
+      "literal_meaning": "The name is the African word itself, used unchanged as a given name rather than a derived or diminutive form.",
+      "meaning_explanation": "The record itself identifies Adama as a West African form of Adam but presents Arabic-script آدَمَا as if it were the native form. The Latin form is retained as the source-language spelling; cultural usage and language-specific meaning remain provisional.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
-      "primary_language": "African",
-      "lexical_form": "آدَمَا",
+      "primary_language": "West African language form (provisional)",
+      "lexical_form": "Adama (West African Latin-script form; exact language pathway needs source)",
       "transliteration": "adama",
-      "romanization": "adama",
-      "root_status": "Fulani/Hausa Adama (from Adam)",
-      "etymological_meaning": [
-        "Adama; Adam (West African form)"
-      ],
-      "etymology_explanation": "The form آدَمَا is an established African lexical item. Adama is the West African (Fulani/Hausa) form of the name Adam. It is used as a male given name.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Regional form associated with Adam; direct language-specific source needed.",
+      "feminine_form": null,
+      "etymological_meaning": "Related to Adam (provisional)",
+      "root_family": [],
+      "etymology_explanation": "The form آدَمَا is an established African lexical item used unchanged as a given name.",
+      "etymology_confidence": "LOW",
+      "false_etymology_warning": "No derivation beyond the documented African form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
-      "primary": "African",
+      "primary": "West African regional form (exact language unverified)",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Fulani/Fulfulde",
+        "Hausa"
       ],
       "language_notes": {
-        "Arabic": "آدَمَا is an established Arabic form.",
-        "Urdu": "آدما is used in Urdu.",
-        "Persian": "آدما is an established Persian form.",
-        "Hindi": "आदमा is used in Hindi.",
-        "Pashto": "آدما is used in Pashto."
+        "primary": "African is the language of the recorded form آدَمَا.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
-      "primary_origin": "African",
+      "primary_origin": "West African regional form; exact language pathway unverified",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the African form آدَمَا. Adama is the West African (Fulani/Hausa) form of the name Adam. It is used as a male given name.",
-      "cultural_transmission": []
+      "origin_confidence": "LOW",
+      "origin_explanation": "The name originates in African and circulates in Muslim naming through established multilingual use.",
+      "cultural_transmission": [
+        "African",
+        "Muslim South Asia",
+        "Urdu-speaking communities"
+      ]
     },
     "religion": {
-      "primary_association": "South Asian cultural usage",
-      "religion": "Not inherently religious",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Adama may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "primary_association": "Islamic-cultural usage",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Adama is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "Adama is an African form of Adam, not a Quranic Arabic form."
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Adama is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Adama as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
-        "South Asia"
+        "African",
+        "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense adama; adam (west african form).",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Adama; Adam (West African form)",
+      "primary_semantic_domain": "Adam (West African form)",
       "related_concepts": [
-        "adama; adam (west african form)"
-      ],
-      "semantic_relationship": "The central semantic idea is adama; adam (west african form); other senses are extended associations."
+        "Adam (West African form)"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of adama; adam (west african form).",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Adam (West African form)” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Adam (West African form).",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Adama; adam (west african form)"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 2,
+      "life_path_number": 2,
+      "ruling_planet": "Moon",
+      "lucky_day": "Monday",
+      "lucky_colors": [
+        "White",
+        "Silver"
+      ],
+      "lucky_stone": "Pearl",
+      "meaning": "In Pythagorean numerology the letters of Adama total 2, associated with cooperation, balance and sensitivity. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 2,
+      "lucky_day": "Monday",
+      "lucky_colors": [
+        "White",
+        "Silver"
+      ],
+      "lucky_stone": "Pearl",
+      "ruling_planet": "Moon"
     },
     "translations": {
       "english": {
         "name": "Adama",
-        "meaning": "Adama; Adam (West African form)",
-        "long_meaning": "Adama is a African-origin name. Its core meaning is adama; adam (west african form). Adama is the West African (Fulani/Hausa) form of the name Adam. It is used as a male given name."
+        "script": "Adama",
+        "meaning": "West African regional form associated with Adam (source needed)",
+        "long_meaning": "The record's Arabic-script form is a transcription, not native West African orthography. Exact language and name-use source are pending."
       },
       "urdu": {
         "name": "آدما",
-        "meaning": "آدما، حضرت آدم",
-        "long_meaning": "Adama (آدما) نامعلوم زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم آدما، حضرت آدم ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "آدما",
+        "meaning": "آدم سے متعلق مغربی افریقی صورت (ماخذ درکار)",
+        "long_meaning": "The record's Arabic-script form is a transcription, not native West African orthography. Exact language and name-use source are pending."
       },
       "persian": {
         "name": "آدما",
-        "meaning": "آدما، آدم",
-        "long_meaning": "Adama (آدما) نامی برگرفته از زبان نامعلوم است و معنای اصلی آن آدما، آدم است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "script": "آدما",
+        "meaning": "صورت منطقه‌ای غرب آفریقا مرتبط با آدم (منبع لازم)",
+        "long_meaning": "The record's Arabic-script form is a transcription, not native West African orthography. Exact language and name-use source are pending."
       },
       "hindi": {
         "name": "आदमा",
-        "meaning": "आदमा, आदम",
-        "long_meaning": "Adama (आदमा) अज्ञात भाषा से लिया गया नाम है। इसका मुख्य अर्थ आदमा, आदम है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "आदमा",
+        "meaning": "आदम से संबंधित पश्चिम अफ्रीकी रूप (स्रोत आवश्यक)",
+        "long_meaning": "The record's Arabic-script form is a transcription, not native West African orthography. Exact language and name-use source are pending."
       },
       "pashto": {
         "name": "آدما",
-        "meaning": "آدما، آدم",
-        "long_meaning": "Adama (آدما) د نامعلوم ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې آدما، آدم ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "آدما",
+        "meaning": "له آدم سره تړلې لوېدیځه افریقایي بڼه (سرچینه اړینه ده)",
+        "long_meaning": "The record's Arabic-script form is a transcription, not native West African orthography. Exact language and name-use source are pending.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "آدَمَا",
-        "meaning": "آدَمَا، آدَم",
-        "long_meaning": "Adama (آدَمَا) اسم مأخوذ من اللغة غير محددة، ومعناه الأساسي آدَمَا، آدَم. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "آدَمَا",
+        "meaning": "صيغة إقليمية من غرب أفريقيا مرتبطة بآدم؛ تحتاج إلى مصدر",
+        "long_meaning": "The record's Arabic-script form is a transcription, not native West African orthography. Exact language and name-use source are pending.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "a-da-ma",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "آدما",
-      "persian": "آدما",
-      "hindi": "आदमा",
-      "pashto": "آدما"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "آدَمَا"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Adama",
-        "adama"
+        "Adama"
       ],
-      "script_variants": [
+      "script_forms": [
         "آدما",
         "آدَمَا",
         "आदमा"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form آدَمَا is an established African lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form آدَمَا is an established African lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Adama can be understood through the African form آدَمَا, whose central sense is adama; adam (west african form). Adama is the West African (Fulani/Hausa) form of the name Adam. It is used as a male given name.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Adama mean?",
-        "answer": "Adama is associated with the African form آدَمَا, whose core sense is adama; adam (west african form)."
+        "q": "What does Adama mean?",
+        "a": "Adama is recorded as a West African form associated with Adam; exact language-specific meaning needs a source."
       },
       {
-        "question": "What is the origin of Adama?",
-        "answer": "Adama is associated with African. Adama is the West African (Fulani/Hausa) form of the name Adam. It is used as a male given name."
+        "q": "What is the origin of Adama?",
+        "a": "The record suggests a Fulani/Hausa or broader West African pathway; direct sourcing is required."
       },
       {
-        "question": "Is Adama an Arabic name?",
-        "answer": "No — the underlying form is African, not Arabic."
+        "q": "Is Adama an Arabic name?",
+        "a": "No. The Latin form is West African/regional; Arabic script was only a transcription."
       },
       {
-        "question": "Is Adama an Islamic name?",
-        "answer": "Adama can occur in Muslim naming contexts, but it is better described as a African-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Adama?",
+        "a": "No Arabic root is assigned to the regional form."
       },
       {
-        "question": "Is Adama a Quranic name?",
-        "answer": "Adama should not be classified as a Quranic personal name without a direct Quranic basis. Adama is an African form of Adam, not a Quranic Arabic form."
+        "q": "Is Adama an Islamic name?",
+        "a": "Specific religious status is not established by the regional form alone."
       },
       {
-        "question": "What does Adama mean in Urdu?",
-        "answer": "In Urdu, Adama is rendered آدما and carries the sense آدما، حضرت آدم."
+        "q": "Is Adama a Quranic name?",
+        "a": "This record does not establish Adama as an explicitly named Qur'anic personal name in this exact regional form."
       },
       {
-        "question": "What does Adama mean in Persian?",
-        "answer": "In Persian, Adama is rendered آدما and carries the sense آدما، آدم."
+        "q": "What does Adama mean in Urdu?",
+        "a": "The Urdu rendering is approximate and needs review."
       },
       {
-        "question": "How is Adama pronounced?",
-        "answer": "A romanized syllable approximation is a-da-ma. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Adama pronounced?",
+        "a": "Pronunciation should be checked with the relevant West African language source."
       },
       {
-        "question": "What are the variants of Adama?",
-        "answer": "Romanization variants include Adama, adama. Script forms are آدما, آدَمَا, आदमा."
-      },
-      {
-        "question": "Is Adama a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Adama a boy's or girl's name?",
+        "a": "The record's male gender claim requires direct regional usage evidence."
       }
     ],
     "seo": {
-      "title": "Adama Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, African origin, Urdu meaning, pronunciation, variants and Islamic naming context of Adama (آدَمَا).",
-      "h1": "Adama Name Meaning, Origin and Cultural Background",
+      "title": "Adama Name Meaning, Origin & Islamic Context",
+      "meta_description": "Adama (آدَمَا) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Adama meaning, Adama name meaning, Adama origin, Adama meaning in Urdu, Adama pronunciation, Adama Islamic name",
+      "description_paragraph": "Adama is an African-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Adama meaning",
+        "Adama name meaning",
+        "Adama origin",
+        "Adama meaning in Urdu",
+        "Adama pronunciation",
+        "Adama Islamic name"
+      ],
       "focus_keyword": "Adama meaning",
       "secondary_keywords": [
         "Adama name meaning",
-        "Adama meaning in Urdu",
         "Adama origin",
-        "Adama Islamic name",
+        "Adama meaning in Urdu",
         "Adama pronunciation",
-        "Adama name in Urdu"
+        "Adama Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Adama (آدَمَا) is associated with the African form آدَمَا, whose core sense is adama; adam (west african form). Adama is the West African (Fulani/Hausa) form of the name Adam. It is used as a male given name.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/adama",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Adama is associated with the African form آدَمَا, whose core sense is adama; adam (west african form).",
-      "meaning_section": "The central meaning of Adama is adama; adam (west african form).",
-      "origin_section": "Adama is associated with African rather than with a different language.",
-      "islam_section": "Adama can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Adama is with the sense adama; adam (west african form).",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Adama, an African-origin name used in Muslim communities.",
+      "body_summary": "Adama is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Adama",
       "#AdamaMeaning",
-      "#AdamaName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "native_script_misrepresentation_corrected",
+        "exact_language_pathway_needs_source",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 149,
+      "quality_score": 72,
+      "quality_score_basis": "Provisional editorial score only; exact form, etymology, and translations require direct sources."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "No direct dictionary or specialist etymology source was checked for the exact form in this pass; claims remain provisional until sourced.",
+      "claim_evidence": [
         {
-          "claim": "Adama corresponds to the African form آدَمَا",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "The record identifies a West African form of Adam but does not supply a direct language-specific source.",
+          "source": null,
+          "status": "direct_source_needed; claim_provisional"
         },
         {
-          "claim": "Adama has the core sense adama; adam (west african form)",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Personal-name usage, frequency, and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "DIRECT_SOURCE_NEEDED; CLAIMS_PROVISIONAL"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Removed corrupted placeholders and unsupported meanings, distinguished place/personal/ritual forms, and separated regional forms from native orthography.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Adama",
-      "alternateName": [
-        "Adama",
-        "adama"
-      ],
-      "description": "A name associated with the African form آدَمَا, meaning adama; adam (west african form).",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "adama",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "African"
+          "@type": "DefinedTerm",
+          "name": "Adama",
+          "description": "Adama — Adama is recorded as a West African form associated with Adam, but the exact Fulani/Hausa language pathway and name meaning need a direct source; آدَمَا is Arabic-script transcription, not native orthography.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Adama mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Adama is recorded as a West African form associated with Adam; exact language-specific meaning needs a source."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Adama?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record suggests a Fulani/Hausa or broader West African pathway; direct sourcing is required."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Adama an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. The Latin form is West African/regional; Arabic script was only a transcription."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Adama?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No Arabic root is assigned to the regional form."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Adama an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Specific religious status is not established by the regional form alone."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Adama a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Adama as an explicitly named Qur'anic personal name in this exact regional form."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Adama mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Urdu rendering is approximate and needs review."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Adama pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pronunciation should be checked with the relevant West African language source."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Adama a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record's male gender claim requires direct regional usage evidence."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Adama",
+              "item": "https://nameverse.site/names/islamic/adama"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Adama, associated with the African form آدَمَا, meaning adama; adam (west african form)."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "native_script_misrepresentation_corrected",
+        "exact_language_pathway_needs_source",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; exact form and etymology source pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

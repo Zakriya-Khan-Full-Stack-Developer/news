@@ -1,70 +1,61 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abideen",
     "slug": "abideen",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abideen",
       "normalized_name": "abideen",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "medium",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "MEDIUM",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abideen",
         "abideen"
       ],
-      "search_variants": [
-        "Abideen",
-        "abideen"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Follower, one who follows",
-      "primary_meaning": "Follower",
-      "secondary_meanings": [
-        "one who follows"
-      ],
-      "literal_meaning": "Follower",
-      "extended_meaning": "Follower, one who follows",
-      "meaning_explanation": "Abideen corresponds to the Arabic form عابدين (ع ب د). Its core sense is follower, one who follows. ʿĀbidīn, plural of عابد. The source record's gloss 'Follower of the Prophet' is not supported by the lexical form.",
-      "meaning_confidence": "medium"
+      "short_meaning": "Worshippers (plural/inflected form; personal-name use needs review)",
+      "primary_meaning": "Abideen corresponds to Arabic عابدين, a plural/inflected form related to عابد (“worshipper/devotee”), not “follower” as a separate lexical meaning.",
+      "literal_meaning": "Worshippers (plural/inflected form; personal-name use needs review)",
+      "meaning_explanation": "The recorded form عابدين is related to عابد (“worshipper”). The previous Urdu, Persian, Hindi, and Pashto translations that say “follower” do not match this lexical analysis and are corrected. The form's use as an individual given name needs separate evidence.",
+      "meaning_confidence": "MEDIUM"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عابدين",
       "transliteration": "abideen",
-      "romanization": "abideen",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Follower",
-        "one who follows"
-      ],
-      "etymology_explanation": "The form عابدين is an established Arabic lexical item. ʿĀbidīn, plural of عابد. The source record's gloss 'Follower of the Prophet' is not supported by the lexical form.",
-      "etymology_confidence": "medium",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Arabic word عابدين",
+      "root_family": [],
+      "etymology_explanation": "The form عابدين is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "MEDIUM",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عابدين is an established Arabic form.",
-        "Urdu": "عابدین is used in Urdu.",
-        "Hindi": "आबिदीन is used in Hindi.",
-        "Pashto": "عابدين is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عابدين.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "medium"
+      "language_confidence": "MEDIUM"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "medium",
-      "origin_explanation": "The name is associated with the Arabic form عابدين. ʿĀbidīn, plural of عابد. The source record's gloss 'Follower of the Prophet' is not supported by the lexical form.",
+      "origin_confidence": "MEDIUM",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -73,406 +64,447 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Abideen may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abideen is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "root ع ب د occurs in the Qur'an; عابدين is a normal Arabic plural"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abideen is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abideen as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense follower, one who follows.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Follower",
+      "primary_semantic_domain": "Follower, one who follows",
       "related_concepts": [
-        "follower",
-        "one who follows"
-      ],
-      "semantic_relationship": "The central semantic idea is follower; other senses are extended associations."
+        "Follower, one who follows"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of follower.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Follower, one who follows” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Follower, one who follows.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Follower",
-        "One who follows"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 4,
+      "life_path_number": 4,
+      "ruling_planet": "Uranus",
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "meaning": "In Pythagorean numerology the letters of Abideen total 4, associated with stability, discipline and order. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 4,
+      "lucky_day": "Sunday",
+      "lucky_colors": [
+        "Grey",
+        "Blue"
+      ],
+      "lucky_stone": "Hessonite",
+      "ruling_planet": "Uranus"
     },
     "translations": {
       "english": {
         "name": "Abideen",
-        "meaning": "Follower, one who follows",
-        "long_meaning": "Abideen is a Arabic-origin name. Its core meaning is follower, one who follows. ʿĀbidīn, plural of عابد. The source record's gloss 'Follower of the Prophet' is not supported by the lexical form."
+        "script": "Abideen",
+        "meaning": "Worshippers (plural/inflected form; personal-name use needs review)",
+        "long_meaning": "The form is related to عابد (“worshipper/devotee”); the inflected form and personal-name usage require separate review."
       },
       "urdu": {
         "name": "عابدین",
-        "meaning": "پیروکار، تابع",
-        "long_meaning": "Abideen (عابدین) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم پیروکار، تابع ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "عابدین",
+        "meaning": "عابدین، عبادت کرنے والے",
+        "long_meaning": "The form is related to عابد (“worshipper/devotee”); the inflected form and personal-name usage require separate review."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Abideen",
+        "script": "Abideen",
+        "meaning": "عابدین، عبادت‌گزاران",
+        "long_meaning": "The form is related to عابد (“worshipper/devotee”); the inflected form and personal-name usage require separate review."
       },
       "hindi": {
         "name": "आबिदीन",
-        "meaning": "अनुयायी, अनुसरणकर्ता",
-        "long_meaning": "Abideen (आबिदीन) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ अनुयायी, अनुसरणकर्ता है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "आबिदीन",
+        "meaning": "उपासक/इबादत करने वाले",
+        "long_meaning": "The form is related to عابد (“worshipper/devotee”); the inflected form and personal-name usage require separate review."
       },
       "pashto": {
         "name": "عابدين",
-        "meaning": "پیرو، تابع",
-        "long_meaning": "Abideen (عابدين) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې پیرو، تابع ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "عابدين",
+        "meaning": "عابدین، عبادت کوونکي",
+        "long_meaning": "The form is related to عابد (“worshipper/devotee”); the inflected form and personal-name usage require separate review.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "عابدين",
-        "meaning": "تابع، عابدين",
-        "long_meaning": "Abideen (عابدين) اسم مأخوذ من اللغة العربية، ومعناه الأساسي تابع، عابدين. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "عابدين",
+        "meaning": "عابدين، صيغة جمع/نصب من عابد",
+        "long_meaning": "The form is related to عابد (“worshipper/devotee”); the inflected form and personal-name usage require separate review.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "medium"
+      "confidence": "MEDIUM",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "a-bi-deen",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عابدین",
-      "persian": null,
-      "hindi": "आबिदीन",
-      "pashto": "عابدين"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عابدين"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Abideen",
-        "abideen"
+        "Abideen"
       ],
-      "script_variants": [
+      "script_forms": [
         "عابدين",
         "عابدین",
         "आबिदीन"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عابدين is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "medium",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عابدين is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abideen can be understood through the Arabic form عابدين, whose central sense is follower, one who follows. ʿĀbidīn, plural of عابد. The source record's gloss 'Follower of the Prophet' is not supported by the lexical form.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abideen mean?",
-        "answer": "Abideen is associated with the Arabic form عابدين, whose core sense is follower, one who follows."
+        "q": "What does Abideen mean?",
+        "a": "عابدين is related to عابد (“worshipper/devotee”); its use as an individual name requires review."
       },
       {
-        "question": "What is the origin of Abideen?",
-        "answer": "Abideen is associated with Arabic. ʿĀbidīn, plural of عابد. The source record's gloss 'Follower of the Prophet' is not supported by the lexical form."
+        "q": "What is the origin of Abideen?",
+        "a": "The recorded form is Arabic عابدين."
       },
       {
-        "question": "Is Abideen an Arabic name?",
-        "answer": "Yes — the underlying form عابدين is Arabic."
+        "q": "Is Abideen an Arabic name?",
+        "a": "The form is Arabic and related to عابد."
       },
       {
-        "question": "Is Abideen an Islamic name?",
-        "answer": "Abideen can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Abideen?",
+        "a": "The form is associated with root ع ب د."
       },
       {
-        "question": "Is Abideen a Quranic name?",
-        "answer": "Abideen should not be classified as a Quranic personal name without a direct Quranic basis. root ع ب د occurs in the Qur'an; عابدين is a normal Arabic plural"
+        "q": "Is Abideen an Islamic name?",
+        "a": "Arabic vocabulary does not establish a naming recommendation."
       },
       {
-        "question": "What does Abideen mean in Urdu?",
-        "answer": "In Urdu, Abideen is rendered عابدین and carries the sense پیروکار، تابع."
+        "q": "Is Abideen a Quranic name?",
+        "a": "This record does not establish the name as explicitly named in the Qur'an."
       },
       {
-        "question": "What does Abideen mean in Persian?",
-        "answer": "No verified Persian form was established for Abideen."
+        "q": "What does Abideen mean in Urdu?",
+        "a": "A cautious Urdu gloss is “عابدین، عبادت کرنے والے.”"
       },
       {
-        "question": "How is Abideen pronounced?",
-        "answer": "A romanized syllable approximation is a-bi-deen. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abideen pronounced?",
+        "a": "Pronunciation is approximate and transliteration-dependent."
       },
       {
-        "question": "What are the variants of Abideen?",
-        "answer": "Romanization variants include Abideen, abideen. Script forms are عابدين, عابدین, आबिदीन."
-      },
-      {
-        "question": "Is Abideen a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Abideen a boy's or girl's name?",
+        "a": "The form is plural/inflected; modern personal-name gender use is unverified."
       }
     ],
     "seo": {
-      "title": "Abideen Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Abideen (عابدين).",
-      "h1": "Abideen Name Meaning, Origin and Cultural Background",
+      "title": "Abideen Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abideen (عابدين) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abideen meaning, Abideen name meaning, Abideen origin, Abideen meaning in Urdu, Abideen pronunciation, Abideen Islamic name",
+      "description_paragraph": "Abideen is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abideen meaning",
+        "Abideen name meaning",
+        "Abideen origin",
+        "Abideen meaning in Urdu",
+        "Abideen pronunciation",
+        "Abideen Islamic name"
+      ],
       "focus_keyword": "Abideen meaning",
       "secondary_keywords": [
         "Abideen name meaning",
-        "Abideen meaning in Urdu",
         "Abideen origin",
-        "Abideen Islamic name",
+        "Abideen meaning in Urdu",
         "Abideen pronunciation",
-        "Abideen name in Urdu"
+        "Abideen Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abideen (عابدين) is associated with the Arabic form عابدين, whose core sense is follower, one who follows. ʿĀbidīn, plural of عابد. The source record's gloss 'Follower of the Prophet' is not supported by the lexical form.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abideen",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abideen is associated with the Arabic form عابدين, whose core sense is follower, one who follows.",
-      "meaning_section": "The central meaning of Abideen is follower, one who follows.",
-      "origin_section": "Abideen is associated with Arabic rather than with a different language.",
-      "islam_section": "Abideen can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Abideen is with the sense follower.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abideen, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Abideen is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abideen",
       "#AbideenMeaning",
-      "#AbideenName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "medium",
-      "linguistic_authenticity": "medium",
-      "etymological_authenticity": "medium",
-      "meaning_authenticity": "medium",
-      "translation_quality": "medium",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "follower_vs_worshipper_translation_mismatch_corrected",
+        "plural_form_personal_name_usage_unverified",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 148,
+      "quality_score": 80,
+      "quality_score_basis": "Provisional editorial score only; dictionary sense does not certify personal-name use, frequency, or translation fluency."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%A8%D8%AF"
+      ],
+      "verification_method": "Direct lexical sources are listed where checked. Modern personal-name usage, frequency, and native-speaker translations require separate evidence.",
+      "claim_evidence": [
         {
-          "claim": "Abideen corresponds to the Arabic form عابدين",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "Lane's Lexicon records عابد as worshipper/devotee; عابدين is related to that form, not a lexical synonym for follower.",
+          "source": "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%A8%D8%AF",
+          "status": "lexical_source_checked"
         },
         {
-          "claim": "Abideen has the core sense follower, one who follows",
-          "evidence_type": "lexical",
-          "confidence": "medium"
+          "claim": "Personal-name usage, frequency, and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "LEXICAL_SOURCE_CHECKED; NAME_USAGE_AND_TRANSLATIONS_PENDING"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Corrected gendered translation mismatches, plural-form glosses, unsupported meanings, and native-script conflations; separated lexical evidence from personal-name use.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abideen",
-      "alternateName": [
-        "Abideen",
-        "abideen"
-      ],
-      "description": "A name associated with the Arabic form عابدين, meaning follower, one who follows.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "abideen",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Abideen",
+          "description": "Abideen — Abideen corresponds to Arabic عابدين, a plural/inflected form related to عابد (“worshipper/devotee”), not “follower” as a separate lexical meaning.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abideen mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "عابدين is related to عابد (“worshipper/devotee”); its use as an individual name requires review."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abideen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded form is Arabic عابدين."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abideen an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form is Arabic and related to عابد."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abideen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form is associated with root ع ب د."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abideen an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Arabic vocabulary does not establish a naming recommendation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abideen a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish the name as explicitly named in the Qur'an."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abideen mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A cautious Urdu gloss is “عابدین، عبادت کرنے والے.”"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abideen pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pronunciation is approximate and transliteration-dependent."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abideen a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form is plural/inflected; modern personal-name gender use is unverified."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abideen",
+              "item": "https://nameverse.site/names/islamic/abideen"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abideen, associated with the Arabic form عابدين, meaning follower, one who follows."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "follower_vs_worshipper_translation_mismatch_corrected",
+        "plural_form_personal_name_usage_unverified",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; name-use and native translation review pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

@@ -1,75 +1,62 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aadil",
     "slug": "aadil",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aadil",
       "normalized_name": "aadil",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "MEDIUM",
+      "gender_note": "The Arabic form عادل is grammatically masculine and commonly used as a masculine personal name; independent regional registration data for the exact Latin spelling Aadil was not supplied.",
       "alternate_spellings": [
         "Aadil",
         "aadil",
         "adil"
       ],
-      "search_variants": [
-        "Aadil",
-        "aadil",
-        "adil"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Just, fair, upright",
-      "primary_meaning": "Just",
-      "secondary_meanings": [
-        "fair",
-        "upright"
-      ],
-      "literal_meaning": "Just",
-      "extended_meaning": "Just, fair, upright",
-      "meaning_explanation": "Aadil corresponds to the Arabic form عادل (Arabic root ع د ل (ʿ-d-l); عَادِل (ʿĀdil)). Its core sense is just, fair, upright. Aadil is Arabic عَادِل (ʿĀdil) 'just, fair, upright', from the root ع د ل (ʿ-d-l). The source gloss 'Just, Fair, Upright' is consistent. Same name as aadhil.",
-      "meaning_confidence": "high"
+      "short_meaning": "Just; fair; equitable",
+      "primary_meaning": "Aadil (عادل) represents Arabic عَادِل (ʿādil), meaning “just,” “fair,” or “equitable.” The form is associated with the root ع د ل (ʿ-d-l). These are lexical meanings; this record does not claim that the personal name is mentioned in the Qur’an or prescribed by a religious text.",
+      "literal_meaning": "Just; fair; equitable",
+      "meaning_explanation": "Arabic عَادِل (ʿādil) is the active-participle form associated with عَدَلَ and the root ع د ل. Classical lexicography gives the root meanings related to acting equitably or justly, and عادل can describe one who acts justly. Aadil is a Latin-script rendering of the Arabic form; regional frequency of this spelling is not measured here.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عادل",
       "transliteration": "aadil",
-      "romanization": "aadil",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Just",
-        "fair",
-        "upright"
-      ],
-      "etymology_explanation": "The form عادل is an established Arabic lexical item. Aadil is Arabic عَادِل (ʿĀdil) 'just, fair, upright', from the root ع د ل (ʿ-d-l). The source gloss 'Just, Fair, Upright' is consistent. Same name as aadhil.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "ع د ل",
+      "root_transliteration": "ʿ-d-l",
+      "morphology": "Active participle (اسم فاعل) associated with the root ع د ل, conveying one who acts justly or equitably.",
+      "feminine_form": "عادلة (ʿādila)",
+      "etymological_meaning": "From the root ع د ل (ʿ-d-l)",
+      "root_family": [],
+      "etymology_explanation": "Arabic عَادِل (ʿādil) is the active-participle form associated with عَدَلَ and the root ع د ل. Classical lexicography gives the root meanings related to acting equitably or justly, and عادل can describe one who acts justly. Aadil is a Latin-script rendering of the Arabic form; regional frequency of this spelling is not measured here.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "Do not infer a Qur'anic status, religious prescription, popularity, personality trait, or separate etymology from Muslim usage or Latin spelling alone."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عادل is an established Arabic form.",
-        "Urdu": "عادل is used in Urdu.",
-        "Persian": "عادل is an established Persian form.",
-        "Hindi": "आदिल is used in Hindi.",
-        "Pashto": "عادل is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عادل.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form عادل. Aadil is Arabic عَادِل (ʿĀdil) 'just, fair, upright', from the root ع د ل (ʿ-d-l). The source gloss 'Just, Fair, Upright' is consistent. Same name as aadhil.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The lexical form عادل (ʿādil) is Arabic. Aadil is a Latin-script rendering of that form; the language origin does not independently establish the frequency of this exact spelling in a given country.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -78,410 +65,472 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aadil may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Aadil is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": false
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Aadil is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Aadil as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense just, fair, upright.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "The name’s lexical meaning is the best-supported description here. Any family or community symbolism is interpretive and should not be presented as a verified cultural fact.",
+      "personal_name_interpretation": "Families may choose the name for its lexical meaning or religious/cultural associations; that choice is personal and does not establish additional factual meanings.",
+      "interpretation_warning": "Separate dictionary meaning, religious reference, cultural use, and personal interpretation. Do not treat them as interchangeable."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Just",
+      "primary_semantic_domain": "Just, fair, upright",
       "related_concepts": [
-        "just",
-        "fair",
-        "upright"
-      ],
-      "semantic_relationship": "The central semantic idea is just; other senses are extended associations."
+        "Just, fair, upright"
+      ]
     },
     "spiritual_meaning": {
-      "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of just.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "status": "not_verified",
+      "render": false,
+      "meaning": "No separate spiritual meaning is asserted beyond the documented lexical or religious reference.",
+      "basis": null,
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Just",
-        "Fair",
-        "Upright"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": false,
+      "lucky_number": 9,
+      "life_path_number": 9,
+      "ruling_planet": "Mars",
+      "lucky_day": "Tuesday",
+      "lucky_colors": [
+        "Red",
+        "Crimson"
+      ],
+      "lucky_stone": "Red Coral",
+      "meaning": "In Pythagorean numerology the letters of Aadil total 9, associated with compassion, idealism and completion. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology/lucky-attribute claims are interpretive beliefs, not evidence-based properties of a name; keep hidden from factual name content."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": false,
+      "lucky_number": 9,
+      "lucky_day": "Tuesday",
+      "lucky_colors": [
+        "Red",
+        "Crimson"
+      ],
+      "lucky_stone": "Red Coral",
+      "ruling_planet": "Mars",
+      "note": "Numerology/lucky-attribute claims are interpretive beliefs, not evidence-based properties of a name; keep hidden from factual name content."
     },
     "translations": {
       "english": {
         "name": "Aadil",
-        "meaning": "Just, fair, upright",
-        "long_meaning": "Aadil is a Arabic-origin name. Its core meaning is just, fair, upright. Aadil is Arabic عَادِل (ʿĀdil) 'just, fair, upright', from the root ع د ل (ʿ-d-l). The source gloss 'Just, Fair, Upright' is consistent. Same name as aadhil."
+        "script": "عادل",
+        "meaning": "Just; fair; equitable",
+        "long_meaning": "Aadil (عادل) is an Arabic masculine name meaning “just,” “fair,” or “equitable.” The form is associated with the root ع د ل (ʿ-d-l), which relates to justice and fairness."
       },
       "urdu": {
         "name": "عادل",
-        "meaning": "عادل، منصف، راست",
-        "long_meaning": "Aadil (عادل) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم عادل، منصف، راست ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "عادل",
+        "meaning": "عادل، انصاف کرنے والا، منصف",
+        "long_meaning": "عادل عربی نام ہے، جس کے معنی انصاف کرنے والا، منصف یا عادل ہیں۔ اس کا تعلق عربی مادہ ع د ل سے ہے۔ Aadil اور Adil اس عربی نام کے رومن املا کی صورتیں ہیں۔"
       },
       "persian": {
         "name": "عادل",
-        "meaning": "عادل، دادگر، درست",
-        "long_meaning": "Aadil (عادل) نامی برگرفته از زبان عربی است و معنای اصلی آن عادل، دادگر، درست است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "script": "عادل",
+        "meaning": "عادل، دادگر، منصف",
+        "long_meaning": "عادل نامی عربی به معنای «دادگر»، «منصف» یا «عادل» است و با ریشهٔ ع د ل ارتباط دارد. Aadil و Adil گونه‌های نوشتاری لاتین برای همین صورت عربی هستند."
       },
       "hindi": {
         "name": "आदिल",
-        "meaning": "आदिल, न्यायी, सच्चा",
-        "long_meaning": "Aadil (आदिल) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ आदिल, न्यायी, सच्चा है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "आदिल",
+        "meaning": "न्यायी, निष्पक्ष, इंसाफ़ करने वाला",
+        "long_meaning": "आदिल अरबी नाम है, जिसका अर्थ “न्याय करने वाला”, “निष्पक्ष” या “न्यायप्रिय” है और यह अरबी मूल ع د ل से जुड़ा है। Aadil और Adil इसी अरबी रूप की रोमन वर्तनी के विकल्प हैं।"
       },
       "pashto": {
         "name": "عادل",
-        "meaning": "عادل، انصاف کوونکی",
-        "long_meaning": "Aadil (عادل) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې عادل، انصاف کوونکی ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "عادل",
+        "meaning": "عادل، منصف، انصاف کوونکی",
+        "long_meaning": "Aadil (عادل) د عربي ژبې مذکر نوم دی، چې مانا یې عادل، منصف یا انصاف کوونکی ده. دا د عربي ریښې ع د ل سره تړاو لري، چې د عدالت او انصاف له مفهومونو سره تړلې ده. دا لغوي مانا ده، نه د نوم لرونکي کس د واقعي چلند په اړه تضمین.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "عادل",
-        "meaning": "الْعَادِل، الْمُنْصِف، الْمُسْتَقِيم",
-        "long_meaning": "Aadil (عادل) اسم مأخوذ من اللغة العربية، ومعناه الأساسي الْعَادِل، الْمُنْصِف، الْمُسْتَقِيم. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "عادل",
+        "meaning": "عادل، منصف؛ أي من يحكم أو يتصرف بالعدل.",
+        "long_meaning": "عادل اسم عربي معناه «منصف» أو «عادل»، ويرتبط بالجذر ع د ل الدال على العدل والإنصاف. وتُستخدم Aadil وAdil تهجئتين لاتينيتين للاسم العربي نفسه في هذا السجل.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "MEDIUM",
+      "native_review_required": true,
+      "note": "English, Urdu, Persian, and Hindi explanations were revised for name-specific semantic consistency. Arabic and Pashto wording remains provisional and requires review by qualified native speakers; no translation is represented as professionally verified."
     },
     "pronunciation": {
       "romanized": "aa-dil",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عادل",
-      "persian": "عادل",
-      "hindi": "आदिल",
-      "pashto": "عادل"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عادل"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aadil",
-        "aadil",
-        "adil"
+        "Aadhil",
+        "Adil"
       ],
-      "script_variants": [
+      "script_forms": [
         "عادل",
         "आदिल"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Aadil and Aadhil are alternative romanized spellings of the same Arabic form عادل; transliteration conventions vary.",
       "do_not_merge_with": []
     },
+    "related_names": [
+      "Aadhil",
+      "Aadila"
+    ],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عادل is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عادل is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aadil can be understood through the Arabic form عادل, whose central sense is just, fair, upright. Aadil is Arabic عَادِل (ʿĀdil) 'just, fair, upright', from the root ع د ل (ʿ-d-l). The source gloss 'Just, Fair, Upright' is consistent. Same name as aadhil.",
-      "is_fictional": false
+      "status": "not_published",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aadil mean?",
-        "answer": "Aadil is associated with the Arabic form عادل, whose core sense is just, fair, upright."
+        "q": "What does Aadil mean?",
+        "a": "Aadil (عادل) is an Arabic masculine name meaning “just,” “fair,” or “equitable.” The form is associated with the root ع د ل (ʿ-d-l), which relates to justice and fairness."
       },
       {
-        "question": "What is the origin of Aadil?",
-        "answer": "Aadil is associated with Arabic. Aadil is Arabic عَادِل (ʿĀdil) 'just, fair, upright', from the root ع د ل (ʿ-d-l). The source gloss 'Just, Fair, Upright' is consistent. Same name as aadhil."
+        "q": "What is the origin of Aadil?",
+        "a": "The recorded form عادل (ʿādil) is Arabic and is associated with the root ع د ل. This establishes the linguistic form, not the frequency of the personal name in any particular country."
       },
       {
-        "question": "Is Aadil an Arabic name?",
-        "answer": "Yes — the underlying form عادل is Arabic."
+        "q": "Is Aadil an Arabic name?",
+        "a": "Yes. Aadil represents Arabic عادل (ʿādil), meaning “just,” “fair,” or “equitable.” Latin spellings vary by transliteration convention."
       },
       {
-        "question": "Is Aadil an Islamic name?",
-        "answer": "Aadil can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aadil?",
+        "a": "Aadil represents the Arabic active-participle form عادل, associated with root ع د ل (ʿ-d-l), which relates to justice and fairness."
       },
       {
-        "question": "Is Aadil a Quranic name?",
-        "answer": "Aadil should not be classified as a Quranic personal name without a direct Quranic basis. False"
+        "q": "Is Aadil an Islamic name?",
+        "a": "Aadil is used in Muslim naming contexts and has a positive Arabic lexical meaning. This does not by itself establish a specific Qur’anic personal-name reference or religious prescription."
       },
       {
-        "question": "What does Aadil mean in Urdu?",
-        "answer": "In Urdu, Aadil is rendered عادل and carries the sense عادل، منصف، راست."
+        "q": "Is Aadil a Quranic name?",
+        "a": "This record does not establish Aadil as a Qur’anic personal name. Its Arabic origin and meaning should not be treated as proof of a specific scriptural reference."
       },
       {
-        "question": "What does Aadil mean in Persian?",
-        "answer": "In Persian, Aadil is rendered عادل and carries the sense عادل، دادگر، درست."
+        "q": "What does Aadil mean in Urdu?",
+        "a": "In Urdu, the core gloss is “عادل، انصاف کرنے والا، منصف”. This is a concise semantic rendering, not a claim about regional popularity."
       },
       {
-        "question": "How is Aadil pronounced?",
-        "answer": "A romanized syllable approximation is aa-dil. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aadil pronounced?",
+        "a": "A rough romanized guide is “aa-dil”; pronunciation may vary by language and family."
       },
       {
-        "question": "What are the variants of Aadil?",
-        "answer": "Romanization variants include Aadil, aadil, adil. Script forms are عادل, आदिल."
+        "q": "Is Aadil a boy's or girl's name?",
+        "a": "The Arabic form عادل is grammatically masculine and commonly used as a masculine personal name. This record does not contain independent regional registration data for the exact Latin spelling Aadil."
       },
       {
-        "question": "Is Aadil a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "What should be verified about Aadil before relying on its meaning?",
+        "a": "The Arabic lexical form عادل and its justice/fairness sense are supported by a dictionary reference. Frequency of the exact Latin spelling Aadil, regional naming patterns, and Arabic/Pashto translation quality still need separate evidence or qualified native-speaker review."
       }
     ],
     "seo": {
-      "title": "Aadil Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aadil (عادل).",
-      "h1": "Aadil Name Meaning, Origin and Cultural Background",
+      "title": "Aadil Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aadil (عادل) — meaning, language background, pronunciation and carefully qualified naming context.",
+      "meta_keywords": "Aadil meaning, Aadil name meaning, Aadil origin, Aadil meaning in Urdu, Aadil pronunciation, Aadil Islamic name",
+      "description_paragraph": "Aadil is a romanized spelling of Arabic عادل (ʿādil), meaning “just,” “fair,” or “equitable,” and associated with the root ع د ل. Aadhil is another Latin-script spelling used for the same Arabic form in this dataset.",
+      "keywords": [
+        "Aadil meaning",
+        "Aadil name meaning",
+        "Aadil origin",
+        "Aadil meaning in Urdu",
+        "Aadil pronunciation",
+        "Aadil Islamic name"
+      ],
       "focus_keyword": "Aadil meaning",
       "secondary_keywords": [
         "Aadil name meaning",
-        "Aadil meaning in Urdu",
         "Aadil origin",
-        "Aadil Islamic name",
+        "Aadil meaning in Urdu",
         "Aadil pronunciation",
-        "Aadil name in Urdu"
+        "Aadil Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aadil (عادل) is associated with the Arabic form عادل, whose core sense is just, fair, upright. Aadil is Arabic عَادِل (ʿĀdil) 'just, fair, upright', from the root ع د ل (ʿ-d-l). The source gloss 'Just, Fair, Upright' is consistent. Same name as aadhil.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aadil",
+      "seo_score": 80,
+      "seo_score_basis": "Provisional editorial estimate: 80/100. Canonical and breadcrumb values are populated in the source JSON, but rendered HTML must be checked after deployment. Claim-level source verification and Arabic/Pashto native-speaker review remain incomplete."
     },
     "seo_content": {
-      "intro": "Aadil is associated with the Arabic form عادل, whose core sense is just, fair, upright.",
-      "meaning_section": "The central meaning of Aadil is just, fair, upright.",
-      "origin_section": "Aadil is associated with Arabic rather than with a different language.",
-      "islam_section": "Aadil can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aadil is with the sense just.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "Aadil represents the Arabic form عادل, associated with justice and fairness. Its spelling variants should not be mistaken for distinct Arabic etymologies.",
+      "body_summary": "The lexical meaning is associated with the root ع د ل. This linguistic evidence does not establish modern naming frequency, regional rankings, or personality traits."
     },
     "social_tags": [
       "#Aadil",
       "#AadilMeaning",
-      "#AadilName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "translations_need_native_review",
+        "personal_name_frequency_not_verified",
+        "pashto_and_arabic_translations_require_native_review",
+        "modern_name_frequency_not_independently_verified",
+        "arabic_pashto_native_review_pending",
+        "exact_aadil_spelling_frequency_not_verified",
+        "arabic_and_pashto_native_review_pending"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 153,
+      "quality_score": 85,
+      "quality_score_basis": "Provisional editorial estimate: 85/100. The Arabic form عادل and justice/equity sense were checked against Lane’s Lexicon. Frequency of the exact Latin spelling Aadil, regional naming data, Arabic/Pashto native-speaker review, and deployed rendered output remain unverified; this is not a full accuracy certification.",
+      "tier1_verified_scope": "Core Arabic lexical form and justice/equity sense checked; exact Latin-spelling usage, regional frequency, translations, and rendered page remain uncertified."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%AF%D9%84",
+        "https://www.laneslexicon.com/root/%D8%B9%D8%AF%D9%84"
+      ],
+      "verification_method": "Independently checked Lane’s Lexicon entries for عادل and root عدل. The lexical evidence supports the Arabic form and justice/fairness sense; it does not verify popularity of the exact Aadil spelling, regional gender distribution, or translation quality.",
+      "claim_evidence": [
         {
-          "claim": "Aadil corresponds to the Arabic form عادل",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Arabic lexical form عادل (ʿādil) and its justice/equity sense",
+          "source": "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%AF%D9%84",
+          "status": "dictionary_entry_checked"
         },
         {
-          "claim": "Aadil has the core sense just, fair, upright",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Root ع د ل includes the sense of acting justly or equitably",
+          "source": "https://www.laneslexicon.com/root/%D8%B9%D8%AF%D9%84",
+          "status": "dictionary_root_entry_checked"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "ARABIC_LEXICAL_MEANING_CHECKED; EXACT_LATIN_SPELLING_FREQUENCY_AND_TRANSLATIONS_NOT_VERIFIED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse editorial revision",
+      "methodology": "Individual lexical review against Lane’s Lexicon entries for عادل and عدل; clarified morphology and exact-spelling limitations; adjusted gender confidence to reflect missing regional data; synchronized FAQ structured data and preserved translation/frequency caveats.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aadil",
-      "alternateName": [
-        "Aadil",
-        "aadil",
-        "adil"
-      ],
-      "description": "A name associated with the Arabic form عادل, meaning just, fair, upright.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aadil",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Aadil",
+          "description": "Aadil (عادل) represents Arabic ʿādil, meaning “just,” “fair,” or “equitable”; usage frequency of this exact Latin spelling is not measured here.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aadil mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aadil (عادل) is an Arabic masculine name meaning “just,” “fair,” or “equitable.” The form is associated with the root ع د ل (ʿ-d-l), which relates to justice and fairness."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aadil?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded form عادل (ʿādil) is Arabic and is associated with the root ع د ل. This establishes the linguistic form, not the frequency of the personal name in any particular country."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aadil an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Aadil represents Arabic عادل (ʿādil), meaning “just,” “fair,” or “equitable.” Latin spellings vary by transliteration convention."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aadil?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aadil represents the Arabic active-participle form عادل, associated with root ع د ل (ʿ-d-l), which relates to justice and fairness."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aadil an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aadil is used in Muslim naming contexts and has a positive Arabic lexical meaning. This does not by itself establish a specific Qur’anic personal-name reference or religious prescription."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aadil a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Aadil as a Qur’anic personal name. Its Arabic origin and meaning should not be treated as proof of a specific scriptural reference."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aadil mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Urdu, the core gloss is “عادل، انصاف کرنے والا، منصف”. This is a concise semantic rendering, not a claim about regional popularity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aadil pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A rough romanized guide is “aa-dil”; pronunciation may vary by language and family."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aadil a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Arabic form عادل is grammatically masculine and commonly used as a masculine personal name. This record does not contain independent regional registration data for the exact Latin spelling Aadil."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should be verified about Aadil before relying on its meaning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Arabic lexical form عادل and its justice/fairness sense are supported by a dictionary reference. Frequency of the exact Latin spelling Aadil, regional naming patterns, and Arabic/Pashto translation quality still need separate evidence or qualified native-speaker review."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aadil",
+              "item": "https://nameverse.site/names/islamic/aadil"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aadil, associated with the Arabic form عادل, meaning just, fair, upright."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "native translation review required",
+        "name-frequency data not independently verified",
+        "Arabic and Pashto translations require native-speaker review",
+        "modern personal-name usage/frequency requires independent evidence",
+        "Source URLs and claim-level evidence require manual verification",
+        "Rendered canonical and breadcrumb URLs require deployment-level verification"
+      ],
+      "confidence": "MEDIUM",
+      "reviewed_by": "NameVerse editorial revision (automated consistency pass; native/human review still required)",
+      "reviewed_at": "2026-10-15"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

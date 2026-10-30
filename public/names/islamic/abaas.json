@@ -1,72 +1,62 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abaas",
     "slug": "abaas",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abaas",
       "normalized_name": "abaas",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abaas",
         "abaas",
         "abas"
       ],
-      "search_variants": [
-        "Abaas",
-        "abaas",
-        "abas"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Lion; stern, frowning",
-      "primary_meaning": "Lion; stern",
-      "secondary_meanings": [
-        "frowning"
-      ],
-      "literal_meaning": "Lion; stern",
-      "extended_meaning": "Lion; stern, frowning",
-      "meaning_explanation": "Abaas corresponds to the Arabic form عباس (ع ب س). Its core sense is lion; stern, frowning. ʿAbbās, from ʿabasa ('to frown, to be stern'); also associated with the lion. The source record's gloss 'Father of a lion' is a folk explanation and is not carried over.",
-      "meaning_confidence": "high"
+      "short_meaning": "Habitually frowning/stern; also associated with lion",
+      "primary_meaning": "ʿAbbās (عباس) is an intensive form associated with frowning or a stern countenance; Lane's Lexicon also records a lion-related sense.",
+      "literal_meaning": "Habitually frowning/stern; also associated with lion",
+      "meaning_explanation": "Lane's Lexicon defines عابس as frowning/stern and gives عباس as one who does so habitually or intensely; it also records a lion-related sense.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عباس",
       "transliteration": "abaas",
-      "romanization": "abaas",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Lion; stern",
-        "frowning"
-      ],
-      "etymology_explanation": "The form عباس is an established Arabic lexical item. ʿAbbās, from ʿabasa ('to frown, to be stern'); also associated with the lion. The source record's gloss 'Father of a lion' is a folk explanation and is not carried over.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Arabic word عباس",
+      "root_family": [],
+      "etymology_explanation": "The form عباس is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عباس is an established Arabic form.",
-        "Urdu": "عباس is used in Urdu.",
-        "Hindi": "अब्बास is used in Hindi.",
-        "Pashto": "عباس is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عباس.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form عباس. ʿAbbās, from ʿabasa ('to frown, to be stern'); also associated with the lion. The source record's gloss 'Father of a lion' is a folk explanation and is not carried over.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -75,407 +65,447 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Abaas may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abaas is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "root ع ب س occurs in the Qur'an; عباس is a normal Arabic word and a well-attested given name"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abaas is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abaas as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense lion; stern, frowning.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Lion; stern",
+      "primary_semantic_domain": "To frown, to be stern",
       "related_concepts": [
-        "lion; stern",
-        "frowning"
-      ],
-      "semantic_relationship": "The central semantic idea is lion; stern; other senses are extended associations."
+        "To frown, to be stern"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of lion; stern.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “To frown, to be stern” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: To frown, to be stern.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Lion; stern",
-        "Frowning"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 6,
+      "life_path_number": 6,
+      "ruling_planet": "Venus",
+      "lucky_day": "Friday",
+      "lucky_colors": [
+        "White",
+        "Pink"
+      ],
+      "lucky_stone": "Diamond",
+      "meaning": "In Pythagorean numerology the letters of Abaas total 6, associated with responsibility, care and harmony. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 6,
+      "lucky_day": "Friday",
+      "lucky_colors": [
+        "White",
+        "Pink"
+      ],
+      "lucky_stone": "Diamond",
+      "ruling_planet": "Venus"
     },
     "translations": {
       "english": {
         "name": "Abaas",
-        "meaning": "Lion; stern, frowning",
-        "long_meaning": "Abaas is a Arabic-origin name. Its core meaning is lion; stern, frowning. ʿAbbās, from ʿabasa ('to frown, to be stern'); also associated with the lion. The source record's gloss 'Father of a lion' is a folk explanation and is not carried over."
+        "script": "Abaas",
+        "meaning": "Habitually frowning/stern; also associated with lion",
+        "long_meaning": "Lane's Lexicon supports the frowning/stern sense and also records a lion-related sense; native translation review remains pending."
       },
       "urdu": {
         "name": "عباس",
-        "meaning": "شیر، بھینکنا",
-        "long_meaning": "Abaas (عباس) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم شیر، بھینکنا ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "عباس",
+        "meaning": "ترش رو، سخت چہرے والا؛ لغوی طور پر شیر سے بھی نسبت",
+        "long_meaning": "Lane's Lexicon supports the frowning/stern sense and also records a lion-related sense; native translation review remains pending."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Abaas",
+        "script": "Abaas",
+        "meaning": "عبوس/ترش‌رو؛ همچنین کاربرد مرتبط با شیر",
+        "long_meaning": "Lane's Lexicon supports the frowning/stern sense and also records a lion-related sense; native translation review remains pending."
       },
       "hindi": {
         "name": "अब्बास",
-        "meaning": "शेर, सिंह",
-        "long_meaning": "Abaas (अब्बास) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ शेर, सिंह है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "अब्बास",
+        "meaning": "त्योरी चढ़ाने वाला, कठोर मुख वाला; एक शब्दकोशीय अर्थ सिंह भी",
+        "long_meaning": "Lane's Lexicon supports the frowning/stern sense and also records a lion-related sense; native translation review remains pending."
       },
       "pashto": {
         "name": "عباس",
-        "meaning": "زمری، شیر",
-        "long_meaning": "Abaas (عباس) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې زمری، شیر ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "عباس",
+        "meaning": "تريو تندی، سخت مخ؛ په لغت کې د زمري مانا هم راغلې",
+        "long_meaning": "Lane's Lexicon supports the frowning/stern sense and also records a lion-related sense; native translation review remains pending.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "عباس",
-        "meaning": "أسد، عبّاس",
-        "long_meaning": "Abaas (عباس) اسم مأخوذ من اللغة العربية، ومعناه الأساسي أسد، عبّاس. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "عباس",
+        "meaning": "كثير العبوس أو شديد الملامح؛ ويُذكر أيضًا بمعنى الأسد",
+        "long_meaning": "Lane's Lexicon supports the frowning/stern sense and also records a lion-related sense; native translation review remains pending.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "a-baas",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عباس",
-      "persian": null,
-      "hindi": "अब्बास",
-      "pashto": "عباس"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عباس"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Abaas",
-        "abaas",
         "abas"
       ],
-      "script_variants": [
+      "script_forms": [
         "عباس",
         "अब्बास"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عباس is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عباس is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abaas can be understood through the Arabic form عباس, whose central sense is lion; stern, frowning. ʿAbbās, from ʿabasa ('to frown, to be stern'); also associated with the lion. The source record's gloss 'Father of a lion' is a folk explanation and is not carried over.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abaas mean?",
-        "answer": "Abaas is associated with the Arabic form عباس, whose core sense is lion; stern, frowning."
+        "q": "What does Abaas mean?",
+        "a": "The form عباس is associated with habitually frowning/stern; a dictionary also records a lion-related sense."
       },
       {
-        "question": "What is the origin of Abaas?",
-        "answer": "Abaas is associated with Arabic. ʿAbbās, from ʿabasa ('to frown, to be stern'); also associated with the lion. The source record's gloss 'Father of a lion' is a folk explanation and is not carried over."
+        "q": "What is the origin of Abaas?",
+        "a": "The recorded form is Arabic عباس."
       },
       {
-        "question": "Is Abaas an Arabic name?",
-        "answer": "Yes — the underlying form عباس is Arabic."
+        "q": "Is Abaas an Arabic name?",
+        "a": "Lane's Lexicon associates عباس with root عبس and the stern/frowning sense."
       },
       {
-        "question": "Is Abaas an Islamic name?",
-        "answer": "Abaas can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Abaas?",
+        "a": "The recorded root is ع ب س."
       },
       {
-        "question": "Is Abaas a Quranic name?",
-        "answer": "Abaas should not be classified as a Quranic personal name without a direct Quranic basis. root ع ب س occurs in the Qur'an; عباس is a normal Arabic word and a well-attested given name"
+        "q": "Is Abaas an Islamic name?",
+        "a": "Arabic origin does not establish a specific religious prescription."
       },
       {
-        "question": "What does Abaas mean in Urdu?",
-        "answer": "In Urdu, Abaas is rendered عباس and carries the sense شیر، بھینکنا."
+        "q": "Is Abaas a Quranic name?",
+        "a": "This record does not establish Abaas as an explicitly named Qur'anic personal name."
       },
       {
-        "question": "What does Abaas mean in Persian?",
-        "answer": "No verified Persian form was established for Abaas."
+        "q": "What does Abaas mean in Urdu?",
+        "a": "A cautious Urdu gloss is “ترش رو، سخت چہرے والا”; native review remains pending."
       },
       {
-        "question": "How is Abaas pronounced?",
-        "answer": "A romanized syllable approximation is a-baas. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abaas pronounced?",
+        "a": "“A-baas” is an approximate romanized guide."
       },
       {
-        "question": "What are the variants of Abaas?",
-        "answer": "Romanization variants include Abaas, abaas, abas. Script forms are عباس, अब्बास."
-      },
-      {
-        "question": "Is Abaas a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Abaas a boy's or girl's name?",
+        "a": "Modern name-frequency data has not been supplied."
       }
     ],
     "seo": {
-      "title": "Abaas Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Abaas (عباس).",
-      "h1": "Abaas Name Meaning, Origin and Cultural Background",
+      "title": "Abaas Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abaas (عباس) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abaas meaning, Abaas name meaning, Abaas origin, Abaas meaning in Urdu, Abaas pronunciation, Abaas Islamic name",
+      "description_paragraph": "Abaas is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abaas meaning",
+        "Abaas name meaning",
+        "Abaas origin",
+        "Abaas meaning in Urdu",
+        "Abaas pronunciation",
+        "Abaas Islamic name"
+      ],
       "focus_keyword": "Abaas meaning",
       "secondary_keywords": [
         "Abaas name meaning",
-        "Abaas meaning in Urdu",
         "Abaas origin",
-        "Abaas Islamic name",
+        "Abaas meaning in Urdu",
         "Abaas pronunciation",
-        "Abaas name in Urdu"
+        "Abaas Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abaas (عباس) is associated with the Arabic form عباس, whose core sense is lion; stern, frowning. ʿAbbās, from ʿabasa ('to frown, to be stern'); also associated with the lion. The source record's gloss 'Father of a lion' is a folk explanation and is not carried over.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abaas",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abaas is associated with the Arabic form عباس, whose core sense is lion; stern, frowning.",
-      "meaning_section": "The central meaning of Abaas is lion; stern, frowning.",
-      "origin_section": "Abaas is associated with Arabic rather than with a different language.",
-      "islam_section": "Abaas can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Abaas is with the sense lion; stern.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abaas, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Abaas is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abaas",
       "#AbaasMeaning",
-      "#AbaasName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "translation_corrected",
+        "personal_name_frequency_not_verified",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 150,
+      "quality_score": 80,
+      "quality_score_basis": "Provisional editorial score only; name-use, frequency, religious status, and native translation quality remain separate verification tasks."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "https://www.laneslexicon.com/word/%D8%B9%D8%A8%D8%A7%D8%B3",
+        "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%A8%D8%B3"
+      ],
+      "verification_method": "Checked only the listed sources. Uncited or unsupported claims remain provisional; name-use, frequency, religious status, and translation quality require separate evidence.",
+      "claim_evidence": [
         {
-          "claim": "Abaas corresponds to the Arabic form عباس",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Lane's Lexicon records عباس as intensive of عابس (frowning/stern) and also gives a lion-related sense.",
+          "source": "https://www.laneslexicon.com/word/%D8%B9%D8%A8%D8%A7%D8%B3",
+          "status": "source_checked"
         },
         {
-          "claim": "Abaas has the core sense lion; stern, frowning",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Personal-name usage, frequency, and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "SOURCE_CHECKED; NAME_USAGE_AND_TRANSLATIONS_PENDING"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Checked listed lexical/reference sources; corrected form mismatches and conflicting translations; separated lexical meaning from name-use claims.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abaas",
-      "alternateName": [
-        "Abaas",
-        "abaas",
-        "abas"
-      ],
-      "description": "A name associated with the Arabic form عباس, meaning lion; stern, frowning.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "abaas",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Abaas",
+          "description": "Abaas — ʿAbbās (عباس) is an intensive form associated with frowning or a stern countenance; Lane's Lexicon also records a lion-related sense.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abaas mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form عباس is associated with habitually frowning/stern; a dictionary also records a lion-related sense."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abaas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded form is Arabic عباس."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abaas an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Lane's Lexicon associates عباس with root عبس and the stern/frowning sense."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abaas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded root is ع ب س."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abaas an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Arabic origin does not establish a specific religious prescription."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abaas a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Abaas as an explicitly named Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abaas mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A cautious Urdu gloss is “ترش رو، سخت چہرے والا”; native review remains pending."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abaas pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "“A-baas” is an approximate romanized guide."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abaas a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Modern name-frequency data has not been supplied."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abaas",
+              "item": "https://nameverse.site/names/islamic/abaas"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abaas, associated with the Arabic form عباس, meaning lion; stern, frowning."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "translation_corrected",
+        "personal_name_frequency_not_verified",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; name-use/translation review pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

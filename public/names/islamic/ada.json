@@ -1,70 +1,61 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Ada",
     "slug": "ada",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Ada",
       "normalized_name": "ada",
       "name_type": "given_name",
       "gender": "Female",
-      "gender_confidence": "low",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "LOW",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Ada",
         "ada"
       ],
-      "search_variants": [
-        "Ada",
-        "ada"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Noble, exalted",
-      "primary_meaning": "Noble",
-      "secondary_meanings": [
-        "exalted"
-      ],
-      "literal_meaning": "Noble",
-      "extended_meaning": "Noble, exalted",
-      "meaning_explanation": "Ada corresponds to the Arabic form عائدة (ع و د). Its core sense is noble, exalted. The source record gave عادة ('habit, custom'), which is a common noun rather than a personal name. The intended form may be عائدة (ʿĀʾida). The identification is uncertain.",
-      "meaning_confidence": "low"
+      "short_meaning": "Habit, custom",
+      "primary_meaning": "If Ada is intended to represent Arabic عائدة (ʿĀʾida), the form means “returning/one who returns” and can be used as a feminine name; the prior “habit/custom” meaning belongs to عادة, a different word.",
+      "literal_meaning": "The name is the Arabic word itself, used unchanged as a given name rather than a derived or diminutive form.",
+      "meaning_explanation": "The record's Arabic script form عائدة conflicts with the English gloss “habit/custom” (عادة) and the Urdu/Persian translations “noble/exalted.” These refer to different forms. The intended identification is kept provisional and translations are aligned with عائدة rather than mixing forms.",
+      "meaning_confidence": "LOW"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عائدة",
       "transliteration": "ada",
-      "romanization": "ada",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Noble",
-        "exalted"
-      ],
-      "etymology_explanation": "The form عائدة is an established Arabic lexical item. The source record gave عادة ('habit, custom'), which is a common noun rather than a personal name. The intended form may be عائدة (ʿĀʾida). The identification is uncertain.",
-      "etymology_confidence": "low",
-      "false_etymology_warning": "The identification of this form is uncertain; no confident etymology is asserted."
+      "root": "ع و د",
+      "root_transliteration": "ʿ-w-d",
+      "morphology": "Feminine active participle of عاد (“to return”), if عائدة is the intended form.",
+      "feminine_form": null,
+      "etymological_meaning": "Returning/one who returns (provisional form match)",
+      "root_family": [],
+      "etymology_explanation": "The form عائدة is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "LOW",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عائدة is an established Arabic form.",
-        "Urdu": "عائدہ is used in Urdu.",
-        "Hindi": "अदा is used in Hindi.",
-        "Pashto": "عائده is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عائدة.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "low"
+      "language_confidence": "LOW"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "low",
-      "origin_explanation": "The name is associated with the Arabic form عائدة. The source record gave عادة ('habit, custom'), which is a common noun rather than a personal name. The intended form may be عائدة (ʿĀʾida). The identification is uncertain.",
+      "origin_confidence": "LOW",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -73,407 +64,446 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Ada may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Ada is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "not established"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Ada is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Ada as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense noble, exalted.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Noble",
+      "primary_semantic_domain": "Habit, custom",
       "related_concepts": [
-        "noble",
-        "exalted"
-      ],
-      "semantic_relationship": "The central semantic idea is noble; other senses are extended associations."
+        "Habit, custom"
+      ]
     },
     "spiritual_meaning": {
-      "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of noble.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "status": "not_applicable",
+      "render": false,
+      "meaning": "No devotional reading is offered because the underlying word is a descriptive term rather than a religious concept.",
+      "basis": null,
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Noble",
-        "Exalted"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 6,
+      "life_path_number": 6,
+      "ruling_planet": "Venus",
+      "lucky_day": "Friday",
+      "lucky_colors": [
+        "White",
+        "Pink"
+      ],
+      "lucky_stone": "Diamond",
+      "meaning": "In Pythagorean numerology the letters of Ada total 6, associated with responsibility, care and harmony. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 6,
+      "lucky_day": "Friday",
+      "lucky_colors": [
+        "White",
+        "Pink"
+      ],
+      "lucky_stone": "Diamond",
+      "ruling_planet": "Venus"
     },
     "translations": {
       "english": {
         "name": "Ada",
-        "meaning": "Noble, exalted",
-        "long_meaning": "Ada is a Arabic-origin name. Its core meaning is noble, exalted. The source record gave عادة ('habit, custom'), which is a common noun rather than a personal name. The intended form may be عائدة (ʿĀʾida). The identification is uncertain."
+        "script": "Ada",
+        "meaning": "Returning, one who returns (if Arabic form عائدة is intended)",
+        "long_meaning": "The meaning is provisional because the Latin spelling Ada can correspond to names from several languages; the Arabic form عائدة must not be conflated with عادة (“habit/custom”)."
       },
       "urdu": {
         "name": "عائدہ",
-        "meaning": "نجیب، بلند",
-        "long_meaning": "Ada (عائدہ) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم نجیب، بلند ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "عائدہ",
+        "meaning": "لوٹنے والی، واپس آنے والی (اگر مراد عائدة ہو)",
+        "long_meaning": "The meaning is provisional because the Latin spelling Ada can correspond to names from several languages; the Arabic form عائدة must not be conflated with عادة (“habit/custom”)."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Ada",
+        "script": "Ada",
+        "meaning": "بازگشت‌کننده، کسی که بازمی‌گردد (در صورت تطبیق با عائدة)",
+        "long_meaning": "The meaning is provisional because the Latin spelling Ada can correspond to names from several languages; the Arabic form عائدة must not be conflated with عادة (“habit/custom”)."
       },
       "hindi": {
         "name": "अदा",
-        "meaning": "कुलीन, उच्च",
-        "long_meaning": "Ada (अदा) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ कुलीन, उच्च है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "अदा",
+        "meaning": "लौटने वाली, वापस आने वाली (यदि रूप عائدة अभिप्रेत है)",
+        "long_meaning": "The meaning is provisional because the Latin spelling Ada can correspond to names from several languages; the Arabic form عائدة must not be conflated with عادة (“habit/custom”)."
       },
       "pashto": {
         "name": "عائده",
-        "meaning": "نجیب، لوړ",
-        "long_meaning": "Ada (عائده) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې نجیب، لوړ ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "عائده",
+        "meaning": "راګرځېدونکې، بېرته راتلونکې (که مراد عائدة وي)",
+        "long_meaning": "The meaning is provisional because the Latin spelling Ada can correspond to names from several languages; the Arabic form عائدة must not be conflated with عادة (“habit/custom”).",
+        "native_review_required": true
       },
       "arabic": {
         "name": "عائدة",
-        "meaning": "نبيل، رفيع",
-        "long_meaning": "Ada (عائدة) اسم مأخوذ من اللغة العربية، ومعناه الأساسي نبيل، رفيع. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "عائدة",
+        "meaning": "عائدة: راجعة أو آتية من جديد",
+        "long_meaning": "The meaning is provisional because the Latin spelling Ada can correspond to names from several languages; the Arabic form عائدة must not be conflated with عادة (“habit/custom”).",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "low"
+      "confidence": "LOW",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "a-da",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عائدہ",
-      "persian": null,
-      "hindi": "अदा",
-      "pashto": "عائده"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عائدة"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Ada",
-        "ada"
+        "Ada"
       ],
-      "script_variants": [
+      "script_forms": [
         "عائدة",
         "عائده",
         "عائدہ",
         "अदा"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عائدة is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "low",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عائدة is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Ada can be understood through the Arabic form عائدة, whose central sense is noble, exalted. The source record gave عادة ('habit, custom'), which is a common noun rather than a personal name. The intended form may be عائدة (ʿĀʾida). The identification is uncertain.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Ada mean?",
-        "answer": "Ada is associated with the Arabic form عائدة, whose core sense is noble, exalted."
+        "q": "What does Ada mean?",
+        "a": "If Ada is intended as Arabic عائدة, it means “returning/one who returns”; the old “habit/custom” gloss belongs to عادة."
       },
       {
-        "question": "What is the origin of Ada?",
-        "answer": "Ada is associated with Arabic. The source record gave عادة ('habit, custom'), which is a common noun rather than a personal name. The intended form may be عائدة (ʿĀʾida). The identification is uncertain."
+        "q": "What is the origin of Ada?",
+        "a": "The exact origin of the Latin spelling Ada is ambiguous; Arabic عائدة is only a provisional match."
       },
       {
-        "question": "Is Ada an Arabic name?",
-        "answer": "Yes — the underlying form عائدة is Arabic."
+        "q": "Is Ada an Arabic name?",
+        "a": "The Arabic form عائدة is distinct from عادة (“habit/custom”)."
       },
       {
-        "question": "Is Ada an Islamic name?",
-        "answer": "Ada can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Ada?",
+        "a": "The provisional form عائدة is related to root ع و د."
       },
       {
-        "question": "Is Ada a Quranic name?",
-        "answer": "Ada should not be classified as a Quranic personal name without a direct Quranic basis. not established"
+        "q": "Is Ada an Islamic name?",
+        "a": "The Latin name Ada has multiple possible origins; no religious status is asserted."
       },
       {
-        "question": "What does Ada mean in Urdu?",
-        "answer": "In Urdu, Ada is rendered عائدہ and carries the sense نجیب، بلند."
+        "q": "Is Ada a Quranic name?",
+        "a": "This record does not establish Ada as an explicitly named Qur'anic personal name."
       },
       {
-        "question": "What does Ada mean in Persian?",
-        "answer": "No verified Persian form was established for Ada."
+        "q": "What does Ada mean in Urdu?",
+        "a": "The Urdu gloss is provisional: “لوٹنے والی، واپس آنے والی.”"
       },
       {
-        "question": "How is Ada pronounced?",
-        "answer": "A romanized syllable approximation is a-da. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Ada pronounced?",
+        "a": "Pronunciation varies by language and intended name origin."
       },
       {
-        "question": "What are the variants of Ada?",
-        "answer": "Romanization variants include Ada, ada. Script forms are عائدة, عائده, عائدہ, अदा."
-      },
-      {
-        "question": "Is Ada a boy's or girl's name?",
-        "answer": "Documented usage records this form as female. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Ada a boy's or girl's name?",
+        "a": "Modern personal-name gender use depends on the intended language form and needs evidence."
       }
     ],
     "seo": {
-      "title": "Ada Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Ada (عائدة).",
-      "h1": "Ada Name Meaning, Origin and Cultural Background",
+      "title": "Ada Name Meaning, Origin & Islamic Context",
+      "meta_description": "Ada (عائدة) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Ada meaning, Ada name meaning, Ada origin, Ada meaning in Urdu, Ada pronunciation, Ada Islamic name",
+      "description_paragraph": "Ada is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Ada meaning",
+        "Ada name meaning",
+        "Ada origin",
+        "Ada meaning in Urdu",
+        "Ada pronunciation",
+        "Ada Islamic name"
+      ],
       "focus_keyword": "Ada meaning",
       "secondary_keywords": [
         "Ada name meaning",
-        "Ada meaning in Urdu",
         "Ada origin",
-        "Ada Islamic name",
+        "Ada meaning in Urdu",
         "Ada pronunciation",
-        "Ada name in Urdu"
+        "Ada Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Ada (عائدة) is associated with the Arabic form عائدة, whose core sense is noble, exalted. The source record gave عادة ('habit, custom'), which is a common noun rather than a personal name. The intended form may be عائدة (ʿĀʾida). The identification is uncertain.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/ada",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Ada is associated with the Arabic form عائدة, whose core sense is noble, exalted.",
-      "meaning_section": "The central meaning of Ada is noble, exalted.",
-      "origin_section": "Ada is associated with Arabic rather than with a different language.",
-      "islam_section": "Ada can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Ada is with the sense noble.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Ada, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Ada is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Ada",
       "#AdaMeaning",
-      "#AdaName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "low",
-      "linguistic_authenticity": "low",
-      "etymological_authenticity": "low",
-      "meaning_authenticity": "low",
-      "translation_quality": "low",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "distinct_arabic_forms_conflated",
+        "translations_conflict_corrected",
+        "exact_name_form_unverified"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 151,
+      "quality_score": 78,
+      "quality_score_basis": "Provisional editorial score only; source scope, personal-name usage, and native translations require separate review."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "Direct sources are listed where available. Search pages do not establish exact historical identity; dictionary meanings and personal-name usage are separate claims.",
+      "claim_evidence": [
         {
-          "claim": "Ada corresponds to the Arabic form عائدة",
-          "evidence_type": "lexical",
-          "confidence": "low"
+          "claim": "The current record contains a mismatch between عائدة, عادة, and “noble/exalted”; exact intended form requires direct source review.",
+          "source": null,
+          "status": "no_direct_source_checked; claim_provisional"
         },
         {
-          "claim": "Ada has the core sense noble, exalted",
-          "evidence_type": "lexical",
-          "confidence": "low"
+          "claim": "Personal-name use, regional frequency, and all translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "DIRECT_LEXICAL_SOURCE_NEEDED; CLAIMS_PROVISIONAL"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Corrected construct/kunya distinctions, nisba and comparative forms, translation mismatches, and native-script representation; kept source scope explicit.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Ada",
-      "alternateName": [
-        "Ada",
-        "ada"
-      ],
-      "description": "A name associated with the Arabic form عائدة, meaning noble, exalted.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "ada",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Ada",
+          "description": "Ada — If Ada is intended to represent Arabic عائدة (ʿĀʾida), the form means “returning/one who returns” and can be used as a feminine name; the prior “habit/custom” meaning belongs to عادة, a different word.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Female"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Ada mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If Ada is intended as Arabic عائدة, it means “returning/one who returns”; the old “habit/custom” gloss belongs to عادة."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Ada?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The exact origin of the Latin spelling Ada is ambiguous; Arabic عائدة is only a provisional match."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Ada an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Arabic form عائدة is distinct from عادة (“habit/custom”)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Ada?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The provisional form عائدة is related to root ع و د."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Ada an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Latin name Ada has multiple possible origins; no religious status is asserted."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Ada a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Ada as an explicitly named Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Ada mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Urdu gloss is provisional: “لوٹنے والی، واپس آنے والی.”"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Ada pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pronunciation varies by language and intended name origin."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Ada a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Modern personal-name gender use depends on the intended language form and needs evidence."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Ada",
+              "item": "https://nameverse.site/names/islamic/ada"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Ada, associated with the Arabic form عائدة, meaning noble, exalted."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "distinct_arabic_forms_conflated",
+        "translations_conflict_corrected",
+        "exact_name_form_unverified"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; source scope/name-use/translation review pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

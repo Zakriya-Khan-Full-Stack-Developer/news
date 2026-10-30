@@ -1,469 +1,509 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abba",
     "slug": "abba",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abba",
       "normalized_name": "abba",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abba",
         "abba"
       ],
-      "search_variants": [
-        "Abba",
-        "abba"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Abba; father (Hausa)",
-      "primary_meaning": "Abba; father (Hausa)",
-      "secondary_meanings": [],
-      "literal_meaning": "Abba; father (Hausa)",
-      "extended_meaning": "Abba; father (Hausa)",
+      "short_meaning": "Father (Hausa)",
+      "primary_meaning": "Abba is a Hausa-origin name meaning “Father (Hausa)”.",
+      "literal_meaning": "The name is the Hausa word itself, used unchanged as a given name rather than a derived or diminutive form.",
       "meaning_explanation": "Abba corresponds to the Hausa form أَبَّا (Hausa abba (father)). Its core sense is abba; father (hausa). Abba is Hausa, meaning 'father'; it is used as a male given name in West Africa.",
-      "meaning_confidence": "high"
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Hausa",
       "lexical_form": "أَبَّا",
       "transliteration": "abba",
-      "romanization": "abba",
-      "root_status": "Hausa abba (father)",
-      "etymological_meaning": [
-        "Abba; father (Hausa)"
-      ],
-      "etymology_explanation": "The form أَبَّا is an established Hausa lexical item. Abba is Hausa, meaning 'father'; it is used as a male given name in West Africa.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Hausa word أَبَّا",
+      "root_family": [],
+      "etymology_explanation": "The form أَبَّا is an established Hausa lexical item used unchanged as a given name.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Hausa form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Hausa",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Hausa",
+        "Muslim South Asia"
       ],
       "language_notes": {
-        "Arabic": "أَبَّا is an established Arabic form.",
-        "Urdu": "ابا is used in Urdu.",
-        "Persian": "ابا is an established Persian form.",
-        "Hindi": "अब्बा is used in Hindi.",
-        "Pashto": "ابا is used in Pashto."
+        "primary": "Hausa is the language of the recorded form أَبَّا.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Hausa",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Hausa form أَبَّا. Abba is Hausa, meaning 'father'; it is used as a male given name in West Africa.",
-      "cultural_transmission": []
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Hausa and circulates in Muslim naming through established multilingual use.",
+      "cultural_transmission": [
+        "Hausa",
+        "Muslim South Asia",
+        "Urdu-speaking communities"
+      ]
     },
     "religion": {
-      "primary_association": "South Asian cultural usage",
-      "religion": "Not inherently religious",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Abba may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "primary_association": "Islamic-cultural usage",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abba is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "Abba is a Hausa word, not a Quranic Arabic form."
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abba is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abba as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
-        "South Asia"
+        "Hausa",
+        "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense abba; father (hausa).",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Abba; father (Hausa)",
+      "primary_semantic_domain": "Father (Hausa)",
       "related_concepts": [
-        "abba; father (hausa)"
-      ],
-      "semantic_relationship": "The central semantic idea is abba; father (hausa); other senses are extended associations."
+        "Father (Hausa)"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of abba; father (hausa).",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Father (Hausa)” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Father (Hausa).",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Abba; father (hausa)"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 6,
+      "life_path_number": 6,
+      "ruling_planet": "Venus",
+      "lucky_day": "Friday",
+      "lucky_colors": [
+        "White",
+        "Pink"
+      ],
+      "lucky_stone": "Diamond",
+      "meaning": "In Pythagorean numerology the letters of Abba total 6, associated with responsibility, care and harmony. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 6,
+      "lucky_day": "Friday",
+      "lucky_colors": [
+        "White",
+        "Pink"
+      ],
+      "lucky_stone": "Diamond",
+      "ruling_planet": "Venus"
     },
     "translations": {
       "english": {
         "name": "Abba",
-        "meaning": "Abba; father (Hausa)",
-        "long_meaning": "Abba is a Hausa-origin name. Its core meaning is abba; father (hausa). Abba is Hausa, meaning 'father'; it is used as a male given name in West Africa."
+        "script": "Abba",
+        "meaning": "Father (Hausa)",
+        "long_meaning": "Abba is a Hausa-origin given name; in Hausa the word means “Father (Hausa)”."
       },
       "urdu": {
         "name": "ابا",
+        "script": "ابا",
         "meaning": "ابا، والد",
-        "long_meaning": "Abba (ابا) نامعلوم زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم ابا، والد ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "long_meaning": "Abba (ابا) نامعلوم زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم ابا، والد ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔"
       },
       "persian": {
         "name": "ابا",
+        "script": "ابا",
         "meaning": "ابا، پدر",
-        "long_meaning": "Abba (ابا) نامی برگرفته از زبان نامعلوم است و معنای اصلی آن ابا، پدر است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "long_meaning": "Abba (ابا) نامی برگرفته از زبان نامعلوم است و معنای اصلی آن ابا، پدر است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است."
       },
       "hindi": {
         "name": "अब्बा",
+        "script": "अब्बा",
         "meaning": "अब्बा, पिता",
-        "long_meaning": "Abba (अब्बा) अज्ञात भाषा से लिया गया नाम है। इसका मुख्य अर्थ अब्बा, पिता है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "long_meaning": "Abba (अब्बा) अज्ञात भाषा से लिया गया नाम है। इसका मुख्य अर्थ अब्बा, पिता है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।"
       },
       "pashto": {
         "name": "ابا",
+        "script": "ابا",
         "meaning": "ابا، پلار",
         "long_meaning": "Abba (ابا) د نامعلوم ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې ابا، پلار ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "native_review_required": true
       },
       "arabic": {
         "name": "أَبَّا",
+        "script": "أَبَّا",
         "meaning": "أَبَّا، الْأَب",
         "long_meaning": "Abba (أَبَّا) اسم مأخوذ من اللغة غير محددة، ومعناه الأساسي أَبَّا، الْأَب. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "ab-ba",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "ابا",
-      "persian": "ابا",
-      "hindi": "अब्बा",
-      "pashto": "ابا"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "أَبَّا"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Abba",
-        "abba"
+        "Abba"
       ],
-      "script_variants": [
+      "script_forms": [
         "أَبَّا",
         "ابا",
         "अब्बा"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form أَبَّا is an established Hausa lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form أَبَّا is an established Hausa lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abba can be understood through the Hausa form أَبَّا, whose central sense is abba; father (hausa). Abba is Hausa, meaning 'father'; it is used as a male given name in West Africa.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abba mean?",
-        "answer": "Abba is associated with the Hausa form أَبَّا, whose core sense is abba; father (hausa)."
+        "q": "What does Abba mean?",
+        "a": "The record glosses Hausa Abba as “father,” but a direct Hausa dictionary source was not checked in this pass."
       },
       {
-        "question": "What is the origin of Abba?",
-        "answer": "Abba is associated with Hausa. Abba is Hausa, meaning 'father'; it is used as a male given name in West Africa."
+        "q": "What is the origin of Abba?",
+        "a": "The record identifies Hausa as the source language; this remains provisional until sourced."
       },
       {
-        "question": "Is Abba an Arabic name?",
-        "answer": "No — the underlying form is Hausa, not Arabic."
+        "q": "Is Abba an Arabic name?",
+        "a": "This record is presented as Hausa rather than Arabic; exact linguistic sourcing is pending."
       },
       {
-        "question": "Is Abba an Islamic name?",
-        "answer": "Abba can occur in Muslim naming contexts, but it is better described as a Hausa-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Abba?",
+        "a": "No Arabic root is assigned."
       },
       {
-        "question": "Is Abba a Quranic name?",
-        "answer": "Abba should not be classified as a Quranic personal name without a direct Quranic basis. Abba is a Hausa word, not a Quranic Arabic form."
+        "q": "Is Abba an Islamic name?",
+        "a": "Cultural or religious use requires separate evidence."
       },
       {
-        "question": "What does Abba mean in Urdu?",
-        "answer": "In Urdu, Abba is rendered ابا and carries the sense ابا، والد."
+        "q": "Is Abba a Quranic name?",
+        "a": "This record does not establish Abba as a Qur'anic personal name."
       },
       {
-        "question": "What does Abba mean in Persian?",
-        "answer": "In Persian, Abba is rendered ابا and carries the sense ابا، پدر."
+        "q": "What does Abba mean in Urdu?",
+        "a": "Urdu rendering is approximate and needs review."
       },
       {
-        "question": "How is Abba pronounced?",
-        "answer": "A romanized syllable approximation is ab-ba. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abba pronounced?",
+        "a": "“Ab-ba” is approximate; Hausa pronunciation should be checked by a fluent speaker."
       },
       {
-        "question": "What are the variants of Abba?",
-        "answer": "Romanization variants include Abba, abba. Script forms are أَبَّا, ابا, अब्बा."
-      },
-      {
-        "question": "Is Abba a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Abba a boy's or girl's name?",
+        "a": "Modern usage and gender frequency need independent evidence."
       }
     ],
     "seo": {
-      "title": "Abba Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Hausa origin, Urdu meaning, pronunciation, variants and Islamic naming context of Abba (أَبَّا).",
-      "h1": "Abba Name Meaning, Origin and Cultural Background",
+      "title": "Abba Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abba (أَبَّا) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abba meaning, Abba name meaning, Abba origin, Abba meaning in Urdu, Abba pronunciation, Abba Islamic name",
+      "description_paragraph": "Abba is a Hausa-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abba meaning",
+        "Abba name meaning",
+        "Abba origin",
+        "Abba meaning in Urdu",
+        "Abba pronunciation",
+        "Abba Islamic name"
+      ],
       "focus_keyword": "Abba meaning",
       "secondary_keywords": [
         "Abba name meaning",
-        "Abba meaning in Urdu",
         "Abba origin",
-        "Abba Islamic name",
+        "Abba meaning in Urdu",
         "Abba pronunciation",
-        "Abba name in Urdu"
+        "Abba Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abba (أَبَّا) is associated with the Hausa form أَبَّا, whose core sense is abba; father (hausa). Abba is Hausa, meaning 'father'; it is used as a male given name in West Africa.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abba",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abba is associated with the Hausa form أَبَّا, whose core sense is abba; father (hausa).",
-      "meaning_section": "The central meaning of Abba is abba; father (hausa).",
-      "origin_section": "Abba is associated with Hausa rather than with a different language.",
-      "islam_section": "Abba can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Abba is with the sense abba; father (hausa).",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abba, a Hausa-origin name used in Muslim communities.",
+      "body_summary": "Abba is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abba",
       "#AbbaMeaning",
-      "#AbbaName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "hausa_dictionary_source_needed",
+        "personal_name_frequency_not_verified",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 151,
+      "quality_score": 80,
+      "quality_score_basis": "Provisional editorial score only; source support for lexical claims does not certify name use, popularity, religious status, or native translation quality."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "Checked only the listed lexical/reference sources. Claims without direct evidence remain provisional; modern name use and translation fluency require separate review.",
+      "claim_evidence": [
         {
-          "claim": "Abba corresponds to the Hausa form أَبَّا",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "The Hausa gloss “father” was not independently source-checked in this pass; retain provisionally, not as verified.",
+          "source": null,
+          "status": "no_direct_source_checked; claims_not_verified"
         },
         {
-          "claim": "Abba has the core sense abba; father (hausa)",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Personal-name usage, frequency, and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "NO_DIRECT_SOURCE_CHECKED; CLAIMS_UNVERIFIED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Checked direct lexical/reference sources where listed; corrected contradictory glosses and translation errors; separated lexical meaning from personal-name usage.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abba",
-      "alternateName": [
-        "Abba",
-        "abba"
-      ],
-      "description": "A name associated with the Hausa form أَبَّا, meaning abba; father (hausa).",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "abba",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Hausa"
+          "@type": "DefinedTerm",
+          "name": "Abba",
+          "description": "Abba — Abba is a Hausa-origin name meaning “Father (Hausa)”.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abba mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record glosses Hausa Abba as “father,” but a direct Hausa dictionary source was not checked in this pass."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abba?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record identifies Hausa as the source language; this remains provisional until sourced."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abba an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record is presented as Hausa rather than Arabic; exact linguistic sourcing is pending."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abba?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No Arabic root is assigned."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abba an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cultural or religious use requires separate evidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abba a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Abba as a Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abba mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Urdu rendering is approximate and needs review."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abba pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "“Ab-ba” is approximate; Hausa pronunciation should be checked by a fluent speaker."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abba a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Modern usage and gender frequency need independent evidence."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abba",
+              "item": "https://nameverse.site/names/islamic/abba"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abba, associated with the Hausa form أَبَّا, meaning abba; father (hausa)."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "hausa_dictionary_source_needed",
+        "personal_name_frequency_not_verified",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; manual name-use/translation review pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

@@ -1,68 +1,63 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abdoulaye",
     "slug": "abdoulaye",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abdoulaye",
       "normalized_name": "abdoulaye",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "HIGH",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abdoulaye",
         "abdoulaye"
       ],
-      "search_variants": [
-        "Abdoulaye",
-        "abdoulaye"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Abdoulaye; servant of God (West African form)",
-      "primary_meaning": "Abdoulaye; servant of God (West African form)",
-      "secondary_meanings": [],
-      "literal_meaning": "Abdoulaye; servant of God (West African form)",
-      "extended_meaning": "Abdoulaye; servant of God (West African form)",
-      "meaning_explanation": "Abdoulaye corresponds to the Arabic form عَبْدُ اللَّه (Arabic عبد (ʿAbd) + اللَّه (Allāh)). Its core sense is abdoulaye; servant of god (west african form). Abdoulaye is the West African (Fulani/Wolof) form of Arabic عَبْدُ اللَّه (ʿAbd Allāh), meaning 'servant of God'.",
-      "meaning_confidence": "high"
+      "short_meaning": "Servant of God",
+      "primary_meaning": "Abdoulaye is a West African (including Wolof/Fulani usage) form of Arabic عبد الله (ʿAbd Allāh), “servant of God”; language of transmission should be distinguished from source compound.",
+      "literal_meaning": "Servant of God",
+      "meaning_explanation": "The recorded form is a West African adaptation of عبد الله. The meaning of the Arabic compound is clear, but regional distribution and the exact language pathway need a direct source.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عَبْدُ اللَّه",
       "transliteration": "abdoulaye",
-      "romanization": "abdoulaye",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Abdoulaye; servant of God (West African form)"
-      ],
-      "etymology_explanation": "The form عَبْدُ اللَّه is an established Arabic lexical item. Abdoulaye is the West African (Fulani/Wolof) form of Arabic عَبْدُ اللَّه (ʿAbd Allāh), meaning 'servant of God'.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Arabic word عَبْدُ اللَّه",
+      "root_family": [],
+      "etymology_explanation": "The form عَبْدُ اللَّه is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
-      "primary": "Arabic",
+      "primary": "West African form of Arabic compound",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic",
+        "Wolof",
+        "Fulfulde/Fulani"
       ],
       "language_notes": {
-        "Arabic": "عَبْدُ اللَّه is an established Arabic form.",
-        "Urdu": "عبداللہ is used in Urdu.",
-        "Persian": "عبدالله is an established Persian form.",
-        "Hindi": "अब्दुल्लाहे is used in Hindi.",
-        "Pashto": "عبدالله is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عَبْدُ اللَّه.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
-      "primary_origin": "Arabic",
+      "primary_origin": "West African adaptation of Arabic عبد الله",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form عَبْدُ اللَّه. Abdoulaye is the West African (Fulani/Wolof) form of Arabic عَبْدُ اللَّه (ʿAbd Allāh), meaning 'servant of God'.",
+      "origin_confidence": "MEDIUM",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -71,406 +66,444 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Abdoulaye may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abdoulaye is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "ʿAbd Allāh is a compound of two Quranic elements, not itself a Quranic personal name."
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abdoulaye is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abdoulaye as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense abdoulaye; servant of god (west african form).",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Abdoulaye; servant of God (West African form)",
+      "primary_semantic_domain": "Servant of God",
       "related_concepts": [
-        "abdoulaye; servant of god (west african form)"
-      ],
-      "semantic_relationship": "The central semantic idea is abdoulaye; servant of god (west african form); other senses are extended associations."
+        "Servant of God"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of abdoulaye; servant of god (west african form).",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Servant of God” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Servant of God.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Abdoulaye; servant of god (west african form)"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 5,
+      "life_path_number": 5,
+      "ruling_planet": "Mercury",
+      "lucky_day": "Wednesday",
+      "lucky_colors": [
+        "Green",
+        "Turquoise"
+      ],
+      "lucky_stone": "Emerald",
+      "meaning": "In Pythagorean numerology the letters of Abdoulaye total 5, associated with change, freedom and adaptability. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 5,
+      "lucky_day": "Wednesday",
+      "lucky_colors": [
+        "Green",
+        "Turquoise"
+      ],
+      "lucky_stone": "Emerald",
+      "ruling_planet": "Mercury"
     },
     "translations": {
       "english": {
         "name": "Abdoulaye",
-        "meaning": "Abdoulaye; servant of God (West African form)",
-        "long_meaning": "Abdoulaye is a Arabic-origin name. Its core meaning is abdoulaye; servant of god (west african form). Abdoulaye is the West African (Fulani/Wolof) form of Arabic عَبْدُ اللَّه (ʿAbd Allāh), meaning 'servant of God'."
+        "script": "Abdoulaye",
+        "meaning": "Servant of God",
+        "long_meaning": "Abdoulaye is an Arabic-origin given name; in Arabic the word means “Servant of God”."
       },
       "urdu": {
         "name": "عبداللہ",
+        "script": "عبداللہ",
         "meaning": "عبداللہ، اللہ کا بندہ",
-        "long_meaning": "Abdoulaye (عبداللہ) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم عبداللہ، اللہ کا بندہ ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "long_meaning": "Abdoulaye (عبداللہ) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم عبداللہ، اللہ کا بندہ ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔"
       },
       "persian": {
         "name": "عبدالله",
+        "script": "عبدالله",
         "meaning": "عبدالله، بنده خدا",
-        "long_meaning": "Abdoulaye (عبدالله) نامی برگرفته از زبان عربی است و معنای اصلی آن عبدالله، بنده خدا است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "long_meaning": "Abdoulaye (عبدالله) نامی برگرفته از زبان عربی است و معنای اصلی آن عبدالله، بنده خدا است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است."
       },
       "hindi": {
         "name": "अब्दुल्लाहे",
+        "script": "अब्दुल्लाहे",
         "meaning": "अब्दुल्लाहे, ईश्वर का दास",
-        "long_meaning": "Abdoulaye (अब्दुल्लाहे) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ अब्दुल्लाहे, ईश्वर का दास है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "long_meaning": "Abdoulaye (अब्दुल्लाहे) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ अब्दुल्लाहे, ईश्वर का दास है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।"
       },
       "pashto": {
         "name": "عبدالله",
+        "script": "عبدالله",
         "meaning": "عبدالله، د الله بنده",
         "long_meaning": "Abdoulaye (عبدالله) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې عبدالله، د الله بنده ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "native_review_required": true
       },
       "arabic": {
         "name": "عَبْدُ اللَّه",
+        "script": "عَبْدُ اللَّه",
         "meaning": "عَبْدُ اللَّه، عَبْدُ اللَّه",
         "long_meaning": "Abdoulaye (عَبْدُ اللَّه) اسم مأخوذ من اللغة العربية، ومعناه الأساسي عَبْدُ اللَّه، عَبْدُ اللَّه. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "ab-dou-laye",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عبداللہ",
-      "persian": "عبدالله",
-      "hindi": "अब्दुल्लाहे",
-      "pashto": "عبدالله"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عَبْدُ اللَّه"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Abdoulaye",
-        "abdoulaye"
+        "Abdoulaye"
       ],
-      "script_variants": [
+      "script_forms": [
         "عبدالله",
         "عبداللہ",
         "عَبْدُ اللَّه",
         "अब्दुल्लाहे"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عَبْدُ اللَّه is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عَبْدُ اللَّه is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abdoulaye can be understood through the Arabic form عَبْدُ اللَّه, whose central sense is abdoulaye; servant of god (west african form). Abdoulaye is the West African (Fulani/Wolof) form of Arabic عَبْدُ اللَّه (ʿAbd Allāh), meaning 'servant of God'.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abdoulaye mean?",
-        "answer": "Abdoulaye is associated with the Arabic form عَبْدُ اللَّه, whose core sense is abdoulaye; servant of god (west african form)."
+        "q": "What does Abdoulaye mean?",
+        "a": "Abdoulaye is a West African form of Arabic عبد الله, meaning “servant of God.”"
       },
       {
-        "question": "What is the origin of Abdoulaye?",
-        "answer": "Abdoulaye is associated with Arabic. Abdoulaye is the West African (Fulani/Wolof) form of Arabic عَبْدُ اللَّه (ʿAbd Allāh), meaning 'servant of God'."
+        "q": "What is the origin of Abdoulaye?",
+        "a": "The form is a West African adaptation of the Arabic compound; exact language pathway needs sourcing."
       },
       {
-        "question": "Is Abdoulaye an Arabic name?",
-        "answer": "Yes — the underlying form عَبْدُ اللَّه is Arabic."
+        "q": "Is Abdoulaye an Arabic name?",
+        "a": "The Arabic source compound is عبد الله; the Latin form is regionally adapted."
       },
       {
-        "question": "Is Abdoulaye an Islamic name?",
-        "answer": "Abdoulaye can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Abdoulaye?",
+        "a": "The compound contains عبد (“servant”) and الله (“God”)."
       },
       {
-        "question": "Is Abdoulaye a Quranic name?",
-        "answer": "Abdoulaye should not be classified as a Quranic personal name without a direct Quranic basis. ʿAbd Allāh is a compound of two Quranic elements, not itself a Quranic personal name."
+        "q": "Is Abdoulaye an Islamic name?",
+        "a": "The compound has religious wording; this record is not a separate naming recommendation."
       },
       {
-        "question": "What does Abdoulaye mean in Urdu?",
-        "answer": "In Urdu, Abdoulaye is rendered عبداللہ and carries the sense عبداللہ، اللہ کا بندہ."
+        "q": "Is Abdoulaye a Quranic name?",
+        "a": "This record does not establish Abdoulaye as an explicitly named Qur'anic personal name."
       },
       {
-        "question": "What does Abdoulaye mean in Persian?",
-        "answer": "In Persian, Abdoulaye is rendered عبدالله and carries the sense عبدالله، بنده خدا."
+        "q": "What does Abdoulaye mean in Urdu?",
+        "a": "The Urdu rendering is plausible but needs fluent review."
       },
       {
-        "question": "How is Abdoulaye pronounced?",
-        "answer": "A romanized syllable approximation is ab-dou-laye. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abdoulaye pronounced?",
+        "a": "Pronunciation varies across West African languages."
       },
       {
-        "question": "What are the variants of Abdoulaye?",
-        "answer": "Romanization variants include Abdoulaye, abdoulaye. Script forms are عبدالله, عبداللہ, عَبْدُ اللَّه, अब्दुल्लाहे."
-      },
-      {
-        "question": "Is Abdoulaye a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Abdoulaye a boy's or girl's name?",
+        "a": "The record classifies it as male; regional usage data has not been supplied."
       }
     ],
     "seo": {
-      "title": "Abdoulaye Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Abdoulaye (عَبْدُ اللَّه).",
-      "h1": "Abdoulaye Name Meaning, Origin and Cultural Background",
+      "title": "Abdoulaye Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abdoulaye (عَبْدُ اللَّه) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abdoulaye meaning, Abdoulaye name meaning, Abdoulaye origin, Abdoulaye meaning in Urdu, Abdoulaye pronunciation, Abdoulaye Islamic name",
+      "description_paragraph": "Abdoulaye is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abdoulaye meaning",
+        "Abdoulaye name meaning",
+        "Abdoulaye origin",
+        "Abdoulaye meaning in Urdu",
+        "Abdoulaye pronunciation",
+        "Abdoulaye Islamic name"
+      ],
       "focus_keyword": "Abdoulaye meaning",
       "secondary_keywords": [
         "Abdoulaye name meaning",
-        "Abdoulaye meaning in Urdu",
         "Abdoulaye origin",
-        "Abdoulaye Islamic name",
+        "Abdoulaye meaning in Urdu",
         "Abdoulaye pronunciation",
-        "Abdoulaye name in Urdu"
+        "Abdoulaye Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abdoulaye (عَبْدُ اللَّه) is associated with the Arabic form عَبْدُ اللَّه, whose core sense is abdoulaye; servant of god (west african form). Abdoulaye is the West African (Fulani/Wolof) form of Arabic عَبْدُ اللَّه (ʿAbd Allāh), meaning 'servant of God'.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abdoulaye",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abdoulaye is associated with the Arabic form عَبْدُ اللَّه, whose core sense is abdoulaye; servant of god (west african form).",
-      "meaning_section": "The central meaning of Abdoulaye is abdoulaye; servant of god (west african form).",
-      "origin_section": "Abdoulaye is associated with Arabic rather than with a different language.",
-      "islam_section": "Abdoulaye can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Abdoulaye is with the sense abdoulaye; servant of god (west african form).",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abdoulaye, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Abdoulaye is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abdoulaye",
       "#AbdoulayeMeaning",
-      "#AbdoulayeName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "regional_transmission_needs_source",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 152,
+      "quality_score": 78,
+      "quality_score_basis": "Provisional editorial score only; linguistic form, cultural transmission, name use, and native translations require separate source review."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "Direct lexical/reference source listed only where checked. Name transmission, exact transliteration, historical-bearer claims, and native translations require separate evidence.",
+      "claim_evidence": [
         {
-          "claim": "Abdoulaye corresponds to the Arabic form عَبْدُ اللَّه",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "The recorded form is identified as a West African form of عبد الله, but no direct linguistic source was checked in this pass.",
+          "source": null,
+          "status": "no_direct_source_checked; claims_not_verified"
         },
         {
-          "claim": "Abdoulaye has the core sense abdoulaye; servant of god (west african form)",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Personal-name usage, transmission, and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "CLAIMS_PROVISIONAL; DIRECT_SOURCES_NEEDED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Reviewed exact compound/linguistic form, separated source language from regional transmission, and left unsupported historical/name-use claims provisional.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abdoulaye",
-      "alternateName": [
-        "Abdoulaye",
-        "abdoulaye"
-      ],
-      "description": "A name associated with the Arabic form عَبْدُ اللَّه, meaning abdoulaye; servant of god (west african form).",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "abdoulaye",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Abdoulaye",
+          "description": "Abdoulaye — Abdoulaye is a West African (including Wolof/Fulani usage) form of Arabic عبد الله (ʿAbd Allāh), “servant of God”; language of transmission should be distinguished from source compound.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abdoulaye mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Abdoulaye is a West African form of Arabic عبد الله, meaning “servant of God.”"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abdoulaye?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form is a West African adaptation of the Arabic compound; exact language pathway needs sourcing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdoulaye an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Arabic source compound is عبد الله; the Latin form is regionally adapted."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abdoulaye?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The compound contains عبد (“servant”) and الله (“God”)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdoulaye an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The compound has religious wording; this record is not a separate naming recommendation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdoulaye a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Abdoulaye as an explicitly named Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abdoulaye mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Urdu rendering is plausible but needs fluent review."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abdoulaye pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pronunciation varies across West African languages."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdoulaye a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record classifies it as male; regional usage data has not been supplied."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abdoulaye",
+              "item": "https://nameverse.site/names/islamic/abdoulaye"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abdoulaye, associated with the Arabic form عَبْدُ اللَّه, meaning abdoulaye; servant of god (west african form)."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "regional_transmission_needs_source",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; direct name-use/translation sources pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

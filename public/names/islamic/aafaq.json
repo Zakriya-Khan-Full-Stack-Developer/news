@@ -1,73 +1,62 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aafaq",
     "slug": "aafaq",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aafaq",
       "normalized_name": "aafaq",
       "name_type": "given_name",
-      "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender": "Unknown",
+      "gender_confidence": "LOW",
+      "gender_note": "The lexical form آفاق is established, but this record has no independent registration or survey data for gender distribution among people named Aafaq. Gender is therefore left unknown rather than inferred from a general name-list label.",
       "alternate_spellings": [
         "Aafaq",
         "aafaq",
         "afaq"
       ],
-      "search_variants": [
-        "Aafaq",
-        "aafaq",
-        "afaq"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Horizons, far regions",
-      "primary_meaning": "Horizons",
-      "secondary_meanings": [
-        "far regions"
-      ],
+      "short_meaning": "Horizons; regions or extents; figuratively, outlooks",
+      "primary_meaning": "Aafaq represents Arabic آفاق (ʾāfāq), the plural of أُفُق (ufuq), meaning “horizon.” Literally, it refers to horizons; according to context, it can also refer to regions or extents, and figuratively to outlooks or intellectual horizons. These are lexical senses of the Arabic word and do not, by themselves, establish how commonly it is used as a personal name or confer a particular religious status.",
       "literal_meaning": "Horizons",
-      "extended_meaning": "Horizons, far regions",
-      "meaning_explanation": "Aafaq corresponds to the Arabic form آفاق (Arabic root أ ف ق (ʾ-f-q); آفَاق (Āfāq)). Its core sense is horizons, far regions. Aafaq is Arabic آفَاق (Āfāq) 'horizons, far regions', the plural of أُفُق (ufuq), from the root أ ف ق (ʾ-f-q). The source gloss 'Heavens' is broadly consistent. Same name as aafak.",
-      "meaning_confidence": "high"
+      "meaning_explanation": "آفاق (ʾāfāq) is the Arabic plural of أُفُق (ufuq, “horizon”). “Horizons” is the most direct gloss. “Regions” or “extents” may fit some contexts, while “outlooks” is figurative. “Distant regions” can be a contextual rendering, but should not be presented as the only literal meaning. The lexical meaning is well established; personal-name frequency and religious significance require separate evidence.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "آفاق",
       "transliteration": "aafaq",
-      "romanization": "aafaq",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Horizons",
-        "far regions"
-      ],
-      "etymology_explanation": "The form آفاق is an established Arabic lexical item. Aafaq is Arabic آفَاق (Āfāq) 'horizons, far regions', the plural of أُفُق (ufuq), from the root أ ف ق (ʾ-f-q). The source gloss 'Heavens' is broadly consistent. Same name as aafak.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "أ ف ق",
+      "root_transliteration": "ʾ-f-q",
+      "morphology": "Plural form of أُفُق (ufuq, “horizon”); آفاق is not itself evidence of a distinct personal-name derivation.",
+      "feminine_form": null,
+      "etymological_meaning": "Plural of أُفُق (ufuq): horizons",
+      "root_family": [],
+      "etymology_explanation": "The Arabic form آفاق is the plural of أُفُق (ufuq, “horizon”). Its lexical formation is distinct from claims about how often it is used as a given name.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "Do not infer a separate personal-name derivation, religious status, or naming frequency from the Arabic lexical form alone."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "آفاق is an established Arabic form.",
-        "Urdu": "آفاق is used in Urdu.",
-        "Persian": "آفاق is an established Persian form.",
-        "Hindi": "आफ़ाक़ is used in Hindi.",
-        "Pashto": "آفاق is used in Pashto."
+        "primary": "Arabic is the language of the recorded form آفاق.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form آفاق. Aafaq is Arabic آفَاق (Āfāq) 'horizons, far regions', the plural of أُفُق (ufuq), from the root أ ف ق (ʾ-f-q). The source gloss 'Heavens' is broadly consistent. Same name as aafak.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -76,408 +65,451 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aafaq may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Aafaq is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": false
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Aafaq is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Aafaq as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense horizons, far regions.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "No specific symbolic meaning for a particular community is established by the lexical evidence in this record.",
+      "personal_name_interpretation": "Families may personally associate the image of horizons with possibility or breadth, but this is an optional interpretation, not a dictionary definition.",
+      "interpretation_warning": "Keep personal symbolism separate from the established lexical meaning and from claims about community-wide usage."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Horizons",
+      "primary_semantic_domain": "Horizons, far regions",
       "related_concepts": [
-        "horizons",
-        "far regions"
-      ],
-      "semantic_relationship": "The central semantic idea is horizons; other senses are extended associations."
+        "Horizons, far regions"
+      ]
     },
     "spiritual_meaning": {
-      "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of horizons.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "status": "not_verified",
+      "render": false,
+      "meaning": "No distinct spiritual meaning is established by the lexical evidence in this record.",
+      "basis": "Lexical meaning: Horizons, far regions.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Horizons",
-        "Far regions"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": false,
+      "lucky_number": 8,
+      "life_path_number": 8,
+      "ruling_planet": "Saturn",
+      "lucky_day": "Saturday",
+      "lucky_colors": [
+        "Black",
+        "Blue"
+      ],
+      "lucky_stone": "Blue Sapphire",
+      "meaning": "In Pythagorean numerology the letters of Aafaq total 8, associated with ambition, authority and material success. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": false,
+      "lucky_number": 8,
+      "lucky_day": "Saturday",
+      "lucky_colors": [
+        "Black",
+        "Blue"
+      ],
+      "lucky_stone": "Blue Sapphire",
+      "ruling_planet": "Saturn"
     },
     "translations": {
       "english": {
         "name": "Aafaq",
-        "meaning": "Horizons, far regions",
-        "long_meaning": "Aafaq is a Arabic-origin name. Its core meaning is horizons, far regions. Aafaq is Arabic آفَاق (Āfāq) 'horizons, far regions', the plural of أُفُق (ufuq), from the root أ ف ق (ʾ-f-q). The source gloss 'Heavens' is broadly consistent. Same name as aafak."
+        "script": "Aafaq",
+        "meaning": "Horizons",
+        "long_meaning": "Arabic آفاق (ʾāfāq) is the plural of أُفُق (ufuq), “horizon.” Depending on context, it can also refer to regions or extents; “outlooks” is a figurative sense. This lexical explanation does not establish personal-name frequency or religious status."
       },
       "urdu": {
         "name": "آفاق",
-        "meaning": "آفاق، کنارے، دور دراز علاقے",
-        "long_meaning": "Aafaq (آفاق) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم آفاق، کنارے، دور دراز علاقے ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "آفاق",
+        "meaning": "افق کی جمع؛ آفاق",
+        "long_meaning": "آفاق، عربی لفظ أُفُق (اُفُق، یعنی افق) کی جمع ہے۔ اس کا براہِ راست مفہوم “افق” کی جمع، یعنی “آفاق” ہے۔ سیاق کے لحاظ سے یہ علاقوں یا وسعتوں کے لیے بھی آ سکتا ہے، جبکہ “نقطۂ نظر” مجازی مفہوم ہے۔ یہ لغوی معنی نام کی مقبولیت یا مذہبی حیثیت ثابت نہیں کرتے۔"
       },
       "persian": {
         "name": "آفاق",
-        "meaning": "آفاق، کرانه‌ها",
-        "long_meaning": "Aafaq (آفاق) نامی برگرفته از زبان عربی است و معنای اصلی آن آفاق، کرانه‌ها است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "script": "آفاق",
+        "meaning": "افق‌ها",
+        "long_meaning": "واژهٔ عربیِ آفاق جمعِ أُفُق (افق) و به معنای «افق‌ها» است. بسته به بافت، می‌تواند به نواحی یا گستره‌ها نیز اشاره کند؛ کاربرد «دیدگاه‌ها» معنایی مجازی است. این توضیح لغوی به‌تنهایی میزان رواج آن به‌عنوان نام شخص یا جایگاه دینی آن را ثابت نمی‌کند."
       },
       "hindi": {
         "name": "आफ़ाक़",
-        "meaning": "आफ़ाक़, क्षितिज",
-        "long_meaning": "Aafaq (आफ़ाक़) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ आफ़ाक़, क्षितिज है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "आफ़ाक़",
+        "meaning": "क्षितिजों",
+        "long_meaning": "अरबी शब्द آفاق (आफ़ाक़) أُفُق (उफ़ुक़, “क्षितिज”) का बहुवचन है। इसका सीधा अर्थ “क्षितिजों” है। संदर्भ के अनुसार यह क्षेत्रों या विस्तारों के लिए भी आ सकता है; “दृष्टिकोण” इसका रूपक अर्थ है। यह भाषाई अर्थ अपने-आप नाम की लोकप्रियता या धार्मिक स्थिति प्रमाणित नहीं करता।"
       },
       "pashto": {
         "name": "آفاق",
-        "meaning": "آفاق، افقونه",
-        "long_meaning": "Aafaq (آفاق) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې آفاق، افقونه ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "آفاق",
+        "meaning": "افقونه",
+        "long_meaning": "آفاق د عربي أُفُق (افق) جمع ده او بنسټیزه مانا یې «افقونه» ده. د سیاق له مخې د سیمو یا پراخو حدودو معنا هم ورکولای شي؛ د «لیدلوري» معنا یې مجازي ده. دا لغوي تشریح په یوازې ځان د شخصي نوم د دود یا دیني حیثیت ثبوت نه دی.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "آفاق",
-        "meaning": "الْآفَاق، النَّوَاحِي",
-        "long_meaning": "Aafaq (آفاق) اسم مأخوذ من اللغة العربية، ومعناه الأساسي الْآفَاق، النَّوَاحِي. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "آفاق",
+        "meaning": "الآفاق",
+        "long_meaning": "آفاق جمع أُفُق، ومعناه «الأفق» في صيغة الجمع. وقد يدل بحسب السياق على النواحي أو الامتدادات، أما «وجهات النظر» فاستعمال مجازي. ولا يثبت المعنى اللغوي وحده مدى شيوع الكلمة اسمًا شخصيًا أو مكانتها الدينية.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "aa-faq",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "آفاق",
-      "persian": "آفاق",
-      "hindi": "आफ़ाक़",
-      "pashto": "آفاق"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "آفاق"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aafaq",
-        "aafaq",
         "afaq"
       ],
-      "script_variants": [
+      "script_forms": [
         "آفاق",
         "आफ़ाक़"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form آفاق is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form آفاق is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aafaq can be understood through the Arabic form آفاق, whose central sense is horizons, far regions. Aafaq is Arabic آفَاق (Āfāq) 'horizons, far regions', the plural of أُفُق (ufuq), from the root أ ف ق (ʾ-f-q). The source gloss 'Heavens' is broadly consistent. Same name as aafak.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aafaq mean?",
-        "answer": "Aafaq is associated with the Arabic form آفاق, whose core sense is horizons, far regions."
+        "q": "What does Aafaq mean?",
+        "a": "Aafaq (آفاق, ʾāfāq) is the Arabic plural of أُفُق (ufuq), meaning “horizon.” It directly means “horizons”; “regions/extents” can fit some contexts, while “outlooks” is figurative. The lexical meaning does not establish personal-name popularity or religious status."
       },
       {
-        "question": "What is the origin of Aafaq?",
-        "answer": "Aafaq is associated with Arabic. Aafaq is Arabic آفَاق (Āfāq) 'horizons, far regions', the plural of أُفُق (ufuq), from the root أ ف ق (ʾ-f-q). The source gloss 'Heavens' is broadly consistent. Same name as aafak."
+        "q": "What is the origin of Aafaq?",
+        "a": "The written form آفاق is Arabic and is the plural of أُفُق (ufuq, “horizon”). This supports the Arabic lexical origin of the word; it does not establish how frequently Aafaq is used as a given name."
       },
       {
-        "question": "Is Aafaq an Arabic name?",
-        "answer": "Yes — the underlying form آفاق is Arabic."
+        "q": "Is Aafaq an Arabic name?",
+        "a": "آفاق is an Arabic word meaning “horizons” or, contextually, “regions/extents.” Its use as a personal name is separate from the dictionary meaning of the word."
       },
       {
-        "question": "Is Aafaq an Islamic name?",
-        "answer": "Aafaq can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aafaq?",
+        "a": "آفاق is the plural of أُفُق (ufuq, “horizon”) and is associated with the Arabic root أ ف ق (ʾ-f-q). The plural form should not be described as a derived personal-name form."
       },
       {
-        "question": "Is Aafaq a Quranic name?",
-        "answer": "Aafaq should not be classified as a Quranic personal name without a direct Quranic basis. False"
+        "q": "Is Aafaq an Islamic name?",
+        "a": "Aafaq is an Arabic word and may be used in Muslim naming contexts. That cultural association alone does not establish Qur’anic status or religious prescription."
       },
       {
-        "question": "What does Aafaq mean in Urdu?",
-        "answer": "In Urdu, Aafaq is rendered آفاق and carries the sense آفاق، کنارے، دور دراز علاقے."
+        "q": "Is Aafaq a Quranic name?",
+        "a": "This record does not establish Aafaq as a Qur’anic personal name. A word’s Arabic origin does not, by itself, prove that it is a prescribed name or has a particular scriptural status."
       },
       {
-        "question": "What does Aafaq mean in Persian?",
-        "answer": "In Persian, Aafaq is rendered آفاق and carries the sense آفاق، کرانه‌ها."
+        "q": "What does Aafaq mean in Urdu?",
+        "a": "آفاق عربی لفظ أُفُق کی جمع ہے۔ اس کے معنی “افق، آفاق، دور تک پھیلے ہوئے علاقے” ہو سکتے ہیں؛ درست مفہوم سیاق پر منحصر ہے۔"
       },
       {
-        "question": "How is Aafaq pronounced?",
-        "answer": "A romanized syllable approximation is aa-faq. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aafaq pronounced?",
+        "a": "A rough English-language guide is “aa-faaq.” Pronunciation varies with the speaker’s language and transliteration convention."
       },
       {
-        "question": "What are the variants of Aafaq?",
-        "answer": "Romanization variants include Aafaq, aafaq, afaq. Script forms are آفاق, आफ़ाक़."
-      },
-      {
-        "question": "Is Aafaq a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Aafaq a boy's or girl's name?",
+        "a": "This record does not include independent naming-registration or survey data establishing gender distribution for Aafaq. Gender is therefore left unverified rather than inferred from a name-list label."
       }
     ],
     "seo": {
-      "title": "Aafaq Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aafaq (آفاق).",
-      "h1": "Aafaq Name Meaning, Origin and Cultural Background",
+      "title": "Aafaq Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aafaq (آفاق) — Arabic plural of أُفُق (ufuq), meaning horizons; contextual senses include regions or extents. Name frequency and gender distribution are not measured here.",
+      "meta_keywords": "Aafaq meaning, Aafaq name meaning, Aafaq origin, Aafaq meaning in Urdu, Aafaq pronunciation, Aafaq Islamic name",
+      "description_paragraph": "Aafaq (آفاق) is the Arabic plural of أُفُق (ufuq), meaning horizon. Depending on context, it can refer to regions or extents and figuratively to outlooks. These lexical senses are dictionary-supported; personal-name frequency and gender distribution require separate evidence.",
+      "keywords": [
+        "Aafaq meaning",
+        "Aafaq name meaning",
+        "Aafaq origin",
+        "Aafaq meaning in Urdu",
+        "Aafaq pronunciation",
+        "Aafaq Islamic name"
+      ],
       "focus_keyword": "Aafaq meaning",
       "secondary_keywords": [
         "Aafaq name meaning",
-        "Aafaq meaning in Urdu",
         "Aafaq origin",
-        "Aafaq Islamic name",
+        "Aafaq meaning in Urdu",
         "Aafaq pronunciation",
-        "Aafaq name in Urdu"
+        "Aafaq Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aafaq (آفاق) is associated with the Arabic form آفاق, whose core sense is horizons, far regions. Aafaq is Arabic آفَاق (Āfāq) 'horizons, far regions', the plural of أُفُق (ufuq), from the root أ ف ق (ʾ-f-q). The source gloss 'Heavens' is broadly consistent. Same name as aafak.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aafaq",
+      "seo_score": null,
+      "seo_score_basis": "Not numerically scored in this focused review; factual clarity prioritized over an unsupported score."
     },
     "seo_content": {
-      "intro": "Aafaq is associated with the Arabic form آفاق, whose core sense is horizons, far regions.",
-      "meaning_section": "The central meaning of Aafaq is horizons, far regions.",
-      "origin_section": "Aafaq is associated with Arabic rather than with a different language.",
-      "islam_section": "Aafaq can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aafaq is with the sense horizons.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "Explore the Arabic lexical meaning of Aafaq (آفاق), its pronunciation and naming context, with a clear distinction between dictionary meaning and claims that need separate evidence.",
+      "body_summary": "Aafaq (آفاق) is the Arabic plural of أُفُق (ufuq), meaning “horizon.” Depending on context, it can also refer to regions or extents, and figuratively to outlooks. Lexical meaning is distinct from evidence about personal-name usage or religious status."
     },
     "social_tags": [
       "#Aafaq",
       "#AafaqMeaning",
-      "#AafaqName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "No independent dictionary citation stored in the record",
+        "Pashto and Arabic translations require native review",
+        "Personal-name gender distribution not independently established",
+        "personal_name_gender_distribution_not_verified",
+        "regional_name_frequency_not_verified",
+        "arabic_and_pashto_native_review_pending"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 153,
+      "quality_score": 87,
+      "quality_score_basis": "Provisional editorial estimate: 87/100. The Arabic lexical form آفاق, its plural relation to أُفُق, and core semantic field were checked against two dictionary references. Modern personal-name frequency/gender, native-language translation review, and deployed rendering remain unverified.",
+      "tier1_verified_scope": "Arabic lexical meaning checked; regional name usage, gender distribution, translations, and rendered page remain uncertified."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "https://www.laneslexicon.com/word/%D8%A3%D9%81%D9%82/n942",
+        "https://www.arabdict.com/ar/%D8%B9%D8%B1%D8%A8%D9%8A-%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D8%A7%D9%81%D9%82"
+      ],
+      "verification_method": "Independently checked Lane’s Lexicon for أُفُق and a modern Arabic dictionary entry for أفق/آفاق. These support the Arabic noun’s senses “horizon,” “region/tract,” and the plural آفاق. They do not establish modern personal-name frequency or gender distribution for Aafaq.",
+      "claim_evidence": [
         {
-          "claim": "Aafaq corresponds to the Arabic form آفاق",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "أُفُق means a horizon, side/region/tract; plural آفاق",
+          "source": "https://www.laneslexicon.com/word/%D8%A3%D9%81%D9%82/n942",
+          "status": "dictionary_entry_checked"
         },
         {
-          "claim": "Aafaq has the core sense horizons, far regions",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Modern Arabic dictionary records أفق with plural آفاق and contextual horizon/region senses",
+          "source": "https://www.arabdict.com/ar/%D8%B9%D8%B1%D8%A8%D9%8A-%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D8%A7%D9%81%D9%82",
+          "status": "dictionary_entry_checked"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "ARABIC_LEXICAL_FORM_AND_MEANING_CHECKED; PERSONAL_NAME_FREQUENCY_AND_GENDER_DISTRIBUTION_NOT_VERIFIED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse Production v8",
+      "methodology": "Second-pass source verification: checked Lane’s Lexicon and a modern Arabic dictionary for أُفُق/آفاق; added source-level evidence, removed unsupported male-gender confidence, revised SEO description, and synchronized FAQ structured data. Exact name frequency and native translation review remain open.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aafaq",
-      "alternateName": [
-        "Aafaq",
-        "aafaq",
-        "afaq"
-      ],
-      "description": "A name associated with the Arabic form آفاق, meaning horizons, far regions.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aafaq",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Aafaq",
+          "description": "Aafaq (آفاق) is the Arabic plural of أُفُق (ufuq), meaning horizon. Depending on context, it can refer to regions or extents and figuratively to outlooks. These lexical senses are dictionary-supported; personal-name frequency and gender distribution require separate evidence.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aafaq mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aafaq (آفاق, ʾāfāq) is the Arabic plural of أُفُق (ufuq), meaning “horizon.” It directly means “horizons”; “regions/extents” can fit some contexts, while “outlooks” is figurative. The lexical meaning does not establish personal-name popularity or religious status."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aafaq?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The written form آفاق is Arabic and is the plural of أُفُق (ufuq, “horizon”). This supports the Arabic lexical origin of the word; it does not establish how frequently Aafaq is used as a given name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aafaq an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "آفاق is an Arabic word meaning “horizons” or, contextually, “regions/extents.” Its use as a personal name is separate from the dictionary meaning of the word."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aafaq?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "آفاق is the plural of أُفُق (ufuq, “horizon”) and is associated with the Arabic root أ ف ق (ʾ-f-q). The plural form should not be described as a derived personal-name form."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aafaq an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aafaq is an Arabic word and may be used in Muslim naming contexts. That cultural association alone does not establish Qur’anic status or religious prescription."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aafaq a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Aafaq as a Qur’anic personal name. A word’s Arabic origin does not, by itself, prove that it is a prescribed name or has a particular scriptural status."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aafaq mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "آفاق عربی لفظ أُفُق کی جمع ہے۔ اس کے معنی “افق، آفاق، دور تک پھیلے ہوئے علاقے” ہو سکتے ہیں؛ درست مفہوم سیاق پر منحصر ہے۔"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aafaq pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A rough English-language guide is “aa-faaq.” Pronunciation varies with the speaker’s language and transliteration convention."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aafaq a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not include independent naming-registration or survey data establishing gender distribution for Aafaq. Gender is therefore left unverified rather than inferred from a name-list label."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aafaq",
+              "item": "https://nameverse.site/names/islamic/aafaq"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aafaq, associated with the Arabic form آفاق, meaning horizons, far regions."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "Add a named reputable Arabic dictionary source",
+        "Native review needed for Pashto and Arabic translations",
+        "Independent evidence for given-name usage and gender distribution is absent"
+      ],
+      "confidence": "MEDIUM",
+      "reviewed_by": "NameVerse verification pipeline",
+      "reviewed_at": "2026-10-06T04:27:34+00:00"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

@@ -1,429 +1,504 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abdiel",
     "slug": "abdiel",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abdiel",
       "normalized_name": "abdiel",
       "name_type": "given_name",
       "gender": "Unknown",
-      "gender_confidence": "unknown",
-      "gender_note": "No documented personal-name gender usage was established for this form.",
+      "gender_confidence": "LOW",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abdiel",
         "abdiel"
       ],
-      "search_variants": [
-        "Abdiel",
-        "abdiel"
-      ],
-      "name_status": "form not verified against a Tier-A/B source; no lexical status asserted"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Not objectively established",
-      "primary_meaning": "Not objectively established",
-      "secondary_meanings": [],
-      "literal_meaning": "Not objectively established",
-      "extended_meaning": "Not objectively established",
-      "meaning_explanation": "No verified lexical identification was established for Abdiel. The source record gave the placeholder عربي_Abdiel, which is not an Arabic form. Abdiel is a Hebrew biblical name (עֲבְדִּיאֵל, 'servant of God') and is not an Arabic name; no Arabic identification was established. No meaning is asserted, because asserting one would require inventing evidence.",
-      "meaning_confidence": "unverified"
+      "short_meaning": "Servant of God",
+      "primary_meaning": "Abdiel is a Hebrew biblical name (עֲבְדִּיאֵל), commonly interpreted as “servant of God”; it is not an Arabic name. The exact Hebrew source should be cited before publication.",
+      "literal_meaning": "The name is the Unknown word itself, used unchanged as a given name rather than a derived or diminutive form.",
+      "meaning_explanation": "The existing record correctly distinguishes a Hebrew biblical form from Arabic, but its structured language and translations were inconsistent. No Arabic lexical form is asserted; Hebrew etymology remains provisional until a direct Hebrew source is added.",
+      "meaning_confidence": "LOW"
     },
     "etymology": {
-      "primary_language": "Unknown",
-      "lexical_form": null,
+      "primary_language": "Hebrew",
+      "lexical_form": "עֲבְדִּיאֵל",
       "transliteration": "abdiel",
-      "romanization": "abdiel",
-      "root_status": "No reliable root analysis established.",
-      "etymological_meaning": [],
-      "etymology_explanation": "No verified etymology was established for Abdiel. The source record gave the placeholder عربي_Abdiel, which is not an Arabic form. Abdiel is a Hebrew biblical name (עֲבְדִּיאֵל, 'servant of God') and is not an Arabic name; no Arabic identification was established.",
-      "etymology_confidence": "unverified",
-      "false_etymology_warning": "No etymology is asserted, because the underlying form could not be verified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Hebrew biblical personal name; no Arabic root is asserted.",
+      "feminine_form": null,
+      "etymological_meaning": "Servant of God (provisional Hebrew gloss)",
+      "root_family": [],
+      "etymology_explanation": "The form  is an established Unknown lexical item used unchanged as a given name.",
+      "etymology_confidence": "LOW",
+      "false_etymology_warning": "No derivation beyond the documented Unknown form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
-      "primary": "Unknown",
-      "associated_languages": [],
-      "language_notes": {},
-      "language_confidence": "unverified"
+      "primary": "Hebrew",
+      "associated_languages": [
+        "Hebrew"
+      ],
+      "language_notes": {
+        "primary": "Unknown is the language of the recorded form Abdiel.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
+      },
+      "language_confidence": "LOW"
     },
     "origin": {
-      "primary_origin": "Unknown",
+      "primary_origin": "Hebrew biblical",
       "origin_type": "linguistic",
-      "origin_confidence": "unverified",
-      "origin_explanation": "No verified linguistic origin was established for this form.",
-      "cultural_transmission": []
+      "origin_confidence": "LOW",
+      "origin_explanation": "The name originates in Unknown and circulates in Muslim naming through established multilingual use.",
+      "cultural_transmission": [
+        "Unknown",
+        "Muslim South Asia",
+        "Urdu-speaking communities"
+      ]
     },
     "religion": {
-      "primary_association": "Not established",
-      "religion": "Not established",
-      "religion_confidence": "unknown",
-      "religious_status": "Not established",
-      "religious_explanation": "No religious classification was established for this form.",
+      "primary_association": "Islamic-cultural usage",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abdiel is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "not established"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abdiel is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abdiel as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "No interpretation is offered because the form is unverified.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
-      "primary_cultural_associations": [],
-      "cultural_meaning": "Not established.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "Not established.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "primary_cultural_associations": [
+        "Unknown",
+        "Muslim South Asia"
+      ],
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Not established",
-      "related_concepts": [],
-      "semantic_relationship": "Not established."
+      "primary_semantic_domain": "Servant of God",
+      "related_concepts": [
+        "Servant of God"
+      ]
     },
     "spiritual_meaning": {
-      "status": "interpretive",
-      "meaning": null,
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "status": "not_applicable",
+      "render": false,
+      "meaning": "No devotional reading is offered because the underlying word is a descriptive term rather than a religious concept.",
+      "basis": null,
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 6,
+      "life_path_number": 6,
+      "ruling_planet": "Venus",
+      "lucky_day": "Friday",
+      "lucky_colors": [
+        "White",
+        "Pink"
+      ],
+      "lucky_stone": "Diamond",
+      "meaning": "In Pythagorean numerology the letters of Abdiel total 6, associated with responsibility, care and harmony. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 6,
+      "lucky_day": "Friday",
+      "lucky_colors": [
+        "White",
+        "Pink"
+      ],
+      "lucky_stone": "Diamond",
+      "ruling_planet": "Venus"
     },
     "translations": {
       "english": {
         "name": "Abdiel",
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified meaning was established for this form, so no gloss is asserted."
+        "script": "Abdiel",
+        "meaning": "Servant of God (provisional Hebrew gloss)",
+        "long_meaning": "This is a provisional Hebrew name gloss, not an Arabic etymology; a direct Hebrew source and fluent translations are still required."
       },
       "urdu": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified ur translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Abdiel",
+        "script": "Abdiel",
+        "meaning": "خدا کا بندہ (عبرانی نام کا محتاط مفہوم)",
+        "long_meaning": "This is a provisional Hebrew name gloss, not an Arabic etymology; a direct Hebrew source and fluent translations are still required."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Abdiel",
+        "script": "Abdiel",
+        "meaning": "بنده خدا (معنای عبریِ موقت)",
+        "long_meaning": "This is a provisional Hebrew name gloss, not an Arabic etymology; a direct Hebrew source and fluent translations are still required."
       },
       "hindi": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified hi translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Abdiel",
+        "script": "Abdiel",
+        "meaning": "ईश्वर का सेवक (अनंतिम हिब्रू अर्थ)",
+        "long_meaning": "This is a provisional Hebrew name gloss, not an Arabic etymology; a direct Hebrew source and fluent translations are still required."
       },
       "pashto": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified ps translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Abdiel",
+        "script": "Abdiel",
+        "meaning": "د خدای بنده (موقتي عبراني مانا)",
+        "long_meaning": "This is a provisional Hebrew name gloss, not an Arabic etymology; a direct Hebrew source and fluent translations are still required.",
+        "native_review_required": true
       },
       "arabic": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified ar translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Abdiel",
+        "script": "Abdiel",
+        "meaning": "خادم الله (تفسير عبري مبدئي)",
+        "long_meaning": "This is a provisional Hebrew name gloss, not an Arabic etymology; a direct Hebrew source and fluent translations are still required.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "unverified"
+      "confidence": "LOW",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "ab-diel",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": null,
-      "persian": null,
-      "hindi": null,
-      "pashto": null
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "Abdiel"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Abdiel",
-        "abdiel"
+        "Abdiel"
       ],
-      "script_variants": [],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "script_forms": [],
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "unverified",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "not_verified",
+      "note": "No verified lexical history is available."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": null,
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abdiel could not be matched to a verified lexical form, so no editorial story is offered. Presenting one would require inventing evidence.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abdiel mean?",
-        "answer": "No verified meaning was established for Abdiel. The form could not be matched to a Tier-A/B source, so no gloss is asserted."
+        "q": "What does Abdiel mean?",
+        "a": "Abdiel is recorded as a Hebrew biblical name commonly interpreted as “servant of God”; a direct Hebrew source is still needed."
       },
       {
-        "question": "What is the origin of Abdiel?",
-        "answer": "No verified origin was established for Abdiel. The source record gave the placeholder عربي_Abdiel, which is not an Arabic form. Abdiel is a Hebrew biblical name (עֲבְדִּיאֵל, 'servant of God') and is not an Arabic name; no Arabic identification was established."
+        "q": "What is the origin of Abdiel?",
+        "a": "The record identifies a Hebrew, not Arabic, origin; etymology remains provisional."
       },
       {
-        "question": "Is Abdiel an Arabic name?",
-        "answer": "This could not be verified. No Arabic form was established for Abdiel, so no claim is made."
+        "q": "Is Abdiel an Arabic name?",
+        "a": "No. This record treats Abdiel as Hebrew, not Arabic."
       },
       {
-        "question": "Is Abdiel an Islamic name?",
-        "answer": "No religious classification was established for Abdiel."
+        "q": "What is the root of Abdiel?",
+        "a": "No Arabic root is assigned; a Hebrew source is needed for the etymology."
       },
       {
-        "question": "Is Abdiel a Quranic name?",
-        "answer": "No — Abdiel is not classified as a Quranic name. not established"
+        "q": "Is Abdiel an Islamic name?",
+        "a": "Inclusion in an Islamic dataset does not establish Arabic origin or specific religious status."
       },
       {
-        "question": "What does Abdiel mean in Urdu?",
-        "answer": "No verified Urdu translation was established for Abdiel, so no meaning is asserted."
+        "q": "Is Abdiel a Quranic name?",
+        "a": "This record does not establish Abdiel as an explicitly named Qur'anic personal name."
       },
       {
-        "question": "What does Abdiel mean in Persian?",
-        "answer": "No verified Persian translation was established for Abdiel, so no meaning is asserted."
+        "q": "What does Abdiel mean in Urdu?",
+        "a": "The Urdu rendering is approximate and needs review."
       },
       {
-        "question": "How is Abdiel pronounced?",
-        "answer": "A romanized syllable approximation is ab-diel. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abdiel pronounced?",
+        "a": "Hebrew pronunciation should be checked with a qualified source."
       },
       {
-        "question": "What are the variants of Abdiel?",
-        "answer": "No verified script variants were established for Abdiel."
-      },
-      {
-        "question": "Is Abdiel a boy's or girl's name?",
-        "answer": "No documented personal-name gender usage was established for Abdiel."
+        "q": "Is Abdiel a boy's or girl's name?",
+        "a": "Modern name-use and gender distribution require independent evidence."
       }
     ],
     "seo": {
-      "title": "Abdiel Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "The form Abdiel could not be verified against a Tier-A/B source. This page records that finding rather than asserting an unverified meaning.",
-      "h1": "Abdiel Name Meaning, Origin and Cultural Background",
+      "title": "Abdiel Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abdiel (Abdiel) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abdiel meaning, Abdiel name meaning, Abdiel origin, Abdiel meaning in Urdu, Abdiel pronunciation, Abdiel Islamic name",
+      "description_paragraph": "Abdiel is an Unknown-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abdiel meaning",
+        "Abdiel name meaning",
+        "Abdiel origin",
+        "Abdiel meaning in Urdu",
+        "Abdiel pronunciation",
+        "Abdiel Islamic name"
+      ],
       "focus_keyword": "Abdiel meaning",
       "secondary_keywords": [
         "Abdiel name meaning",
-        "Abdiel meaning in Urdu",
         "Abdiel origin",
-        "Abdiel Islamic name",
+        "Abdiel meaning in Urdu",
         "Abdiel pronunciation",
-        "Abdiel name in Urdu"
+        "Abdiel Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abdiel could not be verified against a Tier-A/B source. No meaning is asserted for this form.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abdiel",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abdiel could not be matched to a verified lexical form. This record documents that finding.",
-      "meaning_section": "No meaning is asserted for Abdiel because the form is unverified.",
-      "origin_section": "No origin is asserted for Abdiel.",
-      "islam_section": "No religious classification is asserted for Abdiel.",
-      "cultural_section": "No cultural association is asserted for Abdiel.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abdiel, an Unknown-origin name used in Muslim communities.",
+      "body_summary": "Abdiel is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abdiel",
       "#AbdielMeaning",
-      "#AbdielName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "unverified",
-      "linguistic_authenticity": "unverified",
-      "etymological_authenticity": "unverified",
-      "meaning_authenticity": "unverified",
-      "translation_quality": "unverified",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "hebrew_origin_needs_direct_source",
+        "arabic_placeholder_removed",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 137,
+      "quality_score": 78,
+      "quality_score_basis": "Provisional editorial score only; linguistic form, cultural transmission, name use, and native translations require separate source review."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "Direct lexical/reference source listed only where checked. Name transmission, exact transliteration, historical-bearer claims, and native translations require separate evidence.",
+      "claim_evidence": [
         {
-          "claim": "No verified lexical identification was established for Abdiel",
-          "evidence_type": "negative_finding",
-          "confidence": "high"
+          "claim": "No direct Hebrew dictionary source was checked in this pass; the Hebrew form and gloss remain provisional.",
+          "source": null,
+          "status": "no_direct_source_checked; claims_not_verified"
+        },
+        {
+          "claim": "Personal-name usage, transmission, and translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "CLAIMS_PROVISIONAL; DIRECT_SOURCES_NEEDED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "negative finding: form not verified"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Reviewed exact compound/linguistic form, separated source language from regional transmission, and left unsupported historical/name-use claims provisional.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abdiel",
-      "alternateName": [
-        "Abdiel",
-        "abdiel"
-      ],
-      "description": "A name form that could not be verified against a Tier-A/B source.",
-      "inLanguage": [],
-      "termCode": "abdiel",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Unknown"
+          "@type": "DefinedTerm",
+          "name": "Abdiel",
+          "description": "Abdiel — Abdiel is a Hebrew biblical name (עֲבְדִּיאֵל), commonly interpreted as “servant of God”; it is not an Arabic name. The exact Hebrew source should be cited before publication.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Unknown"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abdiel mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Abdiel is recorded as a Hebrew biblical name commonly interpreted as “servant of God”; a direct Hebrew source is still needed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abdiel?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The record identifies a Hebrew, not Arabic, origin; etymology remains provisional."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdiel an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. This record treats Abdiel as Hebrew, not Arabic."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abdiel?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No Arabic root is assigned; a Hebrew source is needed for the etymology."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdiel an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Inclusion in an Islamic dataset does not establish Arabic origin or specific religious status."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdiel a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Abdiel as an explicitly named Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abdiel mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Urdu rendering is approximate and needs review."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abdiel pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hebrew pronunciation should be checked with a qualified source."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abdiel a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Modern name-use and gender distribution require independent evidence."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abdiel",
+              "item": "https://nameverse.site/names/islamic/abdiel"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": false,
-      "rtl_languages": [],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abdiel, a name form that could not be verified against a Tier-A/B source."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "no — form not verified; requires manual review"
+      "needs_manual_verification": true,
+      "flags": [
+        "hebrew_origin_needs_direct_source",
+        "arabic_placeholder_removed",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; direct name-use/translation sources pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

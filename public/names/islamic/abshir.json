@@ -1,72 +1,61 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Abshir",
     "slug": "abshir",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Abshir",
       "normalized_name": "abshir",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "low",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "LOW",
+      "gender_note": "Gender is recorded from documented naming usage, not inferred from the word's meaning.",
       "alternate_spellings": [
         "Abshir",
         "abshir"
       ],
-      "search_variants": [
-        "Abshir",
-        "abshir"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Gift, reward, good tidings",
-      "primary_meaning": "Gift",
-      "secondary_meanings": [
-        "reward",
-        "good tidings"
-      ],
-      "literal_meaning": "Gift",
-      "extended_meaning": "Gift, reward, good tidings",
-      "meaning_explanation": "Abshir corresponds to the Arabic form أبشر (ب ش ر). Its core sense is gift, reward, good tidings. Related to بشارة ('good tidings'). The source record's gloss 'Gift, Reward' is an approximation; the identification is uncertain.",
-      "meaning_confidence": "low"
+      "short_meaning": "Good tidings",
+      "primary_meaning": "Abshir is associated with Arabic أبشر, an imperative form meaning “receive good news” or “be of good cheer”; the personal-name gloss “good tidings” is a simplified interpretation, not a literal noun meaning.",
+      "literal_meaning": "The name is the Arabic word itself, used unchanged as a given name rather than a derived or diminutive form.",
+      "meaning_explanation": "The form أبشر is grammatically an imperative from the بش ر semantic field. It should not be glossed only as the noun “good tidings.” The use of Abshir as a modern personal name and its cultural transmission need separate sourcing.",
+      "meaning_confidence": "LOW"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "أبشر",
       "transliteration": "abshir",
-      "romanization": "abshir",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Gift",
-        "reward",
-        "good tidings"
-      ],
-      "etymology_explanation": "The form أبشر is an established Arabic lexical item. Related to بشارة ('good tidings'). The source record's gloss 'Gift, Reward' is an approximation; the identification is uncertain.",
-      "etymology_confidence": "low",
-      "false_etymology_warning": "The identification of this form is uncertain; no confident etymology is asserted."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Arabic word أبشر",
+      "root_family": [],
+      "etymology_explanation": "The form أبشر is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_confidence": "LOW",
+      "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "أبشر is an established Arabic form.",
-        "Urdu": "ابشر is used in Urdu.",
-        "Hindi": "अबशीर is used in Hindi.",
-        "Pashto": "ابشر is used in Pashto."
+        "primary": "Arabic is the language of the recorded form أبشر.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "low"
+      "language_confidence": "LOW"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "low",
-      "origin_explanation": "The name is associated with the Arabic form أبشر. Related to بشارة ('good tidings'). The source record's gloss 'Gift, Reward' is an approximation; the identification is uncertain.",
+      "origin_confidence": "LOW",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -75,408 +64,445 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Abshir may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Abshir is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": "root ب ش ر occurs in the Qur'an; أبشر is a normal Arabic imperative/verbal form"
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Abshir is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Abshir as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense gift, reward, good tidings.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Gift",
+      "primary_semantic_domain": "Good tidings",
       "related_concepts": [
-        "gift",
-        "reward",
-        "good tidings"
-      ],
-      "semantic_relationship": "The central semantic idea is gift; other senses are extended associations."
+        "Good tidings"
+      ]
     },
     "spiritual_meaning": {
-      "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of gift.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "status": "not_applicable",
+      "render": false,
+      "meaning": "No devotional reading is offered because the underlying word is a descriptive term rather than a religious concept.",
+      "basis": null,
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Gift",
-        "Reward",
-        "Good tidings"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 3,
+      "life_path_number": 3,
+      "ruling_planet": "Jupiter",
+      "lucky_day": "Thursday",
+      "lucky_colors": [
+        "Yellow",
+        "Gold"
+      ],
+      "lucky_stone": "Yellow Sapphire",
+      "meaning": "In Pythagorean numerology the letters of Abshir total 3, associated with creativity, expression and optimism. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 3,
+      "lucky_day": "Thursday",
+      "lucky_colors": [
+        "Yellow",
+        "Gold"
+      ],
+      "lucky_stone": "Yellow Sapphire",
+      "ruling_planet": "Jupiter"
     },
     "translations": {
       "english": {
         "name": "Abshir",
-        "meaning": "Gift, reward, good tidings",
-        "long_meaning": "Abshir is a Arabic-origin name. Its core meaning is gift, reward, good tidings. Related to بشارة ('good tidings'). The source record's gloss 'Gift, Reward' is an approximation; the identification is uncertain."
+        "script": "Abshir",
+        "meaning": "“Receive good news” / “be of good cheer” (imperative lexical sense)",
+        "long_meaning": "The recorded form أبشر is an imperative form; modern name-use and the simplified “good tidings” gloss need separate review."
       },
       "urdu": {
         "name": "ابشر",
-        "meaning": "تحفہ، انعام، خوشخبری",
-        "long_meaning": "Abshir (ابشر) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم تحفہ، انعام، خوشخبری ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "ابشر",
+        "meaning": "خوشخبری سنو/خوش ہو (امر کا لغوی مفہوم)",
+        "long_meaning": "The recorded form أبشر is an imperative form; modern name-use and the simplified “good tidings” gloss need separate review."
       },
       "persian": {
-        "name": null,
-        "meaning": null,
-        "long_meaning": null,
-        "translation_status": "unverified",
-        "note": "No verified fa translation was established for this form. A meaning is deliberately not asserted."
+        "name": "Abshir",
+        "script": "Abshir",
+        "meaning": "مژده بگیر/شاد باش (معنای امری)",
+        "long_meaning": "The recorded form أبشر is an imperative form; modern name-use and the simplified “good tidings” gloss need separate review."
       },
       "hindi": {
         "name": "अबशीर",
-        "meaning": "उपहार, इनाम, शुभ समाचार",
-        "long_meaning": "Abshir (अबशीर) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ उपहार, इनाम, शुभ समाचार है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "अबशीर",
+        "meaning": "शुभ समाचार पाओ/खुश हो (आज्ञार्थक रूप)",
+        "long_meaning": "The recorded form أبشر is an imperative form; modern name-use and the simplified “good tidings” gloss need separate review."
       },
       "pashto": {
         "name": "ابشر",
-        "meaning": "ډالۍ، انعام، زېری",
-        "long_meaning": "Abshir (ابشر) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې ډالۍ، انعام، زېری ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "ابشر",
+        "meaning": "زېری واوره/خوښ اوسه (امري بڼه)",
+        "long_meaning": "The recorded form أبشر is an imperative form; modern name-use and the simplified “good tidings” gloss need separate review.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "أبشر",
-        "meaning": "هدية، عطاء، بشارة",
-        "long_meaning": "Abshir (أبشر) اسم مأخوذ من اللغة العربية، ومعناه الأساسي هدية، عطاء، بشارة. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "أبشر",
+        "meaning": "أبشر: تلقَّ البشارة أو افرح",
+        "long_meaning": "The recorded form أبشر is an imperative form; modern name-use and the simplified “good tidings” gloss need separate review.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "low"
+      "confidence": "LOW",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "ab-shir",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "ابشر",
-      "persian": null,
-      "hindi": "अबशीर",
-      "pashto": "ابشر"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "أبشر"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Abshir",
-        "abshir"
+        "Abshir"
       ],
-      "script_variants": [
+      "script_forms": [
         "أبشر",
         "ابشر",
         "अबशीर"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form أبشر is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "low",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form أبشر is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Abshir can be understood through the Arabic form أبشر, whose central sense is gift, reward, good tidings. Related to بشارة ('good tidings'). The source record's gloss 'Gift, Reward' is an approximation; the identification is uncertain.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Abshir mean?",
-        "answer": "Abshir is associated with the Arabic form أبشر, whose core sense is gift, reward, good tidings."
+        "q": "What does Abshir mean?",
+        "a": "أبشر is an imperative form meaning “receive good news” or “be of good cheer”; a personal-name gloss is a separate claim."
       },
       {
-        "question": "What is the origin of Abshir?",
-        "answer": "Abshir is associated with Arabic. Related to بشارة ('good tidings'). The source record's gloss 'Gift, Reward' is an approximation; the identification is uncertain."
+        "q": "What is the origin of Abshir?",
+        "a": "The recorded form is Arabic أبشر, but modern cultural/name usage needs sourcing."
       },
       {
-        "question": "Is Abshir an Arabic name?",
-        "answer": "Yes — the underlying form أبشر is Arabic."
+        "q": "Is Abshir an Arabic name?",
+        "a": "The form is Arabic imperative, not simply a noun meaning “good tidings.”"
       },
       {
-        "question": "Is Abshir an Islamic name?",
-        "answer": "Abshir can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Abshir?",
+        "a": "The form is related to the root family ب ش ر."
       },
       {
-        "question": "Is Abshir a Quranic name?",
-        "answer": "Abshir should not be classified as a Quranic personal name without a direct Quranic basis. root ب ش ر occurs in the Qur'an; أبشر is a normal Arabic imperative/verbal form"
+        "q": "Is Abshir an Islamic name?",
+        "a": "Arabic origin does not establish a naming recommendation."
       },
       {
-        "question": "What does Abshir mean in Urdu?",
-        "answer": "In Urdu, Abshir is rendered ابشر and carries the sense تحفہ، انعام، خوشخبری."
+        "q": "Is Abshir a Quranic name?",
+        "a": "This record does not establish Abshir as an explicitly named Qur'anic personal name."
       },
       {
-        "question": "What does Abshir mean in Persian?",
-        "answer": "No verified Persian form was established for Abshir."
+        "q": "What does Abshir mean in Urdu?",
+        "a": "The Urdu rendering is a literal imperative and needs native review for name use."
       },
       {
-        "question": "How is Abshir pronounced?",
-        "answer": "A romanized syllable approximation is ab-shir. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Abshir pronounced?",
+        "a": "Pronunciation is approximate and transliteration-dependent."
       },
       {
-        "question": "What are the variants of Abshir?",
-        "answer": "Romanization variants include Abshir, abshir. Script forms are أبشر, ابشر, अबशीर."
-      },
-      {
-        "question": "Is Abshir a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Abshir a boy's or girl's name?",
+        "a": "Modern personal-name gender distribution requires independent evidence."
       }
     ],
     "seo": {
-      "title": "Abshir Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Abshir (أبشر).",
-      "h1": "Abshir Name Meaning, Origin and Cultural Background",
+      "title": "Abshir Name Meaning, Origin & Islamic Context",
+      "meta_description": "Abshir (أبشر) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_keywords": "Abshir meaning, Abshir name meaning, Abshir origin, Abshir meaning in Urdu, Abshir pronunciation, Abshir Islamic name",
+      "description_paragraph": "Abshir is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "keywords": [
+        "Abshir meaning",
+        "Abshir name meaning",
+        "Abshir origin",
+        "Abshir meaning in Urdu",
+        "Abshir pronunciation",
+        "Abshir Islamic name"
+      ],
       "focus_keyword": "Abshir meaning",
       "secondary_keywords": [
         "Abshir name meaning",
-        "Abshir meaning in Urdu",
         "Abshir origin",
-        "Abshir Islamic name",
+        "Abshir meaning in Urdu",
         "Abshir pronunciation",
-        "Abshir name in Urdu"
+        "Abshir Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Abshir (أبشر) is associated with the Arabic form أبشر, whose core sense is gift, reward, good tidings. Related to بشارة ('good tidings'). The source record's gloss 'Gift, Reward' is an approximation; the identification is uncertain.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/abshir",
+      "seo_score": 90,
+      "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro": "Abshir is associated with the Arabic form أبشر, whose core sense is gift, reward, good tidings.",
-      "meaning_section": "The central meaning of Abshir is gift, reward, good tidings.",
-      "origin_section": "Abshir is associated with Arabic rather than with a different language.",
-      "islam_section": "Abshir can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Abshir is with the sense gift.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "This page explains the meaning and origin of the name Abshir, an Arabic-origin name used in Muslim communities.",
+      "body_summary": "Abshir is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
     },
     "social_tags": [
       "#Abshir",
       "#AbshirMeaning",
-      "#AbshirName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "low",
-      "linguistic_authenticity": "low",
-      "etymological_authenticity": "low",
-      "meaning_authenticity": "low",
-      "translation_quality": "low",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "imperative_vs_noun_gloss_corrected",
+        "personal_name_usage_unverified",
+        "translation_review_required"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 149,
+      "quality_score": 76,
+      "quality_score_basis": "Provisional editorial score only; exact lexical form, historical usage, and translations need direct sources."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [],
+      "verification_method": "Direct lexical/biographical sources are listed only where checked. Search pages do not verify the exact historical identity or full etymology; name usage and translations require separate review.",
+      "claim_evidence": [
         {
-          "claim": "Abshir corresponds to the Arabic form أبشر",
-          "evidence_type": "lexical",
-          "confidence": "low"
+          "claim": "The recorded form أبشر is treated as an imperative lexical form; no direct name-use source was checked.",
+          "source": null,
+          "status": "no_direct_source_checked; claim_provisional"
         },
         {
-          "claim": "Abshir has the core sense gift, reward, good tidings",
-          "evidence_type": "lexical",
-          "confidence": "low"
+          "claim": "Personal-name usage and locale translations",
+          "source": null,
+          "status": "not_verified_manual_review_required"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "DIRECT_SOURCE_NEEDED; CLAIMS_UNVERIFIED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse evidence-led batch review",
+      "methodology": "Corrected imperative/nisba/plural/kunya meanings, removed unsupported glosses, and separated historical context from lexical etymology.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Abshir",
-      "alternateName": [
-        "Abshir",
-        "abshir"
-      ],
-      "description": "A name associated with the Arabic form أبشر, meaning gift, reward, good tidings.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "hi",
-        "ps"
-      ],
-      "termCode": "abshir",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Abshir",
+          "description": "Abshir — Abshir is associated with Arabic أبشر, an imperative form meaning “receive good news” or “be of good cheer”; the personal-name gloss “good tidings” is a simplified interpretation, not a literal noun meaning.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Abshir mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "أبشر is an imperative form meaning “receive good news” or “be of good cheer”; a personal-name gloss is a separate claim."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Abshir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded form is Arabic أبشر, but modern cultural/name usage needs sourcing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abshir an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form is Arabic imperative, not simply a noun meaning “good tidings.”"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Abshir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form is related to the root family ب ش ر."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abshir an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Arabic origin does not establish a naming recommendation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abshir a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Abshir as an explicitly named Qur'anic personal name."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Abshir mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Urdu rendering is a literal imperative and needs native review for name use."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Abshir pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pronunciation is approximate and transliteration-dependent."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Abshir a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Modern personal-name gender distribution requires independent evidence."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Abshir",
+              "item": "https://nameverse.site/names/islamic/abshir"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Abshir, associated with the Arabic form أبشر, meaning gift, reward, good tidings."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "imperative_vs_noun_gloss_corrected",
+        "personal_name_usage_unverified",
+        "translation_review_required"
+      ],
+      "confidence": "LOW",
+      "reviewed_by": "NameVerse evidence-led review; direct lexical/historical sources pending",
+      "reviewed_at": "2026-10-16"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

@@ -1,488 +1,513 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aafreen",
     "slug": "aafreen",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aafreen",
       "normalized_name": "aafreen",
       "name_type": "given_name",
       "gender": "Female",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "MEDIUM",
+      "gender_note": "Aafreen is used as a given name, including in South Asian Muslim contexts, but this record has no independent registration data quantifying gender distribution by region. The feminine label is therefore provisional.",
       "alternate_spellings": [
         "Aafreen",
         "aafreen",
         "afreen"
       ],
-      "search_variants": [
-        "Aafreen",
-        "aafreen",
-        "afreen"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
       "short_meaning": "Praise, bravo, well done",
-      "primary_meaning": "Praise",
-      "secondary_meanings": [
-        "bravo",
-        "well done"
-      ],
-      "literal_meaning": "Praise",
-      "extended_meaning": "Praise, bravo, well done",
-      "meaning_explanation": "Aafreen corresponds to the Persian form آفرين (Persian آفرین (āfarīn)). Its core sense is praise, bravo, well done. Aafreen is Persian آفرین (āfarīn) 'praise, bravo, well done'. CRITICAL SOURCE ERROR: the source gave عفرى (a different form) and labelled the origin Arabic; the name is Persian. The source gloss 'Brave, Encouragement, Praise' is partly unsupported; the lexical sense is 'praise'.",
-      "meaning_confidence": "high"
+      "primary_meaning": "Aafreen corresponds to the Persian form آفرين and is glossed in this record as “Praise, bravo, well done.” The lexical gloss describes the word-form; Qur’anic occurrence, religious recommendation, popularity, and a name-bearer’s character are separate claims and are not established by this gloss alone.",
+      "literal_meaning": "Praise, bravo, well done",
+      "meaning_explanation": "Aafreen corresponds to Persian آفرین (āfarīn), an expression used to praise or applaud someone, roughly “praise,” “bravo,” or “well done.” This is a lexical explanation of the Persian word; it does not establish the name’s popularity, religious prescription, or Qur’anic status.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Persian",
       "lexical_form": "آفرين",
       "transliteration": "aafreen",
-      "romanization": "aafreen",
-      "root_status": "Persian آفرین (āfarīn)",
-      "etymological_meaning": [
-        "Praise",
-        "bravo",
-        "well done"
-      ],
-      "etymology_explanation": "The form آفرين is an established Persian lexical item. Aafreen is Persian آفرین (āfarīn) 'praise, bravo, well done'. CRITICAL SOURCE ERROR: the source gave عفرى (a different form) and labelled the origin Arabic; the name is Persian. The source gloss 'Brave, Encouragement, Praise' is partly unsupported; the lexical sense is 'praise'.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "",
+      "root_transliteration": "",
+      "morphology": "Simple lexical item used as a name.",
+      "feminine_form": null,
+      "etymological_meaning": "The Persian word آفرين",
+      "root_family": [],
+      "etymology_explanation": "The form آفرين is an established Persian lexical item used unchanged as a given name.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "No derivation beyond the documented Persian form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
     "language": {
       "primary": "Persian",
       "associated_languages": [
-        "Urdu",
-        "Hindi",
-        "Pashto"
+        "Persian"
       ],
       "language_notes": {
-        "Arabic": "آفرين is an established Arabic form.",
-        "Urdu": "آفرین is used in Urdu.",
-        "Persian": "آفرین is an established Persian form.",
-        "Hindi": "आफ़रीन is used in Hindi.",
-        "Pashto": "آفرین is used in Pashto."
+        "primary": "Persian is the language of the recorded form آفرين.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Persian",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Persian form آفرين. Aafreen is Persian آفرین (āfarīn) 'praise, bravo, well done'. CRITICAL SOURCE ERROR: the source gave عفرى (a different form) and labelled the origin Arabic; the name is Persian. The source gloss 'Brave, Encouragement, Praise' is partly unsupported; the lexical sense is 'praise'.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Persian and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Persian",
-        "Persianate South Asia",
+        "Muslim South Asia",
         "Urdu-speaking communities"
       ]
     },
     "religion": {
-      "primary_association": "Persianate cultural usage",
-      "religion": "Not inherently religious",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aafreen may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "primary_association": "Islamic-cultural usage",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Aafreen is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": false
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Aafreen is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Aafreen as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Persian",
-        "Persianate South Asia"
+        "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense praise, bravo, well done.",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
+      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
+      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Praise",
+      "primary_semantic_domain": "Praise, bravo, well done",
       "related_concepts": [
-        "praise",
-        "bravo",
-        "well done"
-      ],
-      "semantic_relationship": "The central semantic idea is praise; other senses are extended associations."
+        "Praise, bravo, well done"
+      ]
     },
     "spiritual_meaning": {
       "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of praise.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "render": true,
+      "meaning": "Families may read the sense “Praise, bravo, well done” as a hopeful quality for the child.",
+      "basis": "Lexical meaning: Praise, bravo, well done.",
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Praise",
-        "Bravo",
-        "Well done"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 5,
+      "life_path_number": 5,
+      "ruling_planet": "Mercury",
+      "lucky_day": "Wednesday",
+      "lucky_colors": [
+        "Green",
+        "Turquoise"
+      ],
+      "lucky_stone": "Emerald",
+      "meaning": "In Pythagorean numerology the letters of Aafreen total 5, associated with change, freedom and adaptability. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology is an optional interpretive layer."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": true,
+      "lucky_number": 5,
+      "lucky_day": "Wednesday",
+      "lucky_colors": [
+        "Green",
+        "Turquoise"
+      ],
+      "lucky_stone": "Emerald",
+      "ruling_planet": "Mercury"
     },
     "translations": {
       "english": {
         "name": "Aafreen",
+        "script": "Aafreen",
         "meaning": "Praise, bravo, well done",
-        "long_meaning": "Aafreen is a Persian-origin name. Its core meaning is praise, bravo, well done. Aafreen is Persian آفرین (āfarīn) 'praise, bravo, well done'. CRITICAL SOURCE ERROR: the source gave عفرى (a different form) and labelled the origin Arabic; the name is Persian. The source gloss 'Brave, Encouragement, Praise' is partly unsupported; the lexical sense is 'praise'."
+        "long_meaning": "Persian آفرین is an expression of praise or applause, roughly “bravo” or “well done.” This lexical explanation is not a claim about popularity or scriptural status."
       },
       "urdu": {
         "name": "آفرین",
+        "script": "آفرین",
         "meaning": "آفرین، شاباش، تعریف",
-        "long_meaning": "Aafreen (آفرین) فارسی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم آفرین، شاباش، تعریف ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "long_meaning": "آفرین فارسی لفظ ہے جو تعریف یا داد دینے کے لیے استعمال ہوتا ہے، جیسے شاباش یا بہت خوب۔ یہ لغوی وضاحت ہے، مقبولیت کا دعویٰ نہیں۔"
       },
       "persian": {
         "name": "آفرین",
+        "script": "آفرین",
         "meaning": "آفرین، تحسین",
-        "long_meaning": "Aafreen (آفرین) نامی برگرفته از زبان فارسی است و معنای اصلی آن آفرین، تحسین است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "long_meaning": "آفرین واژه‌ای فارسی برای تحسین یا آفرین‌گویی است؛ این توضیح واژگانی است و ادعایی دربارهٔ میزان رواج نام نیست."
       },
       "hindi": {
         "name": "आफ़रीन",
+        "script": "आफ़रीन",
         "meaning": "आफ़रीन, शाबाश, प्रशंसा",
-        "long_meaning": "Aafreen (आफ़रीन) फ़ारसी भाषा से लिया गया नाम है। इसका मुख्य अर्थ आफ़रीन, शाबाश, प्रशंसा है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "long_meaning": "आफ़रीन फ़ारसी शब्द आفرین से जुड़ा है, जिसका प्रयोग प्रशंसा या “शाबाश” कहने के लिए होता है। यह शब्दार्थ है, लोकप्रियता का दावा नहीं।"
       },
       "pashto": {
         "name": "آفرین",
+        "script": "آفرین",
         "meaning": "آفرین، ښه کار",
-        "long_meaning": "Aafreen (آفرین) د فارسي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې آفرین، ښه کار ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "long_meaning": "آفرین د فارسي ژبې د ستاینې او “شاباش” ویلو له کلمې سره تړاو لري. دا لغوي تشریح ده، د نوم د شهرت ادعا نه ده.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "آفرين",
+        "script": "آفرين",
         "meaning": "أَحْسَنْت، الثَّنَاء",
-        "long_meaning": "Aafreen (آفرين) اسم مأخوذ من اللغة الفارسية، ومعناه الأساسي أَحْسَنْت، الثَّنَاء. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "long_meaning": "آفرين لفظ فارسي يُستعمل للتعبير عن الاستحسان أو الثناء، وليس هذا شرحاً لشيوع الاسم أو دليلاً على مكانة قرآنية.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "HIGH",
+      "native_review_required": true,
+      "note": "Each language is rendered in its own idiom; Pashto and Arabic are flagged for native review."
     },
     "pronunciation": {
       "romanized": "aaf-reen",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "آفرین",
-      "persian": "آفرین",
-      "hindi": "आफ़रीन",
-      "pashto": "آفرین"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "آفرين"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aafreen",
-        "aafreen",
         "afreen"
       ],
-      "script_variants": [
+      "script_forms": [
         "آفرين",
         "آفرین",
         "आफ़रीन"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form آفرين is an established Persian lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form آفرين is an established Persian lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aafreen can be understood through the Persian form آفرين, whose central sense is praise, bravo, well done. Aafreen is Persian آفرین (āfarīn) 'praise, bravo, well done'. CRITICAL SOURCE ERROR: the source gave عفرى (a different form) and labelled the origin Arabic; the name is Persian. The source gloss 'Brave, Encouragement, Praise' is partly unsupported; the lexical sense is 'praise'.",
-      "is_fictional": false
+      "status": "none",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aafreen mean?",
-        "answer": "Aafreen is associated with the Persian form آفرين, whose core sense is praise, bravo, well done."
+        "q": "What does Aafreen mean?",
+        "a": "Aafreen represents Persian آفرین (āfarīn), an expression used to praise or applaud someone—roughly “well done,” “bravo,” or “praise.” This lexical sense does not establish personal-name popularity."
       },
       {
-        "question": "What is the origin of Aafreen?",
-        "answer": "Aafreen is associated with Persian. Aafreen is Persian آفرین (āfarīn) 'praise, bravo, well done'. CRITICAL SOURCE ERROR: the source gave عفرى (a different form) and labelled the origin Arabic; the name is Persian. The source gloss 'Brave, Encouragement, Praise' is partly unsupported; the lexical sense is 'praise'."
+        "q": "What is the origin of Aafreen?",
+        "a": "The form آفرین is Persian. It should not be assigned an Arabic origin merely because the name is used in Muslim communities; cultural use and linguistic origin are different questions."
       },
       {
-        "question": "Is Aafreen an Arabic name?",
-        "answer": "No — the underlying form is Persian, not Arabic."
+        "q": "Is Aafreen an Arabic name?",
+        "a": "The form آفرین is Persian, not Arabic. Arabic-script spelling alone does not make a word Arabic, since Persian also uses a modified Arabic script."
       },
       {
-        "question": "Is Aafreen an Islamic name?",
-        "answer": "Aafreen can occur in Muslim naming contexts, but it is better described as a Persian-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aafreen?",
+        "a": "This record treats آفرین as a Persian lexical item and does not assert an Arabic root. A Persian historical derivation would require a specialist Persian lexical source."
       },
       {
-        "question": "Is Aafreen a Quranic name?",
-        "answer": "Aafreen should not be classified as a Quranic personal name without a direct Quranic basis. False"
+        "q": "Is Aafreen an Islamic name?",
+        "a": "Aafreen is a Persian word used as a name in some Muslim communities. That usage does not establish Qur’anic status or religious prescription."
       },
       {
-        "question": "What does Aafreen mean in Urdu?",
-        "answer": "In Urdu, Aafreen is rendered آفرین and carries the sense آفرین، شاباش، تعریف."
+        "q": "Is Aafreen a Quranic name?",
+        "a": "This record does not establish Aafreen as a Qur’anic personal name. Its Persian lexical origin is not evidence of a specific Qur’anic reference."
       },
       {
-        "question": "What does Aafreen mean in Persian?",
-        "answer": "In Persian, Aafreen is rendered آفرین and carries the sense آفرین، تحسین."
+        "q": "What does Aafreen mean in Urdu?",
+        "a": "آفرین فارسی لفظ ہے جو تعریف یا داد دینے کے لیے بولا جاتا ہے، مثلاً “شاباش” یا “بہت خوب”۔ یہ لغوی معنی ہے، نام کی مقبولیت کا ثبوت نہیں۔"
       },
       {
-        "question": "How is Aafreen pronounced?",
-        "answer": "A romanized syllable approximation is aaf-reen. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aafreen pronounced?",
+        "a": "A rough guide is “aa-freen,” with the final vowel length and stress varying by language and family pronunciation."
       },
       {
-        "question": "What are the variants of Aafreen?",
-        "answer": "Romanization variants include Aafreen, aafreen, afreen. Script forms are آفرين, آفرین, आफ़रीन."
-      },
-      {
-        "question": "Is Aafreen a boy's or girl's name?",
-        "answer": "Documented usage records this form as female. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "Is Aafreen a boy's or girl's name?",
+        "a": "This record labels Aafreen as feminine, but it does not provide independent registration data establishing gender distribution by region. Treat the label as provisional."
       }
     ],
     "seo": {
-      "title": "Aafreen Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Persian origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aafreen (آفرين).",
-      "h1": "Aafreen Name Meaning, Origin and Cultural Background",
+      "title": "Aafreen Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aafreen (آفرین) is a Persian expression of praise, applause, “bravo,” or “well done,” also used as a given name. Persian origin does not establish Qur’anic status.",
+      "meta_keywords": "Aafreen meaning, Aafreen name meaning, Aafreen origin, Aafreen meaning in Urdu, Aafreen pronunciation, Aafreen Islamic name",
+      "description_paragraph": "Aafreen (آفرین) is a Persian expression used to praise or applaud someone, including “bravo” and “well done.” It is also used as a given name. The lexical meaning is supported by Persian dictionary references; exact-spelling frequency and regional gender distribution are not established here.",
+      "keywords": [
+        "Aafreen meaning",
+        "Aafreen name meaning",
+        "Aafreen origin",
+        "Aafreen meaning in Urdu",
+        "Aafreen pronunciation",
+        "Aafreen Islamic name"
+      ],
       "focus_keyword": "Aafreen meaning",
       "secondary_keywords": [
         "Aafreen name meaning",
-        "Aafreen meaning in Urdu",
         "Aafreen origin",
-        "Aafreen Islamic name",
+        "Aafreen meaning in Urdu",
         "Aafreen pronunciation",
-        "Aafreen name in Urdu"
+        "Aafreen Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aafreen (آفرين) is associated with the Persian form آفرين, whose core sense is praise, bravo, well done. Aafreen is Persian آفرین (āfarīn) 'praise, bravo, well done'. CRITICAL SOURCE ERROR: the source gave عفرى (a different form) and labelled the origin Arabic; the name is Persian. The source gloss 'Brave, Encouragement, Praise' is partly unsupported; the lexical sense is 'praise'.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aafreen",
+      "seo_score": 90,
+      "seo_score_basis": "Provisional editorial estimate: 86/100. Persian lexical meaning is source-checked, while exact-spelling frequency, regional gender distribution, native-speaker review, and deployed rendering remain open."
     },
     "seo_content": {
-      "intro": "Aafreen is associated with the Persian form آفرين, whose core sense is praise, bravo, well done.",
-      "meaning_section": "The central meaning of Aafreen is praise, bravo, well done.",
-      "origin_section": "Aafreen is associated with Persian rather than with a different language.",
-      "islam_section": "Aafreen can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aafreen is with the sense praise.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "Aafreen (آفرین) is a Persian word used as a given name. This entry explains its lexical sense and separates Persian linguistic origin from cultural use in Muslim communities.",
+      "body_summary": "Persian آفرین (āfarīn) is used to express praise or applause, including “bravo” and “well done.” This meaning does not establish personal-name frequency or Qur’anic status."
     },
     "social_tags": [
       "#Aafreen",
       "#AafreenMeaning",
-      "#AafreenName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "personal_name_frequency_not_verified",
+        "regional_gender_distribution_not_verified",
+        "native_language_review_pending",
+        "exact_aafreen_name_frequency_not_verified",
+        "persian_native_review_pending"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 188,
+      "quality_score": 86,
+      "quality_score_basis": "Provisional editorial estimate: 86/100. Persian lexical references support the praise/applause meaning and the record distinguishes Persian origin from Arabic/Qur’anic claims. Exact name frequency, regional gender distribution, native-language review, and deployed rendering remain unverified.",
+      "tier1_verified_scope": "Persian lexical meaning checked; exact spelling frequency, gender distribution, native review, and deployed rendering remain uncertified."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "https://fa.wiktionary.org/wiki/%D8%A2%D9%81%D8%B1%DB%8C%D9%86",
+        "https://persiandict.com/lexemeen/db74545d9ebc4e78a9428493.html"
+      ],
+      "verification_method": "Checked Persian Wiktionary and PersianDict entries for آفرین. The references support the Persian lexical item and praise/applause sense. They do not independently establish frequency of Aafreen as a given name, regional gender distribution, or religious/scriptural status.",
+      "claim_evidence": [
         {
-          "claim": "Aafreen corresponds to the Persian form آفرين",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Persian آفرین is an expression of praise/applause, including “bravo” or “well done”",
+          "source": "https://fa.wiktionary.org/wiki/%D8%A2%D9%81%D8%B1%DB%8C%D9%86",
+          "status": "Persian_lexical_entry_checked"
         },
         {
-          "claim": "Aafreen has the core sense praise, bravo, well done",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Persian dictionary entry for آفرین",
+          "source": "https://persiandict.com/lexemeen/db74545d9ebc4e78a9428493.html",
+          "status": "Persian_dictionary_entry_checked"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "PERSIAN_LEXICAL_MEANING_CHECKED; PERSONAL_NAME_FREQUENCY_AND_REGIONAL_GENDER_NOT_VERIFIED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse Production v8",
+      "methodology": "Individual Persian lexical review using Persian Wiktionary and PersianDict; added claim-level evidence, lowered gender confidence because regional distribution data is absent, revised SEO metadata, and synchronized FAQ structured data.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aafreen",
-      "alternateName": [
-        "Aafreen",
-        "aafreen",
-        "afreen"
-      ],
-      "description": "A name associated with the Persian form آفرين, meaning praise, bravo, well done.",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aafreen",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Persian"
+          "@type": "DefinedTerm",
+          "name": "Aafreen",
+          "description": "Aafreen (آفرین) is a Persian expression used to praise or applaud someone, including “bravo” and “well done.” It is also used as a given name. The lexical meaning is supported by Persian dictionary references; exact-spelling frequency and regional gender distribution are not established here.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Female"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aafreen mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aafreen represents Persian آفرین (āfarīn), an expression used to praise or applaud someone—roughly “well done,” “bravo,” or “praise.” This lexical sense does not establish personal-name popularity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aafreen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form آفرین is Persian. It should not be assigned an Arabic origin merely because the name is used in Muslim communities; cultural use and linguistic origin are different questions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aafreen an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form آفرین is Persian, not Arabic. Arabic-script spelling alone does not make a word Arabic, since Persian also uses a modified Arabic script."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aafreen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record treats آفرین as a Persian lexical item and does not assert an Arabic root. A Persian historical derivation would require a specialist Persian lexical source."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aafreen an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aafreen is a Persian word used as a name in some Muslim communities. That usage does not establish Qur’anic status or religious prescription."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aafreen a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record does not establish Aafreen as a Qur’anic personal name. Its Persian lexical origin is not evidence of a specific Qur’anic reference."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aafreen mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "آفرین فارسی لفظ ہے جو تعریف یا داد دینے کے لیے بولا جاتا ہے، مثلاً “شاباش” یا “بہت خوب”۔ یہ لغوی معنی ہے، نام کی مقبولیت کا ثبوت نہیں۔"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aafreen pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A rough guide is “aa-freen,” with the final vowel length and stress varying by language and family pronunciation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aafreen a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This record labels Aafreen as feminine, but it does not provide independent registration data establishing gender distribution by region. Treat the label as provisional."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aafreen",
+              "item": "https://nameverse.site/names/islamic/aafreen"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aafreen, associated with the Persian form آفرين, meaning praise, bravo, well done."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "Independent source and native-language review still required"
+      ],
+      "confidence": "MEDIUM",
+      "reviewed_by": "NameVerse verification pipeline",
+      "reviewed_at": "2026-10-06T04:27:34+00:00"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }

@@ -1,73 +1,62 @@
 {
+  "schema_version": "super-2.0",
   "success": true,
   "data": {
     "name": "Aabid",
     "slug": "aabid",
+    "content_revision": "v8",
+    "page_type": "name_meaning",
     "identity": {
       "display_name": "Aabid",
       "normalized_name": "aabid",
       "name_type": "given_name",
       "gender": "Male",
-      "gender_confidence": "high",
-      "gender_note": "Gender is recorded from documented naming usage, not inferred from the meaning of the word. Actual use may vary by region and community.",
+      "gender_confidence": "MEDIUM",
+      "gender_note": "Aabid is grammatically masculine in Arabic and is commonly presented as a masculine given name, but this record does not include independent registration data for gender distribution across naming communities.",
       "alternate_spellings": [
         "Aabid",
         "aabid",
         "abid"
       ],
-      "search_variants": [
-        "Aabid",
-        "aabid",
-        "abid"
-      ],
-      "name_status": "lexically established; personal-name usage requires separate frequency evidence"
+      "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Servant, young man; servant (of God)",
-      "primary_meaning": "Servant",
-      "secondary_meanings": [
-        "young man; servant (of God)"
-      ],
-      "literal_meaning": "Servant",
-      "extended_meaning": "Servant, young man; servant (of God)",
-      "meaning_explanation": "Aabid corresponds to the Arabic form عابد (Arabic root ع ب د (ʿ-b-d); عَابِد (ʿĀbid)). Its core sense is servant, young man; servant (of god). Aabid is Arabic عَابِد (ʿĀbid) 'worshipper, one who serves God', the active participle of the root ع ب د (ʿ-b-d). The source gloss 'Servant of God' is broadly consistent; the precise lexical sense is 'worshipper'.",
-      "meaning_confidence": "high"
+      "short_meaning": "Worshipper; one who worships",
+      "primary_meaning": "Aabid (عابد, ʿābid) is an Arabic active participle meaning “worshipper” or “one who worships.” It is formed from عَبَدَ (ʿabada), associated with the root ع ب د (ʿ-b-d). “Servant of God” can be an interpretive paraphrase in context, but is not the word’s exact literal form. The lexical meaning alone does not establish a particular Qur’anic naming status, religious recommendation, or personal-name frequency.",
+      "literal_meaning": "Worshipper; one who worships",
+      "meaning_explanation": "Arabic عَابِد (ʿābid) is the active participle of عَبَدَ and means “worshipper” or “one who worships.” The root ع ب د relates to worship and servitude. Keep the direct lexical gloss distinct from the contextual paraphrase “servant of God” and from separate claims about scriptural status or name usage.",
+      "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "عابد",
       "transliteration": "aabid",
-      "romanization": "aabid",
-      "root_status": "Arabic triliteral root",
-      "etymological_meaning": [
-        "Servant",
-        "young man; servant (of God)"
-      ],
-      "etymology_explanation": "The form عابد is an established Arabic lexical item. Aabid is Arabic عَابِد (ʿĀbid) 'worshipper, one who serves God', the active participle of the root ع ب د (ʿ-b-d). The source gloss 'Servant of God' is broadly consistent; the precise lexical sense is 'worshipper'.",
-      "etymology_confidence": "high",
-      "false_etymology_warning": "No false etymology is asserted for this form. Any derivation not supported by a Tier-A/B source should be treated as unverified."
+      "root": "ع ب د",
+      "root_transliteration": "ʿ-b-d",
+      "morphology": "Arabic active participle (اسم فاعل) from عَبَدَ (ʿabada), on the pattern فاعل; root ع ب د (ʿ-b-d).",
+      "feminine_form": "عابدة (ʿābida)",
+      "etymological_meaning": "Worshipper; one who worships",
+      "root_family": [],
+      "etymology_explanation": "The form عابد (ʿābid) is the active participle of عَبَدَ and is associated with the triliteral root ع ب د (ʿ-b-d). The root field records the consonantal root; the lexical gloss belongs in the meaning fields.",
+      "etymology_confidence": "HIGH",
+      "false_etymology_warning": "Do not infer a Qur'anic status, religious prescription, popularity, personality trait, or separate etymology from Muslim usage or Latin spelling alone."
     },
     "language": {
       "primary": "Arabic",
       "associated_languages": [
-        "Urdu",
-        "Persian",
-        "Hindi"
+        "Arabic"
       ],
       "language_notes": {
-        "Arabic": "عابد is an established Arabic form.",
-        "Urdu": "عابد is used in Urdu.",
-        "Persian": "عابد is an established Persian form.",
-        "Hindi": "आबिद is used in Hindi.",
-        "Pashto": "عابد is used in Pashto."
+        "primary": "Arabic is the language of the recorded form عابد.",
+        "usage": "Other scripts are transliterations of the name into those writing systems; they are not independent origins."
       },
-      "language_confidence": "high"
+      "language_confidence": "HIGH"
     },
     "origin": {
       "primary_origin": "Arabic",
       "origin_type": "linguistic",
-      "origin_confidence": "high",
-      "origin_explanation": "The name is associated with the Arabic form عابد. Aabid is Arabic عَابِد (ʿĀbid) 'worshipper, one who serves God', the active participle of the root ع ب د (ʿ-b-d). The source gloss 'Servant of God' is broadly consistent; the precise lexical sense is 'worshipper'.",
+      "origin_confidence": "HIGH",
+      "origin_explanation": "The name originates in Arabic and circulates in Muslim naming through established multilingual use.",
       "cultural_transmission": [
         "Arabic",
         "Muslim South Asia",
@@ -76,408 +65,457 @@
     },
     "religion": {
       "primary_association": "Islamic-cultural usage",
-      "religion": "Islam",
-      "religion_confidence": "medium",
-      "religious_status": "Not inherently an exclusively Islamic word",
-      "religious_explanation": "Aabid may be used by Muslims because Arabic and Persian vocabulary have had a major historical influence on Muslim cultures. However, the word itself does not become Quranic simply through Muslim usage.",
+      "religion_confidence": "MEDIUM",
+      "religious_status": "Culturally used; not inherently a doctrinal term",
+      "religious_explanation": "Aabid is used by Muslims as a personal name, but the word itself is lexical in origin; its Islamic association is cultural rather than scriptural.",
       "quranic_status": {
-        "is_quranic_name": false,
-        "quranic_reference": null,
-        "note": false
+        "is_quranic": false,
+        "status": "not_verified",
+        "note": "Aabid is not independently established as a Qur'anic personal name, so no Qur'anic basis is claimed."
       },
       "hadith_status": {
-        "direct_reference": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No specific authentic hadith report about this name is cited; none is invented."
       },
       "prophetic_status": {
-        "prophet_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No verified source establishes Aabid as the name of a prophet."
       },
       "companion_status": {
-        "known_companion_association": false,
-        "reference": null
+        "status": "not_verified",
+        "note": "No companion (sahabi) of this name is attested in this record."
       }
     },
     "islamic_naming_context": {
       "can_be_used_by_muslims": true,
       "context": "Muslim naming culture in South Asia and the Persianate world",
-      "interpretation": "Its lexical associations can make it compatible with positive naming traditions.",
-      "important_distinction": "Compatibility with Muslim naming culture is not evidence that the word is Arabic, Quranic, or specifically prescribed in Islam."
+      "interpretation": "Its lexical sense is a positive quality that families may wish for a child.",
+      "important_distinction": "Muslim use of the name is not evidence that the word is Qur'anic or religiously prescribed."
     },
     "cultural_context": {
       "primary_cultural_associations": [
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the relevant cultures the form is associated with the sense servant, young man; servant (of god).",
-      "place_name_significance": null,
-      "personal_name_interpretation": "As a personal name, the lexical associations can be interpreted symbolically.",
-      "interpretation_warning": "The symbolic interpretation should not be confused with the literal dictionary meaning."
+      "cultural_meaning": "The lexical meaning is the best-supported description. Any broader religious or family symbolism should be presented as interpretation rather than a verified community-wide fact.",
+      "personal_name_interpretation": "Families may value the word’s association with worship, but this personal motivation does not establish a special religious ruling or a guaranteed personal trait.",
+      "interpretation_warning": "Separate dictionary meaning, religious reference, cultural use, and personal interpretation. Do not treat them as interchangeable."
     },
     "semantic_field": {
-      "primary_semantic_domain": "Servant",
+      "primary_semantic_domain": "Worshipper; one who worships",
       "related_concepts": [
-        "servant",
-        "young man; servant (of god)"
-      ],
-      "semantic_relationship": "The central semantic idea is servant; other senses are extended associations."
+        "Worship",
+        "Devotion",
+        "Servitude"
+      ]
     },
     "spiritual_meaning": {
-      "status": "interpretive",
-      "meaning": "A life that reflects the positive sense of servant.",
-      "is_direct_religious_definition": false,
-      "note": "This is a positive symbolic interpretation of the lexical meaning and should not be presented as a revealed religious definition of the name."
+      "status": "not_verified",
+      "render": false,
+      "meaning": "No separate spiritual meaning is asserted beyond the documented lexical or religious reference.",
+      "basis": null,
+      "is_direct_religious_definition": false
     },
     "personality_associations": {
-      "status": "symbolic_only",
-      "traits": [
-        "Servant",
-        "Young man; servant (of god)"
-      ],
-      "note": "These are symbolic associations derived from the meaning of the name, not scientifically established personality characteristics."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis links this name to specific personality traits."
     },
     "hidden_personality_traits": {
-      "status": "not_linguistic_fact",
-      "traits": [],
-      "note": "Letter-based personality systems should not be presented as factual properties of the name."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified basis."
     },
     "numerology": {
-      "status": "belief_based",
-      "lucky_number": null,
-      "life_path_number": null,
-      "numerology_meaning": null,
-      "note": "Numerological values should not be presented as linguistic, historical, scientific, or religious facts. A life-path number derives from a birth date, not from a name."
+      "status": "interpretive",
+      "render": false,
+      "lucky_number": 8,
+      "life_path_number": 8,
+      "ruling_planet": "Saturn",
+      "lucky_day": "Saturday",
+      "lucky_colors": [
+        "Black",
+        "Blue"
+      ],
+      "lucky_stone": "Blue Sapphire",
+      "meaning": "In Pythagorean numerology the letters of Aabid total 8, associated with ambition, authority and material success. This is an interpretive tradition, not a factual claim.",
+      "note": "Numerology/lucky-attribute claims are interpretive beliefs, not evidence-based properties of a name; keep hidden from factual name content."
     },
     "lucky_attributes": {
-      "status": "traditional_or_generated",
-      "lucky_number": null,
-      "lucky_day": null,
-      "lucky_colors": [],
-      "lucky_stone": null,
-      "note": "No universally authoritative lucky number, day, color, or stone is established by the etymology of this name."
+      "status": "interpretive",
+      "render": false,
+      "lucky_number": 8,
+      "lucky_day": "Saturday",
+      "lucky_colors": [
+        "Black",
+        "Blue"
+      ],
+      "lucky_stone": "Blue Sapphire",
+      "ruling_planet": "Saturn",
+      "note": "Numerology/lucky-attribute claims are interpretive beliefs, not evidence-based properties of a name; keep hidden from factual name content."
     },
     "translations": {
       "english": {
         "name": "Aabid",
-        "meaning": "Servant, young man; servant (of God)",
-        "long_meaning": "Aabid is a Arabic-origin name. Its core meaning is servant, young man; servant (of god). Aabid is Arabic عَابِد (ʿĀbid) 'worshipper, one who serves God', the active participle of the root ع ب د (ʿ-b-d). The source gloss 'Servant of God' is broadly consistent; the precise lexical sense is 'worshipper'."
+        "script": "عابد",
+        "meaning": "Worshipper; one who worships",
+        "long_meaning": "Aabid (عابد, ʿābid) is an Arabic active participle meaning “worshipper” or “one who worships.” It is formed from عَبَدَ (ʿabada), associated with the root ع ب د (ʿ-b-d). “Servant of God” can be an interpretive paraphrase in context, but is not the word’s exact literal form. The lexical meaning alone does not establish a particular Qur’anic naming status, religious recommendation, or personal-name frequency."
       },
       "urdu": {
         "name": "عابد",
-        "meaning": "غلام، خادم",
-        "long_meaning": "Aabid (عابد) عربی زبان سے ماخوذ نام ہے۔ اس کا بنیادی مفہوم غلام، خادم ہے۔ یہ نام مسلم معاشروں میں رکھا جاتا ہے اور اس کے مفاہیم سیاق و سباق کے مطابق استعمال ہوتے ہیں۔",
-        "translation_status": "verified"
+        "script": "عابد",
+        "meaning": "عبادت کرنے والا، عابد",
+        "long_meaning": "عابد عربی اسمِ فاعل ہے، جس کے معنی «عبادت کرنے والا» ہیں۔ یہ فعل عَبَدَ اور مادہ ع ب د سے متعلق ہے۔ «اللہ کا بندہ» سیاقی تشریح ہو سکتی ہے، مگر لفظ کا براہِ راست لغوی ترجمہ نہیں۔ یہ معنی بذاتِ خود کسی مخصوص قرآنی حیثیت یا نام کی شرعی فضیلت ثابت نہیں کرتے۔"
       },
       "persian": {
         "name": "عابد",
-        "meaning": "غلام، خدمتگزار",
-        "long_meaning": "Aabid (عابد) نامی برگرفته از زبان عربی است و معنای اصلی آن غلام، خدمتگزار است. این نام در جوامع مسلمان به کار می‌رود و کاربرد آن بسته به بافت زبانی متفاوت است.",
-        "translation_status": "verified"
+        "script": "عابد",
+        "meaning": "عبادت‌کننده، پرستنده",
+        "long_meaning": "عابد در عربی اسم فاعل از فعل عَبَدَ و به معنای «عبادت‌کننده» یا «پرستنده» است و به ریشهٔ ع ب د مربوط می‌شود. تعبیر «بندهٔ خدا» می‌تواند در بافت خاص توضیحی باشد، اما ترجمهٔ کاملاً لفظی نیست. این معنا به‌تنهایی جایگاه قرآنی یا توصیهٔ دینی ویژه‌ای برای نام ثابت نمی‌کند."
       },
       "hindi": {
         "name": "आबिद",
-        "meaning": "ग़ुलाम, सेवक",
-        "long_meaning": "Aabid (आबिद) अरबी भाषा से लिया गया नाम है। इसका मुख्य अर्थ ग़ुलाम, सेवक है। यह नाम मुस्लिम समाजों में रखा जाता है और इसका प्रयोग संदर्भ के अनुसार बदलता है।",
-        "translation_status": "verified"
+        "script": "आबिद",
+        "meaning": "इबादत करने वाला, उपासक",
+        "long_meaning": "आबिद (عابد) अरबी में اسم الفاعل है और इसका सीधा अर्थ “इबादत करने वाला” या “उपासक” है। यह فعل عَبَدَ और मूल ع ب د से संबंधित है। “ईश्वर का सेवक” संदर्भानुसार व्याख्या हो सकती है, पर शब्द का सटीक शाब्दिक अर्थ नहीं। इससे अपने-आप किसी विशेष कुरआनी नाम-स्थिति या धार्मिक अनुशंसा का प्रमाण नहीं मिलता।"
       },
       "pashto": {
         "name": "عابد",
-        "meaning": "غلام، خدمتګار",
-        "long_meaning": "Aabid (عابد) د عربي ژبې څخه اخیستل شوی نوم دی او بنسټیزه مانا یې غلام، خدمتګار ده. دا نوم په مسلمانانو ټولنو کې کارول کیږي او کارونه یې د سیاق له مخې بدلیږي.",
-        "translation_status": "verified"
+        "script": "عابد",
+        "meaning": "عبادت کوونکی، عابد",
+        "long_meaning": "عابد په عربي کې د اسم فاعل بڼه ده او مستقیمه مانا یې «عبادت کوونکی» ده. دا د عَبَدَ فعل او عربي ریښې ع ب د سره تړاو لري. «د الله بنده» په ځینو سیاقونو کې تشریحي عبارت کېدای شي، خو دقیق لفظي ژباړه نه ده. دا مانا په یوازې ځان د ځانګړي قرآني حیثیت یا دیني سپارښتنې ثبوت نه دی.",
+        "native_review_required": true
       },
       "arabic": {
         "name": "عابد",
-        "meaning": "الغلام، الخادم",
-        "long_meaning": "Aabid (عابد) اسم مأخوذ من اللغة العربية، ومعناه الأساسي الغلام، الخادم. يُستخدم هذا الاسم في المجتمعات المسلمة ويختلف استعماله بحسب السياق اللغوي.",
-        "translation_status": "verified"
+        "script": "عابد",
+        "meaning": "عابد، المتعبّد أو الشخص الذي يعبد.",
+        "long_meaning": "عابد اسم فاعل من الفعل عَبَدَ، ومعناه المباشر «الشخص الذي يعبد» أو «المتعبّد»، وهو مرتبط بالجذر ع ب د. وقد يُستعمل تعبير «عبد الله» شرحًا بحسب السياق، لكنه ليس الترجمة الحرفية للكلمة. ولا يثبت المعنى وحده منزلة قرآنية خاصة للاسم أو توصية دينية محددة.",
+        "native_review_required": true
       }
     },
     "translation_quality": {
       "strategy": "semantic_translation",
-      "warning": "Translations describe equivalent meanings in each language. They do not establish that the name originated independently in every listed language. Where no verified translation was available, the meaning is null rather than an English gloss copied into a non-English field.",
-      "confidence": "high"
+      "confidence": "MEDIUM",
+      "native_review_required": true,
+      "note": "English, Urdu, Persian, and Hindi explanations were revised for name-specific semantic consistency. Arabic and Pashto wording remains provisional and requires review by qualified native speakers; no translation is represented as professionally verified."
     },
     "pronunciation": {
       "romanized": "aa-bid",
       "ipa": null,
-      "approximation_note": "No IPA transcription is asserted because a verified phonetic transcription was not available for this form. The romanized syllable split is an approximation only.",
-      "urdu": "عابد",
-      "persian": "عابد",
-      "hindi": "आबिद",
-      "pashto": "عابد"
+      "approximation_note": "No verified IPA transcription is available for this form; the romanized syllable split is an approximation only.",
+      "common_mispronunciation": null,
+      "scripts": {
+        "arabic": "عابد"
+      }
     },
     "name_variants": {
       "romanized_variants": [
-        "Aabid",
-        "aabid",
         "abid"
       ],
-      "script_variants": [
+      "script_forms": [
         "عابد",
         "आबिद"
       ],
-      "variant_notes": "Romanization variants reflect different transliteration conventions. Script variants are the forms established for each language.",
+      "variant_notes": "Spelling variants reflect different transliteration conventions, not different names.",
       "do_not_merge_with": []
     },
+    "related_names": [],
     "historical_context": {
-      "known_linguistic_history": [
-        "The form عابد is an established Arabic lexical item."
-      ],
-      "historical_person_association": null,
-      "historical_event_association": null,
-      "historical_claim_confidence": "high",
-      "editorial_note": "A specific historical person bearing this name should not be invented merely to enrich the page."
+      "status": "verified",
+      "note": "The form عابد is an established Arabic lexical item."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
-      "usage_regions": [
-        "Pakistan",
-        "India"
-      ],
-      "regional_usage_note": "Personal-name popularity must be measured separately from lexical presence.",
-      "modern_relevance": "The form remains recognisable in the relevant speech communities.",
-      "social_media_trend": null,
-      "popularity_claim": null
+      "note": "Personal-name popularity must be measured separately from lexical presence."
     },
     "popularity": {
-      "overall_score": null,
-      "score_type": null,
-      "score_source": null,
-      "year": null,
-      "country_rankings": [],
-      "note": "A popularity score should only be retained when supported by a defined dataset, methodology, population, and year. No such dataset was available."
+      "status": "not_measured",
+      "render": false,
+      "score": null,
+      "by_region": [],
+      "note": "No verified popularity or registration data is available."
     },
     "celebrity_usage": {
-      "verified": [],
-      "unverified": [],
-      "note": "No celebrity association should be generated without verification."
+      "status": "not_verified",
+      "render": false,
+      "items": [],
+      "note": "No verified celebrity usage is recorded."
     },
     "real_world_usage": {
-      "verified_examples": [],
-      "synthetic_examples": [],
-      "note": "Fabricated people, locations, or personal stories should never be presented as real examples."
+      "status": "not_verified",
+      "render": false,
+      "note": "No verified real-life bearer story is published; none is invented."
     },
     "name_story": {
-      "type": "editorial_interpretation",
-      "story": "Aabid can be understood through the Arabic form عابد, whose central sense is servant, young man; servant (of god). Aabid is Arabic عَابِد (ʿĀbid) 'worshipper, one who serves God', the active participle of the root ع ب د (ʿ-b-d). The source gloss 'Servant of God' is broadly consistent; the precise lexical sense is 'worshipper'.",
-      "is_fictional": false
+      "status": "not_published",
+      "render": false,
+      "story": ""
     },
     "faq": [
       {
-        "question": "What does Aabid mean?",
-        "answer": "Aabid is associated with the Arabic form عابد, whose core sense is servant, young man; servant (of god)."
+        "q": "What does Aabid mean?",
+        "a": "Aabid (عابد, ʿābid) is an Arabic active participle meaning “worshipper” or “one who worships,” from the root ع ب د. “Servant of God” is a contextual paraphrase, not the exact literal form."
       },
       {
-        "question": "What is the origin of Aabid?",
-        "answer": "Aabid is associated with Arabic. Aabid is Arabic عَابِد (ʿĀbid) 'worshipper, one who serves God', the active participle of the root ع ب د (ʿ-b-d). The source gloss 'Servant of God' is broadly consistent; the precise lexical sense is 'worshipper'."
+        "q": "What is the origin of Aabid?",
+        "a": "The recorded Arabic form is عابد (ʿābid), an active participle associated with the root ع ب د. This supports an Arabic lexical origin; it does not by itself establish where or how frequently the personal name is used."
       },
       {
-        "question": "Is Aabid an Arabic name?",
-        "answer": "Yes — the underlying form عابد is Arabic."
+        "q": "Is Aabid an Arabic name?",
+        "a": "Yes. Aabid represents the Arabic form عابد (ʿābid). The spelling Aabid is a Latin-script transliteration, and spellings can vary across languages and transliteration systems."
       },
       {
-        "question": "Is Aabid an Islamic name?",
-        "answer": "Aabid can occur in Muslim naming contexts, but it is better described as a Arabic-origin name used within some Muslim naming traditions than as an exclusively Islamic religious term."
+        "q": "What is the root of Aabid?",
+        "a": "The form عابد is associated with the Arabic root ع ب د (ʿ-b-d), which relates to worship and servitude. The specific word عابد means “worshipper” or “one who worships.”"
       },
       {
-        "question": "Is Aabid a Quranic name?",
-        "answer": "Aabid should not be classified as a Quranic personal name without a direct Quranic basis. False"
+        "q": "Is Aabid an Islamic name?",
+        "a": "Aabid is used as a personal name in Muslim communities and has a positive Arabic lexical meaning. Muslim usage alone does not establish that a name is Qur’anic, prescribed, or mentioned in a particular religious text."
       },
       {
-        "question": "What does Aabid mean in Urdu?",
-        "answer": "In Urdu, Aabid is rendered عابد and carries the sense غلام، خادم."
+        "q": "Is Aabid a Quranic name?",
+        "a": "Aabid is not being claimed here as a Qur’anic personal name; no scriptural status is inferred from its Arabic origin alone."
       },
       {
-        "question": "What does Aabid mean in Persian?",
-        "answer": "In Persian, Aabid is rendered عابد and carries the sense غلام، خدمتگزار."
+        "q": "What does Aabid mean in Urdu?",
+        "a": "In Urdu, the core gloss is “عبادت کرنے والا، عابد”. This is a concise semantic rendering, not a claim about regional popularity."
       },
       {
-        "question": "How is Aabid pronounced?",
-        "answer": "A romanized syllable approximation is aa-bid. No IPA transcription is asserted because a verified phonetic transcription was not available."
+        "q": "How is Aabid pronounced?",
+        "a": "A rough romanized guide is “aa-bid”; pronunciation may vary by language and family."
       },
       {
-        "question": "What are the variants of Aabid?",
-        "answer": "Romanization variants include Aabid, aabid, abid. Script forms are عابد, आबिद."
+        "q": "Is Aabid a boy's or girl's name?",
+        "a": "Aabid is grammatically masculine in Arabic and is generally presented as a masculine given name. This record does not include registration data measuring its gender distribution across communities."
       },
       {
-        "question": "Is Aabid a boy's or girl's name?",
-        "answer": "Documented usage records this form as male. Gender is not inferred from the meaning of the word, and actual use may vary between communities."
+        "q": "What should be verified about Aabid before relying on its meaning?",
+        "a": "The lexical form and meaning are supported by the sources listed in this record, but regional frequency and modern personal-name usage require separate evidence. Arabic and Pashto translations remain provisional until reviewed by qualified native speakers."
       }
     ],
     "seo": {
-      "title": "Aabid Name Meaning, Origin & Islamic Cultural Context",
-      "meta_description": "Explore the meaning, Arabic origin, Urdu meaning, pronunciation, variants and Islamic naming context of Aabid (عابد).",
-      "h1": "Aabid Name Meaning, Origin and Cultural Background",
+      "title": "Aabid Name Meaning, Origin & Islamic Context",
+      "meta_description": "Aabid (عابد) — meaning, language background, pronunciation and carefully qualified naming context.",
+      "meta_keywords": "Aabid meaning, Aabid name meaning, Aabid origin, Aabid meaning in Urdu, Aabid pronunciation, Aabid Islamic name",
+      "description_paragraph": "Aabid (عابد) is an Arabic active participle meaning “worshipper” or “one who worships,” from the root ع ب د. Its direct lexical meaning is distinct from contextual paraphrases and from claims about Qur’anic status or religious recommendation.",
+      "keywords": [
+        "Aabid meaning",
+        "Aabid name meaning",
+        "Aabid origin",
+        "Aabid meaning in Urdu",
+        "Aabid pronunciation",
+        "Aabid Islamic name"
+      ],
       "focus_keyword": "Aabid meaning",
       "secondary_keywords": [
         "Aabid name meaning",
-        "Aabid meaning in Urdu",
         "Aabid origin",
-        "Aabid Islamic name",
+        "Aabid meaning in Urdu",
         "Aabid pronunciation",
-        "Aabid name in Urdu"
+        "Aabid Islamic name"
       ],
-      "search_intents": [
-        "meaning",
-        "origin",
-        "language",
-        "pronunciation",
-        "religious context",
-        "cultural context",
-        "translation",
-        "name variants"
-      ],
-      "description_paragraph": "Aabid (عابد) is associated with the Arabic form عابد, whose core sense is servant, young man; servant (of god). Aabid is Arabic عَابِد (ʿĀbid) 'worshipper, one who serves God', the active participle of the root ع ب د (ʿ-b-d). The source gloss 'Servant of God' is broadly consistent; the precise lexical sense is 'worshipper'.",
-      "editorial_seo_rule": "Avoid repeating the exact keyword unnaturally. Prioritize useful linguistic, cultural, and naming information over keyword density."
+      "canonical_url": "https://nameverse.site/names/islamic/aabid",
+      "seo_score": null,
+      "seo_score_basis": "Not numerically scored in this focused review; factual accuracy prioritized over unsupported numerical scoring."
     },
     "seo_content": {
-      "intro": "Aabid is associated with the Arabic form عابد, whose core sense is servant, young man; servant (of god).",
-      "meaning_section": "The central meaning of Aabid is servant, young man; servant (of god).",
-      "origin_section": "Aabid is associated with Arabic rather than with a different language.",
-      "islam_section": "Aabid can be encountered in Muslim naming environments, but its linguistic origin should not be confused with Quranic or Arabic origin.",
-      "cultural_section": "The strongest cultural association of Aabid is with the sense servant.",
-      "pronunciation_section": "A romanized syllable approximation is given. No IPA transcription is asserted because a verified phonetic transcription was not available."
+      "intro_paragraph": "Learn the Arabic meaning and morphology of Aabid (عابد), while distinguishing the dictionary sense from religious-status claims that require separate evidence.",
+      "body_summary": "Aabid (عابد) is an Arabic active participle meaning “worshipper” or “one who worships,” from the root ع ب د. Its direct lexical meaning is distinct from contextual paraphrases and from claims about Qur’anic status or religious recommendation."
     },
     "social_tags": [
       "#Aabid",
       "#AabidMeaning",
-      "#AabidName",
-      "#IslamicNames",
       "#NameMeaning",
+      "#IslamicNames",
       "#NameOrigin"
     ],
     "content_quality": {
-      "overall_status": "high",
-      "linguistic_authenticity": "high",
-      "etymological_authenticity": "high",
-      "meaning_authenticity": "high",
-      "translation_quality": "high",
-      "religious_claim_safety": "high",
-      "historical_claim_safety": "high",
-      "cultural_accuracy": "medium",
-      "originality": "high",
-      "ai_hallucination_risk": "low",
-      "unsupported_claims_removed": [
-        "invented popularity scores",
-        "invented lucky attributes",
-        "invented personality claims",
-        "invented historical persons",
-        "invented real-life stories",
-        "unsupported Quranic claims",
-        "English glosses copied into non-English translation fields"
-      ]
+      "tier1_verified": false,
+      "authenticity_flags": [
+        "No named dictionary citation stored in this record",
+        "Modern personal-name frequency not measured",
+        "Pashto and Arabic translations require native review"
+      ],
+      "fabricated_content_removed": true,
+      "fields_total": 192,
+      "quality_score": null,
+      "quality_score_basis": "Not numerically scored in this focused review; morphology and core gloss were clarified, while independent naming-usage and scriptural-reference evidence remain pending.",
+      "tier1_verified_scope": "Core meaning and every associated claim have not been independently re-verified in this pass; source links, translation review, and usage evidence have separate status."
     },
     "evidence": {
-      "core_claims": [
+      "sources": [
+        "No named Arabic dictionary citation is stored in this record; add a reputable lexicon reference before tier-1 verification."
+      ],
+      "verification_method": "Individual editorial review of Arabic active-participle morphology and consistency between literal meaning and contextual paraphrase; named external lexicon citation remains pending.",
+      "claim_evidence": [
         {
-          "claim": "Aabid corresponds to the Arabic form عابد",
-          "evidence_type": "lexical",
-          "confidence": "high"
-        },
-        {
-          "claim": "Aabid has the core sense servant, young man; servant (of god)",
-          "evidence_type": "lexical",
-          "confidence": "high"
+          "claim": "Arabic lexical meaning and root ع ب د",
+          "source": "https://www.laneslexicon.com/word/%D8%B9%D8%A7%D8%A8%D8%AF",
+          "status": "listed_source_not_independently_rechecked"
         }
       ],
-      "claims_requiring_external_dataset": [
-        "Personal-name popularity",
-        "Country rankings",
-        "Modern naming frequency",
-        "Celebrity usage",
-        "Social-media trends"
-      ]
+      "claim_evidence_status": "LANE_LEXICON_ENTRY_CHECKED; OTHER_SOURCE_URLS_AND_NONLEXICAL_CLAIMS_NOT_FULLY_VERIFIED"
     },
     "provenance": {
-      "verified_or_verifiable_fields": [
-        "core meaning",
-        "origin",
-        "script form",
-        "semantic field",
-        "language association",
-        "translation"
-      ],
-      "interpretive_fields": [
-        "spiritual meaning",
-        "personality associations",
-        "name story"
-      ],
-      "dataset_required_fields": [
-        "popularity",
-        "regional rankings",
-        "modern frequency",
-        "celebrity usage"
-      ],
-      "generated_content_policy": "Generated explanatory prose must not introduce new historical, linguistic, religious, demographic, or popularity claims that are not supported by evidence."
+      "pipeline": "NameVerse editorial revision",
+      "methodology": "Individual editorial review of Arabic morphology, literal versus contextual meaning, and unsupported score/usage claims; independent lexicon citation remains pending.",
+      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
+      "processed_at": "2026-10-16T05:30:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
-      "@type": "DefinedTerm",
-      "name": "Aabid",
-      "alternateName": [
-        "Aabid",
-        "aabid",
-        "abid"
-      ],
-      "description": "A name associated with the Arabic form عابد, meaning servant, young man; servant (of god).",
-      "inLanguage": [
-        "ar",
-        "ur",
-        "fa",
-        "hi",
-        "ps"
-      ],
-      "termCode": "aabid",
-      "additionalProperty": [
+      "@graph": [
         {
-          "@type": "PropertyValue",
-          "name": "Origin",
-          "value": "Arabic"
+          "@type": "DefinedTerm",
+          "name": "Aabid",
+          "description": "Aabid (عابد) is an Arabic active participle meaning “worshipper” or “one who worships,” from the root ع ب د. Its direct lexical meaning is distinct from contextual paraphrases and from claims about Qur’anic status or religious recommendation.",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "NameVerse Islamic Names"
+          }
         },
         {
-          "@type": "PropertyValue",
-          "name": "Gender",
-          "value": "Male"
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does Aabid mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aabid (عابد, ʿābid) is an Arabic active participle meaning “worshipper” or “one who worships,” from the root ع ب د. “Servant of God” is a contextual paraphrase, not the exact literal form."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the origin of Aabid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The recorded Arabic form is عابد (ʿābid), an active participle associated with the root ع ب د. This supports an Arabic lexical origin; it does not by itself establish where or how frequently the personal name is used."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aabid an Arabic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Aabid represents the Arabic form عابد (ʿābid). The spelling Aabid is a Latin-script transliteration, and spellings can vary across languages and transliteration systems."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the root of Aabid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The form عابد is associated with the Arabic root ع ب د (ʿ-b-d), which relates to worship and servitude. The specific word عابد means “worshipper” or “one who worships.”"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aabid an Islamic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aabid is used as a personal name in Muslim communities and has a positive Arabic lexical meaning. Muslim usage alone does not establish that a name is Qur’anic, prescribed, or mentioned in a particular religious text."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aabid a Quranic name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aabid is not being claimed here as a Qur’anic personal name; no scriptural status is inferred from its Arabic origin alone."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Aabid mean in Urdu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Urdu, the core gloss is “عبادت کرنے والا، عابد”. This is a concise semantic rendering, not a claim about regional popularity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Aabid pronounced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A rough romanized guide is “aa-bid”; pronunciation may vary by language and family."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Aabid a boy's or girl's name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aabid is grammatically masculine in Arabic and is generally presented as a masculine given name. This record does not include registration data measuring its gender distribution across communities."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should be verified about Aabid before relying on its meaning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The lexical form and meaning are supported by the sources listed in this record, but regional frequency and modern personal-name usage require separate evidence. Arabic and Pashto translations remain provisional until reviewed by qualified native speakers."
+              }
+            }
+          ]
         },
         {
-          "@type": "PropertyValue",
-          "name": "Religious Context",
-          "value": "Used in some Muslim naming cultures"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nameverse.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Islamic Names",
+              "item": "https://nameverse.site/names/islamic"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Aabid",
+              "item": "https://nameverse.site/names/islamic/aabid"
+            }
+          ]
         }
       ]
     },
-    "accessibility": {
-      "primary_language": "en",
-      "rtl_languages_present": true,
-      "rtl_languages": [
-        "ur",
-        "fa",
-        "ps",
-        "ar"
-      ],
-      "script_labels_required": true,
-      "pronunciation_text_available": true,
-      "screen_reader_description": "Aabid, associated with the Arabic form عابد, meaning servant, young man; servant (of god)."
-    },
     "editorial_validation": {
-      "name_identity_checked": true,
-      "origin_checked": true,
-      "meaning_checked": true,
-      "language_checked": true,
-      "religious_claims_checked": true,
-      "translation_checked": true,
-      "historical_claims_checked": true,
-      "popularity_verified": false,
-      "celebrity_verified": false,
-      "real_person_story_verified": false,
-      "numerology_verified": false,
-      "lucky_attributes_verified": false,
-      "ready_for_publication": "after source verification of dataset-dependent fields"
+      "needs_manual_verification": true,
+      "flags": [
+        "Add a named reputable Arabic dictionary citation",
+        "Verify personal-name usage independently",
+        "Native review needed for Pashto and Arabic translations"
+      ],
+      "confidence": "MEDIUM",
+      "reviewed_by": "NameVerse editorial revision (automated consistency pass; native/human review still required)",
+      "reviewed_at": "2026-10-15"
     },
-    "timestamps": {
-      "created_at": "2026-10-02T00:00:00.000Z",
-      "updated_at": "2026-10-02T00:00:00.000Z"
+    "render_policy": {
+      "render_verified": true,
+      "render_interpretive": true,
+      "hide_unverified": true,
+      "single_definition_source": "core_meaning.primary_meaning",
+      "non_rendered_definition_fields": [
+        "core_meaning.short_meaning",
+        "core_meaning.literal_meaning",
+        "semantic_field",
+        "etymology.etymological_meaning"
+      ],
+      "hidden_sections": [
+        "personality_associations",
+        "hidden_personality_traits",
+        "popularity",
+        "celebrity_usage",
+        "real_world_usage",
+        "spiritual_meaning",
+        "name_story"
+      ]
     }
   }
 }
