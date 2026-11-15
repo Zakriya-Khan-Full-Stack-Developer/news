@@ -3,6 +3,10 @@ import { getPublishedPosts } from '../../../lib/data/blog.js';
 import { ORIGIN_SLUGS, CATEGORY_SLUGS, categorySlugFor, originSlugFor } from '../../../lib/data/name-utils.js';
 import { ALL_LETTERS, lettersFor, letterPageCount } from '../../../lib/data/letter-browser.js';
 
+// Only generated IDs are valid; prevent arbitrary sitemap IDs from rendering dynamically.
+export const dynamic = 'force-static';
+export const dynamicParams = false;
+
 // Prerender every sitemap chunk at build time so this route is static (○),
 // not server-rendered on demand (ƒ). Without this, each crawler hit on a
 // sitemap URL burns a Function Invocation + Active CPU.
@@ -228,7 +232,7 @@ ${[...entries.values()]
   return new Response(xml, {
     headers: {
       'Content-Type': 'application/xml; charset=utf-8',
-      'Cache-Control': 'public, max-age=2592000, s-maxage=2592000',
+      'Cache-Control': 'public, max-age=0, s-maxage=3600, stale-while-revalidate=86400',
     },
   });
 }
