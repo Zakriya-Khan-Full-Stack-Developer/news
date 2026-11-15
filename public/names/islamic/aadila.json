@@ -223,7 +223,11 @@
     "related_names": [],
     "historical_context": {
       "status": "editorially_expanded",
-      "note": "عادل and عادلة are established Arabic forms used as personal names. Their linguistic meaning is separate from any claim about a bearer’s actual character or a name’s statistical popularity."
+      "note": "عادل and عادلة are established Arabic forms used as personal names. Their linguistic meaning is separate from any claim about a bearer’s actual character or a name’s statistical popularity.",
+      "editorial_note": "عادل and عادلة are established Arabic forms used as personal names. Their linguistic meaning is separate from any claim about a bearer’s actual character or a name’s statistical popularity.",
+      "known_linguistic_history": [
+        "عادل and عادلة are established Arabic forms used as personal names. Their linguistic meaning is separate from any claim about a bearer’s actual character or a name’s statistical popularity."
+      ]
     },
     "modern_usage": {
       "status": "requires_frequency_data",
@@ -313,7 +317,10 @@
     },
     "seo_content": {
       "intro_paragraph": "Aadila (عادلة, ʿādila) is the feminine form of the Arabic adjective/active participle ʿādil, meaning “just,” “fair” or “equitable.” It is associated with the root ع د ل (ʿ-d-l), whose semantic field includes justice, fairness and balance.",
-      "body_summary": "Aadila (عادلة, ʿādila) is the feminine form of the Arabic adjective/active participle ʿādil, meaning “just,” “fair” or “equitable.” It is associated with the root ع د ل (ʿ-d-l), whose semantic field includes justice, fairness and balance. عادل and عادلة are established Arabic forms used as personal names. Their linguistic meaning is separate from any claim about a bearer’s actual character or a name’s statistical popularity."
+      "body_summary": "Aadila (عادلة, ʿādila) is the feminine form of the Arabic adjective/active participle ʿādil, meaning “just,” “fair” or “equitable.” It is associated with the root ع د ل (ʿ-d-l), whose semantic field includes justice, fairness and balance. عادل and عادلة are established Arabic forms used as personal names. Their linguistic meaning is separate from any claim about a bearer’s actual character or a name’s statistical popularity.",
+      "intro": "Aadila (عادلة, ʿādila) is the feminine form of the Arabic adjective/active participle ʿādil, meaning “just,” “fair” or “equitable.” It is associated with the root ع د ل (ʿ-d-l), whose semantic field includes justice, fairness and balance.",
+      "meaning_section": "Aadila (عادلة, ʿādila) is the feminine form of the Arabic adjective/active participle ʿādil, meaning “just,” “fair” or “equitable.” It is associated with the root ع د ل (ʿ-d-l), whose semantic field includes justice, fairness and balance.",
+      "cultural_section": "Aadila expresses the ethical idea of fairness and justice. Families may value that meaning as a naming aspiration; it does not predict personality."
     },
     "social_tags": [
       "#Aadila",
