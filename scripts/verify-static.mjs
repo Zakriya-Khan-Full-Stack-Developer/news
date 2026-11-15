@@ -168,16 +168,16 @@ const sitemapIndexSourcePath = path.join(ROOT, 'app', 'sitemap.xml', 'route.js')
 const sitemapChunkSourcePath = path.join(ROOT, 'app', 'sitemap', '[id]', 'route.js');
 if (fs.existsSync(sitemapIndexSourcePath)) {
   const source = fs.readFileSync(sitemapIndexSourcePath, 'utf8');
-  if (!/export\\s+const\\s+dynamic\\s*=\\s*['"]force-static['"]/.test(source)) {
+  if (!source.includes("export const dynamic = 'force-static';")) {
     fail('app/sitemap.xml/route.js must explicitly declare dynamic = force-static');
   }
 }
 if (fs.existsSync(sitemapChunkSourcePath)) {
   const source = fs.readFileSync(sitemapChunkSourcePath, 'utf8');
-  if (!/export\\s+const\\s+dynamicParams\\s*=\\s*false/.test(source)) {
+  if (!source.includes("export const dynamicParams = false;")) {
     fail('app/sitemap/[id]/route.js must set dynamicParams = false');
   }
-  if (!/export\\s+const\\s+dynamic\\s*=\\s*['"]force-static['"]/.test(source)) {
+  if (!source.includes("export const dynamic = 'force-static';")) {
     fail('app/sitemap/[id]/route.js must explicitly declare dynamic = force-static');
   }
 }
@@ -211,9 +211,9 @@ if (fs.existsSync(SITEMAP_DIR)) {
       if (!htmlExistsFor(urlPath)) missingPages.push(urlPath);
 
       // Detail URLs must point to a current indexable canonical manifest record.
-      const detailMatch = urlPath.match(/^\\/names\\/([a-z]+)\\/([^/]+)$/);
-      if (detailMatch) {
-        const [, religion, slug] = detailMatch;
+      const segments = urlPath.split('/').filter(Boolean);
+      if (segments.length === 3 && segments[0] === 'names') {
+        const [, religion, slug] = segments;
         const entry = (manifest[religion] || []).find((item) => item.slug === slug);
         if (!entry) fail(`sitemap detail URL has no manifest record: ${urlPath}`);
         else if (!entry.indexable) fail(`sitemap contains a non-indexable detail URL: ${urlPath}`);
@@ -239,7 +239,7 @@ if (fs.existsSync(SITEMAP_DIR)) {
 const UPGRADED_SITEMAP_PATH = path.join(ROOT, 'public', 'sitemap-islamic-upgraded.xml');
 if (fs.existsSync(UPGRADED_SITEMAP_PATH)) {
   const xml = fs.readFileSync(UPGRADED_SITEMAP_PATH, 'utf8');
-  const urls = [...xml.matchAll(/<loc>([^<]+)<\\/loc>/g)].map((m) => m[1]);
+  const urls = xml.split('<loc>').slice(1).map((part) => part.split('</loc>')[0].trim());
   const seen = new Set();
   if (!xml.includes('<urlset') || !xml.includes('xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"')) {
     fail('sitemap-islamic-upgraded.xml is not a valid sitemap urlset');
@@ -247,12 +247,14 @@ if (fs.existsSync(UPGRADED_SITEMAP_PATH)) {
   for (const url of urls) {
     if (seen.has(url)) fail(`duplicate URL in sitemap-islamic-upgraded.xml: ${url}`);
     seen.add(url);
-    const match = url.match(/^https:\\/\\/nameverse\\.site\\/names\\/islamic\\/([a-z0-9-]+)$/);
-    if (!match) {
+    let parsed;
+    try { parsed = new URL(url); } catch { fail(`invalid URL in upgraded sitemap: ${url}`); continue; }
+    const parts = parsed.pathname.split('/').filter(Boolean);
+    if (parsed.origin !== 'https://nameverse.site' || parts.length !== 3 || parts[0] !== 'names' || parts[1] !== 'islamic') {
       fail(`unexpected URL in sitemap-islamic-upgraded.xml: ${url}`);
       continue;
     }
-    const slug = match[1];
+    const slug = parts[2];
     const entry = (manifest.islamic || []).find((item) => item.slug === slug);
     if (!entry) fail(`upgraded sitemap URL has no manifest record: ${slug}`);
     else if (!entry.indexable) fail(`upgraded sitemap contains a non-indexable name: ${slug}`);
