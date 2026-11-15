@@ -4,7 +4,7 @@
   "data": {
     "name": "Abdullah",
     "slug": "abdullah",
-    "content_revision": "v8",
+    "content_revision": "v9",
     "page_type": "name_meaning",
     "identity": {
       "display_name": "Abdullah",
@@ -21,9 +21,9 @@
     },
     "core_meaning": {
       "short_meaning": "Servant of Allah",
-      "primary_meaning": "Abdullah corresponds to the Arabic form عبد الله and is glossed in this record as “Servant of Allah.” The lexical gloss describes the word-form; Qur’anic occurrence, religious recommendation, popularity, and a name-bearer’s character are separate claims and are not established by this gloss alone.",
+      "primary_meaning": "Abdullah (عبد الله, ʿAbd Allāh) is a two-part Arabic name: ʿabd (“servant”) followed by Allāh (“Allah/God”). Together it means “servant of Allah.” The construction expresses devotion and should be distinguished from a claim that the proper name is a standalone Qur’anic title.",
       "literal_meaning": "Servant of Allah",
-      "meaning_explanation": "Abdullah corresponds to the Arabic form عبد الله (ع ب د). Its core sense is servant of allah. ʿAbd Allāh ('servant of Allah'). One of the most widely used Muslim given names.",
+      "meaning_explanation": "Abdullah (عبد الله, ʿAbd Allāh) is a two-part Arabic name: ʿabd (“servant”) followed by Allāh (“Allah/God”). Together it means “servant of Allah.” The construction expresses devotion and should be distinguished from a claim that the proper name is a standalone Qur’anic title.",
       "meaning_confidence": "HIGH"
     },
     "etymology": {
@@ -32,11 +32,11 @@
       "transliteration": "abdullah",
       "root": "",
       "root_transliteration": "",
-      "morphology": "Simple lexical item used as a name.",
+      "morphology": "Arabic construct phrase (iḍāfa): عَبْدُ اللهِ (ʿabdu llāh), composed of ʿabd (“servant”) + Allāh.",
       "feminine_form": null,
       "etymological_meaning": "The Arabic word عبد الله",
       "root_family": [],
-      "etymology_explanation": "The form عبد الله is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_explanation": "Arabic construct phrase (iḍāfa): عَبْدُ اللهِ (ʿabdu llāh), composed of ʿabd (“servant”) + Allāh.",
       "etymology_confidence": "HIGH",
       "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
@@ -96,9 +96,9 @@
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
-      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
-      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
+      "cultural_meaning": "The name expresses servitude to Allah, an important concept in Islamic belief. Its meaning is a theological expression within Muslim naming culture, not evidence of an individual’s faith or conduct.",
+      "personal_name_interpretation": "The name expresses servitude to Allah, an important concept in Islamic belief. Its meaning is a theological expression within Muslim naming culture, not evidence of an individual’s faith or conduct.",
+      "interpretation_warning": "Keep lexical meaning separate from family interpretation, religious status, popularity claims and personality claims."
     },
     "semantic_field": {
       "primary_semantic_domain": "Servant of Allah",
@@ -220,8 +220,8 @@
     },
     "related_names": [],
     "historical_context": {
-      "status": "verified",
-      "note": "The form عبد الله is an established Arabic lexical item."
+      "status": "editorially_expanded",
+      "note": "Abdullah is an established Arabic compound personal name. Its component words are part of Arabic religious vocabulary; the name has a long history of use among Muslims, though this entry makes no statistical ranking claim."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
@@ -252,47 +252,43 @@
     },
     "faq": [
       {
-        "q": "What does Abdullah mean?",
-        "a": "Abdullah is an Arabic-origin name meaning “Servant of Allah”."
+        "q": "What does Abdullah mean literally?",
+        "a": "Abdullah (عبد الله) means “servant of Allah,” combining ʿabd (“servant”) and Allah."
       },
       {
-        "q": "What is the origin of Abdullah?",
-        "a": "Abdullah originates in Arabic and circulates in Muslim naming communities."
+        "q": "How is Abdullah formed in Arabic?",
+        "a": "It is an iḍāfa construction: عَبْدُ اللهِ (ʿabdu llāh), a noun followed by its genitive complement."
       },
       {
         "q": "Is Abdullah an Arabic name?",
-        "a": "Yes, the recorded form عبد الله is Arabic."
+        "a": "Yes. Abdullah is an Arabic compound name, written عبد الله."
       },
       {
-        "q": "What is the root of Abdullah?",
-        "a": "No root analysis is asserted for this spelling."
+        "q": "Does the phrase ʿabd Allāh occur in the Qur’an?",
+        "a": "The phrase “servant of Allah” occurs in Qur’anic Arabic. That should be distinguished from identifying every occurrence as a reference to someone whose proper name is Abdullah."
       },
       {
-        "q": "Is Abdullah an Islamic name?",
-        "a": "Abdullah is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
-      },
-      {
-        "q": "Is Abdullah a Quranic name?",
-        "a": "Abdullah is not independently established as a Qur'anic personal name."
+        "q": "Why is Abdullah used in Muslim communities?",
+        "a": "Its meaning expresses servitude to Allah, an important concept in Islamic belief and devotional language."
       },
       {
         "q": "What does Abdullah mean in Urdu?",
-        "a": "In Urdu it is written عبداللہ and carries the sense “اللہ کا بندہ”."
+        "a": "It is written عبداللہ or عبد الله and means “اللہ کا بندہ” — servant of Allah."
       },
       {
-        "q": "How is Abdullah pronounced?",
-        "a": "A romanized syllable approximation is “ab-dul-lah”."
+        "q": "How do you pronounce Abdullah?",
+        "a": "A practical English guide is “ab-dul-LAH”; Arabic pronunciation joins the two elements closely."
       },
       {
-        "q": "Is Abdullah a boy's or girl's name?",
-        "a": "Documented usage records Abdullah as a boy's name; actual use can vary by community."
+        "q": "Does Abdullah mean worshipper?",
+        "a": "Not exactly. “Worshipper” is a direct gloss for ʿābid (عابد); Abdullah specifically means “servant of Allah.”"
       }
     ],
     "seo": {
       "title": "Abdullah Name Meaning, Origin & Islamic Context",
-      "meta_description": "Abdullah (عبد الله) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_description": "Abdullah (عبد الله) — Servant of Allah. Meaning, origin, language and naming context.",
       "meta_keywords": "Abdullah meaning, Abdullah name meaning, Abdullah origin, Abdullah meaning in Urdu, Abdullah pronunciation, Abdullah Islamic name",
-      "description_paragraph": "Abdullah is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "description_paragraph": "Abdullah (عبد الله, ʿAbd Allāh) is a two-part Arabic name: ʿabd (“servant”) followed by Allāh (“Allah/God”). Together it means “servant of Allah.” The construction expresses devotion and should be distinguished from a claim that the proper name is a standalone Qur’anic title.",
       "keywords": [
         "Abdullah meaning",
         "Abdullah name meaning",
@@ -314,8 +310,8 @@
       "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro_paragraph": "This page explains the meaning and origin of the name Abdullah, an Arabic-origin name used in Muslim communities.",
-      "body_summary": "Abdullah is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
+      "intro_paragraph": "Abdullah (عبد الله, ʿAbd Allāh) is a two-part Arabic name: ʿabd (“servant”) followed by Allāh (“Allah/God”). Together it means “servant of Allah.” The construction expresses devotion and should be distinguished from a claim that the proper name is a standalone Qur’anic title.",
+      "body_summary": "Abdullah (عبد الله, ʿAbd Allāh) is a two-part Arabic name: ʿabd (“servant”) followed by Allāh (“Allah/God”). Together it means “servant of Allah.” The construction expresses devotion and should be distinguished from a claim that the proper name is a standalone Qur’anic title. Abdullah is an established Arabic compound personal name. Its component words are part of Arabic religious vocabulary; the name has a long history of use among Muslims, though this entry makes no statistical ranking claim."
     },
     "social_tags": [
       "#Abdullah",
@@ -356,10 +352,10 @@
       "claim_evidence_status": "PARTIAL_COMPONENT_SOURCE_CHECKED; REVIEW_OPEN"
     },
     "provenance": {
-      "pipeline": "NameVerse evidence-led batch review",
-      "methodology": "Reviewed compound structure; checked listed components where available; corrected the Capable/All-Powerful translation nuance and flagged variant spellings.",
-      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
-      "processed_at": "2026-10-16T00:00:00+00:00"
+      "pipeline": "NameVerse editorial content upgrade",
+      "methodology": "Name-specific revision of lexical meaning, morphology where supported, historical context and distinct reader FAQs; uncertain claims explicitly qualified.",
+      "upgraded_from": "v8",
+      "processed_at": "2026-11-15T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
@@ -367,7 +363,7 @@
         {
           "@type": "DefinedTerm",
           "name": "Abdullah",
-          "description": "Abdullah — an Arabic-origin given name meaning Servant of Allah",
+          "description": "Abdullah (عبد الله, ʿAbd Allāh) is a two-part Arabic name: ʿabd (“servant”) followed by Allāh (“Allah/God”). Together it means “servant of Allah.” The construction expresses devotion and should be distinguished from a claim that the proper name is a standalone Qur’anic title.",
           "inDefinedTermSet": {
             "@type": "DefinedTermSet",
             "name": "NameVerse Islamic Names"
@@ -378,18 +374,18 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "What does Abdullah mean?",
+              "name": "What does Abdullah mean literally?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Abdullah is an Arabic-origin name meaning “Servant of Allah”."
+                "text": "Abdullah (عبد الله) means “servant of Allah,” combining ʿabd (“servant”) and Allah."
               }
             },
             {
               "@type": "Question",
-              "name": "What is the origin of Abdullah?",
+              "name": "How is Abdullah formed in Arabic?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Abdullah originates in Arabic and circulates in Muslim naming communities."
+                "text": "It is an iḍāfa construction: عَبْدُ اللهِ (ʿabdu llāh), a noun followed by its genitive complement."
               }
             },
             {
@@ -397,31 +393,23 @@
               "name": "Is Abdullah an Arabic name?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, the recorded form عبد الله is Arabic."
+                "text": "Yes. Abdullah is an Arabic compound name, written عبد الله."
               }
             },
             {
               "@type": "Question",
-              "name": "What is the root of Abdullah?",
+              "name": "Does the phrase ʿabd Allāh occur in the Qur’an?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No root analysis is asserted for this spelling."
+                "text": "The phrase “servant of Allah” occurs in Qur’anic Arabic. That should be distinguished from identifying every occurrence as a reference to someone whose proper name is Abdullah."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Abdullah an Islamic name?",
+              "name": "Why is Abdullah used in Muslim communities?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Abdullah is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is Abdullah a Quranic name?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Abdullah is not independently established as a Qur'anic personal name."
+                "text": "Its meaning expresses servitude to Allah, an important concept in Islamic belief and devotional language."
               }
             },
             {
@@ -429,23 +417,23 @@
               "name": "What does Abdullah mean in Urdu?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "In Urdu it is written عبداللہ and carries the sense “اللہ کا بندہ”."
+                "text": "It is written عبداللہ or عبد الله and means “اللہ کا بندہ” — servant of Allah."
               }
             },
             {
               "@type": "Question",
-              "name": "How is Abdullah pronounced?",
+              "name": "How do you pronounce Abdullah?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A romanized syllable approximation is “ab-dul-lah”."
+                "text": "A practical English guide is “ab-dul-LAH”; Arabic pronunciation joins the two elements closely."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Abdullah a boy's or girl's name?",
+              "name": "Does Abdullah mean worshipper?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Documented usage records Abdullah as a boy's name; actual use can vary by community."
+                "text": "Not exactly. “Worshipper” is a direct gloss for ʿābid (عابد); Abdullah specifically means “servant of Allah.”"
               }
             }
           ]
