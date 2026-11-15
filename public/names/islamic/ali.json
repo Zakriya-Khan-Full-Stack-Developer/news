@@ -220,7 +220,11 @@
     "related_names": [],
     "historical_context": {
       "status": "editorially_expanded",
-      "note": "ʿAlī ibn Abī Ṭālib was the Prophet Muhammad’s cousin and son-in-law and a leading figure in early Islam. Sunni tradition recognises him as the fourth caliph; Shia tradition regards him as the first Imam. The traditions differ in how they frame succession and religious authority."
+      "note": "ʿAlī ibn Abī Ṭālib was the Prophet Muhammad’s cousin and son-in-law and a leading figure in early Islam. Sunni tradition recognises him as the fourth caliph; Shia tradition regards him as the first Imam. The traditions differ in how they frame succession and religious authority.",
+      "editorial_note": "ʿAlī ibn Abī Ṭālib was the Prophet Muhammad’s cousin and son-in-law and a leading figure in early Islam. Sunni tradition recognises him as the fourth caliph; Shia tradition regards him as the first Imam. The traditions differ in how they frame succession and religious authority.",
+      "known_linguistic_history": [
+        "ʿAlī ibn Abī Ṭālib was the Prophet Muhammad’s cousin and son-in-law and a leading figure in early Islam. Sunni tradition recognises him as the fourth caliph; Shia tradition regards him as the first Imam. The traditions differ in how they frame succession and religious authority."
+      ]
     },
     "modern_usage": {
       "status": "requires_frequency_data",
@@ -310,7 +314,10 @@
     },
     "seo_content": {
       "intro_paragraph": "Ali (عليّ, ʿAlī) is an Arabic masculine name associated with the root ع ل و (ʿ-l-w), whose semantic field includes height and elevation. It is commonly glossed as “high,” “exalted” or “sublime.” It is also borne by ʿAlī ibn Abī Ṭālib, a cousin and son-in-law of the Prophet Muhammad and a major figure in early Islamic history.",
-      "body_summary": "Ali (عليّ, ʿAlī) is an Arabic masculine name associated with the root ع ل و (ʿ-l-w), whose semantic field includes height and elevation. It is commonly glossed as “high,” “exalted” or “sublime.” It is also borne by ʿAlī ibn Abī Ṭālib, a cousin and son-in-law of the Prophet Muhammad and a major figure in early Islamic history. ʿAlī ibn Abī Ṭālib was the Prophet Muhammad’s cousin and son-in-law and a leading figure in early Islam. Sunni tradition recognises him as the fourth caliph; Shia tradition regards him as the first Imam. The traditions differ in how they frame succession and religious authority."
+      "body_summary": "Ali (عليّ, ʿAlī) is an Arabic masculine name associated with the root ع ل و (ʿ-l-w), whose semantic field includes height and elevation. It is commonly glossed as “high,” “exalted” or “sublime.” It is also borne by ʿAlī ibn Abī Ṭālib, a cousin and son-in-law of the Prophet Muhammad and a major figure in early Islamic history. ʿAlī ibn Abī Ṭālib was the Prophet Muhammad’s cousin and son-in-law and a leading figure in early Islam. Sunni tradition recognises him as the fourth caliph; Shia tradition regards him as the first Imam. The traditions differ in how they frame succession and religious authority.",
+      "intro": "Ali (عليّ, ʿAlī) is an Arabic masculine name associated with the root ع ل و (ʿ-l-w), whose semantic field includes height and elevation. It is commonly glossed as “high,” “exalted” or “sublime.” It is also borne by ʿAlī ibn Abī Ṭālib, a cousin and son-in-law of the Prophet Muhammad and a major figure in early Islamic history.",
+      "meaning_section": "Ali (عليّ, ʿAlī) is an Arabic masculine name associated with the root ع ل و (ʿ-l-w), whose semantic field includes height and elevation. It is commonly glossed as “high,” “exalted” or “sublime.” It is also borne by ʿAlī ibn Abī Ṭālib, a cousin and son-in-law of the Prophet Muhammad and a major figure in early Islamic history.",
+      "cultural_section": "Ali is recognised across Muslim communities. Its lexical association with elevation and its connection with ʿAlī ibn Abī Ṭālib are distinct dimensions of its significance; traditions may emphasise the historical figure differently."
     },
     "social_tags": [
       "#Ali",
