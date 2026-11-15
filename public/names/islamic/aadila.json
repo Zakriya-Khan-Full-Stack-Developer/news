@@ -4,7 +4,7 @@
   "data": {
     "name": "Aadila",
     "slug": "aadila",
-    "content_revision": "v8",
+    "content_revision": "v9",
     "page_type": "name_meaning",
     "identity": {
       "display_name": "Aadila",
@@ -22,9 +22,9 @@
     },
     "core_meaning": {
       "short_meaning": "Just; fair; equitable (feminine)",
-      "primary_meaning": "Aadila (عادلة) represents Arabic عَادِلَة (ʿādila), the feminine form corresponding to عَادِل (ʿādil), with the sense “just,” “fair,” or “equitable.” The form is associated with the root ع د ل (ʿ-d-l). This is a lexical meaning, not a claim that the personal name is prescribed by a religious text.",
+      "primary_meaning": "Aadila (عادلة, ʿādila) is the feminine form of the Arabic adjective/active participle ʿādil, meaning “just,” “fair” or “equitable.” It is associated with the root ع د ل (ʿ-d-l), whose semantic field includes justice, fairness and balance.",
       "literal_meaning": "Just; fair; equitable (feminine)",
-      "meaning_explanation": "Arabic عَادِلَة (ʿādila) is the feminine form corresponding to عَادِل (ʿādil), associated with the root ع د ل. Lane’s Lexicon describes the root and related forms in terms of equity, justice, and acting justly. This supports the lexical sense; it does not measure frequency of the exact Latin spelling Aadila.",
+      "meaning_explanation": "Aadila (عادلة, ʿādila) is the feminine form of the Arabic adjective/active participle ʿādil, meaning “just,” “fair” or “equitable.” It is associated with the root ع د ل (ʿ-d-l), whose semantic field includes justice, fairness and balance.",
       "meaning_confidence": "HIGH"
     },
     "etymology": {
@@ -33,11 +33,11 @@
       "transliteration": "aadila",
       "root": "ع د ل",
       "root_transliteration": "ʿ-d-l",
-      "morphology": "Feminine form (مؤنث) corresponding to the Arabic active participle عَادِل (ʿādil), associated with root ع د ل.",
+      "morphology": "Feminine form عادلة (ʿādila), corresponding to masculine عادل (ʿādil), from the Arabic root ع د ل (ʿ-d-l).",
       "feminine_form": "عادلة (ʿādila; feminine form recorded here)",
       "etymological_meaning": "From the root ع د ل (ʿ-d-l)",
       "root_family": [],
-      "etymology_explanation": "Arabic عَادِلَة (ʿādila) is the feminine form corresponding to عَادِل (ʿādil), associated with the root ع د ل. Lane’s Lexicon describes the root and related forms in terms of equity, justice, and acting justly. This supports the lexical sense; it does not measure frequency of the exact Latin spelling Aadila.",
+      "etymology_explanation": "Feminine form عادلة (ʿādila), corresponding to masculine عادل (ʿādil), from the Arabic root ع د ل (ʿ-d-l).",
       "etymology_confidence": "HIGH",
       "false_etymology_warning": "Do not infer a Qur'anic status, religious prescription, popularity, personality trait, or separate etymology from Muslim usage or Latin spelling alone."
     },
@@ -97,9 +97,9 @@
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "The name’s lexical meaning is the best-supported description here. Any family or community symbolism is interpretive and should not be presented as a verified cultural fact.",
-      "personal_name_interpretation": "Families may choose the name for its lexical meaning or religious/cultural associations; that choice is personal and does not establish additional factual meanings.",
-      "interpretation_warning": "Separate dictionary meaning, religious reference, cultural use, and personal interpretation. Do not treat them as interchangeable."
+      "cultural_meaning": "Aadila expresses the ethical idea of fairness and justice. Families may value that meaning as a naming aspiration; it does not predict personality.",
+      "personal_name_interpretation": "Aadila expresses the ethical idea of fairness and justice. Families may value that meaning as a naming aspiration; it does not predict personality.",
+      "interpretation_warning": "Keep lexical meaning separate from family interpretation, religious status, popularity claims and personality claims."
     },
     "semantic_field": {
       "primary_semantic_domain": "Just, fair",
@@ -157,7 +157,7 @@
         "name": "Aadila",
         "script": "عادلة",
         "meaning": "Just; fair; equitable (feminine)",
-        "long_meaning": "Aadila (عادلة) is the feminine form corresponding to Arabic عادل (ʿādil), meaning “just,” “fair,” or “equitable.” It is associated with the root ع د ل (ʿ-d-l)."
+        "long_meaning": "Aadila (عادلة, ʿādila) is the feminine form of the Arabic adjective/active participle ʿādil, meaning “just,” “fair” or “equitable.” It is associated with the root ع د ل (ʿ-d-l), whose semantic field includes justice, fairness and balance."
       },
       "urdu": {
         "name": "عادلہ",
@@ -222,8 +222,8 @@
     },
     "related_names": [],
     "historical_context": {
-      "status": "verified",
-      "note": "The form عادلة is an established Arabic lexical item."
+      "status": "editorially_expanded",
+      "note": "عادل and عادلة are established Arabic forms used as personal names. Their linguistic meaning is separate from any claim about a bearer’s actual character or a name’s statistical popularity."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
@@ -254,51 +254,43 @@
     },
     "faq": [
       {
-        "q": "What does Aadila mean?",
-        "a": "Aadila (عادلة) is the feminine form corresponding to Arabic عادل (ʿādil), meaning “just,” “fair,” or “equitable.” It is associated with the root ع د ل (ʿ-d-l)."
-      },
-      {
-        "q": "What is the origin of Aadila?",
-        "a": "The recorded form عادلة (ʿādila) is Arabic and corresponds to the feminine form of عادل (ʿādil). This establishes its linguistic form, not personal-name frequency in a particular region."
-      },
-      {
-        "q": "Is Aadila an Arabic name?",
-        "a": "Yes. Aadila represents Arabic عادلة (ʿādila), the feminine form associated with “just,” “fair,” or “equitable.” Latin spellings vary across transliteration conventions."
+        "q": "What does Aadila mean in Arabic?",
+        "a": "Aadila (عادلة) means “just,” “fair” or “equitable.”"
       },
       {
         "q": "What is the root of Aadila?",
-        "a": "The form عادلة is associated with the Arabic root ع د ل (ʿ-d-l), related to justice and fairness. The feminine ending marks the feminine form; it does not create a separate root."
+        "a": "It is associated with the Arabic root ع د ل (ʿ-d-l), connected with justice and balance."
       },
       {
-        "q": "Is Aadila an Islamic name?",
-        "a": "Aadila is used in Muslim naming contexts and has a positive Arabic lexical meaning. This does not by itself establish a specific Qur’anic personal-name reference or religious prescription."
+        "q": "Is Aadila a feminine Arabic name?",
+        "a": "Yes. عادلة (ʿādila) is the feminine form corresponding to عادل (ʿādil)."
       },
       {
-        "q": "Is Aadila a Quranic name?",
-        "a": "This record does not establish Aadila as a Qur’anic personal name. Arabic origin and a positive meaning are not sufficient evidence of a specific scriptural reference."
+        "q": "What is the masculine form of Aadila?",
+        "a": "The corresponding masculine form is Aadil/ʿĀdil (عادل). Transliteration conventions vary."
       },
       {
         "q": "What does Aadila mean in Urdu?",
-        "a": "In Urdu, the core gloss is “عادل، منصف، انصاف کرنے والی”. This is a concise semantic rendering, not a claim about regional popularity."
+        "a": "It is written عادلہ and means “انصاف کرنے والی” — a woman who acts justly."
       },
       {
-        "q": "How is Aadila pronounced?",
-        "a": "A rough romanized guide is “aa-di-la”; pronunciation may vary by language and family."
+        "q": "Is Aadila a Qur’anic personal name?",
+        "a": "This entry does not assert that Aadila occurs in the Qur’an as a personal name."
       },
       {
-        "q": "Is Aadila a boy's or girl's name?",
-        "a": "The Arabic form عادلة is grammatically feminine and is used as a feminine personal name. This record does not contain independent regional registration data for the exact Latin spelling Aadila."
+        "q": "How do you pronounce Aadila?",
+        "a": "A practical English guide is “AA-di-la,” approximating the long first vowel."
       },
       {
-        "q": "What should be verified about Aadila before relying on its meaning?",
-        "a": "The Arabic root and justice/fairness semantic field are supported by a dictionary reference. Frequency of the exact Latin spelling Aadila, regional naming patterns, and Arabic/Pashto translation quality still need separate evidence or qualified native-speaker review."
+        "q": "Does Aadila mean beautiful?",
+        "a": "The direct meaning recorded here is “just,” “fair” or “equitable,” not beautiful."
       }
     ],
     "seo": {
       "title": "Aadila Name Meaning, Origin & Islamic Context",
-      "meta_description": "Aadila (عادلة) — meaning, language background, pronunciation and carefully qualified naming context.",
+      "meta_description": "Aadila (عادلة) — Just; fair; equitable (feminine). Meaning, origin, language and naming context.",
       "meta_keywords": "Aadila meaning, Aadila name meaning, Aadila origin, Aadila meaning in Urdu, Aadila pronunciation, Aadila Islamic name",
-      "description_paragraph": "Aadila (عادلة) is the feminine form corresponding to Arabic عادل (ʿādil), meaning “just,” “fair,” or “equitable,” and associated with the root ع د ل. The lexical meaning is distinct from claims about a person’s actual character or regional name popularity.",
+      "description_paragraph": "Aadila (عادلة, ʿādila) is the feminine form of the Arabic adjective/active participle ʿādil, meaning “just,” “fair” or “equitable.” It is associated with the root ع د ل (ʿ-d-l), whose semantic field includes justice, fairness and balance.",
       "keywords": [
         "Aadila meaning",
         "Aadila name meaning",
@@ -320,8 +312,8 @@
       "seo_score_basis": "Provisional editorial estimate: 80/100. Canonical and breadcrumb values are populated in the source JSON, but rendered HTML must be checked after deployment. Claim-level source verification and Arabic/Pashto native-speaker review remain incomplete."
     },
     "seo_content": {
-      "intro_paragraph": "Aadila is the feminine Arabic form عادلة related to عادل. Its core sense is “just” or “fair”; this describes the word’s meaning, not a guarantee of anyone’s behaviour.",
-      "body_summary": "Arabic morphology supports the feminine relationship between عادلة and عادل and the association with justice and fairness. Popularity, regional frequency, and personal characteristics are not established by this lexical evidence."
+      "intro_paragraph": "Aadila (عادلة, ʿādila) is the feminine form of the Arabic adjective/active participle ʿādil, meaning “just,” “fair” or “equitable.” It is associated with the root ع د ل (ʿ-d-l), whose semantic field includes justice, fairness and balance.",
+      "body_summary": "Aadila (عادلة, ʿādila) is the feminine form of the Arabic adjective/active participle ʿādil, meaning “just,” “fair” or “equitable.” It is associated with the root ع د ل (ʿ-d-l), whose semantic field includes justice, fairness and balance. عادل and عادلة are established Arabic forms used as personal names. Their linguistic meaning is separate from any claim about a bearer’s actual character or a name’s statistical popularity."
     },
     "social_tags": [
       "#Aadila",
@@ -368,10 +360,10 @@
       "claim_evidence_status": "ARABIC_ROOT_AND_MASCULINE_LEXICAL_FORM_CHECKED; FEMININE_MORPHOLOGY_REVIEWED; EXACT_LATIN_SPELLING_FREQUENCY_AND_TRANSLATIONS_NOT_VERIFIED"
     },
     "provenance": {
-      "pipeline": "NameVerse editorial revision",
-      "methodology": "Individual lexical review against Lane’s Lexicon entries for عادل and عدل; clarified feminine morphology and exact-spelling limits; adjusted gender confidence to reflect missing regional data; synchronized FAQ structured data and preserved translation/frequency caveats.",
-      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
-      "processed_at": "2026-10-16T00:00:00+00:00"
+      "pipeline": "NameVerse editorial content upgrade",
+      "methodology": "Name-specific revision of lexical meaning, morphology where supported, historical context and distinct reader FAQs; uncertain claims explicitly qualified.",
+      "upgraded_from": "v8",
+      "processed_at": "2026-11-15T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
@@ -379,7 +371,7 @@
         {
           "@type": "DefinedTerm",
           "name": "Aadila",
-          "description": "Aadila (عادلة) represents the feminine Arabic form associated with justice, fairness, and equity; frequency of this exact Latin spelling is not measured here.",
+          "description": "Aadila (عادلة, ʿādila) is the feminine form of the Arabic adjective/active participle ʿādil, meaning “just,” “fair” or “equitable.” It is associated with the root ع د ل (ʿ-d-l), whose semantic field includes justice, fairness and balance.",
           "inDefinedTermSet": {
             "@type": "DefinedTermSet",
             "name": "NameVerse Islamic Names"
@@ -390,26 +382,10 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "What does Aadila mean?",
+              "name": "What does Aadila mean in Arabic?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Aadila (عادلة) is the feminine form corresponding to Arabic عادل (ʿādil), meaning “just,” “fair,” or “equitable.” It is associated with the root ع د ل (ʿ-d-l)."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the origin of Aadila?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The recorded form عادلة (ʿādila) is Arabic and corresponds to the feminine form of عادل (ʿādil). This establishes its linguistic form, not personal-name frequency in a particular region."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is Aadila an Arabic name?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Aadila represents Arabic عادلة (ʿādila), the feminine form associated with “just,” “fair,” or “equitable.” Latin spellings vary across transliteration conventions."
+                "text": "Aadila (عادلة) means “just,” “fair” or “equitable.”"
               }
             },
             {
@@ -417,23 +393,23 @@
               "name": "What is the root of Aadila?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The form عادلة is associated with the Arabic root ع د ل (ʿ-d-l), related to justice and fairness. The feminine ending marks the feminine form; it does not create a separate root."
+                "text": "It is associated with the Arabic root ع د ل (ʿ-d-l), connected with justice and balance."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Aadila an Islamic name?",
+              "name": "Is Aadila a feminine Arabic name?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Aadila is used in Muslim naming contexts and has a positive Arabic lexical meaning. This does not by itself establish a specific Qur’anic personal-name reference or religious prescription."
+                "text": "Yes. عادلة (ʿādila) is the feminine form corresponding to عادل (ʿādil)."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Aadila a Quranic name?",
+              "name": "What is the masculine form of Aadila?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "This record does not establish Aadila as a Qur’anic personal name. Arabic origin and a positive meaning are not sufficient evidence of a specific scriptural reference."
+                "text": "The corresponding masculine form is Aadil/ʿĀdil (عادل). Transliteration conventions vary."
               }
             },
             {
@@ -441,31 +417,31 @@
               "name": "What does Aadila mean in Urdu?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "In Urdu, the core gloss is “عادل، منصف، انصاف کرنے والی”. This is a concise semantic rendering, not a claim about regional popularity."
+                "text": "It is written عادلہ and means “انصاف کرنے والی” — a woman who acts justly."
               }
             },
             {
               "@type": "Question",
-              "name": "How is Aadila pronounced?",
+              "name": "Is Aadila a Qur’anic personal name?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A rough romanized guide is “aa-di-la”; pronunciation may vary by language and family."
+                "text": "This entry does not assert that Aadila occurs in the Qur’an as a personal name."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Aadila a boy's or girl's name?",
+              "name": "How do you pronounce Aadila?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The Arabic form عادلة is grammatically feminine and is used as a feminine personal name. This record does not contain independent regional registration data for the exact Latin spelling Aadila."
+                "text": "A practical English guide is “AA-di-la,” approximating the long first vowel."
               }
             },
             {
               "@type": "Question",
-              "name": "What should be verified about Aadila before relying on its meaning?",
+              "name": "Does Aadila mean beautiful?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The Arabic root and justice/fairness semantic field are supported by a dictionary reference. Frequency of the exact Latin spelling Aadila, regional naming patterns, and Arabic/Pashto translation quality still need separate evidence or qualified native-speaker review."
+                "text": "The direct meaning recorded here is “just,” “fair” or “equitable,” not beautiful."
               }
             }
           ]

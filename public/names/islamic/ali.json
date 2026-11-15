@@ -4,7 +4,7 @@
   "data": {
     "name": "Ali",
     "slug": "ali",
-    "content_revision": "v8",
+    "content_revision": "v9",
     "page_type": "name_meaning",
     "identity": {
       "display_name": "Ali",
@@ -20,23 +20,23 @@
       "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Exalted, sublime",
-      "primary_meaning": "Ali corresponds to the Arabic form علي and is glossed in this record as “Exalted, sublime.” The lexical gloss describes the word-form; Qur’anic occurrence, religious recommendation, popularity, and a name-bearer’s character are separate claims and are not established by this gloss alone.",
+      "short_meaning": "High; exalted; sublime",
+      "primary_meaning": "Ali (عليّ, ʿAlī) is an Arabic masculine name associated with the root ع ل و (ʿ-l-w), whose semantic field includes height and elevation. It is commonly glossed as “high,” “exalted” or “sublime.” It is also borne by ʿAlī ibn Abī Ṭālib, a cousin and son-in-law of the Prophet Muhammad and a major figure in early Islamic history.",
       "literal_meaning": "Exalted, sublime",
-      "meaning_explanation": "Ali corresponds to the Arabic form علي (ع ل و). Its core sense is exalted, sublime, high. ʿAlī ('exalted, sublime'), also the name of ʿAlī ibn Abī Ṭālib (d. 661). The source record left origin and gender blank.",
+      "meaning_explanation": "Ali (عليّ, ʿAlī) is an Arabic masculine name associated with the root ع ل و (ʿ-l-w), whose semantic field includes height and elevation. It is commonly glossed as “high,” “exalted” or “sublime.” It is also borne by ʿAlī ibn Abī Ṭālib, a cousin and son-in-law of the Prophet Muhammad and a major figure in early Islamic history.",
       "meaning_confidence": "HIGH"
     },
     "etymology": {
       "primary_language": "Arabic",
       "lexical_form": "علي",
       "transliteration": "ali",
-      "root": "",
-      "root_transliteration": "",
-      "morphology": "Simple lexical item used as a name.",
+      "root": "ع ل و",
+      "root_transliteration": "ʿ-l-w",
+      "morphology": "Arabic adjective/name ʿAlī (عليّ), associated with ع ل و (ʿ-l-w), conveying height or elevation; later personal and honorific uses are distinct from the lexical gloss.",
       "feminine_form": null,
       "etymological_meaning": "The Arabic word علي",
       "root_family": [],
-      "etymology_explanation": "The form علي is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_explanation": "Arabic adjective/name ʿAlī (عليّ), associated with ع ل و (ʿ-l-w), conveying height or elevation; later personal and honorific uses are distinct from the lexical gloss.",
       "etymology_confidence": "HIGH",
       "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
@@ -96,9 +96,9 @@
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
-      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
-      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
+      "cultural_meaning": "Ali is recognised across Muslim communities. Its lexical association with elevation and its connection with ʿAlī ibn Abī Ṭālib are distinct dimensions of its significance; traditions may emphasise the historical figure differently.",
+      "personal_name_interpretation": "Ali is recognised across Muslim communities. Its lexical association with elevation and its connection with ʿAlī ibn Abī Ṭālib are distinct dimensions of its significance; traditions may emphasise the historical figure differently.",
+      "interpretation_warning": "Keep lexical meaning separate from family interpretation, religious status, popularity claims and personality claims."
     },
     "semantic_field": {
       "primary_semantic_domain": "Exalted, sublime",
@@ -154,8 +154,8 @@
       "english": {
         "name": "Ali",
         "script": "Ali",
-        "meaning": "Exalted, sublime",
-        "long_meaning": "Ali is an Arabic-origin given name; in Arabic the word means “Exalted, sublime”."
+        "meaning": "High; exalted; sublime",
+        "long_meaning": "Ali (عليّ, ʿAlī) is an Arabic masculine name associated with the root ع ل و (ʿ-l-w), whose semantic field includes height and elevation. It is commonly glossed as “high,” “exalted” or “sublime.” It is also borne by ʿAlī ibn Abī Ṭālib, a cousin and son-in-law of the Prophet Muhammad and a major figure in early Islamic history."
       },
       "urdu": {
         "name": "علی",
@@ -219,8 +219,8 @@
     },
     "related_names": [],
     "historical_context": {
-      "status": "verified",
-      "note": "The form علي is an established Arabic lexical item."
+      "status": "editorially_expanded",
+      "note": "ʿAlī ibn Abī Ṭālib was the Prophet Muhammad’s cousin and son-in-law and a leading figure in early Islam. Sunni tradition recognises him as the fourth caliph; Shia tradition regards him as the first Imam. The traditions differ in how they frame succession and religious authority."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
@@ -251,47 +251,43 @@
     },
     "faq": [
       {
-        "q": "What does Ali mean?",
-        "a": "Ali is an Arabic-origin name meaning “Exalted, sublime”."
-      },
-      {
-        "q": "What is the origin of Ali?",
-        "a": "Ali originates in Arabic and circulates in Muslim naming communities."
-      },
-      {
-        "q": "Is Ali an Arabic name?",
-        "a": "Yes, the recorded form علي is Arabic."
+        "q": "What does Ali mean in Arabic?",
+        "a": "Ali (عليّ, ʿAlī) is commonly glossed as “high,” “exalted” or “sublime.”"
       },
       {
         "q": "What is the root of Ali?",
-        "a": "No root analysis is asserted for this spelling."
+        "a": "It is associated with the Arabic root ع ل و (ʿ-l-w), whose semantic field includes height and elevation."
       },
       {
-        "q": "Is Ali an Islamic name?",
-        "a": "Ali is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
+        "q": "Who was Ali ibn Abi Talib?",
+        "a": "He was the Prophet Muhammad’s cousin and son-in-law and a central figure in early Islamic history."
       },
       {
-        "q": "Is Ali a Quranic name?",
-        "a": "Ali is not independently established as a Qur'anic personal name."
+        "q": "How is Ali viewed in Sunni and Shia traditions?",
+        "a": "Sunni Muslims recognise Ali as the fourth caliph; Shia Muslims regard him as the first Imam. Both traditions hold him in high esteem but differ on succession and authority."
+      },
+      {
+        "q": "Is Ali a Qur’anic personal name?",
+        "a": "The Arabic word ʿaliyy and related forms occur in Qur’anic Arabic. That linguistic fact is distinct from identifying the proper name Ali as a person in a particular verse."
       },
       {
         "q": "What does Ali mean in Urdu?",
-        "a": "In Urdu it is written علی and carries the sense “علی، بلند، عالی”."
+        "a": "It is written علی and is commonly associated with بلند، عالی or برتر — high or exalted."
       },
       {
-        "q": "How is Ali pronounced?",
-        "a": "A romanized syllable approximation is “a-li”."
+        "q": "How do you pronounce Ali?",
+        "a": "A practical English guide is “AH-lee”; pronunciation varies by language and region."
       },
       {
-        "q": "Is Ali a boy's or girl's name?",
-        "a": "Documented usage records Ali as a boy's name; actual use can vary by community."
+        "q": "Does Ali’s meaning describe a person’s character?",
+        "a": "No. “Exalted” is a lexical meaning, not evidence that a person has a particular personality or status."
       }
     ],
     "seo": {
       "title": "Ali Name Meaning, Origin & Islamic Context",
-      "meta_description": "Ali (علي) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_description": "Ali (علي) — Exalted, sublime. Meaning, origin, language and naming context.",
       "meta_keywords": "Ali meaning, Ali name meaning, Ali origin, Ali meaning in Urdu, Ali pronunciation, Ali Islamic name",
-      "description_paragraph": "Ali is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "description_paragraph": "Ali (عليّ, ʿAlī) is an Arabic masculine name associated with the root ع ل و (ʿ-l-w), whose semantic field includes height and elevation. It is commonly glossed as “high,” “exalted” or “sublime.” It is also borne by ʿAlī ibn Abī Ṭālib, a cousin and son-in-law of the Prophet Muhammad and a major figure in early Islamic history.",
       "keywords": [
         "Ali meaning",
         "Ali name meaning",
@@ -313,8 +309,8 @@
       "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro_paragraph": "This page explains the meaning and origin of the name Ali, an Arabic-origin name used in Muslim communities.",
-      "body_summary": "Ali is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
+      "intro_paragraph": "Ali (عليّ, ʿAlī) is an Arabic masculine name associated with the root ع ل و (ʿ-l-w), whose semantic field includes height and elevation. It is commonly glossed as “high,” “exalted” or “sublime.” It is also borne by ʿAlī ibn Abī Ṭālib, a cousin and son-in-law of the Prophet Muhammad and a major figure in early Islamic history.",
+      "body_summary": "Ali (عليّ, ʿAlī) is an Arabic masculine name associated with the root ع ل و (ʿ-l-w), whose semantic field includes height and elevation. It is commonly glossed as “high,” “exalted” or “sublime.” It is also borne by ʿAlī ibn Abī Ṭālib, a cousin and son-in-law of the Prophet Muhammad and a major figure in early Islamic history. ʿAlī ibn Abī Ṭālib was the Prophet Muhammad’s cousin and son-in-law and a leading figure in early Islam. Sunni tradition recognises him as the fourth caliph; Shia tradition regards him as the first Imam. The traditions differ in how they frame succession and religious authority."
     },
     "social_tags": [
       "#Ali",
@@ -338,10 +334,10 @@
       "verification_method": "Cross-checked lexical sources; no scriptural or statistical claim is asserted without a source."
     },
     "provenance": {
-      "pipeline": "NameVerse Production v8",
-      "methodology": "Parse atomic facts -> rebuild distinct fields -> validate",
-      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
-      "processed_at": "2026-10-06T04:27:34+00:00"
+      "pipeline": "NameVerse editorial content upgrade",
+      "methodology": "Name-specific revision of lexical meaning, morphology where supported, historical context and distinct reader FAQs; uncertain claims explicitly qualified.",
+      "upgraded_from": "v8",
+      "processed_at": "2026-11-15T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
@@ -349,7 +345,7 @@
         {
           "@type": "DefinedTerm",
           "name": "Ali",
-          "description": "Ali — an Arabic-origin given name meaning Exalted, sublime",
+          "description": "Ali (عليّ, ʿAlī) is an Arabic masculine name associated with the root ع ل و (ʿ-l-w), whose semantic field includes height and elevation. It is commonly glossed as “high,” “exalted” or “sublime.” It is also borne by ʿAlī ibn Abī Ṭālib, a cousin and son-in-law of the Prophet Muhammad and a major figure in early Islamic history.",
           "inDefinedTermSet": {
             "@type": "DefinedTermSet",
             "name": "NameVerse Islamic Names"
@@ -360,26 +356,10 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "What does Ali mean?",
+              "name": "What does Ali mean in Arabic?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ali is an Arabic-origin name meaning “Exalted, sublime”."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the origin of Ali?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ali originates in Arabic and circulates in Muslim naming communities."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is Ali an Arabic name?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, the recorded form علي is Arabic."
+                "text": "Ali (عليّ, ʿAlī) is commonly glossed as “high,” “exalted” or “sublime.”"
               }
             },
             {
@@ -387,23 +367,31 @@
               "name": "What is the root of Ali?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No root analysis is asserted for this spelling."
+                "text": "It is associated with the Arabic root ع ل و (ʿ-l-w), whose semantic field includes height and elevation."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Ali an Islamic name?",
+              "name": "Who was Ali ibn Abi Talib?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ali is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
+                "text": "He was the Prophet Muhammad’s cousin and son-in-law and a central figure in early Islamic history."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Ali a Quranic name?",
+              "name": "How is Ali viewed in Sunni and Shia traditions?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ali is not independently established as a Qur'anic personal name."
+                "text": "Sunni Muslims recognise Ali as the fourth caliph; Shia Muslims regard him as the first Imam. Both traditions hold him in high esteem but differ on succession and authority."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Ali a Qur’anic personal name?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Arabic word ʿaliyy and related forms occur in Qur’anic Arabic. That linguistic fact is distinct from identifying the proper name Ali as a person in a particular verse."
               }
             },
             {
@@ -411,23 +399,23 @@
               "name": "What does Ali mean in Urdu?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "In Urdu it is written علی and carries the sense “علی، بلند، عالی”."
+                "text": "It is written علی and is commonly associated with بلند، عالی or برتر — high or exalted."
               }
             },
             {
               "@type": "Question",
-              "name": "How is Ali pronounced?",
+              "name": "How do you pronounce Ali?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A romanized syllable approximation is “a-li”."
+                "text": "A practical English guide is “AH-lee”; pronunciation varies by language and region."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Ali a boy's or girl's name?",
+              "name": "Does Ali’s meaning describe a person’s character?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Documented usage records Ali as a boy's name; actual use can vary by community."
+                "text": "No. “Exalted” is a lexical meaning, not evidence that a person has a particular personality or status."
               }
             }
           ]

@@ -4,7 +4,7 @@
   "data": {
     "name": "Ayaan",
     "slug": "ayaan",
-    "content_revision": "v8",
+    "content_revision": "v9",
     "page_type": "name_meaning",
     "identity": {
       "display_name": "Ayaan",
@@ -21,10 +21,10 @@
       "name_status": "attested"
     },
     "core_meaning": {
-      "short_meaning": "Witnessing, visible, evident",
-      "primary_meaning": "Ayaan corresponds to the Arabic form عيان and is glossed in this record as “Witnessing, visible, evident.” The lexical gloss describes the word-form; Qur’anic occurrence, religious recommendation, popularity, and a name-bearer’s character are separate claims and are not established by this gloss alone.",
+      "short_meaning": "Visible; evident; in plain sight (for the Arabic form عيان)",
+      "primary_meaning": "Ayaan is a Latin-script spelling that can represent different language forms and pronunciations. This record specifically links it to Arabic عيان and the sense “visible,” “evident” or “in plain sight.” This explanation should not be assumed to cover every person named Ayaan or every regional use of the spelling.",
       "literal_meaning": "Witnessing, visible, evident",
-      "meaning_explanation": "Ayaan corresponds to the Arabic form عيان (ع ي ن). Its core sense is witnessing, visible, evident. ʿAyān ('witnessing, visible, evident'). The source record left origin and gender blank and glossed it 'Gift of God', which is unsupported.",
+      "meaning_explanation": "Ayaan is a Latin-script spelling that can represent different language forms and pronunciations. This record specifically links it to Arabic عيان and the sense “visible,” “evident” or “in plain sight.” This explanation should not be assumed to cover every person named Ayaan or every regional use of the spelling.",
       "meaning_confidence": "MEDIUM"
     },
     "etymology": {
@@ -33,11 +33,11 @@
       "transliteration": "ayaan",
       "root": "",
       "root_transliteration": "",
-      "morphology": "Simple lexical item used as a name.",
+      "morphology": "The Arabic form recorded here is عيان (ʿiyān). This profile does not assign a root or Qur’anic status without a specific lexical citation.",
       "feminine_form": null,
       "etymological_meaning": "The Arabic word عيان",
       "root_family": [],
-      "etymology_explanation": "The form عيان is an established Arabic lexical item used unchanged as a given name.",
+      "etymology_explanation": "The Arabic form recorded here is عيان (ʿiyān). This profile does not assign a root or Qur’anic status without a specific lexical citation.",
       "etymology_confidence": "MEDIUM",
       "false_etymology_warning": "No derivation beyond the documented Arabic form is asserted. Any etymology that attributes this spelling to a different root or language without a source should be treated as unverified."
     },
@@ -97,9 +97,9 @@
         "Arabic",
         "Muslim South Asia"
       ],
-      "cultural_meaning": "In the communities that use it, the name reads as a positive quality.",
-      "personal_name_interpretation": "As a personal name it can be read as a wish for the quality it names.",
-      "interpretation_warning": "The symbolic reading is a cultural convention, distinct from the dictionary sense."
+      "cultural_meaning": "Ayaan appears in multiple contemporary naming contexts and may be associated with different language traditions. This page documents one Arabic-form interpretation, عيان; families should compare the intended script and pronunciation before treating it as the only meaning.",
+      "personal_name_interpretation": "Ayaan appears in multiple contemporary naming contexts and may be associated with different language traditions. This page documents one Arabic-form interpretation, عيان; families should compare the intended script and pronunciation before treating it as the only meaning.",
+      "interpretation_warning": "Keep lexical meaning separate from family interpretation, religious status, popularity claims and personality claims."
     },
     "semantic_field": {
       "primary_semantic_domain": "Witnessing, visible, evident",
@@ -155,8 +155,8 @@
       "english": {
         "name": "Ayaan",
         "script": "Ayaan",
-        "meaning": "Witnessing, visible, evident",
-        "long_meaning": "Ayaan is an Arabic-origin given name; in Arabic the word means “Witnessing, visible, evident”."
+        "meaning": "Visible; evident; in plain sight (for the Arabic form عيان)",
+        "long_meaning": "Ayaan is a Latin-script spelling that can represent different language forms and pronunciations. This record specifically links it to Arabic عيان and the sense “visible,” “evident” or “in plain sight.” This explanation should not be assumed to cover every person named Ayaan or every regional use of the spelling."
       },
       "urdu": {
         "name": "عیان",
@@ -220,8 +220,8 @@
     },
     "related_names": [],
     "historical_context": {
-      "status": "verified",
-      "note": "The form عيان is an established Arabic lexical item."
+      "status": "editorially_expanded",
+      "note": "The Arabic word عيان has a lexical use connected with what is seen or evident. Ayaan is also used in different naming communities, so the Arabic analysis here applies specifically to the recorded form rather than every use of the Latin spelling."
     },
     "modern_usage": {
       "status": "requires_frequency_data",
@@ -252,47 +252,43 @@
     },
     "faq": [
       {
-        "q": "What does Ayaan mean?",
-        "a": "Ayaan is an Arabic-origin name meaning “Witnessing, visible, evident”."
+        "q": "What does Ayaan mean in this record?",
+        "a": "This entry records Arabic عيان (ʿiyān), with the sense “visible,” “evident” or “in plain sight.”"
       },
       {
-        "q": "What is the origin of Ayaan?",
-        "a": "Ayaan originates in Arabic and circulates in Muslim naming communities."
+        "q": "Is Ayaan always an Arabic name?",
+        "a": "No. Ayaan is a Latin-script spelling used in more than one naming context; origin depends on the intended language, script and pronunciation."
       },
       {
-        "q": "Is Ayaan an Arabic name?",
-        "a": "Yes, the recorded form عيان is Arabic."
+        "q": "How is Ayaan written in Arabic here?",
+        "a": "The form used by this record is عيان."
       },
       {
-        "q": "What is the root of Ayaan?",
-        "a": "No root analysis is asserted for this spelling."
+        "q": "Does Ayaan have one universally agreed meaning?",
+        "a": "No. The same Latin spelling can represent different words in different languages. This page documents only the Arabic form عيان."
       },
       {
-        "q": "Is Ayaan an Islamic name?",
-        "a": "Ayaan is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
+        "q": "Is Ayaan a Qur’anic personal name?",
+        "a": "This entry does not claim Ayaan/عيان as a Qur’anic personal name."
       },
       {
-        "q": "Is Ayaan a Quranic name?",
-        "a": "Ayaan is not independently established as a Qur'anic personal name."
+        "q": "How do you pronounce Ayaan?",
+        "a": "The Arabic form can be approximated as “ʿi-yān”; English-speaking families may pronounce the Latin spelling differently."
       },
       {
-        "q": "What does Ayaan mean in Urdu?",
-        "a": "In Urdu it is written عیان and carries the sense “دیکھنے والا، ظاہر”."
+        "q": "Is Ayaan used for boys or girls?",
+        "a": "This dataset records Ayaan as unisex, but practice varies by country and family; no registration statistics are claimed."
       },
       {
-        "q": "How is Ayaan pronounced?",
-        "a": "A romanized syllable approximation is “ayaan”."
-      },
-      {
-        "q": "Is Ayaan a boy's or girl's name?",
-        "a": "Documented usage records Ayaan as a unisex name; actual use can vary by community."
+        "q": "What should parents verify before choosing Ayaan?",
+        "a": "Confirm the intended language, script and pronunciation, because the same Latin spelling can represent different names."
       }
     ],
     "seo": {
       "title": "Ayaan Name Meaning, Origin & Islamic Context",
-      "meta_description": "Ayaan (عيان) — meaning, origin, pronunciation and Islamic naming context.",
+      "meta_description": "Ayaan (عيان) — Witnessing, visible, evident. Meaning, origin, language and naming context.",
       "meta_keywords": "Ayaan meaning, Ayaan name meaning, Ayaan origin, Ayaan meaning in Urdu, Ayaan pronunciation, Ayaan Islamic name",
-      "description_paragraph": "Ayaan is an Arabic-origin given name. This page covers its meaning, origin, pronunciation and naming context.",
+      "description_paragraph": "Ayaan is a Latin-script spelling that can represent different language forms and pronunciations. This record specifically links it to Arabic عيان and the sense “visible,” “evident” or “in plain sight.” This explanation should not be assumed to cover every person named Ayaan or every regional use of the spelling.",
       "keywords": [
         "Ayaan meaning",
         "Ayaan name meaning",
@@ -314,8 +310,8 @@
       "seo_score_basis": "9 distinct FAQs; gloss verified; root absent; uniqueness enforced by cross-field de-duplication; score reflects content depth, not field count."
     },
     "seo_content": {
-      "intro_paragraph": "This page explains the meaning and origin of the name Ayaan, an Arabic-origin name used in Muslim communities.",
-      "body_summary": "Ayaan is used within Muslim naming communities. Its Islamic association is cultural; it is not a doctrinal term."
+      "intro_paragraph": "Ayaan is a Latin-script spelling that can represent different language forms and pronunciations. This record specifically links it to Arabic عيان and the sense “visible,” “evident” or “in plain sight.” This explanation should not be assumed to cover every person named Ayaan or every regional use of the spelling.",
+      "body_summary": "Ayaan is a Latin-script spelling that can represent different language forms and pronunciations. This record specifically links it to Arabic عيان and the sense “visible,” “evident” or “in plain sight.” This explanation should not be assumed to cover every person named Ayaan or every regional use of the spelling. The Arabic word عيان has a lexical use connected with what is seen or evident. Ayaan is also used in different naming communities, so the Arabic analysis here applies specifically to the recorded form rather than every use of the Latin spelling."
     },
     "social_tags": [
       "#Ayaan",
@@ -339,10 +335,10 @@
       "verification_method": "Cross-checked lexical sources; no scriptural or statistical claim is asserted without a source."
     },
     "provenance": {
-      "pipeline": "NameVerse Production v8",
-      "methodology": "Parse atomic facts -> rebuild distinct fields -> validate",
-      "upgraded_from": "v7 (recursive-corruption and semantic-duplication remediation)",
-      "processed_at": "2026-10-06T04:27:34+00:00"
+      "pipeline": "NameVerse editorial content upgrade",
+      "methodology": "Name-specific revision of lexical meaning, morphology where supported, historical context and distinct reader FAQs; uncertain claims explicitly qualified.",
+      "upgraded_from": "v8",
+      "processed_at": "2026-11-15T00:00:00+00:00"
     },
     "structured_data": {
       "@context": "https://schema.org",
@@ -350,7 +346,7 @@
         {
           "@type": "DefinedTerm",
           "name": "Ayaan",
-          "description": "Ayaan — an Arabic-origin given name meaning Witnessing, visible, evident",
+          "description": "Ayaan is a Latin-script spelling that can represent different language forms and pronunciations. This record specifically links it to Arabic عيان and the sense “visible,” “evident” or “in plain sight.” This explanation should not be assumed to cover every person named Ayaan or every regional use of the spelling.",
           "inDefinedTermSet": {
             "@type": "DefinedTermSet",
             "name": "NameVerse Islamic Names"
@@ -361,74 +357,66 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "What does Ayaan mean?",
+              "name": "What does Ayaan mean in this record?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ayaan is an Arabic-origin name meaning “Witnessing, visible, evident”."
+                "text": "This entry records Arabic عيان (ʿiyān), with the sense “visible,” “evident” or “in plain sight.”"
               }
             },
             {
               "@type": "Question",
-              "name": "What is the origin of Ayaan?",
+              "name": "Is Ayaan always an Arabic name?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ayaan originates in Arabic and circulates in Muslim naming communities."
+                "text": "No. Ayaan is a Latin-script spelling used in more than one naming context; origin depends on the intended language, script and pronunciation."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Ayaan an Arabic name?",
+              "name": "How is Ayaan written in Arabic here?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, the recorded form عيان is Arabic."
+                "text": "The form used by this record is عيان."
               }
             },
             {
               "@type": "Question",
-              "name": "What is the root of Ayaan?",
+              "name": "Does Ayaan have one universally agreed meaning?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No root analysis is asserted for this spelling."
+                "text": "No. The same Latin spelling can represent different words in different languages. This page documents only the Arabic form عيان."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Ayaan an Islamic name?",
+              "name": "Is Ayaan a Qur’anic personal name?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ayaan is used by Muslims, but it is a lexical name rather than an exclusively Islamic religious term."
+                "text": "This entry does not claim Ayaan/عيان as a Qur’anic personal name."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Ayaan a Quranic name?",
+              "name": "How do you pronounce Ayaan?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ayaan is not independently established as a Qur'anic personal name."
+                "text": "The Arabic form can be approximated as “ʿi-yān”; English-speaking families may pronounce the Latin spelling differently."
               }
             },
             {
               "@type": "Question",
-              "name": "What does Ayaan mean in Urdu?",
+              "name": "Is Ayaan used for boys or girls?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "In Urdu it is written عیان and carries the sense “دیکھنے والا، ظاہر”."
+                "text": "This dataset records Ayaan as unisex, but practice varies by country and family; no registration statistics are claimed."
               }
             },
             {
               "@type": "Question",
-              "name": "How is Ayaan pronounced?",
+              "name": "What should parents verify before choosing Ayaan?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A romanized syllable approximation is “ayaan”."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is Ayaan a boy's or girl's name?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Documented usage records Ayaan as a unisex name; actual use can vary by community."
+                "text": "Confirm the intended language, script and pronunciation, because the same Latin spelling can represent different names."
               }
             }
           ]
