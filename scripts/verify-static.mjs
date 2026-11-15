@@ -265,6 +265,8 @@ if (fs.existsSync(UPGRADED_SITEMAP_PATH)) {
   }
   notes.push(`upgraded Islamic sitemap URLs: ${urls.length}`);
   if (urls.length === 0) fail('sitemap-islamic-upgraded.xml contains no URLs');
+} else {
+  fail('public/sitemap-islamic-upgraded.xml is missing');
 }
 
 // ── Report ──────────────────────────────────────────────────────────────────
