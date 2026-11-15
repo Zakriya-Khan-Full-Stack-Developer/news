@@ -230,6 +230,18 @@ if (fs.existsSync(SITEMAP_DIR)) {
   if (fs.existsSync(INDEX_BODY)) {
     const index = fs.readFileSync(INDEX_BODY, 'utf8');
     if (!/\/sitemap\/blog\.xml<\/loc>/.test(index)) fail('sitemap index does not list /sitemap/blog.xml');
+    const childSitemaps = index.split('<loc>').slice(1).map((part) => part.split('</loc>')[0].trim());
+    for (const childUrl of childSitemaps) {
+      let parsed;
+      try { parsed = new URL(childUrl); } catch { fail(`invalid child sitemap URL in index: ${childUrl}`); continue; }
+      const segments = parsed.pathname.split('/').filter(Boolean);
+      if (segments.length !== 2 || segments[0] !== 'sitemap' || !segments[1].endsWith('.xml')) {
+        fail(`unexpected child sitemap URL in index: ${childUrl}`);
+        continue;
+      }
+      const childBody = path.join(SITEMAP_DIR, `${segments[1]}.body`);
+      if (!fs.existsSync(childBody)) fail(`sitemap index advertises a missing child sitemap: ${childUrl}`);
+    }
   }
 } else {
   notes.push('sitemap bodies not found under .next/server/app/sitemap — skipped sitemap URL checks');
