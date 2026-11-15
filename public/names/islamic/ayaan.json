@@ -221,7 +221,11 @@
     "related_names": [],
     "historical_context": {
       "status": "editorially_expanded",
-      "note": "The Arabic word عيان has a lexical use connected with what is seen or evident. Ayaan is also used in different naming communities, so the Arabic analysis here applies specifically to the recorded form rather than every use of the Latin spelling."
+      "note": "The Arabic word عيان has a lexical use connected with what is seen or evident. Ayaan is also used in different naming communities, so the Arabic analysis here applies specifically to the recorded form rather than every use of the Latin spelling.",
+      "editorial_note": "The Arabic word عيان has a lexical use connected with what is seen or evident. Ayaan is also used in different naming communities, so the Arabic analysis here applies specifically to the recorded form rather than every use of the Latin spelling.",
+      "known_linguistic_history": [
+        "The Arabic word عيان has a lexical use connected with what is seen or evident. Ayaan is also used in different naming communities, so the Arabic analysis here applies specifically to the recorded form rather than every use of the Latin spelling."
+      ]
     },
     "modern_usage": {
       "status": "requires_frequency_data",
@@ -311,7 +315,10 @@
     },
     "seo_content": {
       "intro_paragraph": "Ayaan is a Latin-script spelling that can represent different language forms and pronunciations. This record specifically links it to Arabic عيان and the sense “visible,” “evident” or “in plain sight.” This explanation should not be assumed to cover every person named Ayaan or every regional use of the spelling.",
-      "body_summary": "Ayaan is a Latin-script spelling that can represent different language forms and pronunciations. This record specifically links it to Arabic عيان and the sense “visible,” “evident” or “in plain sight.” This explanation should not be assumed to cover every person named Ayaan or every regional use of the spelling. The Arabic word عيان has a lexical use connected with what is seen or evident. Ayaan is also used in different naming communities, so the Arabic analysis here applies specifically to the recorded form rather than every use of the Latin spelling."
+      "body_summary": "Ayaan is a Latin-script spelling that can represent different language forms and pronunciations. This record specifically links it to Arabic عيان and the sense “visible,” “evident” or “in plain sight.” This explanation should not be assumed to cover every person named Ayaan or every regional use of the spelling. The Arabic word عيان has a lexical use connected with what is seen or evident. Ayaan is also used in different naming communities, so the Arabic analysis here applies specifically to the recorded form rather than every use of the Latin spelling.",
+      "intro": "Ayaan is a Latin-script spelling that can represent different language forms and pronunciations. This record specifically links it to Arabic عيان and the sense “visible,” “evident” or “in plain sight.” This explanation should not be assumed to cover every person named Ayaan or every regional use of the spelling.",
+      "meaning_section": "Ayaan is a Latin-script spelling that can represent different language forms and pronunciations. This record specifically links it to Arabic عيان and the sense “visible,” “evident” or “in plain sight.” This explanation should not be assumed to cover every person named Ayaan or every regional use of the spelling.",
+      "cultural_section": "Ayaan appears in multiple contemporary naming contexts and may be associated with different language traditions. This page documents one Arabic-form interpretation, عيان; families should compare the intended script and pronunciation before treating it as the only meaning."
     },
     "social_tags": [
       "#Ayaan",

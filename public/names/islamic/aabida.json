@@ -225,7 +225,11 @@
     "related_names": [],
     "historical_context": {
       "status": "editorially_expanded",
-      "note": "عابدة is a regular feminine Arabic form. Its linguistic history supports the stated meaning, but does not independently establish a particular Qur’anic occurrence or personal-name frequency."
+      "note": "عابدة is a regular feminine Arabic form. Its linguistic history supports the stated meaning, but does not independently establish a particular Qur’anic occurrence or personal-name frequency.",
+      "editorial_note": "عابدة is a regular feminine Arabic form. Its linguistic history supports the stated meaning, but does not independently establish a particular Qur’anic occurrence or personal-name frequency.",
+      "known_linguistic_history": [
+        "عابدة is a regular feminine Arabic form. Its linguistic history supports the stated meaning, but does not independently establish a particular Qur’anic occurrence or personal-name frequency."
+      ]
     },
     "modern_usage": {
       "status": "requires_frequency_data",
@@ -315,7 +319,10 @@
     },
     "seo_content": {
       "intro_paragraph": "Aabida (عابدة, ʿābida) is the feminine form of the Arabic active participle meaning “female worshipper” or “a woman who worships.” It shares the root ع ب د with the masculine form Aabid; broader devotional interpretations should remain distinct from the direct lexical meaning.",
-      "body_summary": "Aabida (عابدة, ʿābida) is the feminine form of the Arabic active participle meaning “female worshipper” or “a woman who worships.” It shares the root ع ب د with the masculine form Aabid; broader devotional interpretations should remain distinct from the direct lexical meaning. عابدة is a regular feminine Arabic form. Its linguistic history supports the stated meaning, but does not independently establish a particular Qur’anic occurrence or personal-name frequency."
+      "body_summary": "Aabida (عابدة, ʿābida) is the feminine form of the Arabic active participle meaning “female worshipper” or “a woman who worships.” It shares the root ع ب د with the masculine form Aabid; broader devotional interpretations should remain distinct from the direct lexical meaning. عابدة is a regular feminine Arabic form. Its linguistic history supports the stated meaning, but does not independently establish a particular Qur’anic occurrence or personal-name frequency.",
+      "intro": "Aabida (عابدة, ʿābida) is the feminine form of the Arabic active participle meaning “female worshipper” or “a woman who worships.” It shares the root ع ب د with the masculine form Aabid; broader devotional interpretations should remain distinct from the direct lexical meaning.",
+      "meaning_section": "Aabida (عابدة, ʿābida) is the feminine form of the Arabic active participle meaning “female worshipper” or “a woman who worships.” It shares the root ع ب د with the masculine form Aabid; broader devotional interpretations should remain distinct from the direct lexical meaning.",
+      "cultural_section": "Aabida may be valued for its association with worship and devotion. This describes the word’s meaning, not a guaranteed personal quality or religious ruling."
     },
     "social_tags": [
       "#Aabida",

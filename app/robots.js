@@ -22,6 +22,9 @@ export default function robots() {
         allow: '/',
       },
     ],
-    sitemap: ['https://nameverse.site/sitemap.xml'],
+    sitemap: [
+      'https://nameverse.site/sitemap.xml',
+      'https://nameverse.site/sitemap-islamic-upgraded.xml',
+    ],
   };
 }

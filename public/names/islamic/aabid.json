@@ -223,7 +223,11 @@
     "related_names": [],
     "historical_context": {
       "status": "editorially_expanded",
-      "note": "عابد is an established Arabic word. Muslim personal-name use is a cultural naming fact; it does not by itself establish a Qur’anic occurrence or a measured popularity ranking."
+      "note": "عابد is an established Arabic word. Muslim personal-name use is a cultural naming fact; it does not by itself establish a Qur’anic occurrence or a measured popularity ranking.",
+      "editorial_note": "عابد is an established Arabic word. Muslim personal-name use is a cultural naming fact; it does not by itself establish a Qur’anic occurrence or a measured popularity ranking.",
+      "known_linguistic_history": [
+        "عابد is an established Arabic word. Muslim personal-name use is a cultural naming fact; it does not by itself establish a Qur’anic occurrence or a measured popularity ranking."
+      ]
     },
     "modern_usage": {
       "status": "requires_frequency_data",
@@ -313,7 +317,10 @@
     },
     "seo_content": {
       "intro_paragraph": "Aabid (عابد, ʿābid) is the Arabic active participle of عَبَدَ (ʿabada), meaning “worshipper” or “one who worships.” “Servant of Allah” can be a contextual devotional paraphrase, but the direct lexical gloss is “worshipper”; the word alone does not establish a Qur’anic naming status.",
-      "body_summary": "Aabid (عابد, ʿābid) is the Arabic active participle of عَبَدَ (ʿabada), meaning “worshipper” or “one who worships.” “Servant of Allah” can be a contextual devotional paraphrase, but the direct lexical gloss is “worshipper”; the word alone does not establish a Qur’anic naming status. عابد is an established Arabic word. Muslim personal-name use is a cultural naming fact; it does not by itself establish a Qur’anic occurrence or a measured popularity ranking."
+      "body_summary": "Aabid (عابد, ʿābid) is the Arabic active participle of عَبَدَ (ʿabada), meaning “worshipper” or “one who worships.” “Servant of Allah” can be a contextual devotional paraphrase, but the direct lexical gloss is “worshipper”; the word alone does not establish a Qur’anic naming status. عابد is an established Arabic word. Muslim personal-name use is a cultural naming fact; it does not by itself establish a Qur’anic occurrence or a measured popularity ranking.",
+      "intro": "Aabid (عابد, ʿābid) is the Arabic active participle of عَبَدَ (ʿabada), meaning “worshipper” or “one who worships.” “Servant of Allah” can be a contextual devotional paraphrase, but the direct lexical gloss is “worshipper”; the word alone does not establish a Qur’anic naming status.",
+      "meaning_section": "Aabid (عابد, ʿābid) is the Arabic active participle of عَبَدَ (ʿabada), meaning “worshipper” or “one who worships.” “Servant of Allah” can be a contextual devotional paraphrase, but the direct lexical gloss is “worshipper”; the word alone does not establish a Qur’anic naming status.",
+      "cultural_section": "Families may choose Aabid for its association with worship and devotion. That is a meaning-based aspiration, not a prediction of a child’s character or a religious ruling."
     },
     "social_tags": [
       "#Aabid",

@@ -221,7 +221,11 @@
     "related_names": [],
     "historical_context": {
       "status": "editorially_expanded",
-      "note": "Abdullah is an established Arabic compound personal name. Its component words are part of Arabic religious vocabulary; the name has a long history of use among Muslims, though this entry makes no statistical ranking claim."
+      "note": "Abdullah is an established Arabic compound personal name. Its component words are part of Arabic religious vocabulary; the name has a long history of use among Muslims, though this entry makes no statistical ranking claim.",
+      "editorial_note": "Abdullah is an established Arabic compound personal name. Its component words are part of Arabic religious vocabulary; the name has a long history of use among Muslims, though this entry makes no statistical ranking claim.",
+      "known_linguistic_history": [
+        "Abdullah is an established Arabic compound personal name. Its component words are part of Arabic religious vocabulary; the name has a long history of use among Muslims, though this entry makes no statistical ranking claim."
+      ]
     },
     "modern_usage": {
       "status": "requires_frequency_data",
@@ -311,7 +315,10 @@
     },
     "seo_content": {
       "intro_paragraph": "Abdullah (عبد الله, ʿAbd Allāh) is a two-part Arabic name: ʿabd (“servant”) followed by Allāh (“Allah/God”). Together it means “servant of Allah.” The construction expresses devotion and should be distinguished from a claim that the proper name is a standalone Qur’anic title.",
-      "body_summary": "Abdullah (عبد الله, ʿAbd Allāh) is a two-part Arabic name: ʿabd (“servant”) followed by Allāh (“Allah/God”). Together it means “servant of Allah.” The construction expresses devotion and should be distinguished from a claim that the proper name is a standalone Qur’anic title. Abdullah is an established Arabic compound personal name. Its component words are part of Arabic religious vocabulary; the name has a long history of use among Muslims, though this entry makes no statistical ranking claim."
+      "body_summary": "Abdullah (عبد الله, ʿAbd Allāh) is a two-part Arabic name: ʿabd (“servant”) followed by Allāh (“Allah/God”). Together it means “servant of Allah.” The construction expresses devotion and should be distinguished from a claim that the proper name is a standalone Qur’anic title. Abdullah is an established Arabic compound personal name. Its component words are part of Arabic religious vocabulary; the name has a long history of use among Muslims, though this entry makes no statistical ranking claim.",
+      "intro": "Abdullah (عبد الله, ʿAbd Allāh) is a two-part Arabic name: ʿabd (“servant”) followed by Allāh (“Allah/God”). Together it means “servant of Allah.” The construction expresses devotion and should be distinguished from a claim that the proper name is a standalone Qur’anic title.",
+      "meaning_section": "Abdullah (عبد الله, ʿAbd Allāh) is a two-part Arabic name: ʿabd (“servant”) followed by Allāh (“Allah/God”). Together it means “servant of Allah.” The construction expresses devotion and should be distinguished from a claim that the proper name is a standalone Qur’anic title.",
+      "cultural_section": "The name expresses servitude to Allah, an important concept in Islamic belief. Its meaning is a theological expression within Muslim naming culture, not evidence of an individual’s faith or conduct."
     },
     "social_tags": [
       "#Abdullah",
