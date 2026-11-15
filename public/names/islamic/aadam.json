@@ -221,7 +221,11 @@
     "related_names": [],
     "historical_context": {
       "status": "editorially_expanded",
-      "note": "In the Qur’an, Adam is presented as the first human and as a prophet. The Arabic form آدم is used in Islamic scripture and tradition; this is a religious-historical association, not a modern popularity statistic."
+      "note": "In the Qur’an, Adam is presented as the first human and as a prophet. The Arabic form آدم is used in Islamic scripture and tradition; this is a religious-historical association, not a modern popularity statistic.",
+      "editorial_note": "In the Qur’an, Adam is presented as the first human and as a prophet. The Arabic form آدم is used in Islamic scripture and tradition; this is a religious-historical association, not a modern popularity statistic.",
+      "known_linguistic_history": [
+        "In the Qur’an, Adam is presented as the first human and as a prophet. The Arabic form آدم is used in Islamic scripture and tradition; this is a religious-historical association, not a modern popularity statistic."
+      ]
     },
     "modern_usage": {
       "status": "requires_frequency_data",
@@ -311,7 +315,10 @@
     },
     "seo_content": {
       "intro_paragraph": "Aadam (آدم) is the Arabic form of Adam, the first human in Islamic tradition and a prophet in Islam. The Arabic form and its religious referent are clear; deeper etymologies of the older Semitic name have several proposals and are not reduced here to one unsupported derivation.",
-      "body_summary": "Aadam (آدم) is the Arabic form of Adam, the first human in Islamic tradition and a prophet in Islam. The Arabic form and its religious referent are clear; deeper etymologies of the older Semitic name have several proposals and are not reduced here to one unsupported derivation. In the Qur’an, Adam is presented as the first human and as a prophet. The Arabic form آدم is used in Islamic scripture and tradition; this is a religious-historical association, not a modern popularity statistic."
+      "body_summary": "Aadam (آدم) is the Arabic form of Adam, the first human in Islamic tradition and a prophet in Islam. The Arabic form and its religious referent are clear; deeper etymologies of the older Semitic name have several proposals and are not reduced here to one unsupported derivation. In the Qur’an, Adam is presented as the first human and as a prophet. The Arabic form آدم is used in Islamic scripture and tradition; this is a religious-historical association, not a modern popularity statistic.",
+      "intro": "Aadam (آدم) is the Arabic form of Adam, the first human in Islamic tradition and a prophet in Islam. The Arabic form and its religious referent are clear; deeper etymologies of the older Semitic name have several proposals and are not reduced here to one unsupported derivation.",
+      "meaning_section": "Aadam (آدم) is the Arabic form of Adam, the first human in Islamic tradition and a prophet in Islam. The Arabic form and its religious referent are clear; deeper etymologies of the older Semitic name have several proposals and are not reduced here to one unsupported derivation.",
+      "cultural_section": "Aadam is recognised in Muslim naming through its association with Adam in the Qur’an and Islamic tradition. This historical association is distinct from claims about a child’s character."
     },
     "social_tags": [
       "#Aadam",
