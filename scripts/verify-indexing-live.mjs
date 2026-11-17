@@ -31,7 +31,7 @@ function extractLocs(xml) {
 }
 
 function attribute(tag, name) {
-  const match = tag.match(new RegExp('\\b' + name + '\\s*=\\s*["\\']([^"\\']*)["\\']', 'i'));
+  const match = tag.match(new RegExp(`\\b${name}\\s*=\\s*["']([^"']*)["']`, 'i'));
   return match?.[1] || '';
 }
 
