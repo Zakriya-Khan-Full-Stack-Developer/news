@@ -232,7 +232,11 @@ ${[...entries.values()]
   return new Response(xml, {
     headers: {
       'Content-Type': 'application/xml; charset=utf-8',
-      'Cache-Control': 'public, max-age=0, s-maxage=3600, stale-while-revalidate=86400',
+      // 30-day cache matching the sitemap index and netlify.toml policy.
+      // Previously `max-age=0` disabled browser caching, so every crawler
+      // hit on a child sitemap was a full request despite the content only
+      // changing on deploy.
+      'Cache-Control': 'public, max-age=2592000, s-maxage=2592000, stale-while-revalidate=86400',
     },
   });
 }

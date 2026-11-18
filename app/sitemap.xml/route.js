@@ -33,7 +33,12 @@ ${sitemaps.map((sitemap) => `  <sitemap>
   return new Response(xml, {
     headers: {
       'Content-Type': 'application/xml; charset=utf-8',
-      'Cache-Control': 'public, max-age=0, s-maxage=3600, stale-while-revalidate=86400',
+      // 30-day browser cache + 30-day CDN cache, matching the netlify.toml
+      // header for /sitemap.xml. The historical remediation doc recommended a
+      // stable 30-day cache policy for sitemaps. The previous `max-age=0`
+      // disabled browser caching entirely, so every crawler poll was a full
+      // request even though the sitemap only changes on deploy.
+      'Cache-Control': 'public, max-age=2592000, s-maxage=2592000, stale-while-revalidate=86400',
     },
   });
 }
