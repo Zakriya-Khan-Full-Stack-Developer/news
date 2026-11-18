@@ -34,7 +34,7 @@ export const metadata = {
     default: 'Baby Names with Meanings, Origins & Cultural Context | NameVerse',
   },
   description:
-    'Search 11,412 baby names with meanings, origins, pronunciation guides, script forms and cultural context across Islamic, Christian and Hindu traditions.',
+    'Search 11,412 baby names with meanings, origins, pronunciation guides, script forms and cultural context across Islamic, Christian and Hindu traditions. Find Quranic, biblical, Sanskrit and modern baby names with verified etymology.',
   keywords: [
     'baby names',
     'baby name meanings',
@@ -44,6 +44,19 @@ export const metadata = {
     'Hindu baby names',
     'baby name finder',
     'names by meaning',
+    // Long-tail keywords for search intent coverage
+    'baby names with meaning and origin',
+    'unique baby names 2026',
+    'Quranic baby names with meanings',
+    'biblical baby names with meanings',
+    'Sanskrit baby names with meanings',
+    'baby boy names with meanings',
+    'baby girl names with meanings',
+    'modern Muslim baby names',
+    'rare baby names with cultural context',
+    'baby names by religion',
+    'names starting with A meaning',
+    'short baby names with deep meaning',
   ],
   openGraph: {
     siteName,
@@ -70,6 +83,12 @@ export const metadata = {
   },
   verification: {
     google: 'fB60sPZ-K1f5t10x-57z6f6_n655',
+    // Bing Webmaster Tools verification — replace with the real code from
+    // Bing Webmaster Tools → Configure → Site Verification after adding
+    // nameverse.site as a site. The meta tag name is msvalidate.01.
+    other: {
+      'msvalidate.01': 'PLACEHOLDER_REPLACE_WITH_BING_CODE',
+    },
   },
 };
 

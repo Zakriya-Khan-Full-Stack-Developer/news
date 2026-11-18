@@ -13,6 +13,12 @@
 // Google's guidance is to rely on noindex alone and leave such pages
 // crawlable. /advanced-search and /popular-by-state now 301-redirect to
 // /search and /baby-names-by-state (next.config.js).
+//
+// FIX — Removed sitemap-islamic-upgraded.xml reference.
+// That file returns a 404 on production. A broken sitemap reference in
+// robots.txt tells crawlers "here is my sitemap" and then gives them a 404,
+// which wastes crawl budget and signals poor site health. Only the main
+// sitemap index is referenced; child sitemaps are linked from it.
 // ─────────────────────────────────────────────────────────────────────────────
 export default function robots() {
   return {
@@ -24,7 +30,6 @@ export default function robots() {
     ],
     sitemap: [
       'https://nameverse.site/sitemap.xml',
-      'https://nameverse.site/sitemap-islamic-upgraded.xml',
     ],
   };
 }

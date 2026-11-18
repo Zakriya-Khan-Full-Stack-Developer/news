@@ -90,6 +90,15 @@
   [headers.values]
     Cache-Control = "public, max-age=2592000, s-maxage=2592000, stale-while-revalidate=86400"
 
+# IndexNow key file — served as plain text, cached for a long time since the
+# key does not change. Bing and other IndexNow-participating search engines
+# fetch this file to verify ownership when URLs are submitted via the API.
+[[headers]]
+  for = "/*.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=2592000"
+
 # ── Security headers ─────────────────────────────────────────────────────────
 # Previously duplicated between next.config.js and vercel.json. Defined once
 # here, because Netlify serves the HTML and can add these at the edge for free.
