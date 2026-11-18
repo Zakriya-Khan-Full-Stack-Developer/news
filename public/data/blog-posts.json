@@ -7387,7 +7387,7 @@
     "authorCredentials": "Compiled from the NameVerse name database and cross-referenced with the linguistic sources cited at the end of this guide",
     "publishDate": "2026-11-18",
     "lastUpdated": "2026-11-18",
-    "readTime": "8 min read",
+    "readTime": "4 min read",
     "featured": true,
     "featuredImage": "/blog/og/baby-names-that-mean-peace.png",
     "tags": [
@@ -7406,9 +7406,9 @@
       "serene baby names with meanings"
     ],
     "sourceKeys": [
-      "nameverseDB",
+      "ssa",
       "behindthename",
-      "wikiPeaceName"
+      "wikiVirtueName"
     ],
     "religion": null,
     "featuredOrder": 3,
@@ -7496,13 +7496,13 @@
     "title": "Twin Baby Names with Meanings: Paired Names from Every Tradition",
     "seoTitle": "Twin Baby Names with Meanings (Paired Ideas)",
     "subtitle": "How to choose meaningful twin names that complement each other without being overly matchy — paired ideas from Islamic, Christian and Hindu traditions.",
-    "excerpt": "Twin baby names with meanings: paired name ideas from Islamic, Christian and Hindu traditions that complement each other in meaning, origin and sound without being forced.",
+    "excerpt": "Paired twin baby names with meanings: complementary name ideas from Islamic, Christian and Hindu traditions that match in meaning, origin and sound.",
     "category": "Naming Guides",
     "author": "NameVerse Editorial Team",
     "authorCredentials": "Compiled from the NameVerse name database and the naming guidance cited at the end of this guide",
     "publishDate": "2026-11-18",
     "lastUpdated": "2026-11-18",
-    "readTime": "7 min read",
+    "readTime": "3 min read",
     "featured": false,
     "featuredImage": "/blog/og/twin-baby-names-with-meanings.png",
     "tags": [
@@ -7520,7 +7520,7 @@
       "matching baby names for twins"
     ],
     "sourceKeys": [
-      "nameverseDB",
+      "ssa",
       "behindthename"
     ],
     "religion": null,
@@ -7603,13 +7603,13 @@
     "title": "Rare and Unique Baby Names 2026: 60 Distinctive Names with Real Meanings",
     "seoTitle": "Rare and Unique Baby Names 2026 (60 Names)",
     "subtitle": "Distinctive names that are genuinely rare — not just unusual spellings of common names — with verified meanings, origins and cultural context.",
-    "excerpt": "60 rare and unique baby names for 2026: distinctive Islamic, Christian and Hindu names with verified meanings and etymology that your child will not share with five classmates.",
+    "excerpt": "60 rare and unique baby names for 2026: distinctive Islamic, Christian and Hindu names with verified meanings and etymology your child will not share.",
     "category": "Naming Guides",
     "author": "NameVerse Editorial Team",
     "authorCredentials": "Compiled from the NameVerse name database and the linguistic sources cited at the end of this guide",
     "publishDate": "2026-11-18",
     "lastUpdated": "2026-11-18",
-    "readTime": "10 min read",
+    "readTime": "4 min read",
     "featured": true,
     "featuredImage": "/blog/og/rare-and-unique-baby-names-2026.png",
     "tags": [
@@ -7628,9 +7628,9 @@
       "distinctive baby names that are not made up"
     ],
     "sourceKeys": [
-      "nameverseDB",
+      "ssa",
       "behindthename",
-      "ssaBabyNames"
+      "ssaTop"
     ],
     "religion": null,
     "featuredOrder": 4,
@@ -7719,13 +7719,13 @@
     "title": "Baby Names Meaning Wisdom and Knowledge: 45 Names from Every Tradition",
     "seoTitle": "Baby Names Meaning Wisdom (45 Choices)",
     "subtitle": "Names carrying the meaning of wisdom, knowledge and understanding from Islamic, Christian, Hindu and global traditions — with verified etymology.",
-    "excerpt": "45 baby names meaning wisdom and knowledge: verified Islamic, Christian and Hindu names with deep linguistic roots in the concept of understanding, intellect and learning.",
+    "excerpt": "45 baby names meaning wisdom and knowledge: verified Islamic, Christian and Hindu names with deep linguistic roots in understanding, intellect and learning.",
     "category": "Names by Meaning",
     "author": "NameVerse Editorial Team",
     "authorCredentials": "Compiled from the NameVerse name database and the linguistic sources cited at the end of this guide",
     "publishDate": "2026-11-18",
     "lastUpdated": "2026-11-18",
-    "readTime": "7 min read",
+    "readTime": "3 min read",
     "featured": false,
     "featuredImage": "/blog/og/baby-names-meaning-wisdom-and-knowledge.png",
     "tags": [
@@ -7744,9 +7744,9 @@
       "wise baby names with meanings"
     ],
     "sourceKeys": [
-      "nameverseDB",
+      "ssa",
       "behindthename",
-      "wikiWisdomName"
+      "sanskritLexicon"
     ],
     "religion": null,
     "featuredOrder": null,
